@@ -6,11 +6,11 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "ak" = (
 /obj/effect/turf_decal/trimline/opaque/red/line,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "al" = (
 /obj/effect/turf_decal/trimline/opaque/red/corner{
 	dir = 8
@@ -30,7 +30,7 @@
 	},
 /obj/structure/flippedtable,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "aq" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -44,7 +44,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "ax" = (
 /obj/structure/closet/syndicate,
 /obj/item/clothing/suit/armor/ramzi,
@@ -53,7 +53,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ay" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -77,7 +77,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "aC" = (
 /turf/closed/wall/rust,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -101,24 +101,24 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "aR" = (
 /turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "aS" = (
 /obj/effect/decal/cleanable/plasma,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer1{
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "aU" = (
 /obj/structure/table/reinforced,
 /obj/structure/closet/wall/red/directional/east{
 	opened = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "aZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
@@ -158,7 +158,7 @@
 "bf" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "br" = (
 /obj/effect/decal/cleanable/shreds,
 /obj/effect/decal/cleanable/shreds{
@@ -177,7 +177,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "bv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -186,7 +186,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "by" = (
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "bA" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -204,14 +204,14 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "bB" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/effect/turf_decal/industrial/warning/full{
 	color = "#912a2a"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "bG" = (
 /obj/structure/platform/industrial/corner{
 	dir = 4
@@ -242,12 +242,12 @@
 	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "ce" = (
 /obj/structure/reagent_dispensers/foamtank/antirad,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "cg" = (
 /obj/effect/turf_decal/industrial/firstaid{
 	dir = 1;
@@ -255,7 +255,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "ci" = (
 /obj/effect/spawner/bunk_bed{
 	dir = 4
@@ -269,13 +269,13 @@
 	pixel_y = -3
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ck" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "cn" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -311,7 +311,7 @@
 	},
 /obj/item/clothing/suit/space/hardsuit/syndi/ramzi,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "cK" = (
 /obj/structure/railing/corner,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -319,25 +319,25 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "cM" = (
 /obj/machinery/telecomms/processor,
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "cR" = (
 /obj/machinery/telecomms/receiver,
 /obj/structure/window/reinforced{
 	dir = 1
 	},
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "cS" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 2;
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "cU" = (
 /turf/open/floor/plasteel/stairs/right{
 	dir = 8
@@ -346,7 +346,7 @@
 "cW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "cZ" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 1;
@@ -359,14 +359,14 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "dc" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "di" = (
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "dk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -401,14 +401,14 @@
 /turf/open/floor/plasteel/stairs/wood{
 	color = "#543C30"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "dw" = (
 /obj/structure/chair/plastic{
 	pixel_y = 0;
 	pixel_x = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "dC" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 8;
@@ -425,17 +425,17 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "dG" = (
 /obj/machinery/atmospherics/components/unary/tank/oxygen{
 	piping_layer = 2;
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "dM" = (
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "dO" = (
 /obj/structure/sign/warning/securearea{
 	pixel_y = 30
@@ -453,7 +453,7 @@
 	pixel_y = 11
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "dR" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -461,7 +461,7 @@
 /obj/effect/decal/cleanable/oil/slippery,
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "dV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -473,7 +473,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "dW" = (
 /obj/machinery/suit_storage_unit/inherit,
 /obj/effect/turf_decal/industrial/warning/full{
@@ -481,7 +481,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "dY" = (
 /obj/effect/spawner/bunk_bed{
 	dir = 4
@@ -495,13 +495,13 @@
 	pixel_y = 11
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ed" = (
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ef" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 8;
@@ -511,13 +511,13 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ei" = (
 /obj/machinery/shower{
 	dir = 1
 	},
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ej" = (
 /turf/open/floor/plating,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -546,7 +546,7 @@
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "eq" = (
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 1;
@@ -560,11 +560,11 @@
 /obj/machinery/light/directional/west,
 /obj/structure/cable,
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "es" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "et" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -572,7 +572,7 @@
 /mob/living/simple_animal/hostile/human/ramzi/ranged/cottonmouth,
 /obj/structure/chair/office,
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "eB" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -591,7 +591,7 @@
 /obj/item/ammo_box/magazine/m556_42_hydra,
 /obj/item/ammo_box/magazine/m556_42_hydra,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "eE" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
@@ -600,7 +600,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "eO" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 8;
@@ -614,7 +614,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "eP" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/camera/autoname{
@@ -622,7 +622,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "eS" = (
 /obj/machinery/computer/transponder{
 	dir = 8;
@@ -630,13 +630,13 @@
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "eU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "eX" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 4;
@@ -651,15 +651,15 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "fa" = (
 /obj/structure/noticeboard{
 	dir = 8;
 	pixel_x = 26
 	},
-/obj/item/paper/fluff/ruins/wasteplanet/reminder,
+/obj/item/paper/fluff/jobs/prisoner/letter,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "fb" = (
 /obj/machinery/computer/atmos_alert{
 	dir = 8;
@@ -667,7 +667,7 @@
 	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "fc" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -682,7 +682,7 @@
 /obj/machinery/firealarm/directional/south,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "fe" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -700,7 +700,7 @@
 "fi" = (
 /obj/item/target/syndicate,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "fk" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/drinkingglass{
@@ -709,7 +709,7 @@
 	},
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "fm" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	layer = 2.040
@@ -725,7 +725,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "fr" = (
 /obj/structure/crate_shelf/built,
 /obj/effect/turf_decal/siding/red{
@@ -733,7 +733,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "fz" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -756,7 +756,7 @@
 	},
 /mob/living/simple_animal/hostile/human/ramzi/ranged/cottonmouth,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "fD" = (
 /obj/structure/table/greyscale,
 /turf/closed/mineral/random/wasteplanet,
@@ -769,7 +769,7 @@
 /obj/item/stack/sheet/plastic/twenty,
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "fO" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -778,7 +778,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "fQ" = (
 /obj/structure/railing/thin,
 /obj/machinery/mineral/unloading_machine{
@@ -786,7 +786,7 @@
 	output_dir = 8
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "fS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/ash/large,
@@ -803,11 +803,11 @@
 	dir = 8
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "fV" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "fW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -832,19 +832,19 @@
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /obj/effect/decal/cleanable/food/flour,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "gf" = (
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "gg" = (
 /obj/machinery/conveyor/inverted{
 	dir = 9
 	},
 /obj/structure/railing/thin,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "gh" = (
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -870,7 +870,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "gj" = (
 /obj/effect/turf_decal/trimline/opaque/red/corner{
 	dir = 1
@@ -880,7 +880,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "gk" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -900,7 +900,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "gn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/borderfloor,
@@ -935,7 +935,7 @@
 /obj/item/ammo_casing/spent/big_steel,
 /obj/effect/turf_decal/trimline/opaque/red/filled/line,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "gr" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
@@ -945,7 +945,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "gs" = (
 /obj/structure/flora/ash/glowshroom,
 /mob/living/basic/hivebot/ranged,
@@ -956,7 +956,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "gx" = (
 /turf/open/floor/concrete/reinforced/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -984,7 +984,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "gD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1003,7 +1003,7 @@
 	pixel_x = 9
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "gG" = (
 /obj/effect/turf_decal/box,
 /obj/structure/closet/emcloset/empty,
@@ -1016,7 +1016,7 @@
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/storage/firstaid/toxin,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "gO" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8
@@ -1028,7 +1028,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "gR" = (
 /obj/structure/platform/industrial{
 	dir = 1
@@ -1038,7 +1038,7 @@
 "gY" = (
 /obj/item/kirbyplants/dead,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "hb" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -1048,10 +1048,10 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "hd" = (
 /turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "hg" = (
 /obj/machinery/vending/toyliberationstation,
 /obj/effect/turf_decal/siding/red{
@@ -1059,7 +1059,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "hk" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -1069,7 +1069,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "hl" = (
 /obj/structure/platform/corner,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -1087,10 +1087,10 @@
 "hx" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "hz" = (
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "hP" = (
 /obj/item/kirbyplants/dead,
 /obj/effect/turf_decal/siding/wood{
@@ -1101,7 +1101,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "hR" = (
 /obj/effect/turf_decal/trimline/opaque/red/filled/line{
 	dir = 8
@@ -1112,14 +1112,11 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "hS" = (
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/stormtrooper/shotgun,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
-"hW" = (
-/turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/secure_claw/control)
 "ia" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/effect/decal/cleanable/oil,
@@ -1128,7 +1125,7 @@
 "id" = (
 /obj/structure/curtain,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ii" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -1151,7 +1148,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "iv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1188,7 +1185,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "iE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1209,7 +1206,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "iM" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8
@@ -1224,12 +1221,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "iQ" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/table/rolling,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "iR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1259,12 +1256,12 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "js" = (
 /obj/structure/closet/secure_closet/cabinet{
 	name = "quartermaster's cabinet"
 	},
-/obj/item/paper/fluff/ruins/wasteplanet/derringer,
+/obj/item/paper/fluff/ruins/thederelict/equipment,
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
 	dir = 6
@@ -1273,7 +1270,7 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/armor/ramzi/officer,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "jt" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 8;
@@ -1292,7 +1289,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "jw" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 6
@@ -1303,7 +1300,7 @@
 	pixel_x = -9
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "jy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -1314,13 +1311,13 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "jB" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#332521"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "jE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -1330,7 +1327,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "jI" = (
 /obj/structure/hazard/radioactive/waste,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -1342,7 +1339,7 @@
 	},
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "jL" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 10;
@@ -1352,7 +1349,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "jM" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -1370,7 +1367,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "jP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -1385,14 +1382,14 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "jQ" = (
 /obj/item/ammo_casing/spent/magnum_steel{
 	pixel_y = 3;
 	pixel_x = -10
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "jR" = (
 /obj/effect/turf_decal/industrial/firstaid{
 	dir = 1;
@@ -1403,7 +1400,7 @@
 	},
 /obj/structure/closet/body_bag,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "jT" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
@@ -1415,7 +1412,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "jY" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 9
@@ -1432,13 +1429,13 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "jZ" = (
 /obj/structure/railing/thin/corner{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "kc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1448,7 +1445,7 @@
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "kf" = (
 /turf/closed/wall/rust/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -1458,7 +1455,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/circuit/red,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "kj" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -1468,7 +1465,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "kk" = (
 /obj/item/broken_bottle,
 /obj/item/shard{
@@ -1476,7 +1473,7 @@
 	},
 /obj/effect/decal/cleanable/glass,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "ku" = (
 /obj/effect/turf_decal/corner_techfloor_grid{
 	dir = 8
@@ -1484,9 +1481,9 @@
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/human/ramzi/ranged/space/pristine/hydra,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/hydra,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "kv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/wasteplanet,
@@ -1504,11 +1501,11 @@
 /obj/structure/table,
 /obj/item/storage/firstaid/tactical,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "kG" = (
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "kH" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1525,7 +1522,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "kI" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -1543,21 +1540,21 @@
 /obj/item/tank/internals/emergency_oxygen,
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "kJ" = (
 /obj/structure/chair/sofa/red,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "kO" = (
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "kR" = (
 /obj/structure/chair/wood,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "kS" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -1587,7 +1584,7 @@
 	pixel_y = -8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "li" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -1604,7 +1601,7 @@
 "lo" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "lp" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -1617,14 +1614,14 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "lq" = (
 /obj/machinery/power/smes/engineering,
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "ls" = (
 /turf/open/floor/plating/wasteplanet/rust/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -1671,7 +1668,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "lz" = (
 /obj/structure/chair/plastic{
 	dir = 4;
@@ -1683,7 +1680,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "lA" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -1709,7 +1706,7 @@
 	dir = 10
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "lC" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 4;
@@ -1719,11 +1716,11 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "lD" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/stairs,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "lE" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
@@ -1749,7 +1746,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "lO" = (
 /obj/item/plate,
 /obj/machinery/light/directional/south,
@@ -1757,7 +1754,7 @@
 /obj/structure/table,
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "lP" = (
 /obj/item/stack/ore/salvage/scrapmetal,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -1783,13 +1780,13 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "lX" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "mq" = (
 /obj/effect/turf_decal/borderfloor/corner{
 	dir = 8
@@ -1802,7 +1799,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "mw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -1814,12 +1811,12 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "my" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "mB" = (
 /obj/structure/platform/industrial/corner{
 	dir = 8
@@ -1837,7 +1834,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/stairs,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "mG" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1855,7 +1852,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "mH" = (
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "mI" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -1870,7 +1867,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "mM" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -1879,24 +1876,24 @@
 /obj/item/kirbyplants/dead,
 /obj/machinery/light/directional/west,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "mR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/west,
-/obj/item/paper/crumpled/fluff/ruins/wasteplanet/doors,
+/obj/item/paper/crumpled/bloody,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "mS" = (
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "mT" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "mV" = (
 /obj/item/trash/mirastin{
 	pixel_y = -17;
@@ -1907,7 +1904,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "mZ" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/door/firedoor/border_only,
@@ -1918,7 +1915,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "nd" = (
 /obj/structure/closet/emcloset/empty,
 /obj/item/tank/internals/emergency_oxygen/engi,
@@ -1931,7 +1928,7 @@
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "ni" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
@@ -1940,14 +1937,14 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "nj" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 8;
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "nl" = (
 /obj/machinery/door/airlock/hatch,
 /obj/effect/turf_decal/techfloor/orange,
@@ -1959,7 +1956,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "ns" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1974,7 +1971,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ny" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1993,7 +1990,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "nA" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/light/floor/hangar,
@@ -2009,7 +2006,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "nG" = (
 /obj/structure/table,
 /obj/item/paper_bin{
@@ -2029,10 +2026,10 @@
 	},
 /obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "nM" = (
 /turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "nR" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal{
 	dir = 4
@@ -2040,7 +2037,7 @@
 /obj/machinery/oven,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "nV" = (
 /obj/structure/crate_shelf/built,
 /obj/effect/turf_decal/siding/red{
@@ -2048,7 +2045,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "nW" = (
 /obj/machinery/camera/autoname{
 	dir = 10
@@ -2061,7 +2058,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "nY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -2094,31 +2091,31 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ob" = (
 /obj/effect/turf_decal/industrial/stand_clear/red{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "oc" = (
 /obj/structure/table/reinforced,
 /obj/item/reagent_containers/food/drinks/mead,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "og" = (
 /obj/structure/sink{
 	pixel_y = 23
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "oi" = (
 /obj/item/reagent_containers/pill/penacid{
 	pixel_x = -11;
 	pixel_y = 6
 	},
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "oj" = (
 /obj/effect/turf_decal/trimline/opaque/red/filled/line{
 	dir = 10
@@ -2128,7 +2125,7 @@
 	},
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "oq" = (
 /obj/structure/chair/plastic{
 	dir = 8;
@@ -2140,7 +2137,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "ot" = (
 /obj/machinery/light/floor/hangar,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -2161,7 +2158,7 @@
 	pixel_x = 7
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "oO" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 4;
@@ -2172,7 +2169,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "oP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/borderfloor{
@@ -2187,12 +2184,12 @@
 "oT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "oZ" = (
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken5"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "pg" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4{
 	dir = 4
@@ -2204,10 +2201,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
-"pj" = (
-/turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "pl" = (
 /obj/structure/table/greyscale,
 /obj/structure/closet/wall/orange/directional/north,
@@ -2216,7 +2210,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "pv" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 6
@@ -2229,12 +2223,12 @@
 	},
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "px" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/door/airlock,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "pz" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -2262,7 +2256,7 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "pG" = (
 /obj/structure/closet/secure_closet/cabinet{
 	name = "lieutenant's cabinet"
@@ -2277,7 +2271,7 @@
 /obj/item/reagent_containers/food/drinks/bottle/blazaam,
 /obj/machinery/light/directional/east,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "pH" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor/hangar{
@@ -2296,7 +2290,7 @@
 	},
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "pN" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -2304,14 +2298,11 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "pP" = (
 /obj/structure/chair/sofa/red/corner/directional/east,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
-"pR" = (
-/turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/tradepost/center)
 "qf" = (
 /obj/structure/sink{
 	pixel_y = 18
@@ -2321,11 +2312,11 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "qg" = (
 /obj/machinery/telecomms/relay,
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "qm" = (
 /obj/effect/turf_decal/borderfloor,
 /turf/open/floor/concrete/wasteplanet,
@@ -2344,13 +2335,13 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "qr" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer1{
 	dir = 1
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "qs" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 1;
@@ -2358,7 +2349,7 @@
 	},
 /obj/effect/turf_decal/borderfloor,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "qv" = (
 /obj/item/coffee_cartridge/bootleg,
 /obj/item/coffee_cartridge/bootleg,
@@ -2369,16 +2360,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "qw" = (
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
-"qB" = (
-/turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "qD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2409,7 +2397,7 @@
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "qK" = (
 /obj/structure/table,
 /obj/item/cigbutt/roach{
@@ -2436,7 +2424,7 @@
 	layer = 3
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "qN" = (
 /obj/structure/chair/plastic{
 	dir = 1;
@@ -2445,18 +2433,18 @@
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "qS" = (
 /obj/effect/turf_decal/industrial/outline/orange,
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "qU" = (
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "qV" = (
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "rb" = (
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -2464,7 +2452,7 @@
 	},
 /obj/structure/cable,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "rc" = (
 /obj/structure/safe/floor,
 /obj/item/spacecash/bundle/c1000,
@@ -2482,7 +2470,7 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "rd" = (
 /obj/structure/fluff/broken_flooring{
 	icon_state = "plating";
@@ -2490,7 +2478,7 @@
 	},
 /obj/structure/frame/machine,
 /turf/open/floor/circuit/red/anim,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "re" = (
 /obj/machinery/mineral/processing_unit{
 	input_dir = 4
@@ -2499,7 +2487,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "rf" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 1;
@@ -2508,7 +2496,7 @@
 /obj/effect/turf_decal/borderfloor,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "rg" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2516,7 +2504,7 @@
 	},
 /obj/item/documents/syndicate,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "ri" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -2549,17 +2537,17 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "rm" = (
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "rs" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "rt" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	layer = 2.040
@@ -2575,7 +2563,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ru" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -2598,11 +2586,11 @@
 "rB" = (
 /obj/effect/turf_decal/trimline/opaque/red/filled/line,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "rC" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "rD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2631,7 +2619,7 @@
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "rF" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -2646,21 +2634,21 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "rH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "rK" = (
 /obj/machinery/atmospherics/components/unary/tank/air{
 	piping_layer = 2;
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "rL" = (
 /obj/item/stack/ore/salvage/scrapmetal/five,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -2669,7 +2657,7 @@
 /obj/structure/frame/machine,
 /obj/machinery/light/directional/south,
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "rP" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/firedoor/border_only{
@@ -2677,7 +2665,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "rQ" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -2686,7 +2674,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "rR" = (
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 8;
@@ -2697,7 +2685,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "rT" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 1;
@@ -2710,7 +2698,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "rX" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -2726,7 +2714,7 @@
 	},
 /obj/effect/turf_decal/trimline/opaque/red/corner,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "rY" = (
 /obj/structure/fence{
 	dir = 4
@@ -2737,7 +2725,7 @@
 /obj/effect/turf_decal/corner_techfloor_grid,
 /obj/effect/turf_decal/techfloor/corner,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "se" = (
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 1;
@@ -2751,10 +2739,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
-"sf" = (
-/turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/secure_claw)
 "sg" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/barricade/sandbags,
@@ -2778,7 +2763,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "sk" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -2787,7 +2772,7 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken5"
 	},
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "sp" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 1;
@@ -2799,7 +2784,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ss" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -2807,7 +2792,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "st" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -2815,7 +2800,7 @@
 	},
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "sA" = (
 /obj/structure/flora/ash/glowshroom,
 /turf/open/water/tar/waste/lit,
@@ -2829,7 +2814,7 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "sH" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -2838,7 +2823,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "sN" = (
 /obj/machinery/nuclearbomb/syndicate,
 /obj/effect/turf_decal/siding/red{
@@ -2846,10 +2831,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
-"sO" = (
-/turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/secure_claw/control)
 "sQ" = (
 /mob/living/simple_animal/hostile/human/ramzi/melee/machete,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -2869,7 +2851,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "sW" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/power/terminal{
@@ -2879,7 +2861,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "sY" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -2894,7 +2876,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "ta" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 4
@@ -2914,7 +2896,7 @@
 	pixel_y = 10
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "tg" = (
 /obj/structure/rack,
 /obj/item/gun_maint_kit,
@@ -2922,7 +2904,7 @@
 	pixel_y = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "tj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2971,12 +2953,12 @@
 	},
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "tu" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/warning/full,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "tw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -3010,7 +2992,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "tA" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/industrial/warning,
@@ -3030,12 +3012,12 @@
 	pixel_y = -10
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "tF" = (
 /obj/structure/window/reinforced,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer1,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "tJ" = (
 /obj/structure/table/reinforced,
 /obj/machinery/button/door{
@@ -3046,7 +3028,7 @@
 	name = "Gear-Room Shutters"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "tL" = (
 /obj/item/trash/pistachios{
 	pixel_x = 15
@@ -3054,7 +3036,7 @@
 /mob/living/simple_animal/hostile/human/ramzi/melee,
 /obj/effect/turf_decal/siding/thinplating/corner,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "tS" = (
 /obj/structure/salvageable/autolathe,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -3066,10 +3048,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
-"tX" = (
-/turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/tradepost/center)
 "ui" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 5
@@ -3083,10 +3062,10 @@
 /obj/item/clothing/suit/space/syndicate/ramzi/surplus,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi/surplus,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "ul" = (
 /turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "uq" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -3095,14 +3074,14 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ux" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "uA" = (
 /turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "uB" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal{
 	dir = 4
@@ -3112,7 +3091,7 @@
 /obj/item/melee/knife,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "uH" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
@@ -3129,12 +3108,12 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "uI" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "uK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/plasma,
@@ -3153,7 +3132,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "uV" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
@@ -3166,7 +3145,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "va" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -3176,7 +3155,7 @@
 	},
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "vb" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -3187,14 +3166,14 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "vk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "vm" = (
 /obj/effect/decal/cleanable/oil/slippery,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3218,7 +3197,7 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "vq" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -3233,26 +3212,23 @@
 	diry = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "vv" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
-"vy" = (
-/turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "vz" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "vA" = (
 /obj/structure/flora/ash/glowshroom,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "vB" = (
 /turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "vC" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -3267,7 +3243,7 @@
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/shoes/workboots,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "vE" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3297,17 +3273,17 @@
 	pixel_x = -7
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "vU" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "vV" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "wc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3324,7 +3300,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "wg" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning{
 	dir = 1;
@@ -3335,11 +3311,11 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "wh" = (
 /obj/structure/salvageable/protolathe,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "wi" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal{
 	dir = 4
@@ -3347,7 +3323,7 @@
 /obj/machinery/griddle,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "wn" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/borderfloor{
@@ -3366,7 +3342,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "wq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -3381,14 +3357,14 @@
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "wt" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/warning/full,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi,
 /obj/item/clothing/suit/space/syndicate/ramzi,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "ww" = (
 /obj/structure/table,
 /obj/item/trash/dote{
@@ -3396,7 +3372,7 @@
 	pixel_y = 12
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "wC" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -3416,14 +3392,11 @@
 	name = "Atmosphereics Windows"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "wE" = (
 /obj/machinery/autolathe,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
-"wF" = (
-/turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/secure_claw/control)
 "wH" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/syringe/contraband/methamphetamine{
@@ -3431,7 +3404,7 @@
 	pixel_x = -3
 	},
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "wI" = (
 /obj/structure/rack,
 /obj/item/clothing/ears/earmuffs{
@@ -3442,7 +3415,7 @@
 	pixel_x = -6
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "wO" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 8;
@@ -3456,7 +3429,7 @@
 	name = "Privacy Shutters"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "wP" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -3472,26 +3445,26 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "wR" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "wT" = (
 /obj/structure/railing/thin,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "wW" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "xb" = (
 /obj/structure/table,
 /obj/item/modular_computer/laptop,
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "xc" = (
 /obj/effect/spawner/bunk_bed,
 /obj/effect/turf_decal/siding/red{
@@ -3499,7 +3472,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "xe" = (
 /obj/structure/table,
 /obj/item/reagent_containers/syringe,
@@ -3514,7 +3487,7 @@
 /obj/machinery/atmospherics/components/unary/portables_connector/layer1,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "xk" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "recycle_armory"
@@ -3523,10 +3496,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/armory)
-"xp" = (
-/turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "xs" = (
 /obj/effect/decal/cleanable/greenglow,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -3547,7 +3517,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "xy" = (
 /turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "xD" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 8
@@ -3563,7 +3533,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "xE" = (
 /obj/machinery/computer/cargo{
 	icon_state = "computer-right";
@@ -3574,7 +3544,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "xH" = (
 /obj/effect/turf_decal/siding/red/corner{
 	color = "#B4696A";
@@ -3588,7 +3558,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "xL" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor/hangar{
@@ -3612,7 +3582,7 @@
 /obj/item/food/bread/tofu,
 /obj/effect/decal/cleanable/food/tomato_smudge,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "xT" = (
 /obj/machinery/door/airlock/hatch,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3628,14 +3598,14 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "xV" = (
 /obj/structure/table,
 /obj/item/modular_computer/laptop{
 	pixel_y = 10
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "xW" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -3643,7 +3613,7 @@
 /obj/item/soap/syndie,
 /obj/machinery/light/small/directional/west,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "xX" = (
 /obj/effect/turf_decal/trimline/opaque/white/warning{
 	pixel_y = 0
@@ -3657,16 +3627,16 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "yi" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "yj" = (
-/mob/living/simple_animal/hostile/human/ramzi/ranged/space/sniper/sentry,
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/sniper,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "ys" = (
@@ -3682,7 +3652,7 @@
 	desc = "A well preserved photograph, it shows a long stretch of forest taken from a vantage point...theres a series of numbers that are crossed out, going from 120 to 43.."
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "yt" = (
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -3691,11 +3661,11 @@
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/modglass,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "yx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "yy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3720,7 +3690,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "yJ" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -3728,7 +3698,7 @@
 "yO" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "yP" = (
 /obj/machinery/power/smes/engineering,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3740,12 +3710,12 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "yQ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "yT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor/hangar{
@@ -3781,7 +3751,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "zh" = (
 /obj/structure/chair/wood{
 	dir = 4
@@ -3790,7 +3760,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "zn" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
@@ -3802,14 +3772,14 @@
 	},
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "zt" = (
 /obj/effect/turf_decal/industrial/warning,
 /turf/open/floor/concrete/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "zu" = (
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "zB" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
@@ -3824,7 +3794,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "zE" = (
 /turf/template_noop,
 /area/template_noop)
@@ -3845,7 +3815,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "zI" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -3855,7 +3825,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "zQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -3867,7 +3837,7 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "zR" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -3890,7 +3860,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Aa" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
@@ -3912,7 +3882,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Am" = (
 /obj/machinery/light/directional/west,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3920,10 +3890,10 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Az" = (
 /turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "AJ" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -3933,7 +3903,7 @@
 	pixel_x = 6
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "AL" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3946,7 +3916,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "AQ" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	layer = 2.040
@@ -3964,12 +3934,12 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "AR" = (
 /obj/structure/table,
 /obj/item/plate,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "AS" = (
 /obj/structure/platform/industrial{
 	dir = 5
@@ -3987,10 +3957,10 @@
 	icon_state = "1-4"
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "AV" = (
 /turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "AY" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -4014,7 +3984,7 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "Br" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 5;
@@ -4022,7 +3992,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Bw" = (
 /obj/structure/closet/toolcloset/empty,
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -4032,7 +4002,7 @@
 /obj/item/clothing/gloves/color/yellow,
 /obj/item/clothing/gloves/color/yellow,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "BE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -4044,7 +4014,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "BF" = (
 /obj/structure/platform/industrial/corner,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -4069,7 +4039,7 @@
 	},
 /obj/structure/closet/secure_closet/atmospherics,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "BO" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/large,
@@ -4100,12 +4070,12 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "BW" = (
 /obj/item/target,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "BX" = (
 /obj/structure/table/reinforced,
 /obj/item/clothing/ears/earmuffs{
@@ -4117,11 +4087,11 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Cb" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Cc" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8
@@ -4146,7 +4116,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Ce" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -4158,7 +4128,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Cg" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/concrete/wasteplanet,
@@ -4173,7 +4143,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Ci" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -4184,7 +4154,7 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken3"
 	},
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Cj" = (
 /obj/effect/turf_decal/trimline/opaque/red/end{
 	dir = 1
@@ -4195,7 +4165,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Cl" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -4216,27 +4186,27 @@
 	},
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Co" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Cv" = (
 /obj/effect/turf_decal/industrial/stand_clear/red{
 	dir = 4
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Cw" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 5
 	},
 /obj/item/kirbyplants/dead,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "CA" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -4252,7 +4222,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "CE" = (
 /obj/effect/turf_decal/industrial/firstaid{
 	dir = 5;
@@ -4263,7 +4233,7 @@
 	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "CG" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -4279,7 +4249,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "CQ" = (
 /mob/living/basic/hivebot/ranged,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -4301,7 +4271,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "CT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4320,19 +4290,19 @@
 "Dd" = (
 /obj/item/target,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Dg" = (
 /obj/structure/table,
 /obj/item/modular_computer/laptop/preset/civilian/rilena,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Do" = (
 /obj/structure/table,
 /obj/machinery/computer/secure_data/laptop{
 	pixel_x = -2
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Dr" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -4341,7 +4311,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Du" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -4365,7 +4335,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Dz" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -4390,7 +4360,7 @@
 /obj/structure/chair/sofa/red,
 /mob/living/simple_animal/hostile/human/ramzi/ranged/officer,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "DG" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -4406,7 +4376,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "DJ" = (
 /obj/effect/turf_decal/trimline/opaque/red/corner{
 	dir = 2
@@ -4425,7 +4395,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "DO" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4443,7 +4413,7 @@
 	},
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "DR" = (
 /obj/structure/table,
 /obj/item/reagent_containers/food/drinks/soda_cans/cola{
@@ -4463,7 +4433,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "DT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -4474,7 +4444,7 @@
 /obj/item/clothing/neck/shemagh/ramzi,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "DW" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -4489,7 +4459,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "DY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4512,12 +4482,12 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Ee" = (
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/effect/turf_decal/industrial/outline,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Ei" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -4525,13 +4495,13 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Ej" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal{
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Ek" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4553,7 +4523,7 @@
 	},
 /obj/item/toy/plush/blahaj,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Ep" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -4563,7 +4533,7 @@
 	color = "#332521"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Ey" = (
 /obj/effect/radiation/waste,
 /turf/open/water/tar/waste/lit,
@@ -4595,7 +4565,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "EK" = (
 /obj/effect/turf_decal/borderfloor/corner{
 	dir = 1
@@ -4604,7 +4574,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "EM" = (
 /turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "EO" = (
 /obj/machinery/mineral/processing_unit_console{
 	dir = 4;
@@ -4623,7 +4593,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "EP" = (
 /obj/structure/fluff/broken_flooring{
 	icon_state = "plating";
@@ -4634,7 +4604,7 @@
 	dir = 1
 	},
 /turf/open/floor/circuit/red/off,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "EQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -4659,7 +4629,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ES" = (
 /obj/structure/closet/emcloset/empty,
 /obj/item/clothing/mask/gas/ramzi,
@@ -4669,11 +4639,11 @@
 /obj/item/tank/internals/emergency_oxygen,
 /obj/item/tank/internals/emergency_oxygen,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ET" = (
 /obj/machinery/light/directional/west,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "EX" = (
 /obj/machinery/door/airlock/external{
 	dir = 1
@@ -4691,7 +4661,7 @@
 	diry = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Fi" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/closet/crate/large,
@@ -4699,16 +4669,16 @@
 /turf/open/floor/concrete/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "Fj" = (
-/mob/living/simple_animal/hostile/human/ramzi/melee/machete,
+/mob/living/simple_animal/hostile/human/ramzi/melee/space/machete,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Fk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut{
 	color = "#543c30";
 	icon_state = "wood-broken5"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Fm" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -4719,7 +4689,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Fn" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -4727,7 +4697,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Fo" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -4739,16 +4709,13 @@
 	dir = 8
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Fs" = (
 /obj/structure/fence{
 	dir = 4
 	},
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
-"Ft" = (
-/turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/officers)
 "Fu" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/yellow{
@@ -4756,11 +4723,11 @@
 	},
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Fw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "FE" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -4775,7 +4742,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "FS" = (
 /obj/structure/railing{
 	dir = 4
@@ -4784,7 +4751,7 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken3"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "FY" = (
 /obj/effect/spawner/bunk_bed,
 /obj/item/bedsheet{
@@ -4796,7 +4763,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Gb" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -4821,12 +4788,12 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Gj" = (
 /obj/effect/turf_decal/industrial/outline/orange,
 /obj/machinery/portable_atmospherics/canister/hydrogen,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Gk" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 8
@@ -4845,15 +4812,15 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Go" = (
 /obj/effect/decal/cleanable/blood/old,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Gp" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Gq" = (
 /obj/effect/turf_decal/industrial,
 /obj/structure/fluff/broken_flooring{
@@ -4863,7 +4830,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Gt" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
@@ -4879,7 +4846,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Gu" = (
 /obj/structure/window/reinforced{
 	dir = 8
@@ -4893,7 +4860,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Gw" = (
 /obj/machinery/door/airlock/external/glass{
 	dir = 8
@@ -4913,7 +4880,7 @@
 	diry = -3
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Gy" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
@@ -4931,14 +4898,14 @@
 /obj/machinery/power/rtg/advanced,
 /obj/structure/cable,
 /turf/open/floor/circuit/red,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "GH" = (
 /obj/structure/railing/thick,
 /obj/item/ammo_casing/spent/big_steel{
 	pixel_x = -4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "GO" = (
 /obj/item/storage/box/firecrackers{
 	pixel_x = 9;
@@ -4955,12 +4922,12 @@
 /obj/machinery/fax/ramzi,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "GU" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/warning/full,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "GW" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 8;
@@ -4976,7 +4943,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "GX" = (
 /turf/closed/wall/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -4987,7 +4954,7 @@
 "He" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Hj" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -4996,7 +4963,7 @@
 	dir = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Hl" = (
 /obj/item/reagent_containers/condiment/saltshaker{
 	pixel_x = -7;
@@ -5028,14 +4995,14 @@
 	},
 /obj/structure/closet/secure_closet/wall/directional/south,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Hq" = (
 /obj/machinery/conveyor{
 	dir = 4
 	},
 /obj/structure/railing/thin,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Hr" = (
 /obj/structure/chair/plastic{
 	pixel_y = 0;
@@ -5048,17 +5015,17 @@
 /obj/machinery/firealarm/directional/west,
 /mob/living/simple_animal/hostile/human/ramzi/ranged/smg,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Hv" = (
 /obj/structure/chair/sofa/red/left,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Hx" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Hz" = (
 /obj/structure/filingcabinet/double/grey,
 /obj/item/folder/documents/syndicate/mining,
@@ -5069,7 +5036,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "HA" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 6
@@ -5078,7 +5045,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "HI" = (
 /turf/open/floor/plating/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -5098,7 +5065,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "HU" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -5106,7 +5073,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "HW" = (
 /obj/structure/chair/wood{
 	dir = 8
@@ -5116,14 +5083,14 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "HX" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Ic" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	layer = 2.040
@@ -5146,7 +5113,7 @@
 	icon_state = "0-4"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Ie" = (
 /obj/structure/platform/industrial{
 	dir = 4
@@ -5169,7 +5136,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Im" = (
 /obj/structure/sign/warning/fire{
 	pixel_x = -31;
@@ -5185,7 +5152,7 @@
 	dir = 10
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Iv" = (
 /obj/structure/chair/plastic{
 	dir = 8;
@@ -5193,7 +5160,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Iw" = (
 /obj/item/stack/ore/salvage/scrapuranium/five,
 /turf/open/water/tar/waste/lit,
@@ -5209,7 +5176,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "IJ" = (
 /obj/effect/turf_decal/corner_techfloor_grid{
 	dir = 8
@@ -5218,7 +5185,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "IM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -5244,7 +5211,7 @@
 /obj/effect/mob_spawn/human/corpse/ramzi,
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "IW" = (
 /obj/machinery/atmospherics/components/unary/passive_vent/layer4{
 	dir = 8
@@ -5255,7 +5222,7 @@
 /obj/effect/turf_decal/techfloor,
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "IY" = (
 /mob/living/basic/hivebot,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -5264,7 +5231,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Jj" = (
 /obj/structure/hazard/radioactive/stack,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -5289,7 +5256,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "JF" = (
 /obj/structure/chair/wood,
 /mob/living/simple_animal/hostile/human/ramzi/ranged/smg,
@@ -5321,7 +5288,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "JY" = (
 /obj/structure/table,
 /obj/effect/turf_decal/siding/red{
@@ -5333,7 +5300,7 @@
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Kf" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
@@ -5343,7 +5310,7 @@
 	},
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Kh" = (
 /obj/structure/chair/plastic{
 	dir = 4;
@@ -5355,7 +5322,7 @@
 	},
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Kj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -5365,7 +5332,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Ks" = (
 /obj/effect/turf_decal/industrial/stand_clear{
 	dir = 1
@@ -5381,7 +5348,7 @@
 /obj/item/storage/box/ammo/c10mm,
 /obj/item/storage/box/ammo/c10mm,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Kw" = (
 /obj/effect/spawner/bunk_bed{
 	dir = 1
@@ -5393,7 +5360,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Kx" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -5404,13 +5371,13 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer1{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/human/ramzi/melee/atmos_tech,
+/mob/living/simple_animal/hostile/human/ramzi/melee/hatchet,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Ky" = (
 /obj/structure/chair/sofa/red/directional/east,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "KC" = (
 /obj/machinery/door/airlock/external/glass,
 /obj/machinery/door/poddoor/shutters/preopen{
@@ -5432,7 +5399,7 @@
 	diry = 3
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "KE" = (
 /mob/living/basic/hivebot/mechanic,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -5450,15 +5417,11 @@
 	dir = 4
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "KP" = (
 /obj/machinery/light/floor/hangar,
 /turf/open/floor/concrete/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
-"KQ" = (
-/obj/machinery/airalarm/directional/west,
-/turf/template_noop,
-/area/template_noop)
 "KS" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
@@ -5481,7 +5444,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "KY" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 10
@@ -5491,7 +5454,7 @@
 /obj/machinery/light/directional/south,
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Lb" = (
 /obj/item/stack/ore/salvage/scrapuranium,
 /turf/open/water/tar/waste/lit,
@@ -5506,7 +5469,7 @@
 	pixel_y = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Lf" = (
 /obj/machinery/door/airlock/external/glass{
 	dir = 8
@@ -5535,7 +5498,7 @@
 	diry = -2
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Li" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4
@@ -5559,7 +5522,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Lv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5593,14 +5556,14 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Ly" = (
 /obj/structure/railing{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "LA" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -5613,7 +5576,7 @@
 	color = "#543c30";
 	icon_state = "wood-broken4"
 	},
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "LD" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -5623,7 +5586,7 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "LE" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning,
 /obj/effect/turf_decal/industrial/caution{
@@ -5639,7 +5602,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "LG" = (
 /obj/machinery/coffeemaker/premium{
 	pixel_x = 7;
@@ -5650,7 +5613,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "LK" = (
 /obj/structure/hazard/radioactive/stack,
 /obj/structure/hazard/radioactive/stack,
@@ -5709,7 +5672,7 @@
 	pixel_x = -5
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Mh" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5729,7 +5692,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "Mo" = (
 /obj/structure/platform/industrial{
 	dir = 6
@@ -5757,7 +5720,7 @@
 	},
 /obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "My" = (
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 9
@@ -5767,7 +5730,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "MD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5795,11 +5758,11 @@
 	pixel_x = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "MH" = (
 /obj/effect/turf_decal/industrial/stand_clear,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "MK" = (
 /obj/structure/table,
 /obj/structure/closet/wall/med/directional/south,
@@ -5809,10 +5772,10 @@
 /obj/item/storage/firstaid/regular,
 /obj/item/clothing/neck/stethoscope,
 /turf/open/floor/plasteel/mono/white,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "MR" = (
 /turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "MS" = (
 /obj/effect/turf_decal/industrial/loading{
 	dir = 1;
@@ -5832,7 +5795,7 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/filled/warning,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Nd" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5845,10 +5808,7 @@
 	dir = 4
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
-"Nh" = (
-/turf/closed/wall/r_wall,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/barracks)
 "No" = (
 /obj/effect/turf_decal/trimline/opaque/white/warning{
 	pixel_y = 0
@@ -5858,7 +5818,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Nu" = (
 /obj/structure/table,
 /obj/item/screwdriver/nuke{
@@ -5875,7 +5835,7 @@
 	pixel_x = 31
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "NB" = (
 /obj/effect/turf_decal/borderfloor/corner{
 	dir = 4
@@ -5893,7 +5853,7 @@
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "NI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -5916,11 +5876,11 @@
 	pixel_x = -1
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "NO" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "NR" = (
 /obj/effect/turf_decal/siding/red/corner{
 	color = "#B4696A";
@@ -5940,19 +5900,19 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "NT" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/siding/wideplating/dark,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "NU" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "NV" = (
 /obj/structure/window/plasma/reinforced/plastitanium,
 /obj/structure/grille,
@@ -5960,11 +5920,11 @@
 	id = "recycle_privacy"
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Oc" = (
 /obj/machinery/telecomms/allinone,
 /turf/open/floor/circuit,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Oh" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/pill/penacid{
@@ -5979,7 +5939,7 @@
 	pixel_x = 10
 	},
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "On" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 5
@@ -6008,20 +5968,20 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Ou" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "OD" = (
 /obj/effect/turf_decal/industrial/warning{
 	color = "#912a2a";
 	dir = 4
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "OF" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -6051,7 +6011,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "OL" = (
 /obj/effect/turf_decal/trimline/opaque/red/corner{
 	dir = 4
@@ -6060,16 +6020,16 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "OP" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "OR" = (
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Pa" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -6083,7 +6043,7 @@
 	dir = 1
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Pc" = (
 /turf/open/floor/concrete/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -6108,9 +6068,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/concrete/wasteplanet,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
-"Pl" = (
-/turf/closed/wall/rust,
-/area/ruin/wasteplanet/recycle_bay/engineering)
 "Po" = (
 /obj/structure/window/reinforced/tinted{
 	dir = 1
@@ -6119,7 +6076,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Pq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -6136,7 +6093,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Pv" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -6146,7 +6103,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "PI" = (
 /obj/effect/turf_decal/corner/opaque/green/diagonal{
 	dir = 4
@@ -6165,18 +6122,18 @@
 /obj/item/food/meat/slab,
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "PN" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 4;
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "PP" = (
 /obj/structure/chair/sofa/red/right/directional/east,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "PQ" = (
 /obj/structure/table/greyscale,
 /obj/structure/window/reinforced{
@@ -6191,7 +6148,7 @@
 	icon_state = "2-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "PR" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 5
@@ -6233,7 +6190,7 @@
 "Qj" = (
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Qk" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/light/floor/hangar,
@@ -6255,7 +6212,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Qs" = (
 /obj/structure/hazard/radioactive/stack,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -6274,7 +6231,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "QB" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -6288,7 +6245,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "QO" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1;
@@ -6299,7 +6256,7 @@
 	},
 /obj/machinery/firealarm/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "QP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -6310,7 +6267,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "QQ" = (
 /obj/structure/table,
 /obj/item/storage/pill_bottle,
@@ -6326,13 +6283,13 @@
 	layer = 2.040
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "QW" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "QX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6342,14 +6299,14 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Rc" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/siding/thinplating{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Rh" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -6362,7 +6319,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Rj" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6371,7 +6328,7 @@
 	},
 /obj/effect/turf_decal/arrows/red,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "Rk" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6384,7 +6341,7 @@
 /obj/effect/turf_decal/corner_techfloor_grid,
 /obj/effect/turf_decal/techfloor/orange/corner,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Rt" = (
 /obj/machinery/door/airlock/hatch,
 /obj/machinery/door/firedoor/border_only{
@@ -6392,7 +6349,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "RB" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -6405,7 +6362,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "RO" = (
 /obj/machinery/conveyor_switch/oneway,
 /obj/effect/turf_decal/techfloor/orange{
@@ -6415,7 +6372,7 @@
 	dir = 10
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "RP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6443,7 +6400,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "RV" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -6453,7 +6410,7 @@
 	pixel_x = 5
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "RZ" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 8
@@ -6485,7 +6442,7 @@
 	icon_state = "2-4"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Sl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -6510,7 +6467,7 @@
 	icon_state = "0-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "So" = (
 /obj/effect/decal/cleanable/plasma,
 /turf/open/floor/plating/wasteplanet/lit,
@@ -6519,7 +6476,7 @@
 /obj/machinery/light/small/directional/east,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Su" = (
 /obj/structure/fence/cut/large{
 	dir = 4
@@ -6532,7 +6489,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Sx" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor/hangar{
@@ -6555,7 +6512,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "SD" = (
 /obj/machinery/door/poddoor/shutters{
 	dir = 4;
@@ -6571,7 +6528,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "SK" = (
 /obj/structure/closet/syndicate,
 /obj/machinery/light/directional/west,
@@ -6581,7 +6538,7 @@
 	pixel_y = -6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "SL" = (
 /obj/structure/table,
 /obj/item/pizzabox/meat,
@@ -6593,7 +6550,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "SO" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -6608,7 +6565,7 @@
 /obj/machinery/door/airlock/external,
 /obj/effect/mapping_helpers/airlock/cyclelink_helper,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "SR" = (
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
@@ -6617,12 +6574,12 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "SZ" = (
 /obj/structure/table,
 /obj/machinery/coffeemaker,
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Tc" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
@@ -6652,7 +6609,7 @@
 /obj/item/clothing/mask/gas/ramzi,
 /obj/item/clothing/mask/gas/ramzi,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Tn" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
@@ -6671,7 +6628,7 @@
 	dir = 9
 	},
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Tu" = (
 /obj/machinery/door/airlock/external{
 	dir = 1
@@ -6689,7 +6646,7 @@
 	diry = 2
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "TF" = (
 /turf/open/floor/plasteel/stairs/left{
 	dir = 8
@@ -6698,7 +6655,7 @@
 "TG" = (
 /obj/structure/railing/thick,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "TH" = (
 /obj/structure/platform/industrial{
 	dir = 8
@@ -6722,7 +6679,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "TP" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -6730,7 +6687,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "TV" = (
 /turf/open/floor/plasteel/patterned/brushed,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Ub" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -6740,7 +6697,7 @@
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Ud" = (
 /obj/effect/turf_decal/borderfloor/corner,
 /turf/open/floor/concrete/wasteplanet,
@@ -6761,7 +6718,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Uo" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -6801,7 +6758,7 @@
 	},
 /obj/effect/turf_decal/siding/thinplating,
 /turf/open/floor/plasteel,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "UF" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 4;
@@ -6816,7 +6773,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "UT" = (
 /obj/machinery/door/airlock/hatch{
 	dir = 4
@@ -6836,7 +6793,7 @@
 	dir = 8
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "UV" = (
 /obj/structure/chair/plastic{
 	dir = 8;
@@ -6859,7 +6816,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/white,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Vm" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/turf_decal/borderfloor{
@@ -6871,7 +6828,7 @@
 /obj/structure/guncloset,
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "VI" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/cobweb,
@@ -6888,7 +6845,7 @@
 /obj/structure/railing/thin,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "VM" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/wasteplanet/lit,
@@ -6903,14 +6860,14 @@
 /obj/effect/turf_decal/industrial/stand_clear,
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "VX" = (
 /obj/item/kirbyplants,
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Wd" = (
 /obj/machinery/door/poddoor/shutters{
 	id = "recycle_armory"
@@ -6922,7 +6879,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Wf" = (
 /obj/structure/table,
 /obj/item/gun/ballistic/shotgun/toy/crossbow{
@@ -6938,7 +6895,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Wi" = (
 /turf/open/floor/plating/asteroid/wasteplanet/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -6993,7 +6950,7 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Wp" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7011,12 +6968,12 @@
 "Ws" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Wu" = (
 /obj/effect/turf_decal/techfloor,
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Wy" = (
 /obj/effect/turf_decal/trimline/opaque/red/line{
 	layer = 2.040
@@ -7035,7 +6992,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "WA" = (
 /obj/machinery/door/airlock/external,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7053,7 +7010,7 @@
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "WD" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7066,7 +7023,7 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "WI" = (
 /turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "WJ" = (
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
@@ -7081,21 +7038,21 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken5"
 	},
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "WW" = (
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "recycle_vault"
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "WX" = (
 /obj/structure/table,
 /obj/item/stack/cable_coil/cut/red{
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/paper/fluff/ruins/wasteplanet/vault{
+/obj/item/paper/fluff/jobs/security/beepsky_mom{
 	pixel_x = -5;
 	pixel_y = 20
 	},
@@ -7104,7 +7061,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "WY" = (
 /obj/machinery/light/floor/hangar,
 /obj/structure/catwalk/over/plated_catwalk,
@@ -7112,13 +7069,10 @@
 /area/overmap_encounter/planetoid/wasteplanet/explored)
 "Xa" = (
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Xe" = (
 /turf/closed/wall,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
-"Xg" = (
-/turf/closed/wall/r_wall/rust,
-/area/ruin/wasteplanet/recycle_bay/officers_dorms)
+/area/ruin/wasteplanet/secure_claw)
 "Xi" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -7140,7 +7094,7 @@
 	diry = -2
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Xk" = (
 /obj/effect/turf_decal/trimline/opaque/white/warning{
 	pixel_y = 0
@@ -7150,7 +7104,7 @@
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/tech/tcomms,
-/area/ruin/wasteplanet/recycle_bay/telecommunications)
+/area/ruin/wasteplanet/secure_claw)
 "Xo" = (
 /turf/open/water/tar/waste/lit,
 /area/overmap_encounter/planetoid/wasteplanet/explored)
@@ -7174,7 +7128,7 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "Xr" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 8
@@ -7191,7 +7145,7 @@
 /turf/open/floor/wood/walnut{
 	icon_state = "wood-broken5"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Xt" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7215,14 +7169,14 @@
 /obj/effect/turf_decal/trimline/opaque/red/filled/line,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "Xx" = (
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/turf_decal/industrial/warning/full,
 /obj/item/clothing/suit/space/syndicate/ramzi,
 /obj/item/clothing/head/helmet/space/syndicate/ramzi,
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "XE" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 5
@@ -7241,7 +7195,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "XG" = (
 /obj/structure/fluff/broken_flooring{
 	icon_state = "plating"
@@ -7261,7 +7215,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "XP" = (
 /obj/structure/table/greyscale,
 /obj/item/modular_computer/laptop/preset/civilian/rilena{
@@ -7270,7 +7224,7 @@
 	},
 /obj/machinery/airalarm/directional/east,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "XV" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer1{
 	dir = 5
@@ -7279,14 +7233,14 @@
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "XX" = (
 /obj/structure/chair/office/dark{
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "XZ" = (
 /obj/structure/hazard/radioactive/waste,
 /turf/open/floor/plating/wasteplanet/rust/lit,
@@ -7308,7 +7262,7 @@
 "Yb" = (
 /obj/structure/crate_shelf,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Yc" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -7329,7 +7283,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "Yj" = (
 /obj/machinery/door/airlock/external{
 	dir = 4
@@ -7354,7 +7308,7 @@
 	diry = -1
 	},
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/eva)
+/area/ruin/wasteplanet/secure_claw/control)
 "Ym" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -7380,7 +7334,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "YB" = (
 /obj/structure/closet/crate/engineering,
 /obj/item/gear_pack/anglegrinder/energy,
@@ -7397,7 +7351,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "YC" = (
 /obj/structure/railing/thin{
 	dir = 8
@@ -7409,7 +7363,7 @@
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "YE" = (
 /obj/machinery/light/floor/hangar,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7424,14 +7378,14 @@
 	dir = 2
 	},
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "YN" = (
 /obj/machinery/light/directional/south,
 /turf/open/floor/wood/walnut{
 	color = "#543c30";
 	icon_state = "wood-broken2"
 	},
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "YO" = (
 /obj/machinery/light/directional/east,
 /obj/structure/reagent_dispensers/water_cooler,
@@ -7439,7 +7393,7 @@
 	dir = 6
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "YQ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -7473,7 +7427,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "YU" = (
 /obj/structure/table,
 /obj/machinery/button/door{
@@ -7491,7 +7445,7 @@
 	name = "Vault Blastdoors"
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "YV" = (
 /obj/machinery/power/apc/auto_name/directional/north,
 /obj/structure/cable{
@@ -7502,7 +7456,7 @@
 	color = "#B4696A"
 	},
 /turf/open/floor/plating/rust,
-/area/ruin/wasteplanet/recycle_bay/vault)
+/area/ruin/wasteplanet/secure_claw/control)
 "YY" = (
 /obj/structure/toilet{
 	pixel_y = 6;
@@ -7511,7 +7465,7 @@
 	},
 /obj/effect/decal/cleanable/vomit/old,
 /turf/open/floor/plasteel/freezer,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Zc" = (
 /obj/structure/table/glass,
 /obj/item/reagent_containers/pill/starlight,
@@ -7527,7 +7481,7 @@
 	pixel_y = 9
 	},
 /turf/open/floor/carpet/green,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Ze" = (
 /obj/structure/railing/corner{
 	dir = 8
@@ -7540,7 +7494,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/wood/walnut,
-/area/ruin/wasteplanet/recycle_bay/dorms)
+/area/ruin/wasteplanet/tradepost/barracks)
 "Zf" = (
 /obj/effect/turf_decal/borderfloor{
 	dir = 10
@@ -7555,7 +7509,7 @@
 	dir = 5
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Zo" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -7564,14 +7518,14 @@
 	dir = 1
 	},
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "Zq" = (
 /obj/machinery/atmospherics/pipe/simple/orange/hidden/layer1{
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/trinary/mixer/on/layer2,
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "Zs" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 4
@@ -7581,7 +7535,7 @@
 	},
 /obj/machinery/light/directional/west,
 /turf/open/floor/plasteel/tech,
-/area/ruin/wasteplanet/recycle_bay/officers)
+/area/ruin/wasteplanet/tradepost/center)
 "Zt" = (
 /obj/effect/turf_decal/siding/red{
 	dir = 1;
@@ -7589,14 +7543,14 @@
 	},
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "ZC" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
-/area/ruin/wasteplanet/recycle_bay/armory)
+/area/ruin/wasteplanet/tradepost/center)
 "ZE" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -7610,7 +7564,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "ZH" = (
 /obj/structure/platform/industrial/corner{
 	dir = 1
@@ -7623,7 +7577,7 @@
 	icon_state = "1-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/engineering)
+/area/ruin/wasteplanet/secure_claw)
 "ZK" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/floor/hangar{
@@ -7642,7 +7596,7 @@
 	dir = 6
 	},
 /turf/open/floor/plating,
-/area/ruin/wasteplanet/recycle_bay/atmospherics)
+/area/ruin/wasteplanet/secure_claw/engineering)
 "ZQ" = (
 /obj/machinery/door/airlock/hatch,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -7651,7 +7605,7 @@
 	},
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/plasteel/tech/grid,
-/area/ruin/wasteplanet/recycle_bay/security_dorms)
+/area/ruin/wasteplanet/tradepost/center)
 "ZS" = (
 /obj/effect/turf_decal/industrial/caution{
 	dir = 4;
@@ -7667,13 +7621,13 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/plasteel/dark,
-/area/ruin/wasteplanet/recycle_bay/salvage_bay)
+/area/ruin/wasteplanet/secure_claw/control)
 "ZT" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
-/area/ruin/wasteplanet/recycle_bay/security)
+/area/ruin/wasteplanet/tradepost/center)
 "ZY" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -8558,12 +8512,12 @@ HI
 HI
 Qi
 Wi
-Nh
-Nh
-Nh
-wF
-wF
-Nh
+aR
+aR
+aR
+WI
+WI
+aR
 aR
 bB
 bB
@@ -8635,7 +8589,7 @@ Wi
 Wi
 ux
 Jj
-Nh
+aR
 ax
 SK
 ys
@@ -8712,7 +8666,7 @@ Wi
 Yp
 Jj
 Jj
-Nh
+aR
 Cj
 eX
 sT
@@ -8786,10 +8740,10 @@ vA
 Wi
 Wi
 Yp
-wF
-wF
-wF
-Nh
+WI
+WI
+WI
+aR
 nB
 aU
 tJ
@@ -8852,24 +8806,24 @@ DE
 DE
 Wi
 Wi
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-wF
-Nh
-Nh
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+WI
+aR
+aR
 wI
 tg
-Nh
-wF
-wF
-Nh
+aR
+WI
+WI
+aR
 Gk
 Cc
 WI
@@ -8929,7 +8883,7 @@ DE
 DE
 Wi
 Wi
-wF
+WI
 ET
 hz
 hz
@@ -9006,7 +8960,7 @@ DE
 Wi
 Wi
 Wi
-wF
+WI
 Dd
 hz
 hz
@@ -9027,7 +8981,7 @@ Ch
 gj
 ly
 nx
-wF
+WI
 Wi
 Wi
 Wi
@@ -9083,7 +9037,7 @@ HI
 Wi
 Wi
 Wi
-wF
+WI
 hz
 fi
 hz
@@ -9103,10 +9057,10 @@ oO
 oO
 OL
 Ic
-Nh
-wF
-wF
-wF
+aR
+WI
+WI
+WI
 dO
 Wi
 Wi
@@ -9160,7 +9114,7 @@ Wi
 IY
 Wi
 Wi
-wF
+WI
 hx
 Dd
 hz
@@ -9237,19 +9191,19 @@ Wi
 Wi
 ls
 Wi
-wF
-wF
-wF
-wF
-Nh
-Nh
-Nh
-Nh
-Nh
-sO
-sO
-sf
-sf
+WI
+WI
+WI
+WI
+aR
+aR
+aR
+aR
+aR
+WI
+WI
+aR
+aR
 uq
 uq
 Do
@@ -9316,14 +9270,14 @@ Wi
 ls
 Wi
 Wi
-Xg
+WI
 My
 tt
 Ag
 mM
 st
 lB
-sO
+WI
 Kw
 nj
 wO
@@ -9334,10 +9288,10 @@ zV
 rB
 qs
 Wy
-wF
-Nh
-wF
-wF
+WI
+aR
+WI
+WI
 dO
 Wi
 pH
@@ -9393,14 +9347,14 @@ Wi
 Wi
 KE
 HI
-Xg
+WI
 rg
 qw
 lo
 Pb
 kO
 DG
-sf
+aR
 Xq
 oT
 oT
@@ -9411,7 +9365,7 @@ nG
 gp
 qs
 AQ
-wF
+WI
 Wi
 dq
 Wi
@@ -9470,26 +9424,26 @@ DE
 DE
 DE
 aC
-qB
+aR
 GQ
-hW
+qU
 lo
 Pb
 kO
 NN
-sf
+aR
 xc
 Ed
 oT
 tT
-Nh
-Nh
-Nh
-Nh
+aR
+aR
+aR
+aR
 ER
 Wo
-Nh
-Nh
+aR
+aR
 Wi
 CR
 CR
@@ -9547,15 +9501,15 @@ DE
 DE
 fD
 DE
-qB
+aR
 Hz
 rs
 yi
 lM
 jB
 Em
-sO
-sO
+WI
+WI
 hg
 IB
 hb
@@ -9566,7 +9520,7 @@ GW
 xH
 NR
 wo
-sO
+WI
 CR
 Wi
 Wi
@@ -9624,16 +9578,16 @@ DE
 DE
 DE
 DE
-qB
+aR
 Cw
 uV
 OH
 pG
 js
-Xg
-Xg
-sO
-sO
+WI
+WI
+WI
+WI
 Sm
 rE
 ZQ
@@ -9643,7 +9597,7 @@ yC
 qU
 qU
 gE
-sO
+WI
 co
 ls
 br
@@ -9701,26 +9655,26 @@ DE
 DE
 DE
 DE
-qB
-xp
-xp
+aR
+vB
+vB
 Li
-xp
-xp
-Xg
+vB
+vB
+WI
 aC
 DE
-sf
-sf
-sO
-sO
-sO
-sO
+aR
+aR
+WI
+WI
+WI
+WI
 QO
 SL
 kU
 JY
-sO
+WI
 Wi
 Wi
 co
@@ -9778,13 +9732,13 @@ DE
 DE
 DE
 DE
-Ft
+aR
 VX
 QV
 bA
 Lx
 ni
-Ft
+aR
 DE
 DE
 Wi
@@ -9792,12 +9746,12 @@ Wi
 Wi
 Wi
 Wi
-sO
+WI
 Zt
 rm
 XX
 cS
-sf
+aR
 CR
 CR
 CR
@@ -9855,13 +9809,13 @@ DE
 DE
 DE
 DE
-pj
+WI
 rc
 jA
 jA
 qp
 ak
-Ft
+aR
 aC
 DE
 DE
@@ -9869,12 +9823,12 @@ Wi
 HI
 HI
 Wi
-sO
+WI
 Br
 PN
 PN
 Hl
-sO
+WI
 Wi
 Wi
 CR
@@ -9931,14 +9885,14 @@ aC
 aC
 DE
 DE
-pj
-pj
+WI
+WI
 vB
 vB
 vB
 rX
 YO
-Ft
+aR
 aC
 aC
 DE
@@ -9946,12 +9900,12 @@ DE
 Wi
 ls
 HI
-sO
-sO
-sO
-sO
-sO
-sO
+WI
+WI
+WI
+WI
+WI
+WI
 Wi
 Wi
 li
@@ -9963,10 +9917,10 @@ Wi
 Wi
 Wi
 Wi
-vy
-vy
-vy
-vy
+EM
+EM
+EM
+EM
 jc
 ls
 uA
@@ -10008,7 +9962,7 @@ zE
 zE
 DE
 DE
-Ft
+aR
 pP
 Ky
 PP
@@ -10017,9 +9971,9 @@ YS
 vB
 vB
 vB
-Ft
-Ft
-Ft
+aR
+aR
+aR
 Wi
 HI
 HI
@@ -10040,7 +9994,7 @@ Wi
 Wi
 Wi
 Wi
-vy
+EM
 my
 eU
 Tu
@@ -10085,7 +10039,7 @@ zE
 zE
 DE
 DE
-Ft
+aR
 kJ
 wH
 kk
@@ -10096,7 +10050,7 @@ Ci
 vB
 Tm
 Zs
-Ft
+aR
 Wi
 HI
 HI
@@ -10117,7 +10071,7 @@ Wi
 Wi
 Wi
 Wi
-vy
+EM
 wR
 dc
 EX
@@ -10162,7 +10116,7 @@ zE
 zE
 aC
 DE
-pj
+WI
 DF
 Zc
 dM
@@ -10192,14 +10146,14 @@ VM
 Wi
 Wi
 Wi
-tX
-tX
-vy
+AV
+AV
+EM
 Xi
 Yj
-vy
-vy
-vy
+EM
+EM
+EM
 uA
 uA
 Az
@@ -10239,7 +10193,7 @@ zE
 zE
 DE
 DE
-pj
+WI
 Hv
 Oh
 dM
@@ -10269,7 +10223,7 @@ VM
 Wi
 Wi
 Wi
-tX
+AV
 wt
 VQ
 lW
@@ -10316,7 +10270,7 @@ zE
 zE
 DE
 DE
-pj
+WI
 gY
 oi
 Qj
@@ -10327,7 +10281,7 @@ hP
 vB
 eE
 Kf
-pj
+WI
 Wi
 Wi
 Wi
@@ -10346,7 +10300,7 @@ DT
 Wi
 Wi
 Wi
-tX
+AV
 Xx
 qV
 lW
@@ -10393,7 +10347,7 @@ zE
 zE
 DE
 aC
-pj
+WI
 vB
 vB
 vB
@@ -10401,10 +10355,10 @@ UT
 vB
 vB
 vB
-pj
-pj
-pj
-pj
+WI
+WI
+WI
+WI
 Wi
 Wi
 HI
@@ -10423,7 +10377,7 @@ ot
 Yp
 Wi
 Wi
-vy
+EM
 uk
 MH
 Ei
@@ -10470,7 +10424,7 @@ zE
 zE
 DE
 DE
-Ft
+aR
 wi
 ms
 JR
@@ -10478,7 +10432,7 @@ ms
 Am
 pi
 zh
-pj
+WI
 Wi
 Wi
 Wi
@@ -10500,13 +10454,13 @@ lQ
 Wi
 ls
 Wi
-vy
+EM
 GU
 Ws
 Dr
 jJ
 CE
-vy
+EM
 EM
 fQ
 Hq
@@ -10547,7 +10501,7 @@ zE
 zE
 aC
 DE
-Ft
+aR
 nR
 fZ
 Ej
@@ -10555,7 +10509,7 @@ ms
 kR
 AR
 fk
-Ft
+aR
 Wi
 HI
 Wi
@@ -10577,7 +10531,7 @@ aH
 Wi
 Wi
 Wi
-vy
+EM
 Bw
 MH
 lX
@@ -10624,15 +10578,15 @@ zE
 zE
 zE
 zE
-pj
-pj
+WI
+WI
 Vf
 ms
 ms
 ck
 yu
 lO
-pj
+WI
 Wi
 Wi
 Wi
@@ -10654,8 +10608,8 @@ Lw
 Wi
 vA
 Wi
-tX
-tX
+AV
+AV
 XG
 lW
 aq
@@ -10702,14 +10656,14 @@ zE
 zE
 zE
 zE
-pj
+WI
 LG
 uB
 PI
 gt
 zI
 HW
-pj
+WI
 ls
 Yp
 Wi
@@ -10732,11 +10686,11 @@ vA
 Jj
 Jj
 ux
-tX
-tX
+AV
+AV
 SD
 gh
-tX
+AV
 AV
 fN
 wE
@@ -10779,23 +10733,23 @@ zE
 zE
 zE
 zE
-pj
-Ft
-Ft
-Ft
-pj
-pj
-pj
-Ft
+WI
+aR
+aR
+aR
+WI
+WI
+WI
+aR
 Wi
 Wi
 Wi
 Wi
-pR
-pR
-Pl
-Pl
-Pl
+Xe
+Xe
+MR
+MR
+MR
 Xe
 mR
 Sd
@@ -10868,7 +10822,7 @@ Wi
 Wi
 ls
 Wi
-Pl
+MR
 rd
 Js
 jL
@@ -10945,7 +10899,7 @@ Wi
 Wi
 Wi
 Wi
-pR
+Xe
 HM
 wg
 MY
@@ -11022,7 +10976,7 @@ Wi
 Wi
 Wi
 Wi
-pR
+Xe
 ki
 cZ
 Gp
@@ -11098,12 +11052,12 @@ zE
 Wi
 Wi
 Wi
-Pl
-pR
-pR
+MR
+Xe
+Xe
 iM
 gO
-pR
+Xe
 Xe
 dR
 Il
@@ -11174,8 +11128,8 @@ zE
 zE
 zE
 Wi
-Pl
-Pl
+MR
+MR
 Hx
 ce
 EI
@@ -11251,7 +11205,7 @@ zE
 zE
 zE
 zE
-Pl
+MR
 lq
 Rh
 ZE
@@ -11328,7 +11282,7 @@ zE
 zE
 zE
 zE
-pR
+Xe
 yP
 sW
 ZJ
@@ -11405,12 +11359,12 @@ zE
 zE
 zE
 zE
-pR
+Xe
 PQ
 Gu
 Yf
 tz
-Pl
+MR
 MR
 MR
 vK
@@ -11482,12 +11436,12 @@ zE
 zE
 zE
 zE
-pR
+Xe
 pl
 XP
 fb
 kI
-Pl
+MR
 Wi
 MR
 eS
@@ -11559,12 +11513,12 @@ zE
 zE
 zE
 zE
-pR
-pR
-pR
-pR
-pR
-pR
+Xe
+Xe
+Xe
+Xe
+Xe
+Xe
 Wi
 MR
 Xe
@@ -12408,7 +12362,7 @@ zE
 zE
 zE
 zE
-KQ
+zE
 zE
 zE
 zE
