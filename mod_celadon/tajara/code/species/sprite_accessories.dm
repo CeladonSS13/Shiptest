@@ -108,7 +108,7 @@
 /datum/sprite_accessory/tajara_nose_markings/tajnoise
 	name = "Taj nose"
 	icon_state = "tajnose"
-	secondary_color = FALSE
+	secondary_color_overlay = FALSE
 
 //Markings ears
 /datum/sprite_accessory/tajara_ears_markings
@@ -193,7 +193,7 @@
 /datum/sprite_accessory/tails/tajara
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_tail.dmi'
 	body_zone = BODY_ZONE_CHEST
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 
 /datum/sprite_accessory/tails_animated/tajara
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_tail.dmi'
@@ -477,7 +477,7 @@
 /datum/sprite_accessory/tajara_ears
 	icon = 'mod_celadon/_storage_icons/icons/species/tajara/tajara_ears.dmi'
 	body_zone = BODY_ZONE_HEAD
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 
 /datum/sprite_accessory/tajara_ears/plain
 	name = "Plain"

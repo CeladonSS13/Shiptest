@@ -4,11 +4,11 @@
 /datum/sprite_accessory/tails/lizard
 	icon = 'mod_celadon/_storage_icons/icons/resprite/species/sarathi/tails.dmi'
 	body_zone = BODY_ZONE_CHEST
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 
 /datum/sprite_accessory/tails_animated/lizard
 	icon = 'mod_celadon/_storage_icons/icons/resprite/species/sarathi/tails.dmi'
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 	body_zone = BODY_ZONE_CHEST
 
 /datum/sprite_accessory/spines
