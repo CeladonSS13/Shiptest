@@ -1,5 +1,5 @@
-/obj/item/storage/box/donkpockets/donkpockethonk
-	name = "box of banana-flavoured donk-pockets"
+/obj/item/storage/box/shoalpockets/honk
+	name = "box of banana-flavoured shoal-pockets"
 	icon_state = "donkpocketboxbanana"
-	donktype = /obj/item/food/donkpocket/honk
+	shoalpockettype = /obj/item/food/shoalpocket/pizza
 
