@@ -389,8 +389,8 @@
 			/obj/item/clothing/head/powdered_wig,
 			// - CELADON_MODSUITS
 			/obj/item/clothing/head, // Это создаст нелепицу, но мне интересно.
-			/obj/item/clothing/head/nanotrasen/captain/peaked,
-			/obj/item/clothing/head/nanotrasen,
+			/obj/item/clothing/head/warra/captain/peaked,
+			/obj/item/clothing/head/warra,
 			// [/CELADON-ADD]
 			/obj/item/clothing/head/papersack,
 			))

@@ -39,7 +39,7 @@
 
 /obj/item/toy/plush/celadon/sechound
 	name = "sec-hound plushie"
-	desc = "An adorable stuffed toy of a SecHound, the trusty Nanotrasen sponsored security borg!"
+	desc = "An adorable stuffed toy of a SecHound, the trusty Warra sponsored security borg!"
 	icon_state = "plushie_securityk9"
 	attack_verb = list("beep", "boop", "ping")
 	squeak_override = list('mod_celadon/_storage_sounds/sound/plushes/beep.ogg' = 1)
@@ -189,7 +189,7 @@
 
 /obj/item/toy/plush/celadon/lizzyplush
 	name = "odd yoga lizzy plushie"
-	desc = "Brought to you by Nanotrasen Wellness Program is the Yoga Odd Lizzy! He smells vaguely of blueberries, and likely resembles a horrible lover."
+	desc = "Brought to you by Warra Wellness Program is the Yoga Odd Lizzy! He smells vaguely of blueberries, and likely resembles a horrible lover."
 	icon_state = "plushie_lizzy"
 	attack_verb = list("weh")
 	squeak_override = list('mod_celadon/_storage_sounds/sound/plushes/voice/weh.ogg' = 1)

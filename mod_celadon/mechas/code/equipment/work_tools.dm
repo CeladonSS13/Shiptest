@@ -28,7 +28,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha_equipment.dmi'
 	icon_state = "ntcombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
-	result_mech = /obj/mecha/combat/gygax/nt
+	result_mech = /obj/mecha/combat/gygax/warra
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/hermes
 	name = "Hermes Conversion Kit"
@@ -97,13 +97,13 @@
 	source_mech = list(/obj/mecha/working/ripley/mkii)
 	result_mech = /obj/mecha/working/ripley/mkii/aluminizer
 
-/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/nanotrasen
-	name = "Nanotrasen Ripley MK-V Conversion Kit"
-	desc = "A Nanotrasen-custom lightweight canopy kit for an Autonomous Power Loader Unit \"Ripley\" MK-I mecha, to convert it to the mobile and spaceworthy Mk-V design. This kit cannot be removed, once applied."
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/warra
+	name = "Warra Ripley MK-V Conversion Kit"
+	desc = "A Warra-custom lightweight canopy kit for an Autonomous Power Loader Unit \"Ripley\" MK-I mecha, to convert it to the mobile and spaceworthy Mk-V design. This kit cannot be removed, once applied."
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha_equipment.dmi'
 	icon_state = "nanotrasenupgrade"
 	source_mech = list(/obj/mecha/working/ripley, /obj/mecha/working/ripley/mining)
-	result_mech = /obj/mecha/working/ripley/nanotrasen
+	result_mech = /obj/mecha/working/ripley/warra
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/solfed
 	name = "SolFed Ripley MK-IV Conversion Kit"

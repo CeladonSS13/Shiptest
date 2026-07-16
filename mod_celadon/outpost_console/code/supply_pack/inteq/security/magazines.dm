@@ -129,7 +129,7 @@
 // Plasma Weapon Cells (Export NT)
 /datum/supply_pack/faction/inteq/magazine/cellinteq
 	name = "P-Cell - Sharplite Proprietary Weapon Cell"
-	desc = "Contains an weapon cell, compatible with most Nanotrasen models."
+	desc = "Contains an weapon cell, compatible with most Warra models."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/empty)
 	cost = 2000
 */

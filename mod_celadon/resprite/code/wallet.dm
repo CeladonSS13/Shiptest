@@ -55,7 +55,7 @@
 	return "pirate_wallet_overlay"
 
 /obj/item/storage/wallet/nt_wallet
-	name = "nt wallet"
+	name = "warra wallet"
 	icon_state = "nt_wallet_closed"
 
 /obj/item/storage/wallet/nt_wallet/get_wallet_overlay_state()

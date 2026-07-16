@@ -207,9 +207,9 @@
 	icon_state = "syndi_shop"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
-/area/outpost/fraction/nanotrasen
-	name = "Faction Nanotrasen"
-	icon_state = "faction_nanotrasen"
+/area/outpost/fraction/warra
+	name = "Faction Warra"
+	icon_state = "faction_warra"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
 /area/outpost/fraction/solfed
@@ -273,8 +273,8 @@
 	lighting_colour_tube = "#c0845d"
 	lighting_colour_bulb = "#c0845d"
 
-/area/outpost/cargo/faction/nanotrasen
-	name = "Cargo Nanotrasen"
+/area/outpost/cargo/faction/warra
+	name = "Cargo Warra"
 	icon_state = "cargo_bay_nt"
 	lighting_colour_tube = "#384e68"
 	lighting_colour_bulb = "#384e68"

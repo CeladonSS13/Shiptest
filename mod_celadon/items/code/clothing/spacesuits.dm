@@ -34,7 +34,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic
 	name = "special forces command hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has blue highlights. Provides a really good amount of protection against environmental hazards."
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has blue highlights. Provides a really good amount of protection against environmental hazards."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/overlay/spacesuits_celadon.dmi'
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/spacesuits_celadon.dmi'
 	icon_state = "ert_commandold"
@@ -54,7 +54,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/sec
 	name = "special forces security hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has red highlights. Provides a good amount of protection against environmental hazards."
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has red highlights. Provides a good amount of protection against environmental hazards."
 	icon_state = "ert_securityold"
 	item_state = "ert_securityold"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/sec
@@ -72,7 +72,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/engi
 	name = "special forces engineering hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has orange highlights. Provides a good amount of protection against environmental hazards."
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has orange highlights. Provides a good amount of protection against environmental hazards."
 	icon_state = "ert_engineerold"
 	item_state = "ert_engineerold"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/engi
@@ -90,7 +90,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/med
 	name = "special forces medical hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has white highlights. Provides a good amount of protection against environmental hazards."
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has white highlights. Provides a good amount of protection against environmental hazards."
 	icon_state = "ert_medicalold"
 	item_state = "ert_medicalold"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/med
@@ -107,7 +107,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/jani
 	name = "special forces janitorial hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
 	icon_state = "ert_janitorold"
 	item_state = "ert_janitorold"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani

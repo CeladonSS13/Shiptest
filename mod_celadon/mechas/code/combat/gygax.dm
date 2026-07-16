@@ -8,15 +8,15 @@
 	force = 25
 	wreckage = /obj/structure/mecha_wreckage/gygax/dark
 
-/obj/mecha/combat/gygax/nt
+/obj/mecha/combat/gygax/warra
 	desc = "Легкий экзоскелет, перекрашенный. Похоже, что эта модель принадлежит НаноТрейзен."
-	name = "\improper NanoTrasen Gygax"
+	name = "\improper Warra Gygax"
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "ntgygax"
 	deflect_chance = 5
 	leg_overload_coeff = 80
 	force = 25
-	wreckage = /obj/structure/mecha_wreckage/gygax/nt
+	wreckage = /obj/structure/mecha_wreckage/gygax/warra
 
 /obj/mecha/combat/gygax/hermes
 	desc = "Легкий экзоскелет, перекрашенный. Похоже, что эта модель принадлежит Интеку."

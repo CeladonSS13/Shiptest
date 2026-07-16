@@ -2,57 +2,57 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Bolide-Class Response Carrier",
 	"map_short_name": "Bolide",
-	"description": "Bolide-Class представляет из себя переоборудованный артиллерийский корабль NT, используемый Vigilitas Interstellar как носитель команды Предотвращения потерь, для проведения анти-террористической активности и боевой-вспомогательной помощи дружественным суднам Nanotrasen в секторах, где гораздо более выгодно поддерживать команды LP долгого содержания, нежели вызывать полноценные, тяжело вооруженные отряды быстрого реагирования. Bolide имеет на себе приличное боевое снаряжение для команды реагирования, хорошее снаряжение для инженерной поддержки, а также полноценный субшаттл 'Rider', что позволяет команде вести долгосрочное оказание помощи в любых условиях фронтира.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_bolide.dmm",
+	"description": "Bolide-Class представляет из себя переоборудованный артиллерийский корабль NT, используемый Vigilitas Interstellar как носитель команды Предотвращения потерь, для проведения анти-террористической активности и боевой-вспомогательной помощи дружественным суднам warra в секторах, где гораздо более выгодно поддерживать команды LP долгого содержания, нежели вызывать полноценные, тяжело вооруженные отряды быстрого реагирования. Bolide имеет на себе приличное боевое снаряжение для команды реагирования, хорошее снаряжение для инженерной поддержки, а также полноценный субшаттл 'Rider', что позволяет команде вести долгосрочное оказание помощи в любых условиях фронтира.",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_bolide.dmm",
 	"subshuttle": "Rider",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 2000,
 	"prefix": "NTSPSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Боевой",
 		"Суб-шаттл"
 	],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"BRITISH_NAVY",
 		"WEAPONS"
 	],
 	"job_slots": {
 		"Carrier Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Response Lieutenant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hos",
+			"outfit": "/datum/outfit/job/cel/warra/hos",
 			"officer":true,
 			"slots": 1
 		},
 		"Dispatcher": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/lawyer",
+			"outfit": "/datum/outfit/job/cel/warra/lawyer",
 			"slots": 1
 		},
 		"Response Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/atmos",
+			"outfit": "/datum/outfit/job/cel/warra/atmos",
 			"slots": 1
 		},
 		"Response Physician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/warra/doctor",
 			"slots": 1
 		},
 		"Response Combatant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security",
+			"outfit": "/datum/outfit/job/cel/warra/security",
 			"slots": 2
 		},
 		"Carrier Engineer":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		},
 		"Carrier Deckhand": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/warra/assistant",
 			"slots": 2
 		}
 	}

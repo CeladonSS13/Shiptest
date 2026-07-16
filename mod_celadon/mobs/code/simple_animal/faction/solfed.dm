@@ -1,8 +1,8 @@
 /mob/living/simple_animal/hostile/human/solfed
 	name = "\improper SolFed Gehilfe"
 	desc = "A Gehilfe serving the SolFed navy. This one seems to have orders to report unauthorized individuals."
-	icon_state = "nanotrasen"
-	icon_living = "nanotrasen"
+	icon_state = "warra"
+	icon_living = "warra"
 	speak_chance = 0
 	stat_attack = HARD_CRIT
 	atmos_requirements = IMMUNE_ATMOS_REQS
@@ -132,7 +132,7 @@
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/gauss
 	name = "\improper SolFed Gaussmarine"
-	desc = "A Gaussmarine serving the SolFed navy. Proudly wields an imported Nanotrasen Gauss rifle, always on guard."
+	desc = "A Gaussmarine serving the SolFed navy. Proudly wields an imported Warra Gauss rifle, always on guard."
 	rapid = 3
 	rapid_fire_delay = 4
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/gauss

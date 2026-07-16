@@ -264,7 +264,7 @@
 /obj/machinery/newscaster/directional/north,
 /obj/machinery/airalarm/directional/west,
 /obj/structure/bed,
-/obj/item/bedsheet/nanotrasen,
+/obj/item/bedsheet/warra,
 /obj/structure/curtain/cloth,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/crew)
@@ -1217,8 +1217,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1459,10 +1459,10 @@
 	pixel_x = 19;
 	pixel_y = -12
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning,
+/obj/effect/turf_decal/trimline/opaque/warrablue/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "wG" = (
@@ -1934,8 +1934,8 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "DM" = (
-/obj/item/radio/headset/nanotrasen/alt,
-/obj/item/radio/headset/nanotrasen/alt,
+/obj/item/radio/headset/warra/alt,
+/obj/item/radio/headset/warra/alt,
 /obj/item/flashlight/seclite,
 /obj/item/flashlight/seclite,
 /obj/item/clothing/shoes/combat,
@@ -1944,12 +1944,12 @@
 /obj/item/melee/knife/survival,
 /obj/item/storage/backpack/security,
 /obj/item/storage/backpack/security,
-/obj/item/clothing/under/nanotrasen/security,
-/obj/item/clothing/under/nanotrasen/security,
-/obj/item/clothing/head/nanotrasen/beret/security,
-/obj/item/clothing/head/nanotrasen/beret/security,
-/obj/item/clothing/head/nanotrasen/cap/security,
-/obj/item/clothing/head/nanotrasen/cap/security,
+/obj/item/clothing/under/warra/security,
+/obj/item/clothing/under/warra/security,
+/obj/item/clothing/head/warra/beret/security,
+/obj/item/clothing/head/warra/beret/security,
+/obj/item/clothing/head/warra/cap/security,
+/obj/item/clothing/head/warra/cap/security,
 /obj/structure/closet/wall{
 	dir = 4;
 	pixel_x = 30
@@ -2022,7 +2022,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
 "Er" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/cargo)
 "EK" = (
@@ -2280,7 +2280,7 @@
 	dir = 4;
 	pixel_x = -6
 	},
-/obj/item/soap/nanotrasen,
+/obj/item/soap/warra,
 /turf/open/floor/carpet/blue,
 /area/ruin/wasteplanet/secure_claw/dorm)
 "Iz" = (
@@ -2313,10 +2313,10 @@
 	pixel_y = 30;
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning,
+/obj/effect/turf_decal/trimline/opaque/warrablue/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "IK" = (
@@ -2582,8 +2582,8 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -2687,13 +2687,13 @@
 /obj/item/clothing/mask/gas/sechailer/swat,
 /obj/item/clothing/mask/gas/sechailer,
 /obj/item/clothing/mask/gas/sechailer,
-/obj/item/clothing/suit/armor/nanotrasen,
-/obj/item/clothing/suit/armor/nanotrasen,
+/obj/item/clothing/suit/armor/warra,
+/obj/item/clothing/suit/armor/warra,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
-/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen,
+/obj/item/clothing/head/helmet/bulletproof/x11/warra,
+/obj/item/clothing/head/helmet/bulletproof/x11/warra,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
 "Oj" = (
@@ -2760,10 +2760,10 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/corner{
+/obj/effect/turf_decal/trimline/opaque/warrablue/corner{
 	dir = 4
 	},
 /obj/machinery/button/door{
@@ -3082,17 +3082,17 @@
 	name = "security medic's locker";
 	req_access_txt = "5"
 	},
-/obj/item/clothing/under/nanotrasen/medical/paramedic,
-/obj/item/clothing/under/nanotrasen/medical,
+/obj/item/clothing/under/warra/medical/paramedic,
+/obj/item/clothing/under/warra/medical,
 /obj/item/reagent_containers/hypospray/combat,
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/head/nanotrasen/cap/medical,
-/obj/item/clothing/head/nanotrasen/surgical/blue,
-/obj/item/clothing/suit/toggle/labcoat/nanotrasen/paramedic,
-/obj/item/clothing/suit/nanotrasen/medical_smock,
-/obj/item/clothing/suit/nanotrasen/vest/blue,
-/obj/item/clothing/suit/nanotrasen/suitjacket,
+/obj/item/clothing/head/warra/cap/medical,
+/obj/item/clothing/head/warra/surgical/blue,
+/obj/item/clothing/suit/toggle/labcoat/warra/paramedic,
+/obj/item/clothing/suit/warra/medical_smock,
+/obj/item/clothing/suit/warra/vest/blue,
+/obj/item/clothing/suit/warra/suitjacket,
 /obj/item/clothing/gloves/color/latex/nitrile,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -3279,7 +3279,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ruin/wasteplanet/secure_claw/control)
 "XG" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "XH" = (
@@ -3324,10 +3324,10 @@
 /obj/machinery/firealarm/directional/north{
 	pixel_x = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/corner,
+/obj/effect/turf_decal/trimline/opaque/warrablue/corner,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Yz" = (

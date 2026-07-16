@@ -101,7 +101,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "aK" = (
-/obj/effect/turf_decal/nanotrasen/ns,
+/obj/effect/turf_decal/warra/ns,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
@@ -123,7 +123,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /obj/structure/chair/handrail,
@@ -237,7 +237,7 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/sign/flag/nanotrasen{
+/obj/item/sign/flag/warra{
 	pixel_x = 0;
 	pixel_y = 1
 	},
@@ -245,7 +245,7 @@
 	pixel_x = -6;
 	pixel_y = 8
 	},
-/obj/item/desk_flag/nanotrasen{
+/obj/item/desk_flag/warra{
 	pixel_x = 10;
 	pixel_y = -2
 	},
@@ -610,7 +610,7 @@
 	pixel_x = -5;
 	pixel_y = 3
 	},
-/obj/item/stamp/nanotrasen/vigilitas{
+/obj/item/stamp/warra/vigilitas{
 	pixel_x = 6;
 	pixel_y = -4
 	},
@@ -731,7 +731,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/canteen)
 "ez" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -828,7 +828,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
@@ -847,7 +847,7 @@
 	layer = 2.029
 	},
 /obj/effect/turf_decal/trimline/opaque/white/corner,
-/obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
+/obj/structure/sign/poster/warra/ns_logistics_ad{
 	pixel_x = -5;
 	pixel_y = 32
 	},
@@ -879,7 +879,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
@@ -966,7 +966,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1466,10 +1466,10 @@
 	name = "armor locker";
 	icon_state = "armory"
 	},
-/obj/item/clothing/suit/armor/nanotrasen,
-/obj/item/clothing/suit/armor/nanotrasen,
-/obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/m10/nanotrasen{
+/obj/item/clothing/suit/armor/warra,
+/obj/item/clothing/suit/armor/warra,
+/obj/item/clothing/suit/armor/warra/slim,
+/obj/item/clothing/head/helmet/m10/warra{
 	pixel_x = -7;
 	pixel_y = 8
 	},
@@ -1628,7 +1628,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "of" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering)
 "og" = (
@@ -1694,8 +1694,8 @@
 /area/ship/engineering)
 "oD" = (
 /obj/structure/rack,
-/obj/item/aiModule/core/full/nanotrasen{
-	name = "'Nanotrasen' Core AI Module";
+/obj/item/aiModule/core/full/warra{
+	name = "'warra' Core AI Module";
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -1823,10 +1823,10 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
-/obj/machinery/fax/nanotrasen{
+/obj/machinery/fax/warra{
 	pixel_x = 32;
 	pixel_y = 9
 	},
@@ -1878,7 +1878,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ql" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium,
 /area/ship/science/robotics)
 "qE" = (
@@ -2004,11 +2004,11 @@
 "rI" = (
 /obj/structure/closet/wall/directional/north,
 /obj/structure/dresser,
-/obj/item/clothing/under/nanotrasen{
+/obj/item/clothing/under/warra{
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/clothing/head/nanotrasen{
+/obj/item/clothing/head/warra{
 	pixel_x = -7;
 	pixel_y = 10
 	},
@@ -2024,7 +2024,7 @@
 	pixel_x = 6;
 	pixel_y = -2
 	},
-/obj/item/clothing/under/nanotrasen{
+/obj/item/clothing/under/warra{
 	pixel_x = -8;
 	pixel_y = -2
 	},
@@ -2032,7 +2032,7 @@
 	pixel_x = -6;
 	pixel_y = -10
 	},
-/obj/item/clothing/head/nanotrasen{
+/obj/item/clothing/head/warra{
 	pixel_x = -7;
 	pixel_y = 10
 	},
@@ -2128,7 +2128,7 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/science)
 "tr" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 8
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -2177,7 +2177,7 @@
 	pixel_x = 5;
 	pixel_y = 9
 	},
-/obj/item/clothing/under/nanotrasen/science{
+/obj/item/clothing/under/warra/science{
 	pixel_x = -10;
 	pixel_y = 8
 	},
@@ -2194,7 +2194,7 @@
 	dir = 1
 	},
 /obj/item/storage/box/stockparts/basic,
-/obj/item/clothing/suit/toggle/labcoat/nanotrasen{
+/obj/item/clothing/suit/toggle/labcoat/warra{
 	pixel_x = -10;
 	pixel_y = -4
 	},
@@ -2254,7 +2254,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uY" = (
@@ -2267,7 +2267,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -2302,7 +2302,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2350,7 +2350,7 @@
 	name = "science director's suit storage unit"
 	},
 /obj/item/clothing/suit/space/hardsuit/bomb{
-	name = "Nanotrasen EOD hardsuit"
+	name = "warra EOD hardsuit"
 	},
 /obj/item/clothing/mask/gas,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2401,12 +2401,12 @@
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
-/obj/item/stamp/nanotrasen/ns/captain{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half,
+/obj/item/stamp/warra/ns/captain{
 	pixel_x = 2;
 	pixel_y = -4
 	},
-/obj/item/stamp/nanotrasen{
+/obj/item/stamp/warra{
 	pixel_x = 11;
 	pixel_y = -4
 	},
@@ -2515,7 +2515,7 @@
 	pixel_x = 8;
 	pixel_y = 12
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -2
 	},
@@ -2527,11 +2527,11 @@
 	pixel_x = 9;
 	pixel_y = -7
 	},
-/obj/item/clothing/under/nanotrasen/science/director{
+/obj/item/clothing/under/warra/science/director{
 	pixel_x = 8;
 	pixel_y = -8
 	},
-/obj/item/clothing/suit/toggle/labcoat/nanotrasen/black{
+/obj/item/clothing/suit/toggle/labcoat/warra/black{
 	pixel_x = 8;
 	pixel_y = 0
 	},
@@ -2669,7 +2669,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
 "xz" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -2735,7 +2735,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/structure/sign/nanotrasen/ns{
+/obj/structure/sign/warra/ns{
 	pixel_y = 32
 	},
 /obj/structure/table,
@@ -2818,7 +2818,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -2937,7 +2937,7 @@
 	pixel_x = -8;
 	pixel_y = 0
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/north,
@@ -3002,7 +3002,7 @@
 	dir = 1
 	},
 /obj/structure/table/reinforced,
-/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/nanotrasen{
+/obj/item/mecha_parts/mecha_equipment/conversion_kit/ripley/warra{
 	pixel_x = 0;
 	pixel_y = 2
 	},
@@ -3021,7 +3021,7 @@
 /obj/structure/railing{
 	dir = 4
 	},
-/obj/structure/sign/nanotrasen/ns{
+/obj/structure/sign/warra/ns{
 	pixel_x = 0;
 	pixel_y = -32
 	},
@@ -3267,7 +3267,7 @@
 	pixel_x = -4;
 	pixel_y = -5
 	},
-/obj/item/clothing/under/nanotrasen/science/robotics{
+/obj/item/clothing/under/warra/science/robotics{
 	pixel_x = -10;
 	pixel_y = 8
 	},
@@ -3716,7 +3716,7 @@
 /obj/structure/closet/wall/directional/east,
 /obj/item/mop,
 /obj/item/reagent_containers/glass/bucket,
-/obj/item/soap/nanotrasen,
+/obj/item/soap/warra,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 9
@@ -3736,7 +3736,7 @@
 /obj/effect/turf_decal/trimline/transparent/white/filled/warning{
 	dir = 8
 	},
-/obj/structure/sign/nanotrasen/vigilitas{
+/obj/structure/sign/warra/vigilitas{
 	pixel_x = -31;
 	pixel_y = 0
 	},
@@ -3927,7 +3927,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Ib" = (
@@ -3994,7 +3994,7 @@
 /turf/open/floor/wood/yew,
 /area/ship/crew/canteen)
 "IJ" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium,
 /area/ship/cargo/port)
 "IM" = (
@@ -4065,8 +4065,8 @@
 /obj/item/gun/energy/sharplite/x26,
 /obj/item/stock_parts/cell/gun/sharplite/mini,
 /obj/item/stock_parts/cell/gun/sharplite/mini,
-/obj/item/stamp/nanotrasen/ns,
-/obj/item/clothing/neck/cloak/nanotrasen{
+/obj/item/stamp/warra/ns,
+/obj/item/clothing/neck/cloak/warra{
 	pixel_x = 5;
 	pixel_y = -7
 	},
@@ -4082,11 +4082,11 @@
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/radio/headset/nanotrasen/captain{
+/obj/item/radio/headset/warra/captain{
 	pixel_x = -3;
 	pixel_y = -2
 	},
-/obj/item/clothing/under/nanotrasen/supply/qm{
+/obj/item/clothing/under/warra/supply/qm{
 	pixel_x = -7;
 	pixel_y = -9
 	},
@@ -4110,7 +4110,7 @@
 	pixel_y = 14;
 	pixel_x = 7
 	},
-/obj/item/radio/headset/nanotrasen/alt/captain,
+/obj/item/radio/headset/warra/alt/captain,
 /obj/item/clipboard{
 	pixel_x = 8;
 	pixel_y = -8
@@ -4119,7 +4119,7 @@
 	dir = 8
 	},
 /obj/item/megaphone/cargo,
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = -8;
 	pixel_y = 8
 	},
@@ -4188,7 +4188,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -4400,23 +4400,23 @@
 /obj/structure/closet/wall/directional/west{
 	name = "Utility Closet"
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 9
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = -3
 	},
@@ -4562,7 +4562,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "NZ" = (
@@ -4710,7 +4710,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -4871,12 +4871,12 @@
 /obj/item/melee/knife/survival,
 /obj/item/storage/belt/mining/alt,
 /obj/item/clothing/glasses/meson,
-/obj/item/clothing/suit/nanotrasen/vest,
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/suit/warra/vest,
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/hardhat/nanotrasen{
+/obj/item/clothing/head/hardhat/warra{
 	pixel_x = -5;
 	pixel_y = 8
 	},
@@ -4884,7 +4884,7 @@
 	pixel_x = -8;
 	pixel_y = -8
 	},
-/obj/item/clothing/under/nanotrasen/supply/miner{
+/obj/item/clothing/under/warra/supply/miner{
 	pixel_x = 9;
 	pixel_y = -10
 	},
@@ -5176,12 +5176,12 @@
 /obj/item/melee/knife/survival,
 /obj/item/storage/belt/mining/alt,
 /obj/item/clothing/glasses/meson,
-/obj/item/clothing/suit/nanotrasen/vest,
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/suit/warra/vest,
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/hardhat/nanotrasen{
+/obj/item/clothing/head/hardhat/warra{
 	pixel_x = -5;
 	pixel_y = 8
 	},
@@ -5189,7 +5189,7 @@
 	pixel_x = -8;
 	pixel_y = -8
 	},
-/obj/item/clothing/under/nanotrasen/supply/miner{
+/obj/item/clothing/under/warra/supply/miner{
 	pixel_x = 9;
 	pixel_y = -10
 	},
@@ -5545,7 +5545,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/line{
 	dir = 1
 	},
 /obj/machinery/button/door{
@@ -5615,8 +5615,8 @@
 	pixel_y = 0;
 	pixel_x = -32
 	},
-/obj/item/clothing/head/hardhat/nanotrasen/blue,
-/obj/item/clothing/suit/nanotrasen/vest,
+/obj/item/clothing/head/hardhat/warra/blue,
+/obj/item/clothing/suit/warra/vest,
 /obj/effect/turf_decal/borderfloor{
 	dir = 9
 	},
@@ -5846,8 +5846,8 @@
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/attachment/rail_light,
 /obj/item/storage/box/handcuffs,
-/obj/item/clothing/under/nanotrasen/security,
-/obj/item/clothing/head/nanotrasen/cap/security{
+/obj/item/clothing/under/warra/security,
+/obj/item/clothing/head/warra/cap/security{
 	pixel_x = -9;
 	pixel_y = 9
 	},
@@ -5860,7 +5860,7 @@
 	pixel_x = 7;
 	pixel_y = -5
 	},
-/obj/item/clothing/head/nanotrasen/beret/security{
+/obj/item/clothing/head/warra/beret/security{
 	pixel_x = 7;
 	pixel_y = 9
 	},
@@ -5886,7 +5886,7 @@
 	pixel_x = 19;
 	pixel_y = 11
 	},
-/obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
+/obj/structure/sign/poster/warra/vigilitas_nonlethal{
 	pixel_x = 0;
 	pixel_y = -32
 	},

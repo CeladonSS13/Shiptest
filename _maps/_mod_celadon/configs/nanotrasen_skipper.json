@@ -3,19 +3,19 @@
 	"map_name": "Skipper-class Heavy Cruiser",
 	"map_short_name": "Skipper",
 	"description": "Пример одного из крейсеров Нанотрейзена 'стандартного образца'. По меркам Фронтира судно класса 'Skipper' хорошо оснащено: достаточно места для инженерного оборудования, хорошо оборудованные места для экипажа и приличный запас оборонительного вооружения. Примечательно, что на 'Skipper' больше, чем в среднем, командный отсек, а офицеры на 'Skipper', как правило, лучше оснащены, чем их коллеги. Хотя должность на борту 'Osprey' не так престижна, как на 'Нанотрейзене', мало кто из капитанов откажется от командования 'Skipper'.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_skipper.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_skipper.dmm",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 4500,
 	"prefix": "NTSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Engineering",
 		"Mining"
 	],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"SPACE",
 		"MYTHOLOGICAL",
 		"WEAPONS",
@@ -23,55 +23,55 @@
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"First Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hop",
+			"outfit": "/datum/outfit/job/cel/warra/hop",
 			"officer": true,
 			"slots": 1
 		},
 		"Supply Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/quartermaster",
+			"outfit": "/datum/outfit/job/cel/warra/quartermaster",
 			"officer": true,
 			"slots": 1
 		},
 		"Security Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hos",
+			"outfit": "/datum/outfit/job/cel/warra/hos",
 			"officer": true,
 			"slots" : 1
 		},
 		"Security Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security",
+			"outfit": "/datum/outfit/job/cel/warra/security",
 			"slots": 2
 		},
 		"Medical Specialist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/warra/doctor",
 			"slots": 1
 		},
 		"Ship's Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		},
 		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/atmos",
+			"outfit": "/datum/outfit/job/cel/warra/atmos",
 			"slots": 1
 		},
 		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/miner",
+			"outfit": "/datum/outfit/job/cel/warra/miner",
 			"slots": 2
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/cook",
+			"outfit": "/datum/outfit/job/cel/warra/cook",
 			"slots": 1
 		},
 		"Bartender": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/bartender",
+			"outfit": "/datum/outfit/job/cel/warra/bartender",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/warra/assistant",
 			"slots": 2
 		}
 	}

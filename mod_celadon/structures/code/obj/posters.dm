@@ -505,10 +505,10 @@
 
 /obj/structure/sign/poster/tg/tg_9
 	name = "Missing Gloves"
-	desc = "This poster is about the uproar that followed NanoTrasen's financial cuts towards insulated-glove purchases."
+	desc = "This poster is about the uproar that followed Warra's financial cuts towards insulated-glove purchases."
 	icon_state = "poster9"
 
 /obj/structure/sign/poster/tg/tg_10
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common NanoTrasen airlock."
+	desc = "This poster details the internal workings of the common Warra airlock."
 	icon_state = "poster10"

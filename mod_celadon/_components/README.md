@@ -84,7 +84,7 @@ CELADON_COMPONENTS
 - `#define FACTION_SYNDICATE "Syndicate"`
 - `#define FACTION_SOLFED "SolGov"`
 - `#define FACTION_INTEQ "Inteq Risk Management Group"`
-- `#define FACTION_NT "Nanotrasen"`
+- `#define FACTION_NT "Warra"`
 - `#define FACTION_INDEPENDENT "Independent"`
 - `#define FACTION_ELYSIUM "Elysium"`
 - `#define PREFIX_SYNDICATE list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV")`

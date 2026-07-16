@@ -181,7 +181,7 @@
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/standart/nanotrasen_main
-	name = "EX - Nanotrasen AC"
+	name = "EX - Warra AC"
 	limbs_id = "ns"
 	replacement_bodyparts = list(
 		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/nanotrasen_main,

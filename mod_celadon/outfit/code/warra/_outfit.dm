@@ -1,12 +1,12 @@
-/datum/outfit/job/cel/nanotrasen
-	name = "Nanotrasen - Base Outfit"
-	faction = FACTION_PLAYER_NANOTRASEN
+/datum/outfit/job/cel/warra
+	name = "Warra - Base Outfit"
+	faction = FACTION_PLAYER_WARRA
 	faction_icon = "bg_nanotrasen"
 
-	box = /obj/item/storage/box/survival/nanotrasen
+	box = /obj/item/storage/box/survival/warra
 	id = /obj/item/card/id
 
-/datum/outfit/job/cel/nanotrasen/proc/get_nt_general_access(mob/living/carbon/human/H)
+/datum/outfit/job/cel/warra/proc/get_nt_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
@@ -25,7 +25,7 @@
 		for (var/obj/item/card/id/card in W.contents)
 			W.combined_access |= card.access
 
-/datum/outfit/job/cel/nanotrasen/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/warra/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_nt_general_access(H)
 
@@ -33,7 +33,7 @@
 
 // MARK: CENTCOM
 
-/datum/outfit/job/cel/nanotrasen/captain/centcom
+/datum/outfit/job/cel/warra/captain/centcom
 	name = "NT - Captain (Central Command)"
 
 	uniform = /obj/item/clothing/under/rank/centcom/officer
@@ -42,7 +42,7 @@
 
 // MARK: ERT
 
-/datum/outfit/job/cel/nanotrasen/security/ert
+/datum/outfit/job/cel/warra/security/ert
 	name = "NT - ERT Officer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/camo
@@ -53,23 +53,23 @@
 	r_pocket = /obj/item/melee/knife/survival
 	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite)
 
-/datum/outfit/job/cel/nanotrasen/security/ert/commander
+/datum/outfit/job/cel/warra/security/ert/commander
 	job_icon = "assistant"
 	name = "NT - ERT Сommander"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/blueshirt
 	shoes = /obj/item/clothing/shoes/combat
 	suit = /obj/item/clothing/suit/armor/vest/marine
-	head = /obj/item/clothing/head/nanotrasen/beret
+	head = /obj/item/clothing/head/warra/beret
 	backpack = /obj/item/storage/backpack/ert
 	belt = /obj/item/storage/belt/military/assault
 	id = /obj/item/card/id/ert
-	ears = /obj/item/radio/headset/nanotrasen/alt
+	ears = /obj/item/radio/headset/warra/alt
 	r_pocket = /obj/item/melee/knife/survival
-	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite, /obj/item/gun_voucher/nanotrasen)
+	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite, /obj/item/gun_voucher/warra)
 	glasses = /obj/item/clothing/glasses/sunglasses
 
-/datum/outfit/job/cel/nanotrasen/security/ert/engi
+/datum/outfit/job/cel/warra/security/ert/engi
 	name = "NT - ERT Engineering Officer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/camo
@@ -82,7 +82,7 @@
 	accessory = /obj/item/clothing/accessory/armband/engine
 	glasses = /obj/item/clothing/glasses/hud/diagnostic/sunglasses
 
-/datum/outfit/job/cel/nanotrasen/security/ert/med
+/datum/outfit/job/cel/warra/security/ert/med
 	name = "NT - ERT Medical Officer"
 
 	uniform = /obj/item/clothing/under/rank/security/officer/camo
@@ -97,7 +97,7 @@
 
 // MARK: COMMAND
 // Captain
-/datum/outfit/job/cel/nanotrasen/captain
+/datum/outfit/job/cel/warra/captain
 	name = "NT - Captain"
 	job_icon = "captain"
 
@@ -105,16 +105,16 @@
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/captain
-	gloves = /obj/item/clothing/gloves/color/captain/nt
-	ears = /obj/item/radio/headset/nanotrasen/captain
-	uniform = /obj/item/clothing/under/nanotrasen/captain
-	alt_uniform = /obj/item/clothing/under/nanotrasen/captain/skirt
-	suit = /obj/item/clothing/suit/armor/nanotrasen/captain
-	alt_suit = /obj/item/clothing/suit/armor/nanotrasen/captain/parade
+	gloves = /obj/item/clothing/gloves/color/captain/warra
+	ears = /obj/item/radio/headset/warra/captain
+	uniform = /obj/item/clothing/under/warra/captain
+	alt_uniform = /obj/item/clothing/under/warra/captain/skirt
+	suit = /obj/item/clothing/suit/armor/warra/captain
+	alt_suit = /obj/item/clothing/suit/armor/warra/captain/parade
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/laceup
-	neck = /obj/item/clothing/neck/cloak/nanotrasen
-	head = /obj/item/clothing/head/nanotrasen/captain/peaked
+	neck = /obj/item/clothing/neck/cloak/warra
+	head = /obj/item/clothing/head/warra/captain/peaked
 	backpack_contents = null
 
 	backpack = /obj/item/storage/backpack/captain
@@ -128,7 +128,7 @@
 
 	implants = list(/obj/item/implant/mindshield)
 
-/datum/outfit/job/cel/nanotrasen/hos
+/datum/outfit/job/cel/warra/hos
 	job_icon = "headofsecurity"
 	name = "NT - Head of Security"
 
@@ -136,11 +136,11 @@
 
 	id = /obj/item/card/id/silver
 	belt = /obj/item/pda/heads/hos
-	ears = /obj/item/radio/headset/nanotrasen/alt
-	uniform = /obj/item/clothing/under/nanotrasen/security/director
+	ears = /obj/item/radio/headset/warra/alt
+	uniform = /obj/item/clothing/under/warra/security/director
 	shoes = /obj/item/clothing/shoes/jackboots
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	head = /obj/item/clothing/head/warra/beret/security/command
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 
 	backpack = /obj/item/storage/backpack/security
@@ -153,7 +153,7 @@
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hos)
 
 // Директор СБ - ХОС капитан
-/datum/outfit/job/cel/nanotrasen/hos/captain
+/datum/outfit/job/cel/warra/hos/captain
 	name = "NT - Security Director (Captain)"
 	job_icon = "headofsecurity"
 
@@ -162,14 +162,14 @@
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/hos
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	uniform = /obj/item/clothing/under/nanotrasen/security/director
-	suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
+	ears = /obj/item/radio/headset/warra/alt/captain
+	uniform = /obj/item/clothing/under/warra/security/director
+	suit = /obj/item/clothing/suit/armor/warra/sec_director
 	alt_suit = /obj/item/clothing/suit/toggle/armor/parade/red
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/combat
 	neck = /obj/item/clothing/neck/scarf/black
-	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	head = /obj/item/clothing/head/warra/beret/security/command
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -181,7 +181,7 @@
 	chameleon_extras = /obj/item/stamp/hos
 
 // Head of Personnel
-/datum/outfit/job/cel/nanotrasen/hop
+/datum/outfit/job/cel/warra/hop
 	name = "NT - Head of Personnel"
 	job_icon = "headofpersonnel"
 	jobtype = /datum/job/head_of_personnel
@@ -189,12 +189,12 @@
 	belt = /obj/item/pda/heads/head_of_personnel
 	id = /obj/item/card/id/silver
 	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/nanotrasen/officer
-	alt_uniform = /obj/item/clothing/under/nanotrasen/officer/skirt
-	suit = /obj/item/clothing/suit/toggle/nanotrasen
+	uniform = /obj/item/clothing/under/warra/officer
+	alt_uniform = /obj/item/clothing/under/warra/officer/skirt
+	suit = /obj/item/clothing/suit/toggle/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/laceup
-	head = /obj/item/clothing/head/nanotrasen/officer
+	head = /obj/item/clothing/head/warra/officer
 
 	backpack_contents = list(/obj/item/storage/box/ids = 1)
 
@@ -205,10 +205,10 @@
 
 	chameleon_extras = list(
 						/obj/item/gun/energy/e_gun,
-						/obj/item/stamp/nanotrasen/officer,
+						/obj/item/stamp/warra/officer,
 						)
 
-/datum/outfit/job/cel/nanotrasen/ce
+/datum/outfit/job/cel/warra/ce
 	job_icon = "chiefengineer"
 	name = "NT - Chief Engineer"
 
@@ -217,10 +217,10 @@
 	id = /obj/item/card/id/silver
 	belt = /obj/item/storage/belt/utility/chief/full
 	ears = /obj/item/radio/headset/headset_com
-	uniform = /obj/item/clothing/under/nanotrasen/engineering/director
+	uniform = /obj/item/clothing/under/warra/engineering/director
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	head = /obj/item/clothing/head/hardhat/nanotrasen/white
+	head = /obj/item/clothing/head/hardhat/warra/white
 	gloves = /obj/item/clothing/gloves/color/black
 
 	backpack = /obj/item/storage/backpack/industrial
@@ -231,7 +231,7 @@
 	chameleon_extras = /obj/item/stamp/ce
 
 // Инженерный Директор - СЕ капитан
-/datum/outfit/job/cel/nanotrasen/ce/captain
+/datum/outfit/job/cel/warra/ce/captain
 	name = "NT - Engineering Director (Captain)"
 	job_icon = "chiefengineer"
 
@@ -240,12 +240,12 @@
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/ce
 	gloves = /obj/item/clothing/gloves/color/yellow
-	ears = /obj/item/radio/headset/nanotrasen/captain
-	uniform = /obj/item/clothing/under/nanotrasen/engineering/director
+	ears = /obj/item/radio/headset/warra/captain
+	uniform = /obj/item/clothing/under/warra/engineering/director
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/orange
-	head = /obj/item/clothing/head/hardhat/nanotrasen/white
+	head = /obj/item/clothing/head/hardhat/warra/white
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
@@ -257,7 +257,7 @@
 	chameleon_extras = /obj/item/stamp/ce
 
 // Научный директор - РД
-/datum/outfit/job/cel/nanotrasen/rd
+/datum/outfit/job/cel/warra/rd
 	name = "NT - Science Director"
 	job_icon = "researchdirector"
 
@@ -265,10 +265,10 @@
 
 	id = /obj/item/card/id/silver
 	head = /obj/item/clothing/head/beret/rd
-	ears = /obj/item/radio/headset/nanotrasen
-	uniform = /obj/item/clothing/under/nanotrasen/science/director
+	ears = /obj/item/radio/headset/warra
+	uniform = /obj/item/clothing/under/warra/science/director
 	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/black
+	suit = /obj/item/clothing/suit/toggle/labcoat/warra/black
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 	l_hand = /obj/item/clipboard
@@ -281,18 +281,18 @@
 	chameleon_extras = /obj/item/stamp/rd
 
 // Медицинский директор - СМО
-/datum/outfit/job/cel/nanotrasen/cmo
+/datum/outfit/job/cel/warra/cmo
 	name = "NT - Medical Director"
 	job_icon = "chiefmedicalofficer"
 
 	jobtype = /datum/job/cmo
 
 	id = /obj/item/card/id/silver
-	ears = /obj/item/radio/headset/nanotrasen
+	ears = /obj/item/radio/headset/warra
 	head = /obj/item/clothing/head/beret/cmo
-	uniform = /obj/item/clothing/under/nanotrasen/medical/director
+	uniform = /obj/item/clothing/under/warra/medical/director
 	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/blue
+	suit = /obj/item/clothing/suit/toggle/labcoat/warra/blue
 	alt_suit = /obj/item/clothing/suit/toggle/suspenders
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 
@@ -303,7 +303,7 @@
 	chameleon_extras = /obj/item/stamp/cmo
 
 // Медицинский Директор - СМО капитан
-/datum/outfit/job/cel/nanotrasen/cmo/captain
+/datum/outfit/job/cel/warra/cmo/captain
 	name = "NT - Medical Director (Captain)"
 	job_icon = "chiefmedicalofficer"
 
@@ -312,9 +312,9 @@
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/cmo
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	ears = /obj/item/radio/headset/nanotrasen/captain
-	uniform = /obj/item/clothing/under/nanotrasen/medical/director
-	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/blue
+	ears = /obj/item/radio/headset/warra/captain
+	uniform = /obj/item/clothing/under/warra/medical/director
+	suit = /obj/item/clothing/suit/toggle/labcoat/warra/blue
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	shoes = /obj/item/clothing/shoes/laceup
 	neck = /obj/item/clothing/neck/tie/blue
@@ -330,7 +330,7 @@
 	chameleon_extras = /obj/item/stamp/cmo
 
 // Quartermaster
-/datum/outfit/job/cel/nanotrasen/quartermaster
+/datum/outfit/job/cel/warra/quartermaster
 	name = "NT - Quartermaster"
 	job_icon = "quartermaster"
 
@@ -338,8 +338,8 @@
 
 	id = /obj/item/card/id/gold
 	ears = /obj/item/radio/headset/headset_cargo
-	head = /obj/item/clothing/head/nanotrasen/cap/supply
-	uniform = /obj/item/clothing/under/nanotrasen/supply/qm
+	head = /obj/item/clothing/head/warra/cap/supply
+	uniform = /obj/item/clothing/under/warra/supply/qm
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
 	shoes = /obj/item/clothing/shoes/sneakers/brown
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -350,7 +350,7 @@
 
 // MARK: ENGINEERING
 
-/datum/outfit/job/cel/nanotrasen/engineer
+/datum/outfit/job/cel/warra/engineer
 	job_icon = "stationengineer"
 	name = "NT - Engineer"
 
@@ -359,7 +359,7 @@
 	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/nanotrasen/engineering
+	uniform = /obj/item/clothing/under/warra/engineering
 	head = /obj/item/clothing/head/hardhat
 	suit = /obj/item/clothing/suit/hazardvest
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
@@ -372,7 +372,7 @@
 
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
-/datum/outfit/job/cel/nanotrasen/atmos
+/datum/outfit/job/cel/warra/atmos
 	job_icon = "stationengineer"
 	name = "NT - Atmos Tech"
 
@@ -380,9 +380,9 @@
 
 	belt = /obj/item/storage/belt/utility/atmostech
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/nanotrasen/engineering/atmos
-	head = /obj/item/clothing/head/hardhat/nanotrasen/blue
-	suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+	uniform = /obj/item/clothing/under/warra/engineering/atmos
+	head = /obj/item/clothing/head/hardhat/warra/blue
+	suit = /obj/item/clothing/suit/warra/vest/blue
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 
 	backpack = /obj/item/storage/backpack/industrial
@@ -393,18 +393,18 @@
 
 // MARK: SECURITY
 
-/datum/outfit/job/cel/nanotrasen/security
+/datum/outfit/job/cel/warra/security
 	job_icon = "securityofficer"
 	name = "NT - Security Officer"
 
 	jobtype = /datum/job/officer
 
 	ears = /obj/item/radio/headset/alt
-	uniform = /obj/item/clothing/under/nanotrasen/security
+	uniform = /obj/item/clothing/under/warra/security
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/nanotrasen/cap/security
-	suit = /obj/item/clothing/suit/armor/nanotrasen
-	alt_suit = /obj/item/clothing/suit/armor/nanotrasen/slim
+	head = /obj/item/clothing/head/warra/cap/security
+	suit = /obj/item/clothing/suit/armor/warra
+	alt_suit = /obj/item/clothing/suit/armor/warra/slim
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/restraints/handcuffs
@@ -418,13 +418,13 @@
 
 	chameleon_extras = list(/obj/item/gun/energy/disabler, /obj/item/clothing/glasses/hud/security/sunglasses, /obj/item/clothing/head/helmet/m10)
 
-/datum/outfit/job/cel/nanotrasen/security/mimir
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
+/datum/outfit/job/cel/warra/security/mimir
+	id = /obj/item/card/id/cel/warra/vigilitas_security
 
 	implants = list(/obj/item/implant/mindshield)
 
 // Exosuit Pilot
-/datum/outfit/job/cel/nanotrasen/security/mech_pilot
+/datum/outfit/job/cel/warra/security/mech_pilot
 	name = "NT - Exosuit Pilot"
 	id_assignment = "Exosuit Pilot"
 
@@ -433,16 +433,16 @@
 	suit = /obj/item/clothing/suit/armor/vest/bulletproof
 	backpack_contents = list(/obj/item/radio, /obj/item/flashlight/seclite)
 
-/datum/outfit/job/cel/nanotrasen/warden
+/datum/outfit/job/cel/warra/warden
 	job_icon = "warden"
 	name = "NT - Warden"
 
 	jobtype = /datum/job/warden
 
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/warden/nt
+	uniform = /obj/item/clothing/under/rank/security/warden/warra
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/vest/security/warden/alt/nt
+	suit = /obj/item/clothing/suit/armor/vest/security/warden/alt/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/warden/red
@@ -459,16 +459,16 @@
 
 	chameleon_extras = /obj/item/gun/ballistic/shotgun/automatic/m11
 
-/datum/outfit/job/cel/nanotrasen/warden/mimir
+/datum/outfit/job/cel/warra/warden/mimir
 	job_icon = "wardencaptain"
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_lieutenant
+	id = /obj/item/card/id/cel/warra/vigilitas_lieutenant
 
 	implants = list(/obj/item/implant/mindshield)
 
 // MARK: MEDICAL
 
-/datum/outfit/job/cel/nanotrasen/doctor
+/datum/outfit/job/cel/warra/doctor
 	job_icon = "medicaldoctor"
 	name = "NT - Medical Doctor"
 
@@ -476,11 +476,11 @@
 
 	belt = /obj/item/pda/medical
 	ears = /obj/item/radio/headset/headset_med
-	head = /obj/item/clothing/head/nanotrasen/surgical
-	uniform = /obj/item/clothing/under/nanotrasen/medical
+	head = /obj/item/clothing/head/warra/surgical
+	uniform = /obj/item/clothing/under/warra/medical
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/nanotrasen/medical_smock
-	alt_suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	suit =  /obj/item/clothing/suit/warra/medical_smock
+	alt_suit = /obj/item/clothing/suit/toggle/labcoat/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 
 	backpack = /obj/item/storage/backpack/medic
@@ -489,13 +489,13 @@
 	courierbag = /obj/item/storage/backpack/messenger/med
 
 // Brig Physician
-/datum/outfit/job/cel/nanotrasen/doctor/brig_phys
+/datum/outfit/job/cel/warra/doctor/brig_phys
 	name = "NT - Brig Physician"
 	jobtype = /datum/job/brig_phys
 	job_icon = "brigphysician"
 
 	ears = /obj/item/radio/headset/headset_medsec/alt
-	uniform = /obj/item/clothing/under/rank/security/brig_phys/nt
+	uniform = /obj/item/clothing/under/rank/security/brig_phys/warra
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	suit = /obj/item/clothing/suit/toggle/labcoat/brig_phys
@@ -503,17 +503,17 @@
 	head = /obj/item/clothing/head/soft/sec/brig_phys
 	implants = list(/obj/item/implant/mindshield)
 
-/datum/outfit/job/cel/nanotrasen/doctor/brig_phys/mimir
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_medic
+/datum/outfit/job/cel/warra/doctor/brig_phys/mimir
+	id = /obj/item/card/id/cel/warra/vigilitas_medic
 
-/datum/outfit/job/cel/nanotrasen/paramedic
+/datum/outfit/job/cel/warra/paramedic
 	job_icon = "paramedic"
 	name = "NT - Paramedic"
 
 	jobtype = /datum/job/paramedic
 
 	ears = /obj/item/radio/headset/headset_med
-	uniform = /obj/item/clothing/under/nanotrasen/medical/paramedic
+	uniform = /obj/item/clothing/under/warra/medical/paramedic
 	head = null
 	shoes = /obj/item/clothing/shoes/sneakers/blue
 	suit =  null
@@ -531,7 +531,7 @@
 	chameleon_extras = /obj/item/gun/syringe
 
 // Химик
-/datum/outfit/job/cel/nanotrasen/chemist
+/datum/outfit/job/cel/warra/chemist
 	name = "NT - Chemist"
 	job_icon = "chemist"
 
@@ -542,7 +542,7 @@
 	head = /obj/item/clothing/head/beret/chem
 	uniform = /obj/item/clothing/under/rank/medical/chemist
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	suit =  /obj/item/clothing/suit/toggle/labcoat/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 
 	backpack = /obj/item/storage/backpack/chemistry
@@ -553,7 +553,7 @@
 // MARK: RESEARCH
 
 // Генетик
-/datum/outfit/job/cel/nanotrasen/geneticist
+/datum/outfit/job/cel/warra/geneticist
 	name = "NT - Genetical Researcher"
 	job_icon = "geneticist"
 
@@ -564,7 +564,7 @@
 	head = /obj/item/clothing/head/beret/sci
 	uniform = /obj/item/clothing/under/rank/medical/geneticist
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit =  /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	suit =  /obj/item/clothing/suit/toggle/labcoat/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
 	backpack = /obj/item/storage/backpack/genetics
@@ -572,28 +572,28 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/cel/nanotrasen/scientist
+/datum/outfit/job/cel/warra/scientist
 	name = "NT - Scientist"
 	jobtype = /datum/job/scientist
 	job_icon = "scientist"
 
 	ears = /obj/item/radio/headset/headset_sci
-	uniform = /obj/item/clothing/under/nanotrasen/science
+	uniform = /obj/item/clothing/under/warra/science
 	shoes = /obj/item/clothing/shoes/sneakers/white
-	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen
+	suit = /obj/item/clothing/suit/toggle/labcoat/warra
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/science
 
 	backpack = /obj/item/storage/backpack/science
 	satchel = /obj/item/storage/backpack/satchel/tox
 	courierbag = /obj/item/storage/backpack/messenger/tox
 
-/datum/outfit/job/cel/nanotrasen/scientist/roboticist
+/datum/outfit/job/cel/warra/scientist/roboticist
 	name = "NT - Roboticist"
 	jobtype = /datum/job/roboticist
 	job_icon = "roboticist"
 
 	ears = /obj/item/radio/headset/headset_sci
-	uniform = /obj/item/clothing/under/nanotrasen/science/robotics
+	uniform = /obj/item/clothing/under/warra/science/robotics
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	suit = /obj/item/clothing/suit/jacket
 	glasses = /obj/item/clothing/glasses/welding
@@ -604,16 +604,16 @@
 // MARK: CIVILIAN
 
 // Janitor
-/datum/outfit/job/cel/nanotrasen/janitor
+/datum/outfit/job/cel/warra/janitor
 	name = "NT - Janitor"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
 
-	uniform = /obj/item/clothing/under/nanotrasen/janitor
-	head = /obj/item/clothing/head/nanotrasen/cap/janitor
+	uniform = /obj/item/clothing/under/warra/janitor
+	head = /obj/item/clothing/head/warra/cap/janitor
 
 // Bartender
-/datum/outfit/job/cel/nanotrasen/bartender
+/datum/outfit/job/cel/warra/bartender
 	name = "NT - Bartender"
 	jobtype = /datum/job/bartender
 	job_icon = "bartender"
@@ -630,7 +630,7 @@
 	accessory = /obj/item/clothing/accessory/waistcoat
 
 // Cook
-/datum/outfit/job/cel/nanotrasen/cook
+/datum/outfit/job/cel/warra/cook
 	name = "NT - Cook"
 	jobtype = /datum/job/cook
 	job_icon = "cook"
@@ -647,7 +647,7 @@
 
 // Prisoner
 
-/datum/outfit/job/cel/nanotrasen/prisoner
+/datum/outfit/job/cel/warra/prisoner
 	name = "NT - Prisoner"
 	jobtype = /datum/job/prisoner
 	job_icon = "assistant"
@@ -662,7 +662,7 @@
 	belt = null
 
 // Pilot. idk
-/datum/outfit/job/cel/nanotrasen/pilot
+/datum/outfit/job/cel/warra/pilot
 	name = "NT - Pilot"
 	jobtype = /datum/job/head_of_personnel
 	id_assignment = "Pilot"
@@ -674,21 +674,21 @@
 	head = /obj/item/clothing/head/beret/command
 
 // Lawyer
-/datum/outfit/job/cel/nanotrasen/lawyer
+/datum/outfit/job/cel/warra/lawyer
 	name = "NT - Lawyer"
 	jobtype = /datum/job/lawyer
 	job_icon = "lawyer"
 
 	ears = /obj/item/radio/headset/headset_srvsec
-	uniform = /obj/item/clothing/under/nanotrasen/affairs
-	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
+	uniform = /obj/item/clothing/under/warra/affairs
+	suit = /obj/item/clothing/suit/warra/suitjacket
 	shoes = /obj/item/clothing/shoes/laceup
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer
 	r_pocket = /obj/item/clothing/accessory/lawyers_badge
 
 // Corp. Rep
-/datum/outfit/job/cel/nanotrasen/lawyer/corporaterepresentative
+/datum/outfit/job/cel/warra/lawyer/corporaterepresentative
 	name = "NT - Corporate Representative"
 	id_assignment = "Corporate Representative"
 
@@ -700,31 +700,31 @@
 	r_pocket = /obj/item/pen/fountain
 
 // Assistant
-/datum/outfit/job/cel/nanotrasen/assistant
+/datum/outfit/job/cel/warra/assistant
 	name = "NT - Assistant"
 	jobtype = /datum/job/assistant
 
 	job_icon = "assistant"
 
-	uniform = /obj/item/clothing/under/nanotrasen
+	uniform = /obj/item/clothing/under/warra
 	shoes = /obj/item/clothing/shoes/sneakers/black
 	belt = /obj/item/pda
 
 // MARK: CARGO
 // Cargo Tech
-/datum/outfit/job/cel/nanotrasen/cargo_tech
+/datum/outfit/job/cel/warra/cargo_tech
 	name = "NT - Cargo Tech"
 	jobtype = /datum/job/cargo_tech
 	job_icon = "cargotechnician"
 
 	belt = /obj/item/pda/cargo
 	ears = /obj/item/radio/headset/headset_cargo
-	head = /obj/item/clothing/head/nanotrasen/cap/supply
-	uniform = /obj/item/clothing/under/nanotrasen/supply
+	head = /obj/item/clothing/head/warra/cap/supply
+	uniform = /obj/item/clothing/under/warra/supply
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/cargo
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/cargo=1)
 
-/datum/outfit/job/cel/nanotrasen/miner
+/datum/outfit/job/cel/warra/miner
 	name = "NT - Miner"
 	job_icon = "shaftminer"
 
@@ -732,7 +732,7 @@
 
 	ears = /obj/item/radio/headset/headset_cargo/mining
 	shoes = /obj/item/clothing/shoes/workboots/mining
-	uniform = /obj/item/clothing/under/nanotrasen/supply/miner
+	uniform = /obj/item/clothing/under/warra/supply/miner
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/miner
 
 	backpack = /obj/item/storage/backpack/explorer

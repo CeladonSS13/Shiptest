@@ -1,10 +1,10 @@
 
-			// nanotrasen survival box
-/obj/item/storage/box/survival/nanotrasen
-	name = "nanotrasen survival box"
+			// warra survival box
+/obj/item/storage/box/survival/warra
+	name = "warra survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
 	icon_state = "box_survival_nt_alt"
-/obj/item/storage/box/survival/nanotrasen/PopulateContents()
+/obj/item/storage/box/survival/warra/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/breath = 1,\
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\

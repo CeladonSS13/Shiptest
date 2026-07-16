@@ -3,52 +3,52 @@
 	"map_name": "Chariot-class Assault Vessel",
 	"map_short_name": "Chariot",
 	"description": "NTBSV ''Chariot'' - это боевое судно Нанотрейзен, которое сделано в ответ на боевой корабль синдиката ''Krait''. На борту имеется свой десантный корабль, оборудование для работы с генетическим кодом живых существ и искусственный интеллект. Боевое инновационное судно ''Chariot'' предназначен для долгих перелётов. Это позволяет множество особенностей: продвинутая система жизнеобеспечения, искусственный интеллект, который способен управлять кораблем, свой бар и небольшая кухня. Штурмовой отряд оснащен как лазерным вооружением, так и баллистическим. Корабль оснащен камерой содержания заключённых. Предназначен для относительно большого количества экипажа. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Заменили на Болид!",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_chariot.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_chariot.dmm",
 	"subshuttle": "Rider",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 2000,
 	"prefix": "NTBSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Исследовательский",
 		"Суб-шаттл"
 	],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"WEAPONS"
 	],
 	"job_slots": {
 		"LP Lieutenant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain/lp",
+			"outfit": "/datum/outfit/job/cel/warra/captain/lp",
 			"officer": true,
 			"slots": 1
 		},
 		"Research Head": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/rd",
+			"outfit": "/datum/outfit/job/cel/warra/rd",
 			"officer": true,
 			"slots": 1
 		},
 		"LP Chief Engineering Specialist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/lp",
+			"outfit": "/datum/outfit/job/cel/warra/engineer/lp",
 			"officer": true,
 			"slots": 1
 		},
 		"LP Security Operative": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/lp",
+			"outfit": "/datum/outfit/job/cel/warra/security/lp",
 			"slots": 3
 		},
 		"LP Medical Specialist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/lp",
+			"outfit": "/datum/outfit/job/cel/warra/doctor/lp",
 			"slots": 1
 		},
 		"Ship Scientist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist",
+			"outfit": "/datum/outfit/job/cel/warra/scientist",
 			"slots": 1
 		},
 		"Ship Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		}
 

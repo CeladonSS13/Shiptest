@@ -27,7 +27,7 @@
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra, /obj/item/ammo_casing/energy/disabler/warra)
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun,
 		/obj/item/stock_parts/cell/gun/upgraded,
@@ -44,14 +44,14 @@
 	name = "SL L-204 'Fuse' Laser Carbine"
 	desc = "A basic energy-based laser carbine and somewhat of a predecessor to the X-10. Famed for its low price and reliability."
 	icon_state = "laser"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/less)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra/less)
 	w_class = WEIGHT_CLASS_BULKY
 
 /obj/item/gun/energy/e_gun/e_old/mini
 	name = "SL X-26 'Ember' Miniature Energy Pistol"
 	desc = "A lightweight, civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
 	icon_state = "mini"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra/mini, /obj/item/ammo_casing/energy/disabler/warra/mini)
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
@@ -86,7 +86,7 @@
 	ammo_x_offset = 2
 	charge_sections = 5
 
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen, /obj/item/ammo_casing/energy/disabler/assault/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/warra, /obj/item/ammo_casing/energy/disabler/assault/warra)
 
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
@@ -103,18 +103,18 @@
 
 /obj/item/gun/energy/e_gun/e_old/old
 	name = "prototype energy gun"
-	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and Nanotrasen later acquired Sharplite to suit its laser weapon needs."
+	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and Warra later acquired Sharplite to suit its laser weapon needs."
 	icon_state = "protolaser"
 	ammo_x_offset = 2
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/electrode/old)
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD
 
 /obj/item/gun/energy/e_gun/e_old/hos
 	name = "\improper SL X-01 MultiPhase Energy Gun"
 	desc = "An expensive, high-capacity, high-power energy pistol built on the X-00 chasis. Modified to have a wide array of energy settings, including a burst firemode. Favored by Vigilitas Security Directors."
 	icon_state = "hoslaser"
 	force = 10
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra, /obj/item/ammo_casing/energy/disabler/warra, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/warra)
 	shaded_charge = TRUE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF //я не думаю, что оно должно быть индестрактбл
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -168,7 +168,7 @@
 	can_charge = FALSE
 	internal_magazine = TRUE
 	ammo_x_offset = 2
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra, /obj/item/ammo_casing/energy/disabler/warra)
 	selfcharge = 1
 	var/reactor_overloaded
 	var/fail_tick = 0
@@ -224,7 +224,7 @@
 	icon_state = "bsgun"
 	item_state = "gun"
 	force = 7
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/trap)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/warra, /obj/item/ammo_casing/energy/laser/warra, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -281,7 +281,7 @@
 	icon_state = "iotshotgun"
 	fire_delay = 0.6 SECONDS
 	shaded_charge = TRUE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen, /obj/item/ammo_casing/energy/disabler/scatter/shotgun/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/warra, /obj/item/ammo_casing/energy/disabler/scatter/shotgun/warra)
 	charge_sections = 5
 	ammo_x_offset = 2
 	automatic_charge_overlays = TRUE
@@ -297,7 +297,7 @@
 	name = "\improper SL AL-370 'Blaze' Energy Shotgun"
 	desc = "An experimental improvement over the aging E-SG series, featuring double laser bursts and a heavier frame, it now can apply even more pressure on whatever you decide to kill. The nonlethal disabler mode had to be sacrificed in order to achieve higher power output."
 	icon_state = "blaze"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/warra/burst)
 	charge_sections = 4
 	gun_firemodes = list(FIREMODE_BURST)
 	default_firemode = FIREMODE_BURST
@@ -322,7 +322,7 @@
 	weapon_weight = WEAPON_VERY_HEAVY
 	wield_slowdown = 1.2
 	default_ammo_type = /obj/item/stock_parts/cell/gun/large
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/warra/emg)
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/large,
 		/obj/item/stock_parts/cell/gun/large/empty,
@@ -353,7 +353,7 @@
 	name = "SL L-211 'Parallax' Energy Marksman Rifle"
 	desc = "An extensive modification on the X-10 frame, featuring stronger armor-piercing bolts and a decent scope. The energy efficiency had to be somewhat sacrificed."
 	icon_state = "parallax"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/dmr)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/warra/dmr)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_SHARPLITE_NEW
@@ -402,7 +402,7 @@
 	force = 10
 	flags_1 =  CONDUCT_1
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator/warra)
 	ammo_x_offset = 3
 	fire_sound_volume = 90
 	zoom_amt = 8
@@ -420,7 +420,7 @@
 //disabler
 
 /obj/item/gun/energy/disabler
-	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen)
+	ammo_type = list(/obj/item/ammo_casing/energy/disabler/warra)
 
 //empty guns
 
@@ -439,7 +439,7 @@
 // Батарейки (Респрайты / Рефлавор)
 /obj/item/stock_parts/cell/gun
 	name = "energy power cell"
-	desc = "A proprietary power cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells"
+	desc = "A proprietary power cell primarily used by Sharplite Energy weaponry. Warra's large market share has forced some weapon developers to include adapters for these cells"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
 	icon_state = "energy-cell"
 	base_state = "energy"	// Оверлей - Цвет-заряда батареек
@@ -458,7 +458,7 @@
 
 /obj/item/stock_parts/cell/gun/sharplite
 	name = "plasma power cell"
-	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells."
+	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Warra's large market share has forced some weapon developers to include adapters for these cells."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
 	icon_state = "plasma-cell"
 	base_state = "plasma"	// Оверлей - Цвет-заряда батареек
@@ -474,7 +474,7 @@
 
 /obj/item/stock_parts/cell/gun/mini
 	name = "miniature energy power cell"
-	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
+	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Warra's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
 	w_class = WEIGHT_CLASS_TINY
 	icon = 'icons/obj/power.dmi'
 	icon_state = "mg-cell"

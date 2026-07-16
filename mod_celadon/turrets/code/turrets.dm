@@ -229,43 +229,43 @@
 	desc = "A low powered turret designed by the Gorlex Maurauders. Effectively weaponizes mining equipment." //no fucking icw
 
 // MARK: NANOTRASEN
-//Nanotrasen ship turrets
+//Warra ship turrets
 
-/obj/machinery/porta_turret/ship/nt
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
+/obj/machinery/porta_turret/ship/warra
+	stun_projectile = /obj/projectile/beam/disabler/warra
+	lethal_projectile = /obj/projectile/beam/laser/warra
 
-/obj/machinery/porta_turret/ship/nt/light
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+/obj/machinery/porta_turret/ship/warra/light
+	stun_projectile = /obj/projectile/beam/disabler/warra/weak
+	lethal_projectile = /obj/projectile/beam/laser/warra/weak
 
-/obj/machinery/porta_turret/ship/nt/heavy
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
+/obj/machinery/porta_turret/ship/warra/heavy
+	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
+	lethal_projectile = /obj/projectile/beam/laser/warra/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
 
-/obj/machinery/porta_turret/ship/nt/pulse
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
+/obj/machinery/porta_turret/ship/warra/pulse
+	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
 	stun_projectile_sound = 'sound/weapons/wave.ogg'
 
-//Nanotrasen derelict turrets
+//Warra derelict turrets
 // removes plasma projectiles
 
-/obj/machinery/porta_turret/ruin/nt
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
+/obj/machinery/porta_turret/ruin/warra
+	stun_projectile = /obj/projectile/beam/disabler/warra
+	lethal_projectile = /obj/projectile/beam/laser/warra
 
-/obj/machinery/porta_turret/ruin/nt/light
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+/obj/machinery/porta_turret/ruin/warra/light
+	stun_projectile = /obj/projectile/beam/disabler/warra/weak
+	lethal_projectile = /obj/projectile/beam/laser/warra/weak
 
-/obj/machinery/porta_turret/ruin/nt/light/sniper
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+/obj/machinery/porta_turret/ruin/warra/light/sniper
+	stun_projectile = /obj/projectile/beam/disabler/warra/weak
+	lethal_projectile = /obj/projectile/beam/laser/warra/weak
 
-/obj/machinery/porta_turret/ruin/nt/heavy
-	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/heavylaser
-	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
+/obj/machinery/porta_turret/ruin/warra/heavy
+	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
+	lethal_projectile = /obj/projectile/beam/laser/warra/heavylaser
 
 //Pirate turrets - даем фракцию пиратов вместо фронтиров
 

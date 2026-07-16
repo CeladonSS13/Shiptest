@@ -1,7 +1,7 @@
 //Faction
 
-/obj/structure/mecha_wreckage/gygax/nt
-	name = "\improper NanoTrasen Gygax wreckage"
+/obj/structure/mecha_wreckage/gygax/warra
+	name = "\improper Warra Gygax wreckage"
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "ntgygax-broken"
 
@@ -65,7 +65,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "aluminizer-broken"
 
-/obj/structure/mecha_wreckage/ripley/nanotrasen
+/obj/structure/mecha_wreckage/ripley/warra
 	name = "\improper Privatizer wreckage"
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "ntripley-broken"

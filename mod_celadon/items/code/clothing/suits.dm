@@ -223,8 +223,8 @@
 	cold_protection = CHEST | GROIN | LEGS | ARMS
 
 /obj/item/clothing/suit/razurathcoat
-	name = "Golden Nanotrasen Officer Coat"
-	desc = "A fancy Nanotrasen officer coat. Now darker, golder, and cooler than ever!"
+	name = "Golden Warra Officer Coat"
+	desc = "A fancy Warra officer coat. Now darker, golder, and cooler than ever!"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'
 	icon_state = "razurath_coat"

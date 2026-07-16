@@ -438,13 +438,13 @@
     job_icon = "shaftminer"
     faction_icon = "bg_solfed"
 
-    id = /obj/item/card/id/cel/nanotrasen/nslogistics_miner
+    id = /obj/item/card/id/cel/warra/nslogistics_miner
     ears = /obj/item/radio/headset/solgov
-    head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+    head = /obj/item/clothing/head/hardhat/warra/blue
     shoes = /obj/item/clothing/shoes/workboots/mining
     gloves = /obj/item/clothing/gloves/explorer
-    uniform = /obj/item/clothing/under/nanotrasen/supply/miner
-    suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+    uniform = /obj/item/clothing/under/warra/supply/miner
+    suit = /obj/item/clothing/suit/warra/vest/blue
     l_pocket = /obj/item/storage/bag/ore
     r_pocket = /obj/item/pda/shaftminer
     backpack_contents = list(

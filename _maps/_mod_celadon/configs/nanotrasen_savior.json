@@ -2,13 +2,13 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Savior-class multifunctional medical ship",
 	"map_short_name": "Savior",
-	"description": "Многофункциональное медицинское судно класса 'Savior' является одной из новейших разработок компании Nanotrasen. Оно спроектировано для оказания всесторонней медицинской помощи в условиях космоса. Судно оснащено современным медицинским оборудованием и системами жизнеобеспечения, что позволяет оперативно и эффективно реагировать на различные медицинские чрезвычайные ситуации. Благодаря своей универсальности, судно 'Savior' может использоваться как для спасательных операций, так и для проведения длительных медицинских экспедиций.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_savior.dmm",
+	"description": "Многофункциональное медицинское судно класса 'Savior' является одной из новейших разработок компании warra. Оно спроектировано для оказания всесторонней медицинской помощи в условиях космоса. Судно оснащено современным медицинским оборудованием и системами жизнеобеспечения, что позволяет оперативно и эффективно реагировать на различные медицинские чрезвычайные ситуации. Благодаря своей универсальности, судно 'Savior' может использоваться как для спасательных операций, так и для проведения длительных медицинских экспедиций.",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_savior.dmm",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 5,
 	"prefix": "NTMSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Исследовательский",
 		"Медицинское"
@@ -16,32 +16,32 @@
 	"namelists": [
 		"GENERAL",
 		"SPACE",
-		"NANOTRASEN"
+		"warra"
 	],
 	"job_slots": {
 		"Medical Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain/deforest_captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain/deforest_captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nakamura",
+			"outfit": "/datum/outfit/job/cel/warra/engineer/nakamura",
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/deforest_medic",
+			"outfit": "/datum/outfit/job/cel/warra/doctor/deforest_medic",
 			"slots": 2
 		},
 		"Chemist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/chemist/deforest_chemist",
+			"outfit": "/datum/outfit/job/cel/warra/chemist/deforest_chemist",
 			"slots": 1
 		},
 		"Genetical Researcher": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/genetic",
+			"outfit": "/datum/outfit/job/cel/warra/scientist/deforest_researcher/genetic",
 			"slots": 1
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/paramedic/deforest_medic",
+			"outfit": "/datum/outfit/job/cel/warra/paramedic/deforest_medic",
 			"slots": 1
 		}
 	}

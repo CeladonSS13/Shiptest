@@ -3,103 +3,103 @@
 	"map_name": "Heron-Class Dreadnaught",
 	"map_short_name": "Heron",
 	"description": "Судно класса 'Heron' - самые крупные судна, имеющиеся в распоряжении пограничных сил Нанотрейзен. Эти корабли служат флагманами многих флотов во время войны, выступая в качестве носителя для оперативной группы или командного судна для корпоративных подразделений. Известно, что капитаны этих суден устанавливали в ангаре блюспейс артилерию и стреляли из нее прямо во время боя. Хотя возраст конструкции уже дает о себе знать, он является одним из символов могущественной власти Нанотрейзен над космосом. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Непростой шип, только для опытных игроков!",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_heron.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_heron.dmm",
 	"map_id": "nanotrasen_heron",
 	"subshuttle": "Falcon",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"prefix": "NTSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"MERCANTILE",
 		"WEAPONS"
 	],
 	"job_slots": {
 		"Fleet Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain/centcom",
+			"outfit": "/datum/outfit/job/cel/warra/captain/centcom",
 			"officer": true,
 			"slots": 1
 		},
 		"First Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hop",
+			"outfit": "/datum/outfit/job/cel/warra/hop",
 			"officer": true,
 			"slots": 1
 		},
 		"Security Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hos",
+			"outfit": "/datum/outfit/job/cel/warra/hos",
 			"officer": true,
 			"slots": 1
 		},
 		"Security Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security",
+			"outfit": "/datum/outfit/job/cel/warra/security",
 			"slots": 2
 		},
 		"ERT Commander":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/ert/commander",
+			"outfit": "/datum/outfit/job/cel/warra/security/ert/commander",
 			"slots": 1
 		},
 		"ERT Officer":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/ert",
+			"outfit": "/datum/outfit/job/cel/warra/security/ert",
 			"slots": 3
 		},
 		"ERT Medical Officer":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/ert/med",
+			"outfit": "/datum/outfit/job/cel/warra/security/ert/med",
 			"slots": 1
 		},
 		"ERT Engineering Officer":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/ert/engi",
+			"outfit": "/datum/outfit/job/cel/warra/security/ert/engi",
 			"slots": 1
 		},
 		"Pilot": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/pilot",
+			"outfit": "/datum/outfit/job/cel/warra/pilot",
 			"officer": true,
 			"slots": 1
 		},
 		"Mech Pilot":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/mech_pilot",
+			"outfit": "/datum/outfit/job/cel/warra/security/mech_pilot",
 			"slots": 1
 		},
 		"Engine Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		},
 		"Engineering Director":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/ce",
+			"outfit": "/datum/outfit/job/cel/warra/ce",
 			"officer": true,
 			"slots": 1
 		},
 		"Science Director": {
-			"outfit":"/datum/outfit/job/cel/nanotrasen/rd",
+			"outfit":"/datum/outfit/job/cel/warra/rd",
 			"slots": 1
 		},
 		"Medical Doctor":{
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/warra/doctor",
 			"slots": 1
 		},
 		"Atmospheric Technician":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/atmos",
+		"outfit": "/datum/outfit/job/cel/warra/atmos",
 		"slots": 1
 		},
 		"Supply Director":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/quartermaster",
+		"outfit": "/datum/outfit/job/cel/warra/quartermaster",
 		"slots": 1
 		},
 		"Supply Technician":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/cargo_tech",
+		"outfit": "/datum/outfit/job/cel/warra/cargo_tech",
 		"slots": 1
 		},
 		"Cook":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/cook",
+		"outfit": "/datum/outfit/job/cel/warra/cook",
 		"slots": 1
 		},
 		"Janitor":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/janitor",
+		"outfit": "/datum/outfit/job/cel/warra/janitor",
 		"slots": 1
 		},
 		"Deckhand":{
-		"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+		"outfit": "/datum/outfit/job/cel/warra/assistant",
 		"slots": 2
 		}
 	}

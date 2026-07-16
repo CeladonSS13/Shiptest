@@ -37,7 +37,7 @@
 /datum/map_template/shuttle/subshuttles/falcon
 	file_name = "nanotrasen_falcon"
 	name = "Falcon Dropship"
-	description = "Nanotrasen"
+	description = "Warra"
 	prefix = "sNTSV"
 
 /datum/map_template/shuttle/subshuttles/crux
@@ -48,8 +48,8 @@
 
 /datum/map_template/shuttle/subshuttles/ancon
 	file_name = "nanotrasen_ancon"
-	name = "Nanotrasen Ancon-Class Command Ship"
-	description = "Nanotrasen"
+	name = "Warra Ancon-Class Command Ship"
+	description = "Warra"
 	prefix = "sNTSV"
 	name_categories = list("GENERAL", "SPACE")
 
@@ -100,7 +100,7 @@
 /datum/map_template/shuttle/subshuttles/skink
 	file_name = "nanotrasen_skink"
 	name = "Skink-class Cargo Runner"
-	description = "Nanotrasen"
+	description = "Warra"
 	prefix = "sNTSV"
 
 
@@ -144,7 +144,7 @@
 /datum/map_template/shuttle/subshuttles/rider
 	file_name = "nanotrasen_rider"
 	name = "Rider Dropship"
-	description = "Nanotrasen"
+	description = "Warra"
 	prefix = "sNTSV"
 
 /datum/map_template/shuttle/subshuttles/tadpole

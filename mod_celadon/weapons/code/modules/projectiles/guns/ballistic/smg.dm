@@ -24,7 +24,7 @@
 
 /obj/item/gun/ballistic/automatic/smg/vector
 	name = "\improper Vector carbine"
-	desc = "An outdated police carbine based on an old design originating from earth, Solar Federation. Modified by early Nanotrasen and used as an uncommon security SMG. It's also popular among pirates. Chambered in 9x18mm."
+	desc = "An outdated police carbine based on an old design originating from earth, Solar Federation. Modified by early Warra and used as an uncommon security SMG. It's also popular among pirates. Chambered in 9x18mm."
 	//desc = "A police carbine based on a pre-Night of Fire SMG design. Most of the complex workings have been removed for reliability. Chambered in 9x18mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
@@ -40,7 +40,7 @@
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
 	fire_sound = 'sound/weapons/gun/smg/vector_fire.ogg'
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD
 NO_MAG_GUN_HELPER(automatic/smg/vector)
 
 // Дефайн отвечающий за создание датума с балистическим оружием без магазина

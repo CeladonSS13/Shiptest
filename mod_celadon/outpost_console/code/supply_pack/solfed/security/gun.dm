@@ -28,7 +28,7 @@ hp
 
 /datum/supply_pack/faction/solfed/gun/gauss/prototype
 	name = "Rifle - Prototype Gauss (FE pellet)"
-	desc = "A high capacity experimental rifle developed by Nanotrasen. Sold to solar federation as a weapon for effective crowd control. Chambered in ferromagnetic pellets."
+	desc = "A high capacity experimental rifle developed by Warra. Sold to solar federation as a weapon for effective crowd control. Chambered in ferromagnetic pellets."
 	contains = list(/obj/item/storage/guncase/gauss)
 	cost = 3500
 

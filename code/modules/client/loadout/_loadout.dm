@@ -95,7 +95,7 @@ GLOBAL_LIST_EMPTY(loadout_parent_categories) // [CELADON-ADD] - CELADON_QOL_LOAD
 	// [CELADON-ADD] - CELADON_QOL_LOADOUT
 	///Factions that can spawn with this item.
 	var/list/allowed_factions
-	// Примеры 	allowed_factions = list("NanoTrasen", "Syndicate", "Independent", "InteQ", "SolFed", "Pirates", "Elysium")
+	// Примеры 	allowed_factions = list("Warra", "Syndicate", "Independent", "InteQ", "SolFed", "Pirates", "Elysium")
 	// [/CELADON-ADD]
 	///Stop certain species from receiving this gear
 	var/list/species_blacklist

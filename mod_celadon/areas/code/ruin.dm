@@ -295,7 +295,7 @@
 	icon_state = "green"
 
 //budgetcuts
-/area/ruin/rockplanet/nanotrasen
+/area/ruin/rockplanet/warra
 	name = "Abandoned Research Facility"
 	always_unpowered = FALSE
 

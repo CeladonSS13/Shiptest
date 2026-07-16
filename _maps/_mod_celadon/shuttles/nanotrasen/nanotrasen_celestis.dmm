@@ -13,7 +13,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 6
 	},
 /turf/open/floor/plasteel/mono,
@@ -71,7 +71,7 @@
 /area/ship/hallway/starboard)
 "aV" = (
 /obj/machinery/light/small/directional/west,
-/obj/machinery/telecomms/relay/preset/nanotrasen,
+/obj/machinery/telecomms/relay/preset/warra,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "aY" = (
@@ -82,11 +82,11 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "ba" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/structure/table/wood,
 /obj/structure/bedsheetbin,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -125,7 +125,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "bw" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = 0;
@@ -134,7 +134,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "bE" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 4
 	},
@@ -224,16 +224,16 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/starboard)
 "bW" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /turf/open/floor/plasteel/dark,
@@ -307,25 +307,25 @@
 "cn" = (
 /obj/item/storage/belt/sabre,
 /obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/head/nanotrasen/captain/peaked,
+/obj/item/clothing/head/warra/captain/peaked,
 /obj/item/storage/backpack/captain,
-/obj/item/clothing/suit/armor/nanotrasen/captain/parade,
+/obj/item/clothing/suit/armor/warra/captain/parade,
 /obj/item/clothing/shoes/laceup,
-/obj/item/clothing/neck/cloak/nanotrasen,
+/obj/item/clothing/neck/cloak/warra,
 /obj/item/door_remote/captain,
-/obj/item/clothing/under/nanotrasen/captain,
-/obj/item/clothing/under/nanotrasen/captain/skirt,
-/obj/item/clothing/head/nanotrasen/captain,
-/obj/item/clothing/head/nanotrasen/captain/peaked,
+/obj/item/clothing/under/warra/captain,
+/obj/item/clothing/under/warra/captain/skirt,
+/obj/item/clothing/head/warra/captain,
+/obj/item/clothing/head/warra/captain/peaked,
 /obj/structure/closet/secure_closet{
 	icon_state = "cap";
 	name = "captain's locker"
 	},
-/obj/item/radio/headset/nanotrasen/alt/captain,
+/obj/item/radio/headset/warra/alt/captain,
 /obj/item/gun/energy/e_gun/e_old,
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
-/obj/item/clothing/head/nanotrasen/beret,
+/obj/item/clothing/head/warra/beret,
 /obj/item/clothing/suit/hooded/wintercoat/captain,
 /obj/item/clothing/neck/cloak/cap,
 /obj/item/clothing/gloves/color/captain/nt,
@@ -340,7 +340,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/port)
 "cD" = (
-/obj/structure/sign/nanotrasen/ns{
+/obj/structure/sign/warra/ns{
 	pixel_x = 0;
 	pixel_y = -32
 	},
@@ -383,7 +383,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "cX" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white/half{
 	dir = 4
 	},
@@ -485,7 +485,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "dH" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/disposalpipe/segment{
 	dir = 6
 	},
@@ -499,7 +499,7 @@
 /area/ship/engineering/engine)
 "dK" = (
 /obj/effect/turf_decal/trimline/opaque/white/corner,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -603,7 +603,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "el" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/structure/chair/handrail{
 	dir = 1
 	},
@@ -628,7 +628,7 @@
 /turf/open/floor/plasteel,
 /area/ship/general/science)
 "et" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white/half{
 	dir = 8
 	},
@@ -644,7 +644,7 @@
 	req_access_txt = "7"
 	},
 /obj/item/analyzer,
-/obj/item/clothing/under/nanotrasen/science,
+/obj/item/clothing/under/warra/science,
 /obj/item/clothing/glasses/science,
 /obj/item/clothing/gloves/color/latex,
 /obj/item/clothing/suit/hooded/wintercoat/science,
@@ -699,7 +699,7 @@
 /area/ship/general/command_crew)
 "eL" = (
 /obj/effect/landmark/start/quartermaster,
-/obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
+/obj/structure/sign/poster/warra/ns_logistics_ad{
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -707,7 +707,7 @@
 /area/ship/cargo)
 "eN" = (
 /obj/structure/railing,
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning,
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning,
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/paper_bin{
 	pixel_x = -6
@@ -719,7 +719,7 @@
 	pixel_x = 6;
 	pixel_y = 10
 	},
-/obj/item/stamp/nanotrasen/captain{
+/obj/item/stamp/warra/captain{
 	pixel_x = 6
 	},
 /turf/open/floor/plasteel/dark,
@@ -754,7 +754,7 @@
 /area/ship/hallway/central)
 "eX" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 9
 	},
 /obj/structure/cable{
@@ -845,11 +845,11 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engine)
 "fE" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/cargo)
 "fF" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/security)
 "fH" = (
@@ -914,7 +914,7 @@
 /area/ship/cargo)
 "gf" = (
 /obj/structure/bed,
-/obj/item/bedsheet/nanotrasen,
+/obj/item/bedsheet/warra,
 /obj/structure/curtain/cloth,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/telecomms_floor,
@@ -927,11 +927,11 @@
 /obj/item/storage/box/ids,
 /obj/item/storage/lockbox/medal/hop,
 /obj/item/clothing/glasses/sunglasses,
-/obj/item/radio/headset/nanotrasen/alt,
-/obj/item/clothing/head/nanotrasen/officer/fedora,
-/obj/item/clothing/head/nanotrasen/officer,
-/obj/item/clothing/under/nanotrasen/officer,
-/obj/item/clothing/under/nanotrasen/officer/skirt,
+/obj/item/radio/headset/warra/alt,
+/obj/item/clothing/head/warra/officer/fedora,
+/obj/item/clothing/head/warra/officer,
+/obj/item/clothing/under/warra/officer,
+/obj/item/clothing/under/warra/officer/skirt,
 /obj/item/clothing/shoes/laceup,
 /obj/machinery/light/directional/west,
 /obj/item/clothing/neck/cloak/head_of_personnel,
@@ -1030,7 +1030,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "gI" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
@@ -1154,30 +1154,30 @@
 	name = "corporate represenative's locker";
 	req_access_txt = "38"
 	},
-/obj/item/clothing/under/nanotrasen/affairs,
-/obj/item/clothing/head/nanotrasen,
+/obj/item/clothing/under/warra/affairs,
+/obj/item/clothing/head/warra,
 /obj/item/clothing/neck/tie/black,
-/obj/item/clothing/suit/nanotrasen/suitjacket,
+/obj/item/clothing/suit/warra/suitjacket,
 /obj/item/gun/ballistic/automatic/pistol/challenger{
 	default_ammo_type = /obj/item/ammo_box/magazine/co9mm/ap
 	},
 /obj/item/clothing/shoes/laceup,
 /obj/item/clothing/gloves/color/white,
 /obj/item/clothing/suit/armor/solgov_trenchcoat{
-	name = "Nanotrasen Representive trenchcoat"
+	name = "warra Representive trenchcoat"
 	},
 /obj/item/clothing/head/beret/black,
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "hq" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/arrow_cw,
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/arrow_cw,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "hw" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue/corner,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue/corner,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -1292,7 +1292,7 @@
 /turf/open/floor/plasteel,
 /area/ship/general/science)
 "hz" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/structure/disposalpipe/segment,
@@ -1387,7 +1387,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "ip" = (
-/obj/structure/sign/flag/nanotrasen/directional/south,
+/obj/structure/sign/flag/warra/directional/south,
 /turf/open/floor/carpet/executive,
 /area/ship/crew/law_office)
 "ir" = (
@@ -1396,7 +1396,7 @@
 	name = "medical doctor's locker";
 	req_access_txt = "5"
 	},
-/obj/item/clothing/under/nanotrasen/medical,
+/obj/item/clothing/under/warra/medical,
 /obj/item/clothing/glasses/hud/health,
 /obj/item/clothing/shoes/sneakers/white,
 /obj/item/storage/backpack/satchel/med,
@@ -1435,7 +1435,7 @@
 /area/ship/general/science)
 "iD" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 5
 	},
 /obj/structure/cable{
@@ -1469,7 +1469,7 @@
 /obj/item/paper_bin{
 	pixel_x = 8
 	},
-/obj/item/stamp/nanotrasen/vigilitas{
+/obj/item/stamp/warra/vigilitas{
 	pixel_x = 8;
 	pixel_y = 3
 	},
@@ -1479,10 +1479,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "iM" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/door/firedoor,
@@ -1495,7 +1495,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "iR" = (
-/obj/effect/turf_decal/nanotrasen/ns/center{
+/obj/effect/turf_decal/warra/ns/center{
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1623,8 +1623,8 @@
 	name = "paramedic's locker";
 	req_access_txt = "5"
 	},
-/obj/item/clothing/under/nanotrasen/medical/paramedic,
-/obj/item/clothing/head/nanotrasen/cap/medical,
+/obj/item/clothing/under/warra/medical/paramedic,
+/obj/item/clothing/head/warra/cap/medical,
 /obj/item/clothing/shoes/sneakers/blue,
 /obj/item/storage/belt/medical/paramedic,
 /obj/effect/turf_decal/industrial/outline/blue,
@@ -1658,11 +1658,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "jT" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/machinery/power/apc/auto_name/directional/west,
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -1670,7 +1670,7 @@
 /obj/structure/dresser{
 	dir = 8
 	},
-/obj/structure/sign/flag/nanotrasen/directional/south,
+/obj/structure/sign/flag/warra/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/cryo)
 "jV" = (
@@ -1693,7 +1693,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "ka" = (
-/obj/effect/turf_decal/nanotrasen/ns/bottom_right{
+/obj/effect/turf_decal/warra/ns/bottom_right{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -1706,7 +1706,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "kd" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/arrow_cw,
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/arrow_cw,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
@@ -1835,10 +1835,10 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "lc" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange{
@@ -1848,7 +1848,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "lf" = (
-/obj/effect/turf_decal/nanotrasen/ns/top_left{
+/obj/effect/turf_decal/warra/ns/top_left{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -1975,7 +1975,7 @@
 /obj/effect/turf_decal/trimline/opaque/white/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -2004,7 +2004,7 @@
 /area/ship/crew/toilet)
 "mf" = (
 /obj/structure/bed,
-/obj/item/bedsheet/nanotrasen,
+/obj/item/bedsheet/warra,
 /obj/structure/curtain/cloth,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/cryo)
@@ -2041,7 +2041,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/general/command_crew/hop)
 "mC" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
@@ -2051,7 +2051,7 @@
 /turf/open/floor/engine/hull,
 /area/ship/external)
 "mF" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -2152,7 +2152,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "ny" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/machinery/vending/cigarette{
 	all_items_free = 1
 	},
@@ -2180,7 +2180,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "nI" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue/corner{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue/corner{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -2200,17 +2200,17 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "nP" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "nT" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -2236,7 +2236,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/port)
 "nY" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -2272,7 +2272,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/science/ai_chamber)
 "og" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -2329,7 +2329,7 @@
 /obj/effect/turf_decal/trimline/opaque/white/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -2354,7 +2354,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/general/science)
 "ou" = (
-/obj/effect/turf_decal/nanotrasen/ns/bottom{
+/obj/effect/turf_decal/warra/ns/bottom{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -2378,7 +2378,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "ow" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/east,
@@ -2473,7 +2473,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "oK" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 8
 	},
 /obj/structure/cable{
@@ -2497,7 +2497,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science)
 "oU" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -2561,7 +2561,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "pu" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -2635,7 +2635,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pT" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/filingcabinet/double{
@@ -2659,14 +2659,14 @@
 	pixel_y = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/item/sign/flag/nanotrasen{
+/obj/item/sign/flag/warra{
 	pixel_x = 2;
 	pixel_y = 6
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "pX" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -2737,7 +2737,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/port)
 "qt" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/structure/disposalpipe/segment{
 	dir = 5
@@ -2961,7 +2961,7 @@
 /area/ship/engineering/engine)
 "rq" = (
 /obj/structure/rack,
-/obj/item/aiModule/core/full/nanotrasen{
+/obj/item/aiModule/core/full/warra{
 	pixel_x = -1;
 	pixel_y = 2
 	},
@@ -3000,7 +3000,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 6
 	},
 /obj/structure/cable{
@@ -3033,7 +3033,7 @@
 /area/ship/medical)
 "rF" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
@@ -3082,14 +3082,14 @@
 	pixel_x = 7;
 	pixel_y = 4
 	},
-/obj/item/stamp/nanotrasen{
+/obj/item/stamp/warra{
 	pixel_x = -8;
 	pixel_y = -1
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science)
 "sa" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/crew/law_office)
 "sd" = (
@@ -3113,7 +3113,7 @@
 	pixel_y = -32;
 	density = 0
 	},
-/obj/structure/sign/nanotrasen/deforest{
+/obj/structure/sign/warra/deforest{
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -3155,7 +3155,7 @@
 /area/ship/medical)
 "sl" = (
 /obj/structure/table/wood/reinforced,
-/obj/structure/sign/nanotrasen{
+/obj/structure/sign/warra{
 	pixel_x = 0;
 	pixel_y = -32
 	},
@@ -3177,7 +3177,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/item/stamp/nanotrasen{
+/obj/item/stamp/warra{
 	pixel_x = 9
 	},
 /turf/open/floor/carpet/executive,
@@ -3261,7 +3261,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "sD" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/arrow_cw{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/arrow_cw{
 	dir = 1
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -3271,7 +3271,7 @@
 /area/ship/bridge)
 "sF" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 5
 	},
 /obj/structure/cable{
@@ -3282,7 +3282,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "sI" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono,
@@ -3323,7 +3323,7 @@
 /area/ship/engineering/engine)
 "sZ" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
 /obj/item/radio/old{
@@ -3341,7 +3341,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "tb" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
 	},
@@ -3374,7 +3374,7 @@
 /area/ship/general/science)
 "tl" = (
 /obj/effect/turf_decal/trimline/opaque/white/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -3425,7 +3425,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/starboard)
 "tJ" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono,
@@ -3560,7 +3560,7 @@
 /turf/open/floor/plasteel,
 /area/ship/general/science)
 "uw" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3591,13 +3591,13 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "uH" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/end{
+/obj/effect/turf_decal/trimline/opaque/warrablue/end{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -3653,7 +3653,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/port)
 "vk" = (
-/obj/effect/turf_decal/nanotrasen/ns/top_right{
+/obj/effect/turf_decal/warra/ns/top_right{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -3723,8 +3723,8 @@
 	req_access_txt = "31"
 	},
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/clothing/under/nanotrasen/supply,
-/obj/item/clothing/head/nanotrasen/cap/supply,
+/obj/item/clothing/under/warra/supply,
+/obj/item/clothing/head/warra/cap/supply,
 /obj/item/clothing/gloves/fingerless,
 /obj/item/clothing/glasses/sunglasses,
 /obj/machinery/light/directional/north,
@@ -3768,8 +3768,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/general/science)
 "vH" = (
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -3783,17 +3783,17 @@
 /area/ship/bridge)
 "vQ" = (
 /obj/structure/fluff/hedge,
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "vR" = (
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/nanotrasen/nakamura{
+/obj/structure/sign/warra/nakamura{
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -3865,14 +3865,14 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/port)
 "wL" = (
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning{
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning{
 	dir = 1
 	},
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/folder/blue,
 /obj/item/melee/chainofcommand,
 /obj/machinery/light/directional/north,
-/obj/item/desk_flag/nanotrasen{
+/obj/item/desk_flag/warra{
 	pixel_x = -10;
 	pixel_y = 11
 	},
@@ -3935,7 +3935,7 @@
 /turf/open/floor/wood,
 /area/ship/general/command_crew/hop)
 "wZ" = (
-/obj/effect/turf_decal/nanotrasen/ns/top{
+/obj/effect/turf_decal/warra/ns/top{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -3944,7 +3944,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "xd" = (
-/obj/effect/turf_decal/nanotrasen/ns/center_left{
+/obj/effect/turf_decal/warra/ns/center_left{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -3968,7 +3968,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "xg" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
@@ -4105,10 +4105,10 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "ym" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -4131,7 +4131,7 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/landmark/start/medical_doctor,
-/obj/structure/sign/poster/nanotrasen/deforest_hypospray{
+/obj/structure/sign/poster/warra/deforest_hypospray{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -4173,10 +4173,10 @@
 /area/ship/crew/canteen/kitchen)
 "yJ" = (
 /obj/structure/fluff/hedge,
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line,
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
@@ -4220,7 +4220,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/port)
 "yU" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/structure/chair/handrail,
@@ -4307,7 +4307,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "zr" = (
-/obj/item/banner/nanotrasen/mundane,
+/obj/item/banner/warra/mundane,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "zu" = (
@@ -4372,7 +4372,7 @@
 	req_access_txt = "7"
 	},
 /obj/item/analyzer,
-/obj/item/clothing/under/nanotrasen/science/robotics,
+/obj/item/clothing/under/warra/science/robotics,
 /obj/item/clothing/gloves/fingerless,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/suit/hooded/wintercoat/science,
@@ -4457,10 +4457,10 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "zX" = (
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning{
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -4472,7 +4472,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "zY" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -4503,8 +4503,8 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "Ad" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
@@ -4562,7 +4562,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "AB" = (
-/obj/structure/sign/nanotrasen/deforest,
+/obj/structure/sign/warra/deforest,
 /turf/closed/wall/mineral/titanium,
 /area/ship/medical)
 "AC" = (
@@ -4601,7 +4601,7 @@
 /area/ship/crew/law_office)
 "AT" = (
 /obj/structure/table/glass,
-/obj/item/stamp/nanotrasen{
+/obj/item/stamp/warra{
 	pixel_x = 6;
 	pixel_y = 2
 	},
@@ -4620,7 +4620,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Be" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white,
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -4654,10 +4654,10 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/storage/backpack/industrial,
-/obj/item/clothing/suit/nanotrasen/vest,
+/obj/item/clothing/suit/warra/vest,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/head/hardhat/nanotrasen,
+/obj/item/clothing/head/hardhat/warra,
 /obj/item/storage/belt/utility/full/engi,
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/starboard)
@@ -4732,11 +4732,11 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/storage/backpack/industrial,
-/obj/item/clothing/suit/nanotrasen/vest/blue,
+/obj/item/clothing/suit/warra/vest/blue,
 /obj/item/clothing/shoes/workboots,
 /obj/item/analyzer,
 /obj/item/clothing/gloves/color/black,
-/obj/item/clothing/head/hardhat/nanotrasen/blue,
+/obj/item/clothing/head/hardhat/warra/blue,
 /obj/item/storage/belt/utility/atmostech,
 /obj/item/pipe_dispenser,
 /turf/open/floor/plasteel/patterned,
@@ -4776,7 +4776,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 6
 	},
 /obj/structure/cable{
@@ -4805,10 +4805,10 @@
 	req_access_txt = "41"
 	},
 /obj/effect/turf_decal/industrial/outline/orange,
-/obj/item/stamp/nanotrasen/ns/supply,
-/obj/item/clothing/under/nanotrasen/supply/qm,
+/obj/item/stamp/warra/ns/supply,
+/obj/item/clothing/under/warra/supply/qm,
 /obj/item/clothing/glasses/sunglasses,
-/obj/item/clothing/head/nanotrasen/cap/supply,
+/obj/item/clothing/head/warra/cap/supply,
 /obj/item/stack/tape,
 /obj/item/clothing/shoes/sneakers/brown,
 /obj/item/spacecash/bundle/loadsamoney,
@@ -4823,7 +4823,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/port)
 "Cq" = (
-/obj/structure/sign/nanotrasen/ns{
+/obj/structure/sign/warra/ns{
 	pixel_y = 32
 	},
 /obj/structure/cable{
@@ -4851,13 +4851,13 @@
 /turf/open/floor/plasteel,
 /area/ship/engineering/engines/port)
 "Cw" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/machinery/firealarm/directional/south,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "CD" = (
-/obj/effect/turf_decal/nanotrasen/ns/bottom_left{
+/obj/effect/turf_decal/warra/ns/bottom_left{
 	dir = 4
 	},
 /obj/effect/turf_decal/trimline/opaque/white/arrow_cw{
@@ -4884,7 +4884,7 @@
 /obj/effect/turf_decal/trimline/opaque/vired/corner{
 	dir = 4
 	},
-/obj/structure/sign/nanotrasen/vigilitas{
+/obj/structure/sign/warra/vigilitas{
 	pixel_y = 32
 	},
 /obj/structure/cable{
@@ -4921,7 +4921,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering/engine)
 "CX" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/machinery/camera/autoname{
 	dir = 1
@@ -4930,7 +4930,7 @@
 /area/ship/hallway/central)
 "CY" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 9
 	},
 /turf/open/floor/plasteel/mono,
@@ -4953,12 +4953,12 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Dk" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue/corner,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue/corner{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue/corner,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -4970,14 +4970,14 @@
 /obj/structure/railing{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning{
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning{
 	dir = 1
 	},
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/paper_bin{
 	pixel_x = -6
 	},
-/obj/item/stamp/nanotrasen/officer{
+/obj/item/stamp/warra/officer{
 	pixel_x = 6
 	},
 /obj/item/pen/fountain{
@@ -4988,7 +4988,7 @@
 /area/ship/bridge)
 "Du" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
 /obj/structure/disposalpipe/segment{
@@ -4997,7 +4997,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "Dy" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/structure/sign/departments/security{
 	pixel_x = 0;
@@ -5104,10 +5104,10 @@
 /area/ship/hallway/starboard)
 "Ei" = (
 /obj/structure/fluff/hedge,
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line,
 /obj/structure/disposalpipe/segment{
 	dir = 9
 	},
@@ -5142,63 +5142,63 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "Eq" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 8
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/radio/headset/nanotrasen{
+/obj/item/radio/headset/warra{
 	pixel_x = -5;
 	pixel_y = -8
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 9
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 6
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = 0
 	},
-/obj/item/encryptionkey/nanotrasen{
+/obj/item/encryptionkey/warra{
 	pixel_x = 4;
 	pixel_y = -3
 	},
@@ -5482,11 +5482,11 @@
 "GA" = (
 /obj/structure/table/glass,
 /obj/machinery/recharger,
-/obj/item/folder/documents/nanotrasen{
+/obj/item/folder/documents/warra{
 	pixel_x = -8;
 	pixel_y = -2
 	},
-/obj/item/folder/nanotrasen{
+/obj/item/folder/warra{
 	pixel_x = 6;
 	pixel_y = 5
 	},
@@ -5678,7 +5678,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "HP" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5758,7 +5758,7 @@
 /area/ship/hallway/central)
 "IB" = (
 /obj/effect/turf_decal/trimline/opaque/white/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -5773,7 +5773,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "IG" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/arrow_cw{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/arrow_cw{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
@@ -5876,7 +5876,7 @@
 /turf/open/floor/plasteel,
 /area/ship/engineering/engines/starboard)
 "Jo" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
@@ -5998,7 +5998,7 @@
 /obj/effect/turf_decal/trimline/opaque/white/corner{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -6033,7 +6033,7 @@
 /turf/closed/wall/mineral/titanium,
 /area/ship/science/ai_chamber)
 "Km" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/medical)
 "Kp" = (
@@ -6041,7 +6041,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "Kr" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/trimline/transparent/white/filled/warning{
@@ -6165,7 +6165,7 @@
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "LI" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
@@ -6199,10 +6199,10 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/science/ai_chamber)
 "LS" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -6515,7 +6515,7 @@
 	pixel_x = -8;
 	pixel_y = -3
 	},
-/obj/item/stamp/nanotrasen/nakamura{
+/obj/item/stamp/warra/nakamura{
 	pixel_x = -5;
 	pixel_y = 11
 	},
@@ -6558,7 +6558,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/starboard)
 "NY" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
@@ -6586,7 +6586,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Oe" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -6627,7 +6627,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "Oq" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue,
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
@@ -6676,7 +6676,7 @@
 	pixel_x = 14;
 	pixel_y = -1
 	},
-/obj/item/stamp/nanotrasen/ns{
+/obj/item/stamp/warra/ns{
 	pixel_y = 11;
 	pixel_x = 20
 	},
@@ -6783,7 +6783,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/starboard)
 "Pa" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -6837,7 +6837,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/canteen/kitchen)
 "Pp" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -6857,7 +6857,7 @@
 	pixel_x = -7;
 	pixel_y = -6
 	},
-/obj/item/stamp/nanotrasen/deforest{
+/obj/item/stamp/warra/deforest{
 	pixel_x = 6;
 	pixel_y = 8
 	},
@@ -7072,7 +7072,7 @@
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
@@ -7153,7 +7153,7 @@
 /area/ship/crew/toilet)
 "Rk" = (
 /obj/structure/table/wood/reinforced,
-/obj/machinery/fax/nanotrasen,
+/obj/machinery/fax/warra,
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "Rn" = (
@@ -7252,8 +7252,8 @@
 	pixel_x = -1;
 	pixel_y = 1
 	},
-/obj/item/clothing/under/nanotrasen/supply/miner,
-/obj/item/clothing/head/nanotrasen/cap/supply,
+/obj/item/clothing/under/warra/supply/miner,
+/obj/item/clothing/head/warra/cap/supply,
 /obj/item/clothing/gloves/explorer,
 /obj/item/storage/backpack/satchel/explorer,
 /obj/item/clothing/shoes/workboots/mining,
@@ -7342,8 +7342,8 @@
 /obj/item/storage/box/ammo/c9mm,
 /obj/item/storage/box/ammo/c9mm_rubber,
 /obj/item/storage/belt/security/full,
-/obj/item/clothing/head/nanotrasen/beret/security,
-/obj/item/clothing/head/nanotrasen/cap/security,
+/obj/item/clothing/head/warra/beret/security,
+/obj/item/clothing/head/warra/cap/security,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/gloves/color/black,
 /obj/item/melee/knife/switchblade,
@@ -7351,9 +7351,9 @@
 /obj/item/storage/backpack/security,
 /obj/item/reagent_containers/spray/pepper,
 /obj/item/storage/box/handcuffs,
-/obj/item/clothing/head/helmet/m10/nanotrasen,
-/obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/suit/armor/nanotrasen,
+/obj/item/clothing/head/helmet/m10/warra,
+/obj/item/clothing/suit/armor/warra/slim,
+/obj/item/clothing/suit/armor/warra,
 /obj/structure/closet/secure_closet{
 	icon_state = "sec";
 	name = "security officer's locker";
@@ -7391,7 +7391,7 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
 "Sk" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/filled/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/filled/line{
 	dir = 8
 	},
 /obj/structure/cable{
@@ -7433,7 +7433,7 @@
 /obj/effect/turf_decal/trimline/opaque/white/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/structure/disposalpipe/segment{
 	dir = 8
 	},
@@ -7538,7 +7538,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/starboard)
 "Tg" = (
-/obj/structure/sign/nanotrasen/nakamura,
+/obj/structure/sign/warra/nakamura,
 /turf/closed/wall/mineral/titanium,
 /area/ship/engineering/engine)
 "Th" = (
@@ -7634,7 +7634,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/port)
 "TE" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/warrablue/full,
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 8
 	},
@@ -7760,7 +7760,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engines/starboard)
 "Ui" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment,
@@ -7865,10 +7865,10 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "Vn" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono,
@@ -7891,7 +7891,7 @@
 /area/ship/crew/law_office)
 "VI" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -7962,7 +7962,7 @@
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
-/obj/structure/sign/poster/nanotrasen/nakamura_advtools{
+/obj/structure/sign/poster/warra/nakamura_advtools{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -7970,7 +7970,7 @@
 /area/ship/engineering/engine)
 "Wi" = (
 /obj/item/kirbyplants/random,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 4
 	},
 /obj/structure/disposalpipe/segment{
@@ -7979,7 +7979,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "Wl" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
@@ -7998,7 +7998,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo)
 "Wt" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/chair/handrail{
@@ -8008,7 +8008,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/sign/flag/nanotrasen/directional/east,
+/obj/structure/sign/flag/warra/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wy" = (
@@ -8037,9 +8037,9 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "WK" = (
-/obj/effect/turf_decal/trimline/transparent/ntblue/filled/warning,
+/obj/effect/turf_decal/trimline/transparent/warrablue/filled/warning,
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/fax/nanotrasen,
+/obj/machinery/fax/warra,
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
@@ -8086,7 +8086,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering/engine)
 "Xa" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
 /obj/machinery/holopad/emergency/command,
@@ -8102,7 +8102,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Xl" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
+/obj/effect/turf_decal/trimline/opaque/warrablue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange{
 	dir = 4
@@ -8250,7 +8250,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 10
 	},
 /turf/open/floor/plasteel/mono,
@@ -8336,10 +8336,10 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/port)
 "YV" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/camera/autoname,
@@ -8365,7 +8365,7 @@
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
 "Zt" = (
-/obj/structure/sign/nanotrasen/nakamura{
+/obj/structure/sign/warra/nakamura{
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -8386,7 +8386,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/engine)
 "Zu" = (
-/obj/structure/sign/nanotrasen,
+/obj/structure/sign/warra,
 /turf/closed/wall/mineral/titanium,
 /area/ship/general/science)
 "ZB" = (
@@ -8407,7 +8407,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "ZD" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/vending/coffee{
@@ -8422,7 +8422,7 @@
 /area/ship/engineering/engines/port)
 "ZH" = (
 /obj/structure/chair,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 5
 	},
 /obj/structure/cable{
@@ -8438,7 +8438,7 @@
 /area/ship/hallway/central)
 "ZJ" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 8
 	},
 /turf/open/floor/plasteel/mono,
@@ -8462,7 +8462,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "ZR" = (
-/obj/effect/turf_decal/nanotrasen/ns/center_right{
+/obj/effect/turf_decal/warra/ns/center_right{
 	dir = 4
 	},
 /obj/structure/cable{
@@ -8482,7 +8482,7 @@
 /area/ship/engineering/engine)
 "ZY" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/warrablue/line{
 	dir = 4
 	},
 /obj/structure/cable{

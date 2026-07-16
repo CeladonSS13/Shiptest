@@ -163,7 +163,7 @@
 /datum/map_template/ruin/icemoon/crashed_holemaker
 	id = "crashed_holemaker"
 	name = "Crashed Holemaker"
-	description = "Safety records for early Nanotrasen Spaceworks vessels were, and always have been, top of their class. Absolutely no multi-billion credit projects have been painstakingly erased from history. (Citation Needed)"
+	description = "Safety records for early Warra Spaceworks vessels were, and always have been, top of their class. Absolutely no multi-billion credit projects have been painstakingly erased from history. (Citation Needed)"
 	suffix = "icemoon_crashed_holemaker.dmm"
 	cost = 1
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MINOR_LOOT, RUIN_TAG_SHELTER)
@@ -178,7 +178,7 @@
 /datum/map_template/ruin/icemoon/corpreject
 	id = "corpreject"
 	name = "NT Security Solutions Site Gamma"
-	description = "Nanotrasen Corporate Security Solutions vault site Gamma."
+	description = "Warra Corporate Security Solutions vault site Gamma."
 	suffix = "icemoon_surface_corporate_rejects.dmm"
 	cost = 4
 
@@ -443,7 +443,7 @@
 /datum/map_template/ruin/lavaland/wrecked_factory
 	id = "wreck_factory"
 	name = "Wrecked Factory"
-	description = "A  Nanotrasen processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now."
+	description = "A  Warra processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now."
 	suffix = "lavaland_surface_wrecked_factory.dmm"
 	cost = 4
 
@@ -494,15 +494,15 @@
 
 /datum/map_template/ruin/lavaland/codelab
 	id = "codelab"
-	name = "Nanotrasen Genetic Research Facility"
-	description = "A Nanotrasen genetic research facility, abandoned and ripe for looting. Whats that goo over there?"
+	name = "Warra Genetic Research Facility"
+	description = "A Warra genetic research facility, abandoned and ripe for looting. Whats that goo over there?"
 	suffix = "lavaland_surface_codelab.dmm"
 	cost = 1
 
 /datum/map_template/ruin/lavaland/falling_heron
 	id = "crashed_heron"
 	name = "Crashed Heron"
-	description = "A crashed nanotrasen ship Heron-class. It would seem that it's crew died a while ago."
+	description = "A crashed warra ship Heron-class. It would seem that it's crew died a while ago."
 	suffix = "lavaland_crashed_heron.dmm"
 	cost = 5
 	allow_duplicates = FALSE
@@ -528,7 +528,7 @@
 /datum/map_template/ruin/rockplanet/budgetcuts
 	id = "rockplanet_budgetcuts"
 	name = "Budgetcuts"
-	description = "Nanotrasen's gotta lay off some personnel, and this facility hasn't been worth the effort so far"
+	description = "Warra's gotta lay off some personnel, and this facility hasn't been worth the effort so far"
 	suffix = "rockplanet_budgetcuts.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_HARD_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE)
@@ -586,7 +586,7 @@
 /datum/map_template/ruin/rockplanet/distillery
 	id = "rockplanet_distillery"
 	name = "Frontiersman Distillery"
-	description = "A former pre-ICW era Nanotrasen outpost converted into a moonshine distillery by Frontiersman bootleggers."
+	description = "A former pre-ICW era Warra outpost converted into a moonshine distillery by Frontiersman bootleggers."
 	suffix = "rockplanet_distillery.dmm"
 	cost = 3
 
@@ -633,7 +633,7 @@
 /datum/map_template/ruin/space/astraeus
 	id = "astraeus"
 	name = "Astraeus Ruin"
-	description = "This vessel served a lengthy period in the Nanotrasen fleet, before an accident in the munitions bay caused to to be destroyed while in active combat."
+	description = "This vessel served a lengthy period in the Warra fleet, before an accident in the munitions bay caused to to be destroyed while in active combat."
 	suffix = "astraeus.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_INHOSPITABLE)
@@ -649,7 +649,7 @@
 /datum/map_template/ruin/space/spacemall
 	id = "spacemall"
 	name = "Space Mall"
-	description = "An old shopping centre, owned by a former member of Nanotrasen's board of directors.."
+	description = "An old shopping centre, owned by a former member of Warra's board of directors.."
 	suffix = "spacemall.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MAJOR_LOOT, RUIN_TAG_SHELTER)
@@ -740,9 +740,9 @@
 	description = "A Syndicate FOB dating back to the ICW, now home to the Ramzi Clique and their latest haul."
 
 /datum/map_template/ruin/space/onehalftwo
-	name = "Nanotrasen Refueling Station"
+	name = "Warra Refueling Station"
 	id = "onehald_two"
-	description = "An abandoned Nanotrasen refueling post evacuated after an attempted ACLF plasmaflood. Since then, hivebots and a small Ramzi Clique salvage team have attempted to claim the station."
+	description = "An abandoned Warra refueling post evacuated after an attempted ACLF plasmaflood. Since then, hivebots and a small Ramzi Clique salvage team have attempted to claim the station."
 	suffix = "onehalftwo.dmm"
 	cost = 3
 
@@ -845,7 +845,7 @@
 /datum/map_template/ruin/whitesands/pubbyslopcrash
 	id = "ws-pubbyslopcrash"
 	name = "Pubby Slop Crash"
-	description = "A failed attempt of the Nanotrasen nutrional replacement program"
+	description = "A failed attempt of the Warra nutrional replacement program"
 	suffix = "whitesands_surface_pubbyslopcrash.dmm"
 	cost = 3
 	ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
@@ -893,7 +893,7 @@
 /datum/map_template/ruin/whitesands/chokepoint
 	id = "ws-chokepoint"
 	name = "Chokepoint"
-	description = "Some sort of survivors, brandishing old nanotrasen security gear."
+	description = "Some sort of survivors, brandishing old warra security gear."
 	suffix = "whitesands_surface_chokepoint.dmm"
 	cost = 1
 
@@ -1056,7 +1056,7 @@
 /datum/map_template/ruin/asteroid/abandoned_remora
 	id = "abandoned_remora"
 	name = "Destroyed Remora Ship"
-	description = "A very old syndie ship, abandoned and destroyed by Nanotrasen."
+	description = "A very old syndie ship, abandoned and destroyed by Warra."
 	suffix = "abandoned_remora.dmm"
 	cost = 4
 

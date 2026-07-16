@@ -109,7 +109,7 @@ MARK: Syndicate guncases
 	mag_type = /obj/item/ammo_box/magazine/m22lr_himehabu
 
 /*
-MARK: Nanotrasen guncases
+MARK: Warra guncases
 */
 
 /obj/item/storage/guncase/egun

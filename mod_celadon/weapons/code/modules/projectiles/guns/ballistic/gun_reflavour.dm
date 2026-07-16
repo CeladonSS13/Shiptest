@@ -59,7 +59,7 @@
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
 
-// Nanotrasen Pistols
+// Warra Pistols
 
 /obj/item/gun/ballistic/automatic/pistol/challenger
 	name = "VI PS9 Challenger"
@@ -102,12 +102,12 @@
 		)
 	unique_reskin_changes_inhand = TRUE
 
-// Nanotrasen SMGs
+// Warra SMGs
 
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	name = "\improper Saber SMG"
 	desc = "A full-auto 9x18mm submachine gun, designated 'TPG SABR'. Has a threaded barrel for suppressors and a folding stock. This odd gun feels really outdated..."
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD
 
 /obj/item/gun/ballistic/automatic/smg/expedition
 	name = "\improper VI SGL9 Expedition"
@@ -249,7 +249,7 @@
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
 
-// Nanotrasen Shotguns & Revolvers
+// Warra Shotguns & Revolvers
 
 /obj/item/gun/ballistic/shotgun/automatic/negotiator
 	name = "VI AST12 Negotiator"

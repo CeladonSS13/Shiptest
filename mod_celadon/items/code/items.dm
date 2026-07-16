@@ -20,12 +20,12 @@
 	icon_state = "folded_SF"
 	sign_path = /obj/structure/sign/flag/solfed
 
-/obj/item/sign/flag/nanotrasen
+/obj/item/sign/flag/warra
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
-	name = "\improper folded Nanotrasen flag"
-	desc = "Light blue folded flag with Nanotrasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
+	name = "\improper folded Warra flag"
+	desc = "Light blue folded flag with Warra logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
 	icon_state = "folded_NT"
-	sign_path = /obj/structure/sign/flag/nanotrasen
+	sign_path = /obj/structure/sign/flag/warra
 
 /obj/item/sign/flag/syndie
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
@@ -73,14 +73,14 @@
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/solfed, (-32))
 
-/obj/structure/sign/flag/nanotrasen
+/obj/structure/sign/flag/warra
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
-	name = "\improper Nanotrasen flag"
-	desc = "Light blue flag with Nanotrasen logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
+	name = "\improper Warra flag"
+	desc = "Light blue flag with Warra logo on it.. No, you don't need any shipment manifest to hold it on your shuttle."
 	icon_state = "flag_NT"
-	item_flag = /obj/item/sign/flag/nanotrasen
+	item_flag = /obj/item/sign/flag/warra
 
-MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/nanotrasen, (-32))
+MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/warra, (-32))
 
 /obj/structure/sign/flag/syndie
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
@@ -142,9 +142,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/pirate, (-32))
 /obj/item/banner/solfed/mundane
 	inspiration_available = FALSE
 
-/obj/item/banner/nanotrasen
-	name = "Nanotrasen banner"
-	desc = "Light blue banner with Nanotrasen logo on it, with some golden stripes.. No, you don't need any shipment manifest to hold it on your shuttle."
+/obj/item/banner/warra
+	name = "Warra banner"
+	desc = "Light blue banner with Warra logo on it, with some golden stripes.. No, you don't need any shipment manifest to hold it on your shuttle."
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/flags.dmi'
 	icon_state = "banner_NT"
 	item_state = "banner_NT"
@@ -152,7 +152,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/structure/sign/flag/pirate, (-32))
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/banners_righthand.dmi'
 	warcry = "Soon we will privatize oxygen itself!"
 
-/obj/item/banner/nanotrasen/mundane
+/obj/item/banner/warra/mundane
 	inspiration_available = FALSE
 
 /obj/item/banner/syndie

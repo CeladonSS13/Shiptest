@@ -2,14 +2,14 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Venture-class Mining Shuttle",
 	"map_short_name": "Venture",
-	"description": "Осознавая острую необходимость в дешёвом корабле, способном быстро действовать на небезопасных территориях и поддерживать капитальные суда в отдалённых регионах, компания Nanotrasen Spaceworks создала «Венчур». Он был задуман как судно, готовое принять любого капитана, независимо от того, насколько он неопытен в опасностях Фронтира, желающего заняться уважаемым промыслом — поддержкой более опытных коллег. Компания N+S Logistics массово закупает данные корабли из-за их дешевизны и эффективности при добыче полезных ископаемых или организации логистики малого масштаба. «Венчур» обладает удивительной способностью быстро доставлять свой экипаж до нужных руд и минералов, добывая их со скоростью, позволяющей при этом оставаться относительно невредимым.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_venture.dmm",
+	"description": "Осознавая острую необходимость в дешёвом корабле, способном быстро действовать на небезопасных территориях и поддерживать капитальные суда в отдалённых регионах, компания warra Spaceworks создала «Венчур». Он был задуман как судно, готовое принять любого капитана, независимо от того, насколько он неопытен в опасностях Фронтира, желающего заняться уважаемым промыслом — поддержкой более опытных коллег. Компания N+S Logistics массово закупает данные корабли из-за их дешевизны и эффективности при добыче полезных ископаемых или организации логистики малого масштаба. «Венчур» обладает удивительной способностью быстро доставлять свой экипаж до нужных руд и минералов, добывая их со скоростью, позволяющей при этом оставаться относительно невредимым.",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_venture.dmm",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 2000,
 	"prefix": "NTDSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Шахтёрский"
 	],
@@ -18,20 +18,20 @@
 		"SPACE",
 		"BRITISH_NAVY",
 		"MERCANTILE",
-		"NANOTRASEN"
+		"warra"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/captain/nslogistics",
 			"officer": true,
 			"slots": 1
 		},
 		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/miner/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/miner/nslogistics",
 			"slots": 1
 		},
 		"Deckhand": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/assistant/nslogistics",
 			"slots": 1
 		}
 	}

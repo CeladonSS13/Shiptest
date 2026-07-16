@@ -11,7 +11,7 @@
 
 /datum/supply_pack/faction/solfed/sec_supply/saber
 	name = "Energy Kampfmesser"
-	desc = "Nanotrasen eswords are failing to properly deliver solarian freedom? Try this!"
+	desc = "Warra eswords are failing to properly deliver solarian freedom? Try this!"
 	contains = list(/obj/item/melee/energy/sword/saber/knife/blue)
 	cost = 450
 

@@ -1,24 +1,24 @@
 // MARK: Captain
 
-/datum/outfit/job/cel/nanotrasen/captain/vigilitas
+/datum/outfit/job/cel/warra/captain/vigilitas
 	name = "NT Vigilitas - Lieutenant (Darect Captain)"
 	job_icon = "clip_cmm6"
 
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_lieutenant
+	id = /obj/item/card/id/cel/warra/vigilitas_lieutenant
 
-/datum/outfit/job/cel/nanotrasen/captain/vigilitas/darect
+/datum/outfit/job/cel/warra/captain/vigilitas/darect
 	belt = /obj/item/pda/heads/hos
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/nanotrasen/alt/captain
-	uniform = /obj/item/clothing/under/nanotrasen/security/director
-	suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
+	ears = /obj/item/radio/headset/warra/alt/captain
+	uniform = /obj/item/clothing/under/warra/security/director
+	suit = /obj/item/clothing/suit/armor/warra/sec_director
 	alt_suit = /obj/item/clothing/suit/toggle/armor/parade/red
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/combat
 	neck = /obj/item/clothing/neck/scarf/black
-	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	head = /obj/item/clothing/head/warra/beret/security/command
 
 	backpack = /obj/item/storage/backpack/security
 	satchel = /obj/item/storage/backpack/satchel/sec
@@ -32,23 +32,23 @@
 
 // MARK: Command
 
-/datum/outfit/job/cel/nanotrasen/hos/vigilitas
+/datum/outfit/job/cel/warra/hos/vigilitas
 	name = "NT Vigilitas - Sergeant"
 	job_icon = "clip_cmm5"
 
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_sergeant
+	id = /obj/item/card/id/cel/warra/vigilitas_sergeant
 	belt = /obj/item/pda/heads/hos
-	ears = /obj/item/radio/headset/nanotrasen/alt
-	uniform = /obj/item/clothing/under/nanotrasen/security/director
+	ears = /obj/item/radio/headset/warra/alt
+	uniform = /obj/item/clothing/under/warra/security/director
 	alt_uniform = null
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/nanotrasen/slim
-	alt_suit = /obj/item/clothing/suit/armor/nanotrasen/sec_director
+	suit = /obj/item/clothing/suit/armor/warra/slim
+	alt_suit = /obj/item/clothing/suit/armor/warra/sec_director
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/nanotrasen/beret/security/command
+	head = /obj/item/clothing/head/warra/beret/security/command
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	suit_store = null
 	r_pocket = /obj/item/assembly/flash/handheld
@@ -66,19 +66,19 @@
 
 // MARK: Crew
 
-/datum/outfit/job/cel/nanotrasen/engineer/vigilitas
+/datum/outfit/job/cel/warra/engineer/vigilitas
 	name = "NT Vigilitas - Engineer"
 	job_icon = "stationengineer"
 
 	jobtype = /datum/job/engineer
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_engineer
+	id = /obj/item/card/id/cel/warra/vigilitas_engineer
 	belt = /obj/item/storage/belt/utility/full/engi
 	l_pocket = /obj/item/pda/engineering
 	ears = /obj/item/radio/headset/headset_eng
-	uniform = /obj/item/clothing/under/nanotrasen/engineering
-	head = /obj/item/clothing/head/hardhat/nanotrasen
-	suit = /obj/item/clothing/suit/nanotrasen/vest
+	uniform = /obj/item/clothing/under/warra/engineering
+	head = /obj/item/clothing/head/hardhat/warra
+	suit = /obj/item/clothing/suit/warra/vest
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/workboots
 	r_pocket = /obj/item/t_scanner
@@ -91,15 +91,15 @@
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 
-/datum/outfit/job/cel/nanotrasen/doctor/vigilitas
+/datum/outfit/job/cel/warra/doctor/vigilitas
 	name = "NT Vigilitas - Medical Doctor"
 	job_icon = "medicaldoctor"
 
 	jobtype = /datum/job/doctor
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_medic
+	id = /obj/item/card/id/cel/warra/vigilitas_medic
 	implants = list(/obj/item/implant/mindshield)
-	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	ears = /obj/item/radio/headset/warra/alt/captain
 	belt = /obj/item/pda/medical
 	gloves = /obj/item/clothing/gloves/color/latex/nitrile
 	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
@@ -114,10 +114,10 @@
 
 // MARK: Assistant
 
-/datum/outfit/job/cel/nanotrasen/security/vigilitas
+/datum/outfit/job/cel/warra/security/vigilitas
 	name = "NT Vigilitas - Security Officer"
 	job_icon = "securityofficer"
 
 	jobtype = /datum/job/officer
 
-	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
+	id = /obj/item/card/id/cel/warra/vigilitas_security

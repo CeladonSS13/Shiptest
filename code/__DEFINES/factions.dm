@@ -37,7 +37,7 @@
 #define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV")
 #define PREFIX_RAMZI list("RCSV")
 #define PREFIX_NONE list()
-// [CELADON-REMOVE] */
+*/ // [/CELADON-REMOVE]
 
 #define FACTION_SORT_INDEPENDENT 100 // Independents first because of majority
 #define FACTION_SORT_DEFAULT 50 // Everything else in the middle

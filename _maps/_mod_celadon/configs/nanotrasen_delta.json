@@ -3,13 +3,13 @@
 	"map_name": "Delta-class Frigate",
 	"map_short_name": "Delta",
 	"description": "Судно класса 'Delta' - это компактное и современное шахтерское судно, которое дополняет свой сравнительно небольшой органический экипаж полным набором робототехнических средств, включая ИИ и множество шахтерских и логистических дронов и киборгов. Несмотря на то, что Delta очень любимы логистами Нанотрейзен за их минимальное обслуживание и высокую экономическую эффективность, они гораздо менее популярны среди экипажей, выбранных для управления ими, так как им сильно не хватает мест для размещения экипажа и оборонительного вооружения.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_delta.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_delta.dmm",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 4000,
 	"prefix": "NTDSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Исследовательский"
 	],
@@ -18,33 +18,33 @@
 		"SPACE",
 		"BRITISH_NAVY",
 		"MERCANTILE",
-		"NANOTRASEN"
+		"warra"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Science Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/rd",
+			"outfit": "/datum/outfit/job/cel/warra/rd",
 			"officer": true,
 			"slots": 1
 		},
 		"Roboticist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/roboticist",
+			"outfit": "/datum/outfit/job/cel/warra/scientist/deforest_researcher/roboticist",
 			"slots": 2
 		},
 		"Mining Mech Pilot": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/miner",
+			"outfit": "/datum/outfit/job/cel/warra/miner",
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/warra/assistant",
 			"slots": 1
 		}
 	}

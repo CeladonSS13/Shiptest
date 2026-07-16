@@ -1,7 +1,7 @@
-/datum/supply_pack/faction/nanotrasen/mech
+/datum/supply_pack/faction/warra/mech
 	category = "Tech - Mech Exosuit"
 
-/datum/supply_pack/faction/nanotrasen/mech/mpgygax_parts
+/datum/supply_pack/faction/warra/mech/mpgygax_parts
 	name = "NT-501p-MP construction kit"
 	desc = "A set of parts for the NT-501p-MP exosuit model, dervived from the original Cybersun designs and modified for mass production. The armor plating was reduced to cut costs for mass production, but the lighter weight allows the NT-501p-MP's modified servos to perform swift moderate distance charges without heavily taxing the power supply. "
 	cost = 20000
@@ -20,8 +20,8 @@
 	)
 	crate_name = "NT-501p-MP Construction Kit"
 
-/datum/supply_pack/faction/nanotrasen/mech/gygaxnt
+/datum/supply_pack/faction/warra/mech/gygaxnt
 	name = "NT Gygax Conversion Kit"
-	desc = "A custom-made kit for converting the Gygax combat exoskeleton into the specialized NanoTrasen combat exoskeleton."
+	desc = "A custom-made kit for converting the Gygax combat exoskeleton into the specialized Warra combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt)
 	cost = 500

@@ -91,7 +91,7 @@
 	icon_state = "hopcap_nt"
 	dog_fashion = /datum/dog_fashion/head/head_of_personnel
 
-/obj/item/clothing/head/caphat/nt
+/obj/item/clothing/head/caphat/warra
 	name = "captain's hat"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/hats.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/head.dmi'
@@ -106,7 +106,7 @@
 	desc = "The symbol of true bureaucratic micromanagement."
 	dog_fashion = /datum/dog_fashion/head/head_of_personnel
 
-/obj/item/clothing/head/hopcap/nt
+/obj/item/clothing/head/hopcap/warra
 	icon_state = "hopcap_nt"
 	dog_fashion = /datum/dog_fashion/head/head_of_personnel
 

@@ -52,7 +52,7 @@
 	name = "Pirate - Captain (Defector)"
 	job_icon = "piratecaptain"
 
-	uniform = /obj/item/clothing/under/nanotrasen/officer
+	uniform = /obj/item/clothing/under/warra/officer
 	gloves = /obj/item/clothing/gloves/color/black
 	suit = null
 	head = /obj/item/clothing/head/beret/black
@@ -88,7 +88,7 @@
 
 	id = /obj/item/card/id/cel/pirate/headofpersonnel
 	ears = /obj/item/radio/headset/pirate/alt
-	uniform = /obj/item/clothing/under/nanotrasen/affairs
+	uniform = /obj/item/clothing/under/warra/affairs
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/color/black
@@ -188,7 +188,7 @@
 /datum/outfit/job/cel/pirate/security/stingray
 	name = "Pirate - Security Officer (Defector)"
 
-	uniform = /obj/item/clothing/under/nanotrasen/security
+	uniform = /obj/item/clothing/under/warra/security
 	head = /obj/item/clothing/head/beret
 	shoes = /obj/item/clothing/shoes/jackboots
 	l_pocket = /obj/item/flashlight/seclite

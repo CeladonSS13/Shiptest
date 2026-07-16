@@ -377,7 +377,7 @@
 
 /obj/item/melee/energy/sword/saber/knife
 	name = "energy kampfmesser"
-	desc = "Nanotrasen eswords are failing to properly deliver solarian freedom? Try this!"
+	desc = "Warra eswords are failing to properly deliver solarian freedom? Try this!"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/energy.dmi'
 	icon_state = "eknife"
 	base_icon_state = "eknife"

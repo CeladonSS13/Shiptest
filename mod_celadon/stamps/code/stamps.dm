@@ -40,43 +40,43 @@
 	icon_state = "elysium-avanpost-stamp"
 	dye_color = DYE_GREEN
 
-/obj/item/stamp/nt/cent_command
+/obj/item/stamp/warra/cent_command
 	name = "NT CentCommand stamp"
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/stamps.dmi'
-	icon_state = "nt-cent-command-stamp"
+	icon_state = "warra-cent-command-stamp"
 	dye_color = DYE_CENTCOM
 
-/obj/item/stamp/nt/captain
+/obj/item/stamp/warra/captain
 	name = "NT Captain stamp"
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/stamps.dmi'
-	icon_state = "nt-captain-stamp"
+	icon_state = "warra-captain-stamp"
 	dye_color = DYE_BLUE
 
-/obj/item/stamp/nanotrasen/nakamura
+/obj/item/stamp/warra/nakamura
 	name = "Nakamura Engineering rubber stamp"
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/stamps.dmi'
 	icon_state = "stamp-ne"
 	dye_color = DYE_CE
 
-/obj/item/stamp/nanotrasen/nakamura/captain
+/obj/item/stamp/warra/nakamura/captain
 	name = "NE Captain's rubber stamp"
 	icon_state = "stamp-ne_captain"
 
-/obj/item/stamp/nanotrasen/nakamura/engineering
+/obj/item/stamp/warra/nakamura/engineering
 	name = "NE Engineering Director's rubber stamp"
 	icon_state = "stamp-ne_engdir"
 
-/obj/item/stamp/nanotrasen/deforest
+/obj/item/stamp/warra/deforest
 	name = "DeForest Medical rubber stamp"
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/stamps.dmi'
 	icon_state = "stamp-df"
 	dye_color = DYE_CMO
 
-/obj/item/stamp/nanotrasen/deforest/captain
+/obj/item/stamp/warra/deforest/captain
 	name = "DF Captain's rubber stamp"
 	icon_state = "stamp-df_captain"
 
-/obj/item/stamp/nanotrasen/deforest/medical
+/obj/item/stamp/warra/deforest/medical
 	name = "DF Medical Director's rubber stamp"
 	icon_state = "stamp-df_meddir"
 

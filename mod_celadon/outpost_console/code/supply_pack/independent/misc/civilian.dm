@@ -99,7 +99,7 @@ MARK: Bundles
 
 /datum/supply_pack/faction/independent/civilian/party
 	name = "Party Equipment"
-	desc = "Celebrate both life and death on the frontier with Nanotrasen's Party Essentials(tm)! Contains seven colored glowsticks, six beers, six sodas, two ales, and a bottle of patron, goldschlager, and shaker!"
+	desc = "Celebrate both life and death on the frontier with Warra's Party Essentials(tm)! Contains seven colored glowsticks, six beers, six sodas, two ales, and a bottle of patron, goldschlager, and shaker!"
 	cost = 500
 	contains = list(/obj/item/storage/box/drinkingglasses,
 					/obj/item/reagent_containers/food/drinks/shaker,
@@ -146,7 +146,7 @@ MARK: Decoration / flooring
 
 /datum/supply_pack/faction/independent/civilian/potted_plants
 	name = "Potted Plants"
-	desc = "Spruce up the ship with these lovely plants! Contains a random assortment of five potted plants from Nanotrasen's potted plant research division. Warranty void if thrown."
+	desc = "Spruce up the ship with these lovely plants! Contains a random assortment of five potted plants from Warra's potted plant research division. Warranty void if thrown."
 	cost = 350
 	contains = list(/obj/item/kirbyplants/random,
 					/obj/item/kirbyplants/random,
@@ -252,6 +252,6 @@ MARK: Decoration / flooring
 // [CELADON-ADD] - MARK: Удалить после РАЦИЙ
 /obj/item/radio/transceiver/syndicate
 /obj/item/radio/transceiver/solfed
-/obj/item/radio/transceiver/nanotrasen
+/obj/item/radio/transceiver/warra
 /obj/item/radio/transceiver/inteq
 // [/CELADON-ADD] - MARK: Удалить после РАЦИЙ

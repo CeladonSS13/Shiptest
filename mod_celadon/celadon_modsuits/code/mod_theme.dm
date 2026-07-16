@@ -42,7 +42,7 @@
 		Lastly, the suit is capable of compressing and shrinking the mass of the wearer, as well as \
 		rearranging its own constitution, to allow them to fit upright in a sphere form that can \
 		roll around at half their original size; leaving high-powered mining ordinance in its wake. \
-		However, all of this has proven to be straining on all Nanotrasen-approved cells, \
+		However, all of this has proven to be straining on all Warra-approved cells, \
 		so much so that it comes default fueled by equally-enigmatic plasma fuel rather than a simple recharge. \
 		Additionally, the systems have been put to near their maximum load, allowing for far less customization than others."
 
@@ -77,8 +77,8 @@
 		It is slightly more demanding of power than civilian-grade models, and weak against fingers tapping the glass."
 
 /datum/mod_theme/research
-	desc = "A private military EOD suit by Nanotrasen Research Division, intended for explosive research. Bulky, but expansive."
-	extended_desc = "A private military EOD suit by Nanotrasen Research Division, based off the work of Nakamura Engineering. \
+	desc = "A private military EOD suit by Warra Research Division, intended for explosive research. Bulky, but expansive."
+	extended_desc = "A private military EOD suit by Warra Research Division, based off the work of Nakamura Engineering. \
 		This suit is intended for explosive research, built incredibly bulky and well-covering. \
 		Featuring an inbuilt chemical scanning array, this suit uses two layers of plastitanium armor, \
 		sandwiching an inert layer to dissipate kinetic energy into the suit and away from the user; \
@@ -109,9 +109,9 @@
 
 /datum/mod_theme/magnate
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	desc = "A fancy, very protective suit for Nanotrasen's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
+	desc = "A fancy, very protective suit for Warra's captains. Shock, fire and acid-proof while also having a large capacity and high speed."
 	extended_desc = "They say it costs four hundred thousand credits to run this MODsuit... for twelve seconds. \
-		The Magnate suit is designed for protection, comfort, and luxury for Nanotrasen Captains. \
+		The Magnate suit is designed for protection, comfort, and luxury for Warra Captains. \
 		The onboard air filters have been preprogrammed with an additional five hundred different fragrances that can \
 		be pumped into the helmet, all of highly-endangered flowers. A bespoke Tralex mechanical clock has been placed \
 		in the wrist, and the Magnate package comes with carbon-fibre cufflinks to wear underneath. \
@@ -158,7 +158,7 @@
 		visual aesthetics and prop design than they do functional operative camouflage. But the true reason goes deeper. \
 		The visual appearance of the suit exemplifies brazen displays of power, not true stealth. However, the suit's inbuilt stealth mechanisms\
 		prevent anyone from fully recognizing the occupant, only the suit, creating perfect anonymity. This visual transformation is \
-		backed by inbuilt psi-emitters, heightening stressors common amongst Nanotrasen staff, and clouding identifiable information. \
+		backed by inbuilt psi-emitters, heightening stressors common amongst Warra staff, and clouding identifiable information. \
 		Scrubbed statistical data presented a single correlation within documented psychological profiles. The fear of the Unknown."
 */
 /datum/mod_theme/ninja
@@ -183,8 +183,8 @@
 // MARK: NT
 /datum/mod_theme/responsory
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	desc = "A high-speed rescue suit by Nanotrasen, intended for its emergency response teams."
-	extended_desc = "A streamlined suit of Nanotrasen design, these sleek black suits are only worn by \
+	desc = "A high-speed rescue suit by Warra, intended for its emergency response teams."
+	extended_desc = "A streamlined suit of Warra design, these sleek black suits are only worn by \
 		elite emergency response personnel to help save the day. While the slim and nimble design of the suit \
 		cuts the ceramics and ablatives in it down, dropping the protection, \
 		it keeps the wearer safe from the harsh void of space while sacrificing no speed whatsoever. \
@@ -192,21 +192,21 @@
 
 /datum/mod_theme/apocryphal
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	desc = "A high-tech, only technically legal, armored suit created by a collaboration effort between Nanotrasen and Vigilitas Interstellar."
+	desc = "A high-tech, only technically legal, armored suit created by a collaboration effort between Warra and Vigilitas Interstellar."
 	extended_desc = "A bulky and only legal by technicality suit, this ominous black and red MODsuit is only worn by \
-		Nanotrasen Black Ops teams. If you can see this suit, you fucked up. A collaborative joint effort between \
-		Vigilitas and Nanotrasen the construction and modules gives the user robust protection against \
+		Warra Black Ops teams. If you can see this suit, you fucked up. A collaborative joint effort between \
+		Vigilitas and Warra the construction and modules gives the user robust protection against \
 		anything that can be thrown at it, along with acute combat awareness tools for it's wearer. \
 		Whether the wearer uses it or not is up to them. \
 		There seems to be a little inscription on the wrist that reads; \'squiddie', d'aww."
 
 /datum/mod_theme/corporate
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)
-	desc = "A fancy, high-tech suit for Nanotrasen's high ranking officers."
+	desc = "A fancy, high-tech suit for Warra's high ranking officers."
 	extended_desc = "An even more costly version of the Magnate model, the corporate suit is a thermally insulated, \
 		anti-corrosion coated suit for high-ranking CentCom Officers, deploying pristine protective armor and \
 		advanced actuators, feeling practically weightless when turned on. Scraping the paint of this suit is \
-		counted as a war-crime and reason for immediate execution in over fifty Nanotrasen space stations. \
+		counted as a war-crime and reason for immediate execution in over fifty Warra space stations. \
 		The resemblance to a Gorlex Marauder helmet is purely coincidental. This is the newest V2 revision, which has \
 		reflective reinforced-plasmaglass shielding weaved with advanced kevlar fibers. Sources say that some of the armor \
 		is ripped straight from an Apocryphal MODsuit."
@@ -274,7 +274,7 @@
 			),
 		),
 	)
-	desc = "A high-tech suit for Nanotrasen's elite assets."
+	desc = "A high-tech suit for Warra's elite assets."
 	extended_desc = "This heavily protected armoured suit is a thermally insulated, \
 		anti-corrosion coated suit for high-ranking CentCom Officers, deploying pristine protective armor and \
 		advanced actuators, feeling practically weightless when turned on. \

@@ -207,7 +207,7 @@
 /area/ruin/unpowered/corprejectrooms)
 "fh" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/mob/living/simple_animal/hostile/human/nanotrasen{
+/mob/living/simple_animal/hostile/human/warra{
 	faction = list("DeserterNT")
 	},
 /turf/open/floor/mineral/titanium/tiled/blue,
@@ -802,7 +802,7 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged{
+/mob/living/simple_animal/hostile/human/warra/ranged{
 	faction = list("DeserterNT")
 	},
 /turf/open/floor/mineral/plastitanium/red,
@@ -851,7 +851,7 @@
 /obj/structure/fans/tiny,
 /obj/machinery/door/airlock/hatch{
 	dir = 4;
-	name = "Nanotrasen Secure Solutions"
+	name = "warra Secure Solutions"
 	},
 /obj/item/restraints/legcuffs/beartrap{
 	armed = 1
@@ -1108,7 +1108,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/human/nanotrasen/ranged{
+/mob/living/simple_animal/hostile/human/warra/ranged{
 	faction = list("DeserterNT")
 	},
 /turf/open/floor/wood,
@@ -1533,7 +1533,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/human/nanotrasen/elite,
+/mob/living/simple_animal/hostile/human/warra/elite,
 /turf/open/floor/vault,
 /area/ruin/unpowered/corprejectvault)
 "It" = (
@@ -1609,7 +1609,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
 	dir = 8
 	},
-/mob/living/simple_animal/hostile/human/nanotrasen/elite,
+/mob/living/simple_animal/hostile/human/warra/elite,
 /turf/open/floor/vault,
 /area/ruin/unpowered/corprejectvault)
 "Kg" = (
@@ -1680,7 +1680,7 @@
 /turf/open/floor/mineral/titanium/tiled/blue,
 /area/ruin/unpowered/corprejectrooms)
 "LK" = (
-/obj/item/bedsheet/nanotrasen,
+/obj/item/bedsheet/warra,
 /obj/structure/bed,
 /turf/open/floor/carpet/lone,
 /area/ruin/unpowered/corprejectrooms)
@@ -1804,7 +1804,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
-/mob/living/simple_animal/hostile/human/nanotrasen{
+/mob/living/simple_animal/hostile/human/warra{
 	faction = list("DeserterNT")
 	},
 /turf/open/floor/plating/catwalk_floor,
@@ -2061,8 +2061,8 @@
 "Tu" = (
 /obj/structure/table/glass,
 /obj/item/paper{
-	desc = "Standard Nanotrasen typeface for important documents.";
-	default_raw_text = "Welcome to the NNTVS 'Not Nanotrasen Vault Station'! We are never happier to have people on board than when we get new arrivals ready to betray and renounce their allegiance to the coporate egregory known as Nanotrasen! ";
+	desc = "Standard warra typeface for important documents.";
+	default_raw_text = "Welcome to the NNTVS 'Not warra Vault Station'! We are never happier to have people on board than when we get new arrivals ready to betray and renounce their allegiance to the coporate egregory known as warra! ";
 	name = "Corporate Desertion and You!"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
@@ -2166,7 +2166,7 @@
 /turf/open/floor/wood,
 /area/ruin/unpowered/corprejectrooms)
 "Wa" = (
-/obj/item/bedsheet/nanotrasen,
+/obj/item/bedsheet/warra,
 /obj/structure/bed,
 /obj/machinery/light/directional/east,
 /turf/open/floor/carpet/lone,

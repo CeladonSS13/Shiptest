@@ -79,7 +79,7 @@
 		/obj/item/clothing/suit/jacket/letterman = 1,
 		/obj/item/clothing/suit/jacket/letterman_red = 1,
 		/obj/item/clothing/suit/jacket/letterman_syndie = 1,
-		/obj/item/clothing/suit/jacket/letterman_nanotrasen = 1,
+		/obj/item/clothing/suit/jacket/letterman_warra = 1,
 		/obj/item/clothing/suit/gothcoat = 1,
 		/obj/item/clothing/suit/caution = 1,
 		/obj/item/clothing/suit/hooded/ablative = 1,	// Под вопросом

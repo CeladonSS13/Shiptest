@@ -3,82 +3,82 @@
 	"map_name": "Celestis-class Exploration Cruiser",
 	"map_short_name": "Celestis",
 	"description": "Celestis - Самое продвинутое экспедиционное судно Нанотрейзен, совмещающее в себе RnD, карго отсек N+S, небольшой бриг VI, целый инженерный отдел NE с продвинутым термоэлектрическим генератор, а также современный медотсек DF. На корабле присутствует корпоративный представитель, для представления интересов НТ, что позволяет Celestis-Class превосходить своих конкурентов, а также удивлять лица многих людей увидивших его, так как такой корабль на фронтире - редкость.",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_celestis.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_celestis.dmm",
 	"enabled": true,
 	"limit": 1,
 	"sensor_range": 6,
 	"starting_funds": 2000,
 	"prefix": "NTRSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": ["Исследовательский", "Специализированный", "ИИ"],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"SPACE",
 		"MYTHOLOGICAL",
 		"WEAPONS"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"First Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/hop",
+			"outfit": "/datum/outfit/job/cel/warra/hop",
 			"officer": true,
 			"slots": 1
 		},
 		"Supply Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/quartermaster/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/quartermaster/nslogistics",
 			"officer":true,
 			"slots": 1
 		},
 		"Corporate Representative": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/lawyer/corporaterepresentative",
+			"outfit": "/datum/outfit/job/cel/warra/lawyer/corporaterepresentative",
 			"slots": 1
 		},
 		"Security Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/vigilitas",
+			"outfit": "/datum/outfit/job/cel/warra/security/vigilitas",
 			"slots": 1
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/deforest_medic",
+			"outfit": "/datum/outfit/job/cel/warra/doctor/deforest_medic",
 			"slots": 1
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/paramedic/deforest_medic",
+			"outfit": "/datum/outfit/job/cel/warra/paramedic/deforest_medic",
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nakamura",
+			"outfit": "/datum/outfit/job/cel/warra/engineer/nakamura",
 			"slots": 1
 		},
 		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/atmos/nakamura",
+			"outfit": "/datum/outfit/job/cel/warra/atmos/nakamura",
 			"slots": 1
 		},
 		"Supply Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/cargo_tech/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/cargo_tech/nslogistics",
 			"slots": 1
 		},
 		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/miner/nslogistics",
+			"outfit": "/datum/outfit/job/cel/warra/miner/nslogistics",
 			"slots": 1
 		},
 		"Scientist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher",
+			"outfit": "/datum/outfit/job/cel/warra/scientist/deforest_researcher",
 			"slots": 1
 		},
 		"Roboticist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist/deforest_researcher/roboticist",
+			"outfit": "/datum/outfit/job/cel/warra/scientist/deforest_researcher/roboticist",
 			"slots": 1
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/cook",
+			"outfit": "/datum/outfit/job/cel/warra/cook",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/warra/assistant",
 			"slots": 2
 		}
 	}

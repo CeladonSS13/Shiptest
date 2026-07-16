@@ -1,23 +1,23 @@
-/datum/supply_pack/faction/nanotrasen/medical
+/datum/supply_pack/faction/warra/medical
 	category = "Medical - Medical"
 
 /* Hypospray supplies */
 
-/datum/supply_pack/faction/nanotrasen/medical/mkii_hypo
+/datum/supply_pack/faction/warra/medical/mkii_hypo
 	name = "mk.II Hypospray kit"
-	desc = "Contains an Nanotrasen Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
+	desc = "Contains an Warra Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
 	cost = 1200
 	contains = list(/obj/item/storage/box/hypospray)
 	crate_name = "mk.II hypospray crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/mkiii_hypo
+/datum/supply_pack/faction/warra/medical/mkiii_hypo
 	name = "mk.III Hypospray kit"
-	desc = "Contains a mk.III Nanotrasen Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
+	desc = "Contains a mk.III Warra Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
 	cost = 2000
 	contains = list(/obj/item/storage/box/hypospray/mkiii)
 	crate_name = "mk.III hypospray crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/empty_vial
+/datum/supply_pack/faction/warra/medical/vials/empty_vial
 	name = "Empty Vial"
 	desc = "Contains 2 empty hypospray vials, for usage in a Hypospray."
 	cost = 200
@@ -27,7 +27,7 @@
 	)
 	crate_name = "empty vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/bica_vial
+// /datum/supply_pack/faction/warra/medical/vials/bica_vial
 // 	name = "Bicardine Vial"
 // 	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
 // 	cost = 400
@@ -36,7 +36,7 @@
 // 	)
 // 	crate_name = "bicardine vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/kelo_vial
+// /datum/supply_pack/faction/warra/medical/vials/kelo_vial
 // 	name = "Kelotane Vial"
 // 	desc = "Contains a spare kelotane vial, for usage in a Hypospray."
 // 	cost = 400
@@ -45,7 +45,7 @@
 // 	)
 // 	crate_name = "kelotane vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/dylo_vial
+// /datum/supply_pack/faction/warra/medical/vials/dylo_vial
 // 	name = "Dylovene Vial"
 // 	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
 // 	cost = 400
@@ -54,7 +54,7 @@
 // 	)
 // 	crate_name = "dylovene vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/dexa_vial
+/datum/supply_pack/faction/warra/medical/vials/dexa_vial
 	name = "Dexalin Vial"
 	desc = "Contains a spare dexalin vial, for usage in a Hypospray."
 	cost = 400
@@ -63,7 +63,7 @@
 	)
 	crate_name = "dexalin vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/tric_vial
+// /datum/supply_pack/faction/warra/medical/vials/tric_vial
 // 	name = "Tricordrazine Vial"
 // 	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
 // 	cost = 300
@@ -72,7 +72,7 @@
 // 	)
 // 	crate_name = "tricordrazine vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/morb_vial
+/datum/supply_pack/faction/warra/medical/vials/morb_vial
 	name = "Morphine Vial"
 	desc = "Contains a spare morphine vial, for usage in a Hypospray."
 	cost = 500
@@ -81,7 +81,7 @@
 	)
 	crate_name = "morphine vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/atro_vial
+/datum/supply_pack/faction/warra/medical/vials/atro_vial
 	name = "Atropine Vial"
 	desc = "Contains a spare atropine vial, for usage in a Hypospray."
 	cost = 500
@@ -90,7 +90,7 @@
 	)
 	crate_name = "atropine vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/stas_vial
+/datum/supply_pack/faction/warra/medical/vials/stas_vial
 	name = "Stasis Vial"
 	desc = "Contains a spare stasis vial, for usage in a Hypospray."
 	cost = 800
@@ -99,7 +99,7 @@
 	)
 	crate_name = "stasis vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/erp_vial
+/datum/supply_pack/faction/warra/medical/vials/erp_vial
 	name = "Radiation Purgant Vial"
 	desc = "Contains 2 spare radiation purgant vials, for usage in a Hypospray."
 	cost = 600
@@ -109,7 +109,7 @@
 	)
 	crate_name = "radiation purgant vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/sal_vial
+/datum/supply_pack/faction/warra/medical/vials/sal_vial
 	name = "SalGlu Vial"
 	desc = "Contains 2 spare SalGlu Solution vials, for usage in a Hypospray."
 	cost = 600
@@ -119,7 +119,7 @@
 	)
 	crate_name = "SalGlu vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/chit_vial
+/datum/supply_pack/faction/warra/medical/vials/chit_vial
 	name = "Chitosan Vial"
 	desc = "Contains 2 spare Chitosan vials, for usage in a Hypospray."
 	cost = 600

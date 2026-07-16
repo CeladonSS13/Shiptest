@@ -3,36 +3,36 @@
 	"map_name": "Mimir-class Rehabillitation Vessel",
 	"map_short_name": "Mimir",
 	"description": "Судно класса 'Mimir' - это судна Нанотрейзен для переброски и содержания 'пациентов'. Нанотрейзен размещает 'Mimir' для содержания тех, кого они интернировали, часто в разрушенных или других труднодоступных секторах. Это сводит к минимуму шансы 'пациентов' на побег и резко снижает стимул к этому, поскольку заставляет их торчать в глуши, пока Центральное командование не будет готово забрать их и обработать. Хотя 'пациентов' в основном хранятся в криогенном хранилище, правила и медицинская необходимость требуют периодического размораживания. Поэтому на 'Mimir' предусмотрено множество 'реабилитационных' мероприятий для 'пациентов', а также легкая охрана для их обслуживания. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Никто им не занимался, не переделывал!",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_mimir.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_mimir.dmm",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"prefix": "NTSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": [
 		"Специализированный"
 	],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"NATURAL_AGGRESSIVE",
 		"BEASTS"
 	],
 	"job_slots": {
 		"Warden": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/warden/mimir",
+			"outfit": "/datum/outfit/job/cel/warra/warden/mimir",
 			"officer": true,
 			"slots": 1
 		},
 		"Facility Security Officer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/security/mimir",
+			"outfit": "/datum/outfit/job/cel/warra/security/mimir",
 			"slots": 2
 		},
 		"Facility Physician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/brig_phys/mimir",
+			"outfit": "/datum/outfit/job/cel/warra/doctor/brig_phys/mimir",
 			"slots": 1
 		},
 		"Patient": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/prisoner",
+			"outfit": "/datum/outfit/job/cel/warra/prisoner",
 			"slots": 2
 		}
 	}

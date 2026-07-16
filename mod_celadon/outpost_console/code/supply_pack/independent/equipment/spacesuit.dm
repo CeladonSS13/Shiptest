@@ -124,7 +124,7 @@
 
 /datum/supply_pack/faction/independent/spacesuit/atmos_hardsuit
 	name = "Atmospherics Hardsuit"
-	desc = "The iconic hardsuit of Nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
+	desc = "The iconic hardsuit of Warra's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
 	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/atmos)
 	crate_name = "atmospherics hardsuit crate"

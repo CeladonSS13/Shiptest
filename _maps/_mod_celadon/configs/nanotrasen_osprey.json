@@ -3,61 +3,61 @@
 	"map_name": "Osprey-class Exploration Cruiser",
 	"map_short_name": "Osprey",
 	"description": "Одни из самых современных суден флота Нанотрейзен и престижное задание для их капитанов, знаменитые 'Osprey', участвовавшие в самых драматических астронавигационных столкновениях ICW, продолжают жить в качестве очень хорошо оборудованного исследовательского судна. Прошедшие значительную модернизацию после того, как они стали артиллерийскими платформами Bluespace, современные Osprey используют сенсорное оборудование военного класса и системы искусственного интеллекта для разведки и научной работы. Среди особенностей - хорошо оснащенные медицинские, кулинарные и научные помещения и ядро ИИ, а также общекорабельная система утилизации и доставки и очень вместительный грузовой отсек. Однако мощные (хотя и нестабильные) двигатели на суперматерии, которые приводили в движение первые партии 'Osprey', были вычеркнуты при их реконструкции, а заменяющие их генераторы оставили современные 'Osprey' в состоянии некоторой нехватки энергии. В ЩИТСПАВНЕ ПО ПРИЧИНЕ: Заменен на Целестис!",
-	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_osprey.dmm",
+	"map_path": "_maps/_mod_celadon/shuttles/warra/nanotrasen_osprey.dmm",
 	"enabled": false,
 	"limit": 1,
 	"sensor_range": 4,
 	"starting_funds": 4000,
 	"prefix": "NTRSV",
-	"faction": "/datum/faction/nt",
+	"faction": "/datum/faction/warra",
 	"tags": ["Исследовательский", "ИИ"],
 	"namelists": [
-		"NANOTRASEN",
+		"warra",
 		"SPACE",
 		"MYTHOLOGICAL",
 		"WEAPONS"
 	],
 	"job_slots": {
 		"Captain": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"outfit": "/datum/outfit/job/cel/warra/captain",
 			"officer": true,
 			"slots": 1
 		},
 		"Science Director": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/rd",
+			"outfit": "/datum/outfit/job/cel/warra/rd",
 			"officer": true,
 			"slots": 1
 		},
 		"Scientist": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist",
+			"outfit": "/datum/outfit/job/cel/warra/scientist",
 			"slots": 2
 		},
 		"Medical Doctor": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor",
+			"outfit": "/datum/outfit/job/cel/warra/doctor",
 			"slots": 1
 		},
 		"Paramedic": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/paramedic",
+			"outfit": "/datum/outfit/job/cel/warra/paramedic",
 			"slots": 1
 		},
 		"Engineer": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer",
+			"outfit": "/datum/outfit/job/cel/warra/engineer",
 			"slots": 1
 		},
 		"Atmospheric Technician": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/atmos",
+			"outfit": "/datum/outfit/job/cel/warra/atmos",
 			"slots": 1
 		},
 		"Shaft Miner": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/miner",
+			"outfit": "/datum/outfit/job/cel/warra/miner",
 			"slots": 2
 		},
 		"Cook": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/cook",
+			"outfit": "/datum/outfit/job/cel/warra/cook",
 			"slots": 1
 		},
 		"Assistant": {
-			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"outfit": "/datum/outfit/job/cel/warra/assistant",
 			"slots": 2
 		}
 	}

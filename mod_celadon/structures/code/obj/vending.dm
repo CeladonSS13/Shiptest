@@ -1,5 +1,5 @@
 //DON'T FORGET TO CHANGE THE REFILL SIZE IF YOU CHANGE THE MACHINE'S CONTENTS!
-/obj/machinery/vending/clothing/nt
+/obj/machinery/vending/clothing/warra
 	name = "ClothesMate NT" //renamed to make the slogan rhyme
 	desc = "A vending machine for clothing for NT."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
@@ -8,29 +8,29 @@
 	product_slogans = "Dress for success!;Prepare to look swagalicious!;Look at all this swag!;Why leave style up to fate? Use the ClothesMate!"
 	vend_reply = "Thank you for using the ClothesMate NT!"
 	products = list(
-		/obj/item/clothing/neck/cloak/nanotrasen/cape = 5,
-		/obj/item/clothing/neck/cloak/nanotrasen/cape/lead = 2,
-		/obj/item/clothing/neck/cloak/nanotrasen/cape/engi = 2,
-		/obj/item/clothing/neck/cloak/nanotrasen/cape/med = 2,
-		/obj/item/clothing/neck/cloak/nanotrasen/cape/command = 2,
-		/obj/item/clothing/neck/cloak/nanotrasen/cape/captain = 2,
-		/obj/item/clothing/head/nanotrasen/surgical/blue = 2,
-		/obj/item/clothing/head/caphat/nt = 2,
-		/obj/item/clothing/head/hopcap/nt = 2)
+		/obj/item/clothing/neck/cloak/warra/cape = 5,
+		/obj/item/clothing/neck/cloak/warra/cape/lead = 2,
+		/obj/item/clothing/neck/cloak/warra/cape/engi = 2,
+		/obj/item/clothing/neck/cloak/warra/cape/med = 2,
+		/obj/item/clothing/neck/cloak/warra/cape/command = 2,
+		/obj/item/clothing/neck/cloak/warra/cape/captain = 2,
+		/obj/item/clothing/head/warra/surgical/blue = 2,
+		/obj/item/clothing/head/caphat/warra = 2,
+		/obj/item/clothing/head/hopcap/warra = 2)
 	premium = list(
-		/obj/item/clothing/under/rank/security/warden/nt/skirt = 2,
-		/obj/item/clothing/under/rank/command/nt = 2,
-		/obj/item/clothing/under/rank/command/nt/skirt = 2,
-		/obj/item/clothing/under/rank/security/brig_phys/nt/skirt = 2,
-		/obj/item/clothing/under/rank/security/officer/nt = 2,
-		/obj/item/clothing/under/rank/security/officer/nt/skirt = 2,
+		/obj/item/clothing/under/rank/security/warden/warra/skirt = 2,
+		/obj/item/clothing/under/rank/command/warra = 2,
+		/obj/item/clothing/under/rank/command/warra/skirt = 2,
+		/obj/item/clothing/under/rank/security/brig_phys/warra/skirt = 2,
+		/obj/item/clothing/under/rank/security/officer/warra = 2,
+		/obj/item/clothing/under/rank/security/officer/warra/skirt = 2,
 		/obj/item/clothing/head/beret/dominia = 2,
 		/obj/item/clothing/head/beret/dominia/army = 2,
 		/obj/item/clothing/head/beret/dominia/consular = 2,
 		/obj/item/clothing/head/beret/dominia/medical = 2,
 		/obj/item/clothing/head/beret/dominia/priest = 2,
 		/obj/item/clothing/head/beret/dominia/priest/red = 2,
-		/obj/item/clothing/head/nanotrasen/officer/fedora = 2)
+		/obj/item/clothing/head/warra/officer/fedora = 2)
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_LIGHT_CYAN

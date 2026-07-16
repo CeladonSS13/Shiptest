@@ -23,7 +23,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/port)
 "bB" = (
-/obj/effect/turf_decal/nanotrasen/ns,
+/obj/effect/turf_decal/warra/ns,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
@@ -189,7 +189,7 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 6
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight{
+/obj/effect/turf_decal/corner/opaque/warrabluelight{
 	dir = 1
 	},
 /obj/machinery/cryopod{
@@ -216,11 +216,11 @@
 	req_one_access = list(20)
 	},
 /obj/item/storage/box/handcuffs,
-/obj/item/clothing/under/nanotrasen/security{
+/obj/item/clothing/under/warra/security{
 	pixel_x = -3;
 	pixel_y = 7
 	},
-/obj/item/clothing/suit/armor/nanotrasen{
+/obj/item/clothing/suit/armor/warra{
 	pixel_x = 2;
 	pixel_y = -5
 	},
@@ -356,7 +356,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 6
 	},
@@ -368,7 +368,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "mb" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/engineering)
 "mp" = (
@@ -583,7 +583,7 @@
 	},
 /area/ship/cargo/port)
 "qH" = (
-/obj/effect/turf_decal/corner/opaque/ntbluelight/three_quarters,
+/obj/effect/turf_decal/corner/opaque/warrabluelight/three_quarters,
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 1
 	},
@@ -689,7 +689,7 @@
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering)
 "sy" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 1
 	},
 /obj/structure/cable{
@@ -724,7 +724,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/corner{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/corner{
 	dir = 4
 	},
 /obj/structure/chair/plastic{
@@ -911,7 +911,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -981,7 +981,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "yS" = (
-/obj/item/stamp/nanotrasen/ns,
+/obj/item/stamp/warra/ns,
 /obj/item/storage/backpack/satchel/explorer{
 	pixel_x = 6;
 	pixel_y = -5
@@ -994,7 +994,7 @@
 	pixel_x = 4;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen/supply/qm{
+/obj/item/clothing/under/warra/supply/qm{
 	pixel_x = -7;
 	pixel_y = -9
 	},
@@ -1014,9 +1014,9 @@
 	pixel_y = 14;
 	pixel_x = 7
 	},
-/obj/item/radio/headset/nanotrasen/alt/captain,
+/obj/item/radio/headset/warra/alt/captain,
 /obj/item/megaphone/cargo,
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = -8;
 	pixel_y = 8
 	},
@@ -1032,7 +1032,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
 /obj/structure/closet/secure_closet/wall/directional/north{
@@ -1093,7 +1093,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
 /obj/structure/chair/comfy/shuttle{
@@ -1263,7 +1263,7 @@
 	layer = 2.029;
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 8
 	},
 /obj/machinery/power/apc/auto_name/directional/west,
@@ -1404,7 +1404,7 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "Fu" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 8
 	},
 /obj/structure/cable{
@@ -1590,7 +1590,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
 /obj/machinery/power/apc/auto_name/directional/west{
@@ -1600,7 +1600,7 @@
 	icon_state = "0-2"
 	},
 /obj/structure/table/reinforced,
-/obj/machinery/fax/nanotrasen,
+/obj/machinery/fax/warra,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 6
 	},
@@ -1667,7 +1667,7 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo/starboard)
 "Me" = (
-/obj/effect/turf_decal/nanotrasen/ns{
+/obj/effect/turf_decal/warra/ns{
 	dir = 4
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1730,7 +1730,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/nsorange/corner{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/corner{
+/obj/effect/turf_decal/trimline/opaque/warrabluelight/corner{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -1802,7 +1802,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "Qi" = (
-/obj/effect/turf_decal/corner/opaque/ntbluelight/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/three_quarters{
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning/corner{
@@ -1836,7 +1836,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/warning,
@@ -1902,7 +1902,7 @@
 /obj/structure/window/reinforced/tinted/frosted{
 	dir = 8
 	},
-/obj/item/soap/nanotrasen,
+/obj/item/soap/warra,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "QB" = (
@@ -1973,7 +1973,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -2007,7 +2007,7 @@
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/engineering)
 "VQ" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/crew/dorm)
 "Wa" = (
@@ -2101,7 +2101,7 @@
 	layer = 2.029;
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/warrabluelight/half{
 	dir = 8
 	},
 /obj/structure/cable{
@@ -2111,27 +2111,27 @@
 	name = "crew clothing locker";
 	req_ship_access = 1
 	},
-/obj/item/clothing/under/nanotrasen/supply/miner{
+/obj/item/clothing/under/warra/supply/miner{
 	pixel_x = 6;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen/supply/miner{
+/obj/item/clothing/under/warra/supply/miner{
 	pixel_x = 10;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen/supply{
+/obj/item/clothing/under/warra/supply{
 	pixel_x = -4;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen/supply{
+/obj/item/clothing/under/warra/supply{
 	pixel_x = -8;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen{
+/obj/item/clothing/under/warra{
 	pixel_x = 4;
 	pixel_y = 3
 	},
-/obj/item/clothing/under/nanotrasen{
+/obj/item/clothing/under/warra{
 	pixel_x = 10;
 	pixel_y = 3
 	},
@@ -2175,23 +2175,23 @@
 	pixel_x = -9;
 	pixel_y = 0
 	},
-/obj/item/clothing/head/nanotrasen{
+/obj/item/clothing/head/warra{
 	pixel_x = 8;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/nanotrasen{
+/obj/item/clothing/head/warra{
 	pixel_x = 10;
 	pixel_y = 11
 	},
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = -10;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = -7;
 	pixel_y = 8
 	},
-/obj/item/clothing/head/nanotrasen/cap/supply{
+/obj/item/clothing/head/warra/cap/supply{
 	pixel_x = -4;
 	pixel_y = 8
 	},
@@ -2312,7 +2312,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/port)
 "ZJ" = (
-/obj/structure/sign/nanotrasen/ns,
+/obj/structure/sign/warra/ns,
 /turf/closed/wall/mineral/titanium/exterior,
 /area/ship/cargo/port)
 

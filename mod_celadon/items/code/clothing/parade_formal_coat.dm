@@ -29,7 +29,7 @@
 	item_state = "hosformal"
 	togglename = "hosformal"
 
-/obj/item/clothing/suit/toggle/armor/parade/nanotrasen
+/obj/item/clothing/suit/toggle/armor/parade/warra
 	desc = "captain's parade coat"
 	desc = "For when an armoured vest isn't fashionable enough."
 	icon_state = "capformal"

@@ -1,6 +1,6 @@
-/// Nanotrasen Tactical Assault Squad лидер
+/// Warra Tactical Assault Squad лидер
 
-/datum/outfit/job/cel/nanotrasen/ntas/commander
+/datum/outfit/job/cel/warra/ntas/commander
 	name = "NT Assault Squad - Leader"
 	jobtype = /datum/job/captain
 	job_icon = "captain"
@@ -11,9 +11,9 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert
-	ears = /obj/item/radio/headset/nanotrasen/alt/captain
+	ears = /obj/item/radio/headset/warra/alt/captain
 
-/datum/outfit/job/cel/nanotrasen/ntas/operative
+/datum/outfit/job/cel/warra/ntas/operative
 	name = "NT Assault Squad - Security Operative"
 	jobtype = /datum/job/hos
 	job_icon = "headofsecurity"
@@ -24,9 +24,9 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/security
-	ears = /obj/item/radio/headset/nanotrasen/alt
+	ears = /obj/item/radio/headset/warra/alt
 
-/datum/outfit/job/cel/nanotrasen/ntas/medic
+/datum/outfit/job/cel/warra/ntas/medic
 	name = "NT Assault Squad - Medical Operative"
 	jobtype = /datum/job/cmo
 	job_icon = "chiefmedicalofficer"
@@ -37,10 +37,10 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/medical
-	ears = /obj/item/radio/headset/nanotrasen/alt
+	ears = /obj/item/radio/headset/warra/alt
 	backpack_contents = list(/obj/item/storage/firstaid/medical)
 
-/datum/outfit/job/cel/nanotrasen/ntas/engineer
+/datum/outfit/job/cel/warra/ntas/engineer
 	name = "NT Assault Squad - Engineering Operative"
 	jobtype = /datum/job/chief_engineer
 	job_icon = "chiefengineer"
@@ -51,9 +51,9 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/engineer
-	ears = /obj/item/radio/headset/nanotrasen/alt
+	ears = /obj/item/radio/headset/warra/alt
 
-/datum/outfit/job/cel/nanotrasen/ntas/janitor
+/datum/outfit/job/cel/warra/ntas/janitor
 	name = "NT Assault Squad - Custodial Operative"
 	jobtype = /datum/job/janitor
 	job_icon = "janitor"
@@ -64,4 +64,4 @@
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/janitor
-	ears = /obj/item/radio/headset/nanotrasen/alt
+	ears = /obj/item/radio/headset/warra/alt

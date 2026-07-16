@@ -31,8 +31,8 @@
 	// mission_reward = list(
 	// 	/obj/item/gun/energy/laser/retro,
 	// )
-	// faction = /datum/faction/nt
-	// setpiece_item = /obj/item/documents/nanotrasen
+	// faction = /datum/faction/warra
+	// setpiece_item = /obj/item/documents/warra
 
 // /datum/mission/ruin/nt_files/generate_mission_details()
 // 	. = ..()
@@ -48,21 +48,21 @@
 
 /datum/mission/ruin/nanotrasen_docs
 	name = "Возвращение Собственности Нанотрейзен"
-	author = "Nanotrasen Recovery Program"
+	author = "Warra Recovery Program"
 	desc = "Наши сотрудники потеряли контакт с перерабатывающим предприятием, расположенном в округе этого аванпоста. Корпорация Нанотрейзен заинтересована в возвращении ценных бумаг, распологающихся на данном предприятии."
 	// faction = list(
-	// 	/datum/faction/nt,
+	// 	/datum/faction/warra,
 	// 	/datum/faction/syndicate/cybersun
 	// )
 	// value = 3500
 	// mission_limit = 1
-	// setpiece_item = /obj/item/documents/nanotrasen
+	// setpiece_item = /obj/item/documents/warra
 
 /datum/mission/ruin/nanotrasen_docs/generate_mission_details()
 	. = ..()
-	if(faction == /datum/faction/nt)
+	if(faction == /datum/faction/warra)
 		name = "Возвращение Собственности Нанотрейзен"
-		author = "Nanotrasen Recovery Program"
+		author = "Warra Recovery Program"
 		desc = "Сотрудники Корпорации Нанотрейзен потеряли контакт с перерабатывающим предприятием, расположенном в округе этого аванпоста. Корпорация Нанойтрейзен заинтересована в возвращении ценных бумаг, распологающихся на данном предприятии."
 	if(faction == /datum/faction/syndicate/cybersun)
 		name = "Cybersun Capture Program"
@@ -72,16 +72,16 @@
 /datum/mission/ruin/captain_medal
 	name = "Доставка Утерянной Медали"
 	desc = "Пару месяцев назад я потерял медаль \"За Отважную Службу\". К счастью, мне удалось отследить её. Находится она на планете, координаты которой я указал в подробностях к контракту. Я был бы крайне благодарен за её возвращение."
-	// faction = /datum/faction/nt
+	// faction = /datum/faction/warra
 	// value = 2250
 	// mission_limit = 1
 	// setpiece_item = /obj/item/clothing/accessory/medal/gold/captain
 
 /datum/mission/ruin/brainchip
 	name = "Возвращение Собственности Нанотрейзен"
-	author = "Nanotrasen Recovery Program"
+	author = "Warra Recovery Program"
 	desc = "Ваша задача - вернуть имплант внутри одного незадачливого грузчика, у которого не хватило мозгов на то, что бы использовать его так, как было завещано контрактом."
-	// faction = /datum/faction/nt
+	// faction = /datum/faction/warra
 	// mission_limit = 1
 	// setpiece_item = /mob/living/carbon/human
 
@@ -98,7 +98,7 @@
 	// value = 3000
 	// mission_limit = 1
 	// faction = list(
-	// 	/datum/faction/nt/ns_logi,
+	// 	/datum/faction/warra/ns_logi,
 	// )
 	// setpiece_item = /mob/living/carbon/human
 

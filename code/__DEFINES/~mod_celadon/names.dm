@@ -7,7 +7,7 @@
 #define FACTION_SOLFED "SolFed"
 #define FACTION_SOLCON "SolFed"
 #define FACTION_INTEQ "InteQ"
-#define FACTION_NT "Nanotrasen"
+#define FACTION_WARRA "Warra"
 	#define FACTION_NS_LOGI "N+S Logistics"
 	#define FACTION_VIGILITAS "Vigilitas Interstellar"
 #define FACTION_INDEPENDENT "Independent"
@@ -27,7 +27,7 @@
 // code/__DEFINES/mobfactions.dm
 // #define FACTION_PLAYER_SYNDICATE "playerSyndicate"
 #define FACTION_PLAYER_PIRATE "playerPirate"
-// #define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"
+// #define FACTION_PLAYER_WARRA "playerWarra"
 // #define FACTION_PLAYER_FRONTIERSMEN "playerFrontiersmen"
 // #define FACTION_PLAYER_MINUTEMAN "playerMinuteman"
 #define FACTION_PLAYER_SOLFED "playerSolFed"
@@ -45,7 +45,7 @@
 #define PREFIX_SOLCON list("SCSV",)
 #define PREFIX_SOLFED list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV",)
 #define PREFIX_INTEQ list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV",)
-#define PREFIX_NT list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV",)
+#define PREFIX_WARRA list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV",)
 	#define PREFIX_NS_LOGI list("NSSV",)
 	#define PREFIX_VIGILITAS list("VISV",)
 #define PREFIX_FRONTIER list("FFV",)
@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	FACTION_SYNDICATE = PREFIX_SYNDICATE,
 	FACTION_SOLFED = PREFIX_SOLFED,
 	FACTION_INTEQ = PREFIX_INTEQ,
-	FACTION_NT = PREFIX_NT,
+	FACTION_WARRA = PREFIX_WARRA,
 	FACTION_INDEPENDENT = PREFIX_INDEPENDENT,
 	FACTION_ELYSIUM = PREFIX_ELYSIUM,
 	FACTION_PIRATES = PREFIX_PIRATES,

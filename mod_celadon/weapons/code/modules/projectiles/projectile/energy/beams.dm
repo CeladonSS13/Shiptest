@@ -149,63 +149,63 @@
 // MARK: LASER PROJECTILES
 
 //Base NT-SL Laser
-/obj/projectile/beam/laser/nanotrasen //таким образом еоехома не словит бесплатный бафф + удобнее редачить древний код
+/obj/projectile/beam/laser/warra //таким образом еоехома не словит бесплатный бафф + удобнее редачить древний код
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "sl_laser"
 	speed = 0.3 //egun buff - просто мувспид с плазмапушек
 
-/obj/projectile/beam/laser/nanotrasen/weak
+/obj/projectile/beam/laser/warra/weak
 	icon_state = "sl_laser_light"
 	damage = 15
 	armour_penetration = -15
 
 //Base NT-SL Disabler beam
 
-/obj/projectile/beam/disabler/nanotrasen
+/obj/projectile/beam/disabler/warra
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "sl_disabler"
 	speed = 0.3
 
-/obj/projectile/beam/disabler/nanotrasen/weak
+/obj/projectile/beam/disabler/warra/weak
 	icon_state = "sl_disabler_light"
 	damage = 18
 	armour_penetration = -10
 
 // /obj/item/gun/energy/e_gun/e_old/hos
 
-/obj/projectile/beam/laser/nanotrasen/hos
+/obj/projectile/beam/laser/warra/hos
 	damage = 20
 
-/obj/projectile/beam/laser/nanotrasen/weak
+/obj/projectile/beam/laser/warra/weak
 	damage = 15
 	armour_penetration = -15
 
 // /obj/item/gun/energy/e_gun/e_old/dmr
 
-/obj/projectile/beam/laser/nanotrasen/dmr
+/obj/projectile/beam/laser/warra/dmr
 	icon_state = "sl_laser_hellfire"
 	damage = 35
 	armour_penetration = 30
 
 // /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
 
-/obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
+/obj/projectile/beam/laser/warra/weak/ap //more armorpen, less damage
 	damage = 12
 	armour_penetration = 10
 
-/obj/projectile/beam/disabler/nanotrasen/weak/ap
+/obj/projectile/beam/disabler/warra/weak/ap
 	damage = 15
 	armour_penetration = 20
 
 // /obj/item/gun/energy/e_gun/e_old/hades
 // /obj/item/gun/energy/e_gun/e_old/emg
 
-/obj/projectile/beam/laser/nanotrasen/assault
+/obj/projectile/beam/laser/warra/assault
 	icon_state = "sl_laser_heavy"
 	damage = 25
 	armour_penetration = 20
 
-/obj/projectile/beam/disabler/nanotrasen/assault
+/obj/projectile/beam/disabler/warra/assault
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	icon_state = "sl_disabler_heavy"
 	damage = 25
@@ -213,18 +213,18 @@
 
 // /obj/item/gun/energy/e_gun/e_old/hos
 
-/obj/projectile/energy/electrode/nanotrasen
+/obj/projectile/energy/electrode/warra
 	damage = 80 //по сути даже за берст ты навешаешь лишь слоудаун человеку в броне
 	range = 8
 
 //Honorable mentions
 
-/obj/projectile/beam/laser/nanotrasen/heavylaser //NT-SL turrets
+/obj/projectile/beam/laser/warra/heavylaser //NT-SL turrets
 	icon_state = "sl_laser_heavy"
 	damage = 40
 	speed = 0.4
 
-/obj/projectile/beam/disabler/nanotrasen/heavylaser
+/obj/projectile/beam/disabler/warra/heavylaser
 	icon_state = "sl_disabler_heavy"
 	damage = 40
 	speed = 0.4
@@ -232,14 +232,14 @@
 // /obj/item/gun/energy/e_gun/e_old/iot
 // /obj/item/gun/energy/e_gun/e_old/iot/blaze
 
-/obj/projectile/beam/disabler/nanotrasen/shotgun
+/obj/projectile/beam/disabler/warra/shotgun
 	icon_state = "sl_disabler_light"
 	damage = 15
 	range = 15
 	armour_penetration = -10
 	speed = 0.5 //just to make it a bit more fair
 
-/obj/projectile/beam/laser/nanotrasen/shotgun
+/obj/projectile/beam/laser/warra/shotgun
 	icon_state = "sl_laser_light"
 	damage = 15
 	armour_penetration = -10
@@ -248,7 +248,7 @@
 
 // /obj/item/gun/energy/lasercannon
 
-/obj/projectile/beam/laser/nanotrasen/sniper
+/obj/projectile/beam/laser/warra/sniper
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	name = "accelerator laser"
 	icon_state = "sl_laser_light"
@@ -257,7 +257,7 @@
 	armour_penetration = 30
 	var/damage_cap = 60
 
-/obj/projectile/beam/laser/nanotrasen/sniper/Range()
+/obj/projectile/beam/laser/warra/sniper/Range()
 	..()
 	damage += 4
 	transform *= 1 + ((damage/4) * 0.2)
@@ -266,17 +266,17 @@
 
 // /obj/item/gun/energy/e_gun/e_old/mini
 
-/obj/projectile/beam/laser/nanotrasen/weak/mini
+/obj/projectile/beam/laser/warra/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	armour_penetration = 5
 
-/obj/projectile/beam/disabler/nanotrasen/weak/mini
+/obj/projectile/beam/disabler/warra/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'
 	armour_penetration = 10
 
 // /obj/item/gun/energy/laser/captain
 
-/obj/projectile/beam/laser/nanotrasen/hellfire
+/obj/projectile/beam/laser/warra/hellfire
 	icon_state = "sl_laser_hellfire"
 	damage = 30
 	armour_penetration = 25

@@ -38,7 +38,7 @@
 // возвращаю сюда старые пушки
 /datum/blackmarket_item/weapon/guncase/proto_gauss
 	name = "Prototype Gauss Rifle"
-	desc = "A prototype gauss rifle made by Nanotrasen. Perfect for making swiss cheese out of people. Chambered in ferromagnetic pellets."
+	desc = "A prototype gauss rifle made by Warra. Perfect for making swiss cheese out of people. Chambered in ferromagnetic pellets."
 	item = /obj/item/gun/ballistic/automatic/powered/gauss
 	pair_item = list(/datum/blackmarket_item/ammo/proto_gauss_mag)
 

@@ -61,7 +61,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "aN" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 4
 	},
 /obj/structure/marker_beacon{
@@ -371,11 +371,11 @@
 	desc = "Old and worn out insulated gloves, hopefully they still work.";
 	name = "worn out combat gloves"
 	},
-/obj/item/clothing/under/nanotrasen/officer{
+/obj/item/clothing/under/warra/officer{
 	pixel_x = -7;
 	pixel_y = 7
 	},
-/obj/item/clothing/under/nanotrasen/science/director{
+/obj/item/clothing/under/warra/science/director{
 	pixel_y = 5;
 	pixel_x = 7;
 	name = "radioman's slacks"
@@ -541,7 +541,7 @@
 /turf/open/floor/pod/dark,
 /area/ship/engineering/engines/starboard)
 "eb" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/warrablue{
 	dir = 8
 	},
 /obj/machinery/camera/autoname,
@@ -631,7 +631,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "eV" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/effect/turf_decal/corner/opaque/warrablue/half,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -693,11 +693,11 @@
 	pixel_y = -10;
 	pixel_x = 1
 	},
-/obj/item/clothing/suit/nanotrasen/medical_smock{
+/obj/item/clothing/suit/warra/medical_smock{
 	pixel_y = -3;
 	pixel_x = 8
 	},
-/obj/item/clothing/head/nanotrasen/surgical/blue{
+/obj/item/clothing/head/warra/surgical/blue{
 	pixel_y = 14;
 	pixel_x = 7
 	},
@@ -789,7 +789,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/hallway/central)
 "gp" = (
-/obj/effect/turf_decal/corner/opaque/ntblue,
+/obj/effect/turf_decal/corner/opaque/warrablue,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -1723,7 +1723,7 @@
 /turf/open/floor/plating,
 /area/ship/general/command_crew)
 "pT" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/warrablue{
 	dir = 8
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -1755,7 +1755,7 @@
 /obj/structure/marker_beacon{
 	picked_color = "Yellow"
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -1806,7 +1806,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ntsl_lasers.dmi';
 	icon_state = "plasma_pistol_fire";
 	name = "M87";
-	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses superheated plasma bursts. You could use it to cut limbs off xenos! Or, you know, cut through walls."
+	desc = "A fresh-new experimental plasma pistol manufactured by warra-Sharplite, it uses superheated plasma bursts. You could use it to cut limbs off xenos! Or, you know, cut through walls."
 	},
 /obj/item/melee/sword/mass{
 	force = 25;
@@ -1908,7 +1908,7 @@
 	name = "captain jumpsuit";
 	desc = "A standard captain jumpsuit."
 	},
-/obj/item/clothing/under/nanotrasen/officer{
+/obj/item/clothing/under/warra/officer{
 	pixel_x = -7;
 	pixel_y = 7
 	},
@@ -2090,7 +2090,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "sx" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -2406,7 +2406,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "vp" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/warrablue/half{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -2555,13 +2555,13 @@
 	},
 /obj/machinery/light/broken/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/item/documents/nanotrasen{
+/obj/item/documents/warra{
 	desc = "\"Top Secret\" The documents contain data on flights and reconnaissance of remote sectors. It is impossible to determine from the classification to whom these documents belong."
 	},
 /obj/item/toy/musicbox{
 	desc = "Надпись на дне: <i>Erin... dich ... unser ...sprechen.</i>"
 	},
-/obj/item/stamp/nanotrasen/vigilitas/captain,
+/obj/item/stamp/warra/vigilitas/captain,
 /obj/structure/safe{
 	number_of_tumblers = 3;
 	desc = "A huge chunk of metal with a dial embedded in it. Fine print on the dial reads. Scarborough Arms - 3 tumbler safe, guaranteed thermite resistant, explosion resistant, and assistant resistant."
@@ -2573,8 +2573,8 @@
 	max_integrity = 10
 	},
 /obj/item/clothing/neck/tie/red,
-/obj/item/sign/flag/nanotrasen,
-/obj/item/desk_flag/nanotrasen,
+/obj/item/sign/flag/warra,
+/obj/item/desk_flag/warra,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/hallway/aft)
 "wW" = (
@@ -2605,7 +2605,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "xB" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 1
 	},
 /obj/structure/marker_beacon{
@@ -3037,7 +3037,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Cn" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/warrablue/half{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3073,7 +3073,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/dorm)
 "CI" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/warrablue{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3208,7 +3208,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "EI" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/warrablue{
 	dir = 1
 	},
 /obj/machinery/camera/autoname{
@@ -3381,7 +3381,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "Gk" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3854,7 +3854,7 @@
 	},
 /area/ship/engineering)
 "Mk" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters,
 /obj/structure/marker_beacon{
 	picked_color = "Yellow"
 	},
@@ -3914,7 +3914,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
-/obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
+/obj/structure/sign/poster/warra/vigilitas_nonlethal{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black{
@@ -3960,7 +3960,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "MX" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 8
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -4525,7 +4525,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "Ta" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 8
 	},
 /obj/structure/marker_beacon{
@@ -4570,7 +4570,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/security)
 "Tx" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/warrablue/three_quarters{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -4678,13 +4678,13 @@
 	name = "combat gloves plus";
 	desc = "These tactical gloves are fireproof and once contained nanochip technology within them, but time has not been kind to it."
 	},
-/obj/item/clothing/under/nanotrasen/medical/director{
+/obj/item/clothing/under/warra/medical/director{
 	pixel_y = 5;
 	pixel_x = 8;
 	desc = "A neat blue shirt with white arm bands and comfortable black slacks. DeForest Command logos are finely stitched into the collar and cuffs.";
 	name = "assaulter's slacks"
 	},
-/obj/item/clothing/under/nanotrasen/officer{
+/obj/item/clothing/under/warra/officer{
 	pixel_x = -7;
 	pixel_y = 7
 	},
@@ -4710,12 +4710,12 @@
 	name = "officer beret";
 	armor = list("melee" = 10, "bullet" = 20, "laser" = 10, "energy" = 10, "bomb" = 15, "bio" = 0, "rad" = 0, "fire" = 35, "acid" = 25, "wound" = 10)
 	},
-/obj/item/clothing/suit/armor/nanotrasen{
+/obj/item/clothing/suit/armor/warra{
 	pixel_x = -8;
 	pixel_y = -3;
 	name = "Degrading Slim Armor Vest"
 	},
-/obj/item/clothing/head/helmet/riot/nanotrasen{
+/obj/item/clothing/head/helmet/riot/warra{
 	pixel_y = 11;
 	pixel_x = -8;
 	armor = list("melee" = 40, "bullet" = 35, "laser" = 35, "energy" = 25, "bomb" = 30, "bio" = 75, "fire" = 40, "acid" = 50, "wound" = 20);
@@ -4789,7 +4789,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/warrablue/half{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -5059,7 +5059,7 @@
 /obj/structure/closet/wall/directional/east{
 	name = "locker"
 	},
-/obj/item/soap/nanotrasen{
+/obj/item/soap/warra{
 	pixel_y = -9;
 	pixel_x = -7
 	},

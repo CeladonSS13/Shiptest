@@ -1,6 +1,6 @@
 /obj/item/gun/energy/e_gun/plasmapistol_cryo
 	name = "SL PPD-142 'Cryogelida' plasma pistol"
-	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses supercooled plasma blasts to subdue users' enemies."
+	desc = "A fresh-new experimental plasma pistol manufactured by Warra-Sharplite, it uses supercooled plasma blasts to subdue users' enemies."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ntsl_lasers.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
@@ -30,7 +30,7 @@
 
 /obj/item/gun/energy/e_gun/plasmapistol_fire
 	name = "SL PPD-238 'Pyrogelida' plasma pistol"
-	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses superheated plasma blasts to furiously burn users' enemies."
+	desc = "A fresh-new experimental plasma pistol manufactured by Warra-Sharplite, it uses superheated plasma blasts to furiously burn users' enemies."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ntsl_lasers.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
