@@ -51,12 +51,6 @@
 	description = "Some sort of survivors, brandishing old nanotrasen security gear."
 	suffix = "whitesands_surface_chokepoint.dmm"
 
-/datum/map_template/ruin/whitesands/conveniencestore
-	id = "ws-conveniencestore"
-	name = "Convenience Store"
-	description = "A small convenience store that was once a hub of activity."
-	suffix = "whitesands_surface_conveniencestore.dmm"
-
 /datum/map_template/ruin/whitesands/e11_manufactory
 	id = "ws-e11manufactory"
 	name = "E-11 Manufacturing Plant"

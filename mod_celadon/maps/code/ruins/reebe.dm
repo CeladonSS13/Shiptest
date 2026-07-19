@@ -16,9 +16,3 @@
 	id = "islandcache"
 	name = "Island Cache"
 	suffix = "reebe_floating_island.dmm"
-
-/datum/map_template/ruin/reebe/swarmers
-	id = "swarmers"
-	name = "Swarmers"
-	description = "A swarm of creatures has taken over this area. Be careful."
-	suffix = "reebe_swarmers.dmm"

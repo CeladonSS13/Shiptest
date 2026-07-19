@@ -60,12 +60,6 @@
 	description = "A group of pirates on a small ship in the jungle."
 	suffix = "jungle_pirate.dmm"
 
-/datum/map_template/ruin/jungle/pizzawave
-	id = "pizzawave"
-	name = "Pizza Wave"
-	description = "A mysterious pizza delivery service operating in the jungle."
-	suffix = "jungle_pizzawave.dmm"
-
 /datum/map_template/ruin/jungle/serene_hunts
 	id = "serene-hunts"
 	name = "Serene Hunts"

@@ -13,12 +13,6 @@
 	description = "A containment zone that contains an unknown creature called 'Claws'. For some unknown reason, there is a crashed ship called 'Dareсt' near the containment zone."
 	suffix = "wasteplanet_claw_ruin.dmm"
 
-/datum/map_template/ruin/wasteplanet/clowncrash
-	id = "clowncrash"
-	name = "Crashed Clown Ship"
-	description = "A crashed ship with a clown inside."
-	suffix = "wasteplanet_clowncrash.dmm"
-
 /datum/map_template/ruin/wasteplanet/crash_kitchen
 	id = "crash_kitchen"
 	name = "Crashed Kitchen"
