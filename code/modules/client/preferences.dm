@@ -456,9 +456,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if(!(NO_UNDERWEAR in pref_species.species_traits))
 				dat += "<b>Underwear:</b><br><a href ='?_src_=prefs;preference=underwear;task=input'>[underwear]</a>"
-
-				dat += "<br>" // [CELADON-ADD]
-				dat += "<a href='byond://?_src_=prefs;preference=previous_underwear;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_underwear;task=input'>&gt;</a>" // [CELADON-ADD]-Добавление кнопки для смены одежды
 				// [CELADON-ADD] - Добавление кнопки для смены одежды.
 				dat += "<br>"
 				dat += "<a href='byond://?_src_=prefs;preference=previous_underwear;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_underwear;task=input'>&gt;</a>"
@@ -2310,12 +2307,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_undershirt)
 						undershirt = new_undershirt
 
-				if("previous_undershirt") // [CELADON-ADD]-код кнопки для смены undershirt
-					undershirt = previous_list_item(undershirt, GLOB.undershirt_list) // [CELADON-ADD]-код кнопки для смены undershirt
-
-				if("next_undershirt") // [CELADON-ADD]-код кнопки для смены undershirt
-					undershirt = next_list_item(undershirt, GLOB.undershirt_list)  // [CELADON-ADD]-код кнопки для смены undershirt
-
 				if("undershirt_color")
 					var/new_undershirt_color = input(user, "Choose your character's underwear color:", "Character Preference","#"+undershirt_color) as color|null
 					if(new_undershirt_color)
@@ -2326,12 +2317,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_socks = input(user, "Choose your character's socks:", "Character Preference") as null|anything in GLOB.socks_list
 					if(new_socks)
 						socks = new_socks
-
-				if("previous_socks") // [CELADON-ADD]-код кнопки для смены socks
-					socks = previous_list_item(socks, GLOB.socks_list) // [CELADON-ADD]-код кнопки для смены socks
-
-				if("next_socks") // [CELADON-ADD]-код кнопки для смены socks
-					socks = next_list_item(socks, GLOB.socks_list) // [CELADON-ADD]-код кнопки для смены socks
 
 				if("socks_color")
 					var/new_socks_color = input(user, "Choose your character's underwear color:", "Character Preference","#"+socks_color) as color|null
