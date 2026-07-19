@@ -56,6 +56,8 @@
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
 		if(HAS_TRAIT(human_owner, TRAIT_NIGHT_VISION) && !lighting_alpha)
 			lighting_alpha = LIGHTING_PLANE_ALPHA_NV_TRAIT
+		if(HAS_TRAIT(human_owner, TRAIT_NIGHT_VISION) && !see_in_dark)
+			see_in_dark = 4
 	// [/CELADON-ADD]
 
 	if(scarring)

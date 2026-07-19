@@ -10,7 +10,7 @@
 	module_type = MODULE_TOGGLE
 	complexity = 3
 	active_power_cost = MODULE_CHARGE_DRAIN_HIGH
-	use_power_cost = DEFAULT_CHARGE_DRAIN
+	use_power_cost = DEFAULT_CHARGE_DRAIN*0.1 // [CELADON-EDIT] - CELADON_MODSUITS // use_power_cost = DEFAULT_CHARGE_DRAIN
 	incompatible_modules = list(/obj/item/mod/module/jetpack)
 	cooldown_time = 0.5 SECONDS
 	overlay_state_inactive = "module_jetpack"
@@ -81,6 +81,7 @@
 	overlay_state_inactive = "module_jetpackadv"
 	overlay_state_active = "module_jetpackadv_on"
 	full_speed = TRUE
+	// assist_drain_increase = 50 // [CELADON-ADD] - CELADON MODSUITS
 
 ///Eating Apparatus - Lets the user eat/drink with the suit on.
 /obj/item/mod/module/mouthhole
@@ -145,11 +146,13 @@
 	desc = "A simple pair of flashlights installed on the left and right sides of the helmet."
 	icon_state = "flashlight"
 	module_type = MODULE_TOGGLE
-	complexity = 1
-	active_power_cost = MODULE_CHARGE_DRAIN_LOW
+	// complexity = 1 // [CELADON-REMOVE] - CELADON_MODSUITS
+	active_power_cost = MODULE_CHARGE_DRAIN_LOW/5 // [CELADON-EDIT] - active_power_cost = MODULE_CHARGE_DRAIN_LOW
 	incompatible_modules = list(/obj/item/mod/module/flashlight)
 	cooldown_time = 0.5 SECONDS
-	overlay_state_inactive = "module_light"
+	// [CELADON-REMOVE] - CELADON_MODSUITS - я не люблю оверлеи фонариков. Они превращают все синдириги в очкариков
+	// overlay_state_inactive = "module_light"
+	// [/CELADON-REMOVE]
 	light_system = MOVABLE_LIGHT_DIRECTIONAL
 	light_color = COLOR_WHITE
 	light_range = 4
@@ -256,7 +259,7 @@
 		however, this incredibly sensitive module is shorted out by EMPs. Luckily, cloning has been outlawed."
 	icon_state = "dnalock"
 	module_type = MODULE_USABLE
-	complexity = 2
+	complexity = 1 // [CELADON-EDIT] - CELADON_MODSUITS // complexity = 2
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 3
 	incompatible_modules = list(/obj/item/mod/module/dna_lock/*, obj/item/mod/module/eradication_lock*/)
 	cooldown_time = 0.5 SECONDS
@@ -384,6 +387,10 @@
 			/obj/item/clothing/head/sombrero,
 			/obj/item/clothing/head/rabbitears,
 			/obj/item/clothing/head/powdered_wig,
+			// - CELADON_MODSUITS
+			/obj/item/clothing/head, // Это создаст нелепицу, но мне интересно.
+			/obj/item/clothing/head/nanotrasen/captain/peaked,
+			/obj/item/clothing/head/nanotrasen,
 			// [/CELADON-ADD]
 			/obj/item/clothing/head/papersack,
 			))
@@ -430,7 +437,8 @@
 /obj/item/mod/module/hat_stabilizer/generate_worn_overlay()
 	. = ..()
 	if(attached_hat)
-		. += attached_hat.build_worn_icon(default_layer = ABOVE_MOB_LAYER, default_icon_file = 'icons/mob/clothing/head.dmi')
+		var/hat_layer = ABOVE_MOB_LAYER+0.01 // [CELADON-ADD] - CELADON_MODSUITS - QUICK FIX UNTIL SOMETHING BETTER
+		. += attached_hat.build_worn_icon(default_layer = hat_layer, default_icon_file = 'icons/mob/clothing/head.dmi') // [CELADON-EDIT] - CELADON_MODSUITS
 
 /obj/item/mod/module/hat_stabilizer/proc/remove_hat(datum/source, mob/user)
 	SIGNAL_HANDLER

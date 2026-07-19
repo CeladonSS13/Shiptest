@@ -638,6 +638,7 @@
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT_QUIRKS
 	if(HAS_TRAIT(src, TRAIT_NIGHT_VISION))
 		lighting_alpha = min(lighting_alpha, LIGHTING_PLANE_ALPHA_NV_TRAIT)
+		see_in_dark = max(see_in_dark, 4)
 	// [/CELADON-ADD]
 
 	if(HAS_TRAIT(src, TRAIT_CHEMICAL_NIGHTVISION))

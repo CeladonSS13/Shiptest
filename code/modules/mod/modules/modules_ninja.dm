@@ -17,7 +17,12 @@
 	var/bumpoff = TRUE
 	/// The alpha applied when the cloak is on.
 	var/stealth_alpha = 50
-
+	// [CELADON-ADD] - CELADON_MODSUITS
+	/// Whether or not the cloak turns off by getting hit by a bullet.
+	var/bulletoff = TRUE
+	var/slowdown_after_disable = FALSE
+	var/disable_slowdown_time = 0 SECONDS
+	// [/CELADON-ADD]
 /obj/item/mod/module/stealth/on_activation()
 	. = ..()
 	if(!.)
@@ -25,8 +30,13 @@
 	if(bumpoff)
 		RegisterSignal(mod.wearer, COMSIG_LIVING_MOB_BUMP, PROC_REF(unstealth))
 	RegisterSignal(mod.wearer, COMSIG_HUMAN_MELEE_UNARMED_ATTACK, PROC_REF(on_unarmed_attack))
-	RegisterSignal(mod.wearer, COMSIG_ATOM_BULLET_ACT, PROC_REF(on_bullet_act))
-	RegisterSignals(mod.wearer, list(COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND/*, COMSIG_ATOM_HITBY*/, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED), PROC_REF(unstealth))
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	// RegisterSignal(mod.wearer, (COMSIG_ATOM_BULLET_ACT, PROC_REF(on_bullet_act))
+	// RegisterSignals(mod.wearer, list(COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND/*, COMSIG_ATOM_HITBY*/, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED), PROC_REF(unstealth))
+	if(bulletoff)
+		RegisterSignals(mod.wearer, list(COMSIG_ATOM_BULLET_ACT, COMSIG_HUMAN_CHECK_SHIELDS), PROC_REF(on_bullet_act))
+	RegisterSignals(mod.wearer, list(COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND, COMSIG_ATOM_HITBY, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED), PROC_REF(unstealth))
+	// [/CELADON-EDIT]
 	animate(mod.wearer, alpha = stealth_alpha, time = 1.5 SECONDS)
 	drain_power(use_power_cost)
 
@@ -36,7 +46,12 @@
 		return
 	if(bumpoff)
 		UnregisterSignal(mod.wearer, COMSIG_LIVING_MOB_BUMP)
-	UnregisterSignal(mod.wearer, list(COMSIG_HUMAN_MELEE_UNARMED_ATTACK, COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND, COMSIG_ATOM_BULLET_ACT/*, COMSIG_ATOM_HITBY*/, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED))
+	// [CELADON-EDIT] - CELADON_MODSUITS
+	// UnregisterSignal(mod.wearer, list(COMSIG_HUMAN_MELEE_UNARMED_ATTACK, COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND, COMSIG_ATOM_BULLET_ACT/*, COMSIG_ATOM_HITBY*/, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED))
+	if(bulletoff)
+		UnregisterSignal(mod.wearer, list(COMSIG_ATOM_BULLET_ACT, COMSIG_HUMAN_CHECK_SHIELDS))
+	UnregisterSignal(mod.wearer, list(COMSIG_HUMAN_MELEE_UNARMED_ATTACK, COMSIG_MOB_ITEM_ATTACK, COMSIG_ATOM_ATTACKBY, COMSIG_ATOM_ATTACK_HAND, COMSIG_ATOM_HITBY, COMSIG_ATOM_HULK_ATTACK, COMSIG_ATOM_ATTACK_PAW, COMSIG_CARBON_CUFF_ATTEMPTED))
+	// [/CELADON-EDIT]
 	animate(mod.wearer, alpha = 255, time = 1.5 SECONDS)
 
 /obj/item/mod/module/stealth/proc/unstealth(datum/source)
@@ -46,6 +61,12 @@
 	do_sparks(2, TRUE, src)
 	drain_power(use_power_cost)
 	on_deactivation(display_message = TRUE, deleting = FALSE)
+	// [CELADON-ADD] - CELADON_MODSUITS
+	if(slowdown_after_disable)
+		mod.wearer.add_movespeed_modifier(/datum/movespeed_modifier/shove)
+		to_chat(mod.wearer, span_danger("The [src] stiffens as a huge current passes through your suit, slowing you down!"))
+		addtimer(CALLBACK(mod.wearer, TYPE_PROC_REF(/mob/living/carbon, clear_shove_slowdown)), disable_slowdown_time)
+	// [/CELADON-ADD]
 
 /obj/item/mod/module/stealth/proc/on_unarmed_attack(datum/source, atom/target)
 	SIGNAL_HANDLER
@@ -75,6 +96,7 @@
 	active_power_cost = DEFAULT_CHARGE_DRAIN
 	use_power_cost = DEFAULT_CHARGE_DRAIN * 5
 	cooldown_time = 3 SECONDS
+	bulletoff = FALSE // [CELADON-ADD] - CELADON_MODSUITS
 
 ///Camera Vision - Prevents flashes, blocks tracking.
 /obj/item/mod/module/welding/camera_vision
