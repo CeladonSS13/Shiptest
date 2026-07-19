@@ -1,0 +1,70 @@
+/*
+- Пример датума для руинки -
+/datum/map_template/ruin/"планета"/"короткое название"
+	id = "Айди"
+	name = "Имя руинки для спавна"
+	description = "Описание"
+	suffix = "Название файла"
+	cost = "вес руинки"
+	allow_duplicates = FALSE
+	ruin_tags = list("ДЕФАЙНЫ_ТЭГОВ")
+
+Где: вес может быть в диапазоне от 1 до 5. По умолчанию все руины = 1
+	1 - (Common) — очень распространённая
+	2 - (Scarce) — нечастая
+	3 - (Rare) — редкая
+	4 - (Very Rare) — очень редкая
+	5 - (Extremely Rare) — уникальная
+
+ruin_tags должен включать 1 тэг из категории сложности
+второй из категории количества лута
+третий и последедующие может быть, а может и нет
+- Список всех тэгов code/__DEFINES/ruins.dm
+Пример:
+ruin_tags = list(RUIN_TAG_MINOR_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_HAZARDOUS)
+allow_duplicates = FALSE - по умолчанию TRUE. FALSE делает руинку 1 раз спавнящуюся в раунд
+
+Список всех типов руин на 10.07.2026:
+RUINTYPE_ANIMA
+RUINTYPE_ASTEROID
+RUINTYPE_BATTLEFIELD
+RUINTYPE_BEACH
+RUINTYPE_DESERT
+RUINTYPE_EARTH_SAND
+RUINTYPE_EVERYTHING
+RUINTYPE_ICE
+RUINTYPE_JUNGLE
+RUINTYPE_LAVA
+RUINTYPE_MOON
+RUINTYPE_PLASMA
+RUINTYPE_ROCK
+RUINTYPE_SAND
+RUINTYPE_SHROUDED
+RUINTYPE_SPACE
+RUINTYPE_WASTE
+RUINTYPE_WATER
+RUINTYPE_YELLOW
+*/
+
+#ifndef MODPACK_CELADON_RUINS
+#define MODPACK_CELADON_RUINS
+
+#include "anima.dm"
+#include "asteroid.dm"
+#include "battlefield.dm"
+#include "beach.dm"
+#include "earth_sand.dm"
+#include "icemoon.dm"
+#include "jungle.dm"
+#include "lavaland.dm"
+#include "moon.dm"
+#include "plasma.dm"
+#include "reebe.dm"
+#include "rock.dm"
+#include "shrouded.dm"
+#include "space.dm"
+#include "waste.dm"
+#include "water.dm"
+#include "whitesands.dm"
+
+#endif

@@ -456,18 +456,30 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 			if(!(NO_UNDERWEAR in pref_species.species_traits))
 				dat += "<b>Underwear:</b><br><a href ='?_src_=prefs;preference=underwear;task=input'>[underwear]</a>"
+				// [CELADON-ADD] - Добавление кнопки для смены одежды.
+				dat += "<br>"
+				dat += "<a href='byond://?_src_=prefs;preference=previous_underwear;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_underwear;task=input'>&gt;</a>"
+				// [/CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_UNDERWEAR]'>[(randomise[RANDOM_UNDERWEAR]) ? "Lock" : "Unlock"]</A><br>"
 
 				dat += "<b>Underwear Color:</b><br><span style='border: 1px solid #161616; background-color: #[underwear_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=underwear_color;task=input'>Change</a>"
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_UNDERWEAR_COLOR]'>[(randomise[RANDOM_UNDERWEAR_COLOR]) ? "Lock" : "Unlock"]</A><br>"
 
 				dat += "<b>Undershirt:</b><br><a href ='?_src_=prefs;preference=undershirt;task=input'>[undershirt]</a>"
+				// [CELADON-ADD] - Добавление кнопки для смены одежды.
+				dat += "<br>"
+				dat += "<a href='byond://?_src_=prefs;preference=previous_undershirt;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_undershirt;task=input'>&gt;</a>"
+				// [/CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_UNDERSHIRT]'>[(randomise[RANDOM_UNDERSHIRT]) ? "Lock" : "Unlock"]</A><br>"
 
 				dat += "<b>Undershirt Color:</b><br><span style='border: 1px solid #161616; background-color: #[undershirt_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=undershirt_color;task=input'>Change</a>"
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_UNDERSHIRT_COLOR]'>[(randomise[RANDOM_UNDERSHIRT_COLOR]) ? "Lock" : "Unlock"]</A><br>"
 
 				dat += "<b>Socks:</b><br><a href ='?_src_=prefs;preference=socks;task=input'>[socks]</a>"
+				// [CELADON-ADD] - Добавление кнопки для смены одежды.
+				dat += "<br>"
+				dat += "<a href='byond://?_src_=prefs;preference=previous_socks;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_socks;task=input'>&gt;</a>"
+				// [/CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_SOCKS]'>[(randomise[RANDOM_SOCKS]) ? "Lock" : "Unlock"]</A><br>"
 
 				dat += "<b>Socks Color:</b><br><span style='border: 1px solid #161616; background-color: #[socks_color];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=socks_color;task=input'>Change</a>"
@@ -520,6 +532,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<h3>Hairstyle</h3>"
 
 				dat += "<a href='byond://?_src_=prefs;preference=hairstyle;task=input'>[hairstyle]</a>"
+				dat += "<br>" // [CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=previous_hairstyle;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_hairstyle;task=input'>&gt;</a>"
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_HAIRSTYLE]'>[(randomise[RANDOM_HAIRSTYLE]) ? "Lock" : "Unlock"]</A>"
 
@@ -530,6 +543,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				dat += "<a href='byond://?_src_=prefs;preference=hair_gradient_style;task=input'>[features["grad_style"]]</a>"
 
+				dat += "<br>" // [CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=previous_hair_gradient_style;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_hair_gradient_style;task=input'>&gt;</a><BR>"
 
 				dat += "<span style='border:1px solid #161616; background-color: #[features["grad_color"]];'>&nbsp;&nbsp;&nbsp;</span> <a href='byond://?_src_=prefs;preference=hair_gradient;task=input'>Change</a>"
@@ -539,6 +553,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "<BR><h3>Facial Hairstyle</h3>"
 
 				dat += "<a href='byond://?_src_=prefs;preference=facial_hairstyle;task=input'>[facial_hairstyle]</a>"
+				dat += "<br>" // [CELADON-ADD]
 				dat += "<a href='byond://?_src_=prefs;preference=previous_facehairstyle;task=input'>&lt;</a> <a href='byond://?_src_=prefs;preference=next_facehairstyle;task=input'>&gt;</a>"
 				dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_FACIAL_HAIRSTYLE]'>[(randomise[RANDOM_FACIAL_HAIRSTYLE]) ? "Lock" : "Unlock"]</A>"
 
@@ -1172,33 +1187,31 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				dat += "</td>"
 				mutant_category = 0
 
-			var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
-			dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
-			dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
+			// [CELADON-EDIT] - CELADON_PROSTHETIC
+			// var/metal_skin = fbp || pref_species.inherent_biotypes & MOB_ROBOTIC
+			// dat += metal_skin ? "<h3>Chassis Customization</h3>" : "<h3>Prosthetic Limbs</h3>"
+			// dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
 
-			dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
+			// dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
 
-			dat += "<table>"
-			for(var/index in prosthetic_limbs)
-				if(!metal_skin && (index == BODY_ZONE_CHEST || index == BODY_ZONE_HEAD))
-					continue
-				var/bodypart_name = parse_zone(index)
-				dat += "<tr><td><b>[bodypart_name]:</b></td>"
-				dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
-			dat += "</tr></table>"
-			// [CELADON-EDIT] - CELADON_LANIUS
-			//dat += "<h3>Prosthetic Limbs</h3>" // ORIGINAL
-			//dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
-
-			//if(!fbp)
-				//dat += "<a href='byond://?_src_=prefs;preference=toggle_random;random_type=[RANDOM_PROSTHETIC]'>Random Prosthetic: [(randomise[RANDOM_PROSTHETIC]) ? "Yes" : "No"]</a><br>"
-
-				//dat += "<table>"
-				//for(var/index in prosthetic_limbs)
-					//var/bodypart_name = parse_zone(index)
-					//dat += "<tr><td><b>[bodypart_name]:</b></td>"
-					//dat += "<td><a href='?_src_=prefs;preference=limbs;customize_limb=[index]'>[prosthetic_limbs[index]]</a></td></tr>"
-				//dat += "</table><br>" [/CELADON-EDIT] - ORIGINAL END
+			// dat += "<table>"
+			// for(var/index in prosthetic_limbs)
+			// 	if(!metal_skin && (index == BODY_ZONE_CHEST || index == BODY_ZONE_HEAD))
+			// 		continue
+			// 	var/zone_name = parse_zone(index)
+			// 	dat += "<tr><td><b>[zone_name]:</b></td>"
+			// 	var/limb_name = prosthetic_limbs[index]
+			// 	dat += "<td><a href='byond://?_src_=prefs;preference=limbs;customize_limb=[index]'>[limb_name]</a>"
+			// 	switch(limb_name)
+			// 		if(PROSTHETIC_NORMAL, PROSTHETIC_AMPUTATED, PROSTHETIC_ROBOTIC)
+			// 			dat += "</td></tr>"
+			// 		else
+			// 			var/datum/sprite_accessory/body/limb_style = GLOB.alternative_body_list[limb_name]
+			// 			if(!limb_style?.desc)
+			// 				continue
+			// 			dat += "<a href='byond://?_src_=prefs;preference=body_desc;limb_style=[REF(limb_style)]'>?</a></td></tr>"
+			// [/CELADON-EDIT]
+			dat += "</table><br>"
 			if(!istype(pref_species, /datum/species/lanius))
 				dat += "<h3>Prosthetic Limbs</h3>"
 				dat += "<a href='byond://?_src_=prefs;preference=fbp'>Full Body Prosthesis: [fbp ? "Yes" : "No"]</a><br>"
@@ -2262,6 +2275,26 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					new_underwear = input(user, "Choose your character's underwear:", "Character Preference")  as null|anything in GLOB.underwear_list
 					if(new_underwear)
 						underwear = new_underwear
+
+				// [CELADON-ADD] - Добавление кнопки для смены одежды.
+				if("previous_underwear")
+					underwear = previous_list_item(underwear, GLOB.underwear_list)
+
+				if("next_underwear")
+					underwear = next_list_item(underwear, GLOB.underwear_list)
+
+				if("previous_undershirt")
+					undershirt = previous_list_item(undershirt, GLOB.undershirt_list)
+
+				if("next_undershirt")
+					undershirt = next_list_item(undershirt, GLOB.undershirt_list)
+
+				if("previous_socks")
+					socks = previous_list_item(socks, GLOB.socks_list)
+
+				if("next_socks")
+					socks = next_list_item(socks, GLOB.socks_list)
+				// [/CELADON-ADD]
 
 				if("underwear_color")
 					var/new_underwear_color = input(user, "Choose your character's underwear color:", "Character Preference","#"+underwear_color) as color|null

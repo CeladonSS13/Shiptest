@@ -17,7 +17,7 @@
 /datum/quirk/blooddeficiency
 	name = "Blood Deficiency"
 	desc = "Your body can't produce enough blood to sustain itself."
-	value = -2
+	value = -3
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
 	gain_text = "<span class='danger'>You feel your vigor slowly fading away.</span>"
 	lose_text = "<span class='notice'>You feel vigorous again.</span>"
@@ -60,7 +60,7 @@
 /datum/quirk/family_heirloom
 	name = "Family Heirloom"
 	desc = "You are the current owner of an heirloom, passed down for generations. You have to keep it safe!"
-	value = -1
+	value = 0
 	quirk_flags = QUIRK_HUMAN_ONLY | QUIRK_PROCESSES
 	var/obj/item/heirloom
 	var/where
@@ -228,7 +228,7 @@
 /datum/quirk/nonviolent
 	name = "Pacifist"
 	desc = "The thought of violence makes you sick. So much so, in fact, that you can't hurt anyone."
-	value = -2
+	value = -5
 	mob_traits = list(TRAIT_PACIFISM)
 	gain_text = "<span class='danger'>You feel repulsed by the thought of violence!</span>"
 	lose_text = "<span class='notice'>You think you can defend yourself again.</span>"
@@ -237,7 +237,7 @@
 /datum/quirk/poor_aim
 	name = "Poor Aim"
 	desc = "You're terrible with guns and can't line up a straight shot to save your life. Dual-wielding is right out."
-	value = -1
+	value = -2
 	mob_traits = list(TRAIT_POOR_AIM)
 	medical_record_text = "Patient possesses a strong tremor in both hands."
 
