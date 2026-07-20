@@ -15,6 +15,7 @@
 	/// The guns already allowed by the modsuit chestplate.
 	var/list/already_allowed_guns = list()
 
+// [CELADON-EDIT] - CELADON_MODSUITS Переопределено в модуле: mod_celadon\celadon_modsuits\code\modsuit_modules.dm
 /obj/item/mod/module/magnetic_harness/Initialize(mapload)
 	. = ..()
 	if(!guns_typecache)

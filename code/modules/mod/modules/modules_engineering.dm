@@ -8,7 +8,7 @@
 		immunity against extremities such as spot and arc welding, solar eclipses, and handheld flashlights."
 	icon_state = "welding"
 	complexity = 1
-	incompatible_modules = list(/obj/item/mod/module/welding, /obj/item/mod/module/armor_booster)
+	incompatible_modules = list(/obj/item/mod/module/welding) // [/CELADON-EDIT] - CELADON_MODSUITS - Делаем модули совместимыми для удобства игроков.
 	overlay_state_inactive = "module_welding"
 
 /obj/item/mod/module/welding/on_suit_activation()
@@ -91,10 +91,12 @@
 	cooldown_time = 1.5 SECONDS
 
 /obj/item/mod/module/tether/on_use()
-	if(mod.wearer.has_gravity(get_turf(src)))
-		to_chat(mod.wearer,span_warning("The tether flops uselessly to the ground in the gravity!"))
-		playsound(src, 'sound/weapons/gun/general/dry_fire.ogg', 25, TRUE)
-		return FALSE
+	// [CELADON-REMOVE] - CELADON_MODSUITS - Крюк-кошка теперь полезна на планетах. Зачем? Потому что весело!
+	// if(mod.wearer.has_gravity(get_turf(src)))
+	// 	to_chat(mod.wearer,span_warning("The tether flops uselessly to the ground in the gravity!"))
+	// 	playsound(src, 'sound/weapons/gun/general/dry_fire.ogg', 25, TRUE)
+	// 	return FALSE
+	// [/CELADON-REMOVE]
 	return ..()
 
 /obj/item/mod/module/tether/on_select_use(atom/target)

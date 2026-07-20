@@ -2,7 +2,7 @@
 #define DEFAULT_MAX_COMPLEXITY 15
 
 /// Default cell drain per process on MODsuits
-#define DEFAULT_CHARGE_DRAIN 0.09
+#define DEFAULT_CHARGE_DRAIN 10 // [CELADON-EDIT] - CELADON_MODSUITS - Пиздатейший фикс. На тг 5, пусть у нас 10, посмотрим как играться будет //#define DEFAULT_CHARGE_DRAIN 0.09
 
 #define MODULE_CHARGE_DRAIN_LOW 5
 #define MODULE_CHARGE_DRAIN_MEDIUM 10
