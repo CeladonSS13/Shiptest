@@ -62,8 +62,9 @@
 
 
 /datum/planet_type/ice
-	name = "frozen planetoid"
-	desc = "A frozen planet covered in thick snow, thicker ice, and dangerous predators."
+	name = "ледяной планетоид"
+	cases = list("ледяной планетоид", "ледяного планетоида", "ледяному планетоиду", "ледяной планетоид", "ледяным планетоидом", "ледяном планетоидее")
+	desc = "Ледяная планета, покрытая толщами снега, вечной мерзлотой и населенная опасными хищниками."
 	planet = DYNAMIC_WORLD_ICE
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_BLUE_LIGHT
@@ -82,8 +83,9 @@
 		)
 
 /datum/planet_type/jungle
-	name = "jungle planetoid"
-	desc = "A densely forested world, filled with vines, animals, and underbrush. Surprisingly habitable with a machete."
+	name = "тропический планетоид"
+	cases = list("тропический планетоид", "тропического планетоида", "тропическому планетоиду", "тропический планетоид", "тропическим планетоидом", "тропическом планетоидее")
+	desc = "Густо заросший лесом мир, полный лиан, диких животных и подлеска. Удивительно пригоден для жизни, если под рукой есть мачете."
 	planet = DYNAMIC_WORLD_JUNGLE
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_LIME
@@ -101,8 +103,9 @@
 		)
 
 /datum/planet_type/rock
-	name = "rock planetoid"
-	desc = "A rocky red world in the midst of terraforming. While some plants have taken hold, it is widely hostile to life."
+	name = "каменный планетоид"
+	cases = list("каменный планетоид", "каменного планетоида", "каменному планетоиду", "каменный планетоид", "каменным планетоидом", "каменном планетоидее")
+	desc = "Каменистый красный мир в самом разгаре терраформирования. Хотя некоторые растения уже прижились, среда здесь в целом враждебна к жизни."
 	planet = DYNAMIC_WORLD_ROCKPLANET
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = "#bd1313"
@@ -119,8 +122,9 @@
 		)
 
 /datum/planet_type/sand
-	name = "salty sand planetoid"
-	desc = "A formerly vibrant world, turned to sand by the ravages of the ICW. The survivors of it are long mad by now."
+	name = "cолончаковый планетоид"
+	cases = list("cолончаковый планетоид", "cолончакового планетоида", "cолончаковому планетоиду", "cолончаковый планетоид", "cолончаковым планетоидом", "cолончаковом планетоидее")
+	desc = "Некогда цветущий мир, выжженный войной с ICW и превращенный в соляную пустыню. Его выжившие обитатели давно лишились рассудка."
 	planet = DYNAMIC_WORLD_SAND
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = COLOR_GRAY
@@ -139,8 +143,9 @@
 
 
 /datum/planet_type/beach
-	name = "ocean planetoid"
-	desc = "The platonic ideal of vacation spots. Warm, comfortable temperatures, and a breathable atmosphere."
+	name = "океанический планетоид"
+	cases = list("океанический планетоид", "океанического планетоида", "океаническому планетоиду", "океанический планетоид", "океаническым планетоидом", "океаническом планетоидее")
+	desc = "Платонический идеал места для отпуска. Тёплая, комфортная температура и пригодная для дыхания атмосфера."
 	planet = DYNAMIC_WORLD_BEACHPLANET
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	//	color = "#c6b597"
@@ -159,7 +164,7 @@
 
 /datum/planet_type/reebe
 	name = "???"
-	desc = "Some sort of strange portal. There's no identification of what this is."
+	desc = "Странный портал неизвестного происхождения. Идентификация невозможна."
 	planet = DYNAMIC_WORLD_REEBE
 	icon_state = "wormhole"
 	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
@@ -175,8 +180,9 @@
 
 //legacy asteroid field, avoid using this outside of punchcards
 /datum/planet_type/asteroid
-	name = "asteroid field"
-	desc = "A field of asteroids with significant traces of minerals."
+	name = "астероидное поле"
+	cases = list("астероидное поле", "астероидного поля", "астероидному полю", "астероидное поле", "астероидным полем", "астероидном поле")
+	desc = "Скопление астероидов, богатое залежами ценной руды."
 	planet = DYNAMIC_WORLD_ASTEROID
 	icon_state = "asteroid"
 	// [CELADON-REMOVE] - CELADON_OVERMAP_ICON - Это вагабонд насрал
@@ -198,8 +204,9 @@
 		)
 
 /datum/planet_type/spaceruin
-	name = "weak energy signal"
-	desc = "A very weak energy signal originating from space."
+	name = "слабый энергосигнал"
+	cases = list("слабый энергосигнал", "слабого энергосигнала", "слабому энергосигналу", "слабый энергосигнал", "слабым энергосигналом", "слабом энергосигнале")
+	desc = "Очень слабый источник энергии где-то в глубоком космосе."
 	planet = DYNAMIC_WORLD_SPACERUIN
 	icon_state = "signal_strange"
 	color = null
@@ -214,8 +221,9 @@
 // empty space if you need to run a space ruin the old way or just need an empty clearing for whatever reason
 
 /datum/planet_type/space
-	name = "weak energy signal"
-	desc = "A very weak energy signal originating from space."
+	name = "слабый энергосигнал"
+	cases = list("слабый энергосигнал", "слабого энергосигнала", "слабому энергосигналу", "слабый энергосигнал", "слабым энергосигналом", "слабом энергосигнале")
+	desc = "Очень слабый источник энергии где-то в глубоком космосе."
 	planet = DYNAMIC_WORLD_SPACE_NO_RUIN
 	icon_state = "signal_strange"
 	color = null
@@ -229,8 +237,9 @@
 #endif
 
 /datum/planet_type/waste
-	name = "waste disposal planetoid"
-	desc = "A highly oxygenated world, coated in garbage, radiation, and rust."
+	name = "планетоид-свалка"
+	cases = list("планетоид-свалка", "планетоида-свалки", "планетоиду-свалке", "планетоид-свалку", "планетоидом-свалкой", "планетоиде-свалке")
+	desc = "Мир с избытком кислорода, полностью покрытый мусором, ржавчиной и радиацией."
 	planet = DYNAMIC_WORLD_WASTEPLANET
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	// icon_state = "globe2"
@@ -251,8 +260,9 @@
 
 
 /datum/planet_type/gas_giant
-	name = "gas giant"
-	desc = "A floating ball of gas, with high gravity and even higher pressure."
+	name = "газовый гигант"
+	cases = list("газовый гигант", "газового гиганта", "газовому гиганту", "газовый гигант", "газовым гигантом", "газовом гиганте")
+	desc = "Огромный газовый шар с сокрушительным давлением и высочайшей гравитацией."
 	planet = DYNAMIC_WORLD_GAS_GIANT
 	icon_state = "giant"
 	// [CELADON-EDIT] - CELADON_OVERMAP_ICON - Это вагабонд насрал
@@ -292,8 +302,9 @@
 // [/CELADON-REMOVE]
 
 /datum/planet_type/water
-	name = "aqua planetoid"
-	desc = "A very weak energy signal originating from a planet entirely covered in water with caves with oxygen pockets."
+	name = "водный планетоид"
+	cases = list("водный планетоид", "водного планетоида", "водному планетоиду", "водный планетоид", "водным планетоидом", "водном планетоиде")
+	desc = "Слабый энергосигнал с планеты, полностью покрытой водой. Внутри есть пещеры с карманами кислорода."
 	planet = DYNAMIC_WORLD_WATERPLANET
 	icon_state = "water"
 	color = LIGHT_COLOR_DARK_BLUE
@@ -311,8 +322,9 @@
 		)
 
 /datum/planet_type/desert
-	name = "desert planetoid"
-	desc = "A very weak energy signal originating from a very hot and harsh planet."
+	name = "пустынный планетоид"
+	cases = list("пустынный планетоид", "пустынного планетоида", "пустынному планетоиду", "пустынный планетоид", "пустынным планетоидом", "пустынном планетоиде")
+	desc = "Слабый энергосигнал с раскалённой планеты с крайне суровыми условиями для жизни."
 	planet = DYNAMIC_WORLD_DESERT
 	icon_state = "desert"
 	color = "#f3c282"
@@ -328,8 +340,9 @@
 		)
 
 /datum/planet_type/shrouded
-	name = "shrouded planetoid"
-	desc = "A very weak energy signal originating from a planet shrouded in a perpetual storm of bizzare particles that absorb almost all waves on the electromagnetic spectrum."
+	name = "туманный планетоид"
+	cases = list("туманный планетоид", "туманного планетоида", "туманному планетоиду", "туманный планетоид", "туманным планетоидом", "туманном планетоиде")
+	desc = "Слабый энергосигнал с планеты, окутанной вечным штормом из странных частиц. Они поглощают почти все электромагнитные волны."
 	planet = DYNAMIC_WORLD_SHROUDED
 	icon_state = "shrouded"
 	color = "#783ca4"
@@ -349,8 +362,9 @@
 		)
 
 /datum/planet_type/moon
-	name = "planetoid moon"
-	desc = "A terrestrial satellite orbiting a nearby planet."
+	name = "луна планетоида"
+	cases = list("луна планетоида", "луны планетоида", "луне планетоида", "луну планетоида", "луной планетоида", "луне планетоида")
+	desc = "Каменистый спутник, вращающийся по орбите близлежащей планеты."
 	planet = DYNAMIC_WORLD_MOON
 	icon_state = "moon"
 	color = "#d1c3c3"
@@ -368,8 +382,9 @@
 		)
 
 /datum/planet_type/battlefield
-	name = "battlefield planetoid"
-	desc = "The site of a major ICW battlefield. The remminants of a major city, colony, or nature reserve, reduced to a muddy hellscape by decades of fighing. Beware the toxic rain, wear a gas mask!"
+	name = "выжженный планетоид"
+	cases = list("выжженный планетоид", "выжженного планетоида", "выжженному планетоиду", "выжженный планетоид", "выжженным планетоидом", "выжженном планетоиде")
+	desc = "Место ожесточенного сражения с ICW. Руины городов и заповедников, превращенные десятилетиями войн в грязевой ад. Остерегайтесь токсичных дождей, носите противогаз!"
 	planet = DYNAMIC_WORLD_BATTLEFIELD
 	icon_state = "battlefield"
 	color = "#b32048"
@@ -384,8 +399,9 @@
 //superflat planets, intended for use in events
 
 /datum/planet_type/debug
-	name = "TEST PLANET"
-	desc = "Pure white world for testing purposes, report if you see this"
+	name = "ТЕСТОВАЯ ПЛАНЕТА"
+	cases = list("выжженный планетоид", "выжженного планетоида", "выжженному планетоиду", "выжженный планетоид", "выжженным планетоидом", "выжженном планетоиде")
+	desc = "Чисто белый мир для проведения тестов. Если вы видите это, пожалуйста, сообщите на GitHub"
 	planet = DYNAMIC_WORLD_TEST
 	icon_state = "hazard"
 	color = COLOR_WHITE
@@ -407,8 +423,9 @@
 	area_type = /area/overmap_encounter/planetoid
 
 /datum/planet_type/snowball
-	name = "snowball dwarf planetoid"
-	desc = "A world entirely covered in snow from violent storms; there is with absolute certainty nothing of interest here."
+	name = "ледяной карликовый планетоид"
+	cases = list("ледяной карликовый планетоид", "ледяного карликового планетоида", "ледяному карликовому планетоиду", "ледяной карликовый планетоид", "ледяным карликовым планетоидом", "ледяном карликовом планетоидее")
+	desc = "Мир, полностью погребённый под снегом из-за бушующих бурь. Здесь с абсолютной уверенностью нет ничего интересного."
 	planet = DYNAMIC_WORLD_SNOWBALL
 	icon_state = "misc"
 	color = COLOR_WHITE
@@ -424,8 +441,9 @@
 	area_type = /area/overmap_encounter/planetoid/snowball
 
 /datum/planet_type/dustball
-	name = "dustball dwarf planetoid"
-	desc = "A world entirely covered in dust; there is with absolute certainty nothing of interest here. This would make an awful place to make a crash landing in."
+	name = "пылевой карликовый планетоид"
+	cases = list("пылевой карликовый планетоид", "пылевого карликового планетоида", "пылевому карликовому планетоиду", "пылевой карликовый планетоид", "пылевым карликовым планетоидом", "пылевом карликовом планетоидее")
+	desc = "Мир, целиком покрытый пылью. Здесь с абсолютной уверенностью нет ничего интересного. К тому же, это худшее место для аварийной посадки."
 	planet = DYNAMIC_WORLD_DUSTBALL
 	icon_state = "misc"
 	color = COLOR_WHITE
@@ -441,8 +459,9 @@
 
 
 /datum/planet_type/duneball
-	name = "duneball dwarf planetoid"
-	desc = "A world entirely covered in hot arid sand; there is with absolute certainty nothing of interest here."
+	name = "пустынный карликовый планетоид"
+	cases = list("пустынный карликовый планетоид", "пустынного карликового планетоида", "пустынному карликовому планетоиду", "пустынный карликовый планетоид", "пустынным карликовым планетоидом", "пустынном карликовом планетоидее")
+	desc = "Мир, целиком покрытый раскалённым сухим песком. Здесь с абсолютной уверенностью нет ничего интересного."
 	planet = DYNAMIC_WORLD_SUPERFLAT
 	icon_state = "misc"
 	color = COLOR_WHITE
@@ -457,8 +476,9 @@
 	area_type = /area/overmap_encounter/planetoid/duneball
 
 /datum/planet_type/waterball
-	name = "waterball dwarf planetoid"
-	desc = "A world entirely covered in cool water and cooler storms; there is with absolute certainty nothing of interest here.."
+	name = "водный карликовый планетоид"
+	cases = list("водный карликовый планетоид", "водного карликового планетоида", "водному карликовому планетоиду", "водный карликовый планетоид", "водным карликовым планетоидом", "водном карликовом планетоидее")
+	desc = "Мир, целиком покрытый прохладной водой и суровыми штормами. Здесь с абсолютной уверенностью нет ничего интересного."
 	planet = DYNAMIC_WORLD_SUPERFLAT
 	icon_state = "misc"
 	color = COLOR_WHITE

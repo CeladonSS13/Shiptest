@@ -1,6 +1,7 @@
 /datum/planet_type/old_town
-	name = "old town"
-	desc = "An abandoned and infected city. A place you don't want to be."
+	name = "старый город"
+	cases = list("старый город", "старому городу", "старому городу", "старый город", "старым городом", "старом городе")
+	desc = "Опустевший, пораженный инфекцией город. Худшее место для незапланированной высадки."
 	planet = DYNAMIC_WORLD_OLD_TOWN
 	color = COLOR_NAVY
 	mapgen = null
@@ -16,8 +17,9 @@
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
 
 /datum/planet_type/plasma_giant
-	name = "plasma giant"
-	desc = "The backbone of interstellar travel, the mighty plasma giant allows fuel collection to take place."
+	name = "плазма гигант"
+	cases = list("плазма гигант", "плазмы гиганта", "плазме гиганту", "плазму гигант", "плазмой гигантом", "плазме гиганте")
+	desc = "Основа межзвёздных перелётов. Этот могучий плазменный гигант служит для сбора топлива."
 	ruin_type = RUINTYPE_PLASMA
 	gravity = STANDARD_GRAVITY
 	planet = DYNAMIC_WORLD_PLASMA_GIANT
@@ -33,8 +35,9 @@
 	interference_power = 10
 
 /datum/planet_type/earthsand
-	name = "Sand Planet"
-	desc = "Great Quicksand"
+	name = "песчаная планета"
+	cases = list("песчаная планета", "песчаной планеты", "песчаной планете", "песчаную планету", "песчаной планетой", "песчаной планете")
+	desc = "Великие зыбучие пески"
 	planet = DYNAMIC_WORLD_EARTH_SAND
 	// [CELADON-EDIT] -- CELADON_OVERMAP_ICON -- вагагагагагагагагагагага
 	//	color = COLOR_LIGHT_ORANGE
@@ -52,8 +55,9 @@
 	ruin_type = RUINTYPE_ASTEROID
 
 /datum/planet_type/ice_night // Мне очень не нравится, как я это сделал, но на другую реализацию у меня не хватает знаний
-	name = "frozen planet"
-	desc = "A frozen planet covered in thick snow, thicker ice, and dangerous predators."
+	name = "ледяная планета"
+	cases = list("ледяная планета", "ледяной планеты", "ледяной планете", "ледяную планету", "ледяной планетой", "ледяной планете")
+	desc = "Замерзшая планета, покрытая глубоким снегом, толстым слоем льда и населенная опасными хищниками."
 	planet = DYNAMIC_WORLD_ICE_NIGHT
 	icon_state = "snow"
 	// color = COLOR_BLUE_LIGHT
@@ -65,8 +69,9 @@
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
 
 /datum/planet_type/jungle_night
-	name = "jungle planet"
-	desc = "A densely forested world, filled with vines, animals, and underbrush. Surprisingly habitable with a machete."
+	name = "тропическая планета"
+	cases = list("тропическая планета", "тропической планеты", "тропической планете", "тропическую планету", "тропической планетой", "тропической планете")
+	desc = "Густо заросший лесом мир, полный лиан, животных и подлеска. Удивительно пригоден для жизни, если под рукой есть мачете."
 	planet = DYNAMIC_WORLD_JUNGLE_NIGHT
 	icon_state = "jungle"
 	// color = COLOR_LIME
@@ -78,8 +83,9 @@
 	landing_sound = 'sound/effects/planet_landing_1.ogg'
 
 /datum/planet_type/rock_night
-	name = "rock planet"
-	desc = "A rocky red world in the midst of terraforming. While some plants have taken hold, it is widely hostile to life."
+	name = "каменная планета"
+	cases = list("каменная планета", "каменной планеты", "каменной планете", "каменную планету", "каменной планетой", "каменной планете")
+	desc = "Красный скалистый мир в самом разгаре терраформирования. Хотя некоторые растения уже прижились, среда здесь в целом враждебна к жизни."
 	planet = DYNAMIC_WORLD_ROCKPLANET_NIGHT
 	icon_state = "red"
 	// color = "#bd1313"
@@ -91,8 +97,9 @@
 	landing_sound = 'sound/effects/planet_landing_2.ogg'
 
 /datum/planet_type/beach_night
-	name = "beach planet"
-	desc = "The platonic ideal of vacation spots. Warm, comfortable temperatures, and a breathable atmosphere."
+	name = "пляжная планета"
+	cases = list("пляжная планета", "пляжной планеты", "пляжной планете", "пляжную планету", "пляжной планетой", "пляжной планете")
+	desc = "Настоящий райский уголок для отпуска. Тёплый климат и пригодный для дыхания воздух."
 	planet = DYNAMIC_WORLD_BEACHPLANET_NIGHT
 	icon_state = "beach"
 	// color = "#c6b597"
@@ -106,7 +113,7 @@
 //Для работы модульной планеты Anima
 /datum/planet_type/anima
 	name = "???"
-	desc = "Some sort of ugly shaped planet with an energy field around it. There's no identification of what this is."
+	desc = "Какая-то уродливая планета, окружённая энергетическим полем. Невозможно определить, что это такое."
 	planet = DYNAMIC_WORLD_ANIMA
 	icon_state = "anima"
 	//	color = COLOR_YELLOW
