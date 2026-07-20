@@ -489,7 +489,7 @@
 	item_state = "laser"
 
 	manufacturer = MANUFACTURER_SHARPLITE
-	default_ammo_type = /obj/item/stock_parts/cell/gun/sharplite
+	default_ammo_type = /obj/item/stock_parts/cell/gun // [CELADON-EDIT]-исправление некоректного магазина OLD CODE: default_ammo_type = /obj/item/stock_parts/cell/gun/sharplite
 
 	allowed_ammo_types = list(
 		/obj/item/stock_parts/cell/gun/sharplite,
