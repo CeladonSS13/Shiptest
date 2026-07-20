@@ -117,6 +117,14 @@
 	contains = list(/obj/item/ammo_box/magazine/g36/drum/empty)
 	cost = 3000
 
+/* Energy cells */
+
+/datum/supply_pack/faction/inteq/magazine/guncell
+	name = "E-Cell - Weapon Cell"
+	desc = "Contains a weapon cell, compatible with laser guns."
+	contains = list(/obj/item/stock_parts/cell/gun)
+	cost = 600
+
 /* // Отключено до реворка плазмы
 // Plasma Weapon Cells (Export NT)
 /datum/supply_pack/faction/inteq/magazine/cellinteq

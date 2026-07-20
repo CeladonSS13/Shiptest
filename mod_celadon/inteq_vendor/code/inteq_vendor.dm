@@ -9,7 +9,7 @@
 	req_access = list(ACCESS_INTEQ_SECURITY)
 	products = list(
 	/obj/item/stock_parts/cell/hyper = 3,
-	/obj/item/mod/module/anomaly_locked/antigrav/prebuilt = 3,
+	/obj/item/mod/module/dash = 3,
 	/obj/item/mod/module/tether = 3,
 	)
 	contraband = list()

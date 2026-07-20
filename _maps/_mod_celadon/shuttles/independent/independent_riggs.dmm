@@ -1410,14 +1410,14 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "rH" = (
-/obj/structure/filingcabinet/medical,
-/obj/machinery/airalarm/directional/south,
 /obj/effect/turf_decal/borderfloor{
 	dir = 6
 	},
 /obj/effect/turf_decal/corner/opaque/green{
 	dir = 1
 	},
+/obj/structure/filingcabinet,
+/obj/machinery/airalarm/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "rZ" = (
@@ -4026,7 +4026,7 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "Vq" = (
-/obj/structure/filingcabinet/security,
+/obj/structure/filingcabinet,
 /obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/grimy,
 /area/ship/security)

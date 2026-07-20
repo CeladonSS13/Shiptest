@@ -59,7 +59,7 @@
 
 /datum/outfit/job/cel/nanotrasen/engineer/nslogistics
 	name = "NT N+S Logistics - Repair Technician"
-	job_icon = "engineer"
+	job_icon = "stationengineer"
 
 	head = /obj/item/clothing/head/hardhat/nanotrasen/blue
 	suit = /obj/item/clothing/suit/nanotrasen/vest/blue

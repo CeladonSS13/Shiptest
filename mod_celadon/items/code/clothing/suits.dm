@@ -71,9 +71,9 @@
 	strip_delay = 60
 	actions_types = list()
 
-/obj/item/clothing/suit/armor/vest/trauma
+/obj/item/clothing/suit/armor/vest/cybersun/trauma
 	name = "cybersun trauma team armor vest"
-	icon_state = "traumavest"
+	icon_state = "trauma_vest"
 	desc = "A set of stamped plasteel armor plates decorated with a medical cross and colors associated with the medical division of Cybersun."
 
 /obj/item/clothing/suit/toggle/leather_jacket

@@ -6,82 +6,109 @@ MARK: E-Guns - NT-SL
 */
 
 /datum/supply_pack/faction/nanotrasen/gun/mini_energy
-	name = "E-Pistol - NT-SL X26 Miniature energy pistol"
-	desc = "One of the most basic energy weapons in the universe. Compact but low capacity. Shoots lethal and disabler lasers. A simple, yet an inefficient PDW. Power in a pocket! Produced by Nanotrasen-Sharplite"
+	name = "E-Pistol - SL X-26 'Ember'"
+	desc = "A civilian-grade siderarm marketed under the slogan 'Power in a pocket!'. Produced by Nanotrasen-Sharplite"
 	cost = 500
 	contains = list(/obj/item/storage/guncase/pistol/miniegun_old)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/laser
-	name = "E-Rifle - NT-SL L-204 laser gun"
-	desc = "Basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal. Produced by Nanotrasen-Sharplite."
+	name = "E-Rifle - SL L-204 'Fuse'"
+	desc = "A basic energy-based laser gun that fires concentrated beams of light which pass through glass and thin metal. Produced by Nanotrasen-Sharplite."
 	cost = 1000
-	contains = list(/obj/item/storage/guncase/energy/laser)
+	contains = list(/obj/item/storage/guncase/energy/laser_old)
 	crate_name = "laser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/energy/disabler
-	name = "E-Pistol - NT-SL Disabler"
+	name = "E-Pistol - SL Disabler"
 	desc = "A self-defense weapon that exhausts organic targets, weakening them until they collapse. Produced by Nanotrasen-Sharplite."
 	cost = 1000
 	contains = list(/obj/item/storage/guncase/disabler)
 	crate_name = "disabler crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/energy
-	name = "E-Rifle - NT-SL"
-	desc = "One of the most basic energy weapons in the universe. Shoots lethal and disabler lasers. A simple, yet an efficient PDW. It is the egun. Produced by Nanotrasen-Sharplite"
-	cost = 1250
+	name = "E-Rifle - SL X-10 'Patriot'"
+	desc = "A semi-automatic security-grade energy weapon. Fires lethal and disabler bolts. It is the egun. Produced by Nanotrasen-Sharplite"
+	cost = 1750
 	contains = list(/obj/item/storage/guncase/energy/egun_old)
 	crate_name = "energy gun crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/nanotrasen/gun/energy/taser
-	name = "E-Pistol - NT-SL Hybrid Taser"
+	name = "E-Pistol - SL Hybrid Taser"
 	desc = "A dual-mode taser designed to fire both short-range high-power electrodes and long-range disabler beams. Produced by Nanotrasen-Sharplite."
 	cost = 1250
 	contains = list(/obj/item/storage/guncase/advtaser)
 	crate_name = "hybrid taser crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/etar
-	name = "E-SMG - NT-SL 'E-TAR' SMG energy rifle"
+	name = "E-SMG - SL X-36 E-TAR"
 	desc = "Contains a compact energy-based PDW platform, ideal for suppressing threats at mid-range. For NT employee use only."
 	cost = 2000
 	contains = list(/obj/item/storage/guncase/energy/etar_old)
 	crate_name = "SMG crate"
 
+/datum/supply_pack/faction/nanotrasen/gun/sunbeam
+	name = "E-SMG - SL X-49 'Sunbeam'"
+	desc = "A dual-mode energy SMG capable of discharging weak armor-piercing projectiles. Produced by Nanotrasen-Sharplite."
+	cost = 2500
+	contains = list(/obj/item/storage/guncase/energy/sunbeam)
+
 /datum/supply_pack/faction/nanotrasen/gun/ultima
-	name = "E-Shotgun - NT-SL 'E-SG 500 Second Edition'"
-	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. The on-board computer is notoriously unreliable. For NT employee use only."
+	name = "E-Shotgun - SL 'E-SG 500 Second Edition'"
+	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	cost = 3000
 	contains = list(/obj/item/gun/energy/e_gun/e_old/iot)
 	crate_name = "shotgun crate"
 
+/datum/supply_pack/faction/nanotrasen/gun/blaze
+	name = "E-Shotgun - SL AL-370 'Blaze'"
+	desc = "A continuation of the E-SG prototypes featuring a different firemode compared to the classic energy shotgun. Produced by Nanotrasen-Sharplite."
+	cost = 5500
+	contains = list(/obj/item/storage/guncase/energy/blaze)
+	crate_name = "shotgun crate"
+
 /datum/supply_pack/faction/nanotrasen/gun/heavylaser
-	name = "E-Rifle - NT-SL Laser Accelerator Cannon"
-	desc = "A sniper-like Nanotrasen laser gun that deals more damage if the target is far away. You can't attach a scope to it, though"
+	name = "E-Sniper-Rifle - SL AL-602 'Phoenix'"
+	desc = "A sniper-like Sharplite energy weapon that deals more damage if the target is far away. Scope included."
 	contains = list(/obj/item/storage/guncase/heavylaser)
-	cost = 3500
+	cost = 9000
+
+/datum/supply_pack/faction/nanotrasen/gun/parallax
+	name = "E-Marksman - SL L-211 'Parallax'"
+	desc = "An energy marksman rifle featuring experimental hellfire bolts and a decent scope. Produced by Nanotrasen-Sharplite."
+	cost = 5000
+	contains = list(/obj/item/storage/guncase/energy/parallax)
+	crate_name = "marksman crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/hades
-	name = "E-Assault-Rifle - NT-SL AL-655 'Hades'"
-	desc = "Nanotrasen's pride in energy weapon development. This premium assault rifle is the most reliable Nanotrasen-Sharplite energy weapon. Good for burning armored targets!"
+	name = "E-Assault-Rifle - SL AL-655 'Hades'"
+	desc = "A powerful variable energy assault rifle, ideal for fire support. Useful for armored targets."
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/hades_old)
-	crate_name = "laser crate"
+	crate_name = "advanced laser crate"
+
+/datum/supply_pack/faction/nanotrasen/gun/daybreak
+	name = "EMG - SL AL-690 'Daybreak'"
+	desc = "A monstrous refitting of the AL-655. Decimates anything in your way. Uses large weapon cells. Produced by Nanotrasen-Sharplite."
+	cost = 9000
+	contains = list(/obj/item/storage/guncase/energy/daybreak)
+	crate_name = "EMG crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/cryogelida
-	name = "Cryo-Pistol - NT-SL PPD-142 'Cryogelida'"
+	name = "Cryo-Pistol - SL PPD-142 'Cryogelida'"
 	desc = "A fresh-new experimental plasma pistol developed by Nanotrasen-Sharplite, it has 2 firemodes. Freeze firemode is perfect for cooling syndicate terrorists' heat, and frostbite firemode allows for sending them back into ice age. It synergizes well with Pyrogelida plasma pistol."
 	contains = list(/obj/item/storage/guncase/cryogelida)
 	cost = 8000
 
 /datum/supply_pack/faction/nanotrasen/gun/pyrogelida
-	name = "Pyro-Pistol - NT-SL PPD-238 'Pyrogelida'"
+	name = "Pyro-Pistol - SL PPD-238 'Pyrogelida'"
 	desc = "A fresh-new experimental plasma pistol developed by Nanotrasen-Sharplite, it has 2 firemodes. Burn firemode is perfect for non-Geneva-convention-violating combat, and IMMOLATE mode lets you commit warcrimes at the rate of 50 per minute. It synergizes well with Cryogelida plasma pistol."
 	contains = list(/obj/item/storage/guncase/pyrogelida)
 	cost = 9000
 
 /datum/supply_pack/faction/nanotrasen/gun/ion
-	name = "Ion-Rifle - NT-SL Ion"
+	name = "Ion-Rifle - SL Ion Projector"
 	desc = "A man-portable anti-armor weapon designed to disable mechanical threats at range. Produced by Nanotrasen-Sharplite."
 	cost = 10000
 	contains = list(/obj/item/storage/guncase/energy/iongun)
@@ -89,7 +116,7 @@ MARK: E-Guns - NT-SL
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/nanotrasen/gun/ion_carbine
-	name = "Ion-Rifle - NT-SL MK2 Ion carbine"
+	name = "Ion-Rifle - SL MK2 Ion carbine"
 	desc = "An improved model on the ion projector, built to be more compact and ergonomic, while keeping the same max charge. Developed by Nanotrasen-Sharplite"
 	contains = list(/obj/item/storage/guncase/ion_carbine)
 	cost = 11000
