@@ -69,9 +69,8 @@ SUBSYSTEM_DEF(traumas)
 		"clowns"    = typecacheof(list(
 			/obj/item/clothing/under/rank/civilian/clown,
 			/obj/item/clothing/mask/gas/clown_hat, /obj/item/instrument/bikehorn,
-			/obj/item/grown/bananapeel, /obj/item/food/cheesiehonkers,
-			/obj/item/pda/clown,
-			/obj/item/trash/cheesie)),
+			/obj/item/grown/bananapeel,
+			/obj/item/pda/clown)),
 // [/CELADON-ADD]
 
 		"greytide"  = typecacheof(list(
