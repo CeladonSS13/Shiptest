@@ -23,7 +23,7 @@
 
 /obj/item/clothing/accessory/tajaran/charm/raskariim
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
-	mob_overlay_icon = null
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_overlay_SORTIROVATI.dmi'
 	name = "metal amulet"
 	desc = "An amulet made of some light metal."
 	icon_state = "raskara_amulet"

@@ -32,7 +32,7 @@
 		SSdiscord.reverify_cache[usr.ckey] = one_time_token
 		// [CELADON-EDIT] - DISCORD VERIFY
 		// message = "Your one time token is: [one_time_token], Assuming you have the required living minutes in game, you can now verify yourself in discord by using the command <span class=\"warning\">\"!verify [one_time_token]\"</span>"
-		message = "Вы можете верифицировать себя в Discord, используя команду: <br><br><b>/verify code:[one_time_token]</b><br><br> Celadon Discord: https://discord.com/invite/rxsggTJzY3"
+		message = "Вы можете верифицировать себя в Discord, используя команду: <br><br><b>/verify server:Shiptest code:[one_time_token]</b><br><br> Celadon Discord: https://discord.com/invite/rxsggTJzY3"
 		// [/CELADON-EDIT]
 
 	//Now give them a browse window so they can't miss whatever we told them

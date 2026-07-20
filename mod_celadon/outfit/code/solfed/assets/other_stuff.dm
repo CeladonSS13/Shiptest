@@ -38,6 +38,7 @@
 	name = "Poster - Mars"
 	desc = "This poster shows Mars, the 4th planet in SF-2345."
 	icon_state = "mars_poster"
+	never_random = TRUE
 
 /obj/structure/sign/poster/solfed/earth
 	name = "Poster - Terra"
@@ -45,7 +46,7 @@
 	icon_state = "earth_poster"
 	never_random = TRUE
 
-/obj/structure/sign/poster/solfed/earth
+/obj/structure/sign/poster/solfed/luna
 	name = "Poster - Luna"
 	desc = "This poster shows Luna, Terra's humble moon."
 	icon_state = "luna_poster"

@@ -227,9 +227,10 @@ GENE SCANNER
 				trauma_desc += B.scan_desc
 				trauma_text += trauma_desc
 			render_list += "<span class='alert ml-1'>Cerebral traumas detected: subject appears to be suffering from [english_list(trauma_text)].</span>\n"
-		if(C.roundstart_quirks.len)
-			render_list += "<span class='info ml-1'>Subject has the following physiological traits: [C.get_trait_string(see_all=see_all_quirks)].</span>\n"
-
+		// [CELADON-DELETE] - Убираем возможность смотреть квирки через медсканер.
+		// if(C.roundstart_quirks.len)
+		// 	render_list += "<span class='info ml-1'>Subject has the following physiological traits: [C.get_trait_string(see_all=see_all_quirks)].</span>\n"
+		// [/CELADON-DELETE]
 	if(advanced)
 		render_list += "<span class='info ml-1'>Brain Activity Level: [(200 - M.getOrganLoss(ORGAN_SLOT_BRAIN))/2]%.</span>\n"
 
@@ -302,6 +303,8 @@ GENE SCANNER
 			message = ""
 			if(C.is_blind())
 				message += "\n<span class='alert ml-2'>Subject is blind.</span>"
+			if(HAS_TRAIT(C, TRAIT_SCARRED_EYE))
+				message += "\n<span class='alert ml-2'>Subject's vision is impaired by severe ocular scarring."
 			if(HAS_TRAIT(C, TRAIT_NEARSIGHT))
 				message += "\n<span class='alert ml-2'>Subject is nearsighted.</span>"
 			if(eyes.damage > 30)
@@ -449,7 +452,7 @@ GENE SCANNER
 		return
 
 	if(istype(target) && target.reagents)
-		var/list/render_list = list() //The master list of readouts, including reagents in the blood/stomach, addictions, quirks, etc.
+		var/list/render_list = list() //The master list of readouts, including reagents in the blood/stomach, quirks, etc.
 		var/list/render_block = list() //A second block of readout strings. If this ends up empty after checking stomach/blood contents, we give the "empty" header.
 
 		// Blood reagents
@@ -483,12 +486,6 @@ GENE SCANNER
 			else
 				render_list += "<span class='notice ml-1'>Subject contains the following reagents in their stomach:</span><br>"
 				render_list += render_block
-
-		// Addictions
-		if(LAZYLEN(target.reagents.addiction_list.len))
-			render_list += "<span class='boldannounce ml-1'>Subject is addicted to the following types of drug:</span><br>"
-			for(var/datum/reagent/R in target.reagents.addiction_list)
-				render_list += "<span class='alert ml-2'>[R.name]</span>\n"
 
 		// we handled the last <br> so we don't need handholding
 		to_chat(user, boxed_message(jointext(render_list, "")), type = MESSAGE_TYPE_INFO)

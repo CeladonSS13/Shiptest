@@ -1034,11 +1034,18 @@
 	set desc = "Wipe your core. This is functionally equivalent to cryo, freeing up your job slot."
 
 	// Guard against misclicks, this isn't the sort of thing we want happening accidentally
-	if(tgui_alert("WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo). Are you entirely sure you want to do this?", "Wipe Core", list("No", "Yes")) != "Yes")
+	// [CELADON-EDIT] - Fix Runtimes
+	// OLD CODE: if(tgui_alert("WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo). Are you entirely sure you want to do this?", "Wipe Core", list("No", "Yes")) != "Yes")
+	if(tgui_alert(src,"WARNING: This will immediately wipe your core and ghost you, removing your character from the round permanently (similar to cryo). Are you entirely sure you want to do this?", "Wipe Core", list("No", "Yes")) != "Yes")
+	// [/CELADON-EDIT]
 		return
 
 	// We warned you.
-	var/obj/structure/AIcore/latejoin_inactive/inactivecore = New(loc)
+	// [CELADON-EDIT] - Fix Runtimes
+	// OLD CODE: var/obj/structure/AIcore/latejoin_inactive/inactivecore = New(loc)
+	var/obj/structure/AIcore/latejoin_inactive/inactivecore = new /obj/structure/AIcore/latejoin_inactive(loc)
+	new /obj/item/mmi/posibrain(loc)
+	// [/CELADON-EDIT]
 	transfer_fingerprints_to(inactivecore)
 
 	if(GLOB.announcement_systems.len)

@@ -14,16 +14,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W | I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -33,16 +37,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_head_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W | I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -52,16 +60,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_marine_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W | I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -71,16 +83,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_engineer_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W | I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -92,16 +108,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W | I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -146,7 +166,7 @@
 
 	backpack_contents = list(/obj/item/weldingtool/hugetank)
 
-//MARK:	Военно-морской флот
+//MARK:	Военно-космические силы СФ
 
 /datum/outfit/job/cel/solfed/marine
 	name = "SF - Marine"
@@ -179,7 +199,7 @@
 	get_solfed_marine_access(H)
 
 /datum/outfit/job/cel/solfed/marine/pilot
-	name = "SF - Schwerer Roboterpilot"
+	name = "SF - Mechanized Armor Pilot"
 
 	jobtype = /datum/job/officer
 
@@ -199,15 +219,15 @@
 	gloves = /obj/item/clothing/gloves/combat/solfed/captain
 	ears = /obj/item/radio/headset/solgov/alt/captain
 	uniform =  /obj/item/clothing/under/solfed/formal
-	suit = /obj/item/clothing/suit/armor/vest/solgov/captain
+	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
 	shoes = /obj/item/clothing/shoes/laceup
 	head = /obj/item/clothing/head/solgov/captain
-	neck = /obj/item/clothing/neck/cloak/solgovcap/solfed
+	neck = /obj/item/clothing/neck/tie/black
 
 	backpack = /obj/item/storage/backpack/solfed
 	satchel = /obj/item/storage/backpack/satchel/solfed
 	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
-	courierbag = /obj/item/storage/backpack/messenger/com
+	courierbag = /obj/item/storage/backpack/messenger
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
@@ -221,24 +241,29 @@
 
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id
-	gloves = /obj/item/clothing/gloves/color/white
-	uniform = /obj/item/clothing/under/rank/security/detective/grey
-	suit = /obj/item/clothing/suit/lawyer/charcoal
+	id = /obj/item/card/id/cel/solfed/captain
+	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
+	gloves = /obj/item/clothing/gloves/combat/solfed/captain
+	ears = /obj/item/radio/headset/solgov/alt/captain
+	uniform =  /obj/item/clothing/under/solfed/formal
+	suit = /obj/item/clothing/suit/armor/solgov_trenchcoat
+	shoes = /obj/item/clothing/shoes/laceup
+	head = /obj/item/clothing/head/solfed/beret
 	neck = /obj/item/clothing/neck/tie/black
-	dcoat = null
-	glasses = /obj/item/clothing/glasses/sunglasses
-	head = null
-	accessory = null
 
-	satchel = /obj/item/storage/backpack/satchel/leather
+	backpack = /obj/item/storage/backpack/solfed
+	satchel = /obj/item/storage/backpack/satchel/solfed
+	duffelbag = /obj/item/storage/backpack/duffelbag/solfed
+	courierbag = /obj/item/storage/backpack/messenger
 
-/datum/outfit/job/cel/solfed/captain/post_equip(mob/living/carbon/human/H)
+	accessory = /obj/item/clothing/accessory/medal/gold/captain
+
+/datum/outfit/job/cel/solfed/intelof/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
 
 /datum/outfit/job/cel/solfed/captain/admiral
-	name = "SF - Flottenadmiral"
+	name = "SF - Field Officer"
 	job_icon = "sf_admiral"
 
 	jobtype = /datum/job/captain
@@ -538,58 +563,3 @@
 /datum/outfit/job/cel/solfed/engineer/elysium/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_engineer_access(H)
-
-//MARK:	Группа быстрого реагирования (ERT)
-
-/datum/outfit/job/cel/solfed/captain/combat
-	gloves = /obj/item/clothing/gloves/combat/solfed
-	ears = /obj/item/radio/headset/solgov/alt/captain
-	uniform = /obj/item/clothing/under/solfed/formal
-	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/solfed/beret
-	belt = /obj/item/storage/belt/military/solfed
-	suit = /obj/item/clothing/suit/armor/solfed/formal
-	mask = /obj/item/clothing/mask/gas/solfed
-
-	accessory = null
-
-/datum/outfit/job/cel/solfed/sergeant/combat
-
-	gloves = /obj/item/clothing/gloves/combat/solfed
-	mask = /obj/item/clothing/mask/gas/solfed
-	ears = /obj/item/radio/headset/solgov/alt
-	uniform = /obj/item/clothing/under/solfed/camo
-	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/solfed/beret
-	belt = /obj/item/storage/belt/military/solfed
-	suit = /obj/item/clothing/suit/armor/vest/marine
-
-/datum/outfit/job/cel/solfed/marine/combat
-	gloves = /obj/item/clothing/gloves/combat/solfed
-	mask = /obj/item/clothing/mask/gas/solfed
-	ears = /obj/item/radio/headset/solgov/alt
-	uniform = /obj/item/clothing/under/solfed/camo
-	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
-	belt = /obj/item/storage/belt/military/solfed
-	suit = /obj/item/clothing/suit/armor/vest/marine/medium
-
-/datum/outfit/job/cel/solfed/doctor/combat
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	mask = /obj/item/clothing/mask/gas/solfed
-	ears = /obj/item/radio/headset/solgov/alt
-	uniform = /obj/item/clothing/under/solfed/medical
-	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
-	belt = /obj/item/storage/belt/military/solfed/medical
-	suit = /obj/item/clothing/suit/armor/vest/marine
-
-/datum/outfit/job/cel/solfed/engineer/combat
-	gloves = /obj/item/clothing/gloves/combat/solfed
-	mask = /obj/item/clothing/mask/gas/solfed
-	ears = /obj/item/radio/headset/solgov/alt
-	uniform = /obj/item/clothing/under/solfed/industrial
-	shoes = /obj/item/clothing/shoes/jackboots/knife
-	head = /obj/item/clothing/head/helmet/bulletproof/x11/solfed
-	belt = /obj/item/storage/belt/utility/full/engi
-	suit = /obj/item/clothing/suit/armor/vest/marine

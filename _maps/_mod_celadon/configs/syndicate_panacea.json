@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Panacea-class Infirm Vessel",
+	"map_name": "Panacea-class Support Ship",
 	"map_short_name": "Panacea",
-	"description": "Вскоре после основания SUNS как такового и присоединения их к Триглаву Синдиката, GEC любезно согласились спроектировать и оборудовать первое судно, удовлетворяющее почти все нужды естествознателей SUNS. Корабль класса 'Панацея' был первым судно в своем роде, которое вмещало в себя все прелести станционных медицинских отсеков. Судно класса 'Панацея' - это судно с умеренным уровнем оснащения, готовое в экстренных случаях принимать пациентов, предлагая им как и первую медицинскую помощь, будь то хирургия или изготовление необходимых препаратов. На судне также присутствует психолог и проводится практика молодых студентов. ",
+	"description": "Вскоре после присоединения SUNS к Триглаву Синдиката, GEC любезно согласились спроектировать и оборудовать первое судно, которое полностью удовлетворит все нужды научных сотрудников. Судно класса «Panacea» - это мобильный научный дивизион с комфортными условиями для жизни и исследований. В большинстве случаев здесь ведется разработка новых боевых отравляющих веществ, которые потом поставляются для оперативных агентов на объектах Nanotrasen. Нередко экспериментальные образцы сбываются на черном рынке. Тем не менее, данный корабль так же готов в экстренных случаях принимать клиентов, или союзников попавших в беду.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_panacea.dmm",
 	"enabled": true,
 	"limit": 1,
@@ -23,7 +23,7 @@
 			"slots": 1
 		},
 
-		"Medical Instructor": {
+		"Associate Professor of Medicine": {
 			"outfit": "/datum/outfit/job/cel/syndicate/cmo/suns",
 			"officer": true,
 			"slots": 1
@@ -31,16 +31,16 @@
 
 		"Peacekeeper": {
 			"outfit": "/datum/outfit/job/cel/syndicate/security/suns",
-			"slots": 1
+			"slots": 2
 		},
 
-		"Ship Doctor":{
+		"Medical Doctor":{
 			"outfit": "/datum/outfit/job/cel/syndicate/doctor/suns",
 			"slots": 2
 		},
 
 		"Mechanic": {
-			"outfit": "/datum/outfit/job/cel/syndicate/engineer/suns",
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gec",
 			"slots": 2
 		},
 
@@ -56,7 +56,7 @@
 
 		"Long Term Patient": {
 			"outfit": "/datum/outfit/job/cel/syndicate/patient/suns",
-			"slots": 5
+			"slots": 3
 		}
 	}
 }

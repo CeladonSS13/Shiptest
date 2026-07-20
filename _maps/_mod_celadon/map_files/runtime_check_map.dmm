@@ -882,7 +882,6 @@
 /obj/item/ammo_box/magazine/m45/hp,
 /obj/item/ammo_box/magazine/m9mm_cm70,
 /obj/item/ammo_box/magazine/m9mm_mauler,
-/obj/item/ammo_box/magazine/recharge/ctf/blue,
 /obj/item/ammo_box/magazine/skm_762_40/drum,
 /obj/item/ammo_box/magazine/sniper_rounds/penetrator,
 /obj/item/ammo_box/magazine/toy/pistol/riot,
@@ -1525,9 +1524,6 @@
 "kz" = (
 /turf/open/space/basic,
 /area/outpost/security)
-"kB" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow,
-/area/space)
 "kD" = (
 /turf/open/floor/light,
 /area/space)
@@ -1749,9 +1745,6 @@
 /obj/item/ammo_box/magazine/pistol556mm,
 /obj/item/ammo_box/magazine/recharge,
 /obj/item/ammo_box/magazine/recharge,
-/obj/item/ammo_box/magazine/recharge/ctf,
-/obj/item/ammo_box/magazine/recharge/ctf/red,
-/obj/item/ammo_box/magazine/recharge/ctf/blue,
 /obj/item/ammo_box/magazine/rifle47x33mm,
 /obj/item/ammo_box/magazine/skm_762_40,
 /obj/item/ammo_box/magazine/skm_762_40,
@@ -1795,8 +1788,6 @@
 /obj/item/ammo_casing/a4570/explosive,
 /obj/item/ammo_casing/a4570/hp,
 /obj/item/ammo_casing/a4570/match,
-/obj/item/ammo_casing/a50,
-/obj/item/ammo_casing/a50/ctf,
 /obj/item/ammo_casing/a556_42,
 /obj/item/ammo_casing/a556_45,
 /obj/item/ammo_casing/a556_45/a856,
@@ -1852,9 +1843,6 @@
 /obj/item/ammo_casing/caseless/gauss/lance,
 /obj/item/ammo_casing/caseless/gauss/slug,
 /obj/item/ammo_casing/caseless/laser,
-/obj/item/ammo_casing/caseless/laser/ctf,
-/obj/item/ammo_casing/caseless/laser/ctf/blue,
-/obj/item/ammo_casing/caseless/laser/ctf/red,
 /obj/item/ammo_casing/caseless/rocket,
 /obj/item/ammo_casing/caseless/rocket/a70mm,
 /obj/item/ammo_casing/caseless/rocket/hedp,
@@ -1916,7 +1904,6 @@
 /obj/item/ammo_casing/energy/laser/redtag/hitscan,
 /obj/item/ammo_casing/energy/laser/scatter,
 /obj/item/ammo_casing/energy/laser/smg,
-/obj/item/ammo_casing/energy/laser/ultima,
 /obj/item/ammo_casing/energy/lasergun/eoehoma,
 /obj/item/ammo_casing/energy/lasergun/hitscan,
 /obj/item/ammo_casing/energy/lasergun/old,
@@ -4860,21 +4847,18 @@
 /obj/item/mod/module/hat_stabilizer,
 /obj/item/mod/module/magnetic_harness,
 /obj/item/mod/module/jetpack/advanced,
-/obj/item/mod/control/pre_equipped/traitor,
 /obj/item/mod/module/storage/syndicate,
 /obj/item/mod/module/emp_shield,
 /obj/item/mod/module/magnetic_harness,
 /obj/item/mod/module/jetpack,
 /obj/item/mod/module/flashlight,
 /obj/item/mod/module/dna_lock,
-/obj/item/mod/control/pre_equipped/traitor_elite,
 /obj/item/mod/module/storage/syndicate,
 /obj/item/mod/module/emp_shield,
 /obj/item/mod/module/magnetic_harness,
 /obj/item/mod/module/jetpack/advanced,
 /obj/item/mod/module/flashlight,
 /obj/item/mod/module/dna_lock,
-/obj/item/mod/control/pre_equipped/nuclear,
 /obj/item/mod/module/storage/syndicate,
 /obj/item/mod/module/emp_shield,
 /obj/item/mod/module/magnetic_harness,
@@ -5959,7 +5943,7 @@
 /obj/item/clothing/suit/armor/vest/leather,
 /obj/item/clothing/suit/armor/vest/capcarapace,
 /obj/item/clothing/suit/armor/vest/capcarapace/syndicate,
-/obj/item/clothing/suit/armor/vest/capcarapace/cybersun,
+/obj/item/clothing/suit/armor/cybersun,
 /obj/item/clothing/suit/armor/vest/capcarapace/captunic,
 /obj/item/clothing/suit/armor/vest/capcarapace/duster,
 /obj/item/clothing/suit/armor/riot,
@@ -6162,7 +6146,7 @@
 /obj/item/clothing/head/hooded/carp_hood,
 /obj/item/clothing/suit/hooded/bloated_human,
 /obj/item/clothing/head/hooded/human_head,
-/obj/item/clothing/suit/cybersun_suit,
+/obj/item/clothing/suit/cybersun,
 /obj/item/clothing/suit/straight_jacket,
 /obj/item/clothing/suit/ianshirt,
 /obj/item/clothing/suit/nerdshirt,
@@ -6501,7 +6485,7 @@
 /obj/item/clothing/under/rank/engineering/engineer/hazard,
 /obj/item/clothing/under/rank/medical,
 /obj/item/clothing/under/rank/medical/chief_medical_officer,
-/obj/item/clothing/under/rank/medical/chief_medical_officer/cybersun,
+/obj/item/clothing/under/cybersun/doctor,
 /obj/item/clothing/under/rank/medical/chief_medical_officer/skirt,
 /obj/item/clothing/under/rank/medical/geneticist,
 /obj/item/clothing/under/rank/medical/geneticist/skirt,
@@ -6598,11 +6582,11 @@
 /obj/item/clothing/under/syndicate/rus_army,
 /obj/item/clothing/under/syndicate/intern,
 /obj/item/clothing/under/syndicate/gorlex,
-/obj/item/clothing/under/syndicate/cybersun,
-/obj/item/clothing/under/syndicate/cybersun/research,
-/obj/item/clothing/under/syndicate/cybersun/officer,
-/obj/item/clothing/under/syndicate/medic,
-/obj/item/clothing/under/syndicate/medic/skirt,
+/obj/item/clothing/under/cybersun,
+/obj/item/clothing/under/cybersun/coverall,
+/obj/item/clothing/under/cybersun/officer,
+/obj/item/clothing/under/cybersun/medic,
+/obj/item/clothing/under/cybersun/medic/skirt,
 /obj/item/clothing/under/syndicate/donk,
 /obj/item/clothing/under/syndicate/donk/qm,
 /obj/item/clothing/under/syndicate/gec,
@@ -6619,8 +6603,6 @@
 /obj/item/clothing/under/tajaran/laborer,
 /obj/item/clothing/under/tajaran/fancy,
 /obj/item/clothing/under/tajaran/fancy/evening_suit,
-/obj/item/clothing/wrists/watch/tajaran,
-/obj/item/clothing/wrists/watch/tajaran/female,
 /obj/item/clothing/accessory/tajaran,
 /obj/item/clothing/accessory/tajaran/charm/raskariim,
 /obj/item/clothing/gloves/ring/diamond,
@@ -7107,7 +7089,7 @@
 /obj/item/clothing/head/beret/chem,
 /obj/item/clothing/head/beret/viro,
 /obj/item/clothing/head/beret/cmo,
-/obj/item/clothing/head/beret/cmo/cybersun,
+/obj/item/clothing/head/cybersun/cmo,
 /obj/item/clothing/head/beret/captain,
 /obj/item/clothing/head/beret/hop,
 /obj/item/clothing/head/beret/command,
@@ -7286,7 +7268,7 @@
 /obj/item/clothing/head/helmet/swat,
 /obj/item/clothing/head/helmet/m10/inteq,
 /obj/item/clothing/head/helmet/space/plasmaman/solgov,
-/obj/item/clothing/head/helmet/medical,
+/obj/item/clothing/head/helmet/m10/cybersun/trauma,
 /obj/item/clothing/head/helmet/bulletproof/m10,
 /obj/item/clothing/head/helmet/bulletproof/x11,
 /obj/machinery,
@@ -8291,7 +8273,6 @@
 /obj/machinery/computer/helm/viewscreen,
 /obj/machinery/computer/helm/viewscreen/computer,
 /obj/machinery/drill/mission,
-/obj/machinery/mission_scanner,
 /obj/machinery/elevator_call_button,
 /obj/machinery/elevator_floor_button,
 /obj/machinery/status_display/elevator,
@@ -11919,9 +11900,6 @@
 "Qe" = (
 /turf/open/space/basic,
 /area/ruin/beach/oceantown/hotel)
-"Qf" = (
-/turf/open/floor/plating/asteroid/snow/temperatre/snow_rough,
-/area/space)
 "Qh" = (
 /turf/open/floor/plating/ship,
 /area/space)
@@ -14900,7 +14878,7 @@ rT
 qY
 aJ
 UX
-kB
+eQ
 pB
 hS
 sP
@@ -14952,7 +14930,7 @@ aP
 Oz
 An
 Zm
-Qf
+eQ
 MP
 ST
 IJ

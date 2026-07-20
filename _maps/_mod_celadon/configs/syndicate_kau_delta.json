@@ -1,8 +1,8 @@
 {
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
-	"map_name": "Kau-Delta-class ship",
+	"map_name": "Kau-Delta-class Corvette",
 	"map_short_name": "Kau-Delta",
-	"description": "Боевой корвет класса Кау-Дельта. Нацелен на подрыв деятельности НТ в секторе, в спешке был переоборудован для самообеспечения на протяжение продолжительного времени. Несмотря на причастность киберсан к созданию корабля, экипаж состоит из разных подразделений Синдиката.",
+	"description": "Боевой корвет класса Кау-Дельта. Нацелен на подрыв деятельности НТ в секторе, в спешке был переоборудован для самообеспечения на протяжение продолжительного времени. Несмотря на причастность Cybersun к созданию корабля, экипаж состоит из разных подразделений Синдиката.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_kau_delta.dmm",
 	"map_id": "cybersun_kau",
 	"enabled": true,
@@ -13,21 +13,21 @@
 	"tags": ["Боевой"],
 	"namelists": ["CYBERSUN"],
 	"job_slots": {
-		"Captain": {
+		"Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/cybersun",
 			"officer": true,
 			"slots": 1
 		},
-		"Sergeant": {
+		"Squad Leader": {
 			"outfit": "/datum/outfit/job/cel/syndicate/hos/gorlex",
 			"officer": true,
 			"slots": 1
 		},
-		"Operative": {
-			"outfit": "/datum/outfit/job/cel/syndicate/security",
+		"Commando": {
+			"outfit": "/datum/outfit/job/cel/syndicate/security/gorlex",
 			"slots": 2
 		},
-		"Engineer": {
+		"Mechanic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gec",
 			"slots": 1
 		},

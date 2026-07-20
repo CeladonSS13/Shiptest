@@ -34,22 +34,6 @@
 	barefootstep = FOOTSTEP_SAND
 	clawfootstep = FOOTSTEP_SAND
 
-// Новая разновидность снега, просто рескин
-/turf/open/floor/plating/asteroid/snow/temperatre/snow
-	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
-	icon_state = "snow"
-	icon_plating = "snow"
-
-// А вот это уже глубокий снег и он ещё сильнее замедляет передвижение
-/turf/open/floor/plating/asteroid/snow/temperatre/snow_rough
-	name = "snow rough"
-	desc = "It's so rough snow."
-	slowdown = 2.5
-	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
-	icon_state = "snow_rough"
-	icon_plating = "snow_rough"
-
-
 // Растительность для снега
 /obj/structure/flora/rock/pile/icy_stone
 	name = "icey stone"

@@ -1,0 +1,48 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Cirrus-class Medical Corvette",
+	"map_short_name": "Cirrus",
+	"description": "«Cirrus» - новый корабль Cybersun специально созданный для поддержки специальных операций. Данный корабль способен нести на себе транспортировочный шаттл для выполнения разного рода задач, например как сбор данных, высадка десанта или эвакуация с поля боя. Он полностью оборудован для автономной работы, и всеми необходимыми системами жизнеобеспечения для оказания медицинской помощи.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_cybersun_cirrus.dmm",
+	"subshuttle": "ambulance",
+	"starting_funds": 1000,
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 5,
+	"prefix": "MSSV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Медицинское"],
+	"namelists": [
+		"CYBERSUN",
+		"SPACE",
+		"NATURAL_AGGRESSIVE"
+	],
+	"job_slots": {
+		"Commander": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/cybersun",
+			"officer": true,
+			"slots": 1
+		},
+		"Medical Director": {
+			"outfit": "/datum/outfit/job/cel/syndicate/cmo/cybersun",
+			"officer": true,
+			"slots": 1
+		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
+			"slots": 1
+		},
+		"Medical Doctor": {
+			"outfit": "/datum/outfit/job/cel/syndicate/doctor/cybersun",
+			"slots": 2
+		},
+		"Paramedic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/paramedic/cybersun",
+			"slots": 1
+		},
+		"Ship's Mate": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/cybersun",
+			"slots": 2
+		}
+	}
+}

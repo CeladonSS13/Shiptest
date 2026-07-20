@@ -64,7 +64,7 @@
 //Путь до файла - code/modules/clothing/under/syndicate.dm
 //Путь до атласа - icons/mob/clothing/under/syndicate.dmi
 
-/obj/item/clothing/under/syndicate/cybersun/officer
+/obj/item/clothing/under/cybersun/officer
 	roll_sleeves = FALSE
 
 //Путь до файла - code/modules/clothing/under/jobs/engineering.dm

@@ -2,7 +2,7 @@
 	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
 	"map_name": "Hyena-class Wrecking Tug",
 	"map_short_name": "Hyena",
-	"description": "«Hyena» обычный спасательный буксир, который часто используется «Мародерами Горлекса» для «спасательных» миссий на заброшенные станции эпохи Второй Галактической войны (а, иногда и на аванпосты и судна). 'Hyena' имеет довольно компактную планировку со специальным безопасным складским помещением и довольно большим грузовым отсеком для своего размера, а также комплектом высококачественных костюмов и шахтёрского оборудования. Низкая стоимость Hyena и высокий спрос в ее нише сделали ее очень распространенным явлением в дальних секторах космоса в годы, последовавшие за войной. и несмотря на ограниченное финансирование, почти все отколовшиеся от фракции Мародёров Горлекса продолжают приобретать такие типы суден ещё больше.",
+	"description": "«Hyena» обычный спасательный буксир, который часто используется Gorlex Marauders для «спасательных» миссий. Корабль имеет довольно компактную планировку со специальным безопасным складским помещением и довольно большим грузовым отсеком для своего размера, а также комплектом высококачественных костюмов и шахтёрского оборудования.",
 	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_gorlex_hyena.dmm",
 	"enabled": true,
 	"limit": 1,
@@ -18,21 +18,17 @@
 		"ACLF"
 	],
 	"job_slots": {
-		"Captain": {
+		"Squad Commander": {
 			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
 			"officer": true,
-			"slots": 1
-		},
-		"Foreman": {
-			"outfit": "/datum/outfit/job/cel/syndicate/ce/gorlex",
-			"officer": true,
-			"slots": 1
+			"slots": 1,
+			"name": "Gorlex Squad leader"
 		},
 		"Mechanic": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
 			"slots": 1
 		},
-		"Wrecker": {
+		"Explorer": {
 			"outfit": "/datum/outfit/job/cel/syndicate/miner/gorlex",
 			"slots": 2
 		},

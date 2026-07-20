@@ -67,7 +67,7 @@
 		/obj/item/clothing/suit/snowman = 1,
 		/obj/item/clothing/suit/hooded/carp_costume = 1,
 		/obj/item/clothing/suit/hooded/bloated_human = 1,
-		/obj/item/clothing/suit/cybersun_suit = 1,
+		/obj/item/clothing/suit/cybersun = 1,
 		/obj/item/clothing/suit/straight_jacket = 1,
 		/obj/item/clothing/suit/ianshirt = 1,
 		/obj/item/clothing/suit/nerdshirt = 1,

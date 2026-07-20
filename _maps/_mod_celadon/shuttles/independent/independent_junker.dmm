@@ -41,7 +41,7 @@
 	dir = 8
 	},
 /obj/item/paper/construction{
-	default_raw_text = "Yeah, just so you know, I left the fuel and air pumps OFF when I dropped this thing of for you, you're gonna have to go outside and turn em on to start up the engines<br><br>The pumps are outside on the tank things to the left and right on the back of the ship, there's also one in each engine room you'll need to get going."
+	default_raw_text = "Да, просто чтобы ты знал: когда я оставил эту штуку для тебя, я выключил топливные и воздушные насосы, так что тебе придётся выйти наружу и включить их, чтобы запустить двигатели.<br><br>Насосы находятся снаружи, на баках слева и справа в задней части корабля. Ещё по одному есть в каждой машинной комнате — их тоже нужно будет запустить."
 	},
 /obj/structure/cable{
 	icon_state = "9-10"
@@ -571,6 +571,13 @@
 /area/ship/storage/eva)
 "km" = (
 /obj/item/trash/sosjerky,
+/obj/item/radio/intercom/wideband/directional/east{
+	pixel_x = 0;
+	pixel_y = -29;
+	dir = 2
+	},
+/obj/structure/table/reinforced,
+/obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/spawner/random/maintenance,
 /obj/item/areaeditor/shuttle{
 	pixel_y = 7
@@ -582,13 +589,6 @@
 /obj/item/spacecash/bundle/c50{
 	name = "10000 credits"
 	},
-/obj/item/radio/intercom/wideband/directional/east{
-	pixel_x = 0;
-	pixel_y = -29;
-	dir = 2
-	},
-/obj/structure/table/reinforced,
-/obj/effect/decal/cleanable/cobweb/cobweb2,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "kF" = (
@@ -655,8 +655,16 @@
 "lA" = (
 /obj/machinery/hydroponics/soil,
 /obj/structure/bed/dogbed,
-/mob/living/simple_animal/hostile/retaliate/goose/vomit,
 /obj/effect/decal/cleanable/vomit,
+/obj/machinery/button/door{
+	id = "lockin";
+	specialfunctions = 4;
+	normaldoorcontrol = 1;
+	dir = 4;
+	pixel_y = 7;
+	pixel_x = -23
+	},
+/mob/living/simple_animal/hostile/retaliate/goose/vomit,
 /turf/open/floor/pod/dark,
 /area/ship/crew/canteen)
 "lI" = (
@@ -799,7 +807,7 @@
 	dir = 8
 	},
 /obj/item/paper/construction{
-	default_raw_text = "<center><h1>Airlock Instructions</h1></center><br><center>Because none of you numbnuts can remember them</center><br><br>1: Bolt the door behind you so you dont bump into it and lose all our air.<br>     Bolt is the LEFT BUTTON<br>2: Go to the air alarm, set it to siphon<br>3: When at least most of the gas is out, turn OFF siphon<br>4: You can now open the shutters<br>     I shouldnt have to tell you this, but theyre the RIGHT button<br><br><h2>To go back IN</h2><br>1: Close the shutters behind you<br>2: Set the air alarm to SIPHON again<br>3: When all of the dangerous gas is out, set the air alarm to FILL<br>3: Once the pressure is at least 50 kpa, you can set the air alarm back to normal, and unbolt the door<br><br>I still can't fucking believe I have to write this."
+	default_raw_text = "<center><h1>Инструкция по шлюзу</h1></center><br><center>Потому что никто из вас, идиотов, не может их запомнить</center><br><br>1: Заприте дверь за собой, чтобы случайно не врезаться в неё и не выпустить весь наш воздух.<br>Кнопка блокировки — ЛЕВАЯ<br>2: Подойдите к воздушной сигнализации (air alarm) и установите режим «SIPHON» (откачка)<br>3: Когда хотя бы большая часть газа будет откачана, выключите «SIPHON»<br>4: Теперь можно открыть ставни<br>Не думаю, что мне нужно это говорить, но это ПРАВАЯ кнопка<br><br><h2>Чтобы вернуться ОБРАТНО внутрь</h2><br>1: Закройте ставни за собой<br>2: Снова установите на воздушной сигнализации режим «SIPHON»<br>3: Когда весь опасный газ будет откачан, установите режим «FILL» (заполнение)<br>3: Когда давление будет хотя бы 50 кПа, можно вернуть сигнализацию в обычный режим и снять блокировку с двери<br><br>Я до сих пор, чёрт возьми, не могу поверить, что мне приходится это писать."
 	},
 /obj/machinery/airalarm/directional/south,
 /turf/open/floor/plating{

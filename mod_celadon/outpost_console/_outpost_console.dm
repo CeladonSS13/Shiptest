@@ -5,7 +5,7 @@
 /datum/modpack/outpost_console
 	name = "Outpost Consoles"
 	desc = "outpost_console rework"
-	author = "FeenieRU"
+	author = "FeenieRU, Erring, Sansaika"
 
 /// Эти проки нужны, для того чтобы инициализировать датумы в определенный момент времени
 /// сборки билда. Инициализация обновляет данные в билде повторно, перезаписывая новыми значениями
