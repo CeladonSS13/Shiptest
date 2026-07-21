@@ -794,7 +794,7 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 /mob/living/simple_animal/hostile/megafauna/claw
 	armour_penetration = 30
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
-	crusher_loot = list(/obj/item/light_eater)
+	crusher_loot = list(/obj/item/disk/design_disk/modkit_disc/resonator_blast)
 
 /mob/living/simple_animal/hostile/megafauna/claw/phase2 //75% of the health this thing has is here
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)
