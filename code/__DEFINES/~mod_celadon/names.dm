@@ -20,6 +20,7 @@
 #define FACTION_RAMZI_RENEGADE "Ramzi Renegade"	// [CELADON-ADD]
 #define FACTION_SRM "Saint-Roumain Militia"
 #define FACTION_CLIP "CLIP Minutemen"
+#define FACTION_MINUTEMEN "Minutemen"
 #define FACTION_FRONTIER "Frontiersmen Fleet"
 #define FACTION_FRONTIERSMEN "Frontiersmen Fleet"
 #define FACTION_PGF "Pan-Gezenan Federation"
@@ -56,6 +57,7 @@
 
 #define PREFIX_FRONTIERSMEN list("FFV")
 #define PREFIX_CLIP list("CMSV", "CMGSV",)
+#define PREFIX_MINUTEMEN list("MINU")
 #define PREFIX_PGF list("PGF", "PGFMC", "PGFN",)
 #define PREFIX_RAMZI list("RCSV",)
 #define PREFIX_NONE list()

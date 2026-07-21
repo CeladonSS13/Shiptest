@@ -13,7 +13,7 @@
 // https://github.com/CeladonSS13/Shiptest/pull/1703
 // code\modules\projectiles\guns\powered.dm есть изменения
 /obj/item/gun/ballistic/automatic/powered/AltClick(mob/living/user)
-	if(!internal_magazine && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))
+	if(!internal_magazine && loc == user && user.is_holding(src) && cell && tac_reloads)
 		if(do_after(user, 3.5 SECONDS, src, hidden = TRUE))
 			eject_cell(user)
 		return
