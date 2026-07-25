@@ -7,8 +7,8 @@
 /obj/item/clothing/head/helmet/riot/gamma_vision
 	name = "hardhat night vision gamma"
 	desc = "No data."
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/gammaerthead.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/overlay/gammaerthead.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/spacesuits_celadon.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/spacesuits_celadon.dmi'
 	icon_state = "gamma_vision"
 	item_state = "gamma_vision"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 100, "fire" = 40, "acid" = 50, "wound" = 30)
@@ -56,11 +56,12 @@
 				var/mob/living/carbon/C = user
 				C.head_update(src, forced = 1)
 
+//this should probably be removed at some point
 /obj/item/clothing/head/helmet/space/hardsuit/security/gamma/white_squadron_rig
 	name = "white squadron rig helmet"
 	desc = "No data"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/gammaerthead.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/overlay/gammaerthead.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/spacesuits_celadon.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/spacesuits_celadon.dmi'
 	icon_state = "hardsuit0-gamma"
 	item_state = "hardsuit1-gamma"
 	hardsuit_type = "gamma"
@@ -69,8 +70,8 @@
 /obj/item/clothing/suit/space/hardsuit/security/gamma/white_squadron_rig
 	name = "white squadron rig"
 	desc = "No data"
-	icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/gammasuit.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/hard_suit/overlay/gammasuit.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/overlay/spacesuits_celadon.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/spacesuits_celadon.dmi'
 	icon_state = "white_squadron_rig"
 	item_state = "white_squadron_rig"
 	hardsuit_type = "gamma"
