@@ -160,6 +160,18 @@
 	check_prefix = FALSE
 	order = FACTION_SORT_ASPAWN
 
+// [CELADON-ADD] - USSP-AGENT
+/datum/faction/ussp
+	name = FACTION_USSP
+	short_name = "SOV"
+	parent_faction = /datum/faction/ussp
+	prefixes = PREFIX_USSP
+	color = "#52360c"
+	check_prefix = FALSE
+	order = FACTION_SORT_ASPAWN
+
+// [/CELADON-ADD]
+
 /datum/faction/unknown
 	name = FACTION_UNKNOWN
 	short_name = "???"

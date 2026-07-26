@@ -14,6 +14,7 @@
 #define FACTION_ELYSIUM "Elysium"
 #define FACTION_EVENT "Event"
 #define FACTION_PIRATES "Pirates"
+#define FACTION_USSP "Ussp"
 #define FACTION_UNKNOWN "Unknown"
 
 #define FACTION_RAMZI "Ramzi Clique"
@@ -58,6 +59,7 @@
 #define PREFIX_CLIP list("CMSV", "CMGSV",)
 #define PREFIX_PGF list("PGF", "PGFMC", "PGFN",)
 #define PREFIX_RAMZI list("RCSV",)
+#define PREFIX_USSP list("SUSV",)
 #define PREFIX_NONE list()
 
 GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
@@ -68,5 +70,6 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	FACTION_INDEPENDENT = PREFIX_INDEPENDENT,
 	FACTION_ELYSIUM = PREFIX_ELYSIUM,
 	FACTION_PIRATES = PREFIX_PIRATES,
-	FACTION_EVENT = PREFIX_EVENT
+	FACTION_EVENT = PREFIX_EVENT,
+	FACTION_USSP = PREFIX_USSP
 	))
