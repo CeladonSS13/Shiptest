@@ -11,7 +11,7 @@
 	strip_delay = 50
 
 /obj/item/clothing/under/ussp/maika
-	name "\improper Ussp maika"
+	name = "\improper Ussp maika"
 	desc = "Shirt that ussp soldiers and officers wear when they run out of uniforms."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/mobs/clothing/ussp/uniform.dmi'
 	icon_state = "ussp_officer_d"
