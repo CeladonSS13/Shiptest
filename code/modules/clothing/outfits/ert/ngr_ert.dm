@@ -293,7 +293,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	backpack_contents = list(/obj/item/attachment/rail_light, /obj/item/clothing/head/helmet/riot, /obj/item/shield/tele)
+	backpack_contents = list(/obj/item/attachment/rail_light, /obj/item/clothing/head/helmet/riot)
 
 /datum/outfit/job/syndicate/ert/ngr/military_police/leader
 	name = "ERT - NGR MP Commander"
@@ -324,7 +324,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/syndie
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
-	backpack_contents = list(/obj/item/attachment/rail_light, /obj/item/clothing/head/helmet/riot, /obj/item/shield/tele, /obj/item/megaphone/sec)
+	backpack_contents = list(/obj/item/attachment/rail_light, /obj/item/clothing/head/helmet/riot, /obj/item/megaphone/sec)
 
 //EOD
 /datum/outfit/job/syndicate/ert/ngr/eod
@@ -413,7 +413,7 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
-	backpack_contents = list(/obj/item/stack/marker_beacon/thirty, /obj/item/plasmacutter, /obj/item/clothing/glasses/welding)
+	backpack_contents = list(/obj/item/stack/marker_beacon/thirty, /obj/item/clothing/glasses/welding)
 
 /datum/outfit/job/syndicate/ert/ngr/wrecker/hardsuit
 	name = "ERT - NGR Wrecker (Hardsuit)"

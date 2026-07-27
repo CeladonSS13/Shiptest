@@ -177,7 +177,7 @@
 		/datum/reagent/consumable/ethanol/irish_cream,
 		/datum/reagent/consumable/ethanol/manly_dorf,
 		/datum/reagent/consumable/ethanol/golden_pearl_iced_tea,
-		/datum/reagent/consumable/ethanol/moonshine,
+		/datum/reagent/consumable/ethanol/chemshine,
 		/datum/reagent/consumable/ethanol/amg,
 		/datum/reagent/consumable/ethanol/gezenan_coffee,
 		/datum/reagent/consumable/ethanol/margarita,

@@ -179,7 +179,7 @@
 	head = /obj/item/clothing/head/helmet/space/hardsuit/engine/elite
 	suit = /obj/item/clothing/suit/space/hardsuit/engine/elite
 	suit_store = /obj/item/gun/energy/sharplite/revolver
-	l_hand = /obj/item/plasmacutter
+	// l_hand = /obj/item/plasmacutter - [CELADON-ERROR] - На данный момент это отсутствует.
 	l_pocket = /obj/item/flashlight/seclite
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(/obj/item/tank/internals/emergency_oxygen/double, /obj/item/clothing/mask/gas)
@@ -217,7 +217,7 @@
 	head = /obj/item/clothing/head/helmet/space/hardsuit/mining/heavy/ns
 	suit = /obj/item/clothing/suit/space/hardsuit/mining/heavy/ns
 	l_hand = /obj/item/extinguisher/advanced
-	r_hand = /obj/item/plasmacutter
+	// r_hand = /obj/item/plasmacutter - [CELADON-ERROR] - На данный момент это отсутствует.
 	l_pocket = /obj/item/sensor_device
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/double
 	backpack_contents = list(/obj/item/storage/firstaid/medical, /obj/item/storage/firstaid/radiation, /obj/item/tank/internals/emergency_oxygen/double, /obj/item/clothing/mask/gas)

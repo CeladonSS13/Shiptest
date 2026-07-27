@@ -12,8 +12,7 @@
 	item_state = "messarobes"
 	allowed = list(/obj/item/tank/internals/emergency_oxygen,
 					/obj/item/storage/book/bible,
-					/obj/item/nullrod,
-					/obj/item/reagent_containers/food/drinks/bottle/holywater)
+					/obj/item/nullrod)
 
 /obj/item/clothing/suit/toggle/tajaran/wool
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/tajara_items_SORTIROVATI.dmi'
