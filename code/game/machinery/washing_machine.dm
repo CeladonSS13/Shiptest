@@ -52,7 +52,6 @@ GLOBAL_LIST_INIT(dye_registry, list(
 		DYE_BLACK = /obj/item/clothing/gloves/color/black,
 		DYE_WHITE = /obj/item/clothing/gloves/color/white,
 		DYE_MIME = /obj/item/clothing/gloves/color/white,		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
-		DYE_CLOWN = /obj/item/clothing/gloves/color/rainbow,	// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS
 		DYE_QM = /obj/item/clothing/gloves/color/brown,
 		DYE_CAPTAIN = /obj/item/clothing/gloves/color/captain,
 		DYE_FO = /obj/item/clothing/gloves/color/grey,

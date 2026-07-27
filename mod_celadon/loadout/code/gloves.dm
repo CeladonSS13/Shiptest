@@ -26,7 +26,7 @@
 /datum/gear/glove/gloves/evening
 	display_name = "gloves, evening"
 	description = "Excessively fancy elbow-length gloves."
-	path = /obj/item/clothing/gloves/color/evening
+	path = /obj/item/clothing/gloves/long/white
 
 /datum/gear/glove/gloves/gloves_maid
 	display_name = "maid armcovers"

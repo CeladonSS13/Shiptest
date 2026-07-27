@@ -169,7 +169,7 @@
 
 	uniform = /obj/item/clothing/under/suit/waiter
 	alt_uniform = /obj/item/clothing/under/suit/waiter/syndicate
-	gloves = /obj/item/clothing/gloves/color/evening
+	gloves = /obj/item/clothing/gloves/long/white
 	ears = /obj/item/radio/headset/headset_srv
 	shoes = /obj/item/clothing/shoes/laceup
 	l_pocket = /obj/item/lighter

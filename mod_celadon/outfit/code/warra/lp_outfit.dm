@@ -120,7 +120,7 @@
 	head = /obj/item/clothing/head/warra/cap/janitor
 	ears = /obj/item/radio/headset/warra
 	belt = /obj/item/storage/belt/janitor
-	gloves = /obj/item/clothing/gloves/color/purple
+	gloves = /obj/item/clothing/gloves/color/lightpurple
 	back = /obj/item/storage/backpack/ert/janitor
 
 	implants = list(/obj/item/implant/mindshield)
