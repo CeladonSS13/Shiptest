@@ -274,7 +274,7 @@
 /datum/export/weapon/laser
 	unit_name = "SL L-204 Laser Gun"
 	desc = "NT-SL mass-produced lethal, high-energy laser gun."
-	export_types = list(/obj/item/gun/energy/sharplite/l201/l204)
+	export_types = list(/obj/item/gun/energy/sharplite/surge/resistor)
 	cost = 100
 
 /datum/export/weapon/scatterlaser
