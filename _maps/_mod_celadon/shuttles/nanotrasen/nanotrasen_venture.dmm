@@ -183,6 +183,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/glass/plasma,
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo/starboard)
 "ga" = (
@@ -502,10 +505,6 @@
 /obj/item/melee/classic_baton/telescopic,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
-"nQ" = (
-/obj/item/clothing/shoes/winterboots/ice_boots,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/cargo/port)
 "pt" = (
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -523,10 +522,6 @@
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "venture_eng"
-	},
-/obj/machinery/door/airlock/engineering{
-	dir = 4;
-	name = "Engineering"
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering)
@@ -1066,6 +1061,9 @@
 	pixel_y = 0
 	},
 /obj/item/storage/box/shipping,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	layer = 2.041
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "zl" = (
@@ -1456,27 +1454,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo/starboard)
-"Gn" = (
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/machinery/power/smes/shuttle/precharged{
-	dir = 4
-	},
-/obj/machinery/door/window/brigdoor/eastright,
-/obj/structure/window/plasma/reinforced{
-	dir = 8
-	},
-/obj/machinery/door/firedoor/border_only{
-	dir = 4
-	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "venture_eng"
-	},
-/obj/item/melee/baton/loaded,
-/turf/open/floor/engine/hull/reinforced/interior,
-/area/ship/engineering)
 "Gz" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 6
@@ -1772,10 +1749,6 @@
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
 /area/ship/engineering)
-"OD" = (
-/obj/item/stack/sheet/metal/twenty,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/cargo/port)
 "PL" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo/starboard)
@@ -1985,9 +1958,6 @@
 /obj/machinery/firealarm/directional/south{
 	pixel_x = 0;
 	pixel_y = -32
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
@@ -2337,7 +2307,7 @@ vm
 wj
 uc
 pt
-Gn
+Ou
 uc
 pv
 vm
@@ -2517,7 +2487,7 @@ Nn
 Ej
 Zh
 DN
-OD
+Nn
 mU
 vR
 PL
@@ -2528,7 +2498,7 @@ DD
 "}
 (16,1,1) = {"
 Hp
-nQ
+Nn
 AT
 qr
 Nn
