@@ -15,7 +15,6 @@
 	dodging = TRUE
 	rapid_melee = 2
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev
-
 	armor_base = /obj/item/clothing/suit/armor/vest
 
 /mob/living/simple_animal/hostile/human/commie_rev/ranged
@@ -63,7 +62,6 @@
 	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
 	l_hand =/obj/item/gun/ballistic/shotgun/automatic/m11
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/ranged/commie_rev_medium_armor
-
 	armor_base = /obj/item/clothing/suit/armor/vest/marine/medium
 
 /mob/living/simple_animal/hostile/human/commie_rev/cargo_tech_knife
@@ -79,7 +77,6 @@
 	melee_damage_lower = 20
 	melee_damage_upper = 20
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev/cargo_tech_knife
-
 	armor_base = /obj/item/clothing/suit/hazardvest
 	l_hand = /obj/item/melee/knife/survival
 
@@ -96,7 +93,6 @@
 	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
 	l_hand =/obj/item/gun/ballistic/shotgun/automatic/bulldog
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/ranged/commie_rev_medium_armor
-
 	armor_base = /obj/item/clothing/suit/armor/vest/marine/medium
 
 /mob/living/simple_animal/hostile/human/commie_rev/ranged/medium_armor_skm24
@@ -112,7 +108,6 @@
 	projectilesound = 'sound/weapons/gun/rifle/skm.ogg'
 	l_hand =/obj/item/gun/ballistic/automatic/assault/skm
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/ranged/commie_rev_medium_armor
-
 	armor_base = /obj/item/clothing/suit/armor/vest/marine/medium
 
 /mob/living/simple_animal/hostile/human/commie_rev/ranged/commander
@@ -128,5 +123,4 @@
 	projectilesound = 'sound/weapons/gun/revolver/viper.ogg'
 	l_hand =/obj/item/gun/ballistic/revolver/viper
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev/ranged/commie_rev_commander
-
 	armor_base = /obj/item/clothing/suit/armor/vest/inteq
