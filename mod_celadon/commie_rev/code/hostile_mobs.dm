@@ -105,7 +105,7 @@
 	icon_state = "commie_rev_armor_medium_skm_24"
 	icon_living = "commie_rev_armor_medium_skm_24"
 	rapid = 5
-	rapid_fire_delay = 6
+	rapid_fire_delay = 3
 	retreat_distance = 4
 	minimum_distance = 3
 	casingtype = /obj/item/ammo_casing/a762_40
