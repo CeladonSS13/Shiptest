@@ -100,7 +100,7 @@
 /datum/outfit/job/cel/nanotrasen/miner/lp
 	job_icon = "shaftminer"
 	name = "NT - LP Miner"
-	id_assignment = "Shaft Miner
+	id_assignment = "Shaft Miner"
 
 	id = /obj/item/card/id/cel/lpminer
 	ears = /obj/item/radio/headset/headset_cargo/mining
