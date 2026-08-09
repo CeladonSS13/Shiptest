@@ -49,7 +49,7 @@ hp
 /datum/supply_pack/faction/inteq/gun/g36
 	name = "Assault-Rifle - G36 (5.56x45mm)"
 	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Chambered in 5.56x45mm"
-	contains = list(/obj/item/storage/guncase/g36/inteq)
+	contains = list(/obj/item/storage/guncase/g36)
 	cost = 8000
 /* MARK: 5.56x45mm
 bullet
