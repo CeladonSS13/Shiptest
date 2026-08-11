@@ -80,9 +80,11 @@
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded = force, force_wielded = 30)
 
-/obj/item/gun/ballistic/shotgun/blasting_hammer/on_wield(obj/item/source, mob/user, instant)
-	. = ..()
-	tool_behaviour = TOOL_MINING
+// [CELADON-REMOVE] - убрал возможность ломать камни
+//obj/item/gun/ballistic/shotgun/blasting_hammer/on_wield(obj/item/source, mob/user, instant)
+//	. = ..()
+//	tool_behaviour = TOOL_MINING
+// [CELADON-REMOVE]
 
 /obj/item/gun/ballistic/shotgun/blasting_hammer/on_unwield(obj/item/source, mob/user)
 	. = ..()
@@ -92,7 +94,7 @@
 	if(!..())
 		return FALSE
 	if(HAS_TRAIT(src, TRAIT_WIELDED) && chambered.BB)
-		expend_round(target, user)
+		expend_round(target) // [CELADON-REMOVE] - old expend_round(target, user)
 		return TRUE
 	else
 		return FALSE
