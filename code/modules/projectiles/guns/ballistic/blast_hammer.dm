@@ -94,7 +94,7 @@
 	if(!..())
 		return FALSE
 	if(HAS_TRAIT(src, TRAIT_WIELDED) && chambered.BB)
-		expend_round(target) // [CELADON-REMOVE] - old expend_round(target, user)
+		expend_round(target) // [CELADON-REMOVE] - OLD CODE: expend_round(target, user)
 		return TRUE
 	else
 		return FALSE
