@@ -651,7 +651,7 @@
 	shoes = /obj/item/clothing/shoes/sneakers/blue
 	suit =  /obj/item/clothing/suit/toggle/labcoat/paramedic
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical/paramedic
-	gloves = /obj/item/clothing/gloves/color/latex
+	gloves = /obj/item/clothing/gloves/nitrile
 
 	backpack_contents = list(/obj/item/roller=1)
 
@@ -807,7 +807,7 @@
 	suit = /obj/item/clothing/suit/toggle/labcoat
 	l_pocket = /obj/item/reagent_containers/food/drinks/shaker
 	belt = /obj/item/storage/belt
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	uniform = /obj/item/clothing/under/suit/black
 	accessory = null
 

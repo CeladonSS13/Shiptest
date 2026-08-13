@@ -126,7 +126,7 @@
 /area/ship/science)
 "at" = (
 /obj/structure/grille,
-/obj/item/clothing/gloves/color/yellow/sprayon,
+/obj/item/clothing/gloves/insulated/sprayon,
 /turf/open/floor/plating,
 /area/ship/medical)
 "au" = (
@@ -364,7 +364,7 @@
 	name = "engineer's locker";
 	req_access = list(11)
 	},
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/head/soft/yellow,
 /obj/item/storage/belt/utility/full,
 /obj/item/storage/backpack/satchel/eng,
@@ -946,7 +946,7 @@
 	},
 /obj/structure/table,
 /obj/item/clothing/mask/breath/medical,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/healthanalyzer/advanced,
 /obj/item/tank/internals/anesthetic,
 /turf/open/floor/plasteel/white,
@@ -1037,7 +1037,7 @@
 	},
 /obj/structure/table,
 /obj/item/storage/firstaid/o2,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/item/reagent_containers/glass/beaker/cryoxadone,
 /obj/structure/window/reinforced,
@@ -2000,7 +2000,7 @@
 	icon_state = "med_secure";
 	name = "doctor locker"
 	},
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/mask/surgical,
 /obj/item/storage/firstaid/medical,
 /obj/item/storage/belt/medical/webbing,
@@ -2494,7 +2494,7 @@
 /obj/item/storage/firstaid/medical,
 /obj/effect/turf_decal/box/red,
 /obj/item/clothing/mask/surgical,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/cryo)
@@ -3537,8 +3537,8 @@
 	pixel_x = 5;
 	pixel_y = -8
 	},
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/gloves/insulated,
 /obj/machinery/light/directional/south,
 /obj/item/multitool,
 /turf/open/floor/plasteel/tech,
@@ -3744,7 +3744,7 @@
 /obj/item/storage/firstaid/medical,
 /obj/effect/turf_decal/box/red,
 /obj/item/clothing/mask/surgical,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/corner/transparent/blue/border{
 	dir = 1
@@ -3774,7 +3774,7 @@
 /obj/item/storage/firstaid/medical,
 /obj/effect/turf_decal/box/red,
 /obj/item/clothing/mask/surgical,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/crew/cryo)
 "oY" = (

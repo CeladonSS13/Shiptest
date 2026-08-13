@@ -2997,7 +2997,7 @@
 /obj/effect/turf_decal/corner_techfloor_gray{
 	dir = 6
 	},
-/obj/item/clothing/suit/space/hardsuit/ancient/lp{
+/obj/item/clothing/suit/space/hardsuit/ancient{
 	pixel_x = -9;
 	pixel_y = 0
 	},
@@ -3373,7 +3373,7 @@
 	dir = 8
 	},
 /obj/item/tank/jetpack/oxygen/security,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
+/obj/item/clothing/suit/space/hardsuit/ert/sec,
 /obj/item/clothing/mask/gas/vigilitas,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -4353,10 +4353,6 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber{
 	dir = 1
 	},
-/obj/machinery/air_sensor/ship/bolide/fuel_2{
-	pixel_x = 16;
-	pixel_y = -10
-	},
 /obj/structure/sign/warning/fire{
 	pixel_y = -22;
 	pixel_x = 16
@@ -4854,7 +4850,7 @@
 	pixel_y = 25
 	},
 /obj/item/tank/jetpack/oxygen/security,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
+/obj/item/clothing/suit/space/hardsuit/ert/sec,
 /obj/item/clothing/mask/gas/vigilitas,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
@@ -5524,7 +5520,7 @@
 	},
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/oxygen,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/med,
+/obj/item/clothing/suit/space/hardsuit/ert/med,
 /obj/item/clothing/mask/breath/medical,
 /turf/open/floor/mineral/titanium/tiled,
 /area/ship/medical)
@@ -6032,7 +6028,7 @@
 /obj/structure/table/reinforced,
 /obj/item/geiger_counter,
 /obj/item/radio/headset/warra/alt,
-/obj/item/clothing/gloves/color/yellow{
+/obj/item/clothing/gloves/insulated{
 	pixel_x = -3;
 	pixel_y = -1
 	},
@@ -6886,7 +6882,7 @@
 /obj/structure/table/reinforced,
 /obj/item/geiger_counter,
 /obj/item/radio/headset/warra/alt,
-/obj/item/clothing/gloves/color/yellow{
+/obj/item/clothing/gloves/insulated{
 	pixel_x = -3;
 	pixel_y = -1
 	},
@@ -7300,7 +7296,7 @@
 	pixel_x = 8;
 	pixel_y = 6
 	},
-/obj/item/clothing/gloves/color/latex/nitrile{
+/obj/item/clothing/gloves/nitrile{
 	pixel_x = 3;
 	pixel_y = 4
 	},
@@ -7425,7 +7421,6 @@
 	},
 /area/ship/crew/cryo)
 "Zg" = (
-/obj/machinery/air_sensor/ship/bolide/fuel,
 /obj/structure/sign/warning/fire{
 	pixel_y = 22
 	},
@@ -7439,7 +7434,7 @@
 /obj/structure/railing,
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/tank/internals/oxygen/yellow,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi,
+/obj/item/clothing/suit/space/hardsuit/ert/engi,
 /obj/item/clothing/mask/gas/atmos,
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/starboard)

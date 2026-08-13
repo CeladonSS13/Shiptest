@@ -374,8 +374,8 @@
 /obj/item/binoculars,
 /obj/item/restraints/legcuffs/bola/energy,
 /obj/item/restraints/legcuffs/bola/energy,
-/obj/item/clothing/under/rank/security/head_of_security/alt/lp,
-/obj/item/clothing/under/rank/security/head_of_security/alt/skirt/lp,
+/obj/item/clothing/under/rank/security/head_of_security/alt,
+/obj/item/clothing/under/rank/security/head_of_security/alt/skirt,
 /obj/item/flashlight/seclite,
 /obj/item/clothing/glasses/hud/security/sunglasses,
 /obj/item/melee/baton/loaded,
@@ -654,7 +654,7 @@
 	name = "medical technician's locker";
 	anchored = 1
 	},
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/storage/backpack/ert/medical,
 /obj/item/radio/headset/warra/alt,
 /obj/item/binoculars,
@@ -667,8 +667,8 @@
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/flashlight/seclite,
-/obj/item/clothing/under/rank/medical/paramedic/skirt/lp,
-/obj/item/clothing/under/rank/medical/paramedic/lp,
+/obj/item/clothing/under/rank/medical/paramedic/skirt,
+/obj/item/clothing/under/rank/medical/paramedic,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "ih" = (
@@ -907,7 +907,7 @@
 	dir = 10
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/med{
+/obj/item/clothing/suit/space/hardsuit/ert/med{
 	name = "Medical Technician Hardsuit"
 	},
 /obj/item/tank/internals/oxygen,
@@ -1455,9 +1455,9 @@
 	},
 /obj/item/holosign_creator/atmos,
 /obj/item/clothing/glasses/meson/engine,
-/obj/item/clothing/under/rank/engineering/engineer/warra/skirt/lp,
-/obj/item/clothing/under/rank/engineering/engineer/warra/lp,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/under/rank/engineering/engineer/warra/skirt,
+/obj/item/clothing/under/rank/engineering/engineer/warra,
+/obj/item/clothing/gloves/insulated,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/general/engineering)
 "vm" = (
@@ -2627,7 +2627,7 @@
 	pixel_y = -27
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi{
+/obj/item/clothing/suit/space/hardsuit/ert/engi{
 	name = "Engineering Technician Hardsuit"
 	},
 /obj/item/tank/internals/oxygen/yellow,
@@ -2643,7 +2643,7 @@
 	},
 /obj/machinery/light/directional/north,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec{
+/obj/item/clothing/suit/space/hardsuit/ert/sec{
 	name = "Security Operative Hardsuit"
 	},
 /obj/item/tank/internals/oxygen/red,

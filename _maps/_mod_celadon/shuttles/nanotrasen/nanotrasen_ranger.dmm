@@ -79,8 +79,8 @@
 /obj/item/storage/backpack/messenger/engi,
 /obj/item/storage/backpack/industrial,
 /obj/item/storage/backpack/duffelbag/engineering,
-/obj/item/clothing/under/rank/engineering/engineer/warra/lp,
-/obj/item/clothing/under/rank/engineering/engineer/warra/skirt/lp,
+/obj/item/clothing/under/rank/engineering/engineer/warra,
+/obj/item/clothing/under/rank/engineering/engineer/warra/skirt,
 /obj/item/storage/backpack/ert/engineer,
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 1
@@ -115,7 +115,7 @@
 /obj/machinery/light/dim/directional/north,
 /obj/item/radio/intercom/directional/east,
 /obj/structure/closet/crate/large,
-/obj/item/clothing/suit/space/hardsuit/ancient/lp,
+/obj/item/clothing/suit/space/hardsuit/ancient,
 /obj/item/circuitboard/machine/techfab/department/security{
 	pixel_y = -4
 	},
@@ -1077,19 +1077,11 @@
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals4,
 /obj/effect/turf_decal/steeldecal/steel_decals9,
-/obj/effect/spawner/random/lpaid{
-	pixel_x = -5;
-	pixel_y = 10
-	},
-/obj/effect/spawner/random/lpretrieval{
-	pixel_x = 3;
-	pixel_y = 1
-	},
 /obj/structure/table/reinforced/titaniumglass,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "iH" = (
-/obj/structure/closet/secure_closet/lp/security,
+/obj/structure/closet/secure_closet/security,
 /obj/item/melee/classic_baton/telescopic,
 /obj/item/flashlight/seclite,
 /obj/item/holosign_creator/security,
@@ -1412,7 +1404,7 @@
 /obj/machinery/light/dim/directional/north,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/tank/jetpack/oxygen,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/med,
+/obj/item/clothing/suit/space/hardsuit/ert/med,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "lB" = (
@@ -1532,7 +1524,7 @@
 /obj/item/clothing/under/warra/janitor,
 /obj/item/clothing/suit/bio_suit/janitor,
 /obj/item/clothing/head/bio_hood/janitor,
-/obj/item/clothing/gloves/color/purple,
+/obj/item/clothing/gloves/color/lightpurple,
 /obj/item/clothing/gloves/fingerless,
 /obj/item/clothing/head/maidheadband,
 /obj/item/clothing/accessory/maidapron,
@@ -1774,9 +1766,9 @@
 /turf/open/floor/mineral/titanium/purple,
 /area/ship/crew/janitor)
 "ps" = (
-/obj/structure/closet/secure_closet/lp/engineer,
+/obj/structure/closet/secure_closet,
 /obj/machinery/light/dim/directional/north,
-/obj/item/clothing/gloves/color/yellow{
+/obj/item/clothing/gloves/insulated{
 	pixel_y = -9
 	},
 /obj/item/crowbar/power{
@@ -2413,7 +2405,7 @@
 /turf/open/floor/mineral/titanium/purple,
 /area/ship/crew/janitor)
 "vm" = (
-/obj/structure/closet/secure_closet/lp/medical,
+/obj/structure/closet/secure_closet/medical3,
 /obj/item/storage/box/gloves,
 /obj/item/storage/box/masks,
 /obj/item/storage/belt/medical,
@@ -2434,7 +2426,7 @@
 	},
 /obj/item/sensor_device,
 /obj/item/storage/box/hypospray,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /turf/open/floor/wood,
 /area/ship/medical)
 "vp" = (
@@ -3538,8 +3530,8 @@
 /area/ship/maintenance/starboard)
 "Gc" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/rank/security/head_of_security/alt/skirt/lp,
-/obj/item/clothing/under/rank/security/head_of_security/alt/lp,
+/obj/item/clothing/under/rank/security/head_of_security/alt/skirt,
+/obj/item/clothing/under/rank/security/head_of_security/alt,
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/jacket/miljacket,
 /obj/item/storage/backpack/messenger/com,
@@ -3647,7 +3639,7 @@
 /turf/open/floor/wood,
 /area/ship/engineering)
 "Ha" = (
-/obj/structure/closet/secure_closet/lp/lieutenant{
+/obj/structure/closet/secure_closet{
 	name = "lieutenant's closet"
 	},
 /obj/item/gps,
@@ -3787,7 +3779,7 @@
 	dir = 1
 	},
 /obj/item/clothing/mask/gas/vigilitas,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
+/obj/item/clothing/suit/space/hardsuit/ert/sec,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "IC" = (
@@ -4844,7 +4836,7 @@
 	},
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/tank/internals/emergency_oxygen/engi,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi,
+/obj/item/clothing/suit/space/hardsuit/ert/engi,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "TR" = (
@@ -4996,8 +4988,8 @@
 /area/ship/hallway/starboard)
 "Vk" = (
 /obj/structure/closet/cabinet,
-/obj/item/clothing/under/rank/medical/paramedic/skirt/lp,
-/obj/item/clothing/under/rank/medical/paramedic/lp,
+/obj/item/clothing/under/rank/medical/paramedic/skirt,
+/obj/item/clothing/under/rank/medical/paramedic,
 /obj/item/clothing/suit/hooded/wintercoat/medical,
 /obj/item/clothing/head/beret/med,
 /obj/item/storage/backpack/satchel/med,
@@ -5082,10 +5074,10 @@
 /obj/item/clothing/shoes/jackboots,
 /obj/item/clothing/suit/hooded/wintercoat/security,
 /obj/item/clothing/head/beret/sec,
-/obj/item/clothing/under/rank/security/head_of_security/warra/lp,
-/obj/item/clothing/under/rank/security/head_of_security/warra/skirt/lp,
+/obj/item/clothing/under/rank/security/head_of_security/warra,
+/obj/item/clothing/under/rank/security/head_of_security/warra/skirt,
 /obj/item/clothing/suit/armor/vest/security/officer,
-/obj/item/clothing/under/rank/security/head_of_security/alt/lp,
+/obj/item/clothing/under/rank/security/head_of_security/alt,
 /obj/item/clothing/gloves/combat,
 /obj/item/clothing/under/rank/security/officer/blueshirt,
 /obj/item/storage/backpack/ert/security,
@@ -5161,7 +5153,7 @@
 	network = "nt_commnet";
 	freq_listening = list(1353,1447,1459)
 	},
-/obj/item/disk/holodisk/lp/stations,
+/obj/item/disk/holodisk/ship/magpie/engineeringnotice,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},

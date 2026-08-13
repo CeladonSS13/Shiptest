@@ -344,7 +344,7 @@
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	l_hand = /obj/item/storage/firstaid
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
 

@@ -2822,7 +2822,7 @@
 "bDB" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/light/directional/north,
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 8;
 	output_dir = 1;
 	pixel_x = 32
@@ -3630,7 +3630,7 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/item/storage/bottles/moonshine,
+/obj/item/storage/bottles/chemshine,
 /mob/living/simple_animal/hostile/asteroid/roach/toxic,
 /turf/open/floor/mineral/plastitanium/red,
 /area/outpost/exterior)
@@ -6001,7 +6001,7 @@
 	dir = 4
 	},
 /obj/item/mop,
-/obj/item/clothing/gloves/color/purple,
+/obj/item/clothing/gloves/color/lightpurple,
 /obj/item/clothing/neck/tie/purple,
 /obj/item/clothing/head/beanie/purple,
 /obj/item/reagent_containers/glass/rag,
@@ -7210,7 +7210,7 @@
 	},
 /obj/item/clothing/accessory/pocketprotector,
 /obj/item/clothing/glasses/hud/health/sunglasses,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/storage/belt/medical/webbing/paramedic,
 /obj/item/clothing/neck/stethoscope,
 /obj/item/storage/belt/medical/webbing/paramedic,
@@ -9964,7 +9964,7 @@
 /obj/effect/turf_decal/steeldecal/steel_decals3,
 /obj/item/storage/box/maid,
 /obj/item/storage/box/mousetraps,
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/obj/item/clothing/gloves/nitrile/evil,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/reagent_containers/glass/bucket,
 /obj/item/clothing/shoes/galoshes,
@@ -12818,7 +12818,6 @@
 /area/outpost/crew/library)
 "gSf" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/portable_atmospherics/canister/proto,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
 "gSD" = (
@@ -15679,7 +15678,7 @@
 	},
 /obj/item/clothing/accessory/pocketprotector,
 /obj/item/clothing/glasses/hud/health/sunglasses,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/storage/belt/medical/webbing/paramedic,
 /obj/item/clothing/neck/stethoscope,
 /obj/item/storage/belt/medical/webbing/paramedic,
@@ -19298,7 +19297,7 @@
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ksI" = (
-/obj/item/storage/bottles/moonshine/sealed,
+/obj/item/storage/bottles/chemshine/sealed,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ksL" = (
@@ -23128,7 +23127,7 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
 "mAg" = (
-/obj/item/storage/bottles/moonshine,
+/obj/item/storage/bottles/chemshine,
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -26417,7 +26416,7 @@
 /turf/open/floor/plasteel/patterned,
 /area/outpost/vacant_rooms/shop)
 "olB" = (
-/obj/item/storage/bottles/moonshine/sealed,
+/obj/item/storage/bottles/chemshine/sealed,
 /obj/machinery/hydroponics/soil,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
@@ -28007,7 +28006,7 @@
 "pgw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 8;
 	output_dir = 1;
 	pixel_x = 32
@@ -31794,7 +31793,7 @@
 /turf/open/floor/carpet/black,
 /area/outpost/crew/lounge)
 "rmF" = (
-/obj/item/storage/bottles/moonshine,
+/obj/item/storage/bottles/chemshine,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "rmG" = (
@@ -37372,7 +37371,7 @@
 /turf/open/floor/plasteel/white,
 /area/outpost/medical/reseption)
 "ump" = (
-/obj/item/trash/cheesie,
+/obj/item/trash/chips,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "ums" = (
@@ -39037,8 +39036,8 @@
 /turf/closed/mineral/gibtonite/ice,
 /area/outpost/external)
 "vmT" = (
-/area/outpost/fraction/warra,
 /turf/open/floor/wood,
+/area/outpost/fraction/warra,
 /area/outpost/fraction/solfed)
 "vmY" = (
 /obj/structure/cable{
@@ -39364,8 +39363,8 @@
 /area/outpost/crew/cryo)
 "vBy" = (
 /obj/effect/turf_decal/corner/opaque/warrablue/three_quarters,
-/area/outpost/fraction/warra,
 /turf/open/floor/plasteel/dark,
+/area/outpost/fraction/warra,
 /area/outpost/fraction/warra)
 "vBH" = (
 /obj/structure/table/chem,
@@ -41180,7 +41179,7 @@
 /area/outpost/fraction/syndi)
 "wsz" = (
 /obj/effect/decal/cleanable/glass,
-/obj/item/trash/cheesie,
+/obj/item/trash/chips,
 /turf/open/floor/plating/asteroid/icerock/temperate,
 /area/outpost/exterior)
 "wsE" = (

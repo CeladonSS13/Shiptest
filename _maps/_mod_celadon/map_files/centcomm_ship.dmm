@@ -3107,7 +3107,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/closet/crate/engineering/electrical,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/electrical,
 /obj/item/multitool,
@@ -4335,7 +4335,7 @@
 /area/centcom/control)
 "mt" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/revolver/grenadelauncher{
+/obj/item/gun/grenadelauncher{
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -5883,7 +5883,7 @@
 /obj/item/hemostat{
 	pixel_x = -4
 	},
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/opaque/blue{
@@ -6352,7 +6352,7 @@
 "sz" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/healthanalyzer,
@@ -17652,11 +17652,6 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/open/floor/grass,
 /area/centcom/control)
-"YF" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/revolver/grenadelauncher,
-/turf/open/floor/plasteel/dark_2,
-/area/centcom/ferry)
 "YG" = (
 /turf/closed/indestructible/riveted/command,
 /area/centcom/evac)
@@ -49256,7 +49251,7 @@ yy
 ZG
 Ln
 cx
-YF
+Ql
 Ln
 kZ
 dh

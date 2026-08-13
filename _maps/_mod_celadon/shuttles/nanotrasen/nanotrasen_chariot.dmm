@@ -277,7 +277,7 @@
 /area/ship/hallway/central)
 "bO" = (
 /obj/effect/turf_decal/industrial/loading,
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 1;
 	pixel_x = -32;
 	pixel_y = -4
@@ -1583,9 +1583,9 @@
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/suit/armor/vest/security/officer,
 /obj/item/clothing/suit/armor/vest/security/officer,
-/obj/item/clothing/under/rank/security/head_of_security/warra/lp,
-/obj/item/clothing/under/rank/security/head_of_security/warra/lp,
-/obj/item/clothing/under/rank/security/head_of_security/warra/lp,
+/obj/item/clothing/under/rank/security/head_of_security/warra,
+/obj/item/clothing/under/rank/security/head_of_security/warra,
+/obj/item/clothing/under/rank/security/head_of_security/warra,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "og" = (
@@ -1934,7 +1934,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
 	},
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi,
+/obj/item/clothing/suit/space/hardsuit/ert/engi,
 /obj/item/tank/jetpack/oxygen,
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -2224,7 +2224,7 @@
 /obj/item/clothing/under/rank/security/head_of_security/parade/female,
 /obj/item/tank/jetpack/suit,
 /obj/item/clothing/suit/jacket/miljacket,
-/obj/item/clothing/under/rank/security/head_of_security/alt/lp,
+/obj/item/clothing/under/rank/security/head_of_security/alt,
 /obj/item/clothing/neck/cloak/hos,
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -2984,7 +2984,7 @@
 	dir = 2;
 	color = "#870505"
 	},
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
+/obj/item/clothing/suit/space/hardsuit/ert/sec,
 /obj/item/tank/jetpack/oxygen/security,
 /obj/item/clothing/mask/gas/vigilitas,
 /turf/open/floor/plasteel/dark,
@@ -3001,7 +3001,7 @@
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/med,
+/obj/item/clothing/suit/space/hardsuit/ert/med,
 /obj/item/clothing/mask/breath/medical,
 /obj/item/tank/jetpack/oxygen,
 /obj/machinery/suit_storage_unit/inherit,
@@ -4456,7 +4456,7 @@
 /obj/structure/closet/wall/directional/west{
 	name = "ship scientist's locker"
 	},
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/suit/toggle/labcoat/science,
 /obj/item/clothing/under/rank/rnd/scientist,
 /obj/item/clothing/shoes/sneakers/white,
@@ -4700,8 +4700,8 @@
 /obj/item/gun/ballistic/automatic/pistol/challenger/no_mag,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/item/storage/backpack/ert/medical,
-/obj/item/clothing/under/rank/medical/paramedic/lp,
-/obj/item/clothing/under/rank/medical/paramedic/skirt/lp,
+/obj/item/clothing/under/rank/medical/paramedic,
+/obj/item/clothing/under/rank/medical/paramedic/skirt,
 /obj/item/storage/firstaid/medical,
 /obj/item/storage/firstaid/brute,
 /obj/item/storage/firstaid/fire,
@@ -5098,7 +5098,7 @@
 /obj/item/clothing/shoes/combat,
 /obj/item/clothing/gloves/combat,
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/under/rank/engineering/engineer/warra/lp,
+/obj/item/clothing/under/rank/engineering/engineer/warra,
 /obj/item/clothing/suit/armor/vest/security,
 /obj/item/clothing/glasses/hud/diagnostic/night,
 /obj/item/storage/backpack/ert/engineer,
@@ -5379,7 +5379,7 @@
 /obj/machinery/camera/autoname{
 	dir = 10
 	},
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
+/obj/item/clothing/suit/space/hardsuit/ert/sec,
 /obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/item/tank/jetpack/oxygen/security,
 /obj/item/clothing/mask/gas/vigilitas,

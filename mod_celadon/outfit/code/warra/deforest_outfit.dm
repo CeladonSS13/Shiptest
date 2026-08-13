@@ -11,7 +11,7 @@
 	uniform = /obj/item/clothing/under/warra/medical/director
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	suit = /obj/item/clothing/suit/toggle/labcoat/warra/blue
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	backpack = /obj/item/storage/backpack/medic

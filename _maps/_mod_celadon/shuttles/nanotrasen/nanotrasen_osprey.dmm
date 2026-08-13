@@ -2084,7 +2084,7 @@
 /obj/structure/closet/wall/white/directional/west,
 /obj/structure/table,
 /obj/machinery/reagentgrinder,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/healthanalyzer,
 /obj/item/reagent_scanner,
 /obj/item/geiger_counter,
@@ -2098,7 +2098,7 @@
 	icon_state = "1-8"
 	},
 /obj/item/hand_labeler_refill,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/storage/box/syringes,
 /obj/item/storage/bag/chemistry,
 /obj/item/storage/bag/chemistry,
@@ -2491,7 +2491,7 @@
 	icon_state = "0-2"
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/sign/warning/enginesafety{
+/obj/structure/sign/poster/official/moth/hardhats{
 	pixel_y = 32
 	},
 /turf/open/floor/plating,
@@ -6107,7 +6107,7 @@
 	pixel_x = -5;
 	pixel_y = 8
 	},
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "NP" = (
@@ -7406,7 +7406,7 @@
 /turf/open/floor/plasteel,
 /area/ship/crew/cryo)
 "Wc" = (
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 1;
 	pixel_x = -32;
 	pixel_y = -4

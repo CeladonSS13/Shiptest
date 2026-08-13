@@ -311,7 +311,7 @@
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/cmo
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	ears = /obj/item/radio/headset/warra/captain
 	uniform = /obj/item/clothing/under/warra/medical/director
 	suit = /obj/item/clothing/suit/toggle/labcoat/warra/blue

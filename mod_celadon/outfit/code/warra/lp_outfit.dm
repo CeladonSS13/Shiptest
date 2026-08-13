@@ -67,7 +67,7 @@
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/warra/alt/captain
 	belt = /obj/item/pda/medical
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	uniform = /obj/item/clothing/under/rank/medical/paramedic
 	alt_uniform = /obj/item/clothing/under/rank/medical/paramedic/skirt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
