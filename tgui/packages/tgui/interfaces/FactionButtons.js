@@ -4,7 +4,7 @@ import { resolveAsset } from '../assets';
 import FactionInfo from './FactionInfo';
 
 // Список всех доступных фракций
-// Порядок по часовой стрелке: elysium, nanotrasen, syndicate, pirates, solfed, inteq, independent
+// Порядок по часовой стрелке: elysium, warra, syndicate, pirates, solfed, inteq, independent
 const FACTIONS = [
   {
     id: 'elysium',
@@ -13,9 +13,9 @@ const FACTIONS = [
     color: '#FF6B35',
   },
   {
-    id: 'nanotrasen',
-    name: 'Nanotrasen',
-    short: 'NT',
+    id: 'warra',
+    name: 'Warra',
+    short: 'WARRA',
     color: '#283674',
   },
   {
@@ -67,13 +67,13 @@ const RELATION_TYPES = {
 
 // Полная система отношений между всеми 7 фракциями (21 линия)
 const FACTION_RELATIONS = [
-  // Nanotrasen отношения
-  { from: 'nanotrasen', to: 'solfed', type: 'union' },
-  { from: 'nanotrasen', to: 'elysium', type: 'war' },
-  { from: 'nanotrasen', to: 'inteq', type: 'neutral' },
-  { from: 'nanotrasen', to: 'syndicate', type: 'war' },
-  { from: 'nanotrasen', to: 'pirates', type: 'war' },
-  { from: 'nanotrasen', to: 'independent', type: 'neutral' },
+  // Warra отношения
+  { from: 'warra', to: 'solfed', type: 'union' },
+  { from: 'warra', to: 'elysium', type: 'war' },
+  { from: 'warra', to: 'inteq', type: 'neutral' },
+  { from: 'warra', to: 'syndicate', type: 'war' },
+  { from: 'warra', to: 'pirates', type: 'war' },
+  { from: 'warra', to: 'independent', type: 'neutral' },
 
   // SolFed отношения
   { from: 'solfed', to: 'elysium', type: 'war' },
@@ -109,7 +109,7 @@ export const getFactionColor = (factionName) => {
 
   // Цвета фракций для стилизации
   const FACTION_COLORS = {
-    'nanotrasen': { bg: '#283674', text: 'white' },
+    'warra': { bg: '#283674', text: 'white' },
     'syndicate': { bg: '#9C0808', text: 'white' },
     'inteq': { bg: '#4D291F', text: 'rgb(230, 200, 120)' },
     'inteq risk management group': {
@@ -129,8 +129,8 @@ export const getFactionColor = (factionName) => {
   }
 
   // Проверяем частичные совпадения
-  if (factionLower.includes('nanotrasen') || factionLower.includes('nt')) {
-    return FACTION_COLORS.nanotrasen;
+  if (factionLower.includes('warra') || factionLower.includes('warra')) {
+    return FACTION_COLORS.warra;
   }
   if (factionLower.includes('syndicate') || factionLower.includes('syn')) {
     return FACTION_COLORS.syndicate;

@@ -1267,32 +1267,6 @@
 	pixel_x = 0;
 	pixel_y = -32
 	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 1
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
-	dir = 4
-	},
-/obj/machinery/holopad/emergency/command,
-/obj/structure/extinguisher_cabinet/directional/south{
-	pixel_x = 10;
-	pixel_y = -28
-	},
-/obj/machinery/firealarm/directional/south{
-	pixel_x = 0;
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Cg" = (
@@ -1579,95 +1553,6 @@
 	pixel_y = 0
 	},
 /obj/item/storage/box/shipping,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/item/stamp/nanotrasen/ns,
-/obj/item/storage/backpack/satchel/explorer{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/storage/backpack/explorer{
-	pixel_x = 9;
-	pixel_y = -6
-	},
-/obj/item/clothing/suit/armor/vest{
-	pixel_x = 4;
-	pixel_y = 7
-	},
-/obj/item/clothing/under/nanotrasen/supply/qm{
-	pixel_x = -7;
-	pixel_y = -9
-	},
-/obj/item/cartridge/captain{
-	pixel_x = 10;
-	pixel_y = -8
-	},
-/obj/item/clothing/shoes/laceup{
-	pixel_y = -14;
-	pixel_x = -9
-	},
-/obj/item/clothing/shoes/combat{
-	pixel_x = -4;
-	pixel_y = -9
-	},
-/obj/item/clothing/glasses/sunglasses{
-	pixel_y = 14;
-	pixel_x = 7
-	},
-/obj/item/radio/headset/nanotrasen/alt/captain,
-/obj/item/megaphone/cargo,
-/obj/item/clothing/head/nanotrasen/cap/supply{
-	pixel_x = -8;
-	pixel_y = 8
-	},
-/obj/item/clothing/gloves/tackler/combat/insulated{
-	pixel_x = -8;
-	pixel_y = -7
-	},
-/obj/item/melee/knife/hunting,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	layer = 2.041
-	},
-/obj/effect/turf_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet/wall/directional/north{
-	icon_state = "solgov_wall";
-	name = "captain's locker";
-	req_access = list(41);
-	req_ship_access = 1
-	},
-/obj/item/paper_bin,
-/obj/item/pen/fourcolor,
-/obj/item/gun/energy/e_gun/e_old/mini{
-	pixel_x = -8;
-	pixel_y = 8
-	},
-/obj/item/stock_parts/cell/gun/mini{
-	pixel_x = 7;
-	pixel_y = 5
-	},
-/obj/structure/table/reinforced,
-/obj/machinery/recharger{
-	pixel_x = 6;
-	pixel_y = 3
-	},
-/obj/item/clipboard{
-	pixel_x = 8;
-	pixel_y = -8
-	},
-/obj/item/pda/quartermaster{
-	name = "captain PDA";
-	pixel_x = 8;
-	pixel_y = 0
-	},
-/obj/item/storage/box/shipping,
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
@@ -1758,7 +1643,7 @@
 	pixel_x = -3;
 	pixel_y = 9
 	},
-/obj/item/clothing/gloves/insulated{
+/obj/item/clothing/gloves/color/yellow{
 	pixel_x = 0;
 	pixel_y = -7
 	},
@@ -2164,9 +2049,7 @@
 	dir = 1;
 	name = "food? locker"
 	},
-/obj/item/storage/box/shoalpockets,
 /obj/effect/spawner/random/maintenance/two,
-/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo/starboard)
 "UA" = (
