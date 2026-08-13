@@ -82,6 +82,13 @@
 		to_chat(user, span_notice("You insert [credits.value] credits into [src]'s slot!"))
 		balance += credits.value
 		qdel(credits)
+	else if(istype(object, /obj/item/holochip))
+		var/obj/item/holochip/credits = object
+		if(!user.temporarilyRemoveItemFromInventory(credits))
+			return
+		to_chat(user, span_notice("You insert chip with [credits.credits] credits into [src]'s slot!"))
+		balance += credits.credits
+		qdel(credits)
 	else
 		return ..()
 
