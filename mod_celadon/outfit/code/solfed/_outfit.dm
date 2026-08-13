@@ -22,7 +22,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -45,7 +45,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -68,7 +68,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -91,7 +91,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -116,7 +116,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))

@@ -88,6 +88,10 @@
 	// Now if we were't ACTUALLY gibbed, spawn the dead mouse
 	if(!gibbed)
 		var/obj/item/food/deadmouse/mouse = new(loc)
+		// [CELADON-ADD] - для синди мыши
+		if(src.body_color == "red")
+			mouse.icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
+		// [/CELADON-ADD]
 		mouse.name = name
 		mouse.icon_state = icon_dead
 		if(HAS_TRAIT(src, TRAIT_BEING_SHOCKED))

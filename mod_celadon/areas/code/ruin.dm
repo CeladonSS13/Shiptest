@@ -206,6 +206,93 @@
 	name = "float resort villa"
 	icon_state = "float_resort_villa"
 
+/// MARK: Icemoon
+
+/area/ruin/icemoon/syndioutpost/checkpoint
+	name = "Office"
+	icon_state = "bridge"
+
+/area/ruin/icemoon/syndioutpost/checkpoint/second
+	name = "Checkpoint South"
+	icon_state = "blue"
+
+/area/ruin/icemoon/syndioutpost/checkpoint/third
+	name = "Checkpoint West"
+	icon_state = "red"
+
+/area/ruin/icemoon/syndioutpost/medbay
+	name = "Medbay"
+	icon_state = "medbay"
+
+/area/ruin/icemoon/syndioutpost/chemistry
+	name = "Chemistry"
+	icon_state = "yellow"
+
+/area/ruin/icemoon/syndioutpost/janitor
+	name = "Janitor"
+	icon_state = "purple"
+
+/area/ruin/icemoon/syndioutpost/botany
+	name = "Botany"
+	icon_state = "green"
+
+/area/ruin/icemoon/syndioutpost/engineering
+	name = "Engineering"
+	icon_state = "engine"
+
+/area/ruin/icemoon/syndioutpost/cafeteria
+	name = "Cafeteria"
+	icon_state = "kitchen"
+
+/area/ruin/icemoon/syndioutpost/kitchen
+	name = "Kitchen"
+	icon_state = "storage"
+
+/area/ruin/icemoon/syndioutpost/gym
+	name = "Gym"
+	icon_state = "hallC"
+
+/area/ruin/icemoon/syndioutpost/dorm
+	name = "Dormitories"
+	icon_state = "crew_quarters"
+
+/area/ruin/icemoon/syndioutpost/lobby
+	name = "Lobby"
+	icon_state = "green"
+
+/area/ruin/icemoon/syndioutpost/assaultpod
+	name = "Assault Pod"
+	icon_state = "shuttle"
+
+/area/ruin/icemoon/syndioutpost/hallway
+	name = "Hallway"
+
+/area/ruin/icemoon/syndioutpost/hallway/central_hall
+	name = "Central Primary Hallway"
+
+/area/ruin/icemoon/syndioutpost/hallway/mainhall
+	name = "Central Halls"
+
+/area/ruin/icemoon/syndioutpost/workshop
+	name = "Workshop"
+	icon_state = "quartstorage"
+
+/area/ruin/icemoon/syndioutpost/briefroom
+	name = "Main Hall"
+	icon_state = "bridge_hallway"
+
+/area/ruin/icemoon/syndioutpost/gear_room
+	name = "Gear Room"
+	icon_state = "captain"
+
+/area/ruin/icemoon/syndioutpost/mech_garage
+	name = "Exosuit Garage"
+	icon_state = "security"
+
+/area/ruin/icemoon/syndioutpost/armory
+	name = "Armory"
+	icon_state = "armory"
+
 /// MARK: jungleplanet
 /area/ruin/jungle/syndifortmed
 	name = "Syndi Fort Medbay"
