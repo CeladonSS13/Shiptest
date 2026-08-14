@@ -240,7 +240,7 @@
 	supports_variations = DIGITIGRADE_VARIATION_NO_NEW_ICON | VOX_VARIATION
 
 /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl
-	name = "lawyer black suit"
+	name = "lawyer purple suit"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/under.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/under/overlay/under.dmi'
 	icon_state = "lawyer_purp"
