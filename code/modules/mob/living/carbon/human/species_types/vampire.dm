@@ -112,8 +112,9 @@
 	. = ..()
 	var/obj/item/organ/heart/vampire/darkheart = getorgan(/obj/item/organ/heart/vampire)
 	if(darkheart)
+	//[CELADON-ADD]
 		. += "Current blood level: [blood_volume]/[BLOOD_VOLUME_MAXIMUM]."
-
+	//[/CELADON-ADD]
 
 /obj/item/organ/heart/vampire
 	name = "vampire heart"
