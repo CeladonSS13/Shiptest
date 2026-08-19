@@ -150,7 +150,7 @@ hp
 	name = "Assault-Rifle - G36M (5.56x45mm)"
 	desc = "An extremely powerful modified G36 to satisfy every gun need a pro mercenary can have. Chambered in 5.56x45mm"
 	contains = list(/obj/item/storage/guncase/g36/inteq)
-	cost = 8000
+	cost = 9000
 /* MARK: 5.56x45mm
 bullet
 	damage = 25
