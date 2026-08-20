@@ -258,7 +258,7 @@
 	// [CELADON-ADD]
 	else if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(user.is_holding_item_of_type(/obj/item/multitool))
+		if(user.is_holding_item_of_type(/obj/item/multitool) || user.is_holding_item_of_type(/obj/item/multitool))
 			if(H.glasses)
 				var/obj/item/clothing/glasses/G = H.glasses
 				if(G.vars["mode"])
