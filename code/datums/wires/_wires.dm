@@ -252,8 +252,19 @@
 		reveal_wires = TRUE
 
 	// Same for anyone with an abductor multitool.
-	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor))
+	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor) || user.is_holding_item_of_type(/obj/item/debug/omnitool)) //[CELADON-EDIT]
 		reveal_wires = TRUE
+
+	// [CELADON-ADD]
+	else if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+		if(user.is_holding_item_of_type(/obj/item/multitool))
+			if(H.glasses)
+				var/obj/item/clothing/glasses/G = H.glasses
+				if(G.vars["mode"])
+					if(G.vars["mode"] == "t-ray")
+						reveal_wires = TRUE
+	// [/CELADON-ADD]
 
 	// Station blueprints do that too, but only if the wires are not randomized.
 	else if(user.is_holding_item_of_type(/obj/item/areaeditor/blueprints) && !randomize)
