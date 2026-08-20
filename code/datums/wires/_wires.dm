@@ -256,7 +256,7 @@
 	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor) || user.is_holding_item_of_type(/obj/item/debug/omnitool)) //[CELADON-EDIT]
 		reveal_wires = TRUE
 
-	// [CELADON-ADD]
+	// Same for anyone with engineering scanner goggles and multitool/wirecutter/Jaws of live in hands[CELADON-ADD]
 	else if(ishuman(user))
 		var/mob/living/carbon/human/H = user
 
