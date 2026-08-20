@@ -5,17 +5,47 @@
 	mag_type = /obj/item/ammo_box/magazine/svd_rounds
 	pair_item = list(/datum/blackmarket_item/ammo/svd_rounds)
 
-	cost_min = 7000
-	cost_max = 12000
+	cost_min = 3800
+	cost_max = 4000
 	stock_min = 1
 	stock_max = 1
 	availability_prob = 20
+
+/datum/blackmarket_item/weapon/northstar
+	name = "Gloves of the North Star"
+	desc = "These gloves let the user punch people very fast. Does not improve weapon attack speed or the meaty fists of a hulk."
+	item = /obj/item/clothing/gloves/rapid
+	cost_min = 1000
+	cost_max = 2000
+	stock_min = 1
+	stock_max = 2
+	availability_prob = 30
+
+/datum/blackmarket_item/weapon/clip_kukri
+	name = "Kukri Sword Crate"
+	desc = "A well-made titanium kukri manufactured on Serene. This one is in blue colors... For now."
+	cost_min = 500
+	cost_max = 750
+	stock_min = 1
+	stock_max = 2
+	item = /obj/item/storage/belt/sabre/kukri
+	availability_prob = 40
+
+/datum/blackmarket_item/weapon/cybersun_flyssa
+	name = "Energy Flyssa Crate"
+	desc = "A lathed, verified, and readied Energy Flyssa nicely taken from Cybersun officer. Can be recharged in a recharger. Wait a second..."
+	cost_min = 1000
+	cost_max = 1500
+	stock_min = 1
+	stock_max = 2
+	item = /obj/item/melee/energy/flyssa
+	availability_prob = 30
 
 /datum/blackmarket_item/weapon/esword
 	name = "Energy Sword"
 	desc = "The energy sword is an edged weapon with a blade of pure energy. The sword is small enough to be \
 			pocketed when inactive. Activating it produces a loud, distinctive noise."
-	item = /obj/item/holo/esword
+	item = /obj/item/melee/energy/sword/saber
 
 	cost_min = 3500
 	cost_max = 4000
@@ -57,4 +87,67 @@
 	cost_min = 2500
 	cost_max = 4000
 	stock = 2
+	availability_prob = 25
+
+/datum/blackmarket_item/weapon/guncase/e50_underbarrel
+	name = "Underbarrel Energy Cannon"
+	desc = "The normal E-50 too big to handle for you? This underbarrel conversion cuts it down to a managable size with only a <i>minor</i> chance of painfully burning your hands."
+	item = /obj/item/attachment/gun/energy/e50
+	mag_type = /obj/item/stock_parts/cell/gun
+
+	cost_min = 4000
+	cost_max = 5000
+	stock_max = 2
+	availability_prob = 20
+	spawn_weighting = FALSE
+
+// MARK: SRM guns
+/datum/blackmarket_item/weapon/guncase/vickland
+	name = "Vickland Battle Rifle"
+	desc = "Somehow-somewhere somewho has been seen with this gun. Now you see this gun here. It's a high-powered semi-automatic battle rifle chambered in 8x50mmR and produced by Hunter's Pride. Fed via stripper clips with a 10 round capacity."
+	cost_min = 3000
+	cost_max = 4000
+	item = /obj/item/gun/ballistic/automatic/marksman/vickland
+	pair_item = list(/datum/blackmarket_item/ammo/c8x50mm_box)
+	gun_unloaded = FALSE
+	mag_number = 0
+
+	stock_min = 1
+	stock_max = 2
+	availability_prob = 25
+
+/datum/blackmarket_item/weapon/guncase/invictus
+	name = "Invictus Automatic Rifle"
+	desc = "A pretty big gun for hunting pretty big creatures. The gun itself has been hunted, so the price is high. It's a high-powered automattic rifle chambered in .308 and produced by Hunter's Pride. Comes with two magazines with a 20 round capacity."
+	cost_min = 5000
+	cost_max = 6500
+	item = /obj/item/gun/ballistic/automatic/assault/invictus
+	pair_item = list(/datum/blackmarket_item/ammo/invictus)
+	stock_min = 1
+	stock_max = 2
+	availability_prob = 25
+
+/datum/blackmarket_item/weapon/guncase/twobore
+	name = "HP Huntsman double-barrel shotgun"
+	desc = "Incredibly big double-barrel shotgun! But the previous owner is not so big now. If you want an intact trophy, don't aim for the head. Chambered in two-bore."
+	item = /obj/item/gun/ballistic/shotgun/doublebarrel/twobore
+	gun_unloaded = FALSE
+	mag_number = 0
+	pair_item = list(/datum/blackmarket_item/ammo/twobore_box)
+
+	cost_min = 3000
+	cost_max = 4500
+	stock = 1
+	availability_prob = 25
+
+// MARK: Mower (.308)
+/datum/blackmarket_item/weapon/guncase/mower
+	name = "Machinegun \"Mower\""
+	desc = "FUCKING HELL, JERRY! A hefty and relatively accurate HMG, the Mower is built for heavy fire support on the move. Chambered in .308."
+	item = /obj/item/gun/ballistic/automatic/hmg/mower
+	pair_item = list(/datum/blackmarket_item/ammo/mower)
+
+	cost_min = 5000
+	cost_max = 6500
+	stock = 1
 	availability_prob = 25

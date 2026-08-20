@@ -27,11 +27,11 @@
 	crate_type = /obj/structure/closet/crate/secure/plasma
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/sci_hardsuit
-	name = "Scientific Hardsuit"
-	desc = "Contains one science hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
+	name = "EOD Hardsuit"
+	desc = "Contains one EOD hardsuit, designed to provide safety under advanced experimental conditions, or while handling explosives."
 	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb)
-	crate_name = "scientific hardsuit crate"
+	crate_name = "EOD hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/science
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/atmos_hardsuit
@@ -45,7 +45,7 @@
 /datum/supply_pack/faction/nanotrasen/spacesuit/advanced_hardsuit
 	name = "Advanced Hardsuit"
 	desc = "The culimination of research into robust engineering equipment. This hardsuit makes the wearer near immune to the natural hazards the Frontier can throw."
-	cost = 4000
+	cost = 3000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/elite)
 	crate_name = "advanced hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/engineering
@@ -53,7 +53,7 @@
 /datum/supply_pack/faction/nanotrasen/spacesuit/heavy_sec_hardsuit
 	name = "Heavy Security Hardsuit"
 	desc = "Nanotrasen's premier solution to security hazards in low pressure environments, a well armored, highly mobile combat suit. The wearer is advised to have their zero-g training completed before utilizing the jetpack module."
-	cost = 5000
+	cost = 4000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/security/hos)
 	crate_name = "advanced hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
@@ -62,10 +62,10 @@
 	name = "Nanotrasen Security Hardsuit"
 	desc = "A cheap spare security hardsuit used on NT's stations by the sec department. Provides weak protection against most damage types. Using it for combat in the frontier region of space is not recommended"
 	contains = list(/obj/item/clothing/suit/space/hardsuit/security)
-	cost = 3500
+	cost = 1800
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/hardsuitswat
 	name = "Nanotrasen MK2 SWAT hardsuit"
 	desc = "Advanced MK2 SWAT hardsuit used by elite corporate assets. While it is bulky, slow and is missing a built in flashlight, it provides excellent protection against almost any weapon and is great for work in hazardous environments"
 	contains = list(/obj/item/clothing/suit/space/hardsuit/swat/captain)
-	cost = 8000
+	cost = 5000
