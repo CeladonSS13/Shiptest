@@ -246,6 +246,7 @@
 	var/list/data = list()
 	var/list/payload = list()
 	var/reveal_wires = FALSE
+	var/has_valid_tool = FALSE // [CELADON-ADD]
 
 	// Admin ghost can see a purpose of each wire.
 	if(isAdminGhostAI(user))
@@ -258,12 +259,19 @@
 	// [CELADON-ADD]
 	else if(ishuman(user))
 		var/mob/living/carbon/human/H = user
-		if(user.is_holding_item_of_type(/obj/item/multitool) || user.is_holding_item_of_type(/obj/item/multitool))
-			if(H.glasses)
-				var/obj/item/clothing/glasses/G = H.glasses
-				if(G.vars["mode"])
-					if(G.vars["mode"] == "t-ray")
-						reveal_wires = TRUE
+
+		if(user.is_holding_item_of_type(/obj/item/multitool) || user.is_holding_item_of_type(/obj/item/wirecutters))
+			has_valid_tool = TRUE
+
+		else
+			var/obj/item/crowbar/power/J = user.is_holding_item_of_type(/obj/item/crowbar/power)
+			if(J && J.vars["tool_behaviour"] == "wirecutter")
+				has_valid_tool = TRUE
+
+		if(has_valid_tool && H.glasses)
+			var/obj/item/clothing/glasses/G = H.glasses
+			if(G.vars["mode"] && G.vars["mode"] == "t-ray")
+				reveal_wires = TRUE
 	// [/CELADON-ADD]
 
 	// Station blueprints do that too, but only if the wires are not randomized.
