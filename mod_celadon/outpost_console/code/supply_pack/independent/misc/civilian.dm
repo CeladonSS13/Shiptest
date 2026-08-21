@@ -146,7 +146,7 @@ MARK: Decoration / flooring
 
 /datum/supply_pack/faction/independent/civilian/potted_plants
 	name = "Potted Plants"
-	desc = "Spruce up the ship with these lovely plants! Contains a random assortment of five potted plants from Nanotrasen's potted plant research division. Nanotrasennty void if thrown."
+	desc = "Spruce up the ship with these lovely plants! Contains a random assortment of five potted plants from Nanotrasen's potted plant research division. Warranty void if thrown."
 	cost = 350
 	contains = list(/obj/item/kirbyplants/random,
 					/obj/item/kirbyplants/random,

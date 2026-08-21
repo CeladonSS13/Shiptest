@@ -297,7 +297,7 @@
 
 /datum/export/weapon/doublebarrel_shotgun
 	unit_name = "Double Barrel Shotgun"
-	desc = "For when you need to deal with 2 drunkards the old-fashioned way. double-barreled shotgun, favored by Bartenders. Nanotrasennty voided if sawed off."
+	desc = "For when you need to deal with 2 drunkards the old-fashioned way. double-barreled shotgun, favored by Bartenders. Warranty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/doublebarrel)
 	cost = 100
 
@@ -315,7 +315,7 @@
 
 /datum/export/weapon/brimstone_shotgun
 	unit_name = "Brimstone Shotgun"
-	desc = "For when you need to deal with 5 hooligans, and QUICKLY. slamfire shotgun, with a 5-round capacity. Nanotrasennty voided if sawed off."
+	desc = "For when you need to deal with 5 hooligans, and QUICKLY. slamfire shotgun, with a 5-round capacity. Warranty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/brimstone)
 	cost = 200
 
@@ -357,7 +357,7 @@
 
 /datum/export/weapon/beacon
 	unit_name = "Beacon Break Action Rifle"
-	desc = "single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Nanotrasennty voided if sawed off."
+	desc = "single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Warranty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/doublebarrel/beacon)
 	cost = 225
 

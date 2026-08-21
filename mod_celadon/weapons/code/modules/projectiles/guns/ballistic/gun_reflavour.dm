@@ -111,11 +111,11 @@
 
 /obj/item/gun/ballistic/automatic/smg/expedition
 	name = "\improper VI SGL9 Expedition"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/smg/resolution
 	name = "\improper VI PD46 Resolution"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/smg/resolution/inteq
 	desc = "A seized VI PD46, modified to Inteq's requirements and standards. Awkward to reload, though has a powerful cartridge with good ergonomics and accuracy."
@@ -253,7 +253,7 @@
 
 /obj/item/gun/ballistic/shotgun/automatic/negotiator
 	name = "VI AST12 Negotiator"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/revolver/rhino
 	name = "VI Rhino"
