@@ -382,8 +382,8 @@
 		manufacturer_prefix = "eoehoma"
 	else if (our_gun.manufacturer == MANUFACTURER_SHARPLITE_NEW)
 		manufacturer_prefix = "sharplite"
-	else if (our_gun.manufacturer == MANUFACTURER_NANOTRASEN_LASER) // [Celadon-add]
-		manufacturer_prefix = "nanotrasen" // [Celadon-add]
+	else if (our_gun.manufacturer == MANUFACTURER_NANOTRASEN_LASER) // [CELADON-ADD]
+		manufacturer_prefix = "nanotrasen" // [CELADON-ADD]
 	else if (our_gun.manufacturer == MANUFACTURER_PGF)
 		manufacturer_prefix = "etherbor"
 	else

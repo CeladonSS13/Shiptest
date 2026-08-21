@@ -2,7 +2,7 @@
 
 /obj/machinery/lapvend
 	name = "computer vendor"
-	desc = "A vending machine with microfabricator capable of dispensing various Nanotrasen-branded computers." // [Celadon-edit]
+	desc = "A vending machine with microfabricator capable of dispensing various Nanotrasen-branded computers." // [CELADON-EDIT]
 	icon = 'icons/obj/vending.dmi'
 	icon_state = "robotics"
 	layer = 2.9
