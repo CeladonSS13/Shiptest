@@ -24,7 +24,7 @@
 	icon_state = "random_elysium"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/elysium
-	random_type = POSTER_SUBTYPES
+	// random_type = POSTER_SUBTYPES
 
 /obj/structure/sign/poster/elysium/logo // \"Breathable, if it weren't so darn cold.\"
 	name = "elysium"
