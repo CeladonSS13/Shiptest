@@ -1368,7 +1368,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 				// Фракция над картинкой
 				if(G.allowed_factions && G.allowed_factions.len)
 					var/list/faction_color_map = list(
-						"Warra" = "#283674",
+						"Nanotrasen" = "#283674",
 						"Syndicate" = "#9c0808",
 						"Independent" = "#7e6641",
 						"InteQ" = "#4d291F",

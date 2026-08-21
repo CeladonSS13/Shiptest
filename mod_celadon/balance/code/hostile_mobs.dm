@@ -271,13 +271,6 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 
 // /mob/living/simple_animal/hostile/retaliate/spaceman
 
-/mob/living/simple_animal/hostile/retaliate/warrapeace
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 10, "fire" = 25, "acid" = 25)
-
-/mob/living/simple_animal/hostile/retaliate/warrapeace/ranged
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 10, "fire" = 25, "acid" = 25)
-
-
 // Custom
 /mob/living/simple_animal/hostile/abandoned_minebot
 	move_to_delay = 5

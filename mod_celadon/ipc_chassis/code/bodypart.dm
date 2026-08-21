@@ -453,35 +453,35 @@
 	icon_state = "ms_mantis_r_leg"
 	limb_id = "ms_mantis"
 
-// Warra AC
+// Nanotrasen AC
 
 /obj/item/bodypart/head/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC head"
+	name = "\improper Nanotrasen AC head"
 	icon_state = "ns_head"
 	limb_id = "ns"
 
 /obj/item/bodypart/chest/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC chest"
+	name = "\improper Nanotrasen AC chest"
 	icon_state = "ns_chest"
 	limb_id = "ns"
 
 /obj/item/bodypart/l_arm/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC left arm"
+	name = "\improper Nanotrasen AC left arm"
 	icon_state = "ns_l_arm"
 	limb_id = "ns"
 
 /obj/item/bodypart/r_arm/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC right arm"
+	name = "\improper Nanotrasen AC right arm"
 	icon_state = "ns_r_arm"
 	limb_id = "ns"
 
 /obj/item/bodypart/leg/left/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC left leg"
+	name = "\improper Nanotrasen AC left leg"
 	icon_state = "ns_l_leg"
 	limb_id = "ns"
 
 /obj/item/bodypart/leg/right/ipc/standart/nanotrasen_main
-	name = "\improper Warra AC right leg"
+	name = "\improper Nanotrasen AC right leg"
 	icon_state = "ns_r_leg"
 	limb_id = "ns"
 

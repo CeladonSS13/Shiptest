@@ -64,17 +64,17 @@
 	export_types = list(/obj/item/gun/ballistic/automatic/assault/g36/inteq)
 	cost = 800
 
-// MARK: Warra
+// MARK: Nanotrasen
 
 /datum/export/weapon/mini_energy
 	unit_name = "SL X-26 'Ember' Miniature Energy Pistol"
-	desc = "One of the most basic energy weapons in the universe. Compact but low capacity. Shoots lethal and disabler lasers. A simple, yet an inefficient PDW. Power in a pocket! Produced by Warra-Sharplite"
+	desc = "One of the most basic energy weapons in the universe. Compact but low capacity. Shoots lethal and disabler lasers. A simple, yet an inefficient PDW. Power in a pocket! Produced by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/e_gun/e_old/mini)
 	cost = 50
 
 /datum/export/weapon/energy
 	unit_name = "SL X-10 'Patriot' Energy Carbine"
-	desc = "One of the most basic energy weapons in the universe. Shoots lethal and disabler lasers. A simple, yet an efficient PDW. It is the egun. Produced by Warra-Sharplite"
+	desc = "One of the most basic energy weapons in the universe. Shoots lethal and disabler lasers. A simple, yet an efficient PDW. It is the egun. Produced by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/e_gun/e_old)
 	cost = 125
 	include_subtypes = FALSE
@@ -93,25 +93,25 @@
 
 /datum/export/weapon/heavylaser
 	unit_name = "SL AL-602 'Phoenix' Energy Cannon"
-	desc = "A sniper-like Warra laser gun that deals more damage if the target is far away. You can't attach a scope to it, though"
+	desc = "A sniper-like Nanotrasen laser gun that deals more damage if the target is far away. You can't attach a scope to it, though"
 	export_types = list(/obj/item/gun/energy/lasercannon)
 	cost = 350
 
 /datum/export/weapon/hades
 	unit_name = "SL AL-655 'Hades' energy rifle"
-	desc = "Warra's pride in energy weapon development. This premium assault rifle is the most reliable Warra-Sharplite energy weapon."
+	desc = "Nanotrasen's pride in energy weapon development. This premium assault rifle is the most reliable Nanotrasen-Sharplite energy weapon."
 	export_types = list(/obj/item/gun/energy/e_gun/e_old/hades)
 	cost = 600
 
 /datum/export/weapon/cryogelida
 	unit_name = "SL PPD-142 'Cryogelida' plasma pistol"
-	desc = "A fresh-new experimental plasma pistol developed by Warra-Sharplite, it has 2 firemodes. Freeze firemode is perfect for cooling syndicate terrorists' heat, and frostbite firemode allows for sending them back into ice age. It synergizes well with Pyrogelida plasma pistol."
+	desc = "A fresh-new experimental plasma pistol developed by Nanotrasen-Sharplite, it has 2 firemodes. Freeze firemode is perfect for cooling syndicate terrorists' heat, and frostbite firemode allows for sending them back into ice age. It synergizes well with Pyrogelida plasma pistol."
 	export_types = list(/obj/item/gun/energy/e_gun/plasmapistol_cryo)
 	cost = 800
 
 /datum/export/weapon/pyrogelida
 	unit_name = "SL PPD-238 'Pyrogelida' plasma pistol"
-	desc = "A fresh-new experimental plasma pistol developed by Warra-Sharplite, it has 2 firemodes. Burn firemode is perfect for non-Geneva-convention-violating combat, and IMMOLATE mode lets you commit warcrimes at the rate of 50 per minute. It synergizes well with Cryogelida plasma pistol."
+	desc = "A fresh-new experimental plasma pistol developed by Nanotrasen-Sharplite, it has 2 firemodes. Burn firemode is perfect for non-Geneva-convention-violating combat, and IMMOLATE mode lets you commit warcrimes at the rate of 50 per minute. It synergizes well with Cryogelida plasma pistol."
 	export_types = list(/obj/item/gun/energy/e_gun/plasmapistol_fire)
 	cost = 900
 
@@ -124,14 +124,14 @@
 
 /datum/export/weapon/ion_carbine
 	unit_name = "MK2 Ion carbine"
-	desc = "An improved model on the ion projector, built to be more compact and ergonomic, while keeping the same max charge. Developed by Warra-Sharplite"
+	desc = "An improved model on the ion projector, built to be more compact and ergonomic, while keeping the same max charge. Developed by Nanotrasen-Sharplite"
 	export_types = list(/obj/item/gun/energy/ionrifle/carbine)
 	cost = 1100
 */
 
 /datum/export/weapon/challenger
 	unit_name = "VI 'Challenger' handgun"
-	desc = "Challenger pistol, produced by Warra along with Vigilitas Interstellar."
+	desc = "Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar."
 	export_types = list(/obj/item/gun/ballistic/automatic/pistol/challenger)
 	cost = 75
 
@@ -297,7 +297,7 @@
 
 /datum/export/weapon/doublebarrel_shotgun
 	unit_name = "Double Barrel Shotgun"
-	desc = "For when you need to deal with 2 drunkards the old-fashioned way. double-barreled shotgun, favored by Bartenders. Warranty voided if sawed off."
+	desc = "For when you need to deal with 2 drunkards the old-fashioned way. double-barreled shotgun, favored by Bartenders. Nanotrasennty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/doublebarrel)
 	cost = 100
 
@@ -315,7 +315,7 @@
 
 /datum/export/weapon/brimstone_shotgun
 	unit_name = "Brimstone Shotgun"
-	desc = "For when you need to deal with 5 hooligans, and QUICKLY. slamfire shotgun, with a 5-round capacity. Warranty voided if sawed off."
+	desc = "For when you need to deal with 5 hooligans, and QUICKLY. slamfire shotgun, with a 5-round capacity. Nanotrasennty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/brimstone)
 	cost = 200
 
@@ -357,7 +357,7 @@
 
 /datum/export/weapon/beacon
 	unit_name = "Beacon Break Action Rifle"
-	desc = "single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Warranty voided if sawed off."
+	desc = "single shot break action rifle to hunt wildlife that annoys you in particular. Chambered in devastating .45-70 rounds. Nanotrasennty voided if sawed off."
 	export_types = list(/obj/item/gun/ballistic/shotgun/doublebarrel/beacon)
 	cost = 225
 

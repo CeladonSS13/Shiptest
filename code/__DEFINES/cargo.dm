@@ -58,8 +58,11 @@ GLOBAL_LIST_EMPTY(supplypod_loading_bays)
 
 GLOBAL_LIST_INIT(podstyles, list(\
 	list(POD_SHAPE_NORML, "pod",		TRUE,	"default",	"yellow",		RUBBLE_NORMAL,	"supply pod",	"A Makosso-Warra supply drop pod."),\
-	// [CELADON-ADD] - CELADON_ELYSIUMPOD
+	// [CELADON-ADD] - CELADON_PODS
 	list(POD_SHAPE_NORML, "elysiumpod",		TRUE,	"elysium",	"green",		RUBBLE_NORMAL,	"\improper Elysium supply pod",	"An Elysium supply pod. Teleports back to warehouse after delivery."),\
+	list(POD_SHAPE_NORML, "advpod",		TRUE,	"bluespace",	"blue",		RUBBLE_NORMAL,	"bluespace supply pod",	"A Nanotrasen Bluespace supply pod. Teleports back to CentCom after delivery."),\
+	list(POD_SHAPE_NORML, "advpod",		TRUE,	"centcom",		"blue",		RUBBLE_NORMAL,	"\improper CentCom supply pod", "A Nanotrasen supply pod, this one has been marked with Nanotrasen Central Command's designations."),\
+	list(POD_SHAPE_NORML, "darkpod",	TRUE,	"deathsquad",	"blue",		RUBBLE_NORMAL,	"\improper Deathsquad drop pod",	"A mysterious drop pod with a Nanotrasen logo on it. This one has been marked with markings from... something you don't recognize."),\
 	// [/CELADON-ADD]
 	list(POD_SHAPE_NORML, "advpod",		TRUE,	"bluespace",	"blue",		RUBBLE_NORMAL,	"bluespace supply pod",	"A Makosso-Warra Bluespace supply pod. Teleports back to Corporate after delivery."),\
 	list(POD_SHAPE_NORML, "advpod",		TRUE,	"centcom",		"blue",		RUBBLE_NORMAL,	"\improper Corporate supply pod", "A Makosso-Warra supply pod, this one has been marked with M-W Corporate HQ's designations. Teleports back to Corporate after delivery."),\

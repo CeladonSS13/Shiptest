@@ -66,15 +66,10 @@
 	desc = "A direction sign, pointing out which way the Independent faction."
 	icon_state = "ind"
 
-/obj/structure/sign/directions/outpost/warra
-	name = "warra sign"
-	desc = "A direction sign, pointing out which way the Warra faction."
-	icon_state = "warra"
-
-/obj/structure/sign/directions/outpost/warra/animation
-	name = "warra sign"
-	desc = "A animation direction sign, pointing out which way the Warra faction."
-	icon_state = "nt_a"
+/obj/structure/sign/directions/outpost/nanotrasen
+	name = "Nanotrasen sign"
+	desc = "A direction sign, pointing out which way the Nanotrasen faction."
+	icon_state = "nanotrasen"
 
 /obj/structure/sign/directions/outpost/solfed
 	name = "solfed sign"

@@ -458,7 +458,7 @@
     job_icon = "shaftminer"
     faction_icon = "bg_solfed"
 
-    id = /obj/item/card/id/cel/warra/nslogistics_miner
+    id = /obj/item/card/id/cel/nanotrasen/nslogistics_miner
     ears = /obj/item/radio/headset/solgov
     head = /obj/item/clothing/head/hardhat/warra/blue
     shoes = /obj/item/clothing/shoes/workboots/mining

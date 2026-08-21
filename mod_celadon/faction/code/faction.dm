@@ -3,15 +3,15 @@
 	. = ..()
 	H.faction |= list(FACTION_PLAYER_SYNDICATE)
 
-//	Warra
-/datum/outfit/job/cel/warra/post_equip(mob/living/carbon/human/H, visualsOnly)
+//	Nanotrasen
+/datum/outfit/job/cel/nanotrasen/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
-	H.faction |= list(FACTION_PLAYER_WARRA, FACTION_PLAYER_SOLFED)
+	H.faction |= list(FACTION_PLAYER_NANOTRASEN, FACTION_PLAYER_SOLFED)
 
 //	SolFed
 /datum/outfit/job/cel/solfed/post_equip(mob/living/carbon/human/H, visualsOnly)
 	. = ..()
-	H.faction |= list(FACTION_PLAYER_SOLFED, FACTION_PLAYER_WARRA)
+	H.faction |= list(FACTION_PLAYER_SOLFED, FACTION_PLAYER_NANOTRASEN)
 
 //	InteQ
 /datum/outfit/job/cel/inteq/post_equip(mob/living/carbon/human/H, visualsOnly)
@@ -26,7 +26,8 @@
 	name = FACTION_PIRATES
 	prefixes = list("PIRATE", "RSV")
 
-/datum/faction/warra
+/datum/faction/nanotrasen
+	name = FACTION_NANOTRASEN
 	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV")
 
 /datum/faction/inteq

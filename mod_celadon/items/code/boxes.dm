@@ -1,10 +1,13 @@
 
-			// warra survival box
-/obj/item/storage/box/survival/warra
-	name = "warra survival box"
+			// nanotrasen survival box
+/obj/item/storage/box/survival/nanotrasen
+	name = "NT-brand survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_nt_alt"
-/obj/item/storage/box/survival/warra/PopulateContents()
+	icon_state = "bluebox"
+	possible_illustrations = "nanotrasen"
+	illustration = "nanotrasen"
+
+/obj/item/storage/box/survival/nanotrasen/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/breath = 1,\
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
@@ -16,12 +19,32 @@
 		)
 	generate_items_inside(items_inside,src)
 
+/obj/item/storage/box/survival/nanotrasen/security
+	name = "NT-brand survival box"
+	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
+	icon_state = "dangerbox"
+	possible_illustrations = "nanotrasen"
+	illustration = "nanotrasen"
+
+/obj/item/storage/box/survival/nanotrasen/security/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/clothing/mask/gas/vigilitas = 1,\
+		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
+		/obj/item/reagent_containers/hypospray/medipen = 1,\
+		/obj/item/reagent_containers/pill/penacid = 1,\
+		/obj/item/food/ration = 1,\
+		/obj/item/radio = 1,\
+		/obj/item/crowbar = 1,\
+		)
+	generate_items_inside(items_inside,src)
 
 			// syndicate survival box
 /obj/item/storage/box/survival/syndicate
-	name = "syndicate survival box"
+	name = "military-grade cybersun survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_syn"
+	icon_state = "milbox"
+	possible_illustrations = "syndie"
+	illustration = "syndie"
 /obj/item/storage/box/survival/syndicate/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/gas/syndicate = 1,\
@@ -35,9 +58,11 @@
 	generate_items_inside(items_inside,src)
 
 /obj/item/storage/box/survival/ramzi
-	name = "ramzi survival box"
+	name = "contraband survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_pir"
+	icon_state = "dangerbox"
+	possible_illustrations = "writing_warning"
+	illustration = "writing_warning"
 /obj/item/storage/box/survival/ramzi/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/gas/ramzi = 1,\
@@ -53,7 +78,9 @@
 /obj/item/storage/box/survival/pirate
 	name = "contraband survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_pir"
+	icon_state = "secbox"
+	possible_illustrations = "syringe"
+	illustration = "syringe"
 /obj/item/storage/box/survival/pirate/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/balaclava/combat = 1,\
@@ -68,9 +95,11 @@
 
 			// inteq survival box
 /obj/item/storage/box/survival/inteq
-	name = "inteq survival box"
+	name = "IRMG general survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_iq"
+	icon_state = "box"
+	possible_illustrations = "writing_warning"
+	illustration = "writing_warning"
 /obj/item/storage/box/survival/inteq/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/gas/inteq = 1,\
@@ -86,9 +115,11 @@
 
 			// solfed survival box
 /obj/item/storage/box/survival/solfed
-	name = "solfed survival box"
+	name = "military-grade survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_sol"
+	icon_state = "milbox_sol"
+	possible_illustrations = "solfed"
+	illustration = "solfed"
 /obj/item/storage/box/survival/solfed/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/breath = 1,\
@@ -106,7 +137,9 @@
 /obj/item/storage/box/survival/independent
 	name = "mass-produced survival box"
 	icon = 'mod_celadon/_storage_icons/icons/resprite/survival_boxes.dmi'
-	icon_state = "box_survival_ind"
+	icon_state = "secbox"
+	possible_illustrations = "emergency"
+	illustration = "emergency"
 /obj/item/storage/box/survival/independent/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/breath = 1,\

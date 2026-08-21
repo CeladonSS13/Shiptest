@@ -299,7 +299,6 @@
 
 // Hats //
 
-// [CELADON-EDIT] - CELADON_BALANCE - броня /obj/item/clothing/head/warra переопределена в mod_celadon\balance\code\items.dm
 /obj/item/clothing/head/warra
 	name = "blue flatcap"
 	desc = "A simple blue flat cap with a Makosso-Warra logo on the side. Not standard uniform, but occasionally worn by Makosso-Warra office workers."

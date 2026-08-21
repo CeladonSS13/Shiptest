@@ -15,13 +15,13 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 			/datum/outfit/job/cel/elysium/assistant
 		)
 	),
-	"warra" = list(
-		"name" = "Warra",
+	"nanotrasen" = list(
+		"name" = "Nanotrasen",
 		"description" = "Мегакорпорация-освоитель рубежей: добыча, исследования, станции и флот — всё ради прибыли и прогресса. Внутри царят протоколы и отчётность, но взамен — доступ к лучшим технологиям, стабильные контракты и карьерный рост.",
-		"wiki_url" = "https://wiki.celadon.pro/index.php/Warra",
+		"wiki_url" = "https://wiki.celadon.pro/index.php/Nanotrasen",
 		"outfits" = list(
-			/datum/outfit/job/cel/warra/captain,
-			/datum/outfit/job/cel/warra/assistant
+			/datum/outfit/job/cel/nanotrasen/captain,
+			/datum/outfit/job/cel/nanotrasen/assistant
 		)
 	),
 	"syndicate" = list(

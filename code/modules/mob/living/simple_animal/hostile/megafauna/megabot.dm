@@ -124,7 +124,7 @@
 			plant_mine()
 
 /mob/living/simple_animal/hostile/megafauna/megabot/proc/burst_shot()
-	casingtype = /obj/item/ammo_casing/energy/laser/assault/sharplite/megabot
+	casingtype = /obj/item/ammo_casing/energy/laser/nanotrasen/assault/megabot // [Celadon-edit]
 	var/num_shots = 3
 	if(health < maxHealth/2)
 		num_shots = 5
@@ -135,7 +135,7 @@
 		addtimer(fire, (i - 1)*rapid_fire_delay)
 
 /mob/living/simple_animal/hostile/megafauna/megabot/proc/spread_shot()
-	casingtype = /obj/item/ammo_casing/energy/laser/assault/sharplite/megabot/burst
+	casingtype = /obj/item/ammo_casing/energy/laser/nanotrasen/assault/megabot/burst // [Celadon-edit]
 	wind_up_visual(TRUE)
 	SLEEP_CHECK_DEATH(gun_wind_up)
 	shoot_projectile(get_turf(target))

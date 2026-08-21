@@ -1,0 +1,8 @@
+TURF_DECAL_COLOR_HELPER(opaque/nanotrasenblue, "#32426b", 255)
+TURF_DECAL_COLOR_HELPER(transparent/nanotrasenblue, "#32426b", 255)
+TURF_DECAL_COLOR_HELPER(opaque/nanotrasenbluelight, "#335c91", 255)
+TURF_DECAL_COLOR_HELPER(transparent/nanotrasenbluelight, "#335c91", 255)
+TURF_DECAL_COLOR_HELPER(opaque/nakamuraayellow, "#f1ca3d", 255)
+TURF_DECAL_COLOR_HELPER(transparent/nakamurayellow, "#f1ca3d", 140)
+TURF_DECAL_COLOR_HELPER(opaque/deforestblue, "#84AFDB", 255)
+TURF_DECAL_COLOR_HELPER(transparent/deforestblue, "#84AFDB", 140)
