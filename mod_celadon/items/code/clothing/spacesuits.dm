@@ -32,7 +32,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/spacesuits_celadon.dmi'
 	icon_state = "hardsuit0-spec_command"
 	item_state = "hardsuit1-spec_command"
-	hardsuit_type = "ert_commanderold"
+	hardsuit_type = "spec_command"
 	armor = list("melee" = 50, "bullet" = 55, "laser" = 40, "energy" = 50, "bomb" = 35, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 90, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic
@@ -52,14 +52,14 @@
 	desc = "The integrated helmet of a special forces hardsuit, this one has red highlights."
 	icon_state = "hardsuit0-spec_security"
 	item_state = "hardsuit1-spec_security"
-	hardsuit_type = "ert_securityold"
+	hardsuit_type = "spec_security"
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/sec
 	name = "special forces security hardsuit"
-	desc = "A superb combat hardsuit produced by Vigilitas Interstellar and issued only to high-ranking assault squads associated with Nanotrasen. This one has red highlights and provides decent protection against most common threats."
-	icon_state = "ert_securityold"
-	item_state = "ert_securityold"
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has red highlights. Provides a good amount of protection against environmental hazards."
+	icon_state = "spec_security"
+	item_state = "spec_security"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/sec
 	armor = list("melee" = 40, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 90, "wound" = 20)
 	slowdown = 0.2
@@ -70,14 +70,14 @@
 	desc = "The integrated helmet of a special forces hardsuit, this one has yellow highlights."
 	icon_state = "hardsuit0-spec_engineer"
 	item_state = "hardsuit1-spec_engineer"
-	hardsuit_type = "ert_engineerold"
+	hardsuit_type = "spec_engineer"
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 50, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/engi
 	name = "special forces engineering hardsuit"
-	desc = "A superb combat hardsuit produced by Vigilitas Interstellar and issued only to high-ranking assault squads associated with Nanotrasen. This one has yellow highlights and provides fairly decent protection against burn related injuries."
-	icon_state = "ert_engineerold"
-	item_state = "ert_engineerold"
+	desc = "The standard issue hardsuit of the Warra special forces squad, this one has orange highlights. Provides a good amount of protection against environmental hazards."
+	icon_state = "spec_engineer"
+	item_state = "spec_engineer"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/engi
 	armor = list("melee" = 25, "bullet" = 20, "laser" = 50, "energy" = 40, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 50, "wound" = 20)
 	slowdown = 0.2
@@ -88,7 +88,7 @@
 	desc = "The integrated helmet of a special forces hardsuit, this one has white highlights."
 	icon_state = "hardsuit0-spec_medical"
 	item_state = "hardsuit1-spec_medical"
-	hardsuit_type = "ert_medicalold"
+	hardsuit_type = "spec_medical"
 	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 75, "acid" = 40, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/med
@@ -103,16 +103,16 @@
 /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani
 	name = "special forces janitorial helmet"
 	desc = "The integrated helmet of a special forces hardsuit, this one has purple highlights."
-	icon_state = "hardsuit0-ert_janitorold"
-	item_state = "hardsuit1-ert_janitorold"
-	hardsuit_type = "ert_janitorold"
+	icon_state = "hardsuit0-spec_janitor"
+	item_state = "hardsuit1-spec_janitor"
+	hardsuit_type = "spec_janitor"
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 100, "wound" = 20)
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/jani
 	name = "special forces janitorial hardsuit"
 	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
-	icon_state = "ert_janitorold"
-	item_state = "ert_janitorold"
+	icon_state = "ert_janitor"
+	item_state = "ert_janitor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 100, "wound" = 20)
 	slowdown = 0.2
