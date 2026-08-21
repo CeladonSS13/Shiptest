@@ -21,7 +21,7 @@
 //(The actually good scarves)
 
 /datum/gear/scarf/scarfes/striped
-	subtype_path = /datum/gear/scarf/scarfes//striped
+	subtype_path = /datum/gear/scarf/scarfes/striped
 
 /datum/gear/scarf/scarfes/striped/red
 	display_name = "striped scarf, red"

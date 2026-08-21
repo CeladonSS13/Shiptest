@@ -273,7 +273,9 @@
 /turf/open/floor/plasteel/mono,
 /area/outpost/cargo/faction/solfed)
 "ajy" = (
-/mob/living/simple_animal/hostile/mining_drone/rockplanet,
+/mob/living/simple_animal/hostile/mining_drone/rockplanet{
+	faction = list("skeleton")
+	},
 /turf/open/floor/plating/asteroid/wasteplanet,
 /area/outpost/hallway/central)
 "ajW" = (
@@ -1854,9 +1856,8 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "bna" = (
-/obj/structure/toilet/secret{
-	dir = 4;
-	secret_type = /obj/item/storage/box/donkpockets
+/obj/structure/toilet{
+	dir = 4
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/outpost/crew/bar/bar_zone)
@@ -3974,7 +3975,8 @@
 	id = "r4";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "cGD" = (
 /turf/closed/indestructible/rock/schist,
 /area/outpost/external)
@@ -4229,7 +4231,8 @@
 	id = "r2";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "cOS" = (
 /obj/effect/turf_decal/corner/opaque/yellow/full,
 /obj/effect/turf_decal/industrial/hatch/yellow,
@@ -9316,7 +9319,8 @@
 	id = "r9";
 	mouse_opacity = 0
 	},
-/turf/open/floor/plating/asteroid/icerock/temperate)
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/hallway/central)
 "gaC" = (
 /obj/structure/table/wood/fancy/blue,
 /obj/machinery/newscaster/directional/south,
@@ -11422,7 +11426,8 @@
 	id = "r9";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "hsB" = (
 /obj/effect/turf_decal/techfloor/orange/corner{
 	dir = 1
@@ -11809,7 +11814,8 @@
 /area/outpost/engineering)
 "hFo" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/asteroid/icerock/temperate)
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/hallway/central)
 "hFx" = (
 /obj/effect/turf_decal/sand/plating,
 /turf/closed/indestructible/sandstone,
@@ -12055,7 +12061,8 @@
 /turf/open/floor/plasteel/rockvault,
 /area/outpost/operations)
 "hOO" = (
-/turf/open/floor/plating/asteroid/icerock/temperate)
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/hallway/central)
 "hOQ" = (
 /obj/effect/turf_decal/industrial/fire{
 	dir = 1
@@ -16113,7 +16120,8 @@
 	id = "r1";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "kwz" = (
 /obj/structure/chair/comfy/blue/corpo/directional/west,
 /obj/machinery/light/colored/white/directional/south{
@@ -18240,7 +18248,8 @@
 	id = "r7";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "lOL" = (
 /obj/structure/showcase/machinery/cloning_pod,
 /obj/effect/turf_decal/box/corners{
@@ -21948,7 +21957,8 @@
 "oxm" = (
 /obj/effect/decal/cleanable/sprayweb,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating/asteroid/icerock/temperate)
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/hallway/central)
 "oxo" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
@@ -22720,7 +22730,8 @@
 	id = "r3";
 	mouse_opacity = 0
 	},
-/turf/open/floor/fakepit)
+/turf/open/floor/fakepit,
+/area/outpost/hallway/central)
 "oTR" = (
 /obj/effect/turf_decal/siding/wood/corner{
 	color = "#792f27";
@@ -26289,7 +26300,8 @@
 /area/outpost/crew/canteen)
 "reH" = (
 /obj/effect/decal/cleanable/sprayweb,
-/turf/open/floor/plating/asteroid/icerock/temperate)
+/turf/open/floor/plating/asteroid/icerock/temperate,
+/area/outpost/hallway/central)
 "rfU" = (
 /obj/effect/turf_decal/siding/wideplating/dark{
 	dir = 1
@@ -32499,8 +32511,7 @@
 	},
 /area/outpost/hallway/central)
 "viF" = (
-/obj/structure/toilet/secret{
-	secret_type = /obj/item/storage/box/donkpockets;
+/obj/structure/toilet{
 	pixel_y = 6;
 	dir = 8;
 	pixel_x = 8
@@ -55771,7 +55782,7 @@ gIF
 bBF
 gYm
 cGD
-mCd
+hFo
 oxm
 cGD
 cGD

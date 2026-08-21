@@ -63,7 +63,7 @@
 	display_name = "suit jacket, navy"
 	path = /obj/item/clothing/suit/lawyer/navy
 
-/datum/gear/suit/toggle/flight
+/datum/gear/suit/flight // [CELADON-EDIT] - FIX - /datum/gear/suit/toggle/flight
 	display_name = "flight jacket, colorable"
 	path = /obj/item/clothing/suit/toggle/flight
 

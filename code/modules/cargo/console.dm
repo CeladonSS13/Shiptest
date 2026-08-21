@@ -164,7 +164,7 @@
 			var/total_cost = text2num(params["total"])
 			if(!current_ship?.docked_to)	// [CELADON-ADD] - Мне лень убирать этот вызов, можно обойтись банальной проверкой
 				return						// [/CELADON-ADD]
-			var/datum/overmap/outpost/current_outpost = current_ship.docked_to
+			// var/datum/overmap/outpost/current_outpost = current_ship.docked_to // [CELADON-REMOVE] - // Вар не используется.
 			if(!istype(outpost_docked) || purchasing.len == 0)
 				return
 
