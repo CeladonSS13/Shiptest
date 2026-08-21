@@ -92,6 +92,12 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 	)
 NO_MAG_GUN_HELPER(automatic/assault/g36)
 
+
+/obj/item/gun/ballistic/automatic/assault/g36/black
+	icon_state = "g36_black"
+	item_state = "g36_black"
+	desc = "Trophy version of Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
 	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."

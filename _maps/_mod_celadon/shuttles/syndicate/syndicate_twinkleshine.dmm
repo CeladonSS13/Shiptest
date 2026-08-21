@@ -131,20 +131,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
-"aG" = (
-/obj/structure/closet/secure_closet/wall/directional/east,
-/obj/item/melee/knife/kitchen,
-/obj/item/cutting_board,
-/obj/item/clothing/under/suit/waiter/syndicate,
-/obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/under/syndicate,
-/obj/item/clothing/shoes/sneakers/black,
-/obj/item/radio/headset/syndicate{
-	keyslot = null
-	},
-/obj/item/reagent_containers/food/drinks/shaker,
-/turf/open/floor/carpet/red,
-/area/ship/crew/canteen)
 "aX" = (
 /obj/effect/turf_decal/syndicateemblem/middle/right{
 	dir = 8
@@ -861,6 +847,32 @@
 /obj/structure/window/plasma/reinforced/plastitanium,
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
+"eT" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/full,
+/obj/structure/closet/secure_closet/medical3{
+	req_access = list(150, 5);
+	icon_state = "tac";
+	populate = 0
+	},
+/obj/machinery/light/directional/north,
+/obj/item/clothing/under/rank/medical/doctor/red,
+/obj/item/clothing/suit/longcoat/roboblack{
+	name = "syndicate medic's black longcoat"
+	},
+/obj/item/clothing/under/cybersun/medic/skirt,
+/obj/item/clothing/under/cybersun/medic,
+/obj/item/clothing/head/helmet/m10/cybersun/trauma,
+/obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked,
+/obj/item/storage/belt/medical,
+/obj/item/storage/belt/medical/webbing,
+/obj/item/clothing/gloves/nitrile/evil,
+/obj/item/clothing/shoes/sneakers/white,
+/obj/item/radio/headset/syndicate{
+	keyslot = null
+	},
+/obj/item/clothing/suit/armor/vest/syndie,
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "fl" = (
 /obj/effect/turf_decal/trimline/opaque/orange/filled/corner,
 /obj/effect/turf_decal/trimline/opaque/orange/line{
@@ -1134,6 +1146,29 @@
 /obj/item/clothing/gloves/suns,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
+"gF" = (
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_access = list(150,10);
+	populate = 0
+	},
+/obj/effect/turf_decal/corner/opaque/orange{
+	dir = 10
+	},
+/obj/machinery/light/directional/south,
+/obj/item/clothing/shoes/magboots/syndie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
+/obj/item/pipe_dispenser,
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/under/syndicate/gec,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/clothing/suit/hazardvest,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/head/hardhat/red{
+	name = "hard hat"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering)
 "gI" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -1391,30 +1426,6 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew/canteen)
-"ii" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/full,
-/obj/structure/closet/secure_closet/medical3{
-	req_access = list(150, 5);
-	icon_state = "tac";
-	populate = 0
-	},
-/obj/item/clothing/under/rank/medical/doctor/red,
-/obj/item/clothing/suit/longcoat/roboblack{
-	name = "syndicate medic's black longcoat"
-	},
-/obj/item/clothing/under/cybersun/medic/skirt,
-/obj/item/clothing/under/cybersun/medic,
-/obj/item/clothing/head/helmet/m10/cybersun/trauma,
-/obj/item/storage/belt/medical,
-/obj/item/storage/belt/medical/webbing,
-/obj/item/clothing/gloves/nitrile/evil,
-/obj/item/clothing/shoes/sneakers/white,
-/obj/item/radio/headset/syndicate{
-	keyslot = null
-	},
-/obj/item/clothing/suit/armor/vest/syndie,
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "im" = (
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew/office)
@@ -1887,6 +1898,30 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
+"kP" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/full,
+/obj/structure/closet/secure_closet/medical3{
+	req_access = list(150, 5);
+	icon_state = "tac";
+	populate = 0
+	},
+/obj/item/clothing/under/rank/medical/doctor/red,
+/obj/item/clothing/suit/longcoat/roboblack{
+	name = "syndicate medic's black longcoat"
+	},
+/obj/item/clothing/under/cybersun/medic/skirt,
+/obj/item/clothing/under/cybersun/medic,
+/obj/item/clothing/head/helmet/m10/cybersun/trauma,
+/obj/item/storage/belt/medical,
+/obj/item/storage/belt/medical/webbing,
+/obj/item/clothing/gloves/nitrile/evil,
+/obj/item/clothing/shoes/sneakers/white,
+/obj/item/radio/headset/syndicate{
+	keyslot = null
+	},
+/obj/item/clothing/suit/armor/vest/syndie,
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "kR" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -1977,6 +2012,22 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plating,
 /area/ship/hallway/starboard)
+"li" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/simple/cyan/visible,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/sign/poster/nanotrasen/moth/piping{
+	desc = "This informational poster uses Safety Moth(TM) to tell atmospheric technicians correct types of piping to be used. Proper pipe placement prevents poor performance! It's signed by 'AspEv'.";
+	pixel_x = 32
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
+/obj/machinery/door/airlock/engineering{
+	req_access = list(150,10)
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/engineering/communications)
 "lj" = (
 /obj/machinery/atmospherics/components/binary/dp_vent_pump/high_volume/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -1986,21 +2037,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering/atmospherics)
-"ln" = (
-/obj/effect/turf_decal/corner/transparent/bar/diagonal,
-/obj/structure/table/wood,
-/obj/item/food/syndicake{
-	pixel_y = 10;
-	pixel_x = 3
-	},
-/obj/structure/sign/poster/nanotrasen/no_erp{
-	pixel_y = 32
-	},
-/obj/item/toy/cards/deck/syndicate{
-	pixel_x = -7
-	},
-/turf/open/floor/plasteel,
-/area/ship/crew/dorm)
 "lo" = (
 /obj/machinery/power/shieldwallgen/atmos{
 	anchored = 1;
@@ -2030,6 +2066,16 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
+"ls" = (
+/obj/structure/sign/poster/nanotrasen/moth{
+	pixel_x = 32
+	},
+/obj/structure/cable/yellow{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/turf/open/floor/wood,
+/area/ship/crew/canteen)
 "lv" = (
 /obj/machinery/atmospherics/pipe/layer_manifold/visible{
 	dir = 8
@@ -2109,6 +2155,48 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/port)
+"lW" = (
+/obj/machinery/atmospherics/pipe/simple/purple/visible,
+/obj/structure/closet/cardboard{
+	name = "mot containment box";
+	desc = "WARNING: Contains mot."
+	},
+/obj/item/trash/chips,
+/mob/living/carbon/human/species/moth{
+	name = "Secret Box Moth";
+	real_name = "Box Moth";
+	gender = "female";
+	faction = list("neutral","playerSyndicate")
+	},
+/obj/item/food/spacetwinkie{
+	pixel_y = 12;
+	pixel_x = 10
+	},
+/obj/item/food/spacetwinkie{
+	pixel_x = -9;
+	pixel_y = 8
+	},
+/obj/item/food/spacetwinkie{
+	pixel_x = 7
+	},
+/obj/item/food/spacetwinkie{
+	pixel_x = -2;
+	pixel_y = 14
+	},
+/obj/item/food/spacetwinkie{
+	pixel_y = -5;
+	pixel_x = -6
+	},
+/obj/structure/sign/poster/contraband/syndiemoth{
+	pixel_x = -32;
+	desc = "A Syndicate-commissioned poster that uses Syndie Moth(TM?) to tell the viewer to keep the nuclear authentication disk unsecured. It's signed by 'AspEv'."
+	},
+/obj/item/toy/balloon/syndicate,
+/obj/effect/turf_decal/techfloor/orange{
+	dir = 8
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering/atmospherics)
 "lY" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-9"
@@ -2442,6 +2530,30 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
+"nW" = (
+/obj/structure/sign/poster/nanotrasen/moth/meth{
+	pixel_y = -32
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -6;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/glass/beaker/large{
+	pixel_x = 8;
+	pixel_y = 1
+	},
+/obj/structure/table/glass,
+/obj/effect/turf_decal/trimline/opaque/orange/filled/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 4
+	},
+/obj/structure/sign/poster/contraband/mothpill{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "oc" = (
 /obj/structure/table,
 /obj/item/clothing/head/warden/drill{
@@ -2684,22 +2796,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
-"pt" = (
-/obj/machinery/atmospherics/pipe/manifold/green/visible{
-	dir = 4
-	},
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/sign/poster/nanotrasen/moth/delam{
-	pixel_x = 33
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/engine,
-/area/ship/engineering/engine)
 "pv" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/railing{
@@ -2739,18 +2835,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"pD" = (
-/obj/item/kirbyplants/random,
-/obj/machinery/light/directional/west,
-/obj/structure/sign/poster/nanotrasen/moth/smokey{
-	pixel_y = 32
-	},
-/obj/effect/turf_decal/corner/opaque/syndiered{
-	dir = 5
-	},
-/obj/effect/turf_decal/borderfloorblack,
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/port)
 "pE" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 4
@@ -3018,25 +3102,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/office)
-"qP" = (
-/obj/machinery/light/directional/north,
-/obj/item/kitchen/rollingpin,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/item/reagent_containers/condiment/sugar,
-/obj/structure/closet/secure_closet/freezer/kitchen,
-/obj/item/storage/fancy/egg_box,
-/obj/item/storage/fancy/egg_box,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/reagent_containers/condiment/flour,
-/obj/item/storage/box/ingredients/carnivore,
-/obj/item/storage/box/ingredients/vegetarian,
-/obj/item/reagent_containers/condiment/milk,
-/obj/item/reagent_containers/condiment/milk,
-/obj/effect/spawner/random/food_or_drink/shoalpockets,
-/obj/effect/spawner/random/food_or_drink/shoalpockets,
-/turf/open/floor/carpet/red,
-/area/ship/crew/canteen)
 "qQ" = (
 /obj/machinery/telecomms/broadcaster/preset_right{
 	network = "synd_commnet"
@@ -3186,6 +3251,25 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
+"sf" = (
+/obj/machinery/light/directional/north,
+/obj/item/kitchen/rollingpin,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/item/reagent_containers/condiment/sugar,
+/obj/structure/closet/secure_closet/freezer/kitchen,
+/obj/item/storage/fancy/egg_box,
+/obj/item/storage/fancy/egg_box,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/reagent_containers/condiment/flour,
+/obj/item/storage/box/ingredients/carnivore,
+/obj/item/storage/box/ingredients/vegetarian,
+/obj/item/reagent_containers/condiment/milk,
+/obj/item/reagent_containers/condiment/milk,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/turf/open/floor/carpet/red,
+/area/ship/crew/canteen)
 "sh" = (
 /obj/effect/turf_decal/trimline/opaque/orange/line{
 	dir = 1
@@ -3193,22 +3277,6 @@
 /obj/effect/turf_decal/trimline/opaque/orange/filled/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
-"si" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/cyan/visible,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/sign/poster/nanotrasen/moth/piping{
-	desc = "This informational poster uses Safety Moth(TM) to tell atmospheric technicians correct types of piping to be used. Proper pipe placement prevents poor performance! It's signed by 'AspEv'.";
-	pixel_x = 32
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/machinery/door/airlock/engineering{
-	req_access = list(150,10)
-	},
-/turf/open/floor/plasteel/telecomms_floor,
-/area/ship/engineering/communications)
 "sj" = (
 /obj/machinery/atmospherics/pipe/manifold/purple/visible{
 	dir = 4
@@ -3218,19 +3286,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
-"sk" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/sign/poster/nanotrasen/moth/supermatter{
-	pixel_x = 32
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/engine,
-/area/ship/engineering/engine)
 "so" = (
 /obj/structure/table,
 /obj/effect/turf_decal/corner/opaque/syndiered{
@@ -3443,6 +3498,25 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/port)
+"tM" = (
+/obj/structure/rack,
+/obj/machinery/light/directional/north,
+/obj/item/gun/ballistic/automatic/assault/g36/black{
+	pixel_y = 6
+	},
+/obj/item/gun/ballistic/automatic/assault/g36/black{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/obj/item/ammo_box/magazine/g36/drum,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security/armory)
 "tS" = (
 /obj/structure/railing{
 	dir = 10;
@@ -3729,17 +3803,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
-"vW" = (
-/obj/effect/turf_decal/trimline/opaque/orange/line{
-	dir = 1
-	},
-/obj/structure/sign/poster/nanotrasen/moth/epi{
-	pixel_x = -32
-	},
-/obj/machinery/light/directional/south,
-/obj/machinery/iv_drip,
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "wa" = (
 /obj/machinery/light/directional/south,
 /obj/effect/turf_decal/corner/opaque/syndiered{
@@ -4039,16 +4102,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
-"xq" = (
-/obj/machinery/light/directional/south,
-/obj/item/trash/chips,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/turf/open/floor/plating,
-/area/ship/engineering/atmospherics)
 "xs" = (
 /obj/machinery/power/emitter/welded{
 	dir = 1
@@ -4487,32 +4540,6 @@
 	rad_insulation = 0
 	},
 /area/ship/medical)
-"zZ" = (
-/obj/effect/turf_decal/corner/opaque/orange/three_quarters{
-	dir = 1
-	},
-/obj/item/clothing/under/syndicate/gec,
-/obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/engie,
-/obj/item/clothing/head/helmet/space/syndicate/engie,
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list(150,10);
-	populate = 0
-	},
-/obj/item/pipe_dispenser,
-/obj/structure/sign/poster/contraband/gec{
-	pixel_y = -32
-	},
-/obj/item/storage/belt/utility/syndicate,
-/obj/item/clothing/under/syndicate/gec,
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/gloves/insulated,
-/obj/item/clothing/head/hardhat/red{
-	name = "hard hat"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering)
 "Af" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output{
 	dir = 8
@@ -4887,6 +4914,19 @@
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
+"Cf" = (
+/obj/effect/turf_decal/corner/opaque/orange{
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
+	pixel_x = 32
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering)
 "Cj" = (
 /obj/structure/table/wood,
 /obj/item/paper_bin/carbon{
@@ -5080,32 +5120,6 @@
 /obj/structure/closet/crate/bin,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
-"Dh" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/full,
-/obj/structure/closet/secure_closet/medical3{
-	req_access = list(150, 5);
-	icon_state = "tac";
-	populate = 0
-	},
-/obj/machinery/light/directional/north,
-/obj/item/clothing/under/rank/medical/doctor/red,
-/obj/item/clothing/suit/longcoat/roboblack{
-	name = "syndicate medic's black longcoat"
-	},
-/obj/item/clothing/under/cybersun/medic/skirt,
-/obj/item/clothing/under/cybersun/medic,
-/obj/item/clothing/head/helmet/m10/cybersun/trauma,
-/obj/item/antag_spawner/nuke_ops/borg_tele/medical/unlocked,
-/obj/item/storage/belt/medical,
-/obj/item/storage/belt/medical/webbing,
-/obj/item/clothing/gloves/nitrile/evil,
-/obj/item/clothing/shoes/sneakers/white,
-/obj/item/radio/headset/syndicate{
-	keyslot = null
-	},
-/obj/item/clothing/suit/armor/vest/syndie,
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "Dk" = (
 /obj/effect/turf_decal/corner/opaque/orange{
 	dir = 5
@@ -5638,6 +5652,21 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central1,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
+"Ga" = (
+/obj/effect/turf_decal/corner/transparent/bar/diagonal,
+/obj/structure/table/wood,
+/obj/item/food/syndicake{
+	pixel_y = 10;
+	pixel_x = 3
+	},
+/obj/structure/sign/poster/nanotrasen/no_erp{
+	pixel_y = 32
+	},
+/obj/item/toy/cards/deck/syndicate{
+	pixel_x = -7
+	},
+/turf/open/floor/plasteel,
+/area/ship/crew/dorm)
 "Gg" = (
 /obj/effect/decal/cleanable/glass/plasma{
 	pixel_y = -6
@@ -6184,6 +6213,20 @@
 /obj/machinery/holopad/emergency/medical,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/medical)
+"IJ" = (
+/obj/structure/closet/secure_closet/wall/directional/east,
+/obj/item/melee/knife/kitchen,
+/obj/item/cutting_board,
+/obj/item/clothing/under/suit/waiter/syndicate,
+/obj/item/clothing/suit/hazardvest,
+/obj/item/clothing/under/syndicate,
+/obj/item/clothing/shoes/sneakers/black,
+/obj/item/radio/headset/syndicate{
+	keyslot = null
+	},
+/obj/item/reagent_containers/food/drinks/shaker,
+/turf/open/floor/carpet/red,
+/area/ship/crew/canteen)
 "IN" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
@@ -6659,48 +6702,6 @@
 /obj/item/clothing/head/soft/black,
 /turf/open/floor/plasteel,
 /area/ship/crew/dorm)
-"LH" = (
-/obj/machinery/atmospherics/pipe/simple/purple/visible,
-/obj/structure/closet/cardboard{
-	name = "mot containment box";
-	desc = "WARNING: Contains mot."
-	},
-/obj/item/trash/chips,
-/mob/living/carbon/human/species/moth{
-	name = "Secret Box Moth";
-	real_name = "Box Moth";
-	gender = "female";
-	faction = list("neutral","playerSyndicate")
-	},
-/obj/item/food/spacetwinkie{
-	pixel_y = 12;
-	pixel_x = 10
-	},
-/obj/item/food/spacetwinkie{
-	pixel_x = -9;
-	pixel_y = 8
-	},
-/obj/item/food/spacetwinkie{
-	pixel_x = 7
-	},
-/obj/item/food/spacetwinkie{
-	pixel_x = -2;
-	pixel_y = 14
-	},
-/obj/item/food/spacetwinkie{
-	pixel_y = -5;
-	pixel_x = -6
-	},
-/obj/structure/sign/poster/contraband/syndiemoth{
-	pixel_x = -32;
-	desc = "A Syndicate-commissioned poster that uses Syndie Moth(TM?) to tell the viewer to keep the nuclear authentication disk unsecured. It's signed by 'AspEv'."
-	},
-/obj/item/toy/balloon/syndicate,
-/obj/effect/turf_decal/techfloor/orange{
-	dir = 8
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering/atmospherics)
 "LX" = (
 /obj/machinery/power/shuttle/engine/electric{
 	dir = 4
@@ -6860,6 +6861,16 @@
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
+"Nd" = (
+/obj/machinery/light/directional/south,
+/obj/item/trash/chips,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
+/turf/open/floor/plating,
+/area/ship/engineering/atmospherics)
 "Nh" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -7414,16 +7425,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/janitor)
-"Qv" = (
-/obj/structure/sign/poster/nanotrasen/moth{
-	pixel_x = 32
-	},
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/turf/open/floor/wood,
-/area/ship/crew/canteen)
 "Qx" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
 	dir = 1
@@ -7500,19 +7501,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
-"QY" = (
-/obj/effect/turf_decal/corner/opaque/orange{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/sign/poster/nanotrasen/moth/hardhats{
-	pixel_x = 32
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering)
 "Rc" = (
 /obj/machinery/atmospherics/pipe/simple/cyan/visible,
 /obj/machinery/light/directional/east,
@@ -7573,25 +7561,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/aft)
-"Rv" = (
-/obj/structure/rack,
-/obj/machinery/light/directional/north,
-/obj/item/gun/ballistic/automatic/assault/g36{
-	pixel_y = 6
-	},
-/obj/item/gun/ballistic/automatic/assault/g36{
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/obj/item/ammo_box/magazine/g36/drum,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security/armory)
 "Ry" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -7914,30 +7883,6 @@
 /obj/structure/tank_dispenser/oxygen,
 /turf/open/floor/pod/dark,
 /area/ship/cargo)
-"SS" = (
-/obj/structure/sign/poster/nanotrasen/moth/meth{
-	pixel_y = -32
-	},
-/obj/item/reagent_containers/glass/beaker{
-	pixel_x = -6;
-	pixel_y = 2
-	},
-/obj/item/reagent_containers/glass/beaker/large{
-	pixel_x = 8;
-	pixel_y = 1
-	},
-/obj/structure/table/glass,
-/obj/effect/turf_decal/trimline/opaque/orange/filled/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/orange/line{
-	dir = 4
-	},
-/obj/structure/sign/poster/contraband/mothpill{
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "ST" = (
 /obj/machinery/atmospherics/pipe/simple/orange/visible{
 	dir = 4
@@ -8270,6 +8215,19 @@
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
+"UY" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/sign/poster/nanotrasen/moth/supermatter{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/engine,
+/area/ship/engineering/engine)
 "Vj" = (
 /obj/item/radio/intercom/directional/west,
 /obj/effect/turf_decal/corner/opaque/syndiered{
@@ -8283,6 +8241,32 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/pod/light,
 /area/ship/cargo)
+"Vm" = (
+/obj/effect/turf_decal/corner/opaque/orange/three_quarters{
+	dir = 1
+	},
+/obj/item/clothing/under/syndicate/gec,
+/obj/item/clothing/shoes/magboots/syndie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
+/obj/item/clothing/head/helmet/space/syndicate/engie,
+/obj/structure/closet/secure_closet/engineering_personal{
+	req_access = list(150,10);
+	populate = 0
+	},
+/obj/item/pipe_dispenser,
+/obj/structure/sign/poster/contraband/gec{
+	pixel_y = -32
+	},
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/under/syndicate/gec,
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/clothing/suit/hazardvest,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/head/hardhat/red{
+	name = "hard hat"
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering)
 "Vu" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input{
 	dir = 4
@@ -8502,6 +8486,22 @@
 	},
 /turf/open/floor/engine/plasma,
 /area/ship/engineering/atmospherics)
+"Wu" = (
+/obj/machinery/atmospherics/pipe/manifold/green/visible{
+	dir = 4
+	},
+/obj/effect/turf_decal/industrial/warning{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/sign/poster/nanotrasen/moth/delam{
+	pixel_x = 33
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/engine,
+/area/ship/engineering/engine)
 "Wy" = (
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
@@ -8728,6 +8728,18 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
+"XS" = (
+/obj/item/kirbyplants/random,
+/obj/machinery/light/directional/west,
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
+	pixel_y = 32
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered{
+	dir = 5
+	},
+/obj/effect/turf_decal/borderfloorblack,
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/port)
 "XU" = (
 /obj/effect/turf_decal/corner/opaque/syndiered{
 	dir = 5
@@ -8965,29 +8977,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
-"Zc" = (
-/obj/structure/closet/secure_closet/engineering_personal{
-	req_access = list(150,10);
-	populate = 0
-	},
-/obj/effect/turf_decal/corner/opaque/orange{
-	dir = 10
-	},
-/obj/machinery/light/directional/south,
-/obj/item/clothing/shoes/magboots/syndie,
-/obj/item/clothing/head/helmet/space/syndicate/engie,
-/obj/item/clothing/head/helmet/space/syndicate/engie,
-/obj/item/pipe_dispenser,
-/obj/item/storage/belt/utility/syndicate,
-/obj/item/clothing/under/syndicate/gec,
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/gloves/insulated,
-/obj/item/clothing/head/hardhat/red{
-	name = "hard hat"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/engineering)
 "Zg" = (
 /obj/effect/turf_decal/industrial/warning{
 	dir = 6
@@ -9013,6 +9002,17 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/bridge)
+"Zn" = (
+/obj/effect/turf_decal/trimline/opaque/orange/line{
+	dir = 1
+	},
+/obj/structure/sign/poster/nanotrasen/moth/epi{
+	pixel_x = -32
+	},
+/obj/machinery/light/directional/south,
+/obj/machinery/iv_drip,
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "Zt" = (
 /obj/machinery/cryopod/syndicate{
 	dir = 4
@@ -9228,7 +9228,7 @@ wM
 Nw
 tU
 aj
-LH
+lW
 Hk
 iC
 sj
@@ -9272,7 +9272,7 @@ iL
 Fm
 DK
 IU
-si
+li
 Rj
 YB
 gv
@@ -9364,7 +9364,7 @@ bY
 lj
 aE
 NL
-xq
+Nd
 Nw
 dQ
 Af
@@ -9513,11 +9513,11 @@ MC
 JA
 YL
 BM
-pt
+Wu
 Da
 TY
 ig
-sk
+UY
 Op
 sI
 OP
@@ -9541,7 +9541,7 @@ sx
 Qd
 bM
 zH
-zZ
+Vm
 sx
 hN
 IT
@@ -9576,7 +9576,7 @@ sx
 fz
 zK
 qK
-Zc
+gF
 sx
 RG
 BV
@@ -9645,7 +9645,7 @@ mp
 sx
 wP
 oC
-QY
+Cf
 Ko
 rd
 Ow
@@ -9745,7 +9745,7 @@ Bj
 "}
 (19,1,1) = {"
 xj
-qP
+sf
 rx
 Kx
 ih
@@ -9838,7 +9838,7 @@ ea
 BG
 tY
 SC
-Rv
+tM
 jx
 TC
 on
@@ -9851,12 +9851,12 @@ Bj
 (22,1,1) = {"
 xj
 wb
-aG
+IJ
 VO
 yl
 Ky
 dU
-Qv
+ls
 UF
 AL
 lT
@@ -9994,7 +9994,7 @@ Zt
 Yn
 lG
 Wd
-ln
+Ga
 Ql
 bV
 JM
@@ -10137,7 +10137,7 @@ pH
 GP
 SR
 Bw
-pD
+XS
 Yz
 hr
 ZO
@@ -10246,7 +10246,7 @@ KA
 Wy
 oj
 eC
-ii
+kP
 XU
 yd
 UH
@@ -10254,7 +10254,7 @@ xu
 nS
 YJ
 jM
-vW
+Zn
 eC
 JY
 gI
@@ -10281,7 +10281,7 @@ cX
 dl
 bR
 eC
-Dh
+eT
 st
 Jy
 fT
@@ -10465,7 +10465,7 @@ nb
 nb
 nb
 VM
-SS
+nW
 eC
 dk
 ka
