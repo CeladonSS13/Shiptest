@@ -70,7 +70,7 @@
 
 /obj/structure/showcase/mecha/marauder
 	name = "combat exosuit exhibit"
-	desc = "A stand with an empty old Nanotrasen Corporation combat exosuit bolted to it. It is described as the premier unit used to defend corporate interests and employees." // [Celadon-edit]
+	desc = "A stand with an empty old Nanotrasen Corporation combat exosuit bolted to it. It is described as the premier unit used to defend corporate interests and employees." // [CELADON-EDIT]
 	icon = 'icons/mecha/mecha.dmi'
 	icon_state = "marauder"
 
@@ -81,14 +81,14 @@
 	icon_state = "firefighter"
 
 /obj/structure/showcase/machinery/implanter
-	name = "\improper Nanotrasen automated mindshield implanter exhibit" // [Celadon-edit]
-	desc = "A flimsy model of a standard Nanotrasen automated mindshield implant machine. With secure positioning harnesses and a robotic surgical injector, brain damage and other serious medical anomalies are now up to 60% less likely!" // [Celadon-edit]
+	name = "\improper Nanotrasen automated mindshield implanter exhibit" // [CELADON-EDIT]
+	desc = "A flimsy model of a standard Nanotrasen automated mindshield implant machine. With secure positioning harnesses and a robotic surgical injector, brain damage and other serious medical anomalies are now up to 60% less likely!" // [CELADON-EDIT]
 	icon = 'icons/obj/machines/implantchair.dmi'
 	icon_state = "implantchair"
 
 /obj/structure/showcase/machinery/microwave
-	name = "\improper Nanotrasen-brand microwave" // [Celadon-edit]
-	desc = "The famous Nanotrasen-brand microwave, the multi-purpose cooking appliance every household needs! This one appears to be drawn onto a cardboard box." // [Celadon-edit]
+	name = "\improper Nanotrasen-brand microwave" // [CELADON-EDIT]
+	desc = "The famous Nanotrasen-brand microwave, the multi-purpose cooking appliance every household needs! This one appears to be drawn onto a cardboard box." // [CELADON-EDIT]
 	icon = 'icons/obj/machines/kitchen.dmi'
 	icon_state = "mw"
 
@@ -100,11 +100,11 @@
 
 /obj/structure/showcase/perfect_employee
 	name = "'Perfect Man' employee exhibit"
-	desc = "A stand with a model of the perfect Nanotrasen Employee bolted to it. Signs indicate it is robustly genetically engineered, as well as being ruthlessly loyal." // [Celadon-edit]
+	desc = "A stand with a model of the perfect Nanotrasen Employee bolted to it. Signs indicate it is robustly genetically engineered, as well as being ruthlessly loyal." // [CELADON-EDIT]
 
 /obj/structure/showcase/machinery/tv
-	name = "\improper Nanotrasen corporate newsfeed" // [Celadon-edit]
-	desc = "A slightly battered looking TV. Various Nanotrasen infomercials play on a loop, accompanied by a jaunty tune." // [Celadon-edit]
+	name = "\improper Nanotrasen corporate newsfeed" // [CELADON-EDIT]
+	desc = "A slightly battered looking TV. Various Nanotrasen infomercials play on a loop, accompanied by a jaunty tune." // [CELADON-EDIT]
 	icon = 'icons/obj/machines/computer.dmi'
 	icon_state = "television"
 

@@ -138,7 +138,7 @@
 		to provide ample protection to the user where the plating doesn't, with an illegal onboard electric powered \
 		ablative shield module to provide resistance against conventional energy firearms. \
 		A small tag hangs off of it reading; 'Property of the Gorlex Marauders, with assistance from Cybersun Industries. \
-		All rights reserved, tampering with suit will void Warranty."
+		All rights reserved, tampering with suit will void warranty."
 
 /datum/mod_theme/elite
 	// module_blacklist = list(/obj/item/mod/module/armor_booster/civilian)

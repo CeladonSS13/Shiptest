@@ -137,7 +137,7 @@
 
 /obj/item/clothing/shoes/workboots
 	name = "work boots"
-	desc = "General-issue engineering lace-up work boots for the especially blue-collar." // [Celadon-edit]
+	desc = "General-issue engineering lace-up work boots for the especially blue-collar." // [CELADON-EDIT]
 	icon_state = "workboots"
 	item_state = "jackboots"
 	lefthand_file = 'icons/mob/inhands/equipment/security_lefthand.dmi'

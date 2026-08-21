@@ -187,14 +187,14 @@
 
 /obj/item/clothing/under/rank/civilian/janitor
 	name = "janitor's jumpsuit"
-	desc = "A general mass-produced janitor uniform. It has minor protection from biohazards." // [Celadon-edit]
+	desc = "A general mass-produced janitor uniform. It has minor protection from biohazards." // [CELADON-EDIT]
 	icon_state = "janitor"
 	roll_down = TRUE
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0,"energy" = 0, "bomb" = 0, "bio" = 10, "rad" = 0, "fire" = 0, "acid" = 0)
 
 /obj/item/clothing/under/rank/civilian/janitor/skirt
 	name = "janitor's jumpskirt"
-	desc = "A general mass-produced janitor skirt. It has minor protection from biohazards." // [Celadon-edit]
+	desc = "A general mass-produced janitor skirt. It has minor protection from biohazards." // [CELADON-EDIT]
 	icon_state = "janitor_skirt"
 	body_parts_covered = CHEST|GROIN|ARMS
 	roll_down = TRUE // i am surprised this has a rolldown state
