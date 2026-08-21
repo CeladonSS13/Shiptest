@@ -229,43 +229,95 @@
 	desc = "A low powered turret designed by the Gorlex Maurauders. Effectively weaponizes mining equipment." //no fucking icw
 
 // MARK: NANOTRASEN
-//Warra ship turrets
+//nanotrasen ship turrets
 
-/obj/machinery/porta_turret/ship/warra
-	stun_projectile = /obj/projectile/beam/disabler/warra
-	lethal_projectile = /obj/projectile/beam/laser/warra
+/obj/machinery/porta_turret/ship/nanotrasen
+	name = "Sharplite Defense Turret"
+	desc = "A cheap and effective turret designed by Sharplite and purchased and installed on most vessels of the Nanotrasen-alliance Vessels."
+	faction = list(FACTION_PLAYER_NANOTRASEN, FACTION_TURRET)
+	max_integrity = 160
+	integrity_failure = 0.6
+	icon_state = "standard_lethal"
+	base_icon_state = "standard"
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+	stun_projectile_sound = 'sound/weapons/taser2.ogg'
+	shot_delay = 10
+	scan_range = 10
 
-/obj/machinery/porta_turret/ship/warra/light
-	stun_projectile = /obj/projectile/beam/disabler/warra/weak
-	lethal_projectile = /obj/projectile/beam/laser/warra/weak
+/obj/machinery/porta_turret/ship/nanotrasen/light
+	name = "Sharplite LDS"
+	desc = "A cheap and effective 'defensive system' designed by Sharplite for installation on Nanotrasen vessels."
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+	stun_projectile_sound = 'sound/weapons/taser2.ogg'
 
-/obj/machinery/porta_turret/ship/warra/heavy
-	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
-	lethal_projectile = /obj/projectile/beam/laser/warra/heavylaser
-	stun_projectile_sound = 'sound/weapons/wave.ogg'
+/obj/machinery/porta_turret/ship/nanotrasen/heavy
+	name = "Sharplite Defense Cannon"
+	desc = "A heavy laser mounting designed by Sharplite for usage on Nanotrasen vessels."
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
+	lethal_projectile_sound = 'sound/weapons/lasercannonfire.ogg'
+	max_integrity = 250
 
-/obj/machinery/porta_turret/ship/warra/pulse
-	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
-	stun_projectile_sound = 'sound/weapons/wave.ogg'
+/obj/machinery/porta_turret/ship/nanotrasen/pulse
+	name = "Sharplite Pulse Cannon"
+	desc = "A pulse cannon mounting designed by Sharplite. Not sold to any purchasers and exclusively used on Nanotrasen Vessels."
+	lethal_projectile = /obj/projectile/beam/pulse
+	lethal_projectile_sound = 'sound/weapons/gun/laser/heavy_laser.ogg'
+	max_integrity = 250
 
-//Warra derelict turrets
-// removes plasma projectiles
+//nanotrasen derelict turrets
 
-/obj/machinery/porta_turret/ruin/warra
-	stun_projectile = /obj/projectile/beam/disabler/warra
-	lethal_projectile = /obj/projectile/beam/laser/warra
+/obj/machinery/porta_turret/ruin/nanotrasen
+	name = "Sharplite Defense Turret"
+	desc = "A cheap and effective turret designed by Sharplite and purchased and installed on most Nanotrasen Vessels."
+	faction = list(FACTION_PLAYER_NANOTRASEN, "turret")
+	max_integrity = 160
+	integrity_failure = 0.6
+	icon_state = "standard_lethal"
+	base_icon_state = "standard"
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+	stun_projectile_sound = 'sound/weapons/taser2.ogg'
+	shot_delay = 10
+	scan_range = 10
 
-/obj/machinery/porta_turret/ruin/warra/light
-	stun_projectile = /obj/projectile/beam/disabler/warra/weak
-	lethal_projectile = /obj/projectile/beam/laser/warra/weak
+/obj/machinery/porta_turret/ruin/nanotrasen/light
+	name = "Sharplite LDS"
+	desc = "A cheap and effective 'defensive system' designed by Sharplite for installation on Nanotrasen vessels."
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+	stun_projectile_sound = 'sound/weapons/taser2.ogg'
 
-/obj/machinery/porta_turret/ruin/warra/light/sniper
-	stun_projectile = /obj/projectile/beam/disabler/warra/weak
-	lethal_projectile = /obj/projectile/beam/laser/warra/weak
+/obj/machinery/porta_turret/ruin/nanotrasen/light/sniper
+	name = "Sharplite Long-Range LDS"
+	desc = "A long-ranged 'defensive system' designed by Sharplite for installation on Nanotrasen stations."
+	stun_projectile = /obj/projectile/beam/disabler/nanotrasen/weak
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/weak
+	lethal_projectile_sound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+	stun_projectile_sound = 'sound/weapons/taser2.ogg'
+	shot_delay = 15
+	burst_size = 2
+	burst_delay = 3
 
-/obj/machinery/porta_turret/ruin/warra/heavy
-	stun_projectile = /obj/projectile/beam/disabler/warra/heavylaser
-	lethal_projectile = /obj/projectile/beam/laser/warra/heavylaser
+/obj/machinery/porta_turret/ruin/nanotrasen/heavy
+	name = "Sharplite Defense Cannon"
+	desc = "A heavy laser mounting designed by Sharplite for usage on Nanotrasen vessels."
+	lethal_projectile = /obj/projectile/beam/laser/nanotrasen/heavylaser
+	lethal_projectile_sound = 'sound/weapons/lasercannonfire.ogg'
+	max_integrity = 250
+
+/obj/machinery/porta_turret/ship/nanotrasen/light/mining_base
+	lethal = TRUE
+
+/obj/machinery/porta_turret/ship/nanotrasen/light/mining_base/Initialize()
+	. = ..()
+	take_damage(rand(120, 150),BRUTE)
+
 
 //Pirate turrets - даем фракцию пиратов вместо фронтиров
 

@@ -21,9 +21,9 @@
 	faction = /datum/faction/inteq
 	crate_type = /obj/structure/closet/crate/secure/gear/inteq
 
-/datum/supply_pack/faction/warra
-	faction = /datum/faction/warra
-	crate_type = /obj/structure/closet/crate/secure/gear/warra
+/datum/supply_pack/faction/nanotrasen
+	faction = /datum/faction/nanotrasen
+	crate_type = /obj/structure/closet/crate/secure/gear/nanotrasen
 
 // Создаём ещё одну степень защиты от нежелательного доступа в карго
 
@@ -36,5 +36,5 @@
 /obj/structure/closet/crate/secure/gear/inteq
 	req_access = list(ACCESS_OUTPOST_FACTION_INTEQ)
 
-/obj/structure/closet/crate/secure/gear/warra
+/obj/structure/closet/crate/secure/gear/nanotrasen
 	req_access = list(ACCESS_OUTPOST_FACTION_NT)

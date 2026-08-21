@@ -423,13 +423,13 @@
 	charge_account = ACCOUNT_IND_4
 
 /*
-	MARK: Warra
+	MARK: Nanotrasen
 */
-/obj/machinery/computer/cargo/faction/warra
-	name = "Warra outpost console"
-	desc = "That outpost console belongs to Warra."
+/obj/machinery/computer/cargo/faction/nanotrasen
+	name = "Nanotrasen outpost console"
+	desc = "That outpost console belongs to Nanotrasen."
 	icon_screen = "idcentcom"
-	faction_theme = "warra"
+	faction_theme = "nt"
 	circuit = /obj/item/circuitboard/computer/cargo
 	light_color = LIGHT_COLOR_DARK_BLUE
 
@@ -440,9 +440,9 @@
 
 	charge_account = ACCOUNT_NTN
 
-/obj/machinery/computer/cargo/faction/warra/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/warra)
+/obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
+	supply_pack_data = generate_faction_pack_data(/datum/faction/nanotrasen)
 
-/obj/machinery/computer/cargo/faction/warra/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/warra)
+/obj/machinery/computer/cargo/faction/nanotrasen/ui_static_data(mob/user)
+	var/list/data = faction_ui_static_data(user, /datum/faction/nanotrasen)
 	return data

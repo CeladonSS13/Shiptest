@@ -59,16 +59,19 @@
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
 
-// Warra Pistols
+// Nanotrasen Pistols
 
 /obj/item/gun/ballistic/automatic/pistol/challenger
 	name = "VI PS9 Challenger"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/pistol/champion
 	name = "VI PHB Champion"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/pistol/podium
 	name = "VI PH46 Podium"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 //########### SMGS ###########//
 /obj/item/gun/ballistic/automatic/smg/cm5
@@ -102,20 +105,20 @@
 		)
 	unique_reskin_changes_inhand = TRUE
 
-// Warra SMGs
+// Nanotrasen SMGs
 
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	name = "\improper Saber SMG"
 	desc = "A full-auto 9x18mm submachine gun, designated 'TPG SABR'. Has a threaded barrel for suppressors and a folding stock. This odd gun feels really outdated..."
-	manufacturer = MANUFACTURER_WARRA_OLD
+	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 
 /obj/item/gun/ballistic/automatic/smg/expedition
 	name = "\improper VI SGL9 Expedition"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/smg/resolution
 	name = "\improper VI PD46 Resolution"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/smg/resolution/inteq
 	desc = "A seized VI PD46, modified to Inteq's requirements and standards. Awkward to reload, though has a powerful cartridge with good ergonomics and accuracy."
@@ -249,11 +252,11 @@
 
 	manufacturer = MANUFACTURER_SOLARARMORIES
 
-// Warra Shotguns & Revolvers
+// Nanotrasen Shotguns & Revolvers
 
 /obj/item/gun/ballistic/shotgun/automatic/negotiator
 	name = "VI AST12 Negotiator"
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/revolver/rhino
 	name = "VI Rhino"

@@ -83,7 +83,7 @@
 	icon_state = "diamonddrill"
 	item_state = "diamonddrill"
 	toolspeed = 0.2
-	desc = "EXOCOM's improvement on the Makosso-Warra autodrill design, featuring a premium diamond cutting head. Yours is the drill that will pierce the heavens!"
+	desc = "EXOCOM's improvement on the Nanotrasen autodrill design, featuring a premium diamond cutting head. Yours is the drill that will pierce the heavens!" // [CELADON-EDIT]
 	force = 20
 	custom_materials = list(/datum/material/diamond=2000)
 
@@ -99,7 +99,7 @@
 	toolspeed = 0.1 //the epitome of powertools. extremely fast mining
 	usesound = 'sound/weapons/sonic_jackhammer.ogg'
 	hitsound = 'sound/weapons/sonic_jackhammer.ogg'
-	desc = "The epitome of conventional rock-smashing technology, invented by Makosso-Warra and cost-optimized by EXOCOM. Smashes rocks, objects, and unfortunate wildlife with sonic blasts."
+	desc = "The epitome of conventional rock-smashing technology, invented by Nanotrasen and cost-optimized by EXOCOM. Smashes rocks, objects, and unfortunate wildlife with sonic blasts." // [CELADON-EDIT]
 	force = 20
 	armour_penetration = 15
 	attack_verb = list("blasted", "smashed", "slammed", "hammered")

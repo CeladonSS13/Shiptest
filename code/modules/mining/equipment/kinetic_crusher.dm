@@ -6,8 +6,10 @@
 	lefthand_file = 'icons/mob/inhands/weapons/hammers_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/weapons/hammers_righthand.dmi'
 	name = "proto-magnetic crusher"
-	desc = "A multipurpose disembarkation and self-defense tool designed by EXOCOM using an incomplete Makosso-Warra prototype. \
+// [CELADON-EDIT]
+	desc = "A multipurpose disembarkation and self-defense tool designed by EXOCOM using an incomplete Nanotrasen prototype. \
 	Found in the grime-stained hands of wannabee explorers across the frontier, it cuts rock and hews flora using magnetic osscilation and a heavy cleaving edge."
+// [/CELADON-EDIT]
 	force = 0 //You can't hit stuff unless it's wielded
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK

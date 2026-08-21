@@ -128,7 +128,7 @@
 
 /obj/item/storage/backpack/captain
 	name = "captain's backpack"
-	desc = "It's a special backpack made exclusively for Makosso-Warra officers."
+	desc = "It's a special backpack made exclusively for Nanotrasen officers." // [CELADON-EDIT]
 	icon_state = "captainpack"
 	item_state = "captainpack"
 
@@ -300,7 +300,7 @@
 
 /obj/item/storage/backpack/satchel/cap
 	name = "captain's satchel"
-	desc = "An exclusive satchel for Makosso-Warra officers."
+	desc = "An exclusive satchel for Nanotrasen officers." // [CELADON-EDIT]
 	icon_state = "satchel-cap"
 	item_state = "satchel-cap"
 

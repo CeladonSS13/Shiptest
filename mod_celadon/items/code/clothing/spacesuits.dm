@@ -110,9 +110,9 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/jani
 	name = "special forces janitorial hardsuit"
-	desc = "The standard issue hardsuit of the Warra special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
-	icon_state = "spec_janitor"
-	item_state = "spec_janitor"
+	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
+	icon_state = "ert_janitor"
+	item_state = "ert_janitor"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani
 	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 100, "wound" = 20)
 	slowdown = 0.2

@@ -104,8 +104,8 @@
 		"elysium-brigade-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_brigade_stamp.png',
 		"elysium-republic-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_republic_stamp.png',
 		"elysium-avanpost-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/elysium_outpost_stamp.png',
-		"warra-cent-command-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/warra_central_command_stamp.png',
-		"warra-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/warra_captain_stamp.png',
+		"nanotrasen-cent-command-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/nanotrasen_central_command_stamp.png',
+		"nanotrasen-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/nanotrasen_captain_stamp.png',
 		"syndicate-captain-stamp" = 'mod_celadon/_storage_icons/icons/assets/png/syndicate_captain_stamp.png',
 		"stamp-df" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-df_generic.png',
 		"stamp-df_captain" = 'mod_celadon/_storage_icons/icons/assets/png/large_stamp-df_captain.png',
@@ -494,7 +494,7 @@
 // [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем asset для логотипов фракций
 /datum/asset/simple/faction_logos
 	assets = list(
-		"warra.png" = 'mod_celadon/_storage_icons/icons/assets/logo/warra.png',
+		"nanotrasen.png" = 'mod_celadon/_storage_icons/icons/assets/logo/nanotrasen.png',
 		"syndicate.png" = 'mod_celadon/_storage_icons/icons/assets/logo/syndicate.png',
 		"inteq.png" = 'mod_celadon/_storage_icons/icons/assets/logo/inteq.png',
 		"solfed.png" = 'mod_celadon/_storage_icons/icons/assets/logo/solfed.png',

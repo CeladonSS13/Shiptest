@@ -16,7 +16,7 @@
 	show_magazine_on_sprite = TRUE
 	show_magazine_on_sprite_ammo = TRUE
 	empty_indicator = TRUE
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/wt550/no_mag
@@ -24,7 +24,7 @@
 
 /obj/item/gun/ballistic/automatic/smg/vector
 	name = "\improper Vector carbine"
-	desc = "An outdated police carbine based on an old design originating from earth, Solar Federation. Modified by early Warra and used as an uncommon security SMG. It's also popular among pirates. Chambered in 9x18mm."
+	desc = "An outdated police carbine based on an old design originating from earth, Solar Federation. Modified by early Nanotrasen and used as an uncommon security SMG. It's also popular among pirates. Chambered in 9x18mm."
 	//desc = "A police carbine based on a pre-Night of Fire SMG design. Most of the complex workings have been removed for reliability. Chambered in 9x18mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'

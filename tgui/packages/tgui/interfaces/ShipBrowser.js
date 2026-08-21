@@ -108,8 +108,8 @@ export const ShipBrowser = (props, context) => {
   // Функция для определения темы окна по фракции
   const getWindowTheme = (factionName) => {
     switch (factionName) {
-      case 'warra':
-        return 'warra';
+      case 'nanotrasen':
+        return 'nt';
       case 'syndicate':
         return 'syndicate';
       case 'inteq':
