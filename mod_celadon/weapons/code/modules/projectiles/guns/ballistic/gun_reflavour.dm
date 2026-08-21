@@ -63,12 +63,15 @@
 
 /obj/item/gun/ballistic/automatic/pistol/challenger
 	name = "VI PS9 Challenger"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/pistol/champion
 	name = "VI PHB Champion"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 /obj/item/gun/ballistic/automatic/pistol/podium
 	name = "VI PH46 Podium"
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 
 //########### SMGS ###########//
 /obj/item/gun/ballistic/automatic/smg/cm5

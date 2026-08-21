@@ -16,7 +16,7 @@
 	show_magazine_on_sprite = TRUE
 	show_magazine_on_sprite_ammo = TRUE
 	empty_indicator = TRUE
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/wt550/no_mag
