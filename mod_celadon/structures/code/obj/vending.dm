@@ -15,8 +15,8 @@
 		/obj/item/clothing/neck/cloak/nanotrasen/cape/command = 2,
 		/obj/item/clothing/neck/cloak/nanotrasen/cape/captain = 2,
 		/obj/item/clothing/head/nanotrasen/surgical/blue = 2,
-		/obj/item/clothing/head/caphat/nt = 2,
-		/obj/item/clothing/head/hopcap/nt = 2)
+		/obj/item/clothing/head/caphat/nanotrasen = 2,
+		/obj/item/clothing/head/hopcap/nanotrasen = 2)
 	premium = list(
 		/obj/item/clothing/head/beret/dominia = 2,
 		/obj/item/clothing/head/beret/dominia/army = 2,
