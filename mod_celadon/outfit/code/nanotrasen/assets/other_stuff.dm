@@ -189,4 +189,5 @@
 /obj/item/gun_voucher/nanotrasen
 	name = "Vigilitas weapon voucher"
 	desc = "A token used to redeem equipment from your nearest marine vendor."
-	icon_state = "nanotrasen-voucher" //redo later
+	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
+	icon_state = "nanotrasen-voucher"

@@ -35,8 +35,8 @@
 
 /obj/item/storage/box/traitorbundledebug
 	name = "box of traitor"
-	icon_state = "syndiebox"
-	illustration = "writing_syndie"
+	icon_state = "secbox"
+	illustration = "writing_warning"
 
 /obj/item/storage/box/traitorbundledebug/PopulateContents()
 	var/static/items_inside = list(
@@ -107,7 +107,8 @@
 
 /obj/item/storage/box/debugtools
 	name = "box of debug tools"
-	icon_state = "syndiebox"
+	icon_state = "secbox"
+	illustration = "heart"
 
 /obj/item/storage/box/debugtools/PopulateContents()
 	var/static/items_inside = list(

@@ -481,25 +481,20 @@
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/solgov
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/large
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/kalix
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/pgf
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/sharplite/mini
 	name = "miniature plasma power cell"
 	desc = "A compact weapon cell used exclusively by Sharplite Plasma weaponry. It holds less charge and is intended for usage in energy handguns."
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 // Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно
