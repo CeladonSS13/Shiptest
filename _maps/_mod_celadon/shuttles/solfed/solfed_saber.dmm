@@ -175,7 +175,7 @@
 /area/ship/medical/surgery)
 "bR" = (
 /obj/machinery/light/directional/west,
-/obj/structure/sign/poster/official/safety_eye_protection{
+/obj/structure/sign/poster/nanotrasen/safety_eye_protection{
 	pixel_x = -32
 	},
 /obj/structure/table/reinforced{
@@ -847,7 +847,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/sign/poster/official/help_others{
+/obj/structure/sign/poster/nanotrasen/help_others{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -1820,7 +1820,7 @@
 	icon_state = "4-8"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/noticeboard/staff{
+/obj/structure/noticeboard{
 	dir = 1;
 	pixel_y = -30
 	},
@@ -1843,7 +1843,7 @@
 	pixel_y = 0
 	},
 /obj/effect/turf_decal/box/red,
-/obj/structure/sign/poster/official/help_others{
+/obj/structure/sign/poster/nanotrasen/help_others{
 	pixel_y = 32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -3060,7 +3060,7 @@
 /obj/structure/sign/warning/chemdiamond{
 	pixel_x = -32
 	},
-/obj/structure/sign/poster/official/cleanliness{
+/obj/structure/sign/poster/nanotrasen/cleanliness{
 	pixel_y = 32
 	},
 /obj/structure/table/reinforced{
@@ -3323,7 +3323,7 @@
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/structure/cable,
-/obj/structure/sign/poster/official/moth/hardhats{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_x = 32
 	},
 /obj/machinery/light_switch{
@@ -4537,7 +4537,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/sign/poster/official/cohiba_robusto_ad{
+/obj/structure/sign/poster/nanotrasen/cohiba_robusto_ad{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/siding/thinplating/dark,
@@ -4891,7 +4891,7 @@
 /area/ship/security/range)
 "KW" = (
 /obj/structure/bed,
-/obj/structure/sign/poster/official/high_class_martini{
+/obj/structure/sign/poster/nanotrasen/high_class_martini{
 	pixel_y = -32
 	},
 /obj/structure/curtain/cloth/elysium,
@@ -5501,7 +5501,7 @@
 /turf/open/floor/wood/walnut,
 /area/ship/hallway/central)
 "QX" = (
-/obj/structure/sign/poster/official/work_for_a_future{
+/obj/structure/sign/poster/nanotrasen/work_for_a_future{
 	pixel_x = -32
 	},
 /mob/living/simple_animal/bot/cleanbot/medbay{
@@ -6155,7 +6155,7 @@
 	name = "Shafi locker";
 	req_access_txt = "5"
 	},
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/effect/turf_decal/trimline/opaque/blue/warning{
 	dir = 5
 	},
@@ -6356,7 +6356,7 @@
 /obj/effect/decal/cleanable/greenglow{
 	color = "#808080"
 	},
-/obj/item/trash/cheesie{
+/obj/item/trash/chips{
 	color = "#808080";
 	pixel_x = 21;
 	pixel_y = 1

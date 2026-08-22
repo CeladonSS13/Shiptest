@@ -123,7 +123,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /obj/structure/chair/handrail,
@@ -816,7 +816,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "fe" = (
-/obj/machinery/porta_turret/ship/nt/light{
+/obj/machinery/porta_turret/ship/nanotrasen/light{
 	dir = 10;
 	id = "squab_turrets"
 	},
@@ -828,7 +828,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /obj/machinery/light/directional/north,
@@ -879,7 +879,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
@@ -966,7 +966,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1137,7 +1137,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/canteen)
 "ij" = (
-/obj/machinery/porta_turret/ship/nt/light{
+/obj/machinery/porta_turret/ship/nanotrasen/light{
 	dir = 5;
 	id = "squab_turrets"
 	},
@@ -1313,7 +1313,7 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/crew/canteen)
 "jY" = (
-/obj/machinery/porta_turret/ship/nt/light{
+/obj/machinery/porta_turret/ship/nanotrasen/light{
 	dir = 9;
 	id = "squab_turrets"
 	},
@@ -1413,7 +1413,7 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/cargo/port)
 "lv" = (
-/obj/machinery/porta_turret/ship/nt{
+/obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 5;
 	id = "squab_turrets"
 	},
@@ -1469,15 +1469,6 @@
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen,
 /obj/item/clothing/suit/armor/nanotrasen/slim,
-/obj/item/clothing/head/helmet/m10/nanotrasen{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/item/clothing/head/helmet/vigilitas{
-	pixel_x = 8;
-	pixel_y = 6;
-	name = "Vigilitas visor helmet"
-	},
 /obj/item/clothing/gloves/combat{
 	pixel_x = -7;
 	pixel_y = -4
@@ -1493,6 +1484,14 @@
 /obj/machinery/camera/autoname{
 	dir = 10;
 	pixel_x = -10;
+	pixel_y = 0
+	},
+/obj/item/clothing/head/helmet/bulletproof/x11/nanotrasen/sechud{
+	pixel_x = -7;
+	pixel_y = 7
+	},
+/obj/item/clothing/head/helmet/m10/nanotrasen{
+	pixel_x = -8;
 	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
@@ -1688,14 +1687,14 @@
 /obj/effect/turf_decal/corner/opaque/orange/full{
 	layer = 2
 	},
-/obj/effect/turf_decal/ntspaceworks_small/left,
+/obj/effect/turf_decal/nanotrasenspaceworks_small/left,
 /obj/effect/turf_decal/spline/fancy/opaque,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "oD" = (
 /obj/structure/rack,
 /obj/item/aiModule/core/full/nanotrasen{
-	name = "'Nanotrasen' Core AI Module";
+	name = "'nanotrasen' Core AI Module";
 	pixel_x = -2;
 	pixel_y = -3
 	},
@@ -1823,7 +1822,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /obj/machinery/fax/nanotrasen{
@@ -2097,7 +2096,7 @@
 	pixel_x = 11;
 	pixel_y = -16
 	},
-/obj/structure/sign/poster/official/pda_ad{
+/obj/structure/sign/poster/nanotrasen/pda_ad{
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -2160,7 +2159,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
-/obj/structure/sign/poster/official/science{
+/obj/structure/sign/poster/nanotrasen/science{
 	pixel_x = 0;
 	pixel_y = -31
 	},
@@ -2168,7 +2167,7 @@
 /area/ship/science)
 "ue" = (
 /obj/item/clothing/suit/hooded/wintercoat/science,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/analyzer{
 	pixel_x = -4;
 	pixel_y = -5
@@ -2254,7 +2253,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "uY" = (
@@ -2267,7 +2266,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
@@ -2302,7 +2301,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /obj/machinery/atmospherics/pipe/manifold4w/scrubbers/hidden/layer2,
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2350,7 +2349,7 @@
 	name = "science director's suit storage unit"
 	},
 /obj/item/clothing/suit/space/hardsuit/bomb{
-	name = "Nanotrasen EOD hardsuit"
+	name = "nanotrasen EOD hardsuit"
 	},
 /obj/item/clothing/mask/gas,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2371,7 +2370,7 @@
 	pixel_x = 11;
 	pixel_y = 23
 	},
-/obj/structure/sign/poster/official/ion_carbine{
+/obj/structure/sign/poster/nanotrasen/ion_carbine{
 	pixel_x = -32;
 	pixel_y = 0
 	},
@@ -2401,7 +2400,7 @@
 	pixel_x = -2;
 	pixel_y = 3
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /obj/item/stamp/nanotrasen/ns/captain{
 	pixel_x = 2;
 	pixel_y = -4
@@ -2535,7 +2534,7 @@
 	pixel_x = 8;
 	pixel_y = 0
 	},
-/obj/item/clothing/gloves/color/yellow{
+/obj/item/clothing/gloves/insulated{
 	pixel_x = -7;
 	pixel_y = -7
 	},
@@ -2681,7 +2680,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "xB" = (
-/obj/machinery/porta_turret/ship/nt{
+/obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 9;
 	id = "squab_turrets"
 	},
@@ -2818,7 +2817,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /obj/machinery/power/apc/auto_name/directional/south,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -2837,7 +2836,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "yC" = (
-/obj/machinery/porta_turret/ship/nt{
+/obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 10;
 	id = "squab_turrets"
 	},
@@ -2892,7 +2891,7 @@
 /obj/effect/turf_decal/corner/opaque/orange/full{
 	layer = 2
 	},
-/obj/effect/turf_decal/ntspaceworks_small/right,
+/obj/effect/turf_decal/nanotrasenspaceworks_small/right,
 /obj/effect/turf_decal/spline/fancy/opaque,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -2937,7 +2936,7 @@
 	pixel_x = -8;
 	pixel_y = 0
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /obj/machinery/newscaster/directional/north,
@@ -3168,7 +3167,7 @@
 /obj/effect/turf_decal/corner/opaque/orange/full{
 	layer = 2
 	},
-/obj/effect/turf_decal/ntspaceworks_small,
+/obj/effect/turf_decal/nanotrasenspaceworks_small,
 /obj/effect/turf_decal/spline/fancy/opaque,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -3442,7 +3441,7 @@
 	dir = 4;
 	layer = 2.5
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/nanotrasen/nanotrasen_logo{
 	pixel_x = 0;
 	pixel_y = -32
 	},
@@ -3851,7 +3850,7 @@
 	pixel_x = 2;
 	pixel_y = -5
 	},
-/obj/item/clothing/gloves/color/latex/nitrile{
+/obj/item/clothing/gloves/nitrile{
 	pixel_x = 3;
 	pixel_y = 3
 	},
@@ -3927,7 +3926,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntbluelight/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Ib" = (
@@ -4062,7 +4061,7 @@
 	anchored = 1;
 	req_access_txt = "20"
 	},
-/obj/item/gun/energy/sharplite/x26,
+/obj/item/gun/energy/sharplite/hades,
 /obj/item/stock_parts/cell/gun/sharplite/mini,
 /obj/item/stock_parts/cell/gun/sharplite/mini,
 /obj/item/stamp/nanotrasen/ns,
@@ -4188,7 +4187,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 4
 	},
@@ -4562,7 +4561,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	layer = 2.041
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "NZ" = (
@@ -4710,7 +4709,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -5060,7 +5059,7 @@
 /turf/open/floor/plasteel/white,
 /area/ship/science/robotics)
 "RQ" = (
-/obj/machinery/porta_turret/ship/nt{
+/obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 6;
 	id = "squab_turrets"
 	},
@@ -5273,7 +5272,7 @@
 /turf/open/floor/plasteel/stairs/right,
 /area/ship/crew/canteen)
 "Ti" = (
-/obj/structure/sign/poster/official/nanotrasen_logo,
+/obj/structure/sign/poster/nanotrasen/nanotrasen_logo,
 /turf/closed/wall/mineral/titanium,
 /area/ship/external/dark)
 "Tq" = (
@@ -5545,7 +5544,7 @@
 /obj/effect/turf_decal/siding/thinplating/dark{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntbluelight/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /obj/machinery/button/door{
@@ -5610,7 +5609,7 @@
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/head/hardhat,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/structure/sign/warning/incident{
 	pixel_y = 0;
 	pixel_x = -32
@@ -5769,7 +5768,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "YO" = (
-/obj/machinery/porta_turret/ship/nt/light{
+/obj/machinery/porta_turret/ship/nanotrasen/light{
 	dir = 6;
 	id = "squab_turrets"
 	},

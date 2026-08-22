@@ -22,7 +22,7 @@
 	display_name = "high black heels"
 	path = /obj/item/clothing/shoes/heels/black
 
-/datum/gear/footwear/galoshes/tajara_galoshes
+/datum/gear/footwear/tajara_galoshes
 	display_name = "tajara galoshes"
 	path = /obj/item/clothing/shoes/galoshes/tajara_galoshes
 

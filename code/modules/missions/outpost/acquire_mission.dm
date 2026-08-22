@@ -1,6 +1,8 @@
 /datum/mission/acquire
 	desc = "БЛЯТЬ, ОПИСАНИЕ СЛОМАЛОСЬ - СООБЩИТЕ ОБ ЭТОМ СИСТЕМНОМУ АДМИНИСТРАТОРУ!"	//desc = "Get me some things."	// [CELADON-EDIT] - CELADON_ECONOMY - Оповещение об ЯВНОЙ ошибке
 
+	blackbox_prefix = "Acquire "
+
 	/// The type of container to be spawned when the mission is accepted.
 	var/atom/movable/container_type
 	/// Instance of the container, spawned after the mission is accepted.

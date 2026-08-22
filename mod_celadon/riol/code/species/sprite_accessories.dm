@@ -130,12 +130,12 @@
 /datum/sprite_accessory/riol_nose_markings/riolnose
 	name = "Nose"
 	icon_state = "nose"
-	secondary_color = FALSE
+	secondary_color_overlay = FALSE
 
 /datum/sprite_accessory/riol_nose_markings/riolnosealt
 	name = "Nose alt"
 	icon_state = "nose_alt"
-	secondary_color = FALSE
+	secondary_color_overlay = FALSE
 
 // MARK: EARS MARKINGS
 
@@ -277,7 +277,7 @@
 /datum/sprite_accessory/tails/riol
 	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_tail.dmi'
 	body_zone = BODY_ZONE_CHEST
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 	color_src = TAILRIOLCOLORS
 
 /datum/sprite_accessory/tails_animated/riol
@@ -523,7 +523,7 @@
 /datum/sprite_accessory/riol_ears
 	icon = 'mod_celadon/_storage_icons/icons/species/riol/riol_ears.dmi'
 	body_zone = BODY_ZONE_HEAD
-	secondary_color = TRUE
+	secondary_color_overlay = TRUE
 
 /datum/sprite_accessory/riol_ears/plain
 	name = "Plain"

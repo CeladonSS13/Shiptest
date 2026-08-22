@@ -134,8 +134,8 @@
 /obj/item/melee/knife/kitchen,
 /obj/item/cutting_board,
 /obj/item/clothing/under/suit/waiter/syndicate,
-/obj/item/clothing/suit/hazardvest/donk,
-/obj/item/clothing/under/syndicate/donk,
+/obj/item/clothing/suit/hazardvest,
+/obj/item/clothing/under/syndicate,
 /obj/item/clothing/shoes/sneakers/black,
 /obj/item/reagent_containers/food/drinks/shaker,
 /turf/open/floor/carpet/green,
@@ -682,8 +682,8 @@
 /obj/item/storage/box/ingredients/vegetarian,
 /obj/item/reagent_containers/condiment/milk,
 /obj/item/reagent_containers/condiment/milk,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/carpet/green,
 /area/ship/crew/canteen)
@@ -2047,7 +2047,7 @@
 	pixel_y = 10;
 	pixel_x = 3
 	},
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/nanotrasen/no_erp{
 	pixel_y = 32
 	},
 /obj/item/toy/cards/deck/syndicate{
@@ -2720,7 +2720,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/poster/official/moth/delam{
+/obj/structure/sign/poster/nanotrasen/moth/delam{
 	pixel_x = 33
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -2791,7 +2791,7 @@
 "pD" = (
 /obj/item/kirbyplants/random,
 /obj/machinery/light/directional/west,
-/obj/structure/sign/poster/official/moth/smokey{
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/borderfloorblack,
@@ -3881,7 +3881,6 @@
 /obj/effect/decal/cleanable/ash/large,
 /obj/structure/curtain/cloth/elysium,
 /obj/effect/decal/cleanable/blood/gibs,
-/mob/living/carbon/human/species/lizard/ashwalker/kobold,
 /obj/structure/sign/flag/separatist/directional/south{
 	pixel_y = 32
 	},
@@ -4080,7 +4079,7 @@
 /area/ship/cargo)
 "xq" = (
 /obj/machinery/light/directional/south,
-/obj/item/trash/cheesie,
+/obj/item/trash/chips,
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
@@ -4623,7 +4622,7 @@
 /obj/item/clothing/under/syndicate/gec,
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/head/hardhat/red{
 	name = "hard hat"
 	},
@@ -6181,7 +6180,6 @@
 	id = "twinkle_rightmassdriver"
 	},
 /obj/item/trash/can/food/peaches/maint,
-/mob/living/carbon/human/species/lizard/ashwalker/kobold,
 /obj/machinery/door/window/brigdoor/westleft{
 	req_ship_access = 1;
 	req_access_txt = null
@@ -7165,7 +7163,7 @@
 	name = "mot containment box";
 	desc = "WARNING: Contains mot."
 	},
-/obj/item/trash/cheesie,
+/obj/item/trash/chips,
 /obj/item/food/spacetwinkie{
 	pixel_y = 12;
 	pixel_x = 10
@@ -7609,7 +7607,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "Qv" = (
-/obj/structure/sign/poster/official/moth{
+/obj/structure/sign/poster/nanotrasen/moth{
 	pixel_x = 32
 	},
 /obj/structure/cable/yellow{
@@ -7707,7 +7705,7 @@
 	dir = 6
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/structure/sign/poster/official/moth/hardhats{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_x = 32
 	},
 /obj/structure/cable/yellow{
@@ -8067,7 +8065,7 @@
 /turf/open/floor/pod/dark,
 /area/ship/hallway/port)
 "SS" = (
-/obj/structure/sign/poster/official/moth/meth{
+/obj/structure/sign/poster/nanotrasen/moth/meth{
 	pixel_y = -32
 	},
 /obj/item/reagent_containers/glass/beaker{
@@ -9196,7 +9194,7 @@
 /obj/item/clothing/under/syndicate/gec,
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/clothing/suit/hazardvest,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/head/hardhat/red{
 	name = "hard hat"
 	},

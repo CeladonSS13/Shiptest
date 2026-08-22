@@ -7,8 +7,8 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/captain
 	gloves = /obj/item/clothing/gloves/color/black
-	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/lp
-	alt_uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/skirt/lp
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt
+	alt_uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/skirt
 	dcoat = /obj/item/clothing/suit/armor/nanotrasen/sec_director
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/beret/command
@@ -28,8 +28,7 @@
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/security
 	gloves = /obj/item/clothing/gloves/color/black
-	uniform = /obj/item/clothing/under/rank/security/head_of_security/nt/lp
-	alt_uniform = /obj/item/clothing/under/rank/security/head_of_security/nt/skirt/lp
+	uniform = /obj/item/clothing/under/nanotrasen/security
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/beret/sec
@@ -47,8 +46,7 @@
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	gloves = /obj/item/clothing/gloves/color/yellow
-	uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/lp
-	alt_uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/skirt/lp
+	uniform = /obj/item/clothing/under/nanotrasen/engineering
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/beret/eng
@@ -67,9 +65,9 @@
 	implants = list(/obj/item/implant/mindshield)
 	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	belt = /obj/item/pda/medical
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
-	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
-	alt_uniform = /obj/item/clothing/under/rank/medical/paramedic/skirt/lp
+	gloves = /obj/item/clothing/gloves/nitrile
+	uniform = /obj/item/clothing/under/rank/medical/paramedic
+	alt_uniform = /obj/item/clothing/under/rank/medical/paramedic/skirt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	head = /obj/item/clothing/head/beret/med
@@ -92,7 +90,7 @@
 	head = /obj/item/clothing/head/nanotrasen/cap/janitor
 	ears = /obj/item/radio/headset/nanotrasen
 	belt = /obj/item/storage/belt/janitor
-	gloves = /obj/item/clothing/gloves/color/purple
+	gloves = /obj/item/clothing/gloves/color/lightpurple
 	back = /obj/item/storage/backpack/ert/janitor
 
 	implants = list(/obj/item/implant/mindshield)

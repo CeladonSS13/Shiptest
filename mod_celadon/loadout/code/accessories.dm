@@ -27,6 +27,10 @@
 *	RINGS
 */
 
+/datum/gear/accessory/gloves
+	subtype_path = /datum/gear/accessory/gloves
+	slot = ITEM_SLOT_GLOVES
+
 /datum/gear/accessory/gloves/silverring
 	display_name = "Silver Ring"
 	path = /obj/item/clothing/gloves/ring/silver

@@ -36,7 +36,7 @@
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/atmos_hardsuit
 	name = "Atmospherics Hardsuit"
-	desc = "The iconic hardsuit of Nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
+	desc = "The iconic hardsuit of nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
 	cost = 2500
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/atmos)
 	crate_name = "atmospherics hardsuit crate"
@@ -59,7 +59,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear
 
 /datum/supply_pack/faction/nanotrasen/spacesuit/hardsuitsec
-	name = "Nanotrasen Security Hardsuit"
+	name = "Security Hardsuit"
 	desc = "A cheap spare security hardsuit used on NT's stations by the sec department. Provides weak protection against most damage types. Using it for combat in the frontier region of space is not recommended"
 	contains = list(/obj/item/clothing/suit/space/hardsuit/security)
 	cost = 3500

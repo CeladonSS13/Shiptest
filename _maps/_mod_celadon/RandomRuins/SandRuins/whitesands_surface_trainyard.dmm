@@ -91,11 +91,11 @@
 /area/overmap_encounter/planetoid/sand/explored)
 "ax" = (
 /obj/structure/table,
-/obj/item/storage/bottles/moonshine{
+/obj/item/storage/bottles/chemshine{
 	pixel_y = 1;
 	pixel_x = -7
 	},
-/obj/item/storage/bottles/moonshine{
+/obj/item/storage/bottles/chemshine{
 	pixel_y = 8
 	},
 /obj/effect/turf_decal/borderfloorblack/corner,
@@ -577,7 +577,7 @@
 /obj/structure/closet/secure_closet{
 	icon_state = "eng_secure"
 	},
-/obj/item/clothing/under/rank/engineering/engineer/nt,
+/obj/item/clothing/under/rank/engineering/engineer,
 /obj/item/storage/belt/utility,
 /obj/item/clothing/suit/hazardvest,
 /obj/item/clothing/glasses/meson/engine,
@@ -1346,7 +1346,7 @@
 /obj/structure/closet/secure_closet{
 	icon_state = "eng_secure"
 	},
-/obj/item/clothing/under/rank/engineering/engineer/nt,
+/obj/item/clothing/under/rank/engineering/engineer,
 /obj/item/storage/belt/utility,
 /obj/item/storage/backpack/satchel/eng,
 /obj/item/clothing/glasses/meson/engine/tray,
@@ -2299,7 +2299,7 @@
 /obj/item/clothing/head/hardhat/hardliners{
 	name = "Cheef Engineer hard hat"
 	},
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/mask/gas/atmos,
 /turf/open/floor/plasteel/darkbrownfull/darkbrown{
 	dir = 10
@@ -4688,7 +4688,7 @@
 "yw" = (
 /obj/machinery/fax/ruin,
 /obj/structure/table/reinforced,
-/obj/structure/sign/poster/official/moth/smokey{
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
 	pixel_x = 31
 	},
 /turf/open/floor/plasteel/tech,
@@ -5966,7 +5966,7 @@
 /area/ruin/whitesands/trainyard/hangar)
 "EH" = (
 /obj/effect/turf_decal/siding/thinplating/dark,
-/obj/structure/sign/poster/retro/smile{
+/obj/structure/sign/poster/retro/nanotrasen/smile{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/patterned/grid,
@@ -6251,7 +6251,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/moth/meth{
+/obj/structure/sign/poster/nanotrasen/moth/meth{
 	pixel_x = -31
 	},
 /turf/open/floor/suns/dark,
@@ -6437,7 +6437,7 @@
 /area/ruin/whitesands/trainyard/checkpoint/storage)
 "GS" = (
 /obj/structure/table/reinforced,
-/obj/item/clothing/gloves/color/latex{
+/obj/item/clothing/gloves/nitrile{
 	pixel_y = 3;
 	pixel_x = 2
 	},
@@ -9267,7 +9267,7 @@
 	pixel_x = -8;
 	pixel_y = -6
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil{
+/obj/item/clothing/gloves/nitrile/evil{
 	pixel_y = -3;
 	pixel_x = 5
 	},

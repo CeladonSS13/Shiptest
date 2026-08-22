@@ -4,7 +4,7 @@
 	name = "Fax Spam"
 	typepath = /datum/round_event/fax_spam
 	weight = 10
-	max_occurrences = 2
+	max_occurrences = 0
 	earliest_start = 5 MINUTES
 	requires_ship = TRUE
 
@@ -19,6 +19,8 @@
 		if(fax_machine.visible_to_network)
 			var/obj/item/advertisement/spam_message = new spam_type
 			fax_machine.receive(spam_message, "Unknown Sender")
+*/
+// [CELADON-REMOVE]
 
 /obj/item/advertisement
 	name = "advertisement"
@@ -49,5 +51,3 @@
 /obj/item/advertisement/cliptour
 	desc = "A pamphlet advertising tour guides on Luna-Town, most prominently an interior tour of certain restricted sections of the UNSV Lichtenstein."
 	icon_state = "cliptour"
-*/
-// [CELADON-REMOVE]

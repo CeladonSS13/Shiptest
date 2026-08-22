@@ -28,7 +28,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha_equipment.dmi'
 	icon_state = "ntcombatupg"
 	source_mech = list(/obj/mecha/combat/gygax)
-	result_mech = /obj/mecha/combat/gygax/nt
+	result_mech = /obj/mecha/combat/gygax/nanotrasen
 
 /obj/item/mecha_parts/mecha_equipment/conversion_kit/hermes
 	name = "Hermes Conversion Kit"

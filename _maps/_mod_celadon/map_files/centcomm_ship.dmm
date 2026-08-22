@@ -486,7 +486,7 @@
 /obj/item/storage/fancy/cigarettes/cigars/cohiba{
 	pixel_y = 3
 	},
-/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/shoalpockets,
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
 "bt" = (
@@ -1960,7 +1960,7 @@
 "fM" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
@@ -2013,7 +2013,7 @@
 /area/centcom/holding)
 "fT" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
-/obj/effect/turf_decal/corner/opaque/ntblue/diagonal{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/diagonal{
 	dir = 4
 	},
 /turf/open/floor/marble/black,
@@ -2607,7 +2607,7 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/control)
 "hv" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -3107,7 +3107,7 @@
 	icon_state = "1-4"
 	},
 /obj/structure/closet/crate/engineering/electrical,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/electrical,
 /obj/item/multitool,
@@ -3234,7 +3234,7 @@
 /turf/open/floor/wood,
 /area/centcom/holding)
 "jk" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 8
 	},
 /turf/open/floor/plasteel,
@@ -3599,7 +3599,7 @@
 	},
 /area/centcom)
 "kj" = (
-/obj/effect/turf_decal/corner/transparent/ntblue,
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue,
 /turf/open/floor/plasteel,
 /area/centcom/control)
 "kk" = (
@@ -3933,7 +3933,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
 "lk" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/full,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/full,
 /turf/open/floor/marble/black,
 /area/centcom)
 "lm" = (
@@ -4237,7 +4237,7 @@
 /area/tdome/tdomeobserve)
 "mc" = (
 /obj/effect/turf_decal/corner/opaque/white,
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 4
 	},
 /turf/open/floor/marble/black,
@@ -4335,7 +4335,7 @@
 /area/centcom/control)
 "mt" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/revolver/grenadelauncher/cyborg{
+/obj/item/gun/grenadelauncher{
 	pixel_y = 3
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -4752,7 +4752,7 @@
 /turf/open/floor/wood/mahogany,
 /area/centcom)
 "nD" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -4920,7 +4920,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 5
 	},
 /turf/open/floor/plasteel,
@@ -5362,7 +5362,7 @@
 /obj/effect/turf_decal/corner/opaque/white/half{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 4
 	},
 /turf/open/floor/marble/black,
@@ -5883,7 +5883,7 @@
 /obj/item/hemostat{
 	pixel_x = -4
 	},
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/mask/surgical,
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/corner/opaque/blue{
@@ -5989,8 +5989,8 @@
 /area/centcom/ferry)
 "ru" = (
 /obj/structure/rack,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/shoalpockets,
+/obj/item/storage/box/shoalpockets,
 /obj/item/clothing/head/chefhat,
 /obj/effect/turf_decal/corner/transparent/neutral/full,
 /turf/open/floor/plasteel/dark,
@@ -6054,7 +6054,7 @@
 "rD" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to nanotrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -6352,7 +6352,7 @@
 "sz" = (
 /obj/structure/table/reinforced,
 /obj/item/storage/backpack/duffelbag/med/surgery,
-/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/clothing/mask/surgical,
 /obj/item/clothing/suit/apron/surgical,
 /obj/item/healthanalyzer,
@@ -6360,7 +6360,7 @@
 /turf/open/floor/pod/light,
 /area/outpost/exterior)
 "sA" = (
-/turf/open/floor/carpet/donk,
+/turf/open/floor/wood/jungleplanet,
 /area/centcom)
 "sB" = (
 /obj/effect/turf_decal/elysium_logo/two_three,
@@ -6527,7 +6527,7 @@
 "ta" = (
 /obj/machinery/door/firedoor,
 /obj/effect/turf_decal/industrial/warning,
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
@@ -6712,7 +6712,7 @@
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 1
 	},
 /obj/structure/chair/office/dark{
@@ -7242,7 +7242,7 @@
 /turf/open/floor/plasteel,
 /area/tdome/tdomeobserve)
 "uO" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 9
 	},
 /turf/open/floor/plasteel,
@@ -7776,7 +7776,7 @@
 /area/centcom/supplypod)
 "wq" = (
 /obj/structure/fluff/beach_umbrella/syndi,
-/turf/open/floor/carpet/donk,
+/turf/open/floor/wood/jungleplanet,
 /area/centcom)
 "wr" = (
 /obj/structure/cable{
@@ -9271,7 +9271,7 @@
 /obj/effect/turf_decal/corner/opaque/white/half{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 8
 	},
 /turf/open/floor/marble/black,
@@ -10819,11 +10819,11 @@
 	pixel_x = -8;
 	pixel_y = 2
 	},
-/obj/item/storage/box/donkpockets{
+/obj/item/storage/box/shoalpockets{
 	pixel_x = 8;
 	pixel_y = 8
 	},
-/obj/item/storage/box/donkpockets{
+/obj/item/storage/box/shoalpockets{
 	pixel_x = 6;
 	pixel_y = 6
 	},
@@ -11185,7 +11185,7 @@
 /area/centcom/ferry)
 "Gy" = (
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to nanotrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -12403,7 +12403,7 @@
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters,
 /obj/structure/chair/office/dark{
 	dir = 4
 	},
@@ -12539,7 +12539,7 @@
 "Ku" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to nanotrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -13078,7 +13078,7 @@
 /area/centcom)
 "LL" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/automatic/powered/gauss/claris/suns{
+/obj/item/gun/ballistic/automatic/powered/gauss/claris{
 	pixel_x = -12
 	},
 /turf/open/floor/plasteel/dark_2,
@@ -13569,11 +13569,6 @@
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/centcom)
-"Nb" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/automatic/powered/gauss/modelh/suns,
-/turf/open/floor/plasteel/dark_2,
-/area/centcom/ferry)
 "Nc" = (
 /obj/structure/urinal{
 	pixel_y = 28
@@ -15459,7 +15454,7 @@
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "Su" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 6
 	},
 /turf/open/floor/plasteel,
@@ -16249,7 +16244,7 @@
 /turf/open/floor/plasteel,
 /area/centcom/control)
 "UD" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 1
 	},
 /turf/open/floor/plasteel,
@@ -16285,7 +16280,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 10
 	},
 /turf/open/floor/plasteel,
@@ -16389,7 +16384,7 @@
 /turf/open/floor/plasteel/grimy,
 /area/outpost/exterior)
 "UX" = (
-/obj/effect/turf_decal/corner/transparent/ntblue{
+/obj/effect/turf_decal/corner/transparent/nanotrasenblue{
 	dir = 4
 	},
 /turf/open/floor/plasteel,
@@ -16726,7 +16721,7 @@
 "Wd" = (
 /obj/structure/table/wood,
 /obj/item/phone{
-	desc = "Supposedly a direct line to Nanotrasen Central Command. It's not even plugged in.";
+	desc = "Supposedly a direct line to nanotrasen Central Command. It's not even plugged in.";
 	pixel_x = -3;
 	pixel_y = 3
 	},
@@ -17106,7 +17101,7 @@
 /obj/effect/turf_decal/corner/opaque/white{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 8
 	},
 /turf/open/floor/marble/black,
@@ -17657,11 +17652,6 @@
 /obj/structure/flora/ausbushes/pointybush,
 /turf/open/floor/grass,
 /area/centcom/control)
-"YF" = (
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/ballistic/revolver/grenadelauncher,
-/turf/open/floor/plasteel/dark_2,
-/area/centcom/ferry)
 "YG" = (
 /turf/closed/indestructible/riveted/command,
 /area/centcom/evac)
@@ -46751,7 +46741,7 @@ LT
 Qb
 rC
 qG
-Nb
+sI
 sI
 qG
 dH
@@ -49261,7 +49251,7 @@ yy
 ZG
 Ln
 cx
-YF
+Ql
 Ln
 kZ
 dh

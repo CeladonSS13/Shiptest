@@ -64,12 +64,14 @@
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_fluff, GLOB.moth_fluff_list)
 	if(!GLOB.moth_markings_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_markings, GLOB.moth_markings_list)
-	if(!GLOB.squid_face_list.len)
-		init_sprite_accessory_subtypes(/datum/sprite_accessory/squid_face, GLOB.squid_face_list)
 	// [CELADON-ADD] - CELADON_IPC_HAIR
 	if(!GLOB.ipc_hair_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_hair, GLOB.ipc_hair_list)
 	// [/CELADON-ADD] - CELADON_IPC_HAIR
+	if(!GLOB.moth_antennae_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_antennae, GLOB.moth_antennae_list)
+	if(!GLOB.moth_head_list.len)
+		init_sprite_accessory_subtypes(/datum/sprite_accessory/moth_head, GLOB.moth_head_list)
 	if(!GLOB.ipc_screens_list.len)
 		init_sprite_accessory_subtypes(/datum/sprite_accessory/ipc_screens, GLOB.ipc_screens_list)
 	if(!GLOB.ipc_antennas_list.len)
@@ -190,7 +192,6 @@
 		"spider_legs" = pick(GLOB.spider_legs_list),
 		"spider_spinneret" = pick(GLOB.spider_spinneret_list),
 		"spines" = pick(GLOB.spines_list),
-		"squid_face" = pick(GLOB.squid_face_list),
 		"tail_human" = "None",
 		"tail_lizard" = pick(GLOB.tails_list_lizard),
 		"tail_elzu" = pick(GLOB.tails_list_elzu),
@@ -296,18 +297,28 @@
 	return pick(GLOB.skin_tones)
 
 GLOBAL_LIST_INIT(skin_tones, sortList(list(
-	"albino",
-	"caucasian1",
-	"caucasian2",
-	"caucasian3",
-	"latino",
-	"mediterranean",
-	"asian1",
-	"asian2",
-	"arab",
-	"indian",
-	"african1",
-	"african2"
+	"ivory",
+	"porcelain",
+	"peach",
+	"coral",
+	"cotton",
+	"bisque",
+	"rosewood",
+	"sepia",
+	"taupe",
+	"russet",
+	"beige",
+	"walnut",
+	"bronze",
+	"burnet",
+	"amber",
+	"hazel",
+	"champagne",
+	"olive",
+	"tawny",
+	"ochre",
+	"cedar",
+	"sable"
 	)))
 
 /proc/pick_species_adjective(mob/living/carbon/human/H)

@@ -24,7 +24,7 @@
 	name = "field medic's locker";
 	req_access_txt = "5"
 	},
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /obj/item/radio/headset/solgov,
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /obj/item/storage/firstaid/medical,
@@ -1501,7 +1501,7 @@
 /turf/open/floor/plasteel/darkredfull,
 /area/ship/security/prison)
 "rw" = (
-/obj/structure/sign/poster/official/cleanliness,
+/obj/structure/sign/poster/nanotrasen/cleanliness,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/engineering)
 "rz" = (
@@ -1911,7 +1911,7 @@
 /area/ship/security/prison)
 "wf" = (
 /obj/machinery/firealarm/directional/east,
-/obj/structure/sign/poster/official/safety_internals{
+/obj/structure/sign/poster/nanotrasen/safety_internals{
 	pixel_y = 32
 	},
 /obj/machinery/navbeacon/wayfinding{
@@ -2863,7 +2863,7 @@
 /obj/item/radio/headset/headset_eng,
 /obj/item/multitool,
 /obj/item/clothing/glasses/welding,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/backpack/industrial,
 /obj/item/clothing/accessory/armband/engine,
@@ -4790,7 +4790,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage)
 "ZN" = (
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/nanotrasen/no_erp{
 	pixel_y = 30
 	},
 /obj/structure/sign/flag/solfed/directional/west,

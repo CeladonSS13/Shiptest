@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/automatic/powered/gauss
 	name = "prototype gauss rifle"
-	desc = "An experimental Nanotrasen rifle with a high capacity. Useful for putting down crowds. Chambered in ferromagnetic pellets."
-	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	desc = "An experimental Makosso-Warra rifle with a high capacity. Useful for putting down crowds. Chambered in ferromagnetic pellets."
+	icon = 'icons/obj/guns/manufacturer/warra_sharplite/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/gauss_hands_left.dmi'		// [CELADON-EDIT]
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/gauss_hands_right.dmi'	// [/CELADON-EDIT]
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/pgauss.dmi'	// [/CELADON-EDIT]
@@ -23,7 +23,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	charge_sections = 4
 	ammo_x_offset = 2
-	manufacturer = MANUFACTURER_NANOTRASEN
+	manufacturer = MANUFACTURER_WARRA
 
 	spread = 0
 	spread_unwielded = 25

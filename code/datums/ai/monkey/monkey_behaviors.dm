@@ -64,10 +64,11 @@
 	return AI_BEHAVIOR_DELAY | AI_BEHAVIOR_FAILED
 
 /datum/ai_behavior/monkey_equip/ground
-	required_distance = 0
 
 /datum/ai_behavior/monkey_equip/ground/perform(seconds_per_tick, datum/ai_controller/controller)
-	return equip_item(controller)	// [CELADON-ADD] - FIXES_MONKEY_STOPPED_SPEEDUP
+	if(equip_item(controller))
+		return . | AI_BEHAVIOR_SUCCEEDED
+	return . | AI_BEHAVIOR_FAILED
 
 /datum/ai_behavior/monkey_equip/pickpocket
 

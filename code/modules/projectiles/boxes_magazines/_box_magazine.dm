@@ -147,6 +147,8 @@
 			if(!((instant_load && attacking_box.instant_load) || (stored_ammo.len >= max_ammo) || istype(attacking_obj, /obj/item/ammo_box/magazine/ammo_stack) && do_after(user, 0.5 SECONDS, target = src, timed_action_flags = timed_action_flags)))
 			// [/CELADON-EDIT]
 				break
+			if(casing_to_insert.loc != attacking_box) // make sure bullet has not left stack
+				break
 			var/did_load = give_round(casing_to_insert, replace_spent)
 			if(!did_load)
 				break
