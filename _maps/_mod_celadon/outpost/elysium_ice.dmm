@@ -8326,17 +8326,13 @@
 	},
 /area/outpost/exterior)
 "eCo" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/shutters{
-	anchored = 1
+/obj/structure/flora/tree/pine{
+	icon_state = "pine_4";
+	pixel_x = -16;
+	pixel_y = 0
 	},
-/obj/structure/grille/indestructible,
-/obj/structure/sign/barsign{
-	icon_state = "cyberslyph";
-	req_access = null
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	layer = 2.454
 	},
 /area/outpost/exterior)
 "eCE" = (
@@ -8683,23 +8679,23 @@
 /area/outpost/faction/inteq)
 "eKz" = (
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
+	pixel_y = 13;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13;
-	dir = 8
+	pixel_y = -12;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = -5;
-	dir = 8
+	pixel_y = -4;
+	dir = 8;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -9902,7 +9898,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/directions/outpost/crio{
+/obj/structure/sign/directions/outpost/cryo{
 	pixel_y = -20
 	},
 /turf/open/floor/plasteel/patterned/brushed{
@@ -11253,19 +11249,19 @@
 /area/outpost/medical/hall_1)
 "gas" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 14;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14399,13 +14395,16 @@
 "hLF" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 4;
-	pixel_y = 1
+	pixel_y = -7;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
+	pixel_y = 17;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14422,21 +14421,20 @@
 /turf/open/floor/plating,
 /area/outpost/medical/hall_2)
 "hMc" = (
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -10;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 10;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 2;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14467,7 +14465,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 26;
+	pixel_x = 0
 	},
 /obj/structure/sign/neon/strelka/yellow{
 	dir = 4;
@@ -16252,7 +16251,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 29;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -17582,17 +17582,15 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "jrF" = (
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 1;
-	pixel_y = 13
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -18703,7 +18701,8 @@
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 32;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -20473,22 +20472,23 @@
 	dir = 4
 	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = -3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/sell{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = -5
-	},
-/obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 4;
-	pixel_y = 13
+	pixel_y = 14;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -21464,23 +21464,24 @@
 	dir = 8
 	},
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5
+	pixel_y = 6;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 8
+	pixel_y = -12;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1;
-	dir = 8
+	pixel_y = -3;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 15;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -33578,21 +33579,21 @@
 "skM" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11;
-	dir = 4
+	pixel_y = -4;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -36332,16 +36333,14 @@
 /area/outpost/engineering/atmospherics)
 "tKj" = (
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = 9;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = 0;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -38300,19 +38299,18 @@
 /area/outpost/medical/morgue)
 "uNA" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13
+	pixel_y = 15;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 1
+	pixel_y = 6;
+	dir = 1;
+	pixel_x = 0
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/crio{
-	pixel_y = -5;
-	dir = 1
+/obj/structure/sign/directions/outpost/cryo{
+	pixel_y = -2;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/solfed{
 	pixel_y = -11;
@@ -39542,18 +39540,16 @@
 /area/outpost/crew/lounge)
 "vHK" = (
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 13
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = -4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -57325,7 +57321,7 @@ gok
 gok
 gok
 gok
-ePa
+eCo
 skM
 xxJ
 kuL
@@ -62160,7 +62156,7 @@ gok
 gok
 gok
 gok
-eCo
+aDY
 xoC
 hqf
 lgE

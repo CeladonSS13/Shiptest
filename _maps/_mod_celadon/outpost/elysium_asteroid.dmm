@@ -3901,8 +3901,9 @@
 	pixel_y = 25
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 31;
-	dir = 1
+	pixel_y = 34;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/effect/turf_decal/siding/wood{
 	dir = 5
@@ -8179,11 +8180,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -19
-	},
 /obj/structure/sign/directions/outpost/toys{
-	pixel_y = -25
+	pixel_y = -22;
+	pixel_x = 0
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/central)
@@ -11954,24 +11953,24 @@
 	dir = 4
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = -5;
-	dir = 4
-	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = -3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/sell{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 6;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 15;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 4
+	pixel_y = -12;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/hallway/central)
@@ -14044,7 +14043,7 @@
 /area/outpost/crew/dop_zone_1)
 "jel" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/directions/outpost/crio{
+/obj/structure/sign/directions/outpost/cryo{
 	pixel_y = 1
 	},
 /turf/closed/indestructible/reinforced,
@@ -14547,26 +14546,29 @@
 	dir = 8
 	},
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
+	pixel_y = 4;
+	dir = 8;
+	pixel_x = -2
 	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 1;
-	dir = 8
+	pixel_y = -4;
+	dir = 8;
+	pixel_x = -2
 	},
 /obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 8
+	pixel_y = -12;
+	dir = 8;
+	pixel_x = -2
 	},
 /obj/structure/sign/directions/science{
 	dir = 8;
-	pixel_y = 13
+	pixel_y = 13;
+	pixel_x = -2
 	},
-/turf/closed/indestructible/reinforced,
+/turf/closed/indestructible/reinforced{
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /area/outpost/hallway/central)
 "jtn" = (
 /obj/machinery/light/floor,
@@ -20377,8 +20379,9 @@
 	dir = 4
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 29;
-	dir = 4
+	pixel_y = 32;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
@@ -24672,15 +24675,18 @@
 	dir = 1
 	},
 /obj/structure/sign/directions/outpost/sell{
-	pixel_y = 29
+	pixel_y = 33;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 23;
-	dir = 4
+	pixel_y = 24;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 41;
-	dir = 1
+	pixel_y = 42;
+	dir = 1;
+	pixel_x = 0
 	},
 /turf/open/floor/concrete/slab_3,
 /area/outpost/hallway/aft)
@@ -26968,8 +26974,9 @@
 	},
 /obj/structure/flora/herb/a,
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 29;
-	dir = 4
+	pixel_y = 32;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
 	pixel_y = 23;
@@ -30485,12 +30492,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/outpost/security)
-"tZb" = (
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 3
-	},
-/turf/closed/indestructible/reinforced,
-/area/outpost/hallway/aft)
 "tZg" = (
 /obj/item/kirbyplants/random,
 /obj/structure/railing{
@@ -57490,7 +57491,7 @@ pfU
 cXV
 gbX
 sFp
-tZb
+vXY
 qfn
 dOR
 dsV
