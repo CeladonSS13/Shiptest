@@ -284,7 +284,7 @@
 /obj/structure/sign/poster/retro/nanotrasen/nanotrasen_logo_70s
 	name = "\improper Ancient Nanotrasen logo"
 	desc = "A poster depicting an older Nanotrasen logo. This thing is ancient."
-	icon_state = "poster-nanotrasen70_retro"
+	icon_state = "poster-nanotrasen70s_retro"
 
 /obj/structure/sign/poster/retro/nanotrasen/nanotrasen_logo_80s
 	name = "\improper Nanotrasen logo"

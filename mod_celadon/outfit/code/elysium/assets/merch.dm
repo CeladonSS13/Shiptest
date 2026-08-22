@@ -1,3 +1,4 @@
+#define POSTER_SUBTYPES 1
 // Miscelanious
 
 /obj/structure/curtain/cloth/elysium
@@ -24,7 +25,7 @@
 	icon_state = "random_elysium"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/elysium
-	// random_type = POSTER_SUBTYPES
+	random_type = POSTER_SUBTYPES
 
 /obj/structure/sign/poster/elysium/logo // \"Breathable, if it weren't so darn cold.\"
 	name = "elysium"
@@ -57,3 +58,5 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/elysium_patriots.dmi'
 	icon_state = "elysium"
 	is_editable = TRUE
+
+#undef POSTER_SUBTYPES
