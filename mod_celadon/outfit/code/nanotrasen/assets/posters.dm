@@ -1,3 +1,5 @@
+#define POSTER_SUBTYPES 1
+
 //general NT-related posters
 /obj/item/poster/random_nanotrasen
 	name = "random official nanotrasen poster"
@@ -282,7 +284,7 @@
 /obj/structure/sign/poster/retro/nanotrasen/nanotrasen_logo_70s
 	name = "\improper Ancient Nanotrasen logo"
 	desc = "A poster depicting an older Nanotrasen logo. This thing is ancient."
-	icon_state = "poster-nanotrasen70_retro"
+	icon_state = "poster-nanotrasen70s_retro"
 
 /obj/structure/sign/poster/retro/nanotrasen/nanotrasen_logo_80s
 	name = "\improper Nanotrasen logo"
@@ -375,3 +377,5 @@
 	name = "Safety Moth - Delamination Safety Precautions"
 	desc = "This informational poster uses Safety Moth(TM) to tell the viewer to hide in lockers when the Supermatter Crystal has delaminated. Running away might be a better strategy. It's signed by 'AspEv'."
 	icon_state = "poster_moth_delam"
+
+#undef POSTER_SUBTYPES

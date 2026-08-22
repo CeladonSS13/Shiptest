@@ -1,3 +1,5 @@
+#define POSTER_SUBTYPES 1
+
 // logos and stuff
 /obj/structure/sign/solfed
 	name = "\improper Solar Federation Logo"
@@ -73,6 +75,8 @@
 	desc = "A poster of the Solar Federation's Elysium Brigade. The Elysium Brigade is a volunteer regiment of the Solar Federation that maintains order on the territory of the Elysium Republic. Can they be considered traitors to the homeland?"
 	icon_state = "elysium_brigade_poster"
 	never_random = TRUE
+
+#undef POSTER_SUBTYPES
 
 /obj/item/bedsheet/solfed
 	name = "\improper Solar Federation bedsheet"

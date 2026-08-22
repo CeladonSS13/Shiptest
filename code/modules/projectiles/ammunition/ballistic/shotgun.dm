@@ -92,7 +92,7 @@
 	desc = "A dart for use in shotguns. Can be injected with up to ten units of any chemical."
 	icon_state = "dart"
 	projectile_type = /obj/projectile/bullet/dart
-	var/reagent_amount = 10
+	var/reagent_amount = 30 // [CELADON-EDIT] - var/reagent_amount = 10
 
 /obj/item/ammo_casing/shotgun/dart/Initialize()
 	. = ..()
@@ -130,7 +130,7 @@
 	pellets = 8
 	variance = 45
 
-	wear_modifier = 4
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 4
 
 /obj/item/ammo_casing/shotgun/meteorslug
 	name = "meteorslug shell"
@@ -138,7 +138,7 @@
 	icon_state = "meteor"
 	projectile_type = /obj/projectile/bullet/slug/meteor
 
-	wear_modifier = 4
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 4
 
 /obj/item/ammo_casing/shotgun/frag12
 	name = "FRAG-12 slug"
@@ -146,7 +146,7 @@
 	icon_state = "frag12"
 	projectile_type = /obj/projectile/bullet/slug/frag12
 
-	wear_modifier = 4
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 4
 
 /obj/item/ammo_casing/shotgun/ion
 	name = "ion shell"
@@ -157,7 +157,7 @@
 	pellets = 8
 	variance = 25
 
-	wear_modifier = 4
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 4
 
 /obj/item/ammo_casing/shotgun/laserscatter
 	name = "scatter plasma shell"
@@ -167,7 +167,7 @@
 	pellets = 6
 	variance = 25
 
-	wear_modifier = 2
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 2
 
 /obj/item/ammo_casing/shotgun/pulseslug
 	name = "pulse slug"
@@ -177,7 +177,7 @@
 	icon_state = "pulse"
 	projectile_type = /obj/projectile/beam/pulse/shotgun
 
-	wear_modifier = 2
+	wear_modifier = 1 // [CELADON-EDIT] - wear_modifier = 2
 
 /obj/item/ammo_casing/shotgun/buckshot/twobore
 	name = "two-bore shell"

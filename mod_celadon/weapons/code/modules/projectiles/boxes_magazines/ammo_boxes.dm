@@ -93,7 +93,7 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a308/surplus
 	name = "Коробка бракованных патронов .308"
 	desc = "Не очень качественные патроны калибра .308, хуже заводских но все еще годны."
-	icon_state = "a308_brak"
+	icon_state = "a308box"
 
 /obj/item/storage/box/ammo/a308/surplus/PopulateContents()
 	var/static/items_inside = list(

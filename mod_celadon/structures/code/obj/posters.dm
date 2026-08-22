@@ -1,3 +1,4 @@
+#define POSTER_ADD_FROM_LIST 3
 // MARK: BAY
 /obj/structure/sign/poster/bay
 	icon = 'mod_celadon/_storage_icons/icons/structures/obj/posters.dmi'
@@ -512,3 +513,5 @@
 	name = "Hacking Guide"
 	desc = "This poster details the internal workings of the common Nanotrasen airlock."
 	icon_state = "poster10"
+
+#undef POSTER_ADD_FROM_LIST
