@@ -1028,8 +1028,8 @@
 /obj/item/storage/toolbox/electrical,
 /obj/item/storage/toolbox/mechanical,
 /obj/item/storage/toolbox/mechanical,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/gloves/insulated,
 /obj/item/stack/sheet/metal/fifty,
 /obj/item/stack/sheet/glass/fifty,
 /turf/open/floor/plasteel/patterned/cargo_one,
@@ -1372,9 +1372,9 @@
 /obj/item/storage/cans/sixsoda,
 /obj/item/storage/cans/sixsoda,
 /obj/item/storage/cans/sixbeer,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/machinery/door/firedoor/border_only{
 	dir = 4
 	},
@@ -1659,14 +1659,12 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/clothing/head/soft/yellow,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/meson,
 /obj/machinery/light/small/directional/west,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/suit/hooded/wintercoat/engineering,
-/obj/item/clothing/under/rank/engineering/engineer/nt,
-/obj/item/clothing/under/rank/engineering/engineer/nt/skirt,
 /obj/item/clothing/under/rank/engineering/engineer/hazard{
 	pixel_x = -5
 	},
@@ -1885,13 +1883,11 @@
 /obj/item/storage/belt/utility/full,
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/clothing/head/soft/yellow,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/glasses/meson,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/suit/hooded/wintercoat/engineering,
-/obj/item/clothing/under/rank/engineering/engineer/nt,
-/obj/item/clothing/under/rank/engineering/engineer/nt/skirt,
 /obj/item/clothing/under/rank/engineering/engineer/hazard{
 	pixel_x = -5
 	},
@@ -2929,7 +2925,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on{
 	dir = 8
 	},
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 10;
 	output_dir = 1;
 	pixel_y = 17;

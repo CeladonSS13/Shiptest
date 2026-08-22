@@ -1,4 +1,4 @@
-/// Nanotrasen Tactical Assault Squad лидер
+/// nanotrasen Tactical Assault Squad лидер
 
 /datum/outfit/job/cel/nanotrasen/ntas/commander
 	name = "NT Assault Squad - Leader"

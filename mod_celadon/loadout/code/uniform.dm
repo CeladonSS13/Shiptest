@@ -49,7 +49,7 @@
 /datum/gear/uniform/galaxy
 	subtype_path = /datum/gear/uniform/galaxy
 
-/datum/gear/uniform/galaxy/blue/skirt
+/datum/gear/uniform/galaxy/blue_skirt
 	display_name = "suitskirt, blue galaxy"
 	path = /obj/item/clothing/under/suit/galaxy/skirt
 

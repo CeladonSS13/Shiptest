@@ -133,8 +133,8 @@
 
 	id = /obj/item/card/id/cel/syndicate/command_qm
 	ears = /obj/item/radio/headset/syndicate/alt
-	uniform = /obj/item/clothing/under/syndicate/donk/qm
-	suit = /obj/item/clothing/suit/hazardvest/donk/qm
+	uniform = /obj/item/clothing/under/syndicate
+	suit = /obj/item/clothing/suit/hazardvest
 	ears = /obj/item/radio/headset/syndicate/alt
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses
@@ -188,8 +188,8 @@
 
 	id = /obj/item/card/id/cel/syndicate/crew/cargo_tech
 	ears = /obj/item/radio/headset/syndicate
-	uniform = /obj/item/clothing/under/syndicate/donk
-	suit = /obj/item/clothing/suit/hazardvest/donk
+	uniform = /obj/item/clothing/under/syndicate
+	suit =/obj/item/clothing/suit/hazardvest
 
 	alt_suit = /obj/item/clothing/suit/hazardvest
 	l_hand = /obj/item/export_scanner
@@ -262,7 +262,7 @@
 	head = /obj/item/clothing/head/soft/paramedic
 	suit =  /obj/item/clothing/suit/toggle/labcoat/paramedic
 	alt_suit = /obj/item/clothing/suit/apron/surgical
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
+	gloves = /obj/item/clothing/gloves/nitrile/evil
 	backpack_contents = list(/obj/item/roller=1)
 	pda_slot = ITEM_SLOT_LPOCKET
 

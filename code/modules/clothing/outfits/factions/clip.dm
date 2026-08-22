@@ -67,6 +67,7 @@
 	ears = /obj/item/radio/headset/clip/alt/captain
 	gloves = /obj/item/clothing/gloves/color/white
 	shoes = /obj/item/clothing/shoes/laceup
+	box = /obj/item/storage/box/survival/clip/command
 //	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
 	backpack = /obj/item/storage/backpack/captain
@@ -87,13 +88,13 @@
 	jobtype = /datum/job/chief_engineer
 
 	id = /obj/item/card/id/silver
-	gloves = /obj/item/clothing/gloves/color/yellow
+	gloves = /obj/item/clothing/gloves/insulated
 	belt = /obj/item/storage/belt/utility/full
 	shoes = /obj/item/clothing/shoes/workboots
 	head = /obj/item/clothing/head/hardhat/white
 	ears = /obj/item/radio/headset/clip
 	uniform = /obj/item/clothing/under/clip
-	gloves = /obj/item/clothing/gloves/color/yellow
+	gloves = /obj/item/clothing/gloves/insulated
 	alt_uniform = null
 	suit = /obj/item/clothing/suit/toggle/lawyer/clip
 	alt_suit = null
@@ -137,7 +138,7 @@
 		// [/CELADON-REMOVE]
 		/obj/item/modular_computer/tablet/preset/advanced = 1)
 
-	chameleon_extras = list(/obj/item/gun/energy/sharplite/x12, /obj/item/stamp/officer)
+	chameleon_extras = list(/obj/item/gun/energy/sharplite/volt, /obj/item/stamp/officer)
 
 /datum/outfit/job/clip/doctor
 	name = "CLIP - Doctor"
@@ -149,7 +150,7 @@
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	shoes = /obj/item/clothing/shoes/sneakers/white
 	suit = /obj/item/clothing/suit/toggle/labcoat
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/clip
+	gloves = /obj/item/clothing/gloves/nitrile
 	suit_store = /obj/item/flashlight/pen/paramedic
 
 	backpack = /obj/item/storage/backpack/medic
@@ -165,7 +166,7 @@
 	uniform = /obj/item/clothing/under/clip/medic
 	head = /obj/item/clothing/head/soft/paramedic
 	shoes = /obj/item/clothing/shoes/sneakers/blue
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/clip
+	gloves = /obj/item/clothing/gloves/nitrile
 	belt = /obj/item/storage/belt/medical
 	l_pocket = /obj/item/flashlight/pen
 
@@ -213,7 +214,7 @@
 	job_icon = "stationengineer"
 	jobtype = /datum/job/engineer
 
-	gloves = /obj/item/clothing/gloves/color/yellow
+	gloves = /obj/item/clothing/gloves/insulated
 	belt = /obj/item/storage/belt/utility/full/engi
 	shoes = /obj/item/clothing/shoes/workboots
 	r_pocket = /obj/item/t_scanner
@@ -343,6 +344,7 @@
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/captain
 	shoes = /obj/item/clothing/shoes/jackboots
 	head = /obj/item/clothing/head/clip/slouch/officer
+	box = /obj/item/storage/box/survival/clip/minutemen/command
 
 	backpack_contents = list(/obj/item/storage/box/ids=1,
 		// [CELADON-REMOVE] - CELADON_BALANCE - Убираем телескопички

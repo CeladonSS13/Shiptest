@@ -579,7 +579,6 @@
 		SStgui.close_uis(helm)
 		helm.say(helm_locked ? "Helm console is now locked." : "Helm console has been unlocked.")
 
-
 /datum/overmap/ship/controlled/alter_token_appearance()
 	if(!source_template)
 		return ..()
@@ -623,6 +622,12 @@
 	if(our_helm)
 		our_helm.cancel_jump()
 
+///Checks to see if the ship already has a high priority mission.
+/datum/overmap/ship/controlled/proc/check_for_high_priority_mission()
+	for(var/datum/mission/target_mission as anything in missions)
+		if(target_mission.high_priority == TRUE)
+			return TRUE
+	return FALSE
 
 /obj/item/key/ship
 	name = "ship key"

@@ -263,23 +263,6 @@
 	},
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/crew)
-"fS" = (
-/obj/structure/catwalk/over/plated_catwalk,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/structure/sign/poster/official/moth/epi{
-	pixel_y = -32
-	},
-/obj/machinery/newscaster/directional/west,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/cargo)
 "fX" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/power/port_gen/pacman,
@@ -290,6 +273,33 @@
 /obj/machinery/light/small/directional/north,
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
+"gl" = (
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_door = "solgov_wall";
+	icon_state = "solgov_wall";
+	name = "vanguard's locker";
+	req_access_txt = "58"
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
+/obj/item/clothing/gloves/tackler/combat/insulated,
+/obj/item/clothing/shoes/combat,
+/obj/item/storage/belt/military/assault,
+/obj/item/storage/backpack/messenger/inteq,
+/obj/item/megaphone/command,
+/obj/item/clothing/under/syndicate/inteq/skirt,
+/obj/item/clothing/under/syndicate/inteq,
+/obj/item/clothing/suit/armor/hos/inteq,
+/obj/item/clothing/head/beret/sec/hos/inteq,
+/obj/item/radio/headset/inteq/alt/captain,
+/obj/item/shield/tele,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/gun/ballistic/revolver/horizonx,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/clothing/mask/balaclava/inteq,
+/turf/open/floor/carpet/orange,
+/area/ship/bridge)
 "go" = (
 /obj/machinery/power/smes/engineering{
 	charge = 1e+006
@@ -945,33 +955,6 @@
 /obj/item/storage/toolbox/ammo/c9mm,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"va" = (
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_door = "solgov_wall";
-	icon_state = "solgov_wall";
-	name = "vanguard's locker";
-	req_access_txt = "58"
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/storage/belt/military/assault,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/megaphone/command,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/item/radio/headset/inteq/alt/captain,
-/obj/item/shield/tele,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/item/gun/ballistic/revolver/horizonx,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/clothing/mask/balaclava/inteq,
-/turf/open/floor/carpet/orange,
-/area/ship/bridge)
 "ve" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/corner/opaque/yellow,
@@ -1132,6 +1115,23 @@
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
+"xa" = (
+/obj/structure/catwalk/over/plated_catwalk,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 5
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/structure/sign/poster/nanotrasen/moth/epi{
+	pixel_y = -32
+	},
+/obj/machinery/newscaster/directional/west,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/cargo)
 "xj" = (
 /obj/effect/turf_decal/industrial/traffic,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1219,7 +1219,7 @@
 "Ao" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/port)
-"AQ" = (
+"AN" = (
 /obj/structure/railing/corner,
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1231,7 +1231,7 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/structure/sign/poster/official/safety_internals{
+/obj/structure/sign/poster/nanotrasen/safety_internals{
 	pixel_x = -32
 	},
 /obj/structure/closet/emcloset/wall/directional/north,
@@ -2582,12 +2582,12 @@ HD
 Ao
 ib
 Or
-AQ
+AN
 Sh
 gU
 vE
 yE
-fS
+xa
 Or
 ib
 cX
@@ -2821,7 +2821,7 @@ ib
 ib
 GB
 mw
-va
+gl
 Ki
 of
 NI

@@ -22,7 +22,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -45,7 +45,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -68,7 +68,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -91,7 +91,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -116,7 +116,7 @@
 		else if(istype(O, /obj/item/card/id))
 			I = O
 			break
-	if (W | I)
+	if (W || I)
 		if(W)
 			for (var/obj/item/O in W.contents)
 				if (istype(O, /obj/item/card/id))
@@ -344,7 +344,7 @@
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	l_hand = /obj/item/storage/firstaid
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
 
@@ -460,11 +460,11 @@
 
     id = /obj/item/card/id/cel/nanotrasen/nslogistics_miner
     ears = /obj/item/radio/headset/solgov
-    head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+    head = /obj/item/clothing/head/hardhat/warra/blue
     shoes = /obj/item/clothing/shoes/workboots/mining
     gloves = /obj/item/clothing/gloves/explorer
-    uniform = /obj/item/clothing/under/nanotrasen/supply/miner
-    suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+    uniform = /obj/item/clothing/under/warra/supply/miner
+    suit = /obj/item/clothing/suit/warra/vest/blue
     l_pocket = /obj/item/storage/bag/ore
     r_pocket = /obj/item/pda/shaftminer
     backpack_contents = list(

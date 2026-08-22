@@ -127,7 +127,7 @@ hp
 
 /datum/supply_pack/faction/independent/gun/challenger
 	name = "Pistol - VI 'Challenger' (9x18mm)"
-	desc = "Contains a double stacked Challenger pistol, produced by Nanotrasen along with Vigilitas Interstellar and is chambered in 9x18mm."
+	desc = "Contains a double stacked Challenger pistol, produced by Warra along with Vigilitas Interstellar and is chambered in 9x18mm."
 	cost = 1100
 	contains = list(/obj/item/storage/guncase/pistol/commander)
 	//spread = 3

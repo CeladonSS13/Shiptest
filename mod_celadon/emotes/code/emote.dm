@@ -893,8 +893,6 @@
 /datum/emote/living/gurgle/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
 		return FALSE
-	if(!isjellyperson(user))
-		return FALSE
 	return TRUE
 
 /datum/emote/living/gurgle/get_sound(mob/living/user)
@@ -1906,8 +1904,6 @@
 
 /datum/emote/living/carbon/human/jelly/can_run_emote(mob/user, status_check = TRUE , intentional)
 	if(!..())
-		return FALSE
-	if(!isjellyperson(user))
 		return FALSE
 	return TRUE
 

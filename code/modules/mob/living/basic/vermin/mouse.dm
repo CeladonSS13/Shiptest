@@ -88,6 +88,10 @@
 	// Now if we were't ACTUALLY gibbed, spawn the dead mouse
 	if(!gibbed)
 		var/obj/item/food/deadmouse/mouse = new(loc)
+		// [CELADON-ADD] - для синди мыши
+		if(src.body_color == "red")
+			mouse.icon = 'mod_celadon/_storage_icons/icons/mobs/pet_content/pets.dmi'
+		// [/CELADON-ADD]
 		mouse.name = name
 		mouse.icon_state = icon_dead
 		if(HAS_TRAIT(src, TRAIT_BEING_SHOCKED))
@@ -239,7 +243,8 @@
 	icon_state = "mouse_gray_dead"
 	bite_consumption = 3
 	eatverbs = list("devour")
-	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2)
+	tastes = list("subtle game" = 4, "metallic tang" = 1)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 1, /datum/reagent/consumable/nutriment/organ_tissue = 1)
 	foodtypes = GORE | MEAT | RAW
 	grind_results = list(/datum/reagent/blood = 20, /datum/reagent/liquidgibs = 5)
 
@@ -283,9 +288,10 @@
 	name = "moldy dead mouse"
 	desc = "A dead rodent, consumed by mold and rot. There is a slim chance that a lizard might still eat it."
 	icon_state = "mouse_gray_dead"
-	food_reagents = list(/datum/reagent/consumable/nutriment = 3, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/mold = 10)
+	food_reagents = list(/datum/reagent/consumable/nutriment = 2, /datum/reagent/consumable/nutriment/protein = 2, /datum/reagent/consumable/mold = 10)
 	foodtypes = GORE | MEAT | RAW | GROSS
 	grind_results = list(/datum/reagent/blood = 20, /datum/reagent/liquidgibs = 5, /datum/reagent/consumable/mold = 10)
+	tastes = list("Mold" = 4, "metallic tang" = 1)
 
 /// The mouse AI controller
 /datum/ai_controller/basic_controller/mouse

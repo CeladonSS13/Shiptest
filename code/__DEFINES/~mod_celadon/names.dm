@@ -7,9 +7,10 @@
 #define FACTION_SOLFED "SolFed"
 #define FACTION_SOLCON "SolFed"
 #define FACTION_INTEQ "InteQ"
-#define FACTION_NT "Nanotrasen"
+#define FACTION_WARRA "Warra"
 	#define FACTION_NS_LOGI "N+S Logistics"
 	#define FACTION_VIGILITAS "Vigilitas Interstellar"
+#define FACTION_NANOTRASEN "Nanotrasen"
 #define FACTION_INDEPENDENT "Independent"
 #define FACTION_ELYSIUM "Elysium"
 #define FACTION_EVENT "Event"
@@ -20,6 +21,7 @@
 #define FACTION_RAMZI_RENEGADE "Ramzi Renegade"	// [CELADON-ADD]
 #define FACTION_SRM "Saint-Roumain Militia"
 #define FACTION_CLIP "CLIP Minutemen"
+#define FACTION_MINUTEMEN "Minutemen"
 #define FACTION_FRONTIER "Frontiersmen Fleet"
 #define FACTION_FRONTIERSMEN "Frontiersmen Fleet"
 #define FACTION_PGF "Pan-Gezenan Federation"
@@ -27,7 +29,7 @@
 // code/__DEFINES/mobfactions.dm
 // #define FACTION_PLAYER_SYNDICATE "playerSyndicate"
 #define FACTION_PLAYER_PIRATE "playerPirate"
-// #define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"
+// #define FACTION_PLAYER_WARRA "playerWarra"
 // #define FACTION_PLAYER_FRONTIERSMEN "playerFrontiersmen"
 // #define FACTION_PLAYER_MINUTEMAN "playerMinuteman"
 #define FACTION_PLAYER_SOLFED "playerSolFed"
@@ -45,9 +47,10 @@
 #define PREFIX_SOLCON list("SCSV",)
 #define PREFIX_SOLFED list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV",)
 #define PREFIX_INTEQ list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV",)
-#define PREFIX_NT list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV",)
+#define PREFIX_WARRA list("MWSV",)
 	#define PREFIX_NS_LOGI list("NSSV",)
 	#define PREFIX_VIGILITAS list("VISV",)
+#define PREFIX_NANOTRASEN list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV",)
 #define PREFIX_FRONTIER list("FFV",)
 #define PREFIX_INDEPENDENT list("SV", "IMV", "ISV", "MSV", "ЕSV")
 #define PREFIX_ELYSIUM list("EUSM", "EUSQ", "EUSF", "EUSR")
@@ -56,6 +59,7 @@
 
 #define PREFIX_FRONTIERSMEN list("FFV")
 #define PREFIX_CLIP list("CMSV", "CMGSV",)
+#define PREFIX_MINUTEMEN list("MINU")
 #define PREFIX_PGF list("PGF", "PGFMC", "PGFN",)
 #define PREFIX_RAMZI list("RCSV",)
 #define PREFIX_NONE list()
@@ -64,7 +68,8 @@ GLOBAL_LIST_INIT(ship_faction_to_prefixes, list(
 	FACTION_SYNDICATE = PREFIX_SYNDICATE,
 	FACTION_SOLFED = PREFIX_SOLFED,
 	FACTION_INTEQ = PREFIX_INTEQ,
-	FACTION_NT = PREFIX_NT,
+	FACTION_WARRA = PREFIX_WARRA,
+	FACTION_NANOTRASEN = PREFIX_NANOTRASEN,
 	FACTION_INDEPENDENT = PREFIX_INDEPENDENT,
 	FACTION_ELYSIUM = PREFIX_ELYSIUM,
 	FACTION_PIRATES = PREFIX_PIRATES,

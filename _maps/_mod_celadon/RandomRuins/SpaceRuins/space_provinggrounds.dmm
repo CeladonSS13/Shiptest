@@ -282,6 +282,12 @@
 /obj/effect/decal/cleanable/blood/gibs,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/space/has_grav/astraeus/munitions)
+"hN" = (
+/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
+	name = "REDFOR commando"
+	},
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/astraeus/munitions)
 "if" = (
 /obj/effect/mob_spawn/human/corpse/vigilitas_private,
 /obj/effect/decal/cleanable/blood/tracks,
@@ -630,21 +636,6 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/astraeus/munitions)
-"st" = (
-/obj/effect/turf_decal/ntlogo{
-	dir = 1
-	},
-/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
-	name = "REDFOR commando"
-	},
-/turf/open/floor/mineral/titanium/white,
-/area/ruin/space/has_grav/astraeus/munitions)
-"sC" = (
-/obj/effect/turf_decal/ntlogo{
-	dir = 8
-	},
-/turf/open/floor/mineral/titanium/white,
-/area/ruin/space/has_grav/astraeus/munitions)
 "sE" = (
 /obj/machinery/modular_computer/console/preset{
 	dir = 8
@@ -705,20 +696,6 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/titanium/white,
-/area/ruin/space/has_grav/astraeus/munitions)
-"tG" = (
-/obj/effect/turf_decal/ntlogo,
-/obj/machinery/nuclearbomb/beer,
-/turf/open/floor/mineral/titanium/white,
-/area/ruin/space/has_grav/astraeus/munitions)
-"tN" = (
-/obj/effect/turf_decal/ntlogo{
-	dir = 4
-	},
-/mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg{
-	name = "REDFOR commando"
-	},
 /turf/open/floor/mineral/titanium/white,
 /area/ruin/space/has_grav/astraeus/munitions)
 "tZ" = (
@@ -1429,6 +1406,10 @@
 /obj/item/assembly/timer,
 /turf/open/floor/mineral/plastitanium,
 /area/ruin/space/has_grav)
+"Jr" = (
+/obj/machinery/nuclearbomb/beer,
+/turf/open/floor/mineral/titanium/white,
+/area/ruin/space/has_grav/astraeus/munitions)
 "Jv" = (
 /obj/structure/table/reinforced,
 /obj/item/paper_bin,
@@ -3822,8 +3803,8 @@ hw
 bV
 mq
 pb
-st
-tG
+hN
+Jr
 vE
 xE
 rf
@@ -3872,8 +3853,8 @@ if
 bV
 mq
 pk
-sC
-tN
+pb
+hN
 wa
 xI
 ru

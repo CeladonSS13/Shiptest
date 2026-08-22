@@ -46,6 +46,23 @@ hp
 	contains = list(/obj/item/storage/guncase/gar)
 	crate_name = "auto rifle crate"
 
+/datum/supply_pack/faction/solfed/gun/g36
+	name = "Assault-Rifle - G36 (5.56x45mm)"
+	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Chambered in 5.56x45mm"
+	contains = list(/obj/item/storage/guncase/g36)
+	cost = 8000
+/* MARK: 5.56x45mm
+bullet
+	damage = 25
+	armour_penetration = 20
+a856
+	damage = 30
+	armour_penetration = 25
+m903
+	damage = 20
+	armour_penetration = 40
+*/
+
 // MARK: CM Ballistic
 
 /datum/supply_pack/faction/solfed/gun/ballistic

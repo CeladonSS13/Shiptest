@@ -105,7 +105,7 @@
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/captain
-	gloves = /obj/item/clothing/gloves/color/captain/nt
+	gloves = /obj/item/clothing/gloves/color/captain/nanotrasen
 	ears = /obj/item/radio/headset/nanotrasen/captain
 	uniform = /obj/item/clothing/under/nanotrasen/captain
 	alt_uniform = /obj/item/clothing/under/nanotrasen/captain/skirt
@@ -311,7 +311,7 @@
 
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/heads/cmo
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	ears = /obj/item/radio/headset/nanotrasen/captain
 	uniform = /obj/item/clothing/under/nanotrasen/medical/director
 	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/blue
@@ -440,9 +440,8 @@
 	jobtype = /datum/job/warden
 
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/warden/nt
+	uniform = /obj/item/clothing/under/nanotrasen/security
 	shoes = /obj/item/clothing/shoes/jackboots
-	suit = /obj/item/clothing/suit/armor/vest/security/warden/alt/nt
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/security
 	gloves = /obj/item/clothing/gloves/color/black
 	head = /obj/item/clothing/head/warden/red
@@ -495,7 +494,7 @@
 	job_icon = "brigphysician"
 
 	ears = /obj/item/radio/headset/headset_medsec/alt
-	uniform = /obj/item/clothing/under/rank/security/brig_phys/nt
+	uniform = /obj/item/clothing/under/nanotrasen/medical
 	shoes = /obj/item/clothing/shoes/jackboots
 	glasses = /obj/item/clothing/glasses/hud/health/sunglasses
 	suit = /obj/item/clothing/suit/toggle/labcoat/brig_phys
@@ -681,7 +680,6 @@
 
 	ears = /obj/item/radio/headset/headset_srvsec
 	uniform = /obj/item/clothing/under/nanotrasen/affairs
-	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
 	shoes = /obj/item/clothing/shoes/laceup
 	l_hand = /obj/item/storage/briefcase/lawyer
 	l_pocket = /obj/item/laser_pointer
@@ -695,6 +693,8 @@
 	job_icon = "lieutenant"
 
 	id = /obj/item/card/id/silver
+	suit = /obj/item/clothing/suit/nanotrasen/suitjacket
+	head = /obj/item/clothing/head/nanotrasen/beret/affairs
 	ears = /obj/item/radio/headset/headset_cent
 	l_hand = /obj/item/clipboard
 	r_pocket = /obj/item/pen/fountain

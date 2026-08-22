@@ -610,7 +610,7 @@
 	pixel_x = 10;
 	pixel_y = 1
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/clip{
+/obj/item/clothing/gloves/nitrile{
 	pixel_y = -8;
 	pixel_x = -6
 	},
@@ -1917,7 +1917,7 @@
 	pixel_y = 8;
 	pixel_x = -8
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil{
+/obj/item/clothing/gloves/nitrile/evil{
 	pixel_y = -7;
 	pixel_x = -5
 	},
@@ -3074,15 +3074,15 @@
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/structure/crate_shelf,
 /obj/structure/closet/crate,
-/obj/effect/spawner/random/food_or_drink/donkpockets{
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
 	pixel_y = 9;
 	pixel_x = 6
 	},
-/obj/effect/spawner/random/food_or_drink/donkpockets{
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
 	pixel_y = 5;
 	pixel_x = 6
 	},
-/obj/effect/spawner/random/food_or_drink/donkpockets{
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
 	pixel_y = 1;
 	pixel_x = 6
 	},
@@ -3428,7 +3428,7 @@
 	pixel_x = 9;
 	pixel_y = -6
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/clip{
+/obj/item/clothing/gloves/nitrile{
 	pixel_y = -8;
 	pixel_x = -6
 	},
@@ -4087,7 +4087,7 @@
 	},
 /obj/machinery/vending/tool{
 	all_items_free = 1;
-	premium = list(/obj/item/storage/belt/utility = 2, /obj/item/clothing/head/welding = 1, /obj/item/clothing/gloves/color/yellow = 1)
+	premium = list(/obj/item/storage/belt/utility = 2, /obj/item/clothing/head/welding = 1, /obj/item/clothing/gloves/insulated = 1)
 	},
 /obj/machinery/firealarm/directional/east,
 /obj/machinery/light/directional/south,
@@ -4599,7 +4599,7 @@
 	dir = 4;
 	pixel_y = 14
 	},
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/nanotrasen/no_erp{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/tech,

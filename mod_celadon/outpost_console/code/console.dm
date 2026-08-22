@@ -441,8 +441,8 @@
 	charge_account = ACCOUNT_NTN
 
 /obj/machinery/computer/cargo/faction/nanotrasen/generate_pack_data()
-	supply_pack_data = generate_faction_pack_data(/datum/faction/nt)
+	supply_pack_data = generate_faction_pack_data(/datum/faction/nanotrasen)
 
 /obj/machinery/computer/cargo/faction/nanotrasen/ui_static_data(mob/user)
-	var/list/data = faction_ui_static_data(user, /datum/faction/nt)
+	var/list/data = faction_ui_static_data(user, /datum/faction/nanotrasen)
 	return data

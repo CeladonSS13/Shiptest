@@ -25,20 +25,18 @@
 	new /obj/item/clothing/head/caphat(src)
 	new /obj/item/clothing/head/caphat/parade(src)
 	new /obj/item/clothing/suit/armor/vest/capcarapace/captunic(src)
-	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
-	new /obj/item/clothing/head/crown/fancy(src)
-	// [/CELADON-ADD]
 	new /obj/item/cartridge/captain(src)
 	new /obj/item/storage/box/silver_ids(src)
 	new /obj/item/radio/headset/heads/captain/alt(src)
 	new /obj/item/radio/headset/heads/captain(src)
 	new /obj/item/clothing/gloves/color/captain(src)
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
+	new /obj/item/clothing/head/crown/fancy(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/supergar(src)
+	new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	// [/CELADON-ADD]
 	new /obj/item/storage/belt/sabre(src)
-	new /obj/item/gun/energy/sharplite/x12(src)
-	new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/sharplite/volt(src)
 	new /obj/item/door_remote/captain(src)
 	new /obj/item/card/id/captains_spare(src)
 	new /obj/item/storage/photo_album/Captain(src)
@@ -67,13 +65,13 @@
 	new /obj/item/clothing/suit/armor/vest/hop(src) //WS edit - Command Resprite 3
 	new /obj/item/assembly/flash/handheld(src)
 	new /obj/item/clothing/glasses/sunglasses(src)
-	new /obj/item/gun/energy/sharplite/x26(src) //WS Edit - Gives HoP a mini egun
-	new /obj/item/gun/energy/e_gun/e_old/mini(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/sharplite/ohm(src) //WS Edit - Gives HoP a mini egun
 	new /obj/item/clothing/neck/petcollar(src)
 	new /obj/item/pet_carrier(src)
 	new /obj/item/door_remote/civilian(src)
 	new /obj/item/storage/photo_album/HoP(src)
 	new /obj/item/storage/lockbox/medal/hop(src)
+	new /obj/item/gun/energy/e_gun/e_old/mini(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 
 
 /obj/structure/closet/secure_closet/hos
@@ -111,12 +109,12 @@
 	new /obj/item/storage/box/flashbangs(src)
 	new /obj/item/shield/tele(src)
 	new /obj/item/storage/belt/security/full(src)
-	new /obj/item/gun/energy/sharplite/x01(src)
-	new /obj/item/gun/energy/e_gun/e_old/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/sharplite/yari(src)
 	new /obj/item/gun/ballistic/automatic/pistol/commissar(src) //WS edit - free lethals
 	new /obj/item/pinpointer/nuke(src)
 	new /obj/item/circuitboard/machine/techfab/department/security(src)
 	new /obj/item/storage/photo_album/HoS(src)
+	new /obj/item/gun/energy/e_gun/e_old/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun_voucher //WS edit - gun gun gun gun gun gun gun
 
 /obj/structure/closet/secure_closet/empty/warden
@@ -325,8 +323,8 @@
 	..()
 	new /obj/item/gun/energy/ionrifle(src)
 	for(var/i in 1 to 3)
+		new /obj/item/gun/energy/sharplite/volt(src)
 		new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		new /obj/item/gun/energy/sharplite/x12(src)
 	for(var/i in 1 to 3)
 		new /obj/item/gun/energy/laser(src)
 
@@ -374,7 +372,8 @@
 /obj/structure/closet/secure_closet/brig_phys
 	name = "\proper brig physician's locker"
 	req_access = list(ACCESS_BRIG)
-	icon_state = "brig_phys"
+	icon_state = "sec"
+	icon_door = "brig_phys_door"
 
 /obj/structure/closet/secure_closet/brig_phys/PopulateContents()
 	..()
@@ -389,7 +388,7 @@
 	new /obj/item/reagent_containers/spray/pepper(src)
 	new /obj/item/assembly/flash/handheld(src)
 	new /obj/item/restraints/handcuffs(src)
-	new /obj/item/clothing/gloves/color/latex/nitrile(src)
+	new /obj/item/clothing/gloves/nitrile/blue(src)
 	new /obj/item/clothing/suit/toggle/labcoat/brig_phys(src)
 	new /obj/item/clothing/suit/armor/vest/security/brig_phys(src)
 	new /obj/item/clothing/head/beret/sec/brig_phys(src)

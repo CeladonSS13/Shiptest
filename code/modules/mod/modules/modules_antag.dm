@@ -296,7 +296,7 @@
 		return FALSE
 	switch(choice)
 		if("custom color")
-			var/chosen_colour = input(mod.wearer, "", "Choose Color", color) as color|null
+			var chosen_colour = input(mod.wearer, "", "Choose Color", color) as color|null
 			if (!isnull(chosen_colour))
 				color = chosen_colour
 		else

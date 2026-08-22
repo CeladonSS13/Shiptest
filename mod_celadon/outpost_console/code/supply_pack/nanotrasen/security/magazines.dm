@@ -98,7 +98,7 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_gun_plus
 	name = "P-Cell - Sharplite Upgraded Weapon Cell"
-	desc = "Contains an upgraded weapon cell, compatible with most Nanotrasen models. It has a rating of 30 MJs. For NT use only."
+	desc = "Contains an upgraded weapon cell, compatible with most nanotrasen models. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
 	cost = 2250 // 5 MJ -> 250 кредитов + надбавка за "имбовость". В целом, хочется поставить просто 2000
 	stable_price = TRUE

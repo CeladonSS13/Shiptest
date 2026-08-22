@@ -568,37 +568,6 @@
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew)
-"lI" = (
-/obj/structure/window/plasma/reinforced,
-/obj/effect/turf_decal/industrial/fire{
-	dir = 10
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10
-	},
-/obj/effect/turf_decal/industrial/outline/red,
-/obj/structure/closet/secure_closet{
-	anchored = 1;
-	icon_state = "syndicate";
-	name = "ammunition locker";
-	req_one_access_txt = "1"
-	},
-/obj/item/melee/energy/sword/saber/red{
-	pixel_x = 15;
-	pixel_y = 7
-	},
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/shield/tele{
-	pixel_x = -7;
-	pixel_y = -1
-	},
-/turf/open/floor/plasteel/patterned/grid{
-	color = "#777777"
-	},
-/area/ship/hallway/central)
 "mp" = (
 /obj/structure/closet/wall{
 	pixel_y = -28
@@ -1853,6 +1822,44 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
+"Bp" = (
+/obj/effect/turf_decal/industrial/fire/cee,
+/obj/effect/turf_decal/siding/thinplating/dark/end,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet/engineering_personal{
+	populate = 0
+	},
+/obj/machinery/light/small/directional/east,
+/obj/item/clothing/suit/hazardvest/ngr{
+	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex."
+	},
+/obj/item/clothing/under/syndicate/ngr/jumpsuit{
+	name = "\improper Gorlex jumpsuit";
+	desc = "A beige jumpsuit with black overalls used by wreckers of the Gorlex. A reminder of Gorlex VII's history as a mining colony, prior to its destruction."
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
+	name = "Gorlex modified mesons"
+	},
+/obj/item/clothing/head/hardhat/ngr{
+	desc = "A blood-red hardhat typically used by Wreckers and Ship Engineers of the Gorlex."
+	},
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/under/syndicate/gorlex,
+/obj/item/storage/belt/utility/full/engi,
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/storage/backpack/satchel/eng,
+/obj/item/storage/backpack/industrial,
+/obj/item/spacecash/bundle/c200,
+/obj/item/spacecash/bundle/c50,
+/obj/item/clothing/shoes/magboots/syndie,
+/obj/item/gun/energy,
+/obj/item/stock_parts/cell/gun/upgraded,
+/turf/open/floor/plasteel/patterned/grid{
+	color = "#777777"
+	},
+/area/ship/engineering)
 "Bw" = (
 /obj/effect/turf_decal/corner/opaque/beige/three_quarters{
 	dir = 8
@@ -1977,6 +1984,37 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
+"Dp" = (
+/obj/structure/window/plasma/reinforced,
+/obj/effect/turf_decal/industrial/fire{
+	dir = 10
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 10
+	},
+/obj/effect/turf_decal/industrial/outline/red,
+/obj/structure/closet/secure_closet{
+	anchored = 1;
+	icon_state = "syndicate";
+	name = "ammunition locker";
+	req_one_access_txt = "1"
+	},
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
+	},
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/shield/tele{
+	pixel_x = -7;
+	pixel_y = -1
+	},
+/turf/open/floor/plasteel/patterned/grid{
+	color = "#777777"
+	},
+/area/ship/hallway/central)
 "DD" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor{
@@ -2815,44 +2853,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
-"Rv" = (
-/obj/effect/turf_decal/industrial/fire/cee,
-/obj/effect/turf_decal/siding/thinplating/dark/end,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/secure_closet/engineering_personal{
-	populate = 0
-	},
-/obj/machinery/light/small/directional/east,
-/obj/item/clothing/suit/hazardvest/ngr{
-	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex."
-	},
-/obj/item/clothing/under/syndicate/ngr/jumpsuit{
-	name = "\improper Gorlex jumpsuit";
-	desc = "A beige jumpsuit with black overalls used by wreckers of the Gorlex. A reminder of Gorlex VII's history as a mining colony, prior to its destruction."
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/ngr{
-	name = "Gorlex modified mesons"
-	},
-/obj/item/clothing/head/hardhat/ngr{
-	desc = "A blood-red hardhat typically used by Wreckers and Ship Engineers of the Gorlex."
-	},
-/obj/item/clothing/gloves/color/red/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/under/syndicate/gorlex,
-/obj/item/storage/belt/utility/full/engi,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/storage/backpack/satchel/eng,
-/obj/item/storage/backpack/industrial,
-/obj/item/spacecash/bundle/c200,
-/obj/item/spacecash/bundle/c50,
-/obj/item/clothing/shoes/magboots/syndie,
-/obj/item/gun/energy,
-/obj/item/stock_parts/cell/gun/upgraded,
-/turf/open/floor/plasteel/patterned/grid{
-	color = "#777777"
-	},
-/area/ship/engineering)
 "RT" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/diagonal{
 	dir = 8
@@ -3002,6 +3002,55 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/canteen)
+"VR" = (
+/obj/effect/turf_decal/industrial/fire/cee,
+/obj/effect/turf_decal/siding/thinplating/dark/end,
+/obj/effect/turf_decal/industrial/outline/yellow,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/secure_closet{
+	icon_state = "brig_phys";
+	name = "Paramedic's locker";
+	req_access_txt = "5"
+	},
+/obj/machinery/light/small/directional/west,
+/obj/item/gun/energy/kalix/pistol,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/clothing/suit/ngr/smock{
+	desc = "A blood-red surgical smock typically worn by field medics of the  Gorlex. It hides red blood really well!"
+	},
+/obj/item/clothing/head/ngr/surgical{
+	desc = "A surgical cap used by field medics of the Gorlex's 2nd Battlegroup."
+	},
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/under/syndicate/ngr/fatigues{
+	desc = "Beige fatigues used primarily by the shuttle and exosuit pilots of the Gorlex.";
+	name = "\improper Gorlex fatigues"
+	},
+/obj/item/clothing/gloves/nitrile/evil,
+/obj/item/clothing/head/helmet/m10/cybersun/trauma{
+	name = "improper trauma team helmet"
+	},
+/obj/item/clothing/suit/armor/vest/cybersun/trauma{
+	name = "Gorlex trauma team armor vest"
+	},
+/obj/item/storage/belt/medical/webbing/paramedic,
+/obj/item/clothing/accessory/holster,
+/obj/item/storage/box/bodybags{
+	pixel_x = -1
+	},
+/obj/item/roller,
+/obj/item/roller{
+	pixel_y = 9
+	},
+/obj/item/storage/backpack/medic,
+/obj/item/storage/backpack/satchel/med,
+/obj/item/spacecash/bundle/c200,
+/obj/item/spacecash/bundle/c50,
+/obj/item/defibrillator/loaded,
+/turf/open/floor/plasteel/patterned/grid{
+	color = "#777777"
+	},
+/area/ship/medical)
 "Wb" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 8
@@ -3041,55 +3090,6 @@
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/cargo)
-"Xc" = (
-/obj/effect/turf_decal/industrial/fire/cee,
-/obj/effect/turf_decal/siding/thinplating/dark/end,
-/obj/effect/turf_decal/industrial/outline/yellow,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/closet/secure_closet{
-	icon_state = "brig_phys";
-	name = "Paramedic's locker";
-	req_access_txt = "5"
-	},
-/obj/machinery/light/small/directional/west,
-/obj/item/gun/energy/kalix/pistol,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/clothing/suit/ngr/smock{
-	desc = "A blood-red surgical smock typically worn by field medics of the  Gorlex. It hides red blood really well!"
-	},
-/obj/item/clothing/head/ngr/surgical{
-	desc = "A surgical cap used by field medics of the Gorlex's 2nd Battlegroup."
-	},
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/under/syndicate/ngr/fatigues{
-	desc = "Beige fatigues used primarily by the shuttle and exosuit pilots of the Gorlex.";
-	name = "\improper Gorlex fatigues"
-	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
-/obj/item/clothing/head/helmet/m10/cybersun/trauma{
-	name = "improper trauma team helmet"
-	},
-/obj/item/clothing/suit/armor/vest/cybersun/trauma{
-	name = "Gorlex trauma team armor vest"
-	},
-/obj/item/storage/belt/medical/webbing/paramedic,
-/obj/item/clothing/accessory/holster,
-/obj/item/storage/box/bodybags{
-	pixel_x = -1
-	},
-/obj/item/roller,
-/obj/item/roller{
-	pixel_y = 9
-	},
-/obj/item/storage/backpack/medic,
-/obj/item/storage/backpack/satchel/med,
-/obj/item/spacecash/bundle/c200,
-/obj/item/spacecash/bundle/c50,
-/obj/item/defibrillator/loaded,
-/turf/open/floor/plasteel/patterned/grid{
-	color = "#777777"
-	},
-/area/ship/medical)
 "Xe" = (
 /obj/effect/turf_decal/corner/opaque/black{
 	dir = 4
@@ -3350,7 +3350,7 @@ dc
 eF
 eF
 hs
-Rv
+Bp
 Li
 ZM
 AO
@@ -3379,7 +3379,7 @@ af
 JG
 JG
 Gv
-Xc
+VR
 UN
 to
 BW
@@ -3506,7 +3506,7 @@ or
 Tt
 gC
 zU
-lI
+Dp
 Kr
 Hp
 OO

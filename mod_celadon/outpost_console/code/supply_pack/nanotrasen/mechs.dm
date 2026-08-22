@@ -22,6 +22,6 @@
 
 /datum/supply_pack/faction/nanotrasen/mech/gygaxnt
 	name = "NT Gygax Conversion Kit"
-	desc = "A custom-made kit for converting the Gygax combat exoskeleton into the specialized NanoTrasen combat exoskeleton."
+	desc = "A custom-made kit for converting the Gygax combat exoskeleton into the specialized nanotrasen combat exoskeleton."
 	contains = list(/obj/item/mecha_parts/mecha_equipment/conversion_kit/gygaxnt)
 	cost = 500
