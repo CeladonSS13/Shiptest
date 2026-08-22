@@ -62,16 +62,6 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/bordercorner,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
-"cd" = (
-/obj/structure/table/reinforced,
-/obj/item/radio/intercom/wideband/table{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = 1
-	},
-/obj/item/radio/intercom/directional/south,
-/turf/open/floor/circuit,
-/area/ship/science/robotics)
 "ci" = (
 /obj/effect/turf_decal/industrial/warning/fulltile,
 /obj/machinery/door/poddoor{
@@ -196,35 +186,6 @@
 /obj/structure/extinguisher_cabinet/directional/south,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/starboard)
-"ds" = (
-/obj/structure/table/wood,
-/obj/item/clothing/glasses/hud/health/sunglasses,
-/obj/item/clothing/shoes/combat,
-/obj/item/clothing/neck/stripedbluescarf,
-/obj/item/clothing/head/beret/black,
-/obj/item/clothing/under/syndicate/sniper,
-/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
-/obj/item/clothing/suit/armor/vest/security/brig_phys{
-	name = "lead doctor's jacket"
-	},
-/obj/item/clothing/gloves/nitrile,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/clothing/accessory/holster,
-/obj/machinery/light_switch{
-	pixel_x = -20;
-	pixel_y = 12;
-	dir = 4
-	},
-/obj/structure/closet/wall/white/med{
-	name = "medical locker";
-	pixel_y = 29;
-	dir = 1
-	},
-/obj/machinery/light/small/directional/west,
-/obj/item/gun/ballistic/automatic/pistol/ringneck,
-/turf/open/floor/carpet/blue,
-/area/ship/medical)
 "dI" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -296,6 +257,22 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/maintenance/port)
+"eH" = (
+/obj/structure/table/reinforced,
+/obj/item/radio/intercom/wideband/table{
+	dir = 4;
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/obj/item/radio/intercom/faction/syndicate/directional/south{
+	pixel_x = -10
+	},
+/obj/item/radio/intercom/directional/south{
+	pixel_x = 8
+	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/east,
+/turf/open/floor/circuit,
+/area/ship/science/robotics)
 "fb" = (
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -852,23 +829,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/medical)
-"oY" = (
-/obj/machinery/shower{
-	pixel_y = 19
-	},
-/obj/structure/curtain,
-/obj/item/bikehorn/rubberducky,
-/obj/structure/sign/poster/nanotrasen/cleanliness{
-	pixel_x = -32
-	},
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/crew/dorm)
 "pb" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1153,6 +1113,35 @@
 /obj/machinery/light/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
+"ub" = (
+/obj/structure/table/wood,
+/obj/item/clothing/glasses/hud/health/sunglasses,
+/obj/item/clothing/shoes/combat,
+/obj/item/clothing/neck/stripedbluescarf,
+/obj/item/clothing/head/beret/black,
+/obj/item/clothing/under/syndicate/sniper,
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
+/obj/item/clothing/suit/armor/vest/security/brig_phys{
+	name = "lead doctor's jacket"
+	},
+/obj/item/clothing/gloves/nitrile,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/ammo_box/magazine/m10mm_ringneck,
+/obj/item/clothing/accessory/holster,
+/obj/machinery/light_switch{
+	pixel_x = -20;
+	pixel_y = 12;
+	dir = 4
+	},
+/obj/structure/closet/wall/white/med{
+	name = "medical locker";
+	pixel_y = 29;
+	dir = 1
+	},
+/obj/machinery/light/small/directional/west,
+/obj/item/gun/ballistic/automatic/pistol/ringneck,
+/turf/open/floor/carpet/blue,
+/area/ship/medical)
 "uG" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1241,6 +1230,20 @@
 /obj/machinery/recharge_station,
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
+"vC" = (
+/obj/machinery/computer/cargo{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/border,
+/obj/effect/turf_decal/corner/opaque/syndiered/border{
+	dir = 4
+	},
+/obj/item/radio/intercom/wideband/directional/south,
+/obj/item/radio/intercom/faction/syndicate/command/directional/south{
+	pixel_y = -36
+	},
+/turf/open/floor/carpet/black,
+/area/ship/bridge)
 "vQ" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1610,6 +1613,27 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
+"Ab" = (
+/obj/structure/table,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/turf_decal/corner/transparent/bar{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/transparent/bar,
+/obj/item/food/syndicake,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/light/directional/west,
+/obj/item/reagent_containers/condiment/saltshaker{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/condiment/peppermill{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/turf/open/floor/plasteel,
+/area/ship/crew)
 "Ae" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/plastitanium,
 /obj/machinery/door/poddoor/shutters{
@@ -2226,27 +2250,6 @@
 /obj/machinery/newscaster/directional/north,
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
-"JA" = (
-/obj/structure/table,
-/obj/effect/spawner/random/food_or_drink/shoalpockets,
-/obj/effect/spawner/random/food_or_drink/shoalpockets,
-/obj/effect/turf_decal/corner/transparent/bar{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/transparent/bar,
-/obj/item/food/syndicake,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/machinery/light/directional/west,
-/obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -8;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/turf/open/floor/plasteel,
-/area/ship/crew)
 "JC" = (
 /obj/machinery/computer/operating,
 /obj/effect/turf_decal/corner/opaque/white/border{
@@ -2283,17 +2286,6 @@
 /obj/item/gun/ballistic/shotgun/brimstone,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/security/armory)
-"Kw" = (
-/obj/machinery/computer/cargo{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/syndiered/border,
-/obj/effect/turf_decal/corner/opaque/syndiered/border{
-	dir = 4
-	},
-/obj/item/radio/intercom/wideband/directional/south,
-/turf/open/floor/carpet/black,
-/area/ship/bridge)
 "Ky" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -2674,6 +2666,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
+"SS" = (
+/obj/machinery/shower{
+	pixel_y = 19
+	},
+/obj/structure/curtain,
+/obj/item/bikehorn/rubberducky,
+/obj/structure/sign/poster/nanotrasen/cleanliness{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/crew/dorm)
 "SW" = (
 /obj/machinery/cryopod{
 	dir = 1
@@ -3268,7 +3277,7 @@ lP
 Oo
 Oo
 sj
-oY
+SS
 Gm
 Pj
 Gt
@@ -3364,7 +3373,7 @@ hY
 KN
 tz
 dI
-JA
+Ab
 iB
 zh
 pS
@@ -3550,7 +3559,7 @@ ve
 ec
 Rk
 zz
-cd
+eH
 QU
 "}
 (18,1,1) = {"
@@ -3577,7 +3586,7 @@ ru
 lm
 lm
 ak
-ds
+ub
 BV
 DM
 ak
@@ -3688,7 +3697,7 @@ lm
 ru
 ru
 Je
-Kw
+vC
 ru
 lm
 lm

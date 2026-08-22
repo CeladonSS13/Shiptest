@@ -574,72 +574,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"fz" = (
-/obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
-	dir = 9
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner,
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 8
-	},
-/obj/structure/closet/secure_closet{
-	anchored = 1;
-	icon_state = "syndicate";
-	name = "locker"
-	},
-/obj/machinery/airalarm/directional/north,
-/obj/item/storage/backpack/science{
-	pixel_y = 9;
-	req_one_access_txt = list(1)
-	},
-/obj/item/storage/backpack/satchel/tox{
-	pixel_y = -2
-	},
-/obj/item/clothing/shoes/combat{
-	pixel_x = 9;
-	pixel_y = -6
-	},
-/obj/item/clothing/under/cybersun/coverall{
-	pixel_x = 10;
-	pixel_y = 1
-	},
-/obj/item/clothing/gloves/nitrile{
-	pixel_y = -8;
-	pixel_x = -6
-	},
-/obj/item/storage/belt/utility/full{
-	pixel_x = -5;
-	pixel_y = -1
-	},
-/obj/item/clothing/head/beret/color{
-	pixel_y = 13;
-	pixel_x = 9;
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50, "wound" = 20)
-	},
-/obj/item/clothing/glasses/welding{
-	pixel_y = 12;
-	pixel_x = -8
-	},
-/obj/item/clothing/glasses/hud/diagnostic/sunglasses{
-	pixel_y = 5;
-	pixel_x = -8
-	},
-/obj/item/clothing/mask/gas/clip{
-	desc = "A close-fitting gas mask that can be connected to an air supply. Hastily-made in 420 FS during the Xenofauna war, after it was discovered that gas mask designs out of date by two decades did not work against xenofauna. Standard issue, but rarely used, as chemical warfare is rare.";
-	pixel_y = 7
-	},
-/obj/item/radio/headset/syndicate{
-	pixel_x = 12
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/science)
 "gb" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew/toilet)
@@ -720,6 +654,11 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
+"hm" = (
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/effect/turf_decal/corner/opaque/syndiered/half,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
 "hn" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 5
@@ -784,6 +723,20 @@
 	pixel_x = 12
 	},
 /turf/open/floor/plasteel/tech,
+/area/ship/engineering)
+"hM" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "Pango_engine_M"
+	},
+/turf/open/floor/plating,
 /area/ship/engineering)
 "hV" = (
 /obj/effect/turf_decal/corner/opaque/syndiered{
@@ -850,6 +803,21 @@
 /obj/structure/chair/stool/bar,
 /turf/open/floor/mineral/plastitanium/red,
 /area/ship/crew)
+"jp" = (
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
+	dir = 8
+	},
+/obj/effect/turf_decal/box/red,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/cargo)
 "jr" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
@@ -906,6 +874,14 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"jR" = (
+/obj/machinery/modular_computer/console/preset/command,
+/obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
+	dir = 8
+	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/north,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "jS" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
@@ -1047,6 +1023,37 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm)
+"ky" = (
+/obj/structure/filingcabinet/double/grey{
+	dir = 4;
+	pixel_x = -10;
+	density = 0
+	},
+/obj/item/clipboard,
+/obj/item/clipboard,
+/obj/item/pen/edagger,
+/obj/item/folder/syndicate,
+/obj/item/folder/syndicate,
+/obj/item/reagent_containers/food/drinks/bottle/fernet,
+/obj/effect/turf_decal/spline/plain/opaque/syndiered{
+	dir = 8
+	},
+/obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
+	dir = 1;
+	layer = 2.1
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 6
+	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/bridge)
 "kB" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -1113,22 +1120,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/engineering)
-"lL" = (
-/obj/machinery/power/smes/shuttle/precharged,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/window/reinforced,
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "Pango_engine_M"
-	},
-/turf/open/floor/plating,
 /area/ship/engineering)
 "my" = (
 /obj/effect/turf_decal/techfloor{
@@ -1605,6 +1596,25 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/general/command_crew)
+"qn" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/spawner/bunk_bed{
+	dir = 1
+	},
+/obj/item/bedsheet/black{
+	dir = 4
+	},
+/obj/item/bedsheet/black{
+	dir = 4;
+	pixel_y = 14
+	},
+/obj/structure/sign/poster/nanotrasen/no_erp{
+	pixel_y = 32
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/crew/dorm)
 "qp" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 4
@@ -1734,13 +1744,6 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
-/area/ship/bridge)
-"ro" = (
-/obj/machinery/modular_computer/console/preset/command,
-/obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
-	dir = 8
-	},
-/turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "rL" = (
 /obj/structure/cable{
@@ -1902,64 +1905,6 @@
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/bridge)
-"tl" = (
-/obj/item/storage/backpack/medic{
-	pixel_y = 3
-	},
-/obj/item/storage/backpack/satchel/med{
-	pixel_y = -7
-	},
-/obj/item/clothing/under/cybersun/medic/skirt{
-	pixel_x = 8;
-	pixel_y = 8
-	},
-/obj/item/clothing/under/cybersun/medic{
-	pixel_y = 8;
-	pixel_x = -8
-	},
-/obj/item/clothing/gloves/nitrile/evil{
-	pixel_y = -7;
-	pixel_x = -5
-	},
-/obj/item/clothing/shoes/combat{
-	pixel_x = 9;
-	pixel_y = -6
-	},
-/obj/item/clothing/mask/surgical{
-	pixel_y = 5;
-	pixel_x = -2
-	},
-/obj/item/clothing/head/soft/cybersun/medical{
-	pixel_x = -9;
-	pixel_y = -3
-	},
-/obj/item/storage/belt/medical/webbing{
-	pixel_x = -12;
-	pixel_y = 8
-	},
-/obj/item/clothing/suit/armor/vest/cybersun/trauma{
-	pixel_x = 12;
-	pixel_y = -2
-	},
-/obj/item/clothing/head/helmet/m10/cybersun/trauma{
-	pixel_x = 12;
-	pixel_y = 7
-	},
-/obj/item/clothing/glasses/hud/health/sunglasses{
-	pixel_y = 12
-	},
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "sec_wall";
-	name = "Paramedic's locker";
-	pixel_x = 0;
-	dir = 2;
-	pixel_y = -32
-	},
-/obj/item/radio/headset/syndicate{
-	pixel_x = 12
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/science)
 "tE" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
@@ -2119,6 +2064,23 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
+"uZ" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced{
+	dir = 1
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "Pango_engine_M"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "vb" = (
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
 	layer = 2.1
@@ -2209,6 +2171,21 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"vQ" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/structure/window/reinforced,
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "Pango_engine_M"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
 "vS" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/structure/chair/comfy/shuttle{
@@ -2236,21 +2213,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/crew)
-"wy" = (
-/obj/machinery/power/smes/shuttle/precharged,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "Pango_engine_M"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "wA" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/storage/fancy/cigarettes/cigars/cohiba{
@@ -2278,22 +2240,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/general/command_crew)
-"wE" = (
-/obj/machinery/power/smes/shuttle/precharged,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/structure/window/reinforced,
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "Pango_engine_M"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "wU" = (
 /obj/structure/cable{
 	icon_state = "0-4"
@@ -2321,24 +2267,6 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
-"xO" = (
-/obj/machinery/power/smes/shuttle/precharged,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/structure/window/reinforced{
-	dir = 1
-	},
-/obj/machinery/door/poddoor{
-	dir = 4;
-	id = "Pango_engine_M"
-	},
-/turf/open/floor/plating,
-/area/ship/engineering)
 "xS" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half,
 /obj/machinery/computer/helm/viewscreen/directional/south,
@@ -2508,21 +2436,21 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
-"zO" = (
-/obj/structure/toilet{
-	dir = 4;
-	pixel_x = -6;
-	pixel_y = 5
+"zW" = (
+/obj/structure/window/reinforced{
+	dir = 8
 	},
-/obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable{
-	icon_state = "0-1"
+/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
+	dir = 10
 	},
-/obj/machinery/light/small/directional/west{
-	pixel_y = -7
-	},
-/turf/open/floor/plasteel/patterned/brushed,
-/area/ship/crew/toilet)
+/obj/effect/turf_decal/box/red,
+/obj/machinery/suit_storage_unit/inherit,
+/obj/item/clothing/suit/space/syndicate/white_red,
+/obj/item/clothing/mask/gas/syndicate,
+/obj/item/clothing/head/helmet/space/syndicate/white_red,
+/obj/item/tank/internals/oxygen,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/cargo)
 "Ai" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered/corner{
@@ -2644,6 +2572,90 @@
 /obj/structure/sign/flag/syndie/directional/west,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew)
+"Bp" = (
+/obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
+	dir = 9
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner,
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 8
+	},
+/obj/structure/closet/secure_closet{
+	anchored = 1;
+	icon_state = "syndicate";
+	name = "locker"
+	},
+/obj/machinery/airalarm/directional/north,
+/obj/item/storage/backpack/science{
+	pixel_y = 9;
+	req_one_access_txt = list(1)
+	},
+/obj/item/storage/backpack/satchel/tox{
+	pixel_y = -2
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/clothing/under/cybersun/coverall{
+	pixel_x = 10;
+	pixel_y = 1
+	},
+/obj/item/clothing/gloves/nitrile{
+	pixel_y = -8;
+	pixel_x = -6
+	},
+/obj/item/storage/belt/utility/full{
+	pixel_x = -5;
+	pixel_y = -1
+	},
+/obj/item/clothing/head/beret/color{
+	pixel_y = 13;
+	pixel_x = 9;
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50, "wound" = 20)
+	},
+/obj/item/clothing/glasses/welding{
+	pixel_y = 12;
+	pixel_x = -8
+	},
+/obj/item/clothing/glasses/hud/diagnostic/sunglasses{
+	pixel_y = 5;
+	pixel_x = -8
+	},
+/obj/item/clothing/mask/gas/clip{
+	desc = "A close-fitting gas mask that can be connected to an air supply. Hastily-made in 420 FS during the Xenofauna war, after it was discovered that gas mask designs out of date by two decades did not work against xenofauna. Standard issue, but rarely used, as chemical warfare is rare.";
+	pixel_y = 7
+	},
+/obj/item/radio/headset/syndicate{
+	pixel_x = 12
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/science)
+"BZ" = (
+/obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/machinery/vending/tool{
+	all_items_free = 1;
+	premium = list(/obj/item/storage/belt/utility = 2, /obj/item/clothing/head/welding = 1, /obj/item/clothing/gloves/insulated = 1)
+	},
+/obj/machinery/firealarm/directional/east,
+/obj/machinery/light/directional/south,
+/obj/machinery/light_switch{
+	dir = 8;
+	pixel_y = 10;
+	pixel_x = 21
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/engineering)
 "Cg" = (
 /obj/structure/chair/comfy/grey/directional/east,
 /turf/open/floor/mineral/plastitanium,
@@ -2715,6 +2727,34 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/command_crew)
+"Cp" = (
+/obj/machinery/power/smes/shuttle/precharged,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/window/reinforced,
+/obj/structure/window/reinforced{
+	dir = 8
+	},
+/obj/machinery/door/poddoor{
+	dir = 4;
+	id = "Pango_engine_M"
+	},
+/turf/open/floor/plating,
+/area/ship/engineering)
+"Cu" = (
+/obj/structure/toilet{
+	dir = 4;
+	pixel_x = -6;
+	pixel_y = 5
+	},
+/obj/machinery/power/apc/auto_name/directional/south,
+/obj/structure/cable,
+/obj/machinery/light/small/directional/west{
+	pixel_y = -7
+	},
+/turf/open/floor/plasteel/patterned/brushed,
+/area/ship/crew/toilet)
 "Cv" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
@@ -3060,66 +3100,6 @@
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/bridge)
-"GR" = (
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 2
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
-"Hf" = (
-/obj/structure/railing/thin{
-	dir = 8
-	},
-/obj/effect/turf_decal/industrial/warning/fulltile,
-/obj/structure/crate_shelf,
-/obj/structure/closet/crate,
-/obj/effect/spawner/random/food_or_drink/shoalpockets{
-	pixel_y = 9;
-	pixel_x = 6
-	},
-/obj/effect/spawner/random/food_or_drink/shoalpockets{
-	pixel_y = 5;
-	pixel_x = 6
-	},
-/obj/effect/spawner/random/food_or_drink/shoalpockets{
-	pixel_y = 1;
-	pixel_x = 6
-	},
-/obj/item/storage/cans/sixbeer{
-	pixel_y = -3;
-	pixel_x = -3
-	},
-/obj/item/storage/cans/sixbeer{
-	pixel_y = 6;
-	pixel_x = -3
-	},
-/obj/item/paper{
-	default_raw_text = "Guys. We couldn't find a place to put your piece of crap (AI), and we're behind schedule... but that's not what I'm talking about, anyway, as compensation we suggest having a good evening or two.<br> P.S. DB Engineer";
-	pixel_y = -4;
-	pixel_x = 8
-	},
-/obj/item/reagent_containers/glass/coffeepot{
-	pixel_x = -6;
-	pixel_y = 10
-	},
-/obj/item/circuitboard/machine/coffeemaker{
-	pixel_x = 7;
-	pixel_y = 9
-	},
-/obj/item/coffee_cartridge{
-	pixel_x = 9
-	},
-/obj/item/coffee_cartridge/fancy/blend{
-	pixel_y = -3;
-	pixel_x = 9
-	},
-/obj/item/coffee_cartridge/fancy/roast{
-	pixel_y = -6;
-	pixel_x = 9
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering)
 "Hh" = (
 /obj/structure/sink{
 	dir = 4;
@@ -3249,22 +3229,20 @@
 /obj/item/clothing/mask/gas/syndicate,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
-"IK" = (
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
+"IG" = (
+/obj/structure/safe{
+	tumblers = list(19, 84)
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
-	dir = 10
-	},
+/obj/item/folder/documents/syndicate/cybersun,
 /obj/effect/turf_decal/box/red,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/syndicate/white_red,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/oxygen,
+/obj/item/mod/core/standard,
+/obj/item/mod/core/standard,
+/obj/machinery/light/directional/east,
+/obj/item/mod/module/storage/syndicate,
+/obj/item/mod/module/storage/syndicate,
+/obj/item/radio/intercom/faction/syndicate/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
+/area/ship/bridge)
 "IL" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
@@ -3396,68 +3374,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science)
-"Je" = (
-/obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
-	dir = 5
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner{
-	dir = 4
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/corner,
-/obj/structure/closet/secure_closet{
-	anchored = 1;
-	icon_state = "syndicate";
-	name = "locker"
-	},
-/obj/machinery/light/directional/north,
-/obj/item/storage/backpack/science{
-	pixel_y = 9;
-	req_one_access_txt = list(1)
-	},
-/obj/item/storage/backpack/satchel/tox{
-	pixel_y = -2
-	},
-/obj/item/clothing/shoes/combat{
-	pixel_x = 9;
-	pixel_y = -6
-	},
-/obj/item/clothing/gloves/nitrile{
-	pixel_y = -8;
-	pixel_x = -6
-	},
-/obj/item/clothing/under/cybersun/coverall{
-	pixel_x = 10;
-	pixel_y = 1
-	},
-/obj/item/clothing/head/beret/color{
-	pixel_y = 13;
-	pixel_x = 9;
-	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50, "wound" = 20)
-	},
-/obj/item/clothing/mask/gas/clip{
-	desc = "A close-fitting gas mask that can be connected to an air supply. Hastily-made in 420 FS during the Xenofauna war, after it was discovered that gas mask designs out of date by two decades did not work against xenofauna. Standard issue, but rarely used, as chemical warfare is rare.";
-	pixel_y = 7
-	},
-/obj/item/survey_handheld{
-	pixel_y = 2;
-	pixel_x = -12
-	},
-/obj/item/clothing/glasses/sunglasses/chemical{
-	pixel_y = 12;
-	pixel_x = -10
-	},
-/obj/item/radio/headset/syndicate{
-	pixel_x = 12
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/science)
 "Jp" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
@@ -3576,6 +3492,68 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/dorm)
+"Kq" = (
+/obj/effect/turf_decal/spline/plain/opaque/syndiered,
+/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
+	dir = 5
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner{
+	dir = 4
+	},
+/obj/effect/turf_decal/trimline/opaque/bar/corner,
+/obj/structure/closet/secure_closet{
+	anchored = 1;
+	icon_state = "syndicate";
+	name = "locker"
+	},
+/obj/machinery/light/directional/north,
+/obj/item/storage/backpack/science{
+	pixel_y = 9;
+	req_one_access_txt = list(1)
+	},
+/obj/item/storage/backpack/satchel/tox{
+	pixel_y = -2
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/clothing/gloves/nitrile{
+	pixel_y = -8;
+	pixel_x = -6
+	},
+/obj/item/clothing/under/cybersun/coverall{
+	pixel_x = 10;
+	pixel_y = 1
+	},
+/obj/item/clothing/head/beret/color{
+	pixel_y = 13;
+	pixel_x = 9;
+	armor = list("melee" = 15, "bullet" = 5, "laser" = 20, "energy" = 10, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 100, "acid" = 50, "wound" = 20)
+	},
+/obj/item/clothing/mask/gas/clip{
+	desc = "A close-fitting gas mask that can be connected to an air supply. Hastily-made in 420 FS during the Xenofauna war, after it was discovered that gas mask designs out of date by two decades did not work against xenofauna. Standard issue, but rarely used, as chemical warfare is rare.";
+	pixel_y = 7
+	},
+/obj/item/survey_handheld{
+	pixel_y = 2;
+	pixel_x = -12
+	},
+/obj/item/clothing/glasses/sunglasses/chemical{
+	pixel_y = 12;
+	pixel_x = -10
+	},
+/obj/item/radio/headset/syndicate{
+	pixel_x = 12
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/science)
 "Kv" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 8
@@ -3812,22 +3790,6 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
-"LO" = (
-/obj/structure/window/reinforced{
-	icon_state = "rwindow";
-	dir = 8
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
-	dir = 8
-	},
-/obj/effect/turf_decal/box/red,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/syndicate/white_red,
-/obj/item/clothing/mask/gas/syndicate,
-/obj/item/clothing/head/helmet/space/syndicate/white_red,
-/obj/item/tank/internals/oxygen,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/cargo)
 "LT" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
@@ -3881,6 +3843,18 @@
 	name = "Engine Shutters";
 	dir = 1;
 	pixel_x = -2
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering)
+"MD" = (
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 6
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -4033,19 +4007,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
-"NS" = (
-/obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering)
 "NV" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 5
@@ -4080,24 +4041,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/general/command_crew)
-"Or" = (
-/obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 8
-	},
-/obj/machinery/vending/tool{
-	all_items_free = 1;
-	premium = list(/obj/item/storage/belt/utility = 2, /obj/item/clothing/head/welding = 1, /obj/item/clothing/gloves/insulated = 1)
-	},
-/obj/machinery/firealarm/directional/east,
-/obj/machinery/light/directional/south,
-/obj/machinery/light_switch{
-	dir = 8;
-	pixel_y = 10;
-	pixel_x = 21
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/engineering)
 "Ou" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 1
@@ -4135,6 +4078,59 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
+"OF" = (
+/obj/structure/railing/thin{
+	dir = 8
+	},
+/obj/effect/turf_decal/industrial/warning/fulltile,
+/obj/structure/crate_shelf,
+/obj/structure/closet/crate,
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
+	pixel_y = 9;
+	pixel_x = 6
+	},
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
+	pixel_y = 5;
+	pixel_x = 6
+	},
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
+	pixel_y = 1;
+	pixel_x = 6
+	},
+/obj/item/storage/cans/sixbeer{
+	pixel_y = -3;
+	pixel_x = -3
+	},
+/obj/item/storage/cans/sixbeer{
+	pixel_y = 6;
+	pixel_x = -3
+	},
+/obj/item/paper{
+	default_raw_text = "Guys. We couldn't find a place to put your piece of crap (AI), and we're behind schedule... but that's not what I'm talking about, anyway, as compensation we suggest having a good evening or two.<br> P.S. DB Engineer";
+	pixel_y = -4;
+	pixel_x = 8
+	},
+/obj/item/reagent_containers/glass/coffeepot{
+	pixel_x = -6;
+	pixel_y = 10
+	},
+/obj/item/circuitboard/machine/coffeemaker{
+	pixel_x = 7;
+	pixel_y = 9
+	},
+/obj/item/coffee_cartridge{
+	pixel_x = 9
+	},
+/obj/item/coffee_cartridge/fancy/blend{
+	pixel_y = -3;
+	pixel_x = 9
+	},
+/obj/item/coffee_cartridge/fancy/roast{
+	pixel_y = -6;
+	pixel_x = 9
+	},
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering)
 "OH" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 1
@@ -4385,38 +4381,6 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
-"Rt" = (
-/obj/structure/filingcabinet/double/grey{
-	dir = 4;
-	pixel_x = -10;
-	density = 0
-	},
-/obj/item/clipboard,
-/obj/item/clipboard,
-/obj/item/pen/edagger,
-/obj/item/folder/syndicate,
-/obj/item/folder/syndicate,
-/obj/item/reagent_containers/food/drinks/bottle/fernet,
-/obj/effect/turf_decal/spline/plain/opaque/syndiered{
-	dir = 8
-	},
-/obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/effect/turf_decal/spline/fancy/opaque/syndiered{
-	dir = 1;
-	layer = 2.1
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 6
-	},
-/obj/structure/cable{
-	icon_state = "2-4";
-	tag = null
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 6
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/bridge)
 "RB" = (
 /obj/machinery/camera/autoname{
 	dir = 10
@@ -4540,19 +4504,6 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
-"TU" = (
-/obj/structure/safe{
-	tumblers = list(19, 84)
-	},
-/obj/item/folder/documents/syndicate/cybersun,
-/obj/effect/turf_decal/box/red,
-/obj/item/mod/core/standard,
-/obj/item/mod/core/standard,
-/obj/machinery/light/directional/east,
-/obj/item/mod/module/storage/syndicate,
-/obj/item/mod/module/storage/syndicate,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
 "TW" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 9
@@ -4585,25 +4536,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
-"Ue" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/effect/spawner/bunk_bed{
-	dir = 1
-	},
-/obj/item/bedsheet/black{
-	dir = 4
-	},
-/obj/item/bedsheet/black{
-	dir = 4;
-	pixel_y = 14
-	},
-/obj/structure/sign/poster/nanotrasen/no_erp{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/crew/dorm)
 "Uh" = (
 /obj/docking_port/stationary{
 	height = 15;
@@ -5075,6 +5007,27 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
+"WU" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/half,
+/obj/effect/turf_decal/spline/fancy/opaque/black,
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/paper_bin{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/phone{
+	pixel_x = 10;
+	pixel_y = -4
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 8
+	},
+/obj/item/pen{
+	pixel_y = 4;
+	pixel_x = -5
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security)
 "WY" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 1
@@ -5113,6 +5066,64 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
+"Xn" = (
+/obj/item/storage/backpack/medic{
+	pixel_y = 3
+	},
+/obj/item/storage/backpack/satchel/med{
+	pixel_y = -7
+	},
+/obj/item/clothing/under/cybersun/medic/skirt{
+	pixel_x = 8;
+	pixel_y = 8
+	},
+/obj/item/clothing/under/cybersun/medic{
+	pixel_y = 8;
+	pixel_x = -8
+	},
+/obj/item/clothing/gloves/nitrile/evil{
+	pixel_y = -7;
+	pixel_x = -5
+	},
+/obj/item/clothing/shoes/combat{
+	pixel_x = 9;
+	pixel_y = -6
+	},
+/obj/item/clothing/mask/surgical{
+	pixel_y = 5;
+	pixel_x = -2
+	},
+/obj/item/clothing/head/soft/cybersun/medical{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/obj/item/storage/belt/medical/webbing{
+	pixel_x = -12;
+	pixel_y = 8
+	},
+/obj/item/clothing/suit/armor/vest/cybersun/trauma{
+	pixel_x = 12;
+	pixel_y = -2
+	},
+/obj/item/clothing/head/helmet/m10/cybersun/trauma{
+	pixel_x = 12;
+	pixel_y = 7
+	},
+/obj/item/clothing/glasses/hud/health/sunglasses{
+	pixel_y = 12
+	},
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_state = "sec_wall";
+	name = "Paramedic's locker";
+	pixel_x = 0;
+	dir = 2;
+	pixel_y = -32
+	},
+/obj/item/radio/headset/syndicate{
+	pixel_x = 12
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/science)
 "XR" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters,
 /obj/machinery/computer/crew{
@@ -5138,29 +5149,6 @@
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering)
-"XW" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 2
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/paper_bin{
-	pixel_x = -5;
-	pixel_y = 2
-	},
-/obj/item/phone{
-	pixel_x = 10;
-	pixel_y = -4
-	},
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
-/obj/item/pen{
-	pixel_y = 4;
-	pixel_x = -5
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security)
 "Yg" = (
 /obj/structure/closet/wall{
 	dir = 4;
@@ -5727,15 +5715,15 @@ Gi
 VY
 nI
 ni
-Hf
+OF
 aQ
 fe
 oy
-lL
+Cp
 wU
 An
 wU
-xO
+uZ
 sa
 YB
 ya
@@ -5760,9 +5748,9 @@ Lq
 qb
 Mk
 qf
-wE
+vQ
 wU
-xO
+uZ
 qf
 Mk
 qV
@@ -5789,9 +5777,9 @@ lG
 lb
 lo
 qf
-wy
+hM
 qf
-NS
+MD
 eG
 qt
 XU
@@ -5818,7 +5806,7 @@ hn
 pB
 lo
 qf
-NS
+MD
 RS
 Wi
 mD
@@ -5874,7 +5862,7 @@ OM
 dq
 LT
 MU
-Or
+BZ
 WG
 oX
 ei
@@ -5898,13 +5886,13 @@ OH
 xU
 lf
 Jd
-tl
+Xn
 dq
 yB
 Wo
 yB
 WG
-Ue
+qn
 rL
 bs
 kB
@@ -5949,7 +5937,7 @@ An
 An
 NH
 dq
-fz
+Bp
 PC
 Ea
 EC
@@ -5965,7 +5953,7 @@ Yx
 IB
 vr
 Hh
-zO
+Cu
 gb
 ic
 An
@@ -5977,7 +5965,7 @@ An
 An
 Gi
 dq
-Je
+Kq
 jS
 Tx
 vt
@@ -6148,7 +6136,7 @@ sc
 FA
 Pg
 Rq
-Rt
+ky
 GN
 pr
 EE
@@ -6216,8 +6204,8 @@ Ro
 Ro
 jM
 TZ
-LO
-IK
+jp
+zW
 Ro
 An
 An
@@ -6229,7 +6217,7 @@ hb
 An
 An
 sc
-ro
+jR
 Ar
 vS
 rl
@@ -6290,7 +6278,7 @@ sc
 sc
 CW
 sc
-TU
+IG
 sc
 An
 VY
@@ -6382,7 +6370,7 @@ vM
 Zl
 dd
 fi
-XW
+WU
 ZZ
 dd
 dd
@@ -6410,7 +6398,7 @@ tK
 An
 dd
 Qq
-GR
+hm
 ae
 dd
 VY

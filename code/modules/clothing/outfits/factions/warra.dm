@@ -22,7 +22,7 @@
 	id = /obj/item/card/id/gold
 	belt = /obj/item/pda/captain
 	gloves = /obj/item/clothing/gloves/color/captain/warra
-	ears = /obj/item/radio/headset/warra/captain
+	ears = /obj/item/radio/headset/nanotrasen/captain
 	uniform = /obj/item/clothing/under/warra/captain
 	alt_uniform = /obj/item/clothing/under/warra/captain/skirt
 	suit = /obj/item/clothing/suit/armor/warra/captain
@@ -104,7 +104,7 @@
 	shoes = /obj/item/clothing/shoes/combat
 	glasses = /obj/item/clothing/glasses/sunglasses
 	gloves = /obj/item/clothing/gloves/combat
-	ears = /obj/item/radio/headset/warra/alt/captain
+	ears = /obj/item/radio/headset/nanotrasen/alt/captain
 	neck = null
 	backpack_contents = list(/obj/item/melee/classic_baton/telescopic=1)
 

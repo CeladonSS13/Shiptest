@@ -70,11 +70,6 @@ export const CSS_COLORS = [
 /* IF YOU CHANGE THIS KEEP IT IN SYNC WITH CHAT CSS */
 export const RADIO_CHANNELS = [
   {
-    name: 'Coalition',
-    freq: 1213,
-    color: '#8f4a4b',
-  },
-  {
     name: 'Cybersun',
     freq: 1203,
     color: '#4c9c9c',
@@ -85,49 +80,74 @@ export const RADIO_CHANNELS = [
     color: '#c59973',
   },
   {
-    name: 'SUNS',
-    freq: 1207,
-    color: '#8f67a1',
+    name: 'Syndicate',
+    freq: 1213,
+    color: '#8f4a4b',
   },
   {
-    name: 'Red Team',
+    name: 'Syndicate (Long-Range)',
     freq: 1215,
-    color: '#ff4444',
+    color: '#8f4a4b',
   },
   {
-    name: 'Blue Team',
-    freq: 1217,
-    color: '#3434fd',
-  },
-  {
-    name: 'Green Team',
-    freq: 1219,
-    color: '#34fd34',
-  },
-  {
-    name: 'Yellow Team',
-    freq: 1221,
-    color: '#fdfd34',
+    name: 'Syndicate (Short)',
+    freq: 1223,
+    color: '#ac5f61',
   },
   {
     name: 'NT-CC',
-    freq: 1337,
+    freq: 1237,
     color: '#2681a5',
   },
   {
-    name: 'SolCon',
-    freq: 1345,
-    color: '#7589af',
+    name: 'SUNS',
+    freq: 1325,
+    color: '#4e3399',
+  },
+  {
+    name: 'SUNS (Long-Range)',
+    freq: 1327,
+    color: '#4e3399',
+  },
+  {
+    name: 'SUNS (Short)',
+    freq: 1329,
+    color: '#7153c6',
   },
   {
     name: 'IRMG',
-    freq: 1347,
+    freq: 1333,
     color: '#b88646',
   },
   {
-    name: 'PGF',
-    freq: 1349,
+    name: 'IRMG (Long-Range)',
+    freq: 1335,
+    color: '#b88646',
+  },
+  {
+    name: 'IRMG (Short)',
+    freq: 1337,
+    color: '#c79f6a',
+  },
+  {
+    name: 'Elysium',
+    freq: 1339,
+    color: '#12692f',
+  },
+  {
+    name: 'Elysium (Long-Range)',
+    freq: 1341,
+    color: '#12692f',
+  },
+  {
+    name: 'Elysium (Short)',
+    freq: 1343,
     color: '#199943',
+  },
+  {
+    name: 'Nanotrasen',
+    freq: 1345,
+    color: '#28a4ec',
   },
   {
     name: 'Makosso-Warra',
@@ -135,19 +155,64 @@ export const RADIO_CHANNELS = [
     color: '#c68cfa',
   },
   {
-    name: 'Emergency',
-    freq: 1353,
-    color: '#dd3535',
+    name: 'Nanotrasen (Long-Range)',
+    freq: 1347,
+    color: '#28a4ec',
   },
   {
-    name: 'Minutemen',
-    freq: 1355,
+    name: 'Nanotrasen (Short)',
+    freq: 1349,
     color: '#57b8f0',
   },
   {
-    name: 'Unidentified',
-    freq: 1359,
+    name: 'SolFed',
+    freq: 1353,
+    color: '#5a6a88',
+  },
+  {
+    name: 'SolFed (Long-Range)',
+    freq: 1355,
+    color: '#5a6a88',
+  },
+  {
+    name: 'SolFed (Short)',
+    freq: 1357,
+    color: '#7589af',
+  },
+  {
+    name: 'Raider (Long-Range)',
+    freq: 1417,
+    color: '#ab9b21',
+  },
+  {
+    name: 'Raider (Short)',
+    freq: 1419,
     color: '#fcdf03',
+  },
+  {
+    name: 'Ramzi (Long-Range)',
+    freq: 1421,
+    color: '#5a4d3f',
+  },
+  {
+    name: 'Ramzi (Short)',
+    freq: 1423,
+    color: '#796755',
+  },
+  {
+    name: 'Unidentified (Long-Range)',
+    freq: 1425,
+    color: '#3d3d3d',
+  },
+  {
+    name: 'Unidentified (Short)',
+    freq: 1427,
+    color: '#5d5d5d',
+  },
+  {
+    name: 'Emergency',
+    freq: 1429,
+    color: '#dd3535',
   },
   {
     name: 'Common',
@@ -156,7 +221,7 @@ export const RADIO_CHANNELS = [
   },
   {
     name: 'Wideband',
-    freq: 1681,
+    freq: 1691,
     color: '#8de7b6',
   },
 ] as const;

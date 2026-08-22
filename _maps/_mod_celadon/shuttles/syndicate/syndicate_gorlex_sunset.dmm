@@ -336,33 +336,6 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/general/command_crew)
-"fH" = (
-/obj/item/clothing/glasses/hud/health/night,
-/obj/item/gps,
-/obj/structure/closet/wall/white/directional/south,
-/obj/item/clothing/gloves/nitrile/evil,
-/obj/item/storage/box/bodybags{
-	pixel_x = -1
-	},
-/obj/item/defibrillator/compact/combat/loaded,
-/obj/item/roller,
-/obj/item/roller,
-/obj/item/storage/backpack/satchel/med,
-/obj/item/clothing/head/helmet/m10/cybersun/trauma{
-	name = "improper trauma team helmet"
-	},
-/obj/item/clothing/under/utility,
-/obj/item/pinpointer/crew,
-/obj/item/storage/belt/medical,
-/obj/item/clothing/suit/armor/vest/cybersun/trauma{
-	name = "Gorlex trauma team armor vest"
-	},
-/obj/item/storage/backpack/medic,
-/obj/item/clothing/under/syndicate/tacticool,
-/obj/item/clothing/shoes/jackboots,
-/obj/item/clothing/under/cybersun/medic/skirt,
-/turf/open/floor/plasteel/dark,
-/area/ship/medical)
 "ga" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
@@ -554,6 +527,16 @@
 /obj/machinery/door/firedoor/border_only,
 /turf/open/floor/marble/black,
 /area/ship/crew/canteen/kitchen)
+"ic" = (
+/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
+	dir = 6
+	},
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 1
+	},
+/obj/item/radio/intercom/faction/syndicate/command/directional/south,
+/turf/open/floor/marble/black,
+/area/ship/bridge)
 "if" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 10
@@ -812,39 +795,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
-"lP" = (
-/obj/machinery/atmospherics/components/binary/pump/on/layer4{
-	name = "Air to Distro";
-	target_pressure = 1000
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 6
-	},
-/obj/structure/closet/wall/orange/directional{
-	dir = 4;
-	pixel_x = 32
-	},
-/obj/item/clothing/glasses/meson/sunglasses,
-/obj/item/storage/belt/utility/syndicate,
-/obj/item/clothing/under/syndicate/gec/atmos_tech,
-/obj/item/clothing/gloves/insulated,
-/obj/item/clothing/head/hardhat/red{
-	name = "hard hat"
-	},
-/obj/item/pipe_dispenser,
-/obj/item/storage/toolbox/syndicate,
-/obj/item/clothing/accessory/armband/engine,
-/obj/item/gps,
-/obj/item/storage/backpack/industrial,
-/obj/item/clothing/suit/hazardvest/ngr{
-	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex."
-	},
-/obj/item/clothing/under/syndicate/skirt,
-/obj/item/clothing/under/utility,
-/obj/item/clothing/under/syndicate/tacticool,
-/obj/item/clothing/shoes/jackboots,
-/turf/open/floor/plasteel/tech/grid,
-/area/ship/engineering)
 "mt" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "okno_crew1"
@@ -1335,6 +1285,39 @@
 /obj/machinery/portable_atmospherics/canister/oxygen,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
+"wx" = (
+/obj/machinery/atmospherics/components/binary/pump/on/layer4{
+	name = "Air to Distro";
+	target_pressure = 1000
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 6
+	},
+/obj/structure/closet/wall/orange/directional{
+	dir = 4;
+	pixel_x = 32
+	},
+/obj/item/clothing/glasses/meson/sunglasses,
+/obj/item/storage/belt/utility/syndicate,
+/obj/item/clothing/under/syndicate/gec/atmos_tech,
+/obj/item/clothing/gloves/insulated,
+/obj/item/clothing/head/hardhat/red{
+	name = "hard hat"
+	},
+/obj/item/pipe_dispenser,
+/obj/item/storage/toolbox/syndicate,
+/obj/item/clothing/accessory/armband/engine,
+/obj/item/gps,
+/obj/item/storage/backpack/industrial,
+/obj/item/clothing/suit/hazardvest/ngr{
+	desc = "A blood-red high-visibility vest typically used in work zones by the Gorlex."
+	},
+/obj/item/clothing/under/syndicate/skirt,
+/obj/item/clothing/under/utility,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/shoes/jackboots,
+/turf/open/floor/plasteel/tech/grid,
+/area/ship/engineering)
 "wB" = (
 /obj/structure/railing{
 	dir = 4
@@ -1617,15 +1600,6 @@
 	},
 /turf/open/floor/plasteel/strongdark,
 /area/ship/general/cargo)
-"AE" = (
-/obj/effect/turf_decal/trimline/opaque/syndiered/filled/line{
-	dir = 6
-	},
-/obj/machinery/modular_computer/console/preset/command{
-	dir = 1
-	},
-/turf/open/floor/marble/black,
-/area/ship/bridge)
 "AO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1697,6 +1671,58 @@
 	},
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
+"Bt" = (
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_state = "sec_wall";
+	name = "Ammo Locker";
+	req_access_txt = "1"
+	},
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/attachment/laser_sight,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/m45_cobra,
+/obj/item/ammo_box/magazine/saiga,
+/obj/item/ammo_box/magazine/saiga,
+/obj/item/storage/box/ammo/a410_ammo_box,
+/obj/item/ammo_box/magazine/saiga,
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/m57_39_sidewinder{
+	pixel_y = -5
+	},
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
+/obj/item/storage/box/ammo/c57x39,
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/security/armory)
 "BG" = (
 /obj/machinery/vending/wallmed/ship{
 	pixel_y = 28;
@@ -1838,67 +1864,6 @@
 "CL" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/general/cargo)
-"CX" = (
-/obj/effect/turf_decal/industrial/warning{
-	dir = 10
-	},
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "sec_wall";
-	name = "Ammo Locker";
-	req_access_txt = "1"
-	},
-/obj/item/attachment/laser_sight,
-/obj/item/attachment/laser_sight,
-/obj/item/attachment/laser_sight,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/m45_cobra,
-/obj/item/ammo_box/magazine/saiga,
-/obj/item/ammo_box/magazine/saiga,
-/obj/item/storage/box/ammo/a410_ammo_box,
-/obj/item/ammo_box/magazine/saiga,
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/m57_39_sidewinder{
-	pixel_x = 0;
-	pixel_y = -5
-	},
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39,
-/obj/item/storage/box/ammo/c57x39,
-/turf/open/floor/mineral/plastitanium/red,
-/area/ship/security/armory)
 "CZ" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/corner,
@@ -2595,6 +2560,33 @@
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/marble/black,
 /area/ship/hallway/central)
+"NL" = (
+/obj/item/clothing/glasses/hud/health/night,
+/obj/item/gps,
+/obj/structure/closet/wall/white/directional/south,
+/obj/item/clothing/gloves/nitrile/evil,
+/obj/item/storage/box/bodybags{
+	pixel_x = -1
+	},
+/obj/item/defibrillator/compact/combat/loaded,
+/obj/item/roller,
+/obj/item/roller,
+/obj/item/storage/backpack/satchel/med,
+/obj/item/clothing/head/helmet/m10/cybersun/trauma{
+	name = "improper trauma team helmet"
+	},
+/obj/item/clothing/under/utility,
+/obj/item/pinpointer/crew,
+/obj/item/storage/belt/medical,
+/obj/item/clothing/suit/armor/vest/cybersun/trauma{
+	name = "Gorlex trauma team armor vest"
+	},
+/obj/item/storage/backpack/medic,
+/obj/item/clothing/under/syndicate/tacticool,
+/obj/item/clothing/shoes/jackboots,
+/obj/item/clothing/under/cybersun/medic/skirt,
+/turf/open/floor/plasteel/dark,
+/area/ship/medical)
 "NZ" = (
 /obj/machinery/power/apc/auto_name/directional/west{
 	pixel_y = 5
@@ -3621,7 +3613,7 @@ ja
 Ja
 Dn
 EJ
-lP
+wx
 CI
 mY
 te
@@ -3849,7 +3841,7 @@ Ti
 Hs
 PL
 Cq
-AE
+ic
 Yy
 uw
 KU
@@ -4044,7 +4036,7 @@ xo
 eD
 Ah
 UD
-CX
+Bt
 eD
 yE
 cE
@@ -4101,7 +4093,7 @@ PB
 Dc
 ea
 BG
-fH
+NL
 ea
 aQ
 xo

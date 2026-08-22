@@ -11,6 +11,7 @@
 	unscrewed = FALSE
 	var/mode_token = MODE_TOKEN_INTERCOM
 	var/obj/item/wallframe/wallframe = /obj/item/wallframe/intercom
+	var/faction = FALSE
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 
@@ -43,12 +44,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(unscrewed)
 			user.visible_message(span_notice("[user] starts tightening [src]'s screws..."), span_notice("You start screwing in [src]..."))
-			if(I.use_tool(src, user, 30, volume=50))
+			if(I.use_tool(src, user, volume=50))
 				user.visible_message(span_notice("[user] tightens [src]'s screws!"), span_notice("You tighten [src]'s screws."))
 				unscrewed = FALSE
 		else
 			user.visible_message(span_notice("[user] starts loosening [src]'s screws..."), span_notice("You start unscrewing [src]..."))
-			if(I.use_tool(src, user, 40, volume=50))
+			if(I.use_tool(src, user, volume=50))
 				user.visible_message(span_notice("[user] loosens [src]'s screws!"), span_notice("You unscrew [src], loosening it from the wall."))
 				unscrewed = TRUE
 		return
@@ -118,6 +119,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 
 /obj/item/radio/intercom/update_icon()
 	. = ..()
+	if(faction)
+		return
 	if(on)
 		icon_state = initial(icon_state)
 	else
@@ -163,7 +166,6 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	result_path = /obj/item/radio/intercom/table
 	pixel_shift = 0
 
-
 //wideband radio
 /obj/item/radio/intercom/wideband
 	name = "wideband relay"
@@ -188,6 +190,145 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	unscrewed = TRUE
 
 MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/wideband, 26)
+
+// [CELADON-ADD]
+/obj/item/radio/intercom/faction
+	name = "internal intercom"
+	desc = "A internal intercom. Faction radio included!"
+	icon = 'mod_celadon/_storage_icons/icons/machinery/intercoms_maphelp.dmi'
+	icon_state = "intercom"
+	keyslot = new /obj/item/encryptionkey/wideband
+	frequency = FREQ_EMERGENCY
+	freqlock = TRUE
+	independent = TRUE
+	freerange = TRUE
+	faction = TRUE
+	var/stripe_color = null		/// What color is this machine's stripe? Leave null to not have a stripe.
+
+/obj/item/radio/intercom/faction/Initialize(mapload, ndir, building)
+	. = ..()
+	update_appearance(UPDATE_OVERLAYS)
+	set_frequency(frequency)
+	freqlock = TRUE
+
+/obj/item/radio/intercom/faction/screwdriver_act(mob/living/user, obj/item/tool)
+	. = ..()
+	update_appearance(UPDATE_OVERLAYS)
+
+/obj/item/radio/intercom/faction/update_overlays()
+	. = ..()
+	if(unscrewed)
+		. += "intercom-open"
+	if(!stripe_color)
+		return
+
+	var/mutable_appearance/stripe = mutable_appearance(icon, "intercom-offline")
+	if(on)
+		stripe.icon_state = "intercom-active"
+		stripe.color = stripe_color
+	. += stripe
+
+/obj/item/radio/intercom/faction/syndicate
+	keyslot = new /obj/item/encryptionkey/syndicate
+	frequency = FREQ_SYNDICATE
+	stripe_color = "#fd5454"
+	icon_state = "intercom-syndicate"
+
+/obj/item/radio/intercom/faction/syndicate/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_SYNDICATE_LONG
+	icon_state = "intercom-syndicate-c"
+
+/obj/item/radio/intercom/faction/suns
+	keyslot = new /obj/item/encryptionkey/syndicate/suns
+	frequency = FREQ_SUNS
+	stripe_color = "#b162ff"
+	icon_state = "intercom-suns"
+
+/obj/item/radio/intercom/faction/suns/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_SUNS_LONG
+	icon_state = "intercom-suns-c"
+
+/obj/item/radio/intercom/faction/inteq
+	keyslot = new /obj/item/encryptionkey/inteq
+	frequency = FREQ_INTEQ
+	stripe_color = "#ffb92d"
+	icon_state = "intercom-inteq"
+
+/obj/item/radio/intercom/faction/inteq/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_INTEQ_LONG
+	icon_state = "intercom-inteq-c"
+
+/obj/item/radio/intercom/faction/elysium
+	keyslot = new /obj/item/encryptionkey/elysium
+	frequency = FREQ_ELYSIUM
+	stripe_color = "#29ff29"
+	icon_state = "intercom-elysium"
+
+/obj/item/radio/intercom/faction/elysium/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_ELYSIUM_LONG
+	icon_state = "intercom-elysium-c"
+
+/obj/item/radio/intercom/faction/nanotrasen
+	keyslot = new /obj/item/encryptionkey/nanotrasen
+	frequency = FREQ_NANOTRASEN
+	stripe_color = "#5fafff"
+	icon_state = "intercom-nanotrasen"
+
+/obj/item/radio/intercom/faction/nanotrasen/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_NANOTRASEN_LONG
+	icon_state = "intercom-nanotrasen-c"
+
+/obj/item/radio/intercom/faction/solfed
+	keyslot = new /obj/item/encryptionkey/solgov
+	frequency = FREQ_SOLFED
+	stripe_color = "#4fe2ff"
+	icon_state = "intercom-solfed"
+
+/obj/item/radio/intercom/faction/solfed/command
+	name = "command long-range intercom"
+	log = TRUE
+	frequency = FREQ_SOLFED_LONG
+	icon_state = "intercom-solfed-c"
+
+/obj/item/radio/intercom/faction/ramzi
+	keyslot = new /obj/item/encryptionkey/ramzi
+	frequency = FREQ_RAMZI
+	stripe_color = "#ca9d6f"
+	icon_state = "intercom-ramzi"
+
+/obj/item/radio/intercom/faction/pirate
+	keyslot = new /obj/item/encryptionkey/pirate
+	frequency = FREQ_PIRATE
+	stripe_color = "#777777"
+	icon_state = "intercom-pirate"
+
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/syndicate/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/suns, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/suns/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/inteq, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/inteq/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/elysium, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/elysium/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/nanotrasen, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/nanotrasen/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/solfed, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/solfed/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/ramzi, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/ramzi/command, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate, 31)
+MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate/command, 31)
+// [/CELADON-ADD]
 
 /obj/item/radio/intercom/wideband/table
 	icon_state = "intercom-wideband-table"
