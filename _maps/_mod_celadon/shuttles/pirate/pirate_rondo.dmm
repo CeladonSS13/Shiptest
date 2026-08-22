@@ -625,6 +625,16 @@
 	},
 /turf/open/floor/engine,
 /area/ship/security/armory)
+"iG" = (
+/obj/machinery/computer/helm{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/syndiered/half{
+	dir = 4
+	},
+/obj/item/radio/intercom/faction/ramzi/command/directional/east,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "iJ" = (
 /obj/effect/turf_decal/steeldecal/steel_decals4{
 	dir = 10
@@ -1484,6 +1494,24 @@
 	icon_state = "metal_1"
 	},
 /area/ship/external)
+"uw" = (
+/obj/machinery/modular_computer/console/preset/command{
+	dir = 4
+	},
+/obj/machinery/newscaster/directional/west,
+/obj/effect/turf_decal/corner/opaque/syndiered/half{
+	dir = 4
+	},
+/obj/item/radio/intercom/wideband/directional/north{
+	pixel_x = -1;
+	pixel_y = 28
+	},
+/obj/item/radio/intercom/faction/ramzi/directional/north{
+	pixel_x = -1;
+	pixel_y = 44
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/bridge)
 "uF" = (
 /obj/effect/decal/cleanable/crayon{
 	icon_state = "l";
@@ -2369,48 +2397,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
-"Eh" = (
-/obj/effect/turf_decal/radiation{
-	pixel_y = -2
-	},
-/obj/effect/turf_decal/industrial/caution{
-	dir = 1;
-	pixel_y = 17
-	},
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_state = "sec_wall";
-	name = "Toys locker"
-	},
-/obj/item/electropack{
-	pixel_y = 9;
-	pixel_x = -9
-	},
-/obj/item/assembly/signaler{
-	pixel_x = -14;
-	pixel_y = 8
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/hardliners{
-	pixel_y = 13;
-	pixel_x = 9
-	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil{
-	pixel_x = -11;
-	pixel_y = -10
-	},
-/obj/item/clothing/mask/surgical{
-	pixel_y = -9;
-	pixel_x = 6
-	},
-/obj/item/clothing/head/ramzi/surgical{
-	pixel_y = -4;
-	pixel_x = 5
-	},
-/obj/item/clothing/suit/ramzi/smock{
-	pixel_y = -13;
-	pixel_x = 8
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security/armory)
 "EE" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -2441,24 +2427,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
-"Fa" = (
-/obj/machinery/modular_computer/console/preset/command{
-	dir = 4
-	},
-/obj/machinery/newscaster/directional/west,
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 4
-	},
-/obj/item/radio/intercom/wideband/directional/north{
-	pixel_x = -1;
-	pixel_y = 28
-	},
-/obj/item/radio/intercom/faction/ramzi/directional/north{
-	pixel_x = -1;
-	pixel_y = 44
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
 "FJ" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/machinery/door/window/southright{
@@ -2730,36 +2698,6 @@
 "Jg" = (
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/crew)
-"Jl" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/three_quarters,
-/obj/structure/closet/secure_closet{
-	icon_state = "freezer"
-	},
-/obj/item/bodypart/l_arm/riol{
-	pixel_y = -6;
-	pixel_x = 2
-	},
-/obj/item/bodypart/head{
-	pixel_y = -18;
-	pixel_x = -3
-	},
-/obj/item/bodypart/leg/left/jelly{
-	pixel_y = 2;
-	pixel_x = 1
-	},
-/obj/item/food/meat/slab/human/mutant/riol,
-/obj/item/food/meat/slab/human/mutant/riol,
-/obj/item/food/meat/slab/human/mutant/riol,
-/obj/item/food/meat/slab/human/mutant/riol,
-/obj/item/food/meat/slab/human/mutant/moth,
-/obj/item/food/meat/slab/human,
-/obj/item/food/meat/slab/human,
-/obj/effect/decal/cleanable/leaper_sludge,
-/obj/effect/turf_decal/borderfloorblack{
-	dir = 1
-	},
-/turf/open/floor/plasteel/tech,
-/area/ship/hallway/central)
 "Jr" = (
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 4
@@ -3215,16 +3153,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
-"Op" = (
-/obj/machinery/computer/helm{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/syndiered/half{
-	dir = 4
-	},
-/obj/item/radio/intercom/faction/ramzi/command/directional/east,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/bridge)
 "Os" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 1
@@ -3494,6 +3422,48 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
+"UM" = (
+/obj/effect/turf_decal/radiation{
+	pixel_y = -2
+	},
+/obj/effect/turf_decal/industrial/caution{
+	dir = 1;
+	pixel_y = 17
+	},
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_state = "sec_wall";
+	name = "Toys locker"
+	},
+/obj/item/electropack{
+	pixel_y = 9;
+	pixel_x = -9
+	},
+/obj/item/assembly/signaler{
+	pixel_x = -14;
+	pixel_y = 8
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/hardliners{
+	pixel_y = 13;
+	pixel_x = 9
+	},
+/obj/item/clothing/gloves/nitrile/evil{
+	pixel_x = -11;
+	pixel_y = -10
+	},
+/obj/item/clothing/mask/surgical{
+	pixel_y = -9;
+	pixel_x = 6
+	},
+/obj/item/clothing/head/ramzi/surgical{
+	pixel_y = -4;
+	pixel_x = 5
+	},
+/obj/item/clothing/suit/ramzi/smock{
+	pixel_y = -13;
+	pixel_x = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security/armory)
 "UR" = (
 /obj/effect/turf_decal/corner/opaque/syndiered/full,
 /obj/machinery/vending/cigarette{
@@ -3775,6 +3745,32 @@
 	icon_state = "neznakomka";
 	pixel_y = 32;
 	paint = "prophecy"
+	},
+/turf/open/floor/plasteel/tech,
+/area/ship/hallway/central)
+"ZW" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/three_quarters,
+/obj/structure/closet/secure_closet{
+	icon_state = "freezer"
+	},
+/obj/item/bodypart/l_arm/riol{
+	pixel_y = -6;
+	pixel_x = 2
+	},
+/obj/item/bodypart/head{
+	pixel_y = -18;
+	pixel_x = -3
+	},
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/riol,
+/obj/item/food/meat/slab/human/mutant/moth,
+/obj/item/food/meat/slab/human,
+/obj/item/food/meat/slab/human,
+/obj/effect/decal/cleanable/leaper_sludge,
+/obj/effect/turf_decal/borderfloorblack{
+	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
@@ -4092,7 +4088,7 @@ Lj
 Bx
 nn
 qv
-Fa
+uw
 ed
 sC
 tU
@@ -4143,7 +4139,7 @@ vH
 qv
 Os
 ig
-Jl
+ZW
 mk
 DQ
 Gl
@@ -4159,7 +4155,7 @@ Lj
 Lj
 qv
 MA
-Op
+iG
 Js
 qv
 qv
@@ -4254,7 +4250,7 @@ ik
 YM
 cU
 rD
-Eh
+UM
 ir
 FP
 xa

@@ -65,7 +65,7 @@
 	// [CELADON-EDIT] - OLD CODE:
 	/*
 	if(user.client && user.health_scan)
-		healthscan(user, src, 2, TRUE, TRUE)
+		healthscan(user, src, 3, TRUE, TRUE)
 	if(user.client && user.chem_scan)
 	*/
 	. = ..()

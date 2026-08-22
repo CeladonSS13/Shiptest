@@ -34,3 +34,5 @@
 /// CELADON_FACTION elysium
 #define FACTION_PLAYER_ELYSIUM "playerElysium"
 
+/// Nanotrasen faction
+#define FACTION_PLAYER_NANOTRASEN "playerNanotrasen"

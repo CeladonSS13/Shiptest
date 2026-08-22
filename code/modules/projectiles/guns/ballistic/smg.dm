@@ -34,11 +34,11 @@
 
 /obj/item/gun/ballistic/automatic/smg/wt550
 	name = "\improper WT-550 Automatic Rifle"
-	desc = "An outdated PDW, used centuries ago by Nanotrasen security elements. Uses 4.6x30mm rounds."
-	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
-	lefthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
-	righthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
-	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
+	desc = "An outdated PDW, used centuries ago by Warra security elements. Uses 4.6x30mm rounds."
+	icon = 'icons/obj/guns/manufacturer/warra_sharplite/48x32.dmi'
+	lefthand_file = 'icons/obj/guns/manufacturer/warra_sharplite/lefthand.dmi'
+	righthand_file = 'icons/obj/guns/manufacturer/warra_sharplite/righthand.dmi'
+	mob_overlay_icon = 'icons/obj/guns/manufacturer/warra_sharplite/onmob.dmi'
 	icon_state = "wt550"
 	item_state = "arg"
 	default_ammo_type = /obj/item/ammo_box/magazine/wt550m9
@@ -52,7 +52,7 @@
 	show_ammo_capacity_on_magazine_sprite = TRUE
 // [/CELADON-ADD]
 	empty_indicator = TRUE
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/wt550/no_mag
@@ -61,10 +61,10 @@
 /obj/item/gun/ballistic/automatic/smg/vector
 	name = "\improper Vector carbine"
 	desc = "A police carbine based on a pre-Night of Fire SMG design. Most of the complex workings have been removed for reliability. Chambered in 9x18mm."
-	icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
-	lefthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
-	righthand_file = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
-	mob_overlay_icon = 'icons/obj/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
+	icon = 'icons/obj/guns/manufacturer/warra_sharplite/48x32.dmi'
+	lefthand_file = 'icons/obj/guns/manufacturer/warra_sharplite/lefthand.dmi'
+	righthand_file = 'icons/obj/guns/manufacturer/warra_sharplite/righthand.dmi'
+	mob_overlay_icon = 'icons/obj/guns/manufacturer/warra_sharplite/onmob.dmi'
 	icon_state = "vector"
 	item_state = "vector"
 	default_ammo_type = /obj/item/ammo_box/magazine/m9mm_expedition
@@ -140,7 +140,7 @@
 
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/inteq
 	name = "\improper SKM-44v Mongrel"
-	desc = "An SKM-44, further modified into a sub-machine gun by Inteq artificers with a new magazine well, collapsing stock, and shortened barrel. Faced with a surplus of SKM-44s and a shortage of other firearms, IRMG has made the most of their available materiel with conversions such as this. Chambered in 10x22mm."
+	desc = "An SKM-44, further modified into a sub-machine gun by Inteq artificers with a new magazine well, collapsing stock, and shortened barrel. Faced with a surplus of SKM-44s and a shortage of other firearms, IRMG has made the most of their available materiel with conversions such as this. Chambered in 10mm."
 	icon = 'icons/obj/guns/manufacturer/inteq/48x32.dmi'
 	lefthand_file = 'icons/obj/guns/manufacturer/inteq/lefthand.dmi'
 	righthand_file = 'icons/obj/guns/manufacturer/inteq/righthand.dmi'
@@ -178,8 +178,8 @@ NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/inteq)
 
 //TODO: REMOVE
 /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
-	name = "\improper Nanotrasen Saber SMG"
-	desc = "A prototype full-auto 9x18mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors and a folding stock."
+	name = "\improper Makosso-Warra Saber SMG"
+	desc = "A prototype full-auto 9mm submachine gun, designated 'SABR'. Has a threaded barrel for suppressors and a folding stock."
 	icon = 'icons/obj/guns/projectile.dmi'
 	icon_state = "saber"
 	item_state = "gun"
@@ -210,4 +210,4 @@ NO_MAG_GUN_HELPER(automatic/smg/skm_carbine/inteq)
 	default_attachments = list(/obj/item/attachment/foldable_stock)
 	bolt_type = BOLT_TYPE_LOCKING
 	show_magazine_on_sprite = TRUE
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD

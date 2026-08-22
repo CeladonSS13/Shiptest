@@ -271,13 +271,6 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 
 // /mob/living/simple_animal/hostile/retaliate/spaceman
 
-/mob/living/simple_animal/hostile/retaliate/nanotrasenpeace
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 10, "fire" = 25, "acid" = 25)
-
-/mob/living/simple_animal/hostile/retaliate/nanotrasenpeace/ranged
-	armor = list("melee" = 25, "bullet" = 25, "laser" = 25, "energy" = 25, "bomb" = 25, "bio" = 100, "rad" = 10, "fire" = 25, "acid" = 25)
-
-
 // Custom
 /mob/living/simple_animal/hostile/abandoned_minebot
 	move_to_delay = 5
@@ -463,9 +456,9 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 
 // /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/no_mech
 
-// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/nanotrasen
+// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/warra
 
-// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/no_mech/nanotrasen
+// /mob/living/simple_animal/hostile/human/ramzi/mecha_pilot/no_mech/warra
 
 
 /mob/living/simple_animal/hostile/mimic
@@ -590,19 +583,19 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 // /mob/living/simple_animal/hostile/human/cat_butcherer
 
 
-/mob/living/simple_animal/hostile/human/nanotrasen
+/mob/living/simple_animal/hostile/human/warra
 	armour_penetration = 10
 	armor = list("melee" = 35, "bullet" = 35, "laser" = 35, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 60, "fire" = 20, "acid" = 20)
 
-// /mob/living/simple_animal/hostile/human/nanotrasen/screaming
+// /mob/living/simple_animal/hostile/human/warra/screaming
 
-// /mob/living/simple_animal/hostile/human/nanotrasen/ranged
+// /mob/living/simple_animal/hostile/human/warra/ranged
 
-// /mob/living/simple_animal/hostile/human/nanotrasen/ranged/smg
+// /mob/living/simple_animal/hostile/human/warra/ranged/smg
 
-// /mob/living/simple_animal/hostile/human/nanotrasen/ranged/assault
+// /mob/living/simple_animal/hostile/human/warra/ranged/assault
 
-/mob/living/simple_animal/hostile/human/nanotrasen/elite
+/mob/living/simple_animal/hostile/human/warra/elite
 	armour_penetration = 15
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 60, "bomb" = 50, "bio" = 100, "rad" = 100, "fire" = 80, "acid" = 80)
 
@@ -794,7 +787,7 @@ GLOBAL_LIST_INIT(onecardinalwest, WEST)
 /mob/living/simple_animal/hostile/megafauna/claw
 	armour_penetration = 30
 	armor = list("melee" = 80, "bullet" = 80, "laser" = 50, "energy" = 60, "bomb" = 100, "bio" = 100, "rad" = 100, "fire" = 100, "acid" = 100)
-	crusher_loot = list(/obj/item/light_eater)
+	crusher_loot = list(/obj/item/disk/design_disk/modkit_disc/resonator_blast)
 
 /mob/living/simple_animal/hostile/megafauna/claw/phase2 //75% of the health this thing has is here
 	armor = list("melee" = 30, "bullet" = 30, "laser" = 30, "energy" = 10, "bomb" = 10, "bio" = 100, "rad" = 100, "fire" = 0, "acid" = 0)

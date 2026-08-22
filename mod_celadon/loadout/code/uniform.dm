@@ -49,7 +49,7 @@
 /datum/gear/uniform/galaxy
 	subtype_path = /datum/gear/uniform/galaxy
 
-/datum/gear/uniform/galaxy/blue/skirt
+/datum/gear/uniform/galaxy/blue_skirt
 	display_name = "suitskirt, blue galaxy"
 	path = /obj/item/clothing/under/suit/galaxy/skirt
 
@@ -78,3 +78,38 @@
 	display_name = "tacticool skirtleneck"
 	description = "Just looking at it makes you want to buy an SKS, go into the woods, and -operate-. This one looks a more cheaper."
 	path = /obj/item/clothing/under/syndicate/tacticool/skirt/china
+
+/datum/gear/uniform/waiter
+	display_name = "waiters suit"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter
+
+/datum/gear/uniform/waiter_s
+	display_name = "waiters suit, red"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter/syndicate
+
+/datum/gear/uniform/waiter_o
+	display_name = "waiters suit, occult"
+	description = "It's a very smart uniform with a special pocket for tip"
+	path = /obj/item/clothing/under/suit/waiter/occult
+
+/datum/gear/uniform/cel_black
+	display_name = "lawyer suit, black"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black
+
+/datum/gear/uniform/cel_black_skirt
+	display_name = "lawyer suitskirt, black"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt
+
+/datum/gear/uniform/cel_purpl
+	display_name = "lawyer suit, purple"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl
+
+/datum/gear/uniform/cel_purpl_skirt
+	display_name = "lawyer suitskirt, purple"
+	description = "Slick threads."
+	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt

@@ -6,7 +6,7 @@
 	// value = 20000
 	// mission_limit = 1
 	// faction = list(
-	// 	/datum/faction/nt/ns_logi,
+	// 	/datum/faction/warra/ns_logi,
 	// )
 
 /obj/item/drill_readout

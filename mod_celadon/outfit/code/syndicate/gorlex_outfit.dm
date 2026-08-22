@@ -34,7 +34,7 @@
 	head = /obj/item/clothing/head/hardliners
 	uniform = /obj/item/clothing/under/syndicate/hardliners
 	suit = /obj/item/clothing/suit/hardliners
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
+	gloves = /obj/item/clothing/gloves/nitrile/evil
 	shoes = /obj/item/clothing/shoes/combat
 
 /datum/outfit/job/cel/syndicate/paramedic/gorlex	// Не юзается
@@ -43,7 +43,7 @@
 	id = /obj/item/card/id/cel/syndicate/crew/doctor/paramedic/gorlex
 	ears = /obj/item/radio/headset/syndicate/alt
 	uniform = /obj/item/clothing/under/syndicate/hardliners
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/evil
+	gloves = /obj/item/clothing/gloves/nitrile/evil
 	shoes = /obj/item/clothing/shoes/combat
 
 /datum/outfit/job/cel/syndicate/security/gorlex

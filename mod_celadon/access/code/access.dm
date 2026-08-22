@@ -30,7 +30,7 @@
 
 /proc/get_faction_access_outpost(faction)
 	switch(faction)
-		if("nt")
+		if("warra")
 			return list(ACCESS_OUTPOST_FACTION_NT)
 		if("syndicate")
 			return list(ACCESS_OUTPOST_FACTION_SYNDICATE, ACCESS_OUTPOST_OTHER_DONCO)

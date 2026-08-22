@@ -11,41 +11,41 @@
 /obj/item/clothing/under/clip/minutemen
 	name = "\improper Solar Federation combat fatigues"
 	desc = "The distinctive blue uniform of the Solar Federation Solar Federation, worn during field work and battle. Smells faintly of blueberries."
-	
+
 	icon_state = "clip_minuteman"
 
 /obj/item/clothing/under/clip/formal
 	name = "\improper SolFed service uniform"
 	desc = "A formal outfit consisting of SolFed-issued navy slacks and white dress shirt. Commonly seen on white-collar SolFed's bureaucrats, but also worn by minutemen outside of combat."
-	
+
 	icon_state = "clip_formal"
 
 /obj/item/clothing/under/clip/formal/alt
 	desc = "A formal outfit consisting of a SolFed-issued navy skirt and white dress shirt. Commonly seen on white-collar SolFed's bureaucrats, but also worn by minutemen outside of combat."
-	
+
 	icon_state = "clip_formal_skirt"
 
 /obj/item/clothing/under/clip/formal/with_shirt/alt //because of how fucking skirt code works...
 	desc = "A formal outfit consisting of a SolFed-issued navy skirt and white dress shirt. Commonly seen on white-collar SolFed's bureaucrats, but also worn by minutemen outside of combat."
-	
+
 	icon_state = "clip_formal_skirt"
 
 /obj/item/clothing/under/clip/medic
 	name = "\improper SolFed medic uniform"
 	desc = "A Solar Federation uniform with navy slacks and a blue button-down shirt, embroidered with white shoulder patches. The patches feature a medical cross, denoting the wearer as medical personnel. "
-	
+
 	icon_state = "clip_medic"
 
 /obj/item/clothing/under/clip/officer
 	name = "\improper Solar Federation officer service uniform"
 	desc = "The brown service uniform used by officers of the Solar Federation's."
-	
+
 	icon_state = "clip_officer"
 	item_state = "g_suit"
 
 /obj/item/clothing/under/clip/officer/alt
 	desc = "The brown service uniform used by officers of the Solar Federation's. This variant has a pencil skirt!"
-	
+
 	icon_state = "clip_officer_skirt"
 
 //suit
@@ -88,10 +88,10 @@
 /obj/item/clothing/suit/armor/riot/clip
 	name = "black riot suit"
 	desc = "A charcoal-painted suit of bulky, heavy armor designed for close-quarters fighting and riot control. The armor of choice for SolFed-BARD members, but used universally by SolFed. Helps the wearer resist shoving in close quarters."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
-	
+
 	icon_state = "riot_clip"
 
 /obj/item/clothing/suit/armor/clip_trenchcoat
@@ -130,7 +130,7 @@
 /obj/item/clothing/suit/bio_suit/bard
 	name = "BARD-440 bio suit"
 	desc = "The iconic biosuit of SolFed-BARD agents on the frontier and elsewhere."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
@@ -140,72 +140,72 @@
 /obj/item/clothing/head/bio_hood/bard
 	name = "BARD-434 bio hood"
 	desc = "A simple but effective and lightweight hood for use with SolFed-BARD's biosuits."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
-	
+
 	icon_state = "clip_bard_biosuit"
 
 /obj/item/clothing/head/bio_hood/bard/armored
 	name = "BARD-434 armored bio hood"
 	desc = "An M10 surplus helmet placed over a blue bio hood for use with SolFed-BARD's biosuits."
-	
+
 	icon_state = "clip_bard_bio_armored"
 
 /obj/item/clothing/suit/bio_suit/bard/medium
 	name = "BARD-434-2 combat bio suit"
 	desc = "A special model of bio suit, made to specific SolFed-BARD certification and issued to teams expecting combat against dangerous xenofauna. Cumbersome."
-	
+
 	icon_state = "clip_bard_biosuit_medium"
 
 /obj/item/clothing/suit/bio_suit/bard/heavy
 	name = "BARD-434-3 heavy combat bio suit"
 	desc = "A special model of bio suit, made to specific SolFed-BARD certification and issued to teams expecting combat against dangerous xenofauna. Cumbersome."
-	
+
 	icon_state = "clip_bard_biosuit_heavy"
 
 //spacesuits
 /obj/item/clothing/suit/space/clip
 	name = "SolFed space suit"
 	desc = "A popular suit manufactured by the colonial league, rated for hazardous, low-pressure environments and high temperature alike. Often worn by various workers and civilians hired by the league."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
-	
+
 	icon_state = "space-clip"
 	item_state = "space-clip"
 
 /obj/item/clothing/head/helmet/space/clip
 	name = "SolFed space helmet"
 	desc = "A space helmet manufactured by the colonial league, rated for hazardous, low pressure environments and minor impacts. Often worn by various workers and civilians hired by the league."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
-	
+
 	icon_state = "space-clip"
 	item_state = "space-clip"
 
 /obj/item/clothing/suit/space/clip/armored
 	name = "SolFed armored space suit"
 	desc = "An armored variant of the Solar Federation spacesuit, swapping fabrics and adding more plating. Often issued out to miners in hazardous locations, police forces, or reservists."
-	
+
 	icon_state = "space-clip-armor"
 	item_state = "space-clip-armor"
 
 /obj/item/clothing/head/helmet/space/clip/armored
 	name = "SolFed armored space helmet"
 	desc = "An armored variant of the Solar Federation space helmet, swapping plating types. Often issued out to miners in hazardous locations, police forces, or reservists."
-	
+
 	icon_state = "space-clip-armor"
 	item_state = "space-clip-armor"
 
 /obj/item/clothing/suit/space/hardsuit/clip_patroller
 	name = "\improper CM-410 'Patroller' EVA Hardsuit"
 	desc = "An older-issue SolFed hardsuit, adapted from an even older design. Widely utilized in reconnaissance duty and skirmishing due to its lightweight construction."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
-	
+
 	icon_state = "hardsuit-clip-patrol"
 	hardsuit_type = "hardsuit-clip-patrol"
 
@@ -215,7 +215,7 @@
 
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
-	
+
 	icon_state = "hardsuit0-clip-patrol"
 	hardsuit_type = "clip-patrol"
 
@@ -241,7 +241,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/bomb/clip
 	name = "CMM EOD hardsuit"
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/suits.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/suits.dmi'
 
@@ -250,7 +250,7 @@
 
 /obj/item/clothing/head/helmet/space/hardsuit/bomb/clip
 	name = "CMM EOD hardsuit helmet"
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 
@@ -261,7 +261,7 @@
 /obj/item/clothing/head/clip
 	name = "\improper Solar Federation service cap"
 	desc = "A service cap commonly seen on Solar Federation of all ranks while off-duty, but more daring soldiers may choose to wear it during combat. The design dates back to the uniform used by the deserting forces of the Zohil Republic, who were the first citizens of SolFed."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
@@ -303,10 +303,10 @@
 
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
-	
+
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
 	kepori_override_icon = 'icons/mob/clothing/faction/clip/kepori.dmi'
-	
+
 	lefthand_file = 'icons/mob/inhands/faction/clip/clip_lefthand.dmi'
 	righthand_file = 'icons/mob/inhands/faction/clip/clip_righthand.dmi'
 
@@ -322,7 +322,7 @@
 /obj/item/clothing/head/helmet/m10/clip
 	name = "\improper Solar Federation CM-10 Helmet"
 	desc = "A cheap, but comfortable and light helmet painted in Solar Federation colors, often seen in the hands of the reserves or Solar Federation in the backline. Features a little attachment rail on the side where you can mount a flashlight."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 
@@ -337,7 +337,7 @@
 /obj/item/clothing/head/helmet/m10/clip_vc
 	name = "\improper Solar Federation CM-12 Helmet"
 	desc = "A special, lightweight and padded helmet issued to Vehicle Crewmen of the Solar Federation. Features noise-reducing technology and a microphone that automatically connects with worn headsets. Hopefully protects you from bumpy rides."
-	
+
 	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/head.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_armor/overlay/head.dmi'
 	vox_override_icon = 'icons/mob/clothing/faction/clip/vox.dmi'
@@ -374,11 +374,6 @@
 	desc = "A flatcap issued to members of the SolFed-GOLD division. An office worker's hat."
 
 //gloves
-
-/obj/item/clothing/gloves/color/latex/nitrile/clip
-	name = "\improper long white nitrile gloves"
-	desc = "Thick sterile gloves that reach up to the elbows. Transfers combat medic knowledge into the user via nanochips."
-
 //boots
 //belt
 /obj/item/storage/belt/military/clip

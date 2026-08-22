@@ -11,16 +11,6 @@
 	description = "Finally, a costume to match your favorite plush."
 	path = /obj/item/clothing/suit/hooded/shark_costume
 
-/datum/gear/costume/costumes/shork_costume
-	display_name = "shork costume"
-	description = "Why would you ever do this?"
-	path = /obj/item/clothing/suit/hooded/shork_costume
-
-/datum/gear/costume/costumes/soviet
-	display_name = "soviet armored coat"
-	description = "Conscript reporting! Sponsored by DonkSoft Co. for historical reenactment of the Third World War!"
-	path = /obj/item/clothing/suit/costume/soviet
-
 /datum/gear/costume/costumes/deckers
 	display_name = "decker hoodie"
 	description = "Based? Based on what?"
@@ -31,37 +21,17 @@
 	description = "wizard? No, it's Marisa"
 	path = /obj/item/clothing/suit/wizrobe/marisa/fake
 
-/datum/gear/costume/costumes/waiter
-	display_name = "waiter's suit"
-	description = "It's a very smart uniform with a special pocket for tip"
-	path = /obj/item/clothing/under/suit/waiter
+/datum/gear/costume/costumes/soviet
+	display_name = "soviet armored coat"
+	description = "Conscript reporting! Sponsored by DonkSoft Co. for historical reenactment of the Third World War!"
+	path = /obj/item/clothing/suit/costume/soviet
 
-/datum/gear/costume/costumes/waiter_s
-	display_name = "waiter's suit"
-	description = "It's a very smart uniform with a special pocket for tip"
-	path = /obj/item/clothing/under/suit/waiter/syndicate
+/datum/gear/costume/costumes/robe
+	display_name = "sun sister robe"
+	description = "A robe worn by the female priests of the S'rand'Marr religion."
+	path = /obj/item/clothing/suit/tajaran
 
-/datum/gear/costume/costumes/waiter_o
-	display_name = "waiter's suit"
-	description = "It's a very smart uniform with a special pocket for tip"
-	path = /obj/item/clothing/under/suit/waiter/occult
-
-/datum/gear/costume/costumes/cel_black
-	display_name = "lawyer black suit"
-	description = "Slick threads."
-	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black
-
-/datum/gear/costume/costumes/cel_black_skirt
-	display_name = "lawyer black suitskirt"
-	description = "Slick threads."
-	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_black/skirt
-
-/datum/gear/costume/costumes/cel_black
-	display_name = "lawyer purple suit"
-	description = "Slick threads."
-	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl
-
-/datum/gear/costume/costumes/cel_black_skirt
-	display_name = "lawyer purple suitskirt"
-	description = "Slick threads."
-	path = /obj/item/clothing/under/rank/civilian/lawyer/cel_purpl/skirt
+/datum/gear/costume/costumes/wool
+	display_name = "wool coat"
+	description = "An coat, this one is a design commonly found among the Rhazar'Hrujmagh people."
+	path = /obj/item/clothing/suit/toggle/tajaran/wool

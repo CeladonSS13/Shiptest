@@ -48,8 +48,10 @@
 	id = "Receiver A"
 	network = "tcommsat"
 	autolinkers = list("receiverA") // link to relay
+	// [CELADON-EDIT]
+	// freq_listening = list(FREQ_SOLGOV, FREQ_WARRA, FREQ_MINUTEMEN, FREQ_EMERGENCY, FREQ_COMMON)
 	freq_listening = list(FREQ_SOLFED, FREQ_NANOTRASEN, FREQ_EMERGENCY, FREQ_COMMON)
-
+	// [/CELADON-EDIT]
 
 //--PRESET RIGHT--//
 

@@ -8,7 +8,7 @@
 	description = "A really noir hat if you're a good guy. A really lame hat if you're not."
 	path = /obj/item/clothing/head/fedora/det_hat/black
 
-/datum/gear/hat/costume/tv_head
+/datum/gear/hat/tv_head
 	display_name = "television helmet"
 	description = "A mysterious headgear made from the hollowed out remains of a status display. How very retro-retro-futuristic of you."
 	path = /obj/item/clothing/head/costume/tv_head

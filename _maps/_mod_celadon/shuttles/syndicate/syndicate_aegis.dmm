@@ -192,7 +192,7 @@
 	dir = 8
 	},
 /obj/structure/catwalk/over,
-/obj/structure/sign/poster/official/moth/hardhats{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_y = 32
 	},
 /obj/machinery/newscaster/directional/south,
@@ -222,7 +222,7 @@
 /obj/item/lighter,
 /obj/item/clothing/gloves/color/black,
 /obj/item/clothing/gloves/color/white,
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/obj/item/clothing/gloves/nitrile/evil,
 /obj/item/clothing/glasses/red,
 /obj/item/clothing/neck/tie/red,
 /obj/item/clothing/under/rank/civilian/lawyer/galaxy/red,
@@ -235,7 +235,7 @@
 /obj/item/clothing/head/suns,
 /obj/item/clothing/gloves/suns/xo,
 /obj/item/clothing/neck/cloak/suns,
-/obj/item/clothing/gloves/color/latex/nitrile/suns,
+/obj/item/clothing/gloves/nitrile/suns,
 /obj/item/clothing/shoes/laceup/suns,
 /obj/item/clothing/shoes/sneakers/suns,
 /obj/item/clothing/suit/toggle/labcoat/suns/doctorlabcoat,
@@ -564,7 +564,7 @@
 /obj/structure/closet/wall/red/directional/north{
 	name = "Lead Doctor's Locker"
 	},
-/obj/item/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
 /obj/item/clothing/suit/armor/vest/security/brig_phys{
 	name = "lead doctor's jacket"
 	},
@@ -576,7 +576,7 @@
 /obj/item/clothing/head/suns/surgery,
 /obj/item/clothing/neck/cloak/suns,
 /obj/item/clothing/neck/cloak/suns/xo,
-/obj/item/clothing/gloves/color/latex/nitrile/suns,
+/obj/item/clothing/gloves/nitrile/suns,
 /obj/item/clothing/shoes/laceup/suns,
 /obj/item/clothing/shoes/sneakers/suns,
 /obj/item/clothing/suit/armor/vest/suns/xo,
@@ -867,9 +867,9 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 1
 	},
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/effect/turf_decal/trimline/opaque/brown/filled/line,
 /obj/structure/table/wood/reinforced,
 /obj/item/food/cake/bscc{
@@ -1326,7 +1326,7 @@
 	},
 /obj/item/bedsheet/medical,
 /obj/structure/curtain,
-/obj/structure/sign/poster/official/moth/meth{
+/obj/structure/sign/poster/nanotrasen/moth/meth{
 	pixel_y = 31
 	},
 /turf/open/floor/plasteel/dark,
@@ -2096,7 +2096,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/obj/item/clothing/gloves/nitrile/evil,
 /obj/item/storage/belt/medical/surgery,
 /obj/item/clothing/neck/stripedbluescarf,
 /obj/item/clothing/neck/stripedredscarf,
@@ -2108,7 +2108,7 @@
 /obj/item/hypospray/mkii,
 /obj/item/storage/firstaid/regular,
 /obj/item/clothing/shoes/sneakers/suns,
-/obj/item/clothing/gloves/color/latex/nitrile/suns,
+/obj/item/clothing/gloves/nitrile/suns,
 /obj/item/clothing/suit/hooded/suns,
 /obj/item/clothing/under/syndicate/suns/doctorscrubs,
 /obj/item/clothing/under/syndicate/suns/sciencejumpsuit,
@@ -3366,9 +3366,9 @@
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/flour,
 /obj/item/reagent_containers/condiment/sugar,
-/obj/item/storage/box/donkpockets,
-/obj/item/storage/box/donkpockets/donkpocketberry,
-/obj/item/storage/box/donkpockets/donkpocketpizza,
+/obj/item/storage/box/shoalpockets,
+/obj/item/storage/box/shoalpockets/shoalpocketberry,
+/obj/item/storage/box/shoalpockets/shoalpocketpizza,
 /obj/item/melee/knife/kitchen,
 /obj/item/kitchen/rollingpin,
 /obj/structure/cable/yellow{
@@ -3594,7 +3594,7 @@
 	pixel_y = 29;
 	dir = 1
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/evil,
+/obj/item/clothing/gloves/nitrile/evil,
 /obj/item/storage/belt/medical/surgery,
 /obj/item/clothing/neck/stripedbluescarf,
 /obj/item/clothing/neck/stripedredscarf,
@@ -3613,7 +3613,7 @@
 /obj/item/storage/firstaid/regular,
 /obj/item/clothing/glasses/hud/health/suns,
 /obj/item/clothing/head/suns/surgery,
-/obj/item/clothing/gloves/color/latex/nitrile/suns,
+/obj/item/clothing/gloves/nitrile/suns,
 /obj/item/clothing/shoes/laceup/suns,
 /obj/item/clothing/shoes/sneakers/suns,
 /obj/item/clothing/suit/hooded/suns,
@@ -3940,7 +3940,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/moth/piping{
+/obj/structure/sign/poster/nanotrasen/moth/piping{
 	pixel_y = 32
 	},
 /turf/open/floor/plating,
@@ -4076,7 +4076,7 @@
 	pixel_x = 11;
 	pixel_y = -1
 	},
-/obj/structure/sign/poster/official/high_class_martini{
+/obj/structure/sign/poster/nanotrasen/high_class_martini{
 	pixel_x = 30
 	},
 /obj/structure/table/wood/reinforced,
@@ -4177,7 +4177,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/moth{
+/obj/structure/sign/poster/nanotrasen/moth{
 	pixel_y = 31
 	},
 /obj/effect/turf_decal/trimline/opaque/black/line{
@@ -4505,7 +4505,7 @@
 	dir = 8
 	},
 /obj/machinery/light/small/directional/south,
-/obj/item/clothing/gloves/color/latex/nitrile/suns,
+/obj/item/clothing/gloves/nitrile/suns,
 /obj/item/clothing/shoes/laceup/suns,
 /obj/item/clothing/shoes/sneakers/suns,
 /obj/item/clothing/suit/hooded/suns,

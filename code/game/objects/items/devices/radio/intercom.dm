@@ -169,7 +169,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 //wideband radio
 /obj/item/radio/intercom/wideband
 	name = "wideband relay"
-	desc = "A low-gain reciever capable of sending and recieving wideband subspace messages."
+	desc = "A low-gain receiver capable of sending and receiving wideband subspace messages."
 	icon_state = "intercom-wideband"
 	canhear_range = 3
 	keyslot = new /obj/item/encryptionkey/wideband
@@ -359,7 +359,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom/faction/pirate/command, 31)
 	name = "wideband relay table frame"
 	desc = "A detached wideband relay. Attach to a table and screw it in to use."
 	icon_state = "intercom-wideband"
-	icon = 'icons/obj/wallframe.dmi'
+	icon = 'icons/obj/wallmounts/wallframe_items.dmi'
 	result_path = /obj/item/radio/intercom/wideband/table
 	pixel_shift = 0
 

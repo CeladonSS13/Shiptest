@@ -5,7 +5,7 @@
 	armor = list("melee" = 50, "bullet" = 60, "laser" = 55, "energy" = 25, "bomb" = 60, "bio" = 100, "fire" = 70, "acid" = 50, "wound" = 20)
 
 //Даю хазадр вестам броню
-/obj/item/clothing/suit/nanotrasen/vest
+/obj/item/clothing/suit/warra/vest
 	armor = list("melee" = 10, "bullet" = 0, "laser" = 5, "energy" = 5, "bomb" = 20, "bio" = 10, "rad" = 20, "fire" = 20, "acid" = 50)
 
 /obj/item/clothing/suit/hazardvest

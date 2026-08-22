@@ -168,12 +168,12 @@
 		SEND_SIGNAL(owner, COMSIG_ADD_MOOD_EVENT, "mindscrew", /datum/mood_event/mindscrew)
 
 /obj/item/organ/cyberimp/brain/datachip
-	name = "Nanotrasen brain datachip"
+	name = "Makosso-Warra brain datachip"
 	desc = "Covered in serial codes and warnings. That data must be important."
 
 /obj/item/organ/cyberimp/brain/datachip/Insert()
 	. = ..()
-	to_chat(owner, span_notice("you feel well versed in the sales of donkpockets and other Donk Co. products"))
+	to_chat(owner, span_notice("you feel well versed in the sales of shoalpockets and other Donk Co. products"))
 
 //[[[[MOUTH]]]]
 /obj/item/organ/cyberimp/mouth
@@ -199,6 +199,7 @@
 /obj/item/storage/box/cyber_implants
 	name = "boxed cybernetic implants"
 	desc = "A sleek, sturdy box."
+	icon = 'icons/obj/storage.dmi'
 	icon_state = "cyber_implants"
 	var/list/boxed = list(
 		/obj/item/autosurgeon/syndicate/thermal_eyes,

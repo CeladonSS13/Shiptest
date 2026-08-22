@@ -122,7 +122,7 @@
 		/obj/item/food/grown/banana = 1,
 		/datum/reagent/consumable/sugar = 3
 	)
-	result = /obj/item/food/donkpocket/honk
+	result = /obj/item/food/shoalpocket/pizza
 	subcategory = CAT_PASTRY
 
 /datum/crafting_recipe/food/mimetart

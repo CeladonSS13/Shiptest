@@ -904,7 +904,7 @@
 /area/ship/hallway/fore)
 "hL" = (
 /obj/structure/sink/kitchen{
-	dispensedreagent = /datum/reagent/water/holywater;
+	dispensedreagent = /datum/reagent/water;
 	name = "Holy sink";
 	pixel_y = 20
 	},
@@ -1552,7 +1552,7 @@
 	name = "supply closet";
 	pixel_x = -28
 	},
-/obj/item/reagent_containers/food/drinks/bottle/holywater,
+/obj/item/reagent_containers/food/drinks/bottle/sarsaparilla,
 /obj/effect/turf_decal/siding/wood{
 	color = "#332521";
 	dir = 8
@@ -3363,7 +3363,7 @@
 "EO" = (
 /obj/structure/sink/kitchen{
 	dir = 1;
-	dispensedreagent = /datum/reagent/water/holywater;
+	dispensedreagent = /datum/reagent/water;
 	name = "Holy sink"
 	},
 /obj/effect/turf_decal/siding/wood/corner{
@@ -3513,7 +3513,7 @@
 "Gi" = (
 /obj/structure/window/reinforced/spawner,
 /obj/item/storage/belt/utility/full/engi,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/clothing/head/welding,
 /obj/item/clothing/head/welding,
 /obj/item/multitool,

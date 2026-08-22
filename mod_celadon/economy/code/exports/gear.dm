@@ -12,7 +12,7 @@
 		/obj/item/clothing/suit/armor/riot,
 		/obj/item/clothing/suit/armor/ramzi,
 		/obj/item/clothing/suit/armor/hardliners,
-		/obj/item/clothing/suit/armor/nanotrasen,
+		/obj/item/clothing/suit/armor/warra,
 		/obj/item/clothing/suit/armor/ngr,
 		/obj/item/clothing/suit/armor/roumain,
 		/obj/item/clothing/suit/armor/captaincoat,

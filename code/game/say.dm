@@ -5,6 +5,11 @@
 */
 // [CELADON-EDIT] - FACTION-RADIO
 GLOBAL_LIST_INIT(freqtospan, list(
+	"[FREQ_WARRA]" = "warraradio",
+	"[FREQ_MINUTEMEN]" = "clipradio",
+	"[FREQ_INTEQ]" = "irmgradio",
+	"[FREQ_PGF]" = "pgfradio",
+	"[FREQ_PIRATE]" = "pirradio",
 	"[FREQ_EMERGENCY]" = "emrgradio",
 	"[FREQ_CENTCOM]" = "centcomradio",
 	"[FREQ_WIDEBAND]" = "widebandradio",

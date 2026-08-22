@@ -119,7 +119,6 @@
 /obj/item/clothing/glasses/heat,
 /obj/item/clothing/glasses/cold,
 /obj/effect/turf_decal/box,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
 /obj/item/clothing/glasses/sunglasses{
 	name = "blastglasses"
 	},
@@ -639,7 +638,6 @@
 /obj/item/clothing/glasses/cold,
 /obj/item/clothing/glasses/cheapsuns,
 /obj/effect/turf_decal/box,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
 /obj/item/clothing/glasses/sunglasses{
 	name = "blastglasses"
 	},
@@ -1265,7 +1263,7 @@
 "nE" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/box/white,
-/obj/structure/sign/poster/official/build{
+/obj/structure/sign/poster/nanotrasen/build{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -1315,7 +1313,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/poster/official/safety_internals{
+/obj/structure/sign/poster/nanotrasen/safety_internals{
 	pixel_x = -32
 	},
 /turf/open/floor/plating,
@@ -1508,7 +1506,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/official/cleanliness{
+/obj/structure/sign/poster/nanotrasen/cleanliness{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
@@ -2028,7 +2026,7 @@
 /area/ruin/wasteplanet/abandoned_mechbay/bay1)
 "wT" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/structure/sign/poster/official/get_your_legs{
+/obj/structure/sign/poster/nanotrasen/get_your_legs{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -2360,13 +2358,13 @@
 /area/ruin/wasteplanet/abandoned_mechbay/bay2)
 "BF" = (
 /obj/structure/closet/crate,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/light/small/directional/north,
 /obj/effect/decal/cleanable/food/salt,
@@ -2784,7 +2782,7 @@
 "Hm" = (
 /obj/structure/bed/roller,
 /obj/effect/mob_spawn/human/corpse/charredskeleton,
-/obj/structure/sign/poster/official/bless_this_spess{
+/obj/structure/sign/poster/nanotrasen/bless_this_spess{
 	pixel_x = -31
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -3219,9 +3217,6 @@
 "LX" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/generic,
-/obj/structure/sign/poster/retro/nanotrasen_logo_80s{
-	pixel_y = -32
-	},
 /turf/open/floor/plasteel/stairs{
 	dir = 8
 	},
@@ -3666,7 +3661,7 @@
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/help_others{
+/obj/structure/sign/poster/nanotrasen/help_others{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -3830,7 +3825,6 @@
 /obj/item/clothing/glasses/heat,
 /obj/item/clothing/glasses/cold,
 /obj/effect/turf_decal/box,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
 /obj/item/clothing/glasses/sunglasses{
 	name = "blastglasses"
 	},

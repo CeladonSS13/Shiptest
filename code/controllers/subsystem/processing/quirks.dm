@@ -34,16 +34,19 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		// [/CELADON-ADD]
 		list("Bad Touch", "Friendly"),
 		list("Self-Aware", "Congenital Analgesia"),
-		list("Trilingual", "Monolingual"),
+		list("Trilingual", "Monolingual", "Polyglot"),
 	)
 
 	species_blacklist = list(
-		"Blood Deficiency" = list(SPECIES_IPC, SPECIES_JELLYPERSON, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
+		"Blood Deficiency" = list(SPECIES_IPC, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
 		"Dwarfism" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID),	// [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
 		"Alcohol Tolerance" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Light Drinker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
 		"Smoker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
-		"Asthma" = list(SPECIES_IPC, SPECIES_PLASMAMAN)
+		"Asthma" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+		"Robust Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+		"Fast Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+		"Electronic Voicebox" = list(SPECIES_IPC),
 	)
 
 	for(var/client/client in GLOB.clients)

@@ -36,7 +36,7 @@
 	l_hand = /obj/item/storage/firstaid/medical
 	r_hand = /obj/item/storage/belt/sabre/suns/cmo
 	suit_store = /obj/item/flashlight/pen/paramedic
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/suns
+	gloves = /obj/item/clothing/gloves/nitrile/suns
 	glasses = /obj/item/clothing/glasses/hud/health/suns
 	head = /obj/item/clothing/head/suns/cmo
 
@@ -118,7 +118,7 @@
 	uniform = /obj/item/clothing/under/syndicate/suns/doctorscrubs
 	shoes = /obj/item/clothing/shoes/sneakers/suns
 	suit = /obj/item/clothing/suit/toggle/labcoat/suns/doctorlabcoat
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile/suns
+	gloves = /obj/item/clothing/gloves/nitrile/suns
 	head = /obj/item/clothing/head/suns/surgery
 	glasses = /obj/item/clothing/glasses/hud/health/suns
 	mask = /obj/item/clothing/mask/surgical/suns

@@ -952,6 +952,30 @@
 /obj/machinery/light/dim/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/atmospherics)
+"oC" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "eng_secure";
+	anchored = 1;
+	name = "technichian locker"
+	},
+/obj/item/clothing/glasses/meson/engine,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/gloves/insulated,
+/obj/item/holosign_creator/atmos,
+/obj/item/clothing/glasses/meson/sunglasses,
+/obj/item/clothing/head/hardhat/weldhat/white,
+/obj/item/clothing/suit/hazardvest/solgov{
+	name = "SolFed hazard vest"
+	},
+/obj/machinery/light/dim/directional/south{
+	pixel_y = 10
+	},
+/obj/item/storage/box/lights/mixed,
+/obj/effect/turf_decal/box,
+/obj/item/storage/toolbox/electrical,
+/obj/item/clothing/glasses/meson/sunglasses,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/general/engineering)
 "oP" = (
 /obj/structure/window/plasma/reinforced,
 /turf/open/floor/engine,
@@ -1852,30 +1876,6 @@
 /obj/machinery/light/floor,
 /turf/open/floor/plasteel/dark_2/airless,
 /area/ship/general/cargo/cargo_bay)
-"BN" = (
-/obj/structure/closet/secure_closet{
-	icon_state = "eng_secure";
-	anchored = 1;
-	name = "technichian locker"
-	},
-/obj/item/clothing/glasses/meson/engine,
-/obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/gloves/color/yellow,
-/obj/item/holosign_creator/atmos,
-/obj/item/clothing/glasses/meson/sunglasses,
-/obj/item/clothing/head/hardhat/weldhat/white,
-/obj/item/clothing/suit/hazardvest/solgov{
-	name = "SolFed hazard vest"
-	},
-/obj/machinery/light/dim/directional/south{
-	pixel_y = 10
-	},
-/obj/item/storage/box/lights/mixed,
-/obj/effect/turf_decal/box,
-/obj/item/storage/toolbox/electrical,
-/obj/item/clothing/glasses/meson/sunglasses,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/general/engineering)
 "BQ" = (
 /obj/machinery/holopad/emergency/command,
 /turf/open/floor/marble/black,
@@ -2381,6 +2381,17 @@
 /obj/machinery/light/dim/directional/south,
 /turf/open/floor/wood/ebony,
 /area/ship/crew/dorm)
+"LG" = (
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 8
+	},
+/obj/structure/table/wood/fancy/royalblack,
+/obj/machinery/fax/solgov,
+/obj/item/radio/intercom/faction/solfed/command/directional/west,
+/turf/open/floor/marble/white_black_border{
+	dir = 4
+	},
+/area/ship/bridge)
 "LL" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/structure/closet/wall/white/directional/west,
@@ -2843,17 +2854,6 @@
 /obj/structure/fans/tiny/invisible,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
-"Vn" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 8
-	},
-/obj/structure/table/wood/fancy/royalblack,
-/obj/machinery/fax/solgov,
-/obj/item/radio/intercom/faction/solfed/command/directional/west,
-/turf/open/floor/marble/white_black_border{
-	dir = 4
-	},
-/area/ship/bridge)
 "Vw" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
@@ -3182,7 +3182,7 @@ hX
 RA
 RA
 Pf
-BN
+oC
 ct
 rs
 Pf
@@ -3746,7 +3746,7 @@ DS
 pB
 bc
 Uc
-Vn
+LG
 lj
 Yw
 ts

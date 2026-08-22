@@ -73,7 +73,7 @@
 
 /obj/item/clothing/suit/armor/vest/cybersun/trauma
 	name = "cybersun trauma team armor vest"
-	icon_state = "traumavest"
+	icon_state = "trauma_vest"
 	desc = "A set of stamped plasteel armor plates decorated with a medical cross and colors associated with the medical division of Cybersun."
 
 /obj/item/clothing/suit/toggle/leather_jacket
@@ -223,7 +223,7 @@
 	cold_protection = CHEST | GROIN | LEGS | ARMS
 
 /obj/item/clothing/suit/razurathcoat
-	name = "Golden Nanotrasen Officer Coat"
+	name = "Golden Nanotrasen Officer Coat" //i disapprove
 	desc = "A fancy Nanotrasen officer coat. Now darker, golder, and cooler than ever!"
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/suit.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/suit/overlay/suit.dmi'

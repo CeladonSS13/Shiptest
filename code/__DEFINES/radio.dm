@@ -32,24 +32,42 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
+#define RADIO_CHANNEL_SOLGOV "SolGov"
+#define RADIO_KEY_SOLGOV "s"
+#define RADIO_TOKEN_SOLGOV ":s"
+
 #define RADIO_CHANNEL_SOLFED "SolFed"
 #define RADIO_CHANNEL_SOLFED_LONG "SolFed (Long-Range)"
 #define RADIO_KEY_SOLFED "s"
 #define RADIO_TOKEN_SOLFED ":s"
 
-#define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
-#define RADIO_CHANNEL_NANOTRASEN_LONG "Nanotrasen (Long-Range)"
-#define RADIO_KEY_NANOTRASEN "n"
-#define RADIO_TOKEN_NANOTRASEN ":n"
+#define RADIO_CHANNEL_WARRA "Makosso-Warra"
+#define RADIO_KEY_WARRA "mw"
+#define RADIO_TOKEN_WARRA ":mw"
+
+#define RADIO_CHANNEL_MINUTEMEN "Minutemen"
+#define RADIO_KEY_MINUTEMEN "m"
+#define RADIO_TOKEN_MINUTEMEN ":m"
+
+#define RADIO_CHANNEL_PGF "PGF"
+#define RADIO_KEY_PGF "g"
+#define RADIO_TOKEN_PGF ":g"
 
 #define RADIO_CHANNEL_VOX "Raider"
 #define RADIO_KEY_VOX "v"
 #define RADIO_TOKEN_VOX ":v"
 
+// [CELADON-ADD]
+#define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
+#define RADIO_CHANNEL_NANOTRASEN_LONG "Nanotrasen (Long-Range)"
+#define RADIO_KEY_NANOTRASEN "n"
+#define RADIO_TOKEN_NANOTRASEN ":n"
+
 #define RADIO_CHANNEL_ELYSIUM "Elysium"
 #define RADIO_CHANNEL_ELYSIUM_LONG "Elysium (Long-Range)"
 #define RADIO_KEY_ELYSIUM "e"
 #define RADIO_TOKEN_ELYSIUM ":e"
+// [/CELADON-ADD]
 
 #define RADIO_CHANNEL_INTEQ "Inteq"
 #define RADIO_CHANNEL_INTEQ_LONG "Inteq (Long-Range)"
@@ -111,6 +129,11 @@
 
 #define FREQ_EMERGENCY 1429 // Emergency comms frequency, red
 // [/CELADON-EDIT]
+
+#define FREQ_SOLGOV 1345 // SolGov comms frequency, dark blue WS ADDITION
+#define FREQ_PGF 1349 // PGF comms frequency, lime green
+#define FREQ_WARRA 1351 // Makosso-Warra comms frequency, plum
+#define FREQ_MINUTEMEN 1355 // Minutemen comms frequency, soft blue
 
 #define FREQ_HOLOGRID_SOLUTION 1433
 #define FREQ_STATUS_DISPLAYS 1435

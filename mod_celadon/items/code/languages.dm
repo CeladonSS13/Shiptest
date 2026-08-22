@@ -113,10 +113,8 @@
 							/datum/language/machine = list(LANGUAGE_ATOM))
 
 /datum/language_holder/moth
-	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-								/datum/language/moffic = list(LANGUAGE_ATOM))
-	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),
-							/datum/language/moffic = list(LANGUAGE_ATOM))
+	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM))
+	spoken_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM))
 
 /datum/language_holder/ethereal
 	understood_languages = list(/datum/language/galactic_common = list(LANGUAGE_ATOM),

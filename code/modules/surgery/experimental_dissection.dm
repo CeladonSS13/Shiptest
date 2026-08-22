@@ -86,9 +86,9 @@
 			if(isabductor(H))
 				cost = (MAX_DISSECTION_REWARD*24)
 			// [CELADON-EDIT] - CELADON_BALANCE - Изменения диссекции
-			// else if(iszombie(H) || isshadow(H) || isandroid(H))
+			// else if(iszombie(H) || isshadow(H))
 				// cost = (MAX_DISSECTION_REWARD*30) // CELADON-EDIT - ORIGINAL
-			else if(isshadow(H) || isandroid(H))
+			else if(isandroid(H))
 				cost = (MAX_DISSECTION_REWARD*30)
 			else if(iszombie(H))
 				cost = (MAX_DISSECTION_REWARD*5)

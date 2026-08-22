@@ -101,7 +101,7 @@
 	e_cost = 1000
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/mini
-	fire_sound = 'sound/weapons/gun/laser/nt-fire_light.ogg'
+	fire_sound = 'sound/weapons/gun/laser/sharplite-fire_light.ogg'
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/mini
 	delay = 0.2 SECONDS
 

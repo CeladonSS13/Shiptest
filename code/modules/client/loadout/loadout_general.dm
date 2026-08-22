@@ -179,11 +179,13 @@
 	display_name = "toy, bag of die"
 	path = /obj/item/storage/pill_bottle/dice
 
-/datum/gear/amongus/New()
-	. = ..()
-	var/obj/item/toy/plush/among/temp = new path()
-	description = "[capitalize(pick(temp.among_colors))] sus."
-	qdel(temp)
+// [CELADON-REMOVE]
+// /datum/gear/amongus/New()
+// 	. = ..()
+// 	var/obj/item/toy/plush/among/temp = new path()
+// 	description = "[capitalize(pick(temp.among_colors))] sus."
+// 	qdel(temp)
+// [/CELADON-REMOVE]
 
 /datum/gear/hairspray
 	display_name = "hair dye"
@@ -233,3 +235,7 @@
 /datum/gear/prescription_injector
 	display_name = "prescription injector"
 	path = /obj/item/reagent_containers/hypospray/medipen/placebatol
+
+/datum/gear/prescription_inhaler
+	display_name = "prescription inhaler"
+	path = /obj/item/inhaler/placebatol

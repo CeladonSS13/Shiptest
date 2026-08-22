@@ -14,16 +14,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_captain_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W || I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_SOLGOV, ACCESS_CAPTAIN, ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -33,16 +37,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_head_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W || I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_ARMORY, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -52,16 +60,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_marine_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W || I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_BRIG, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -71,16 +83,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_engineer_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W || I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_ENGINE, ACCESS_MEDICAL, ACCESS_SECURITY, ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -92,16 +108,20 @@
 
 /datum/outfit/job/cel/solfed/proc/get_solfed_general_access(mob/living/carbon/human/H)
 	var/obj/item/storage/wallet/W = null
+	var/obj/item/card/id/I = null
 	for (var/obj/item/O in H.contents)
 		if (istype(O, /obj/item/storage/wallet))
 			W = O
 			break
-	if (W)
-		var/obj/item/card/id/I = null
-		for (var/obj/item/O in W.contents)
-			if (istype(O, /obj/item/card/id))
-				I = O
-				break
+		else if(istype(O, /obj/item/card/id))
+			I = O
+			break
+	if (W || I)
+		if(W)
+			for (var/obj/item/O in W.contents)
+				if (istype(O, /obj/item/card/id))
+					I = O
+					break
 		if (I)
 			I.access += list(ACCESS_OUTPOST_FACTION_SOLFED)
 			I.update_label()
@@ -238,7 +258,7 @@
 
 	accessory = /obj/item/clothing/accessory/medal/gold/captain
 
-/datum/outfit/job/cel/solfed/captain/post_equip(mob/living/carbon/human/H)
+/datum/outfit/job/cel/solfed/intelof/post_equip(mob/living/carbon/human/H)
 	. = ..()
 	get_solfed_captain_access(H)
 
@@ -324,7 +344,7 @@
 	ears = /obj/item/radio/headset/headset_med
 	accessory = /obj/item/clothing/accessory/armband/medblue
 	l_hand = /obj/item/storage/firstaid
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	suit = /obj/item/clothing/suit/toggle/labcoat/paramedic
 
@@ -440,11 +460,11 @@
 
     id = /obj/item/card/id/cel/nanotrasen/nslogistics_miner
     ears = /obj/item/radio/headset/solgov
-    head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+    head = /obj/item/clothing/head/hardhat/warra/blue
     shoes = /obj/item/clothing/shoes/workboots/mining
     gloves = /obj/item/clothing/gloves/explorer
-    uniform = /obj/item/clothing/under/nanotrasen/supply/miner
-    suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+    uniform = /obj/item/clothing/under/warra/supply/miner
+    suit = /obj/item/clothing/suit/warra/vest/blue
     l_pocket = /obj/item/storage/bag/ore
     r_pocket = /obj/item/pda/shaftminer
     backpack_contents = list(
