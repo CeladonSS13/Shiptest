@@ -219,9 +219,9 @@
 			. += "[icon_state]_fail_2"
 
 /obj/item/gun/energy/e_gun/e_old/adv_stopping
-	name = "SL X-14 Advanced Stopping Revolver"
-	desc = "An advanced energy revolver with the capacity to shoot both disabler and lethal lasers, as well as futuristic safari nets."
-	icon_state = "bsgun"
+	name = "SL X-14 'Maru' Advanced Stopping Revolver"
+	desc = "An advanced, heavy energy pistol that has the ability to shoot futurustic safari nets. The revolver look is mostly used for marketing."
+	icon_state = "maru"
 	item_state = "gun"
 	force = 7
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/trap)
@@ -247,33 +247,7 @@
 	default_firemode = FIREMODE_SEMIAUTO
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
-//AP ESMG
-
-/obj/item/gun/energy/e_gun/e_old/smg/sunbeam
-	name = "\improper SL X-39 'Sunbeam' Energy SMG"
-	desc = "A variable Sharplite energy SMG capable of discharging armor-piercing bolts, at the cost of a bulkier frame. Frequently used by Vigilitas Troopers against heavy armor."
-	icon_state = "sunbeam"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg/ap, /obj/item/ammo_casing/energy/disabler/smg/ap)
-
-	shaded_charge = TRUE
-	fire_delay = 0.1 SECONDS
-
-	w_class = WEIGHT_CLASS_BULKY
-
-	slot_offsets = list(
-		ATTACHMENT_SLOT_RAIL = list(
-			"x" = 30,
-			"y" = 15,
-		)
-	)
-
-/obj/item/gun/energy/e_gun/e_old/smg/sunbeam/inteq
-	name = "\improper VEC-04 'Gleam' Energy SMG"
-	desc = "A mostly cosmetic IRMG modification of the Sharplite X-39 'Sunbeam'. Rapidly fires weak lethal and disabler bolts."
-	icon_state = "sunbeam_inteq"
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-
-//Base Eshotgun
+//Eshotgun
 
 /obj/item/gun/energy/e_gun/e_old/iot
 	name = "\improper SL E-SG 500 Second Edition"
@@ -291,63 +265,7 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 
-//Burst EShotgun
-
-/obj/item/gun/energy/e_gun/e_old/iot/blaze
-	name = "\improper SL AL-370 'Blaze' Energy Shotgun"
-	desc = "An experimental improvement over the aging E-SG series, featuring double laser bursts and a heavier frame, it now can apply even more pressure on whatever you decide to kill. The nonlethal disabler mode had to be sacrificed in order to achieve higher power output."
-	icon_state = "blaze"
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst)
-	charge_sections = 4
-	gun_firemodes = list(FIREMODE_BURST)
-	default_firemode = FIREMODE_BURST
-
-	burst_size = 2
-
-	slot_available = SHARPLITE_ATTACH_SLOTS
-	slot_offsets = list(
-		ATTACHMENT_SLOT_RAIL = list(
-			"x" = 30,
-			"y" = 15,
-		)
-	)
-
-//Heavy energy machine gun... truly cursed
-
-/obj/item/gun/energy/e_gun/e_old/emg
-	name = "SL AL-690 'Daybreak' Energy Machine Gun"
-	desc = "Dear God. Somehow, the development of Sharplite energy weaponry has led us to this. It will absolutely decimate whatever stands in your way with an endless stream of assault lasers. How this does not violate some galactic convention is beyond you."
-	icon_state = "daybreak"
-	w_class = WEAPON_VERY_HEAVY
-	weapon_weight = WEAPON_VERY_HEAVY
-	wield_slowdown = 1.2
-	default_ammo_type = /obj/item/stock_parts/cell/gun/large
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg)
-	allowed_ammo_types = list(
-		/obj/item/stock_parts/cell/gun/large,
-		/obj/item/stock_parts/cell/gun/large/empty,
-	)
-	gun_firemodes = list(FIREMODE_FULLAUTO)
-	default_firemode = FIREMODE_FULLAUTO
-	shaded_charge = TRUE
-
-	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
-
-	fire_delay = 0.15 SECONDS
-	wield_delay = 2 SECONDS
-
-	fire_sound_volume = 90
-	spread = 12
-	spread_unwielded = 35
-
-	slot_offsets = list(
-		ATTACHMENT_SLOT_RAIL = list(
-			"x" = 36,
-			"y" = 14,
-		)
-	)
-
-//EDMR
+//EMarksman
 
 /obj/item/gun/energy/e_gun/e_old/dmr
 	name = "SL L-211 'Parallax' Energy Marksman Rifle"
@@ -378,44 +296,6 @@
 			"y" = 15,
 		)
 	)
-
-//Laser cannon - Esniper
-
-/obj/item/gun/energy/e_gun/e_old/sniper
-	name = "SL AL-602 'Phoenix' Energy Cannon"
-	desc = "An advanced sniper-like laser cannon that does more damage the farther away the target is. You can attach a scope to it! Infact, it comes with one already inbuit."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
-	icon_state = "phoenix"
-	item_state = "phoenix"
-	shaded_charge = TRUE
-	charge_sections = 5
-	w_class = WEIGHT_CLASS_BULKY
-	weapon_weight = WEAPON_HEAVY
-	default_ammo_type = /obj/item/stock_parts/cell/gun/large
-	allowed_ammo_types = list(
-		/obj/item/stock_parts/cell/gun/large,
-		/obj/item/stock_parts/cell/gun/large/empty,
-	)
-	force = 10
-	flags_1 =  CONDUCT_1
-	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
-	ammo_type = list(/obj/item/ammo_casing/energy/laser/accelerator/nanotrasen)
-	ammo_x_offset = 3
-	fire_sound_volume = 90
-	zoom_amt = 8
-	zoom_out_amt = 5
-	wield_slowdown = LASER_SNIPER_SLOWDOWN
-	manufacturer = MANUFACTURER_NANOTRASEN_LASER
-
-	spread = -5
-	spread_unwielded = 40
-
-	wield_delay = 1.3 SECONDS
-
-	slot_available = SHARPLITE_ATTACH_SLOTS
 
 //disabler
 
