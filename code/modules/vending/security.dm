@@ -154,10 +154,6 @@
 		)
 
 	voucher_items = list(
-		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,	// [CELADON-ADD] - CELADON_RETURN_EGUN
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,	// [CELADON-ADD] - CELADON_RETURN_EGUN
 		"SL AL655 Assault Plasma Rifle" = /obj/item/gun/energy/sharplite/hades,
 		"SL X12 Variable Energy Carbine" = /obj/item/gun/energy/sharplite/volt,
 		"L305 Tactical Plasma Gun" = /obj/item/gun/energy/sharplite/rush,

@@ -145,7 +145,7 @@
 
 /obj/item/clothing/head/beret/service
 	name = "service beret"
-	desc =  "A standard Makosso-Warra service beret. Held by those with the sanity to serve others in the far frontier."
+	desc =  "A standard service beret. Held by those with the sanity to serve others in the far frontier." // [CELADON-EDIT]
 	icon_state = "beret_serv"
 
 /obj/item/clothing/head/beret/qm
