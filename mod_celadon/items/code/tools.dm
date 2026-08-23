@@ -232,10 +232,6 @@
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 	icon_state = "ranged_analyzer"
 	item_state = "ranged_analyzer"
-	healthmode = "ranged_analyzer"
-	reagentmode = "ranged_reagent_analyzer"
-	healthmodeinhand = "ranged_analyzer"
-	reagentmodeinhand = "ranged_reagent_analyzer"
 	ranged_scan_distance = 15
 	custom_premium_price = 1000
 

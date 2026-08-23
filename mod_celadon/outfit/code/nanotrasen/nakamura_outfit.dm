@@ -35,6 +35,8 @@
 	belt = /obj/item/storage/belt/utility/atmostech
 	l_pocket = /obj/item/pda/atmos
 
+	head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+	suit = /obj/item/clothing/suit/nanotrasen/vest/blue
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
@@ -45,6 +47,11 @@
 	job_icon = "stationengineer"
 
 	id = /obj/item/card/id/cel/nanotrasen/nakamura_engineer
+
+	uniform = /obj/item/clothing/under/nanotrasen/engineering
+	suit = /obj/item/clothing/suit/nanotrasen/vest/yellow
+	dcoat = /obj/item/clothing/suit/hooded/wintercoat/engineering
+	head = /obj/item/clothing/head/hardhat/nanotrasen/yellow
 
 	backpack = /obj/item/storage/backpack/industrial
 	satchel = /obj/item/storage/backpack/satchel/eng

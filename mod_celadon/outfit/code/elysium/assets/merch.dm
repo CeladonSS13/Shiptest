@@ -1,3 +1,4 @@
+#define POSTER_SUBTYPES 1
 // Miscelanious
 
 /obj/structure/curtain/cloth/elysium
@@ -57,3 +58,5 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/misc/elysium_patriots.dmi'
 	icon_state = "elysium"
 	is_editable = TRUE
+
+#undef POSTER_SUBTYPES

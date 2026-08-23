@@ -22,7 +22,7 @@
 	crate_type = /obj/structure/closet/crate/secure/gear/inteq
 
 /datum/supply_pack/faction/nanotrasen
-	faction = /datum/faction/nt
+	faction = /datum/faction/nanotrasen
 	crate_type = /obj/structure/closet/crate/secure/gear/nanotrasen
 
 // Создаём ещё одну степень защиты от нежелательного доступа в карго

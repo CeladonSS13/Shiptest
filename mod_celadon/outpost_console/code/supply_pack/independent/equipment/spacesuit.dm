@@ -20,7 +20,7 @@
 	desc = "One pilot space suit, for improved mobility in exosuits."
 	cost = 500
 	contains = list(/obj/item/clothing/suit/space/pilot,
-					/obj/item/clothing/head/helmet/space/pilot/random)
+					/obj/item/clothing/head/helmet/space/pilot)
 	crate_name = "pilot space suit crate"
 
 /datum/supply_pack/faction/independent/spacesuit/engi_spacesuit
@@ -124,7 +124,7 @@
 
 /datum/supply_pack/faction/independent/spacesuit/atmos_hardsuit
 	name = "Atmospherics Hardsuit"
-	desc = "The iconic hardsuit of Nanotrasen's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
+	desc = "The iconic hardsuit of Nakamura Engineering's Atmosphere Corps, this hardsuit is known across space as a symbol of defiance in the face of sudden decompression. Smells faintly of plasma."
 	cost = 2000
 	contains = list(/obj/item/clothing/suit/space/hardsuit/engine/atmos)
 	crate_name = "atmospherics hardsuit crate"

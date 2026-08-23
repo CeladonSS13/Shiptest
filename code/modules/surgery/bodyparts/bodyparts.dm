@@ -35,14 +35,23 @@
 	///Should it automatically rename itself based on limb_id and body_zone?
 	var/dynamic_rename = TRUE
 
-	/// The icon state of the limb's overlay, colored with a different color
+	/// The icon state of the limb's overlay, colored with secondary mutcolor by default
 	var/overlay_icon_state
+	/// Do we use primary mutcolor instead of secondary for overlay?
+	var/overlay_use_primary_color = FALSE
+
 	/// The color of the limb's overlay
 	var/species_secondary_color
+
+	/// Another overlay for limbs, colored with secondary mutcolor
+	var/overlay2_icon_state
+	/// Do we use primary mutcolor instead of secondary for overlay number 2?
+	var/overlay2_use_primary_color = FALSE
 
 	var/body_zone //BODY_ZONE_CHEST, BODY_ZONE_L_ARM, etc , used for def_zone
 	/// The body zone of this part in english ("chest", "left arm", etc) without the species attached to it
 	var/plaintext_zone
+	var/bodypart_layer = BODYPARTS_LAYER
 	var/aux_zone // used for hands
 	var/aux_layer
 	///bitflag used to check which clothes cover this bodypart
@@ -1004,7 +1013,10 @@
 		else
 			species_color = null
 
-		if(overlay_icon_state)
+		if(overlay_use_primary_color || overlay2_use_primary_color)
+			species_color = H.dna.features["mcolor"]
+
+		if(overlay_icon_state || overlay2_icon_state)
 			species_secondary_color = H.dna.features["mcolor2"]
 
 		UnregisterSignal(owner, COMSIG_MOVABLE_MOVED)
@@ -1012,7 +1024,11 @@
 		draw_color = mutation_color
 		if(should_draw_greyscale) //Should the limb be colored?
 			// [CELADON-EDIT] - TAJARA, CELADON_RIOL
-			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
+			// if(limb_id == SPECIES_MOTH)
+			// 	species_color = H.dna.features["moth_bodyfluff_color"]
+			// draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone))draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) // CELADON-EDIT - ORIGINAL
+			if(limb_id == SPECIES_MOTH)
+				species_color = H.dna.features["moth_bodyfluff_color"]
 			draw_color ||= (species_color) || (skin_tone && skintone2hex(skin_tone)) || (skin_tone_nose && skintonenose2hex(skin_tone_nose)) || (skin_tone_tajara && skintonetajara2hex(skin_tone_tajara)) || (skin_tone_riol && skintoneriol2hex(skin_tone_riol))
 			// [/CELADON-EDIT]
 
@@ -1057,7 +1073,7 @@
 			if(burnstate)
 				. += image(dmg_overlay_icon, "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir)
 
-	var/image/limb = image(layer = -BODYPARTS_LAYER, dir = image_dir)
+	var/image/limb = image(layer = -bodypart_layer, dir = image_dir)
 	var/image/aux
 	//. += limb
 
@@ -1106,8 +1122,20 @@
 			. += aux
 			if(overlay_icon_state)
 				var/image/overlay = image(limb.icon, "[limb_id]_[aux_zone]_overlay", -aux_layer, image_dir)
-				overlay.color = "#[species_secondary_color]"
+				if(overlay_use_primary_color)
+					overlay.color = "#[species_color]"
+				else
+					overlay.color = "#[species_secondary_color]"
 				. += overlay
+
+			if(overlay2_icon_state)
+				var/image/overlay = image(limb.icon, "[limb_id]_[aux_zone]_overlay2", -aux_layer, image_dir)
+				if(overlay2_use_primary_color)
+					overlay.color = "#[species_color]"
+				else
+					overlay.color = "#[species_secondary_color]"
+				. += overlay
+
 
 		draw_color = mutation_color
 		if(should_draw_greyscale) //Should the limb be colored outside of a forced color?
@@ -1123,8 +1151,18 @@
 				aux.color = "#[draw_color]"
 
 		if(overlay_icon_state)
-			var/image/overlay = image(limb.icon, "[limb.icon_state]_overlay", -BODY_ADJ_LAYER, image_dir)
-			overlay.color = "#[species_secondary_color]"
+			var/image/overlay = image(limb.icon, "[limb.icon_state]_overlay", -bodypart_layer, image_dir)
+			if(overlay_use_primary_color)
+				overlay.color = "#[species_color]"
+			else
+				overlay.color = "#[species_secondary_color]"
+			. += overlay
+		if(overlay2_icon_state)
+			var/image/overlay = image(limb.icon, "[limb.icon_state]_overlay2", -bodypart_layer, image_dir)
+			if(overlay2_use_primary_color)
+				overlay.color = "#[species_color]"
+			else
+				overlay.color = "#[species_secondary_color]"
 			. += overlay
 
 	//Ok so legs are a bit goofy in regards to layering, and we will need two images instead of one to fix that

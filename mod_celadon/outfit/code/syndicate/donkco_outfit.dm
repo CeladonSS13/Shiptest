@@ -5,8 +5,8 @@
 
 	id = /obj/item/card/id/cel/syndicate/command_qm/donkco
 	ears = /obj/item/radio/headset/syndicate/alt
-	uniform = /obj/item/clothing/under/syndicate/donk/qm
-	suit = /obj/item/clothing/suit/hazardvest/donk/qm
+	uniform = /obj/item/clothing/under/syndicate
+	suit = /obj/item/clothing/suit/hazardvest
 	shoes = /obj/item/clothing/shoes/laceup
 
 //MARK: Crew

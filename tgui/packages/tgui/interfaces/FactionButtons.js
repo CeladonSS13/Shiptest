@@ -129,7 +129,7 @@ export const getFactionColor = (factionName) => {
   }
 
   // Проверяем частичные совпадения
-  if (factionLower.includes('nanotrasen') || factionLower.includes('nt')) {
+  if (factionLower.includes('nanotrasen') || factionLower.includes('nanotrasen')) {
     return FACTION_COLORS.nanotrasen;
   }
   if (factionLower.includes('syndicate') || factionLower.includes('syn')) {

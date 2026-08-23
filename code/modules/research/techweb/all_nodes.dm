@@ -103,7 +103,7 @@
 	display_name = "Xeno-organ Biology"
 	description = "Phytosians, even Skeletons... We finally understand the less well known species enough to replicate their anatomy."
 	prereq_ids = list("adv_biotech")
-	design_ids = list("tajaralong", "riollong", "limbdesign_abductor", "limbdesign_fly", "limbdesign_pod", "limbdesign_skeleton", "limbdesign_snail") // [CELADON-EDIT] - Adding tails - PR #1136
+	design_ids = list("tajaralong", "riollong", "limbdesign_abductor", "limbdesign_fly", "limbdesign_skeleton", "limbdesign_snail") // [CELADON-EDIT] - Adding tails - PR #1136
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 2500)
 	export_price = 5000
 

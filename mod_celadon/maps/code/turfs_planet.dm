@@ -65,7 +65,6 @@
 	name = "basalt"
 	desc = "Eruptions stack like layer-cake, forming vast oceans of dried magma."
 	icon_state = "smoothrocks-0"
-	environment_type = "basalt"
 	turf_type = /turf/open/floor/plating/asteroid/basalt/plasma_gaint
 	baseturfs = /turf/open/floor/plating/asteroid/basalt/plasma_gaint
 	initial_gas_mix = PLASMA_GIANT_ATMOS

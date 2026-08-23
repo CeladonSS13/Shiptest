@@ -602,9 +602,9 @@
 "nN" = (
 /obj/structure/closet/cabinet,
 /obj/item/ammo_box/magazine/m10mm_ringneck,
-/obj/item/clothing/under/syndicate/donk,
-/obj/item/clothing/suit/hazardvest/donk/qm,
-/obj/item/food/donkpocket,
+/obj/item/clothing/under/syndicate,
+/obj/item/clothing/suit/hazardvest,
+/obj/item/food/shoalpocket,
 /obj/item/gun/ballistic/automatic/pistol/ringneck,
 /obj/item/attachment/silencer,
 /turf/open/floor/wood,
@@ -632,7 +632,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/corporatemine/bridge)
 "ok" = (
-/obj/structure/sign/poster/retro/radio,
+/obj/structure/sign/poster/retro/nanotrasen/radio,
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/corporatemine/crewquarters)
 "ol" = (
@@ -1025,9 +1025,6 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/donk{
-	pixel_y = 32
-	},
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/corporatemine/crewquarters)
 "za" = (
@@ -1364,7 +1361,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 10
 	},
-/obj/structure/sign/warning/enginesafety{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_y = 32
 	},
 /turf/open/floor/plating,
@@ -1587,8 +1584,8 @@
 "IF" = (
 /obj/structure/closet/crate,
 /obj/effect/turf_decal/industrial/outline,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/space/has_grav/corporatemine/hall)
 "IS" = (
@@ -1639,7 +1636,7 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space)
 "KJ" = (
-/obj/structure/sign/poster/retro/smile,
+/obj/structure/sign/poster/retro/nanotrasen/smile,
 /turf/closed/wall/rust,
 /area/ruin/space/has_grav/corporatemine/hall)
 "KM" = (
@@ -1788,7 +1785,7 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 6
 	},
-/obj/item/food/donkpocket,
+/obj/item/food/shoalpocket,
 /turf/open/floor/wood,
 /area/ruin/space/has_grav/corporatemine/crewquarters)
 "NP" = (

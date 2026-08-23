@@ -294,7 +294,7 @@ hp
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/expedition
 	name = "SMG - SGL9 Expedition (9x18mm)"
-	desc = "Contains a Expidition SMG produced by Nanotrasen Advantage. Chambered in 9x18mm."
+	desc = "Contains a Expidition SMG produced by nanotrasen Advantage. Chambered in 9x18mm."
 	cost = 25
 	contains = list(/obj/item/storage/guncase/vector)
 	crate_name = "SMG crate"
@@ -315,7 +315,7 @@ hp
 
 /datum/supply_pack/faction/nanotrasen/gun/exp/champion
 	name = "PHB Champion Machinepistol (9x18mm)"
-	desc = "Contains a compact 9x18mm burst fire machine pistol produced by Nanotrasen advantage. For NT employee use only."
+	desc = "Contains a compact 9x18mm burst fire machine pistol produced by nanotrasen advantage. For NT employee use only."
 	cost = 25
 	contains = list(/obj/item/storage/guncase/saber)
 	crate_name = "Machinepistol crate"

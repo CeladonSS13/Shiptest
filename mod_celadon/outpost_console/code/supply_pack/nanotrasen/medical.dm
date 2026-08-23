@@ -5,14 +5,14 @@
 
 /datum/supply_pack/faction/nanotrasen/medical/mkii_hypo
 	name = "mk.II Hypospray kit"
-	desc = "Contains an Nanotrasen Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
+	desc = "Contains a Nanotrasen Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
 	cost = 1200
 	contains = list(/obj/item/storage/box/hypospray)
 	crate_name = "mk.II hypospray crate"
 
 /datum/supply_pack/faction/nanotrasen/medical/mkiii_hypo
 	name = "mk.III Hypospray kit"
-	desc = "Contains a mk.III Nanotrasen Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
+	desc = "Contains a mk.III DeForest Medical Hypospray, for on the field medical care. Comes with an assortment of Ready-To-Go Vials"
 	cost = 2000
 	contains = list(/obj/item/storage/box/hypospray/mkiii)
 	crate_name = "mk.III hypospray crate"

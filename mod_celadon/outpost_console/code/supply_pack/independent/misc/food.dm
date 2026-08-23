@@ -42,11 +42,11 @@
 	name = "Donk Pocket Variety"
 	desc = "Featuring a line up of Donk Co.'s most popular pastry!"
 	cost = 500
-	contains = list(/obj/item/storage/box/donkpockets/donkpocketspicy,
-					/obj/item/storage/box/donkpockets/donkpocketteriyaki,
-					/obj/item/storage/box/donkpockets/donkpocketpizza,
-					/obj/item/storage/box/donkpockets/donkpocketberry,
-					/obj/item/storage/box/donkpockets/donkpockethonk)
+	contains = list(/obj/item/storage/box/shoalpockets/shoalpocketspicy,
+					/obj/item/storage/box/shoalpockets/shoalpocketteriyaki,
+					/obj/item/storage/box/shoalpockets/shoalpocketpizza,
+					/obj/item/storage/box/shoalpockets/shoalpocketberry,
+					/obj/item/storage/box/shoalpockets/honk)
 	crate_name = "donk pocket crate"
 	crate_type = /obj/structure/closet/crate/freezer
 
@@ -562,7 +562,7 @@
 
 /datum/supply_pack/faction/independent/food/beekeeping_fullkit
 	name = "Beekeeping Starter"
-	desc = "BEES BEES BEES. Contains three honey frames, a beekeeper suit and helmet, flyswatter, bee house, and, of course, a pure-bred Nanotrasen-Standardized Queen Bee!"
+	desc = "BEES BEES BEES. Contains three honey frames, a beekeeper suit and helmet, flyswatter, bee house, and, of course, a pure-bred Queen Bee!"
 	cost = 1000
 	contains = list(/obj/structure/beebox/unwrenched,
 					/obj/item/honey_frame,

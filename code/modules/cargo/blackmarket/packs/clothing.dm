@@ -234,7 +234,7 @@
 	return B
 
 /datum/blackmarket_item/clothing/full_spacesuit_set
-	name = "\improper Nanotrasen Branded Spacesuit Set"
+	name = "\improper Nanotrasen Branded Spacesuit Set" // [CELADON-EDIT]
 	desc = "A few boxes of \"Old Style\" space suits fell off the back of a space truck."
 	item = /obj/item/storage/backpack/duffelbag
 
@@ -246,7 +246,7 @@
 /datum/blackmarket_item/clothing/full_spacesuit_set/spawn_item(loc)
 	var/obj/item/storage/backpack/duffelbag/B = ..()
 	B.name = "Spacesuit Duffelbag"
-	B.desc = "It has a NT logo on it."
+	B.desc = "It has a Nanotrasen logo on it." // [CELADON-EDIT]
 	new /obj/item/clothing/suit/space(B)
 	new /obj/item/clothing/head/helmet/space(B)
 	return B
@@ -265,7 +265,7 @@
 	var/obj/item/storage/backpack/duffelbag/syndie/B = ..()
 	B.name = "Spacesuit Duffelbag"
 	B.desc = "It has a Coalition logo stamped on the front."
-	var/suit_color = pick(list("white_red", "blue", "beige", "worn", "worn_surplus", "yellow", "surplus"))
+	var/suit_color = pick(list("white_red", "beige", "worn", "worn_surplus", "yellow", "surplus"))
 
 	switch(suit_color)
 		if("white_red")

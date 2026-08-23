@@ -9,7 +9,7 @@
 /obj/item/storage/box/gum
 	name = "bubblegum packet"
 	desc = "The packaging is entirely in japanese, apparently. You can't make out a single word of it."
-	icon_state = "bubblegum_generic"
+	icon_state = "fruit"
 	w_class = WEIGHT_CLASS_TINY
 	illustration = null
 	foldable = null
@@ -32,7 +32,7 @@
 /obj/item/storage/box/gum/happiness
 	name = "HP+ gum packet"
 	desc = "A seemingly homemade packaging with an odd smell. It has a weird drawing of a smiling face sticking out its tongue."
-	icon_state = "bubblegum_happiness"
+	icon_state = "fruit"
 	custom_price = 10
 	custom_premium_price = 10
 

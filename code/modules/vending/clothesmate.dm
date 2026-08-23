@@ -61,6 +61,7 @@
 		/obj/item/clothing/neck/scarf/yellow = 3,
 		/obj/item/clothing/neck/scarf/orange = 3,
 		/obj/item/clothing/neck/scarf/teal = 3,
+		/obj/item/clothing/gloves/color = 3,
 		/obj/item/clothing/neck/scarf = 3,
 		/obj/item/clothing/neck/shemagh = 3,
 		/obj/item/clothing/neck/scarf/black = 3,
@@ -78,7 +79,7 @@
 		/obj/item/clothing/under/pants/white = 2,
 		/obj/item/clothing/under/pants/red = 2,
 		/obj/item/clothing/under/pants/black = 2,
-		/obj/item/clothing/under/pants/tan = 2,
+		/obj/item/clothing/under/pants/brown = 2,
 		/obj/item/clothing/under/pants/track = 2,
 		/obj/item/clothing/under/shorts/black = 2,
 		/obj/item/clothing/under/shorts/grey = 2,
@@ -103,11 +104,14 @@
 		/obj/item/clothing/under/dress/skirt/pinafore/plaid/brown = 2,
 		/obj/item/clothing/under/suit/white/skirt = 2,
 		/obj/item/clothing/suit/jacket = 2,
+		/obj/item/clothing/suit/toggle/chorejacket = 3,
+		/obj/item/clothing/suit/hooded/parka = 3,
 		/obj/item/clothing/suit/toggle/overcoat = 3,
 		/obj/item/clothing/suit/toggle/windbreaker = 3,
 		/obj/item/clothing/suit/toggle/pufferjacket = 3,
 		/obj/item/clothing/suit/toggle/puffervest = 3,
 		/obj/item/clothing/suit/jacket/leather/coat = 3,
+		/obj/item/clothing/suit/toggle/track = 3,
 		/obj/item/clothing/suit/jacket/letterman = 2,
 		/obj/item/clothing/suit/jacket/letterman_red = 2,
 		/obj/item/clothing/glasses/regular = 2,
@@ -138,6 +142,7 @@
 		/obj/item/clothing/shoes/jackboots = 2,
 		/obj/item/clothing/shoes/heels = 4,
 		/obj/item/clothing/suit/jacket/miljacket = 1,
+		/obj/item/clothing/suit/apron = 2,
 		/obj/item/clothing/suit/apron/purple_bartender = 2,
 		/obj/item/clothing/under/rank/civilian/bartender/purple = 2,
 		/obj/item/clothing/suit/toggle/suspenders/blue = 2,
@@ -155,7 +160,7 @@
 		// [/CELADON-ADD]
 		/obj/item/clothing/under/suit/checkered = 1,
 		/obj/item/clothing/suit/jacket/leather = 1,
-		/obj/item/clothing/suit/jacket/letterman_nanotrasen = 1,
+		/obj/item/clothing/suit/jacket/letterman_warra = 1,
 		/obj/item/instrument/piano_synth/headphones/spacepods = 1)
 	refill_canister = /obj/item/vending_refill/clothing
 	// [CELADON-REMOVE] - CELADON_ECONOMY - Вынесено в модуль. Иначе оверайд будет

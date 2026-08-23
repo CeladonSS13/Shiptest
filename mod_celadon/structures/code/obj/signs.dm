@@ -13,7 +13,7 @@
 /obj/structure/sign/directions/outpost/administration
 	name = "administration sign"
 	desc = "A direction sign, pointing out which way the Administration outpost."
-	icon_state = "adm"
+	icon_state = "holodir_adm"
 
 /obj/structure/sign/directions/outpost/lift
 	name = "lift sign"
@@ -50,10 +50,10 @@
 	desc = "A direction sign, pointing out which way the Shop."
 	icon_state = "shop"
 
-/obj/structure/sign/directions/outpost/crio
+/obj/structure/sign/directions/outpost/cryo
 	name = "crio sign"
-	desc = "A direction sign, pointing out which way the Crio."
-	icon_state = "crio"
+	desc = "A direction sign, pointing out which way the cryopods are."
+	icon_state = "cryo"
 
 /obj/structure/sign/directions/outpost/bar
 	name = "bar sign"
@@ -67,14 +67,9 @@
 	icon_state = "ind"
 
 /obj/structure/sign/directions/outpost/nanotrasen
-	name = "nanotrasen sign"
-	desc = "A direction sign, pointing out which way the NanoTrasen faction."
+	name = "Nanotrasen sign"
+	desc = "A direction sign, pointing out which way the Nanotrasen faction."
 	icon_state = "nt"
-
-/obj/structure/sign/directions/outpost/nanotrasen/animation
-	name = "nanotrasen sign"
-	desc = "A animation direction sign, pointing out which way the NanoTrasen faction."
-	icon_state = "nt_a"
 
 /obj/structure/sign/directions/outpost/solfed
 	name = "solfed sign"

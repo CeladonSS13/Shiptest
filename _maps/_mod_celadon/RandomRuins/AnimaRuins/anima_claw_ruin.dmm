@@ -63,7 +63,7 @@
 /obj/effect/turf_decal/trimline/opaque/red/warning{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/love_ian{
+/obj/structure/sign/poster/nanotrasen/love_ian{
 	pixel_x = 32;
 	pixel_y = 0
 	},
@@ -102,7 +102,7 @@
 /area/ship/cargo)
 "bb" = (
 /obj/machinery/airalarm/directional/west,
-/obj/structure/sign/poster/official/help_others{
+/obj/structure/sign/poster/nanotrasen/help_others{
 	pixel_y = 30
 	},
 /obj/machinery/modular_computer/console/preset/command,
@@ -258,7 +258,7 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/wasteplanet/secure_claw/dorm)
 "cT" = (
-/obj/structure/sign/poster/official/no_erp{
+/obj/structure/sign/poster/nanotrasen/no_erp{
 	pixel_x = -32
 	},
 /obj/machinery/newscaster/directional/north,
@@ -285,7 +285,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
 	},
-/obj/effect/turf_decal/ntspaceworks_small,
+/obj/effect/turf_decal/nanotrasenspaceworks_small,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "dy" = (
@@ -695,7 +695,7 @@
 /turf/open/floor/concrete/slab_1,
 /area/ruin/wasteplanet/secure_claw/contain)
 "lb" = (
-/obj/structure/sign/poster/official/ion_carbine,
+/obj/structure/sign/poster/nanotrasen/ion_carbine,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
 "lf" = (
@@ -1218,8 +1218,8 @@
 	icon_state = "4-8"
 	},
 /obj/machinery/light/directional/south,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -1460,10 +1460,10 @@
 	pixel_x = 19;
 	pixel_y = -12
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "wG" = (
@@ -2083,7 +2083,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/ntspaceworks_small/left,
+/obj/effect/turf_decal/nanotrasenspaceworks_small/left,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "Fq" = (
@@ -2297,7 +2297,7 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/ntspaceworks_small/right,
+/obj/effect/turf_decal/nanotrasenspaceworks_small/right,
 /turf/open/floor/plasteel/patterned,
 /area/ship/hallway/central)
 "IA" = (
@@ -2314,10 +2314,10 @@
 	pixel_y = 30;
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/warning,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "IK" = (
@@ -2583,8 +2583,8 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/warning{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -2761,10 +2761,10 @@
 	icon_state = "4-8"
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 10
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/corner{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/corner{
 	dir = 4
 	},
 /obj/machinery/button/door{
@@ -3094,7 +3094,7 @@
 /obj/item/clothing/suit/nanotrasen/medical_smock,
 /obj/item/clothing/suit/nanotrasen/vest/blue,
 /obj/item/clothing/suit/nanotrasen/suitjacket,
-/obj/item/clothing/gloves/color/latex/nitrile,
+/obj/item/clothing/gloves/nitrile,
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Ua" = (
@@ -3325,10 +3325,10 @@
 /obj/machinery/firealarm/directional/north{
 	pixel_x = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 9
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/corner,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/corner,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Yz" = (

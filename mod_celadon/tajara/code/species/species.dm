@@ -83,10 +83,18 @@
 
 	ass_image = 'icons/ass/asscat.png'
 
-	mutantears = /obj/item/organ/ears/tajara		//нужно отделить уши от головы. и можно кинуть их в тот же файл. потом в органе прописать путь к файлу + имя файла
-	mutanteyes = /obj/item/organ/eyes/tajara
-	mutanttongue = /obj/item/organ/tongue/tajara
-	mutant_organs = list(/obj/item/organ/tail/tajara)
+	species_organs = list(
+		ORGAN_SLOT_BRAIN = /obj/item/organ/brain,
+		ORGAN_SLOT_HEART = /obj/item/organ/heart,
+		ORGAN_SLOT_LUNGS = /obj/item/organ/lungs,
+		ORGAN_SLOT_EYES = /obj/item/organ/eyes/tajara,
+		ORGAN_SLOT_EARS = /obj/item/organ/ears/tajara,
+		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/tajara,
+		ORGAN_SLOT_LIVER = /obj/item/organ/liver,
+		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach,
+		ORGAN_SLOT_APPENDIX = /obj/item/organ/appendix,
+		ORGAN_SLOT_TAIL = /obj/item/organ/tail/tajara
+	)
 
 	bodytype = BODYTYPE_TAJARA | BODYTYPE_ORGANIC
 
@@ -99,14 +107,7 @@
 			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/tajara,
 		)
 
-	species_robotic_limbs = list(
-			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/robot,
-			BODY_ZONE_HEAD = /obj/item/bodypart/head/robot,
-			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/robot/surplus,
-			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/robot/surplus,
-			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/robot/surplus,
-			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/robot/surplus,
-		)
+	prosthetic_style = /datum/sprite_accessory/body/prosthetic/tajara
 
 /datum/species/tajara/random_name(gender,unique,lastname)
 	//code by @valtor0

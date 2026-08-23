@@ -133,7 +133,7 @@
 
 //ATTACK HAND IGNORING PARENT RETURN VALUE
 /obj/item/gun/energy/attack_hand(mob/user)
-	if(!internal_magazine && !internal_cell && loc == user && user.is_holding(src) && cell && tac_reloads && !(gun_firemodes[firemode_index] == FIREMODE_UNDERBARREL))	// [CELADON-ADD]
+	if(!internal_magazine && !internal_cell && loc == user && user.is_holding(src) && cell && tac_reloads) // [CELADON-ADD]
 		eject_cell(user)
 		return
 	return ..()
@@ -290,6 +290,15 @@
 // 			update_appearance()
 // 	return
 // [/CELADON_REMOVE]
+//If an energy gun has both a variable firerate and a variable ammotype, prioritize switching the firerate. Otherwise, swap the ammotype.
+/obj/item/gun/energy/secondary_action(user)
+	if(gun_firemodes.len > 1)
+		fire_select(user)
+	else if (ammo_type.len > 1)
+		select_fire(user)
+	else
+		..()
+
 /obj/item/gun/energy/can_shoot(visuals)
 	if(safety && !visuals)
 		return FALSE
@@ -373,6 +382,8 @@
 		manufacturer_prefix = "eoehoma"
 	else if (our_gun.manufacturer == MANUFACTURER_SHARPLITE_NEW)
 		manufacturer_prefix = "sharplite"
+	else if (our_gun.manufacturer == MANUFACTURER_NANOTRASEN_LASER) // [CELADON-ADD]
+		manufacturer_prefix = "nanotrasen" // [CELADON-ADD]
 	else if (our_gun.manufacturer == MANUFACTURER_PGF)
 		manufacturer_prefix = "etherbor"
 	else

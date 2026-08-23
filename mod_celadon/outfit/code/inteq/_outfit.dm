@@ -194,7 +194,7 @@
 	mask = null
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = null
-	gloves = /obj/item/clothing/gloves/color/evening
+	gloves = /obj/item/clothing/gloves/long/white
 
 	backpack = /obj/item/storage/backpack/messenger/inteq
 	satchel = /obj/item/storage/backpack/messenger/inteq
