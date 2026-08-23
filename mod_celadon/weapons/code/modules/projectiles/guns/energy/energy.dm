@@ -476,7 +476,6 @@
 	name = "miniature energy power cell"
 	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
 	w_class = WEIGHT_CLASS_TINY
-	icon = 'icons/obj/power.dmi'
 	icon_state = "mg-cell"
 	reskin = FALSE
 
