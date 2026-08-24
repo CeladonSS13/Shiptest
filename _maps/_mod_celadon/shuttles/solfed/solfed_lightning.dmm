@@ -17,7 +17,8 @@
 /area/ship/engineering)
 "au" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovgold/arrow_cw{
 	dir = 4;
@@ -145,9 +146,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
 	},
-/obj/machinery/firealarm/directional/east{
-	pixel_y = 3
-	},
+/obj/machinery/firealarm/directional/east,
 /turf/open/floor/plasteel/strongdark,
 /area/ship/bridge)
 "cy" = (
@@ -396,7 +395,9 @@
 /area/ship/medical)
 "ev" = (
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
 	dir = 1
 	},
@@ -538,7 +539,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 1;
 	color = "#2d2a4e"
@@ -579,7 +582,8 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/effect/turf_decal/siding/yellow{
 	dir = 8
@@ -589,6 +593,7 @@
 "gC" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/disks_plantgene{
+	pixel_x = 0;
 	pixel_y = 2
 	},
 /obj/item/seeds/coffee,
@@ -664,7 +669,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "hI" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/terminal{
 	dir = 8
 	},
@@ -820,7 +827,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	color = "#2d2a4e"
 	},
@@ -877,7 +886,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/general/cargo)
 "jn" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/port_gen/pacman/super{
 	anchored = 1
 	},
@@ -904,7 +915,9 @@
 /area/ship/crew/canteen)
 "jC" = (
 /obj/machinery/power/apc/auto_name/directional/west,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/item/kirbyplants/photosynthetic,
 /obj/machinery/light_switch{
 	dir = 1;
@@ -1510,7 +1523,6 @@
 /obj/effect/turf_decal/trimline/opaque/solgovgold/corner{
 	dir = 4
 	},
-/obj/item/radio/intercom/wideband/directional/south,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "pG" = (
@@ -1621,7 +1633,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	color = "#2d2a4e"
 	},
@@ -2022,7 +2036,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
@@ -2187,7 +2202,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 1;
 	color = "#2d2a4e"
@@ -2279,7 +2296,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	color = "#2d2a4e"
 	},
@@ -2532,7 +2551,7 @@
 	dir = 4;
 	id = "Lightning_bridge_window";
 	pixel_x = -20;
-	pixel_y = 3
+	pixel_y = 10
 	},
 /obj/machinery/holopad,
 /turf/open/floor/plasteel/strongdark,
@@ -2553,7 +2572,9 @@
 /turf/open/floor/plasteel/strongdark,
 /area/ship/crew/canteen)
 "AP" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/smes/engineering,
 /turf/open/floor/plasteel/heavymetal/var1,
 /area/ship/engineering)
@@ -2994,11 +3015,6 @@
 /obj/structure/curtain/bounty,
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/crew/cryo)
-"EJ" = (
-/obj/effect/turf_decal/trimline/opaque/solgovgold/corner,
-/obj/item/radio/intercom/faction/solfed/command/directional/north,
-/turf/open/floor/plasteel/strongdark,
-/area/ship/bridge)
 "EP" = (
 /obj/machinery/light/colored/blue{
 	dir = 8;
@@ -3014,7 +3030,9 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
@@ -3148,6 +3166,7 @@
 /area/ship/medical)
 "GZ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3252,6 +3271,7 @@
 /obj/effect/turf_decal/trimline/opaque/cybersunteal/line,
 /obj/structure/chair/office/purple,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3716,7 +3736,8 @@
 /area/ship/crew/canteen)
 "NR" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -4031,7 +4052,8 @@
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 8
@@ -4062,7 +4084,8 @@
 	icon_state = "1-2"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/line{
 	dir = 4
@@ -4124,6 +4147,9 @@
 "Sv" = (
 /obj/effect/turf_decal/trimline/opaque/solgovgold/line{
 	dir = 8
+	},
+/obj/item/radio/intercom/wideband/directional/west{
+	pixel_y = -5
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
@@ -4279,7 +4305,9 @@
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/window/brigdoor/northleft{
 	dir = 4;
 	req_one_access = list(61,11);
@@ -4336,7 +4364,9 @@
 /obj/machinery/power/terminal{
 	dir = 8
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/heavymetal/var2,
 /area/ship/engineering)
 "Vq" = (
@@ -4548,6 +4578,7 @@
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/structure/cable{
@@ -6070,7 +6101,7 @@ Ae
 rL
 pE
 Sq
-EJ
+Gt
 sL
 kn
 sf

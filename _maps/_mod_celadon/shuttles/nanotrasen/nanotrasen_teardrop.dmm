@@ -95,23 +95,6 @@
 /area/ship/crew/canteen/kitchen)
 "bi" = (
 /obj/effect/turf_decal/borderfloorblack/full,
-/obj/effect/turf_decal/spline/plain/opaque/ntbluelight{
-	dir = 8
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 1
-	},
-/obj/structure/cable{
-	icon_state = "2-4"
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/borderfloorblack/full,
 /obj/effect/turf_decal/spline/plain/opaque/nanotrasenbluelight{
 	dir = 8
 	},
@@ -157,7 +140,9 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "bD" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -196,7 +181,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "ca" = (
-/obj/machinery/power/shuttle/engine/electric/premium,
+/obj/machinery/power/shuttle/engine/electric/premium{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -871,7 +858,9 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "jz" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1196,7 +1185,9 @@
 /obj/machinery/recharger{
 	pixel_x = 5
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/security)
@@ -1486,7 +1477,8 @@
 /area/ship/hallway/central)
 "rf" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plasteel/heavymetal/var3,
@@ -1513,7 +1505,8 @@
 	},
 /obj/effect/turf_decal/industrial/traffic/corner,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -1660,7 +1653,8 @@
 "sR" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
@@ -1788,7 +1782,9 @@
 "uJ" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
 /obj/machinery/power/terminal,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
@@ -1974,7 +1970,9 @@
 	pixel_y = -12
 	},
 /obj/structure/platform,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/engineering)
 "wJ" = (
@@ -3011,9 +3009,6 @@
 /area/ship/hallway/central)
 "HK" = (
 /obj/machinery/light/directional/west,
-/obj/item/radio/intercom/faction/nanotrasen/command/directional/west{
-	pixel_x = -28
-	},
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/bridge)
 "HL" = (
@@ -3205,7 +3200,8 @@
 "JV" = (
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech/grid,
@@ -3537,7 +3533,8 @@
 /area/ship/engineering)
 "Nq" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/structure/cable{
@@ -4143,7 +4140,9 @@
 /turf/open/floor/plasteel/heavymetal/var4,
 /area/ship/hallway/central)
 "SL" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "teardrop_eng"

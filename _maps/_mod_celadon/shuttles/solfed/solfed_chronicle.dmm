@@ -430,7 +430,9 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/dorm/captain)
 "eg" = (
@@ -480,7 +482,8 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sink{
@@ -828,7 +831,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/general/science/rnd)
@@ -1121,7 +1125,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/crewtwo)
 "kk" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
 	},
@@ -1228,7 +1234,6 @@
 	dir = 8
 	},
 /obj/machinery/light/dim/directional/north,
-/obj/item/radio/intercom/faction/solfed/command/directional/north,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "lb" = (
@@ -1419,7 +1424,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/crew/crewtwo)
@@ -2357,7 +2363,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "vd" = (
@@ -3115,6 +3123,7 @@
 	icon_state = "1-4"
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	icon_state = "pipe11-4";
 	dir = 5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -3194,6 +3203,7 @@
 /area/ship/engineering)
 "CN" = (
 /obj/machinery/mech_bay_recharge_port{
+	icon_state = "recharge_port";
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/three_quarters{
@@ -3272,7 +3282,8 @@
 	dir = 1
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
@@ -3462,7 +3473,9 @@
 	color = "#332521"
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewtwo)
 "Gi" = (
@@ -4214,7 +4227,9 @@
 /turf/open/floor/suns/hatch/yew,
 /area/ship/crew/dorm/captain)
 "Nd" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -4669,7 +4684,9 @@
 	},
 /obj/effect/turf_decal/corner_techfloor_gray/diagonal,
 /obj/effect/turf_decal/techfloor,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/general/science/rnd)
 "Sv" = (
@@ -4681,7 +4698,9 @@
 /turf/open/floor/wood/ebony,
 /area/ship/crew/canteen)
 "Sw" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -4864,7 +4883,9 @@
 	id = "chronicle_rnd";
 	name = "Blast Shutters"
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/crewtwo)
 "UB" = (
@@ -5122,6 +5143,7 @@
 "WH" = (
 /obj/structure/table,
 /obj/machinery/chem_dispenser/drinks{
+	pixel_x = 0;
 	pixel_y = 12
 	},
 /obj/machinery/light/dim/directional/north,

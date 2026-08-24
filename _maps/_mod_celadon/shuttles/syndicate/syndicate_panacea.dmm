@@ -96,6 +96,7 @@
 /area/ship/crew/dorm/dormtwo)
 "aN" = (
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_y = 19
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -121,6 +122,7 @@
 /obj/structure/table/wood/reinforced,
 /obj/effect/turf_decal/suns/line/marble/fill,
 /obj/machinery/chem_dispenser/drinks{
+	pixel_x = 0;
 	pixel_y = 13
 	},
 /turf/open/floor/suns/dark/plain,
@@ -355,6 +357,7 @@
 /area/ship/engineering)
 "cd" = (
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = -7;
 	pixel_y = 19
 	},
@@ -481,7 +484,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 2
+	},
 /obj/structure/cable/blue{
 	icon_state = "4-8"
 	},
@@ -582,6 +587,7 @@
 	pixel_y = -6
 	},
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_y = 22;
 	pixel_x = -10
 	},
@@ -784,7 +790,9 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/borderfloorwhite,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 2
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 5
 	},
@@ -797,7 +805,9 @@
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
 "eO" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -891,6 +901,7 @@
 "fi" = (
 /obj/structure/table/wood,
 /obj/item/autosurgeon/cmo{
+	pixel_x = 0;
 	pixel_y = 21
 	},
 /obj/item/storage/belt/medical{
@@ -968,6 +979,7 @@
 	dir = 4
 	},
 /obj/structure/bed/dogbed{
+	anchored = 1;
 	name = "Bibsy's bed"
 	},
 /mob/living/simple_animal/pet/cat/kitten{
@@ -997,7 +1009,8 @@
 /obj/machinery/light/directional/west,
 /obj/structure/cable/blue,
 /obj/item/stock_parts/cell/high{
-	pixel_x = -6
+	pixel_x = -6;
+	pixel_y = 0
 	},
 /turf/open/floor/suns/grid,
 /area/ship/engineering)
@@ -1701,7 +1714,9 @@
 /area/ship/crew/canteen/kitchen)
 "jh" = (
 /obj/structure/table/wood/reinforced,
-/obj/item/toy/plush/blahaj,
+/obj/item/toy/plush/blahaj{
+	pixel_y = 0
+	},
 /turf/open/floor/suns/dark/plain,
 /area/ship/crew/ccommons)
 "js" = (
@@ -1883,64 +1898,6 @@
 	pixel_y = 8;
 	pixel_x = 10
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/suns{
-	pixel_x = -2
-	},
-/obj/item/clothing/neck/stethoscope{
-	pixel_y = 1;
-	pixel_x = -2
-	},
-/obj/item/storage/belt/medical{
-	pixel_x = 7;
-	pixel_y = -3
-	},
-/obj/item/clothing/glasses/hud/health/suns{
-	pixel_y = 6;
-	pixel_x = 5
-	},
-/obj/item/clothing/head/suns/surgery{
-	pixel_y = 7;
-	pixel_x = -2
-	},
-/obj/item/clothing/mask/surgical/suns{
-	pixel_y = 11;
-	pixel_x = 3
-	},
-/obj/item/clothing/under/syndicate/suns/doctorscrubs{
-	pixel_y = 8;
-	pixel_x = 6
-	},
-/obj/item/clothing/suit/toggle/labcoat/suns/doctorlabcoat{
-	pixel_y = 8;
-	pixel_x = -7
-	},
-/obj/item/storage/firstaid/regular{
-	pixel_y = -3;
-	pixel_x = -7
-	},
-/obj/item/storage/case/surgery,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/suns/line/marble/fill{
-	dir = 4
-	},
-/obj/structure/closet/wall/white/med{
-	name = "medical locker";
-	pixel_y = 1;
-	dir = 8;
-	req_one_access = list(5, 20);
-	pixel_x = -30
-	},
-/obj/item/roller{
-	pixel_x = -7;
-	pixel_y = 17
-	},
-/obj/item/holosign_creator/medical{
-	pixel_y = 8;
-	pixel_x = 10
-	},
 /obj/item/clothing/gloves/nitrile/suns{
 	pixel_y = 0;
 	pixel_x = -2
@@ -2052,7 +2009,8 @@
 /obj/effect/turf_decal/suns/line/marble/fill,
 /obj/machinery/light_switch{
 	dir = 4;
-	pixel_x = -19
+	pixel_x = -19;
+	pixel_y = 0
 	},
 /turf/open/floor/suns/plain,
 /area/ship/crew/office/lobby)
@@ -2245,6 +2203,7 @@
 	dir = 10
 	},
 /obj/machinery/chem_dispenser/drinks/beer{
+	pixel_x = 0;
 	pixel_y = 13
 	},
 /turf/open/floor/suns/dark/plain,
@@ -2269,7 +2228,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 2
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -2313,6 +2274,7 @@
 	name = "Emergency Exit Shutters";
 	pixel_y = 20;
 	pixel_x = -10;
+	dir = 2;
 	req_one_access = list(1, 5, 10, 19, 20, 25, 57, 58)
 	},
 /obj/item/radio/intercom/directional/north{
@@ -2519,6 +2481,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock{
+	dir = 2;
 	name = "Bar";
 	req_one_access = list(1, 19, 20, 25, 57, 58)
 	},
@@ -2608,7 +2571,9 @@
 /obj/item/storage/toolbox/fishing{
 	pixel_y = 8
 	},
-/obj/item/storage/toolbox/fishing,
+/obj/item/storage/toolbox/fishing{
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "oh" = (
@@ -2634,7 +2599,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 2
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -2657,7 +2624,8 @@
 	req_access = list(20)
 	},
 /obj/item/clothing/neck/cloak/suns{
-	pixel_x = -8
+	pixel_x = -8;
+	pixel_y = 0
 	},
 /obj/item/clothing/mask/breath/suns{
 	pixel_x = 3;
@@ -3101,7 +3069,8 @@
 "rF" = (
 /obj/machinery/light_switch{
 	dir = 8;
-	pixel_x = 19
+	pixel_x = 19;
+	pixel_y = 0
 	},
 /turf/open/floor/suns/pattern,
 /area/ship/crew/ccommons)
@@ -3484,7 +3453,9 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 2
+	},
 /obj/structure/cable/blue{
 	icon_state = "4-8"
 	},
@@ -3660,7 +3631,8 @@
 	pixel_x = -6
 	},
 /obj/item/storage/box/pillbottles{
-	pixel_y = 7
+	pixel_y = 7;
+	pixel_x = 0
 	},
 /obj/item/storage/bag/medical{
 	pixel_y = -4;
@@ -3880,7 +3852,8 @@
 	pixel_x = -2
 	},
 /obj/item/clothing/mask/breath/medical{
-	pixel_x = 3
+	pixel_x = 3;
+	pixel_y = 0
 	},
 /obj/item/clothing/mask/breath/medical{
 	pixel_x = -5;
@@ -4280,7 +4253,8 @@
 "zA" = (
 /obj/structure/filingcabinet/double{
 	dir = 1;
-	pixel_x = -15
+	pixel_x = -15;
+	pixel_y = 0
 	},
 /obj/machinery/photocopier{
 	pixel_x = 6;
@@ -4298,6 +4272,7 @@
 /area/ship/crew/dorm/dormtwo)
 "zF" = (
 /obj/structure/bed/dogbed{
+	anchored = 1;
 	name = "Felix' bed"
 	},
 /mob/living/simple_animal/pet/cat/space{
@@ -4414,7 +4389,8 @@
 "Ac" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
-	pixel_y = 22
+	pixel_y = 22;
+	pixel_x = 0
 	},
 /obj/effect/turf_decal/suns/line/marble/fill,
 /turf/open/floor/suns/dark/plain,
@@ -5008,6 +4984,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/stairs{
+	dir = 2;
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/engineering)
@@ -5248,7 +5225,9 @@
 /turf/open/floor/carpet/red,
 /area/ship/crew/dorm/dormtwo)
 "EU" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
@@ -5654,7 +5633,9 @@
 	},
 /area/ship/crew/dorm/dormtwo)
 "GY" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "Ha" = (
@@ -6059,6 +6040,7 @@
 /area/ship/crew/dorm)
 "Jy" = (
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = 8;
 	pixel_y = 19
 	},
@@ -6274,10 +6256,12 @@
 "KW" = (
 /obj/structure/table/wood,
 /obj/item/storage/box/disks_plantgene{
+	pixel_x = 0;
 	pixel_y = 2
 	},
 /obj/item/gun/energy/floragun,
 /obj/item/gun/energy/floragun{
+	pixel_x = 0;
 	pixel_y = 6
 	},
 /turf/open/floor/grass/ship/jungle,
@@ -7013,6 +6997,7 @@
 "PB" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/smartfridge/chemistry/preloaded{
+	pixel_x = 0;
 	pixel_y = 29;
 	density = 0
 	},
@@ -7092,7 +7077,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 2
+	},
 /obj/structure/cable/blue{
 	icon_state = "4-8"
 	},
@@ -7152,10 +7139,12 @@
 "QA" = (
 /obj/effect/turf_decal/suns/line/marble/fill,
 /obj/item/clothing/under/syndicate/suns/alt{
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 0
 	},
 /obj/item/clothing/under/syndicate/suns/uniform2{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 0
 	},
 /obj/item/clothing/gloves/suns{
 	pixel_y = -12;
@@ -7769,12 +7758,6 @@
 	pixel_y = 21;
 	pixel_x = -20
 	},
-/obj/item/radio/intercom/faction/syndicate/command/directional/south{
-	pixel_x = 8
-	},
-/obj/item/radio/intercom/faction/suns/command/directional/south{
-	pixel_x = -10
-	},
 /turf/open/floor/suns/dark,
 /area/ship/bridge)
 "TL" = (
@@ -8129,7 +8112,9 @@
 "Wz" = (
 /obj/effect/turf_decal/suns/line/marble,
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2,
+/obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
+	dir = 2
+	},
 /obj/structure/cable/blue{
 	icon_state = "4-8"
 	},
@@ -8227,6 +8212,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/plasteel/stairs{
+	dir = 2;
 	icon = 'icons/obj/stairs.dmi'
 	},
 /area/ship/engineering)
@@ -8361,6 +8347,7 @@
 	pixel_y = 24
 	},
 /obj/machinery/light_switch{
+	dir = 2;
 	pixel_x = -10;
 	pixel_y = 19
 	},
@@ -8437,7 +8424,9 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 1
 	},
-/obj/effect/turf_decal/siding/wood,
+/obj/effect/turf_decal/siding/wood{
+	dir = 2
+	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
@@ -8518,7 +8507,9 @@
 /turf/open/floor/ship/dirt,
 /area/ship/crew/hydroponics)
 "YJ" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable/orange{
 	icon_state = "0-4"
 	},
@@ -8565,6 +8556,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/door/airlock{
+	dir = 2;
 	name = "Psych's Room";
 	req_one_access = list(1, 19, 20, 57, 58, 70)
 	},

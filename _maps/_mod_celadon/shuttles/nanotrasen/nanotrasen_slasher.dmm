@@ -622,21 +622,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "it" = (
-/obj/item/radio/intercom/faction/nanotrasen/command/directional/east,
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 6
-	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
-	dir = 6
-	},
-/obj/machinery/computer/camera_advanced{
-	dir = 8;
-	icon_state = "computer-right"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/item/radio/intercom/directional/east,
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 6
@@ -787,10 +772,12 @@
 	name = "autolathe supplies locker"
 	},
 /obj/item/stack/sheet/metal/twenty{
-	pixel_x = -7
+	pixel_x = -7;
+	pixel_y = 0
 	},
 /obj/item/stack/sheet/glass/twenty{
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
@@ -1145,7 +1132,10 @@
 	dir = 4
 	},
 /obj/structure/table/reinforced/titaniumglass,
-/obj/machinery/microwave,
+/obj/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "qx" = (
@@ -1689,22 +1679,6 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
-	dir = 8
-	},
-/obj/machinery/button/door{
-	dir = 4;
-	pixel_x = -23;
-	id = "slasher_bridge";
-	name = "bridge shutters"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 8
-	},
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/warning{
 	dir = 8
 	},
@@ -2090,7 +2064,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "CZ" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2437,24 +2413,6 @@
 /turf/template_noop,
 /area/template_noop)
 "Ib" = (
-/obj/machinery/computer/helm{
-	dir = 8;
-	icon_state = "computer-middle"
-	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/warning{
-	dir = 4
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 4
-	},
-/obj/item/radio/intercom/directional/east{
-	pixel_x = 28
-	},
-/obj/machinery/light/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/machinery/light/directional/east,
 /obj/machinery/computer/helm{
 	dir = 8;
@@ -2527,24 +2485,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "JO" = (
-/obj/effect/turf_decal/techfloor,
-/obj/structure/cable{
-	icon_state = "4-6"
-	},
-/obj/machinery/airalarm/directional/south,
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/engi{
-	name = "Engineering Technician Hardsuit"
-	},
-/obj/item/tank/internals/oxygen/yellow,
-/obj/item/clothing/mask/gas/atmos,
-/obj/structure/cable{
-	icon_state = "6-8"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/techfloor,
 /obj/structure/cable{
 	icon_state = "4-6"
@@ -2908,7 +2848,9 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "Rf" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2978,18 +2920,23 @@
 	anchored = 1
 	},
 /obj/item/gun/energy/e_gun/e_old/iot{
+	pixel_x = 0;
 	pixel_y = 3
 	},
 /obj/item/gun/energy/e_gun/advtaser{
+	pixel_x = 0;
 	pixel_y = 9
 	},
 /obj/item/gun/energy/e_gun/e_old/smg{
+	pixel_x = 0;
 	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "SG" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3130,7 +3077,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "UU" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3426,6 +3375,7 @@
 	},
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
+	pixel_x = 0;
 	pixel_y = 24
 	},
 /obj/machinery/iv_drip,

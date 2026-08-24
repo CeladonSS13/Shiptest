@@ -57,7 +57,9 @@
 /turf/closed/wall/r_wall/syndicate/nodiagonal,
 /area/ship/storage)
 "aY" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /obj/machinery/atmospherics/pipe/layer_manifold{
 	dir = 4
 	},
@@ -481,7 +483,9 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "externalshutters";
 	dir = 4
@@ -890,7 +894,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "pI" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "pQ" = (
@@ -2439,7 +2445,9 @@
 /obj/structure/window/reinforced/spawner{
 	dir = 8
 	},
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/machinery/door/poddoor/shutters{
 	id = "externalshutters";
 	dir = 4
@@ -2552,7 +2560,6 @@
 /obj/machinery/computer/helm{
 	dir = 8
 	},
-/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Wo" = (
@@ -2581,7 +2588,8 @@
 "WG" = (
 /obj/structure/catwalk/over/plated_catwalk,
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -2661,7 +2669,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Yc" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/computer/mech_bay_power_console{
 	dir = 1
 	},
@@ -2690,7 +2700,9 @@
 /obj/item/clothing/head/helmet/space/syndicate,
 /obj/item/clothing/mask/breath,
 /obj/effect/turf_decal/corner/opaque/brown/border,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/power/apc/auto_name/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)

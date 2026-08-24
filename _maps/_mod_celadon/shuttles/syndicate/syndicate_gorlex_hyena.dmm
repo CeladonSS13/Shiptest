@@ -253,7 +253,9 @@
 /area/ship/crew/dorm)
 "dZ" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1277,7 +1279,8 @@
 /obj/machinery/button/door{
 	id = "wreckerarmory";
 	name = "armory shutters";
-	pixel_y = 23
+	pixel_y = 23;
+	req_access = null
 	},
 /obj/machinery/light_switch{
 	pixel_y = 23;
@@ -1371,6 +1374,7 @@
 	name = "Cargo Bay Exterior Blast Door"
 	},
 /obj/docking_port/mobile{
+	can_move_docking_ports = 1;
 	dir = 8;
 	launch_status = 0;
 	name = "mining ship";
@@ -1708,7 +1712,8 @@
 	dir = 1;
 	id = "wreckerarmory";
 	name = "armory shutters";
-	pixel_y = -21
+	pixel_y = -21;
+	req_access = null
 	},
 /obj/item/gun/ballistic/automatic/pistol/asp,
 /obj/item/ammo_box/magazine/m57_39_asp,
@@ -1907,7 +1912,9 @@
 /area/ship/hallway/central)
 "FF" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1946,7 +1953,7 @@
 /area/ship/bridge)
 "FU" = (
 /obj/structure/table/reinforced,
-/obj/item/radio/intercom/faction/syndicate/command/directional/east{
+/obj/item/radio/intercom/directional/east{
 	pixel_y = 7
 	},
 /obj/item/toy/figure/syndie{
@@ -2246,7 +2253,9 @@
 /area/ship/maintenance/port)
 "KL" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2286,7 +2295,9 @@
 /area/ship/security/armory)
 "KV" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2387,7 +2398,9 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "Nw" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "NA" = (
@@ -2604,7 +2617,9 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/fore)
 "RL" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2712,7 +2727,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "Sx" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2729,7 +2746,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/central)
 "SA" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/maintenance/port)
 "SE" = (
@@ -2832,7 +2851,9 @@
 /area/ship/maintenance/starboard)
 "TA" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/structure/window/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
 	dir = 4;
@@ -3025,7 +3046,9 @@
 /area/ship/cargo)
 "Wx" = (
 /obj/structure/window/reinforced/spawner/west,
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/machinery/door/window/eastleft{
 	name = "Engine Access"
 	},

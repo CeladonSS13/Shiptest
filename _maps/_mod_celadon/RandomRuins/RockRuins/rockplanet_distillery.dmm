@@ -455,7 +455,7 @@
 /obj/structure/reagent_dispensers/cooking_oil{
 	desc = "A huge metal vat with a tap on the front. Filled with moonshine.";
 	name = "moonshine vat";
-	reagent_id = /datum/reagent/consumable/ethanol/moonshine
+	reagent_id = /datum/reagent/consumable/ethanol/chemshine
 	},
 /obj/structure/fermenting_barrel/distiller{
 	density = 0;
@@ -632,7 +632,7 @@
 /obj/structure/reagent_dispensers/beerkeg{
 	desc = "A keg full of liver-shredding spirits brewed by amateur bootleggers.";
 	name = "moonshine keg";
-	reagent_id = /datum/reagent/consumable/ethanol/moonshine
+	reagent_id = /datum/reagent/consumable/ethanol/chemshine
 	},
 /obj/effect/turf_decal/industrial/loading/white{
 	dir = 4
@@ -3179,7 +3179,7 @@
 	layer = 2.8;
 	name = "moonshine keg";
 	pixel_x = -8;
-	reagent_id = /datum/reagent/consumable/ethanol/moonshine
+	reagent_id = /datum/reagent/consumable/ethanol/chemshine
 	},
 /obj/structure/reagent_dispensers/beerkeg{
 	anchored = 1;
@@ -3187,7 +3187,7 @@
 	name = "moonshine keg";
 	pixel_x = 8;
 	pixel_y = -2;
-	reagent_id = /datum/reagent/consumable/ethanol/moonshine
+	reagent_id = /datum/reagent/consumable/ethanol/chemshine
 	},
 /obj/structure/reagent_dispensers/beerkeg{
 	anchored = 1;
@@ -3196,7 +3196,7 @@
 	name = "moonshine keg";
 	pixel_x = -4;
 	pixel_y = 14;
-	reagent_id = /datum/reagent/consumable/ethanol/moonshine
+	reagent_id = /datum/reagent/consumable/ethanol/chemshine
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/turf_decal/spline/fancy/opaque/white{

@@ -15,7 +15,9 @@
 	dir = 9
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/crew/cryo)
 "aC" = (
@@ -43,7 +45,8 @@
 "bg" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
+	dir = 5;
+	pixel_y = 0
 	},
 /obj/structure/reagent_dispensers/watertank,
 /obj/machinery/atmospherics/pipe/simple/orange/hidden{
@@ -144,6 +147,7 @@
 	pixel_y = 22
 	},
 /obj/item/radio/intercom/directional/north{
+	pixel_x = 0;
 	pixel_y = 36
 	},
 /turf/open/floor/carpet/royalblue,
@@ -294,7 +298,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/fax/solgov,
 /obj/structure/table/wood/fancy/purple,
-/obj/item/radio/intercom/faction/solfed/command/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "iM" = (
@@ -383,7 +386,9 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/ship/hallway/central)
 "kE" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -457,7 +462,8 @@
 /area/ship/hallway/central)
 "mz" = (
 /obj/machinery/newscaster/directional/north{
-	pixel_x = 2
+	pixel_x = 2;
+	pixel_y = 30
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
@@ -558,6 +564,7 @@
 	},
 /obj/structure/railing/wood{
 	dir = 1;
+	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -835,6 +842,7 @@
 	icon_state = "1-2"
 	},
 /obj/machinery/firealarm/directional/west{
+	pixel_x = -32;
 	pixel_y = 18
 	},
 /obj/machinery/door/firedoor/border_only,
@@ -1221,7 +1229,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "zR" = (
-/obj/machinery/power/shuttle/engine/fueled/plasma,
+/obj/machinery/power/shuttle/engine/fueled/plasma{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "zS" = (
@@ -1528,6 +1538,7 @@
 	pixel_y = 13
 	},
 /obj/item/pen/solfed{
+	pixel_x = 0;
 	pixel_y = 5
 	},
 /turf/open/floor/carpet/royalblue,
@@ -1779,7 +1790,9 @@
 /obj/item/ammo_box/magazine/modelh,
 /obj/item/ammo_box/magazine/modelh,
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/item/clothing/gloves/combat/solfed/captain,
 /obj/item/storage/guncase/pistol/modelh,
 /obj/machinery/light_switch{
@@ -1817,6 +1830,21 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
+"JJ" = (
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/chair/bench/orange/directional/north{
+	dir = 1
+	},
+/turf/open/floor/wood/ebony,
+/area/ship/hallway/central)
 "JK" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -1934,7 +1962,8 @@
 "LG" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
+	dir = 5;
+	pixel_y = 0
 	},
 /obj/effect/spawner/random/maintenance/three,
 /turf/open/floor/plasteel/tech,
@@ -2284,6 +2313,7 @@
 	pixel_x = -28
 	},
 /obj/machinery/firealarm/directional/west{
+	pixel_x = -32;
 	pixel_y = -13
 	},
 /turf/open/floor/plasteel/white,
@@ -2394,7 +2424,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
 "Ty" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/window/plasma/reinforced/spawner/east,
 /obj/machinery/door/poddoor{
@@ -2644,7 +2676,9 @@
 /area/ship/engineering)
 "Wf" = (
 /obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/light_switch{
 	pixel_x = 19;
 	pixel_y = 11;
@@ -2663,7 +2697,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "WC" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/plasma/reinforced/spawner/west,
 /obj/structure/cable{
 	icon_state = "0-8"
@@ -2788,7 +2824,8 @@
 "Ye" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 5
+	dir = 5;
+	pixel_y = 0
 	},
 /obj/machinery/rnd/production/protolathe/department/science,
 /obj/effect/turf_decal/corner/transparent/purple/mono,
@@ -2799,6 +2836,7 @@
 /obj/structure/table/wood/fancy/purple,
 /obj/machinery/door/firedoor/border_only,
 /obj/item/pizzabox/pineapple{
+	pixel_x = 0;
 	pixel_y = 14
 	},
 /turf/open/floor/wood/mahogany,
@@ -2870,6 +2908,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/sink{
+	icon_state = "sink";
+	dir = 2;
 	pixel_x = 1;
 	pixel_y = 28
 	},
@@ -3218,7 +3258,7 @@ AP
 GT
 PG
 yF
-ga
+JJ
 os
 VQ
 ZO

@@ -656,7 +656,9 @@
 /area/ship/external/dark)
 "hm" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black,
-/obj/effect/turf_decal/corner/opaque/syndiered/half,
+/obj/effect/turf_decal/corner/opaque/syndiered/half{
+	dir = 2
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security)
 "hn" = (
@@ -730,6 +732,7 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/machinery/door/poddoor{
@@ -805,6 +808,7 @@
 /area/ship/crew)
 "jp" = (
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -879,7 +883,6 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/three_quarters{
 	dir = 8
 	},
-/obj/item/radio/intercom/faction/syndicate/command/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "jS" = (
@@ -1047,7 +1050,8 @@
 	dir = 6
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -2070,6 +2074,7 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/structure/window/reinforced{
@@ -2177,6 +2182,7 @@
 	icon_state = "0-8"
 	},
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/structure/window/reinforced,
@@ -2438,6 +2444,7 @@
 /area/ship/crew)
 "zW" = (
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
@@ -2734,6 +2741,7 @@
 	},
 /obj/structure/window/reinforced,
 /obj/structure/window/reinforced{
+	icon_state = "rwindow";
 	dir = 8
 	},
 /obj/machinery/door/poddoor{
@@ -2749,7 +2757,9 @@
 	pixel_y = 5
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/light/small/directional/west{
 	pixel_y = -7
 	},
@@ -3240,7 +3250,6 @@
 /obj/machinery/light/directional/east,
 /obj/item/mod/module/storage/syndicate,
 /obj/item/mod/module/storage/syndicate,
-/obj/item/radio/intercom/faction/syndicate/directional/north,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "IL" = (
@@ -3848,7 +3857,8 @@
 /area/ship/engineering)
 "MD" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -5008,7 +5018,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/cargo)
 "WU" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/half,
+/obj/effect/turf_decal/corner/opaque/syndiered/half{
+	dir = 2
+	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/paper_bin{

@@ -14,7 +14,8 @@
 	icon_state = "1-2"
 	},
 /obj/structure/sign/nanotrasen/nakamura{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 1
@@ -62,6 +63,7 @@
 	},
 /obj/item/radio/intercom/wideband/table{
 	dir = 4;
+	pixel_x = 0;
 	pixel_y = -17
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -163,6 +165,7 @@
 /area/ship/security)
 "bG" = (
 /obj/machinery/door/airlock/engineering{
+	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -233,6 +236,7 @@
 /area/ship/general/science)
 "bP" = (
 /obj/machinery/door/airlock/engineering{
+	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -303,7 +307,9 @@
 	id = "celestis_centralengines";
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "cf" = (
@@ -794,11 +800,13 @@
 /area/ship/hallway/central)
 "fs" = (
 /obj/machinery/smartfridge/bloodbank/preloaded{
+	pixel_x = 0;
 	pixel_y = -32;
 	density = 0
 	},
 /obj/structure/sign/nanotrasen/deforest{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -1036,6 +1044,12 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
+"gK" = (
+/turf/closed/wall/mineral/titanium{
+	pixel_x = 0;
+	pixel_y = 0
+	},
+/area/ship/bridge)
 "gR" = (
 /obj/effect/turf_decal/corner/opaque/white/diagonal,
 /obj/structure/cable{
@@ -1438,82 +1452,6 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "iS" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
-	dir = 4
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
-	dir = 8
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
-	dir = 4
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/radio/headset/nanotrasen{
-	pixel_x = -5;
-	pixel_y = -8
-	},
-/obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4;
-	pixel_y = 9
-	},
-/obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4;
-	pixel_y = 6
-	},
-/obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4;
-	pixel_y = 3
-	},
-/obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4
-	},
-/obj/item/encryptionkey/nanotrasen{
-	pixel_x = 4;
-	pixel_y = -3
-	},
-/obj/structure/closet/wall/blue/directional/south,
-/obj/item/radio{
-	pixel_x = -9;
-	pixel_y = 13
-	},
-/obj/item/radio{
-	pixel_x = -9;
-	pixel_y = 6
-	},
-/obj/item/radio{
-	pixel_x = -9;
-	pixel_y = -1
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 8
 	},
@@ -1697,6 +1635,7 @@
 "jt" = (
 /obj/structure/table/wood/reinforced,
 /obj/structure/sign/nanotrasen{
+	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/item/paper_bin{
@@ -2055,7 +1994,6 @@
 	dir = 10;
 	layer = 4.1
 	},
-/obj/item/radio/intercom/faction/nanotrasen/command/directional/north,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "lH" = (
@@ -2227,7 +2165,9 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "nq" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2287,6 +2227,7 @@
 /area/ship/hallway/central)
 "nQ" = (
 /obj/machinery/camera/autoname{
+	dir = 2;
 	network = list("GEC")
 	},
 /obj/structure/cable{
@@ -2348,6 +2289,7 @@
 	dir = 9
 	},
 /obj/machinery/camera/autoname{
+	dir = 2;
 	network = list("GEC")
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
@@ -2595,6 +2537,7 @@
 "pz" = (
 /obj/structure/table/glass,
 /obj/item/storage/fancy/donut_box{
+	pixel_x = 0;
 	pixel_y = -5
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -2651,6 +2594,7 @@
 /obj/structure/window/reinforced,
 /obj/machinery/computer/med_data/laptop{
 	dir = 1;
+	pixel_x = 0;
 	pixel_y = 5
 	},
 /turf/open/floor/plasteel/white,
@@ -2675,15 +2619,6 @@
 /turf/open/floor/engine,
 /area/ship/engineering/engine)
 "qh" = (
-/obj/structure/table/glass,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/storage/case/surgery{
-	pixel_y = 2
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/table/glass,
 /obj/item/clothing/gloves/nitrile,
 /obj/item/storage/case/surgery{
@@ -2841,6 +2776,7 @@
 	dir = 1
 	},
 /obj/machinery/vending/wallmed/ship{
+	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/machinery/airalarm/directional/west,
@@ -2905,7 +2841,8 @@
 /obj/structure/railing,
 /obj/structure/table,
 /obj/item/paper_bin{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 0
 	},
 /obj/item/destTagger{
 	pixel_x = 4;
@@ -3361,15 +3298,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/starboard)
 "tE" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
-/obj/machinery/light_switch{
-	dir = 1;
-	pixel_y = -21
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /obj/machinery/light_switch{
 	dir = 1;
@@ -3413,24 +3341,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "tQ" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
-	dir = 1
-	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
-/obj/structure/table/wood,
-/obj/structure/bedsheetbin,
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	pixel_y = 24
-	},
-/obj/machinery/airalarm/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
@@ -3999,6 +3909,7 @@
 	},
 /obj/structure/closet/wall/white/med{
 	name = "medical supplies locker";
+	pixel_y = 0;
 	dir = 8;
 	pixel_x = -31
 	},
@@ -4104,6 +4015,7 @@
 /area/ship/engineering/engine)
 "ys" = (
 /obj/machinery/vending/boozeomat{
+	pixel_x = 0;
 	pixel_y = -32;
 	density = 0
 	},
@@ -4675,6 +4587,7 @@
 /area/ship/engineering/engine)
 "BS" = (
 /obj/machinery/door/airlock/engineering{
+	dir = 2;
 	name = "Engine";
 	req_access_txt = "10"
 	},
@@ -4968,7 +4881,9 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
 "DM" = (
-/obj/structure/bodycontainer/morgue,
+/obj/structure/bodycontainer/morgue{
+	dir = 4
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "DR" = (
@@ -5165,6 +5080,7 @@
 	},
 /obj/item/radio/intercom/table{
 	dir = 4;
+	pixel_x = 0;
 	pixel_y = 15;
 	layer = 3.2
 	},
@@ -5338,6 +5254,7 @@
 	req_access_txt = "2"
 	},
 /obj/item/gun/energy/e_gun/e_old/iot{
+	pixel_x = 0;
 	pixel_y = -6
 	},
 /obj/item/gun/ballistic/automatic/smg/vector,
@@ -5345,25 +5262,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security)
 "FT" = (
-/obj/structure/table,
-/obj/item/storage/box/beakers{
-	pixel_y = 3
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/purple{
-	dir = 4
-	},
-/obj/item/clothing/gloves/color/latex{
-	pixel_x = -6;
-	pixel_y = 9
-	},
-/obj/item/geiger_counter{
-	pixel_x = 9;
-	pixel_y = -2
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/table,
 /obj/item/storage/box/beakers{
 	pixel_x = 0;
@@ -5466,7 +5364,8 @@
 	},
 /obj/structure/table/reinforced,
 /obj/machinery/recharger{
-	pixel_x = -4
+	pixel_x = -4;
+	pixel_y = 0
 	},
 /obj/item/paper_bin{
 	pixel_x = 8
@@ -5503,7 +5402,8 @@
 "Gt" = (
 /obj/structure/sink{
 	dir = 8;
-	pixel_x = 12
+	pixel_x = 12;
+	pixel_y = 0
 	},
 /obj/structure/mirror{
 	pixel_x = 24
@@ -5821,6 +5721,7 @@
 "Ix" = (
 /obj/structure/table/optable,
 /obj/machinery/defibrillator_mount/loaded{
+	pixel_x = 0;
 	pixel_y = 24
 	},
 /turf/open/floor/plasteel/showroomfloor,
@@ -5890,7 +5791,6 @@
 	pixel_x = 21;
 	pixel_y = 11
 	},
-/obj/item/radio/intercom/faction/nanotrasen/directional/south,
 /turf/open/floor/circuit,
 /area/ship/science/ai_chamber)
 "IX" = (
@@ -6121,7 +6021,8 @@
 	pixel_y = 10
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
-	pixel_x = 2
+	pixel_x = 2;
+	pixel_y = 0
 	},
 /obj/item/reagent_containers/food/drinks/coffee{
 	pixel_y = 6;
@@ -6525,6 +6426,7 @@
 	dir = 1
 	},
 /obj/structure/filingcabinet/chestdrawer{
+	pixel_x = 0;
 	pixel_y = 25;
 	density = 0
 	},
@@ -7154,6 +7056,7 @@
 /area/ship/bridge)
 "Rd" = (
 /obj/structure/sign/nanotrasen/ns{
+	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/industrial/warning{
@@ -7260,7 +7163,8 @@
 /area/ship/hallway/central)
 "RL" = (
 /obj/structure/sign/nanotrasen/nakamura{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /obj/effect/turf_decal/techfloor/corner{
 	dir = 8
@@ -7449,6 +7353,7 @@
 	},
 /obj/machinery/atmospherics/pipe/layer_manifold/visible,
 /obj/structure/sign/poster/nanotrasen/nakamura_advtools{
+	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/patterned,
@@ -7592,7 +7497,8 @@
 "Tm" = (
 /obj/effect/landmark/start/quartermaster,
 /obj/structure/sign/poster/nanotrasen/ns_logistics_ad{
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
@@ -7693,27 +7599,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/port)
 "TJ" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/spline/fancy/opaque/vired,
-/obj/structure/sign/departments/security{
-	pixel_y = -32
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
-	dir = 4
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
 /obj/effect/turf_decal/spline/fancy/opaque/vired,
 /obj/structure/sign/departments/security{
@@ -7752,7 +7637,9 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/hallway/central)
 "TO" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -7868,16 +7755,6 @@
 /area/ship/hallway/central)
 "Uu" = (
 /obj/structure/table/glass,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/storage/case/surgery{
-	pixel_y = 2
-	},
-/obj/machinery/camera/autoname,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table/glass,
 /obj/item/clothing/gloves/nitrile,
 /obj/item/storage/case/surgery{
 	pixel_x = 0;
@@ -7908,24 +7785,6 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "UD" = (
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
-	dir = 4
-	},
-/obj/structure/filingcabinet/double{
-	dir = 4;
-	pixel_x = -16;
-	density = 0
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer4{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 4
 	},
@@ -7959,7 +7818,9 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/engineering/engine)
 "UK" = (
-/obj/machinery/atmospherics/components/unary/shuttle/heater,
+/obj/machinery/atmospherics/components/unary/shuttle/heater{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -8052,7 +7913,8 @@
 /area/ship/crew/law_office)
 "VT" = (
 /obj/structure/cabinet/fireaxe{
-	pixel_x = 32
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/machinery/atmospherics/components/unary/thermomachine/freezer/upgraded{
@@ -8130,6 +7992,7 @@
 /obj/machinery/light/small/directional/west,
 /obj/machinery/rnd/server,
 /obj/machinery/turretid/ship{
+	pixel_x = 0;
 	pixel_y = -23;
 	id = "celestis_ai"
 	},
@@ -8167,28 +8030,6 @@
 /area/ship/engineering/engine)
 "WY" = (
 /obj/structure/table,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
-/obj/item/toy/figure/chef,
-/obj/item/reagent_containers/condiment/saltshaker{
-	desc = "Salt. From space oceans, presumably. A staple of modern medicine.";
-	pixel_x = -8;
-	pixel_y = 9
-	},
-/obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/table,
 /obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 4
 	},
@@ -8223,7 +8064,9 @@
 	id = "celestis_centralengines";
 	dir = 4
 	},
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "Xn" = (
@@ -8617,6 +8460,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/effect/landmark/start/medical_doctor,
 /obj/structure/sign/poster/nanotrasen/deforest_hypospray{
+	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/machinery/camera/autoname,
@@ -9430,7 +9274,7 @@ jj
 YC
 cL
 LZ
-RE
+gK
 PI
 lU
 Uw

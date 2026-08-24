@@ -465,7 +465,9 @@
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "dv" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -491,6 +493,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/oven,
 /obj/item/plate/oven_tray{
+	pixel_x = 0;
 	pixel_y = 8
 	},
 /turf/open/floor/wood/walnut,
@@ -1574,7 +1577,9 @@
 	pixel_x = 7;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+	dir = 2
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "ks" = (
@@ -1755,6 +1760,7 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/turretid/ship{
+	pixel_y = 0;
 	pixel_x = -26;
 	id = "inkwell_turrets"
 	},
@@ -2009,7 +2015,9 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "ni" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -2229,7 +2237,9 @@
 /turf/open/floor/wood/walnut,
 /area/ship/cargo)
 "op" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
 	},
@@ -2575,7 +2585,9 @@
 	name = "boxcutter"
 	},
 /obj/item/storage/box/shipping,
-/obj/effect/turf_decal/spline/fancy/transparent/solgovblue,
+/obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
+	dir = 2
+	},
 /obj/structure/sign/poster/solgov/random{
 	pixel_y = 32
 	},
@@ -2937,6 +2949,7 @@
 /area/ship/cargo)
 "sV" = (
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
+	dir = 2;
 	name = "atmos waste outlet injector"
 	},
 /turf/open/floor/plating,
@@ -3456,14 +3469,9 @@
 "vW" = (
 /obj/effect/turf_decal/solgov/wood/bottom_right,
 /obj/effect/turf_decal/siding/wood,
-/obj/item/radio/intercom/directional/west{
-	pixel_y = 8
-	},
+/obj/item/radio/intercom/directional/west,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
-	},
-/obj/item/radio/intercom/faction/solfed/command/directional/west{
-	pixel_y = -10
 	},
 /turf/open/floor/wood,
 /area/ship/bridge)
@@ -3476,6 +3484,7 @@
 	id = "sgi_cargo1"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 2;
 	id = "sgi_holocargo1"
 	},
 /obj/structure/cable{
@@ -4043,7 +4052,9 @@
 /turf/template_noop,
 /area/template_noop)
 "zI" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -4535,7 +4546,8 @@
 	},
 /obj/structure/table/wood,
 /obj/item/plate{
-	pixel_x = 6
+	pixel_x = 6;
+	pixel_y = 0
 	},
 /obj/item/plate{
 	pixel_x = 6;
@@ -4546,10 +4558,12 @@
 	pixel_y = 4
 	},
 /obj/item/reagent_containers/condiment/peppermill{
-	pixel_x = -10
+	pixel_x = -10;
+	pixel_y = 0
 	},
 /obj/item/reagent_containers/condiment/saltshaker{
-	pixel_x = -5
+	pixel_x = -5;
+	pixel_y = 0
 	},
 /obj/machinery/reagentgrinder{
 	pixel_x = -9;
@@ -5193,7 +5207,9 @@
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm)
 "Hp" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8
 	},
@@ -6823,6 +6839,7 @@
 	icon_state = "0-4"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
+	dir = 2;
 	id = "sgi_holocargo2"
 	},
 /turf/open/floor/plasteel/patterned/ridged,
@@ -7425,6 +7442,7 @@
 /area/ship/engineering)
 "XZ" = (
 /obj/docking_port/mobile{
+	can_move_docking_ports = 1;
 	preferred_direction = 4;
 	port_direction = 4
 	},
@@ -7613,7 +7631,9 @@
 /turf/open/floor/wood/maple,
 /area/ship/bridge)
 "Zj" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
 	},

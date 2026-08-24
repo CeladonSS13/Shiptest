@@ -8259,20 +8259,6 @@
 	layer = 2.038
 	},
 /area/outpost/exterior)
-"eCo" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/shutters{
-	anchored = 1
-	},
-/obj/structure/grille/indestructible,
-/obj/structure/sign/barsign{
-	icon_state = "cyberslyph";
-	req_access = null
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
-	},
-/area/outpost/exterior)
 "eCE" = (
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 8;
@@ -8599,23 +8585,23 @@
 /area/outpost/faction/solfed)
 "eKz" = (
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
+	pixel_y = 13;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13;
-	dir = 8
+	pixel_y = -12;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = -5;
-	dir = 8
+	pixel_y = -4;
+	dir = 8;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -9787,7 +9773,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/directions/outpost/crio{
+/obj/structure/sign/directions/outpost/cryo{
 	pixel_y = -20
 	},
 /turf/open/floor/plasteel/patterned/brushed{
@@ -11194,19 +11180,19 @@
 /area/outpost/medical/hall_1)
 "gas" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 14;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14228,13 +14214,16 @@
 "hLF" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 4;
-	pixel_y = 1
+	pixel_y = -7;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
+	pixel_y = 17;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14251,21 +14240,20 @@
 /turf/open/floor/plating,
 /area/outpost/medical/hall_2)
 "hMc" = (
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -10;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 10;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 2;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14277,7 +14265,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 26;
+	pixel_x = 0
 	},
 /obj/structure/sign/neon/strelka/yellow{
 	dir = 4;
@@ -16104,7 +16093,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 29;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -17519,17 +17509,15 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "jrF" = (
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 1;
-	pixel_y = 13
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -18200,6 +18188,9 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo/office)
 "jOv" = (
+/obj/machinery/telecomms/allinone{
+	intercept = 1
+	},
 /obj/item/radio/intercom/directional/south,
 /turf/open/floor/engine,
 /area/outpost/crew/cryo)
@@ -18580,7 +18571,8 @@
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 32;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -20391,22 +20383,23 @@
 	dir = 4
 	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = -3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/sell{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = -5
-	},
-/obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 4;
-	pixel_y = 13
+	pixel_y = 14;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -21392,23 +21385,24 @@
 	dir = 8
 	},
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5
+	pixel_y = 6;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 8
+	pixel_y = -12;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1;
-	dir = 8
+	pixel_y = -3;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 15;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -24067,7 +24061,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/outpost/faction/syndi)
+/area/outpost/cargo/faction/syndicate)
 "ndw" = (
 /obj/structure/painting_custom{
 	pixel_y = 32;
@@ -29425,9 +29419,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black{
 	dir = 6
 	},
-/obj/machinery/telecomms/allinone/indestructible{
-	intercept = 1
-	},
+/obj/machinery/telecomms/allinone/indestructible,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/outpost/operations/outpost_command)
 "qav" = (
@@ -30859,7 +30851,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/outpost/faction/nanotrasen)
+/area/outpost/cargo/faction/nanotrasen)
 "qMV" = (
 /obj/structure/table/wood,
 /obj/item/storage/fancy/cigarettes/derringer,
@@ -33612,21 +33604,21 @@
 "skM" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11;
-	dir = 4
+	pixel_y = -4;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -35487,6 +35479,16 @@
 /obj/machinery/portable_atmospherics/canister/freon,
 /turf/open/floor/plasteel/mono/dark,
 /area/outpost/cargo)
+"tix" = (
+/obj/structure/flora/tree/pine{
+	icon_state = "pine_4";
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	layer = 2.454
+	},
+/area/outpost/exterior)
 "tiI" = (
 /obj/effect/turf_decal/siding/white{
 	dir = 5
@@ -35964,7 +35966,7 @@
 /obj/machinery/computer/cargo/faction/solfed,
 /obj/structure/sign/flag/solfed/directional/south,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/outpost/faction/solfed)
+/area/outpost/cargo/faction/solfed)
 "tvi" = (
 /turf/open/floor/plasteel/darkgreenfull/darkgreen,
 /area/outpost/medical/chemestry)
@@ -36438,16 +36440,14 @@
 /area/outpost/engineering/atmospherics)
 "tKj" = (
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = 9;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = 0;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -38382,19 +38382,18 @@
 /area/outpost/faction/nanotrasen)
 "uNA" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13
+	pixel_y = 15;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 1
+	pixel_y = 6;
+	dir = 1;
+	pixel_x = 0
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/crio{
-	pixel_y = -5;
-	dir = 1
+/obj/structure/sign/directions/outpost/cryo{
+	pixel_y = -2;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/solfed{
 	pixel_y = -11;
@@ -39660,18 +39659,16 @@
 /area/outpost/crew/lounge)
 "vHK" = (
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 13
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = -4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -57324,7 +57321,7 @@ gok
 gok
 gok
 gok
-ePa
+tix
 skM
 xxJ
 kuL
@@ -62159,7 +62156,7 @@ gok
 gok
 gok
 gok
-eCo
+aDY
 xoC
 hqf
 lgE

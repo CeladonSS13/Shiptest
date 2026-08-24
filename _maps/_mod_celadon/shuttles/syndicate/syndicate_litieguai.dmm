@@ -145,6 +145,7 @@
 	dir = 8
 	},
 /obj/machinery/button/door{
+	dir = 2;
 	id = "traumaenginel";
 	name = "Engine Shutter Control";
 	pixel_x = -5;
@@ -438,7 +439,9 @@
 /turf/open/floor/plating,
 /area/ship/science)
 "kg" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 8;
 	id = "traumaenginer"
@@ -571,6 +574,7 @@
 	},
 /obj/machinery/newscaster/directional/west,
 /obj/effect/turf_decal/siding/wood{
+	dir = 2;
 	color = "#332521"
 	},
 /turf/open/floor/wood/ebony,
@@ -681,7 +685,8 @@
 /obj/machinery/firealarm/directional/south,
 /obj/item/stack/sheet/glass/fifty,
 /obj/item/stack/sheet/metal/fifty{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/science)
@@ -802,7 +807,8 @@
 /obj/item/reagent_containers/syringe,
 /obj/machinery/smartfridge/organ{
 	density = 0;
-	pixel_x = 29
+	pixel_x = 29;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
@@ -1164,7 +1170,9 @@
 /turf/open/floor/plating,
 /area/ship/maintenance/starboard)
 "wZ" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1211,7 +1219,6 @@
 "xK" = (
 /obj/machinery/modular_computer/console/preset/command,
 /obj/machinery/light/small/directional/north,
-/obj/item/radio/intercom/faction/syndicate/command/directional/east,
 /turf/open/floor/carpet/cyan,
 /area/ship/bridge)
 "xN" = (
@@ -1854,7 +1861,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/eva)
 "Hp" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -1967,20 +1976,6 @@
 	},
 /obj/structure/sink{
 	dir = 8;
-	pixel_x = 12
-	},
-/obj/structure/sign/poster/official/cleanliness{
-	pixel_y = -32
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/mirror{
-	pixel_x = 25
-	},
-/obj/structure/sink{
-	dir = 8;
 	pixel_y = 0;
 	pixel_x = 12
 	},
@@ -1990,7 +1985,9 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "Jk" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2164,7 +2161,9 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo)
 "KY" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2270,7 +2269,9 @@
 /turf/open/floor/plasteel/freezer,
 /area/ship/crew/toilet)
 "LZ" = (
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
@@ -2344,10 +2345,12 @@
 "NL" = (
 /obj/effect/turf_decal/industrial/loading,
 /obj/machinery/defibrillator_mount/loaded{
+	pixel_y = 0;
 	pixel_x = -32
 	},
 /obj/structure/sink{
 	dir = 4;
+	pixel_y = 0;
 	pixel_x = -13
 	},
 /turf/open/floor/plasteel/tech,
@@ -2367,6 +2370,7 @@
 /obj/structure/table/glass,
 /obj/machinery/smartfridge/bloodbank/preloaded{
 	density = 0;
+	pixel_y = 0;
 	pixel_x = 29
 	},
 /obj/machinery/cell_charger,
@@ -2490,7 +2494,8 @@
 	name = "anesthetics crate"
 	},
 /obj/item/clothing/mask/breath/medical{
-	pixel_x = -2
+	pixel_x = -2;
+	pixel_y = 0
 	},
 /obj/item/clothing/mask/breath/medical{
 	pixel_x = -5;
@@ -2508,6 +2513,7 @@
 	name = "\proper Deuce"
 	},
 /obj/structure/bed/dogbed{
+	anchored = 1;
 	desc = "A comfy-looking... snake bed? There's bits of shed scales stuck in the bedding...";
 	name = "snake bed"
 	},

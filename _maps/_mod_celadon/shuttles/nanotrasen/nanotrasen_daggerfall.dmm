@@ -487,6 +487,7 @@
 /area/ship/storage)
 "hF" = (
 /obj/structure/sign/departments/security{
+	pixel_x = 0;
 	pixel_y = -32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
@@ -529,7 +530,9 @@
 /area/ship/engineering)
 "hR" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_eng"
@@ -1100,6 +1103,7 @@
 /area/ship/storage)
 "qz" = (
 /obj/structure/sign/departments/security{
+	pixel_x = 0;
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/trimline/opaque/pink/line{
@@ -1213,7 +1217,8 @@
 /area/ship/security/armory)
 "sw" = (
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1439,20 +1444,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "uE" = (
-/obj/structure/table/glass/light_glass,
-/obj/machinery/fax/nanotrasen,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 10;
-	layer = 3
-	},
-/obj/effect/turf_decal/corner/opaque/ntblue/border{
-	dir = 10
-	},
-/obj/item/radio/intercom/faction/nanotrasen/command/directional/south,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/table/glass/light_glass,
 /obj/machinery/fax/nanotrasen,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2364,7 +2355,8 @@
 	pixel_y = 3
 	},
 /obj/item/binoculars{
-	pixel_x = 7
+	pixel_x = 7;
+	pixel_y = 0
 	},
 /obj/machinery/light/colored/red{
 	dir = 4
@@ -2611,24 +2603,6 @@
 	dir = 9
 	},
 /obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
-	pixel_y = 32
-	},
-/obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/ert/lp/sec,
-/obj/item/clothing/mask/breath/facemask,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 9
-	},
-/obj/effect/turf_decal/industrial/outline/red,
-/obj/item/tank/jetpack/oxygen/security,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/line{
-	dir = 9
-	},
-/obj/structure/sign/poster/nanotrasen/vigilitas_nonlethal{
 	pixel_x = 0;
 	pixel_y = 32
 	},
@@ -2677,7 +2651,9 @@
 	dir = 10
 	},
 /obj/machinery/power/apc/auto_name/directional/south,
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/structure/bodycontainer/morgue{
 	dir = 1
 	},
@@ -2739,7 +2715,9 @@
 /area/ship/external)
 "IM" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_engg"
@@ -3017,27 +2995,6 @@
 /obj/effect/turf_decal/trimline/opaque/bar/line{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/safety_eye_protection{
-	pixel_x = 32
-	},
-/obj/structure/guncloset{
-	anchored = 1
-	},
-/obj/item/gun/ballistic/automatic/smg/wt550,
-/obj/item/gun/energy/e_gun/e_old/iot{
-	pixel_y = -6
-	},
-/obj/item/gun/energy/kalix,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/turf_decal/trimline/opaque/bar/line{
-	dir = 4
-	},
 /obj/structure/sign/poster/nanotrasen/safety_eye_protection{
 	pixel_x = 32
 	},
@@ -3164,7 +3121,9 @@
 /area/ship/crew)
 "Mt" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_eng"
@@ -3217,7 +3176,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "MZ" = (
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/effect/turf_decal/nanotrasen/ns/bottom,
 /obj/machinery/light_switch{
 	pixel_x = -8;
@@ -3634,7 +3595,9 @@
 /obj/machinery/power/apc/auto_name/directional/south{
 	pixel_x = 6
 	},
-/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-1"
+	},
 /obj/machinery/light_switch{
 	pixel_x = -8;
 	pixel_y = -20;
@@ -3912,15 +3875,6 @@
 /obj/structure/sign/nanotrasen/vigilitas{
 	pixel_y = -32
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
-/obj/structure/marker_beacon,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/sign/nanotrasen/vigilitas{
-	pixel_y = -32
-	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 2
 	},
@@ -3944,7 +3898,9 @@
 /area/ship/engineering/electrical)
 "Vl" = (
 /obj/structure/window/plasma/reinforced/spawner/west,
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/machinery/door/poddoor{
 	dir = 4;
 	id = "dagger_engg"
@@ -4098,7 +4054,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/engineering/electrical)

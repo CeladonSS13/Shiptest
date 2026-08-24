@@ -20,7 +20,9 @@
 	},
 /area/ship/cargo)
 "bf" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -112,7 +114,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -368,7 +371,9 @@
 /area/ship/crew)
 "jB" = (
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/structure/easel,
+/obj/structure/easel{
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "jD" = (
@@ -409,7 +414,8 @@
 	icon_state = "1-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /obj/structure/cable{
 	icon_state = "2-8"
@@ -653,7 +659,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/outline/red,
-/obj/item/radio/intercom/faction/syndicate/command/directional/north,
+/obj/item/radio/intercom/directional/north,
 /obj/machinery/modular_computer/console/preset/command,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -933,6 +939,7 @@
 	dir = 8
 	},
 /obj/machinery/door/window{
+	icon_state = "left";
 	dir = 8
 	},
 /turf/open/floor/plasteel/white,
@@ -1383,6 +1390,7 @@
 "FM" = (
 /obj/structure/table/wood,
 /obj/machinery/recharger{
+	pixel_x = 0;
 	pixel_y = 9
 	},
 /turf/open/floor/carpet/red_gold,
@@ -1404,21 +1412,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/cargo)
 "GE" = (
-/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
-	dir = 4
-	},
-/obj/machinery/light/small/directional/south,
-/obj/structure/sign/poster/official/here_for_your_safety{
-	pixel_x = -28
-	},
-/obj/machinery/computer/crew{
-	dir = 4;
-	pixel_x = -8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
 	},
@@ -1740,7 +1733,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric/premium,
+/obj/machinery/power/shuttle/engine/electric/premium{
+	dir = 4
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "OA" = (
@@ -1955,7 +1950,8 @@
 	icon_state = "1-8"
 	},
 /obj/structure/cable{
-	icon_state = "2-4"
+	icon_state = "2-4";
+	tag = null
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
@@ -1967,7 +1963,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
 "VF" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},
@@ -2110,7 +2108,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "Yb" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/window/reinforced{
 	dir = 8
 	},

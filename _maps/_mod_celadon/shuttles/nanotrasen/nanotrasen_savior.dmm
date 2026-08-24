@@ -155,7 +155,8 @@
 	dir = 8
 	},
 /obj/structure/sign/poster/nanotrasen/deforest_hypospray{
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/port)
@@ -662,7 +663,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "hZ" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -952,20 +955,6 @@
 /obj/machinery/computer/secure_data{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/diagonal{
-	dir = 4
-	},
-/obj/structure/closet/emcloset/wall/directional/south{
-	pixel_x = 2
-	},
-/obj/item/radio/intercom/faction/nanotrasen/command/directional/east,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---",
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/machinery/computer/secure_data{
-	dir = 8
-	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/diagonal{
 	dir = 4
 	},
@@ -982,7 +971,9 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/electrical)
 "mb" = (
@@ -1534,7 +1525,8 @@
 "tZ" = (
 /obj/machinery/light/floor,
 /obj/structure/sign/nanotrasen/deforest{
-	pixel_x = -32
+	pixel_x = -32;
+	pixel_y = 0
 	},
 /turf/open/floor/engine/hull,
 /area/ship/external)
@@ -1659,7 +1651,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "ws" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -1894,7 +1888,9 @@
 /turf/open/floor/wood,
 /area/ship/crew)
 "zv" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -2411,6 +2407,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/effect/turf_decal/siding/wood,
 /obj/machinery/door/airlock/command{
+	dir = 2;
 	name = "Medical Director's Quarters";
 	req_access_txt = "40"
 	},
@@ -2499,7 +2496,8 @@
 	pixel_y = 8
 	},
 /obj/item/phone{
-	pixel_x = 11
+	pixel_x = 11;
+	pixel_y = 0
 	},
 /obj/item/flashlight/lamp/green{
 	layer = 4;
@@ -2511,6 +2509,7 @@
 	pixel_y = -4
 	},
 /obj/item/stamp/nanotrasen/deforest/captain{
+	pixel_x = 0;
 	pixel_y = -4
 	},
 /obj/item/stamp/nanotrasen/deforest/medical{
@@ -2540,7 +2539,9 @@
 	icon_state = "0-4"
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/atmospherics)
 "Il" = (
@@ -2707,7 +2708,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/atmospherics)
 "Ln" = (
@@ -2822,7 +2825,9 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "MJ" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
@@ -3531,7 +3536,9 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
-/obj/machinery/power/shuttle/engine/electric,
+/obj/machinery/power/shuttle/engine/electric{
+	dir = 4
+	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/electrical)
 "UB" = (
@@ -4017,6 +4024,7 @@
 /obj/item/clothing/under/nanotrasen/medical,
 /obj/item/clothing/suit/toggle/labcoat/nanotrasen,
 /obj/structure/sign/departments/science/alt{
+	pixel_x = 0;
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/white,
@@ -4031,7 +4039,9 @@
 	},
 /area/ship/bridge)
 "Zi" = (
-/obj/machinery/power/smes/shuttle/precharged,
+/obj/machinery/power/smes/shuttle/precharged{
+	dir = 4
+	},
 /obj/structure/cable{
 	icon_state = "0-8"
 	},
