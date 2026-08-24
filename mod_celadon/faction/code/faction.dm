@@ -21,20 +21,26 @@
 /datum/faction/elysium
 	name = FACTION_ELYSIUM
 	prefixes = list("EUSM", "EUSQ", "EUSF", "EUSR", "ESV")
+	color = "#006400"
 
 /datum/faction/pirate
 	name = FACTION_PIRATES
 	prefixes = list("PIRATE", "RSV")
+	color = "#504c4c"
 
 /datum/faction/nanotrasen
 	name = FACTION_NANOTRASEN
 	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV")
+	color = "#32426b"
 
 /datum/faction/inteq
 	prefixes = list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV")
+	color = "#E6B93C"
 
 /datum/faction/solgov
 	prefixes = list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV")
+	color = "#FFD700"
 
 /datum/faction/syndicate
 	prefixes = list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV", "RSSV",)
+	color = "#B22C20"
