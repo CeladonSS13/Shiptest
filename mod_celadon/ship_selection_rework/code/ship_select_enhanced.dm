@@ -116,6 +116,9 @@
 			if(GLOB.real_names_joined.Find(name))
 				to_chat(spawnee, span_warning("Someone has spawned with this name already."))
 				return
+			if(template.category == "Pirates" && world.time < 72000) // 72000 децисекунд => 2 часа.
+				to_chat(spawnee, span_warning("Отказано. Фракция пиратов открывается только после 2-ух часов игрового раунда."))
+				return
 			if(SSovermap.ship_spawning)
 				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
 				return
