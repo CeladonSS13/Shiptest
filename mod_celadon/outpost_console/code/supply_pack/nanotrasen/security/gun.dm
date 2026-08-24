@@ -48,31 +48,12 @@ MARK: E-Guns - NT-SL
 	contains = list(/obj/item/storage/guncase/energy/etar_old)
 	crate_name = "SMG crate"
 
-/datum/supply_pack/faction/nanotrasen/gun/sunbeam
-	name = "E-SMG - SL X-49 'Sunbeam'"
-	desc = "A dual-mode energy SMG capable of discharging weak armor-piercing projectiles. Produced by Nanotrasen-Sharplite."
-	cost = 2500
-	contains = list(/obj/item/storage/guncase/energy/sunbeam)
-
 /datum/supply_pack/faction/nanotrasen/gun/ultima
 	name = "E-Shotgun - SL 'E-SG 500 Second Edition'"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	cost = 3000
 	contains = list(/obj/item/gun/energy/e_gun/e_old/iot)
 	crate_name = "shotgun crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/blaze
-	name = "E-Shotgun - SL AL-370 'Blaze'"
-	desc = "A continuation of the E-SG prototypes featuring a different firemode compared to the classic energy shotgun. Produced by Nanotrasen-Sharplite."
-	cost = 5500
-	contains = list(/obj/item/storage/guncase/energy/blaze)
-	crate_name = "shotgun crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/heavylaser
-	name = "E-Sniper-Rifle - SL AL-602 'Phoenix'"
-	desc = "A sniper-like Sharplite energy weapon that deals more damage if the target is far away. Scope included."
-	contains = list(/obj/item/storage/guncase/heavylaser)
-	cost = 9000
 
 /datum/supply_pack/faction/nanotrasen/gun/parallax
 	name = "E-Marksman - SL L-211 'Parallax'"
@@ -87,13 +68,6 @@ MARK: E-Guns - NT-SL
 	cost = 6000
 	contains = list(/obj/item/storage/guncase/hades_old)
 	crate_name = "advanced laser crate"
-
-/datum/supply_pack/faction/nanotrasen/gun/daybreak
-	name = "EMG - SL AL-690 'Daybreak'"
-	desc = "A monstrous refitting of the AL-655. Decimates anything in your way. Uses large weapon cells. Produced by Nanotrasen-Sharplite."
-	cost = 9000
-	contains = list(/obj/item/storage/guncase/energy/daybreak)
-	crate_name = "EMG crate"
 
 /datum/supply_pack/faction/nanotrasen/gun/cryogelida
 	name = "Cryo-Pistol - SL PPD-142 'Cryogelida'"

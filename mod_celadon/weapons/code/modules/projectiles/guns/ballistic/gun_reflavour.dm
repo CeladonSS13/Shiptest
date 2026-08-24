@@ -25,10 +25,10 @@
 /obj/item/gun/ballistic/automatic/pistol/cm23 // Единственный без рескинов
 	name = "\improper CM-23"
 	desc = "Solar Federation's standard service pistol. 10 rounds of 10mm ammunition make the CM-23 deadlier than many other service pistols, but its weight and bulk have made it unpopular as a sidearm. It has largely been phased out everywhere, but \"civilised\" space, where officiality may reign. Chambered in 10mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	icon_state = "cm23"
 	item_state = "clip_generic"
 
@@ -37,10 +37,10 @@
 /obj/item/gun/ballistic/automatic/pistol/cm70
 	name = "CM-70 machine pistol"
 	desc = "A compact machine pistol designed to rapidly fire 3-round bursts. Popular with officers and certain special units, the CM-70 is incredibly dangerous at close range. Chambered in 9mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	icon_state = "cm70"
 	item_state = "clip_generic"
 
@@ -49,10 +49,10 @@
 /obj/item/gun/ballistic/automatic/pistol/cm357
 	name = "\improper CM-357"
 	desc = "This powerful semi-automatic handgun was designed after it was realised that space was too dangerous in the form of megafauna, and that standard handguns were ineffective as backup weapons. The weapon's heft and power have made it a status symbol among the few Solarian officers able to requisition one. Chambered in .357."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "cm357"
 	item_state = "clip_generic"
@@ -77,10 +77,10 @@
 /obj/item/gun/ballistic/automatic/smg/cm5
 	name = "\improper CM-5"
 	desc = "SolFed's standard-issue submachine gun. Well-liked for its accuracy, stability, and ease of use compared to other submachineguns. Chambered in 9mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "cm5"
 	item_state = "cm5"
@@ -128,10 +128,10 @@
 	name = "CM-F4"
 	desc = "SolFed's marksman rifle, used by both military and law enforcement units. Designed not long after the CM-24, the venerable F4 has adapted well to continued upgrades. Chambered in .308."
 
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "f4"
 	item_state = "f4"
@@ -156,10 +156,10 @@
 /obj/item/gun/ballistic/automatic/marksman/f90
 	name = "CM-F90"
 	desc = "A powerful sniper rifle used by vanishingly rare sniper specialists, capable of impressive range and penetrating power. Chambered in 6.5x57mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "f90"
 	item_state = "f90"
@@ -179,10 +179,10 @@
 /obj/item/gun/ballistic/automatic/assault/cm82
 	name = "\improper CM-82"
 	desc = "Solar Federation's most standard assault rifle, a \"relatively\" new service weapon. Accurate, reliable, and easy to use, the CM-82 replaced the CM-24 as SolFed's assault rifle almost overnight, and has proven immensely popular since. Chambered in 5.56x40mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "cm82"
 	item_state = "cm82"
@@ -215,10 +215,10 @@
 /obj/item/gun/ballistic/automatic/hmg/cm40
 	name = "\improper CM-40"
 	desc = "A light machine gun used by SolFed's heavy weapons teams, capable of withering suppressive fire. The weight and recoil make it nearly impossible to use without deploying the bipod against appropriate cover, such as a table, or bracing against solid cover. Chambered in 7.62x40mm."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	base_icon_state = "cm40"
 	icon_state = "cm40"
 	item_state = "cm40"
@@ -236,10 +236,10 @@
 /obj/item/gun/ballistic/shotgun/cm15
 	name = "\improper CM-15"
 	desc = "A large automatic shotgun used by Solar Federation. It is generally employed by law enforcement and breaching specialists, and is sometimes used with incendiary ammunition, if the rules are stretched \"differently\". Chambered in 12 gauge."
-	icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/resprite/clip_guns/clip_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 
 	icon_state = "cm15"
 	item_state = "cm15"

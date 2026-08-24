@@ -17,9 +17,10 @@
 
 /obj/item/gun/energy/laser/captain
 	name = "SL X-00 Laser Gun"
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 	icon_state = "caplaser"
 	item_state = "caplaser"
 	desc = "This is the SL X-00, an antique laser gun, out of production for decades and well beyond anyone's capacity to recreate. All craftsmanship is of the highest quality. It is decorated with ashdrake leather and chrome. The gun menaces with spikes of energy. On the item is an image of a space ship. The ship is exploding."

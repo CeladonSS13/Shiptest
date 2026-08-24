@@ -77,10 +77,6 @@ MARK: InteQ guncases
 	gun_type = /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	mag_type = /obj/item/ammo_box/magazine/skm_762_40
 
-/obj/item/storage/guncase/energy/gleam
-	gun_type = /obj/item/gun/energy/e_gun/e_old/smg/sunbeam/inteq
-	mag_type = /obj/item/stock_parts/cell/gun
-
 /*
 MARK: Syndicate guncases
 */
@@ -124,10 +120,6 @@ MARK: Nanotrasen guncases
 /obj/item/storage/guncase/ion_carbine
 	gun_type = /obj/item/gun/energy/ionrifle/carbine
 	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/heavylaser
-	gun_type = /obj/item/gun/energy/e_gun/e_old/sniper
-	mag_type = /obj/item/stock_parts/cell/gun/large
 
 /obj/item/storage/guncase/sabersmg
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
@@ -188,20 +180,9 @@ MARK: Nanotrasen guncases
 	gun_type = /obj/item/gun/energy/e_gun/e_old/hades
 	mag_type = /obj/item/stock_parts/cell/gun
 
-/obj/item/storage/guncase/energy/daybreak
-	gun_type = /obj/item/gun/energy/e_gun/e_old/emg
-	mag_type = /obj/item/stock_parts/cell/gun/large
 
 /obj/item/storage/guncase/energy/parallax
 	gun_type = /obj/item/gun/energy/e_gun/e_old/dmr
-	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/energy/sunbeam
-	gun_type = /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
-	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/energy/blaze
-	gun_type = /obj/item/gun/energy/e_gun/e_old/iot/blaze
 	mag_type = /obj/item/stock_parts/cell/gun
 
 /* Old NT */

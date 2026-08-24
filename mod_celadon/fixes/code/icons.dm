@@ -4,14 +4,11 @@
 /datum/reagent/fuel
 	glass_icon_state = "fuel_glass"
 
-/obj/item/gun/energy/e_gun/e_old/hades
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
-
 /obj/item/gun/energy/pulse
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 
 /obj/item/gun/energy/pulse/carbine
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 
 /obj/item/clothing/suit/space/hardsuit/cult
 	icon_state = "cult_armor"
