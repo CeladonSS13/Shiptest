@@ -16,7 +16,7 @@
 	show_magazine_on_sprite = TRUE
 	show_magazine_on_sprite_ammo = TRUE
 	empty_indicator = TRUE
-	manufacturer = MANUFACTURER_VIGILITAS
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
 	fire_sound = 'sound/weapons/gun/smg/smg_heavy.ogg'
 
 /obj/item/gun/ballistic/automatic/smg/wt550/no_mag
@@ -40,7 +40,7 @@
 	show_magazine_on_sprite = TRUE
 	weapon_weight = WEAPON_LIGHT
 	fire_sound = 'sound/weapons/gun/smg/vector_fire.ogg'
-	manufacturer = MANUFACTURER_NANOTRASEN_OLD
+	manufacturer = MANUFACTURER_WARRA_OLD
 NO_MAG_GUN_HELPER(automatic/smg/vector)
 
 // Дефайн отвечающий за создание датума с балистическим оружием без магазина

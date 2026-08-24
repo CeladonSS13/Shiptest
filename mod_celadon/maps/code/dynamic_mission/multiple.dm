@@ -5,7 +5,7 @@
 	// faction = /datum/faction/independent
 	// value = 1750
 	// mission_limit = 1
-	// setpiece_item = /obj/item/storage/bottles/moonshine/sealed
+	// setpiece_item = /obj/item/storage/bottles/chemshine/sealed
 	// specific_item = FALSE
 	// required_count = 3
 

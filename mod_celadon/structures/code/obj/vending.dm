@@ -1,5 +1,5 @@
 //DON'T FORGET TO CHANGE THE REFILL SIZE IF YOU CHANGE THE MACHINE'S CONTENTS!
-/obj/machinery/vending/clothing/nt
+/obj/machinery/vending/clothing/nanotrasen
 	name = "ClothesMate NT" //renamed to make the slogan rhyme
 	desc = "A vending machine for clothing for NT."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
@@ -15,15 +15,9 @@
 		/obj/item/clothing/neck/cloak/nanotrasen/cape/command = 2,
 		/obj/item/clothing/neck/cloak/nanotrasen/cape/captain = 2,
 		/obj/item/clothing/head/nanotrasen/surgical/blue = 2,
-		/obj/item/clothing/head/caphat/nt = 2,
-		/obj/item/clothing/head/hopcap/nt = 2)
+		/obj/item/clothing/head/caphat/nanotrasen = 2,
+		/obj/item/clothing/head/hopcap/nanotrasen = 2)
 	premium = list(
-		/obj/item/clothing/under/rank/security/warden/nt/skirt = 2,
-		/obj/item/clothing/under/rank/command/nt = 2,
-		/obj/item/clothing/under/rank/command/nt/skirt = 2,
-		/obj/item/clothing/under/rank/security/brig_phys/nt/skirt = 2,
-		/obj/item/clothing/under/rank/security/officer/nt = 2,
-		/obj/item/clothing/under/rank/security/officer/nt/skirt = 2,
 		/obj/item/clothing/head/beret/dominia = 2,
 		/obj/item/clothing/head/beret/dominia/army = 2,
 		/obj/item/clothing/head/beret/dominia/consular = 2,
@@ -145,3 +139,37 @@
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "sakura-light-mask"
 	light_color = LIGHT_COLOR_PINK
+
+/obj/machinery/vending/security/marine/nanotrasen
+	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
+	icon_state = "nanotrasen-marine"
+	icon_deny = "nanotrasen-marine-deny"
+	light_mask = "nanotrasen-marine-mask"
+	icon_vend = "nanotrasen-marine-vend"
+	req_access = list(ACCESS_SECURITY)
+	products = list(
+		/obj/item/restraints/handcuffs = 10,
+		/obj/item/assembly/flash/handheld = 10,
+		/obj/item/flashlight/seclite = 10,
+
+		/obj/item/screwdriver = 5,
+		/obj/item/stock_parts/cell/gun = 10,
+		/obj/item/stock_parts/cell/gun/upgraded = 5,
+
+		/obj/item/grenade/c4 = 5,
+		/obj/item/grenade/frag = 5,
+		/obj/item/grenade/flashbang = 5,
+		/obj/item/grenade/barrier = 10,
+		)
+
+	voucher_items = list(
+		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
+		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)
+
+/obj/machinery/vending/security
+	voucher_items = list(
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
+		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)

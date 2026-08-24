@@ -42,7 +42,7 @@
 /obj/effect/turf_decal/corner/opaque/green/three_quarters{
 	dir = 4
 	},
-/obj/structure/sign/poster/official/fruit_bowl{
+/obj/structure/sign/poster/nanotrasen/fruit_bowl{
 	pixel_y = 32
 	},
 /obj/machinery/light/directional/north,
@@ -768,7 +768,7 @@
 "dd" = (
 /obj/structure/bed,
 /obj/item/bedsheet/nanotrasen,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/wood,
@@ -1231,7 +1231,7 @@
 /obj/effect/turf_decal/corner/transparent/orange/border{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/safety_eye_protection{
+/obj/structure/sign/poster/nanotrasen/safety_eye_protection{
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4,
@@ -1419,7 +1419,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/lab)
 "fS" = (
-/obj/structure/sign/poster/official/science{
+/obj/structure/sign/poster/nanotrasen/science{
 	pixel_x = 32
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
@@ -1518,7 +1518,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/nanotrasen_logo{
+/obj/structure/sign/poster/nanotrasen/nanotrasen_logo{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel,
@@ -2556,7 +2556,7 @@
 	pixel_x = -11;
 	pixel_y = 13
 	},
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 9;
 	pixel_x = -32;
 	pixel_y = -4
@@ -2679,8 +2679,9 @@
 /obj/item/clothing/shoes/sneakers/white,
 /obj/effect/gibspawner,
 /obj/machinery/light/directional/east,
-/obj/structure/sign/nanotrasen{
-	pixel_x = 32
+/obj/structure/sign/nanotrasen/old{
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /turf/open/floor/plating/asteroid/smoothed,
 /area/ruin/space/has_grav/singularitylab)
@@ -4314,7 +4315,7 @@
 /area/ruin/space/has_grav/singularitylab)
 "qV" = (
 /obj/structure/table,
-/obj/structure/sign/poster/official/moth/hardhats{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_x = -32
 	},
 /obj/structure/spacevine,
@@ -4385,7 +4386,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/lab)
 "rn" = (
-/obj/machinery/mineral/processing_unit_console{
+/obj/machinery/computer/processing_unit_console{
 	machinedir = 9;
 	pixel_x = -32;
 	pixel_y = -4
@@ -6126,7 +6127,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/civvie)
 "zb" = (
-/obj/structure/sign/poster/retro/science{
+/obj/structure/sign/poster/retro/nanotrasen/science{
 	pixel_y = -32
 	},
 /turf/open/floor/engine,
@@ -6205,7 +6206,7 @@
 /turf/open/floor/carpet/nanoweave/purple,
 /area/ruin/space/has_grav/singularitylab/lab)
 "zm" = (
-/obj/structure/sign/poster/official/high_class_martini{
+/obj/structure/sign/poster/nanotrasen/high_class_martini{
 	pixel_x = -32
 	},
 /turf/open/floor/wood,
@@ -7373,7 +7374,7 @@
 	},
 /obj/item/gun/energy/laser/captain,
 /obj/item/clothing/shoes/wheelys,
-/obj/structure/sign/poster/retro/lasergun_new{
+/obj/structure/sign/poster/retro/nanotrasen/lasergun_new{
 	pixel_y = 32
 	},
 /obj/item/stack/telecrystal,
@@ -7664,7 +7665,7 @@
 /area/ruin/space/has_grav/singularitylab/civvie)
 "Ez" = (
 /obj/structure/closet/secure_closet/quartermaster,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = 32
 	},
 /obj/machinery/light/small/directional/west,
@@ -7991,7 +7992,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/singularitylab/lab)
 "FD" = (
-/obj/structure/sign/poster/official/moth/boh{
+/obj/structure/sign/poster/nanotrasen/moth/boh{
 	pixel_x = -32
 	},
 /obj/structure/lattice,
@@ -8077,7 +8078,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 4
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = 32
 	},
 /turf/open/floor/wood,
@@ -9015,7 +9016,7 @@
 /obj/effect/turf_decal/corner/opaque/purple{
 	dir = 9
 	},
-/obj/structure/sign/poster/official/ion_carbine{
+/obj/structure/sign/poster/nanotrasen/ion_carbine{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel,
@@ -9110,7 +9111,7 @@
 /obj/effect/turf_decal/corner/opaque/purple{
 	dir = 10
 	},
-/obj/structure/sign/poster/official/mini_energy_gun{
+/obj/structure/sign/poster/nanotrasen/mini_energy_gun{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel,
@@ -10139,7 +10140,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab/cargo)
 "Ns" = (
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = 32
 	},
 /turf/open/floor/wood,
@@ -10417,7 +10418,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/singularitylab)
 "Ov" = (
-/obj/structure/sign/poster/retro/science{
+/obj/structure/sign/poster/retro/nanotrasen/science{
 	pixel_y = 32
 	},
 /obj/structure/chair/office{
@@ -11003,7 +11004,7 @@
 "Qx" = (
 /obj/structure/table/wood,
 /obj/machinery/light/small/directional/west,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/wood,
@@ -11549,7 +11550,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/sign/poster/official/build{
+/obj/structure/sign/poster/nanotrasen/build{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/corner/transparent/orange{
@@ -11635,7 +11636,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = 32
 	},
 /obj/machinery/firealarm/directional/east,
@@ -12121,7 +12122,7 @@
 /obj/structure/chair{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/carpet/nanoweave/beige,
@@ -12290,7 +12291,7 @@
 	},
 /area/ruin/space/has_grav/singularitylab)
 "UL" = (
-/obj/structure/sign/poster/retro/lasergun{
+/obj/structure/sign/poster/retro/nanotrasen/lasergun{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/box,
@@ -12683,8 +12684,9 @@
 /area/ruin/space/has_grav/singularitylab)
 "VX" = (
 /obj/machinery/light/directional/east,
-/obj/structure/sign/nanotrasen{
-	pixel_x = 32
+/obj/structure/sign/nanotrasen/old{
+	pixel_x = 32;
+	pixel_y = 0
 	},
 /turf/open/floor/plating/asteroid/smoothed,
 /area/ruin/space/has_grav/singularitylab)
@@ -13036,10 +13038,10 @@
 /area/ruin/space/has_grav/singularitylab)
 "Xc" = (
 /obj/structure/chair/office,
-/obj/structure/sign/poster/official/wtf_is_co2{
+/obj/structure/sign/poster/nanotrasen/wtf_is_co2{
 	pixel_y = 32
 	},
-/obj/structure/sign/poster/retro/build{
+/obj/structure/sign/poster/retro/nanotrasen/build{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/dark,
@@ -13384,7 +13386,7 @@
 /obj/structure/table{
 	name = "picnic table"
 	},
-/obj/structure/sign/warning/enginesafety{
+/obj/structure/sign/poster/nanotrasen/moth/hardhats{
 	pixel_x = -32
 	},
 /obj/item/weldingtool{

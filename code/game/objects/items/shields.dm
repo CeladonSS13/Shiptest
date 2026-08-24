@@ -99,6 +99,8 @@
 	if(owner.body_position == LYING_DOWN)
 		final_block_chance -= 30
 // [/CELADON-ADD]
+	if(!(REVERSE_DIR(hitby.dir) & owner.dir))
+		return FALSE
 	if(attack_type == THROWN_PROJECTILE_ATTACK)
 		final_block_chance += 30
 	if(attack_type == LEAP_ATTACK)

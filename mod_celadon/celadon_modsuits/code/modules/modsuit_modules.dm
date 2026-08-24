@@ -1,3 +1,39 @@
+//core desc
+/obj/item/mod/core/plasma
+	desc = "Nanotrasen's attempt at capitalizing on their plasma research. These plasma cores are refueled \
+		through plasma ore, allowing for easy continued use by their mining squads."
+
+//module desc
+/obj/item/mod/module/hat_stabilizer
+	desc = "A simple set of deployable stands, directly atop one's head; \
+		these will deploy under a select few hats to keep them from falling off, allowing them to be worn atop the sealed helmet. \
+		You still need to take the hat off your head while the helmet deploys, though. \
+		This is a must-have for Nanotrasen Captains, enabling them to show off their authoritative hat even while in their MODsuit."
+
+/obj/item/mod/module/quick_carry
+	desc = "A suite of advanced servos, redirecting power from the suit's arms to help carry the wounded; \
+		or simply for fun. However, Nanotrasen has locked the module's ability to assist in hand-to-hand combat."
+
+/obj/item/mod/module/reagent_scanner
+	desc = "A module based off research-oriented Nanotrasen HUDs, this is capable of scanning the contents of \
+		containers and projecting the information in an easy-to-read format on the wearer's display. \
+		It cannot detect flavors, so that's up to you."
+
+/obj/item/mod/module/storage/bluespace
+	desc = "A storage system developed by Nanotrasen, these compartments employ \
+		miniaturized bluespace pockets for the ultimate in storage technology; regardless of the weight of objects put inside."
+
+/obj/item/mod/module/gps
+	desc = "This module uses common Nanotrasen technology to calculate the user's position anywhere in space, \
+		down to the exact coordinates. This information is fed to a central database viewable from the device itself, \
+		though using it to help people is up to you."
+
+/obj/item/mod/module/clamp
+	name = "MOD hydraulic clamp module"
+	desc = "A series of actuators installed into both arms of the suit, boasting a lifting capacity of almost a ton. \
+		However, this design has been locked by Nanotrasen to be primarily utilized for lifting various crates. \
+		A lot of people would say that loading cargo is a dull job, but you could not disagree more."
+
 // Добавляем поддержку крашера ибо прикольно.
 // Переопределяет прок. Ктрл клик с расширениями вскода чтобы узнать где
 /obj/item/mod/module/magnetic_harness/Initialize(mapload)

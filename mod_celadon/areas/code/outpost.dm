@@ -487,41 +487,41 @@
 
 /// MARK: FRACTIONS
 
-/area/outpost/fraction
-	name = "Fraction"
-	icon_state = "fraction"
+/area/outpost/faction
+	name = "faction"
+	icon_state = "faction"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/outpost/fraction/syndi
+/area/outpost/faction/syndi
 	name = "Faction Syndicate"
 	icon_state = "faction_syndicate"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/outpost/fraction/syndi/room
+/area/outpost/faction/syndi/room
 	name = "Elite Syndicate Room"
 	icon_state = "syndie_elite"
 
-/area/outpost/fraction/syndi/donkco_shop
+/area/outpost/faction/syndi/donkco_shop
 	name = "Donk Co Shop"
 	icon_state = "syndi_shop"
 	sound_environment = SOUND_AREA_SMALL_SOFTFLOOR
 
-/area/outpost/fraction/nanotrasen
+/area/outpost/faction/nanotrasen
 	name = "Faction Nanotrasen"
 	icon_state = "faction_nanotrasen"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/outpost/fraction/solfed
+/area/outpost/faction/solfed
 	name = "Faction Solar Federation"
 	icon_state = "faction_solfed"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/outpost/fraction/inteq
+/area/outpost/faction/inteq
 	name = "Faction InteQ"
 	icon_state = "faction_inteq"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR
 
-/area/outpost/fraction/separatist
+/area/outpost/faction/separatist
 	name = "Faction Separatists"
 	icon_state = "faction_separatist"
 	sound_environment = SOUND_AREA_MEDIUM_SOFTFLOOR

@@ -105,7 +105,7 @@
 	update_appearance()
 
 /obj/item/instrument/piano_synth/headphones/spacepods
-	name = "\improper Nanotrasen space pods"
+	name = "\improper Nanotrasen space pods" // [CELADON-EDIT]
 	desc = "Flex your money, AND ignore what everyone else says, all at once!"
 	icon_state = "spacepods"
 	item_state = "spacepods"

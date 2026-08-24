@@ -1,7 +1,7 @@
 //Faction
 
-/obj/structure/mecha_wreckage/gygax/nt
-	name = "\improper NanoTrasen Gygax wreckage"
+/obj/structure/mecha_wreckage/gygax/nanotrasen
+	name = "\improper Nanotrasen Gygax wreckage"
 	icon = 'mod_celadon/_storage_icons/icons/other/mecha/mecha.dmi'
 	icon_state = "ntgygax-broken"
 

@@ -220,7 +220,7 @@
 	if(mod.wearer.incapacitated(IGNORE_GRAB))
 		return FALSE
 	mod.wearer.face_atom(target)
-	if(!on_use())
+	if(!call(/obj/item/mod/module/proc/on_use)(src))
 		return FALSE
 	return TRUE
 

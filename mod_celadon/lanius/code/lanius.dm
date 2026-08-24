@@ -31,15 +31,17 @@
 	nojumpsuit = 1
 	damage_overlay_type = ""
 
-	mutanttongue = /obj/item/organ/tongue/lanius
-	mutanteyes = /obj/item/organ/eyes/lanius
-	mutantheart = /obj/item/organ/heart/lanius
-	mutantliver = /obj/item/organ/liver/lanius
-	mutantstomach = /obj/item/organ/stomach/lanius
-	mutantears = /obj/item/organ/ears/lanius
-	mutantlungs = null
-	mutantappendix = null
-	mutantbrain = /obj/item/organ/brain/lanius
+	species_organs = list(
+		ORGAN_SLOT_BRAIN = /obj/item/organ/brain/lanius,
+		ORGAN_SLOT_HEART = /obj/item/organ/heart/lanius,
+		ORGAN_SLOT_LUNGS = null,
+		ORGAN_SLOT_EYES = /obj/item/organ/eyes/lanius,
+		ORGAN_SLOT_EARS = /obj/item/organ/ears/lanius,
+		ORGAN_SLOT_TONGUE = /obj/item/organ/tongue/lanius,
+		ORGAN_SLOT_LIVER = /obj/item/organ/liver/lanius,
+		ORGAN_SLOT_STOMACH = /obj/item/organ/stomach/lanius,
+		ORGAN_SLOT_APPENDIX = null,
+	)
 
 	species_limbs = list(
 			BODY_ZONE_CHEST = /obj/item/bodypart/chest/lanius,
@@ -50,14 +52,7 @@
 			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
 		)
 
-	species_robotic_limbs = list(
-			BODY_ZONE_CHEST =  /obj/item/bodypart/chest/lanius,
-			BODY_ZONE_HEAD = /obj/item/bodypart/head/lanius,
-			BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/lanius,
-			BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/lanius,
-			BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/lanius,
-			BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/lanius,
-		)
+	prosthetic_style = /datum/sprite_accessory/body/prosthetic/lanius
 
 /datum/species/lanius/spec_life(mob/living/carbon/human/H)
 	. = ..()

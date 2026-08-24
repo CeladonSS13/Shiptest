@@ -22,7 +22,7 @@
 /datum/wires
 	var/atom/holder = null // The holder (atom that contains these wires).
 	var/holder_type = null // The holder's typepath (used to make wire colors common to all holders).
-	var/proper_name = "Unknown" // The display name for the wire set shown in station blueprints. Not used if randomize is true or it's an item NT wouldn't know about (Explosives/Nuke)
+	var/proper_name = "Unknown" // The display name for the wire set shown in station blueprints. Not used if randomize is true or it's an item Makosso-Warra wouldn't know about (Explosives/Nuke)
 
 	var/list/wires = list() // List of wires.
 	var/list/cut_wires = list() // List of wires that have been cut.
@@ -246,14 +246,34 @@
 	var/list/data = list()
 	var/list/payload = list()
 	var/reveal_wires = FALSE
+	var/has_valid_tool = FALSE // [CELADON-ADD]
 
 	// Admin ghost can see a purpose of each wire.
 	if(isAdminGhostAI(user))
 		reveal_wires = TRUE
 
 	// Same for anyone with an abductor multitool.
-	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor))
+	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor) || user.is_holding_item_of_type(/obj/item/debug/omnitool)) // [CELADON-EDIT] - OLD CODE: else if(user.is_holding_item_of_type(/obj/item/multitool/abductor))
 		reveal_wires = TRUE
+
+	// [CELADON-ADD] 
+	// Same for anyone with engineering scanner goggles and multitool/wirecutter/Jaws of live in hands
+	else if(ishuman(user))
+		var/mob/living/carbon/human/H = user
+
+		if(user.is_holding_item_of_type(/obj/item/multitool) || user.is_holding_item_of_type(/obj/item/wirecutters))
+			has_valid_tool = TRUE
+
+		else
+			var/obj/item/crowbar/power/J = user.is_holding_item_of_type(/obj/item/crowbar/power)
+			if(J && J.vars["tool_behaviour"] == "wirecutter")
+				has_valid_tool = TRUE
+
+		if(has_valid_tool && H.glasses)
+			var/obj/item/clothing/glasses/G = H.glasses
+			if(G.vars["mode"] && G.vars["mode"] == "t-ray")
+				reveal_wires = TRUE
+	// [/CELADON-ADD]
 
 	// Station blueprints do that too, but only if the wires are not randomized.
 	else if(user.is_holding_item_of_type(/obj/item/areaeditor/blueprints) && !randomize)

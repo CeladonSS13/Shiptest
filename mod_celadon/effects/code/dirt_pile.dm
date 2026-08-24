@@ -2,7 +2,7 @@
 	name = "empty dirt pile"
 	desc = "A small pile of dirt. Something might be buried underneath."
 	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
-	icon_state = "snowstone"
+	icon_state = "snow-255"
 	density = FALSE
 	anchored = TRUE
 	light_color = COLOR_ICEPLANET_LIGHT

@@ -55,13 +55,15 @@
 	var/mob/dead/observer/G = usr
 	G.register_pai()
 
-/atom/movable/screen/ghost/hudbox/spawner_menu // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/spawner_menu
+// [CELADON-ADD] - UPDATE GHOST HUDS
+/atom/movable/screen/ghost/hudbox/spawner_menu
 	name = "Spawner Menu"
 	hud_icon_state = "spawner_menu"
 
-/atom/movable/screen/ghost/hudbox/spawner_menu/Click() // [CELADON-EDIT] - UPDATE GHOST HUDS - OLD CODE: /atom/movable/screen/ghost/spawner_menu/Click()
+/atom/movable/screen/ghost/hudbox/spawner_menu/Click()
 	var/mob/dead/observer/G = usr
 	G.open_spawners_menu()
+// [/CELADON-ADD]
 
 /datum/hud/ghost/New(mob/owner)
 	..()
@@ -95,11 +97,6 @@
 
 	using = new /atom/movable/screen/language_menu
 	using.icon = ui_style
-	using.hud = src
-	static_inventory += using
-
-	using = new /atom/movable/screen/ghost/spawner_menu()
-	using.screen_loc = ui_ghost_spawner_menu
 	using.hud = src
 	static_inventory += using
 	*/

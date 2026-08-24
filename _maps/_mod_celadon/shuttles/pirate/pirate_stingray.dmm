@@ -61,7 +61,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "aN" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 4
 	},
 /obj/structure/marker_beacon{
@@ -541,7 +541,7 @@
 /turf/open/floor/pod/dark,
 /area/ship/engineering/engines/starboard)
 "eb" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue{
 	dir = 8
 	},
 /obj/machinery/camera/autoname,
@@ -631,7 +631,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engines/port)
 "eV" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -689,7 +689,7 @@
 	pixel_y = 9;
 	pixel_x = 8
 	},
-/obj/item/clothing/gloves/color/latex/nitrile/clip{
+/obj/item/clothing/gloves/nitrile{
 	pixel_y = -10;
 	pixel_x = 1
 	},
@@ -721,7 +721,7 @@
 	pixel_y = 3;
 	pixel_x = 3
 	},
-/obj/item/trash/cheesie{
+/obj/item/trash/chips{
 	pixel_y = 3;
 	pixel_x = -8
 	},
@@ -789,7 +789,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/hallway/central)
 "gp" = (
-/obj/effect/turf_decal/corner/opaque/ntblue,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -1038,7 +1038,7 @@
 /obj/structure/sign/warning/gasmask{
 	pixel_y = -32
 	},
-/obj/structure/sign/poster/official/miners{
+/obj/structure/sign/poster/nanotrasen/miners{
 	pixel_x = -32
 	},
 /obj/effect/turf_decal/borderfloorblack{
@@ -1380,7 +1380,7 @@
 	pixel_y = -8;
 	pixel_x = -3
 	},
-/obj/structure/sign/poster/official/report_crimes{
+/obj/structure/sign/poster/nanotrasen/report_crimes{
 	pixel_y = -32
 	},
 /obj/item/paper/paperslip{
@@ -1664,7 +1664,7 @@
 "po" = (
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/fire/fulltile,
-/obj/structure/sign/poster/official/moth/smokey{
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech/grid,
@@ -1723,7 +1723,7 @@
 /turf/open/floor/plating,
 /area/ship/general/command_crew)
 "pT" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue{
 	dir = 8
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -1755,7 +1755,7 @@
 /obj/structure/marker_beacon{
 	picked_color = "Yellow"
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -1806,7 +1806,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ntsl_lasers.dmi';
 	icon_state = "plasma_pistol_fire";
 	name = "M87";
-	desc = "A fresh-new experimental plasma pistol manufactured by Nanotrasen-Sharplite, it uses superheated plasma bursts. You could use it to cut limbs off xenos! Or, you know, cut through walls."
+	desc = "A fresh-new experimental plasma pistol manufactured by nanotrasen-Sharplite, it uses superheated plasma bursts. You could use it to cut limbs off xenos! Or, you know, cut through walls."
 	},
 /obj/item/melee/sword/mass{
 	force = 25;
@@ -1901,12 +1901,6 @@
 /obj/item/clothing/gloves/combat{
 	pixel_y = -3;
 	pixel_x = -3
-	},
-/obj/item/clothing/under/rank/command/nt{
-	pixel_y = 7;
-	pixel_x = 7;
-	name = "captain jumpsuit";
-	desc = "A standard captain jumpsuit."
 	},
 /obj/item/clothing/under/nanotrasen/officer{
 	pixel_x = -7;
@@ -2090,7 +2084,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "sx" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters,
 /turf/open/floor/engine/hull/reinforced{
 	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
 	icon_state = "metal_1"
@@ -2406,7 +2400,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/cargo)
 "vp" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -2605,7 +2599,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "xB" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 1
 	},
 /obj/structure/marker_beacon{
@@ -2715,7 +2709,7 @@
 	},
 /area/ship/bridge)
 "yL" = (
-/obj/structure/sign/poster/retro/build{
+/obj/structure/sign/poster/retro/nanotrasen/build{
 	pixel_x = 32
 	},
 /obj/machinery/atmospherics/components/unary/portables_connector{
@@ -3037,7 +3031,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "Cn" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3067,13 +3061,13 @@
 /obj/machinery/computer/cryopod/directional/north{
 	pixel_y = 25
 	},
-/obj/structure/sign/poster/official/work_for_a_future{
+/obj/structure/sign/poster/nanotrasen/work_for_a_future{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew/dorm)
 "CI" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3208,7 +3202,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "EI" = (
-/obj/effect/turf_decal/corner/opaque/ntblue{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue{
 	dir = 1
 	},
 /obj/machinery/camera/autoname{
@@ -3268,7 +3262,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 1
 	},
-/obj/structure/sign/poster/retro/smile{
+/obj/structure/sign/poster/retro/nanotrasen/smile{
 	pixel_y = -32
 	},
 /turf/open/floor/mineral/plastitanium,
@@ -3350,7 +3344,7 @@
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8
 	},
-/obj/structure/sign/poster/retro/science{
+/obj/structure/sign/poster/retro/nanotrasen/science{
 	pixel_x = 32
 	},
 /obj/structure/bed/roller/future,
@@ -3381,7 +3375,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "Gk" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -3727,7 +3721,7 @@
 /obj/effect/turf_decal/siding/wood/end{
 	dir = 8
 	},
-/obj/structure/sign/poster/retro/we_watch{
+/obj/structure/sign/poster/retro/nanotrasen/we_watch{
 	pixel_x = -32
 	},
 /obj/structure/closet/secure_closet/wall/directional/north{
@@ -3854,7 +3848,7 @@
 	},
 /area/ship/engineering)
 "Mk" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters,
 /obj/structure/marker_beacon{
 	picked_color = "Yellow"
 	},
@@ -3960,7 +3954,7 @@
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "MX" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 8
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -4525,7 +4519,7 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo/port)
 "Ta" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 8
 	},
 /obj/structure/marker_beacon{
@@ -4570,7 +4564,7 @@
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/security)
 "Tx" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/three_quarters{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/three_quarters{
 	dir = 1
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -4789,7 +4783,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/on/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 4
 	},
 /turf/open/floor/engine/hull/reinforced{
@@ -4918,7 +4912,7 @@
 	},
 /obj/structure/girder,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/radio/ntra{
+/obj/structure/sign/poster/radio/mwra{
 	pixel_y = -32
 	},
 /turf/open/floor/plating,

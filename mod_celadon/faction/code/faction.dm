@@ -26,7 +26,8 @@
 	name = FACTION_PIRATES
 	prefixes = list("PIRATE", "RSV")
 
-/datum/faction/nt
+/datum/faction/nanotrasen
+	name = FACTION_NANOTRASEN
 	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV")
 
 /datum/faction/inteq

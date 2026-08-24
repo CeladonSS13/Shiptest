@@ -181,7 +181,7 @@ MARK:	Разная машинерия
 
 /datum/supply_pack/faction/independent/machinery/breach_shield_gen
 	name = "Anti-breach Shield Projector"
-	desc = "Hull breaches again? Say no more with the Nanotrasen Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
+	desc = "Hull breaches again? Say no more with the Warra Anti-Breach Shield Projector! Uses forcefield technology to keep the air in, and the space out. Contains two shield projectors."
 	cost = 1000
 	contains = list(/obj/machinery/shieldgen)
 	crate_name = "anti-breach shield projector crate"
@@ -207,7 +207,7 @@ MARK:	Разная машинерия
 
 /datum/supply_pack/faction/independent/machinery/drill_crate
 	name = "Heavy duty laser mining drill"
-	desc = "An experimental laser-based mining drill that Nanotrasen is kindly allowing YOU, the customer, to opt into testing of."
+	desc = "An experimental laser-based mining drill that Warra is kindly allowing YOU, the customer, to opt into testing of."
 	cost = 1000
 	contains = list(
 		/obj/machinery/drill,

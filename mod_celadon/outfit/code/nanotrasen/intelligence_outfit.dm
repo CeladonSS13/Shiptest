@@ -6,7 +6,7 @@
 
 	jobtype = /datum/job/captain
 
-	id = /obj/item/card/id/lplieu
+	id = /obj/item/card/id
 	implants = list(/obj/item/implant/mindshield)
 	uniform = /obj/item/clothing/under/nanotrasen/captain
 	shoes = /obj/item/clothing/shoes/combat
@@ -28,9 +28,9 @@
 
 	jobtype = /datum/job/hos
 
-	id = /obj/item/card/id/lpsec
+	id = /obj/item/card/id
 	implants = list(/obj/item/implant/mindshield)
-	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt/lp
+	uniform = /obj/item/clothing/under/rank/security/head_of_security/alt
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/security
@@ -47,9 +47,9 @@
 
 	jobtype = /datum/job/cmo
 
-	id = /obj/item/card/id/lpmed
+	id = /obj/item/card/id
 	implants = list(/obj/item/implant/mindshield)
-	uniform = /obj/item/clothing/under/rank/medical/paramedic/lp
+	uniform = /obj/item/clothing/under/rank/medical/paramedic
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	backpack = /obj/item/storage/backpack/ert/medical
@@ -66,9 +66,9 @@
 
 	jobtype = /datum/job/chief_engineer
 
-	id = /obj/item/card/id/lpengie
+	id = /obj/item/card/id
 	implants = list(/obj/item/implant/mindshield)
-	uniform = /obj/item/clothing/under/rank/engineering/engineer/nt/lp
+	uniform = /obj/item/clothing/under/nanotrasen/engineering
 	shoes = /obj/item/clothing/shoes/combat
 	gloves = /obj/item/clothing/gloves/combat
 	head = /obj/item/clothing/head/beret/eng/hazard

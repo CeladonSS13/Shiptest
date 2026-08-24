@@ -7,11 +7,11 @@
 	belt = /obj/item/pda/heads/cmo
 
 	ears = /obj/item/radio/headset/nanotrasen/captain
-	head = /obj/item/clothing/head/beret/cmo
+	head = /obj/item/clothing/head/nanotrasen/cap/medical
 	uniform = /obj/item/clothing/under/nanotrasen/medical/director
 	shoes = /obj/item/clothing/shoes/laceup
 	glasses = /obj/item/clothing/glasses/sunglasses
-	gloves = /obj/item/clothing/gloves/color/latex/nitrile
+	gloves = /obj/item/clothing/gloves/nitrile
 	suit = /obj/item/clothing/suit/toggle/labcoat/nanotrasen/blue
 	dcoat = /obj/item/clothing/suit/hooded/wintercoat/medical
 	backpack = /obj/item/storage/backpack/medic

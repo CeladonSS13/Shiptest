@@ -1,3 +1,4 @@
+#define POSTER_ADD_FROM_LIST 3
 // MARK: BAY
 /obj/structure/sign/poster/bay
 	icon = 'mod_celadon/_storage_icons/icons/structures/obj/posters.dmi'
@@ -505,10 +506,12 @@
 
 /obj/structure/sign/poster/tg/tg_9
 	name = "Missing Gloves"
-	desc = "This poster is about the uproar that followed NanoTrasen's financial cuts towards insulated-glove purchases."
+	desc = "This poster is about the uproar that followed Nanotrasen's financial cuts towards insulated-glove purchases."
 	icon_state = "poster9"
 
 /obj/structure/sign/poster/tg/tg_10
 	name = "Hacking Guide"
-	desc = "This poster details the internal workings of the common NanoTrasen airlock."
+	desc = "This poster details the internal workings of the common Nanotrasen airlock."
 	icon_state = "poster10"
+
+#undef POSTER_ADD_FROM_LIST

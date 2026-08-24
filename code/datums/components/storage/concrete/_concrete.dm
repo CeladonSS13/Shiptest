@@ -182,11 +182,9 @@
 		return FALSE
 	I.on_enter_storage(master)
 	I.item_flags |= IN_STORAGE
-	// [CELADON-ADD] - FIXES_ICON_OUT_OF_BORDER - Сбрасываем позицию элемента при помещении в хранилище
-	I.pixel_x = 0
-	I.pixel_y = 0
-	I.screen_loc = null
-	// [/CELADON-ADD]
+	// makes the item centered, still won't make ores look good
+	I.pixel_x = I.base_pixel_x
+	I.pixel_y = I.base_pixel_y
 	refresh_mob_views()
 	I.mouse_opacity = MOUSE_OPACITY_OPAQUE //So you can click on the area around the item to equip it, instead of having to pixel hunt
 	if(M)

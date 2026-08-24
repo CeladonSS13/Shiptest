@@ -4,13 +4,13 @@
 //Путь до атласа - /icons/mob/clothing/under/security.dmi
 
 //Два предмета, что не удалось починить, но они сломаны:
-//	/obj/item/clothing/under/rank/security/brig_phys/nt
-//	/obj/item/clothing/under/rank/security/brig_phys/nt/skirt
+//	/obj/item/clothing/under/rank/security/brig_phys/warra
+//	/obj/item/clothing/under/rank/security/brig_phys/warra/skirt
 
 /obj/item/clothing/under/rank/security/officer/skirt
 	roll_sleeves = FALSE
 
-/obj/item/clothing/under/rank/security/officer/nt/skirt
+/obj/item/clothing/under/rank/security/officer/warra/skirt
 	roll_sleeves = FALSE
 
 /obj/item/clothing/under/rank/security/detective/skirt
@@ -22,13 +22,13 @@
 /obj/item/clothing/under/rank/security/warden/skirt
 	roll_sleeves = FALSE
 
-/obj/item/clothing/under/rank/security/warden/nt/skirt
+/obj/item/clothing/under/rank/security/warden/warra/skirt
 	roll_sleeves = FALSE
 
 /obj/item/clothing/under/rank/security/head_of_security/alt/skirt
 	roll_sleeves = FALSE
 
-/obj/item/clothing/under/rank/security/head_of_security/nt/skirt
+/obj/item/clothing/under/rank/security/head_of_security/warra/skirt
 	roll_sleeves = FALSE
 
 /obj/item/clothing/under/rank/prisoner/skirt

@@ -1658,7 +1658,7 @@
 /area/ruin/space/has_grav/spacemall/dorms)
 "gu" = (
 /obj/structure/rack,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/effect/turf_decal/corner/transparent/black/diagonal,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shop)
@@ -3020,7 +3020,7 @@
 /obj/effect/turf_decal/corner/transparent/lime{
 	dir = 4
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = 30
 	},
 /obj/structure/table,
@@ -4528,7 +4528,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/dorms)
 "qN" = (
-/obj/structure/sign/poster/official/foam_force_ad{
+/obj/structure/sign/poster/nanotrasen/foam_force_ad{
 	pixel_x = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer4{
@@ -5229,7 +5229,7 @@
 "tw" = (
 /obj/machinery/microwave,
 /obj/effect/turf_decal/corner/transparent/lime,
-/obj/structure/sign/poster/official/soft_cap_pop_art{
+/obj/structure/sign/poster/nanotrasen/soft_cap_pop_art{
 	pixel_x = 30
 	},
 /obj/structure/table,
@@ -5516,15 +5516,6 @@
 	name = "clothing rack";
 	can_buckle = 0;
 	desc = "A spike for collecting CLOTHING from PEOPLE."
-	},
-/obj/item/clothing/suit/jacket/letterman_nanotrasen{
-	pixel_y = -7
-	},
-/obj/item/clothing/suit/jacket/letterman_nanotrasen{
-	pixel_y = -7
-	},
-/obj/item/clothing/suit/jacket/letterman_nanotrasen{
-	pixel_y = -7
 	},
 /obj/item/clothing/suit/jacket/letterman,
 /obj/item/clothing/suit/jacket/letterman,
@@ -6171,7 +6162,7 @@
 /obj/structure/rack,
 /obj/item/modular_computer/tablet,
 /obj/item/computer_hardware/printer,
-/obj/structure/sign/poster/official/pda_ad{
+/obj/structure/sign/poster/nanotrasen/pda_ad{
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/box/white,
@@ -6224,11 +6215,11 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall)
 "xx" = (
-/obj/item/reagent_containers/food/drinks/bottle/moonshine{
+/obj/item/reagent_containers/food/drinks/bottle/chemshine{
 	pixel_y = 5
 	},
 /obj/structure/table/wood/fancy,
-/obj/item/reagent_containers/food/drinks/bottle/moonshine{
+/obj/item/reagent_containers/food/drinks/bottle/chemshine{
 	pixel_y = 5
 	},
 /obj/item/reagent_containers/food/drinks/bottle/vodka{
@@ -6309,7 +6300,7 @@
 /obj/item/modular_computer/laptop,
 /obj/item/computer_hardware/card_slot,
 /obj/item/computer_hardware/card_slot,
-/obj/structure/sign/poster/retro/pdaancient{
+/obj/structure/sign/poster/retro/nanotrasen/pdaancient{
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/box/white,
@@ -7185,9 +7176,6 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall/maint)
 "Bc" = (
-/obj/structure/sign/donk{
-	pixel_y = -32
-	},
 /obj/effect/turf_decal/corner/transparent/green/diagonal,
 /turf/open/floor/plasteel/dark,
 /area/ruin/space/has_grav/spacemall)
@@ -7276,8 +7264,8 @@
 "Bq" = (
 /obj/effect/turf_decal/box,
 /obj/structure/closet/crate/secure,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
-/obj/effect/spawner/random/food_or_drink/donkpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
+/obj/effect/spawner/random/food_or_drink/shoalpockets,
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/spacemall/shuttle)
@@ -10174,7 +10162,7 @@
 /turf/open/floor/plating,
 /area/ruin/space/has_grav/spacemall)
 "Mu" = (
-/obj/item/storage/box/donkpockets,
+/obj/item/storage/box/shoalpockets,
 /obj/effect/turf_decal/corner/transparent/lime,
 /obj/structure/table,
 /turf/open/floor/plasteel,
@@ -12475,10 +12463,6 @@
 /obj/machinery/door/window,
 /turf/open/floor/wood/walnut,
 /area/ruin/space/has_grav/spacemall/shop)
-"UW" = (
-/obj/effect/turf_decal/corner/transparent/green/diagonal,
-/turf/open/floor/plasteel/dark,
-/area/ruin/space/has_grav/spacemall)
 "UX" = (
 /obj/structure/railing{
 	dir = 10
@@ -14832,7 +14816,7 @@ FH
 bw
 eJ
 pH
-UW
+Bc
 pH
 Kh
 Kh
@@ -14882,7 +14866,7 @@ SU
 bw
 jV
 pH
-UW
+Bc
 bP
 Kh
 Kh
@@ -14932,7 +14916,7 @@ Pi
 bw
 zf
 pH
-UW
+Bc
 pH
 Kh
 Kh
@@ -14969,9 +14953,9 @@ tZ
 tZ
 tZ
 tZ
-UW
+Bc
 oN
-UW
+Bc
 yt
 IH
 Lb
@@ -14992,21 +14976,21 @@ Kh
 Os
 Os
 MO
-UW
+Bc
 dO
 Da
-UW
-UW
-UW
+Bc
+Bc
+Bc
 LT
 Bf
 xD
 xD
 xD
 xD
-UW
+Bc
 Da
-UW
+Bc
 xD
 xD
 xD
@@ -15018,16 +15002,16 @@ FT
 lr
 oY
 mp
-UW
-UW
+Bc
+Bc
 oN
-UW
-UW
-UW
+Bc
+Bc
+Bc
 Be
-UW
+Bc
 mg
-UW
+Bc
 bC
 Ye
 tZ
@@ -15040,8 +15024,8 @@ Kh
 (26,1,1) = {"
 Os
 Os
-UW
-UW
+Bc
+Bc
 qO
 Zg
 wd
@@ -15089,7 +15073,7 @@ Os
 "}
 (27,1,1) = {"
 Os
-UW
+Bc
 dO
 CX
 yT
@@ -15129,7 +15113,7 @@ HS
 HS
 Ut
 Sk
-UW
+Bc
 rO
 av
 yS
@@ -15139,7 +15123,7 @@ Os
 "}
 (28,1,1) = {"
 Os
-UW
+Bc
 qO
 XO
 ze
@@ -15179,7 +15163,7 @@ ze
 ze
 Jh
 hp
-UW
+Bc
 tZ
 uc
 TG
@@ -15189,7 +15173,7 @@ Os
 "}
 (29,1,1) = {"
 Os
-UW
+Bc
 XT
 ZA
 ze
@@ -15239,7 +15223,7 @@ Os
 "}
 (30,1,1) = {"
 Os
-UW
+Bc
 LK
 VV
 jC
@@ -15279,7 +15263,7 @@ ze
 ze
 bm
 hp
-UW
+Bc
 tZ
 qF
 jU
@@ -15289,8 +15273,8 @@ Os
 "}
 (31,1,1) = {"
 Os
-UW
-UW
+Bc
+Bc
 nn
 kD
 dv
@@ -15329,7 +15313,7 @@ dv
 dv
 dv
 aF
-UW
+Bc
 Yc
 tG
 IV
@@ -15340,8 +15324,8 @@ Os
 (32,1,1) = {"
 Os
 Os
-UW
-UW
+Bc
+Bc
 LK
 pk
 UA
@@ -15392,12 +15376,12 @@ Kh
 Os
 Os
 tT
-UW
-UW
-UW
-UW
-UW
-UW
+Bc
+Bc
+Bc
+Bc
+Bc
+Bc
 ZV
 nY
 jl
@@ -15421,12 +15405,12 @@ qu
 qu
 eZ
 fN
-UW
+Bc
 cI
 QY
-UW
-UW
-UW
+Bc
+Bc
+Bc
 ys
 RR
 Ye
@@ -15470,7 +15454,7 @@ HS
 HS
 Zt
 SX
-UW
+Bc
 Cy
 Cy
 Cy
@@ -15512,7 +15496,7 @@ mv
 Bn
 qf
 pe
-UW
+Bc
 TV
 NR
 ze
@@ -15520,7 +15504,7 @@ FZ
 JC
 bM
 iB
-UW
+Bc
 Cy
 Vs
 Vs
@@ -15562,7 +15546,7 @@ uB
 Qy
 Co
 Ad
-UW
+Bc
 TV
 NR
 ze
@@ -15612,7 +15596,7 @@ sH
 Qy
 Mg
 Ad
-UW
+Bc
 TV
 NR
 ze
@@ -15662,7 +15646,7 @@ zR
 Qy
 PH
 Oq
-UW
+Bc
 TV
 NR
 jC
@@ -15670,7 +15654,7 @@ QN
 gK
 bM
 zy
-UW
+Bc
 Jx
 sr
 eV
@@ -15712,7 +15696,7 @@ Ti
 Qy
 Lx
 Ad
-UW
+Bc
 TV
 NR
 ze
@@ -15720,7 +15704,7 @@ Gw
 jC
 bM
 SX
-UW
+Bc
 Jx
 sr
 mQ
@@ -15762,7 +15746,7 @@ Hp
 Qy
 Dc
 Ad
-UW
+Bc
 TV
 NR
 Jh
@@ -15770,7 +15754,7 @@ ze
 bm
 Bu
 SX
-UW
+Bc
 Jx
 NN
 JS
@@ -15812,7 +15796,7 @@ Ot
 Qy
 Cs
 Ad
-UW
+Bc
 TV
 lE
 dv
@@ -15870,7 +15854,7 @@ Ug
 hT
 rP
 Ka
-UW
+Bc
 Jx
 Ph
 gJ
@@ -15920,7 +15904,7 @@ HS
 HS
 qT
 SX
-UW
+Bc
 Jx
 xM
 jK
@@ -15970,7 +15954,7 @@ ze
 jC
 bM
 iB
-UW
+Bc
 Jx
 Ua
 Mf
@@ -16062,7 +16046,7 @@ pe
 pe
 pe
 pe
-UW
+Bc
 TV
 Dn
 ze
@@ -16162,7 +16146,7 @@ QC
 TN
 OZ
 qD
-UW
+Bc
 TV
 Dn
 ze
@@ -16170,7 +16154,7 @@ Gw
 xd
 bM
 pM
-UW
+Bc
 Cy
 Cy
 Cy
@@ -16212,7 +16196,7 @@ oo
 Sc
 Dm
 qD
-UW
+Bc
 TV
 Dn
 QN
@@ -16220,7 +16204,7 @@ ze
 bm
 bM
 SX
-UW
+Bc
 Jx
 rl
 oL
@@ -16262,7 +16246,7 @@ Ht
 VW
 hQ
 RH
-UW
+Bc
 TV
 qt
 dv
@@ -16270,7 +16254,7 @@ dv
 dv
 ds
 rv
-UW
+Bc
 Jx
 Od
 tQ
@@ -16320,7 +16304,7 @@ Rw
 zZ
 zZ
 nd
-UW
+Bc
 Jx
 vS
 Wr
@@ -16412,7 +16396,7 @@ pe
 pe
 pe
 pe
-UW
+Bc
 TV
 Dn
 ze
@@ -16462,7 +16446,7 @@ dx
 IO
 or
 RH
-UW
+Bc
 TV
 Dn
 ze
@@ -16570,7 +16554,7 @@ ze
 gK
 bM
 SX
-UW
+Bc
 Tx
 Mh
 Tm
@@ -16612,7 +16596,7 @@ Yg
 LM
 Qy
 RH
-UW
+Bc
 TV
 Dn
 FZ
@@ -16662,7 +16646,7 @@ zg
 hc
 We
 pe
-UW
+Bc
 GT
 Dn
 jC
@@ -16812,7 +16796,7 @@ Iy
 nM
 iT
 pe
-UW
+Bc
 Ss
 kv
 pU
@@ -17020,7 +17004,7 @@ CQ
 DC
 hr
 jG
-UW
+Bc
 Jx
 IG
 cH
@@ -17070,7 +17054,7 @@ uF
 gg
 ew
 SX
-UW
+Bc
 Jx
 Kz
 RV
@@ -17112,7 +17096,7 @@ XL
 rM
 RL
 RG
-UW
+Bc
 YG
 KQ
 gg
@@ -17120,7 +17104,7 @@ gg
 gg
 GJ
 jG
-UW
+Bc
 Jx
 Fn
 GC
@@ -17170,7 +17154,7 @@ ju
 lK
 Ja
 SX
-UW
+Bc
 Jx
 MN
 er
@@ -17212,7 +17196,7 @@ pe
 pe
 pe
 pe
-UW
+Bc
 ic
 yO
 cM
@@ -17220,7 +17204,7 @@ yi
 QX
 fy
 SX
-UW
+Bc
 Cy
 Cy
 Cy
@@ -17270,7 +17254,7 @@ Li
 HS
 lO
 SX
-UW
+Bc
 Jx
 fq
 Pf
@@ -17312,7 +17296,7 @@ qj
 cG
 Kw
 pe
-UW
+Bc
 YG
 MD
 Jh
@@ -17320,7 +17304,7 @@ ze
 jC
 bM
 iB
-UW
+Bc
 Jx
 Ks
 to
@@ -17420,7 +17404,7 @@ gK
 Jh
 bM
 SX
-UW
+Bc
 Jx
 to
 dr
@@ -17462,7 +17446,7 @@ qj
 bY
 Ag
 RH
-UW
+Bc
 YG
 MD
 ze
@@ -17512,7 +17496,7 @@ tD
 qj
 vp
 RH
-UW
+Bc
 kN
 ZA
 ze
@@ -17520,7 +17504,7 @@ Gw
 ze
 bM
 SX
-UW
+Bc
 Jx
 to
 qc

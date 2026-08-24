@@ -15,7 +15,7 @@
 		/datum/language/zohil_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		// [CELADON-ADD] - CELADON_ITEMS
@@ -35,7 +35,7 @@
 
 /obj/item/organ/tongue/proc/handle_speech(datum/source, list/speech_args)
 
-/obj/item/organ/tongue/Insert(mob/living/carbon/M, special = 0)
+/obj/item/organ/tongue/Insert(mob/living/carbon/M, special = 0, drop_if_replaced = TRUE)
 	..()
 	if (modifies_speech)
 		RegisterSignal(M, COMSIG_MOB_SAY, PROC_REF(handle_speech))
@@ -120,12 +120,14 @@
 		/datum/language/galactic_common,
 		/datum/language/gezena_kalixcian,
 		/datum/language/zohil_kalixcian,
-		/datum/language/league_kalixcian,
-		/datum/language/codespeak,
+		/datum/language/teceti_unified,
+		/datum/language/solarian_international,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
+		/datum/language/ratvar,
+		/datum/language/codespeak,
 		/datum/language/aphasia,
-		/datum/language/moffic,
-		/datum/language/ratvar
+		/datum/language/league_kalixcian,
 	))
 
 /obj/item/organ/tongue/bone/Initialize()
@@ -165,6 +167,10 @@
 	. = ..()
 	languages_possible = languages_possible_robot
 
+/obj/item/organ/tongue/robot/Insert(mob/living/carbon/M, special = 0, drop_if_replaced = TRUE)
+	. = ..()
+	ADD_TRAIT(owner, TRAIT_ELECTRONIC_VOICEBOX, ORGAN_TRAIT)
+
 /obj/item/organ/tongue/robot/emp_act(severity)
 	owner.apply_effect(EFFECT_STUTTER, 120)
 	owner.force_scream()
@@ -188,7 +194,7 @@
 		/datum/language/league_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,
@@ -212,7 +218,7 @@
 		/datum/language/teceti_unified,
 		/datum/language/league_kalixcian,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,
@@ -233,7 +239,7 @@
 		/datum/language/league_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,
@@ -259,7 +265,7 @@
 		/datum/language/league_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,
@@ -311,10 +317,12 @@
 		/datum/language/gezena_kalixcian,
 		/datum/language/zohil_kalixcian,
 		/datum/language/league_kalixcian,
+		/datum/language/teceti_unified,
+		/datum/language/solarian_international,
 		/datum/language/codespeak,
 		/datum/language/monkey,
 		/datum/language/aphasia,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/rachnidian
 	))
 
@@ -355,7 +363,7 @@
 		/datum/language/league_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,
@@ -491,7 +499,7 @@
 		/datum/language/league_kalixcian,
 		/datum/language/teceti_unified,
 		/datum/language/solarian_international,
-		/datum/language/moffic,
+		/datum/language/vox_pidgin,
 		/datum/language/monkey,
 		/datum/language/ratvar,
 		/datum/language/codespeak,

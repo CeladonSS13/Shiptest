@@ -89,8 +89,8 @@ MARK: 	Niche protection
 					/obj/item/clothing/head/bio_hood,
 					/obj/item/clothing/suit/bio_suit,
 					/obj/item/clothing/suit/bio_suit,
-					/obj/item/clothing/gloves/color/latex,
-					/obj/item/clothing/gloves/color/latex,
+					/obj/item/clothing/gloves/nitrile,
+					/obj/item/clothing/gloves/nitrile,
 					/obj/item/storage/bag/bio,
 					/obj/item/reagent_containers/syringe/antiviral,
 					/obj/item/reagent_containers/syringe/antiviral)

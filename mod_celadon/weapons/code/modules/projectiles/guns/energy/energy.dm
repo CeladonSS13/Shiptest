@@ -35,7 +35,7 @@
 		/obj/item/stock_parts/cell/gun/upgraded/empty
 	)
 	valid_attachments = SHARPLITE_ATTACHMENTS
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 /obj/item/gun/energy/e_gun/e_old/empty_cell
 	spawn_no_ammo = TRUE
@@ -103,7 +103,7 @@
 
 /obj/item/gun/energy/e_gun/e_old/old
 	name = "prototype energy gun"
-	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and Nanotrasen later acquired Sharplite to suit its laser weapon needs."
+	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and nanotrasen later acquired Sharplite to suit its laser weapon needs."
 	icon_state = "protolaser"
 	ammo_x_offset = 2
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/electrode/old)
@@ -117,7 +117,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/ion/hos, /obj/item/ammo_casing/energy/electrode/nanotrasen)
 	shaded_charge = TRUE
 	resistance_flags = LAVA_PROOF | FIRE_PROOF | ACID_PROOF //я не думаю, что оно должно быть индестрактбл
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_BURST)
 	default_firemode = FIREMODE_SEMIAUTO
@@ -173,7 +173,7 @@
 	var/reactor_overloaded
 	var/fail_tick = 0
 	var/fail_chance = 0
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 /obj/item/gun/energy/e_gun/e_old/nuclear/process(seconds_per_tick)
 	if(fail_tick > 0)
@@ -227,7 +227,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/disabler/nanotrasen, /obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 //Base ESMG
 
@@ -356,7 +356,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/dmr)
 	ammo_x_offset = 1
 	shaded_charge = TRUE
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 	zoomable = TRUE
 	wield_slowdown = RIFLE_SLOWDOWN
@@ -408,7 +408,7 @@
 	zoom_amt = 8
 	zoom_out_amt = 5
 	wield_slowdown = LASER_SNIPER_SLOWDOWN
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
 	spread = -5
 	spread_unwielded = 40
@@ -476,30 +476,24 @@
 	name = "miniature energy power cell"
 	desc = "A compact weapon cell primarily used by Sharplite Energy weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells. It holds less charge and is intended for usage in energy handguns."
 	w_class = WEIGHT_CLASS_TINY
-	icon = 'icons/obj/power.dmi'
 	icon_state = "mg-cell"
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/solgov
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/large
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/kalix
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/pgf
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 /obj/item/stock_parts/cell/gun/sharplite/mini
 	name = "miniature plasma power cell"
 	desc = "A compact weapon cell used exclusively by Sharplite Plasma weaponry. It holds less charge and is intended for usage in energy handguns."
-	icon = 'icons/obj/power.dmi'
 	reskin = FALSE
 
 // Выше вместимость увеличена была в 1.5 раза, и расход тоже соответственно

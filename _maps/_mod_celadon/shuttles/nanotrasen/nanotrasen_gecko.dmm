@@ -185,9 +185,6 @@
 	name = "Storage And Science Bay"
 	})
 "bL" = (
-/obj/structure/sign/poster/retro/random{
-	pixel_y = -32
-	},
 /obj/item/storage/fancy/cigarettes/cigars{
 	pixel_y = 8
 	},
@@ -208,7 +205,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/nakamuraayellow{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/moth/delam{
+/obj/structure/sign/poster/nanotrasen/moth/delam{
 	pixel_x = 4;
 	pixel_y = 32
 	},
@@ -217,7 +214,7 @@
 	name = "Storage And Science Bay"
 	})
 "bR" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
@@ -246,11 +243,11 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/ntspaceworks_small/left,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/nanotrasenspaceworks_small/left,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "cr" = (
@@ -358,8 +355,8 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -395,11 +392,11 @@
 /obj/item/clothing/glasses/meson/engine,
 /obj/item/construction/rcd,
 /obj/item/pipe_dispenser,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/megaphone/command,
 /obj/item/clothing/head/hardhat/nanotrasen/white,
 /obj/item/clothing/under/nanotrasen/engineering/director,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
 /obj/item/radio/headset/nanotrasen/alt/captain,
@@ -533,7 +530,7 @@
 /area/ship/engineering/engine)
 "eD" = (
 /obj/structure/closet/crate/trashcart/laundry,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -882,8 +879,8 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -987,7 +984,7 @@
 /obj/machinery/vending/boozeomat/all_access{
 	all_items_free = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 9
 	},
 /turf/open/floor/plasteel/tech,
@@ -1227,7 +1224,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "oi" = (
@@ -1385,8 +1382,8 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -1407,7 +1404,7 @@
 	},
 /obj/machinery/light/small/directional/west,
 /obj/machinery/vending/cigarette/beach,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 10
 	},
 /turf/open/floor/plasteel/tech,
@@ -1423,7 +1420,7 @@
 /obj/machinery/light/directional/north,
 /obj/item/bedsheet/ce,
 /obj/structure/curtain/cloth/fancy,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 5
 	},
 /turf/open/floor/plasteel/tech,
@@ -1453,11 +1450,11 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 1
 	},
-/obj/effect/turf_decal/ntspaceworks_small,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/nanotrasenspaceworks_small,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "qB" = (
@@ -1501,7 +1498,7 @@
 /turf/open/floor/plating,
 /area/ship/hallway/central)
 "re" = (
-/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "rh" = (
@@ -1904,7 +1901,7 @@
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/medical/surgery)
 "wT" = (
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 8
 	},
 /turf/open/floor/plasteel/tech,
@@ -2096,7 +2093,7 @@
 /area/ship/cargo/starboard)
 "zE" = (
 /obj/machinery/suit_storage_unit/inherit,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /obj/item/clothing/mask/gas/atmos,
 /obj/item/clothing/suit/space/hardsuit/engine/elite,
 /obj/item/tank/internals/oxygen,
@@ -2336,7 +2333,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -2593,7 +2590,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -2603,8 +2600,8 @@
 	dir = 8
 	},
 /obj/machinery/holopad/emergency/command,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line,
-/obj/effect/turf_decal/trimline/opaque/ntblue/line{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line,
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/line{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -2643,7 +2640,7 @@
 	name = "John";
 	desc = "John the Parrot. An expert on quantum cracker theory."
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -2661,10 +2658,6 @@
 /obj/item/clothing/head/fedora/white,
 /obj/item/clothing/head/fedora/white,
 /obj/item/clothing/head/fedora/white,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
-/obj/item/clothing/suit/jacket/letterman_nanotrasen,
 /obj/structure/closet,
 /obj/item/clothing/under/nanotrasen/affairs,
 /obj/item/clothing/under/nanotrasen/affairs,
@@ -2730,7 +2723,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "GR" = (
@@ -2753,7 +2746,7 @@
 	pixel_x = -5
 	},
 /obj/structure/table/reinforced/titaniumglass,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 6
 	},
 /turf/open/floor/plasteel/tech,
@@ -3053,9 +3046,6 @@
 "Ko" = (
 /obj/structure/table/reinforced,
 /obj/machinery/microwave,
-/obj/structure/sign/poster/retro/random{
-	pixel_x = 32
-	},
 /obj/machinery/airalarm/directional/north,
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
@@ -3129,7 +3119,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -3208,7 +3198,7 @@
 /area/ship/medical/surgery)
 "Mc" = (
 /obj/machinery/firealarm/directional/north,
-/obj/effect/turf_decal/corner/opaque/ntblue/half{
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half{
 	dir = 1
 	},
 /turf/open/floor/plasteel/tech,
@@ -3446,7 +3436,7 @@
 	pixel_x = -9;
 	pixel_y = 2
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/dorm/captain)
 "PQ" = (
@@ -3618,9 +3608,6 @@
 /turf/open/floor/plasteel/grimy,
 /area/ship/crew)
 "RK" = (
-/obj/structure/sign/poster/retro/random{
-	pixel_y = 32
-	},
 /obj/machinery/telecomms/processor/preset_two,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/engineering/communications)
@@ -3973,7 +3960,7 @@
 	sync_doors = 0;
 	pixel_x = -5
 	},
-/obj/effect/turf_decal/trimline/opaque/ntblue/end{
+/obj/effect/turf_decal/trimline/opaque/nanotrasenblue/end{
 	dir = 4
 	},
 /turf/open/floor/plasteel/tech,
@@ -4135,7 +4122,7 @@
 	pixel_x = 5;
 	pixel_y = -25
 	},
-/obj/effect/turf_decal/corner/opaque/ntblue/half,
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/half,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Xh" = (
@@ -4196,7 +4183,7 @@
 /obj/item/clothing/glasses/meson/engine/tray,
 /obj/item/clothing/shoes/workboots,
 /obj/item/clothing/head/hardhat,
-/obj/item/clothing/gloves/color/yellow,
+/obj/item/clothing/gloves/insulated,
 /obj/item/storage/belt/utility/full/engi,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/sign/warning/incident{
@@ -4309,15 +4296,15 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
-/obj/effect/turf_decal/ntspaceworks_small/right,
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue{
+/obj/effect/turf_decal/nanotrasenspaceworks_small/right,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue{
 	dir = 1
 	},
-/obj/effect/turf_decal/spline/fancy/opaque/ntblue,
+/obj/effect/turf_decal/spline/fancy/opaque/nanotrasenblue,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "Zd" = (
-/obj/structure/sign/poster/official/moth/supermatter{
+/obj/structure/sign/poster/nanotrasen/moth/supermatter{
 	pixel_x = 0;
 	pixel_y = 32
 	},

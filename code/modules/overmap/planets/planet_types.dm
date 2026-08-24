@@ -30,7 +30,7 @@
 	///Do we 'selfloop' like the overmap? Probably should only enable this on space levels
 	var/selfloop = FALSE
 	///How much of a radio message we mess up on nearby or on landed/orbitting ships
-	var/interference_power = 0
+	var/interference_power = -15
 	// [CELADON-ADD] - CELADON_OVERMAP_ICON - Это вагабонд насрал
 	var/icon = 'mod_celadon/_storage_icons/icons/assets/overmap/overmap.dmi'
 	var/pixel_w = 0
@@ -52,7 +52,6 @@
 	gravity = STANDARD_GRAVITY
 	weather_controller_type = /datum/weather_controller/lavaland
 	ruin_type = RUINTYPE_LAVA
-	interference_power = 0
 
 	primary_ores = list(
 		/obj/item/stack/ore/iron,
@@ -241,7 +240,6 @@
 	gravity = STANDARD_GRAVITY
 	weather_controller_type = /datum/weather_controller/chlorine
 	ruin_type = RUINTYPE_WASTE
-	interference_power = 0
 	primary_ores = list(\
 		/obj/item/stack/ore/iron,
 		/obj/item/stack/ore/plasma,
@@ -354,6 +352,7 @@
 	icon_state = "moon"
 	color = "#d1c3c3"
 	weight = 20
+	interference_power = -5
 
 	mapgen = /datum/map_generator/planet_generator/moon
 	ruin_type = RUINTYPE_MOON

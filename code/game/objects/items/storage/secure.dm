@@ -229,10 +229,10 @@
 	. = ..()
 	new /obj/item/folder/documents/syndicate/cybersun/biodynamics(src)
 
-/obj/item/storage/secure/safe/nt
+/obj/item/storage/secure/safe/warra
 	name = "Sensitive Data Safe"
 	desc = "A secure electronic safe to keep pesky, unauthorized personal from accessing."
 
-/obj/item/storage/secure/safe/nt/PopulateContents()
+/obj/item/storage/secure/safe/warra/PopulateContents()
 	. = ..()
 	new /obj/item/folder/documents(src)

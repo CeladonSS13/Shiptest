@@ -65,7 +65,7 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/sign/poster/retro/smile{
+/obj/structure/sign/poster/retro/nanotrasen/smile{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/tech,
@@ -256,7 +256,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/structure/sign/poster/official/bless_this_spess{
+/obj/structure/sign/poster/nanotrasen/bless_this_spess{
 	pixel_y = -32
 	},
 /turf/open/floor/plating,
@@ -904,22 +904,6 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew)
-"dj" = (
-/obj/effect/turf_decal/corner/transparent/neutral{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/transparent/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/corner/transparent/neutral,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/trash/can{
-	pixel_x = -7;
-	pixel_y = 9
-	},
-/obj/item/trash/cheesie,
-/turf/open/floor/plasteel/dark,
-/area/ship/crew)
 "dm" = (
 /obj/structure/table/glass,
 /obj/item/paper_bin,
@@ -1032,7 +1016,7 @@
 /area/ship/crew)
 "eH" = (
 /obj/effect/turf_decal/corner/opaque/lightgrey/diagonal,
-/obj/structure/sign/poster/official/here_for_your_safety{
+/obj/structure/sign/poster/nanotrasen/here_for_your_safety{
 	pixel_y = -32
 	},
 /obj/machinery/firealarm/directional/east,
@@ -1165,46 +1149,6 @@
 /obj/machinery/light/small/built/directional/north,
 /turf/open/floor/pod/dark,
 /area/ship/medical/morgue)
-"gD" = (
-/obj/structure/sign/poster/official/help_others{
-	pixel_x = -32
-	},
-/obj/effect/turf_decal/spline/fancy/opaque/black{
-	dir = 4
-	},
-/obj/structure/closet/secure_closet{
-	req_access = list(40);
-	icon_state = "cmo";
-	anchored = 1
-	},
-/obj/item/clothing/glasses/hud/health/sunglasses,
-/obj/item/megaphone/command,
-/obj/item/clothing/neck/cloak/cmo,
-/obj/item/defibrillator/compact/loaded,
-/obj/item/clothing/head/beret/cmo,
-/obj/item/clothing/suit/longcoat/cmo,
-/obj/item/clothing/suit/toggle/labcoat/cmo,
-/obj/item/radio/headset/heads/cmo,
-/obj/item/clothing/suit/bio_suit/cmo,
-/obj/item/clothing/head/bio_hood/cmo,
-/obj/item/autosurgeon/cmo,
-/obj/item/healthanalyzer/advanced,
-/obj/item/clothing/under/rank/medical/chief_medical_officer,
-/obj/item/clothing/under/rank/medical/chief_medical_officer/skirt,
-/obj/item/clothing/gloves/color/latex/nitrile,
-/obj/item/clothing/shoes/sneakers/brown{
-	pixel_x = -4;
-	pixel_y = -12
-	},
-/obj/item/reagent_containers/medigel/sterilizine,
-/obj/item/fish_feed{
-	layer = 2
-	},
-/obj/item/storage/belt/medical/nohypo,
-/obj/effect/spawner/random/medical/surgery_tool/adv,
-/obj/item/storage/box/hypospray/mkiii,
-/turf/open/floor/plasteel/dark,
-/area/ship/crew)
 "gE" = (
 /obj/effect/turf_decal/siding/white,
 /obj/effect/decal/cleanable/dirt,
@@ -1352,7 +1296,7 @@
 /turf/open/floor/engine,
 /area/ship/cargo)
 "ja" = (
-/obj/structure/sign/poster/official/cleanliness{
+/obj/structure/sign/poster/nanotrasen/cleanliness{
 	pixel_x = 32
 	},
 /obj/effect/turf_decal/siding/white{
@@ -1380,7 +1324,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "jr" = (
-/obj/structure/sign/poster/official/moth/epi,
+/obj/structure/sign/poster/nanotrasen/moth/epi,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/cargo)
 "jG" = (
@@ -1636,7 +1580,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "qX" = (
-/obj/structure/sign/poster/official/moth/piping,
+/obj/structure/sign/poster/nanotrasen/moth/piping,
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/engineering)
 "ri" = (
@@ -1704,6 +1648,39 @@
 /obj/machinery/light/small/directional/south,
 /turf/open/floor/wood,
 /area/ship/crew)
+"sX" = (
+/obj/effect/turf_decal/corner/transparent/neutral,
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 8
+	},
+/obj/machinery/light/small/directional/south,
+/obj/structure/table/wood,
+/obj/item/reagent_containers/food/drinks/soda_cans/tonic{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/vimukti{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx{
+	pixel_x = 2;
+	pixel_y = 11
+	},
+/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy{
+	pixel_x = 1;
+	pixel_y = 7
+	},
+/obj/item/reagent_containers/food/drinks/waterbottle{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/food/drinks/waterbottle{
+	pixel_x = 4;
+	pixel_y = 2
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew)
 "tn" = (
 /obj/effect/turf_decal/corner/transparent/neutral{
 	dir = 1
@@ -1768,6 +1745,46 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"tZ" = (
+/obj/structure/sign/poster/nanotrasen/help_others{
+	pixel_x = -32
+	},
+/obj/effect/turf_decal/spline/fancy/opaque/black{
+	dir = 4
+	},
+/obj/structure/closet/secure_closet{
+	req_access = list(40);
+	icon_state = "cmo";
+	anchored = 1
+	},
+/obj/item/clothing/glasses/hud/health/sunglasses,
+/obj/item/megaphone/command,
+/obj/item/clothing/neck/cloak/cmo,
+/obj/item/defibrillator/compact/loaded,
+/obj/item/clothing/head/beret/cmo,
+/obj/item/clothing/suit/longcoat/cmo,
+/obj/item/clothing/suit/toggle/labcoat/cmo,
+/obj/item/radio/headset/heads/cmo,
+/obj/item/clothing/suit/bio_suit/cmo,
+/obj/item/clothing/head/bio_hood/cmo,
+/obj/item/autosurgeon/cmo,
+/obj/item/healthanalyzer/advanced,
+/obj/item/clothing/under/rank/medical/chief_medical_officer,
+/obj/item/clothing/under/rank/medical/chief_medical_officer/skirt,
+/obj/item/clothing/shoes/sneakers/brown{
+	pixel_x = -4;
+	pixel_y = -12
+	},
+/obj/item/reagent_containers/medigel/sterilizine,
+/obj/item/fish_feed{
+	layer = 2
+	},
+/obj/item/storage/belt/medical/nohypo,
+/obj/effect/spawner/random/medical/surgery_tool/adv,
+/obj/item/storage/box/hypospray/mkiii,
+/obj/item/clothing/gloves/nitrile/inteq,
+/turf/open/floor/plasteel/dark,
+/area/ship/crew)
 "uj" = (
 /obj/machinery/light/small/built/directional/west,
 /obj/machinery/power/apc/auto_name/directional/north,
@@ -2171,6 +2188,24 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"zS" = (
+/obj/structure/table,
+/obj/item/radio/intercom/directional/west,
+/obj/structure/sign/poster/nanotrasen/safety_internals{
+	pixel_y = -32
+	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_y = 12
+	},
+/obj/item/reagent_containers/glass/beaker/cryoxadone{
+	pixel_x = 10;
+	pixel_y = 12
+	},
+/obj/item/wrench/medical{
+	pixel_x = -4
+	},
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/medical)
 "Ag" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 10
@@ -2300,39 +2335,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"CH" = (
-/obj/effect/turf_decal/corner/transparent/neutral,
-/obj/effect/turf_decal/corner/transparent/neutral{
-	dir = 8
-	},
-/obj/machinery/light/small/directional/south,
-/obj/structure/table/wood,
-/obj/item/reagent_containers/food/drinks/soda_cans/tonic{
-	pixel_x = -6;
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/food/drinks/soda_cans/vimukti{
-	pixel_x = -7;
-	pixel_y = 4
-	},
-/obj/item/reagent_containers/food/drinks/soda_cans/tadrixx{
-	pixel_x = 2;
-	pixel_y = 11
-	},
-/obj/item/reagent_containers/food/drinks/soda_cans/xeno_energy{
-	pixel_x = 1;
-	pixel_y = 7
-	},
-/obj/item/reagent_containers/food/drinks/waterbottle{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/reagent_containers/food/drinks/waterbottle{
-	pixel_x = 4;
-	pixel_y = 2
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/crew)
 "CR" = (
 /obj/structure/railing{
 	dir = 4
@@ -2520,24 +2522,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/engineering)
-"Ic" = (
-/obj/structure/table,
-/obj/item/radio/intercom/directional/west,
-/obj/structure/sign/poster/official/safety_internals{
-	pixel_y = -32
-	},
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_y = 12
-	},
-/obj/item/reagent_containers/glass/beaker/cryoxadone{
-	pixel_x = 10;
-	pixel_y = 12
-	},
-/obj/item/wrench/medical{
-	pixel_x = -4
-	},
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/medical)
 "In" = (
 /obj/machinery/power/smes/engineering{
 	charge = 1e+006
@@ -2747,7 +2731,7 @@
 	pixel_y = 11;
 	pixel_x = -5
 	},
-/obj/structure/sign/poster/official/moth/meth{
+/obj/structure/sign/poster/nanotrasen/moth/meth{
 	pixel_y = -32
 	},
 /obj/machinery/firealarm/directional/west,
@@ -3041,6 +3025,21 @@
 /obj/effect/turf_decal/steeldecal/steel_decals_central6,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical/morgue)
+"XR" = (
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/transparent/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/corner/transparent/neutral,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/trash/can{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew)
 "XY" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/door/firedoor/border_only{
@@ -3495,7 +3494,7 @@ al
 QM
 bM
 VQ
-Ic
+zS
 cF
 XD
 ss
@@ -3605,7 +3604,7 @@ tD
 RR
 Yd
 dm
-gD
+tZ
 Rx
 "}
 (20,1,1) = {"
@@ -3750,7 +3749,7 @@ be
 be
 tn
 cW
-dj
+XR
 mx
 Rx
 aa
@@ -3771,7 +3770,7 @@ ux
 be
 be
 ei
-CH
+sX
 tD
 nQ
 aa

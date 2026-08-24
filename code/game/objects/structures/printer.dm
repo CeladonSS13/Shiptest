@@ -171,14 +171,14 @@
 		if("SolGov")
 			var/obj/item/poster/random_solgov/poster = new()
 			printed_poster = WEAKREF(poster)
-		if("Nanotrasen")
-			var/obj/item/poster/random_official/poster = new()
+		if("Nanotrasen") // [CELADON-EDIT]
+			var/obj/item/poster/random_nanotrasen/poster = new() // [CELADON-EDIT]
 			printed_poster = WEAKREF(poster)
 		if("RILENA")
 			var/obj/item/poster/random_rilena/poster = new()
 			printed_poster = WEAKREF(poster)
-		if("Nanotrasen (Retro)")
-			var/obj/item/poster/random_retro/poster = new()
+		if("Nanotrasen (Retro)") // [CELADON-EDIT]
+			var/obj/item/poster/random_nanotrasen_retro/poster = new() // [CELADON-EDIT]
 			printed_poster = WEAKREF(poster)
 	update_icon()
 	busy = FALSE
