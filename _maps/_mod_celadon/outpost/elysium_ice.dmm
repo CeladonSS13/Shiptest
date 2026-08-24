@@ -2718,7 +2718,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/safety_internals{
+/obj/structure/sign/poster/nanotrasen/safety_internals{
 	pixel_y = 1;
 	pixel_x = 27
 	},
@@ -3200,7 +3200,7 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/north,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -7246,7 +7246,7 @@
 	pixel_x = -5;
 	pixel_y = 8
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -8850,7 +8850,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = 32
 	},
 /turf/open/floor/plating,
@@ -9187,7 +9187,7 @@
 "eYY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/machinery/vending/wardrobe/curator_wardrobe{
@@ -9220,7 +9220,7 @@
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plating/rust,
@@ -11723,9 +11723,9 @@
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister{
-	icon_state = "grey";
 	name = "hydrogen canister";
-	desc = "Hydrogen. Used in thruster fuel."
+	desc = "Hydrogen. Used in thruster fuel.";
+	icon_state = "hydrogen"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/outpost/cargo)
@@ -16599,7 +16599,7 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/three,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /obj/item/clothing/neck/stethoscope,
@@ -18974,8 +18974,8 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning,
-/obj/structure/sign/poster/official/work_for_a_future{
-	pixel_x = 32
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 1
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
@@ -20553,7 +20553,7 @@
 /area/outpost/engineering/atmospherics)
 "lfE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/siding/white/corner{
@@ -20816,7 +20816,7 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/vending/wardrobe/atmos_wardrobe,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech,
@@ -22870,7 +22870,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/west,
-/obj/structure/sign/poster/retro/we_watch{
+/obj/structure/sign/poster/retro/nanotrasen/we_watch{
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -23246,7 +23246,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plating/rust,
@@ -27937,7 +27937,7 @@
 	},
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -27984,6 +27984,9 @@
 "pgw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/structure/sign/poster/nanotrasen/work_for_a_future{
+	pixel_x = 32
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "pgO" = (
@@ -28022,7 +28025,7 @@
 /obj/machinery/conveyor/auto{
 	id = "outpost1"
 	},
-/obj/structure/sign/poster/official/moth/smokey{
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
 	pixel_x = 27
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
@@ -29713,7 +29716,7 @@
 	dir = 4;
 	id = "smelter1"
 	},
-/obj/structure/sign/poster/official/miners{
+/obj/structure/sign/poster/nanotrasen/miners{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
@@ -30016,7 +30019,7 @@
 	anchored = 1
 	},
 /obj/item/radio/intercom/directional/south,
-/obj/structure/sign/poster/retro/we_watch{
+/obj/structure/sign/poster/retro/nanotrasen/we_watch{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech,
@@ -30781,7 +30784,7 @@
 "qGu" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/structure/closet/crate/freezer/surplus_limbs,
-/obj/structure/sign/poster/official/cleanliness{
+/obj/structure/sign/poster/nanotrasen/cleanliness{
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/techfloor{
@@ -33558,7 +33561,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -33920,7 +33923,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/tech,
@@ -34393,7 +34396,7 @@
 /obj/item/flashlight/lamp/green{
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -35352,6 +35355,9 @@
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
+	},
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 1
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
@@ -38188,7 +38194,7 @@
 /turf/open/floor/carpet/stellar,
 /area/outpost/crew/bar)
 "uLn" = (
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/machinery/vending/wardrobe/chap_wardrobe,
@@ -43224,7 +43230,7 @@
 	},
 /area/outpost/crew/dop_zone_2)
 "xyz" = (
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/closed/indestructible/reinforced,
