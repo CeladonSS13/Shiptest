@@ -19,9 +19,9 @@
 
 // NANOTRASEN-SHARPLITE
 
-/obj/item/gun/energy/e_gun/e_old
-	name = "SL X-10 'Patriot' Energy Carbine"
-	desc = "A lightweight, comfortable to carry around energy gun. The 'Patriot' serves as Nanotrasen-Sharplites's primary security grade carbine, while also being an extremely modular weapon platform."
+/obj/item/gun/energy/e_gun/nanotrasen
+	name = "nanotrasen-sharplite gun"
+	desc = "This is a gun, and i want it to be very clear. This is a gun that you use only when you want to shoot a bad person."
 	icon_state = "patriot"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
@@ -37,21 +37,35 @@
 	valid_attachments = SHARPLITE_ATTACHMENTS
 	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
-/obj/item/gun/energy/e_gun/e_old/empty_cell
+/obj/item/gun/energy/e_gun/nanotrasen/patriot
+	name = "SL X-10 'Patriot' Energy Carbine"
+	desc = "A lightweight, comfortable to carry around energy gun. The 'Patriot' serves as Nanotrasen-Sharplites's primary security grade carbine, while also being an extremely modular weapon platform."
+	icon_state = "patriot"
+	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen, /obj/item/ammo_casing/energy/disabler/nanotrasen)
+	charge_sections = 3
+	shaded_charge = TRUE
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER
+
+
+/obj/item/gun/energy/e_gun/nanotrasen/patriot/empty_cell
 	spawn_no_ammo = TRUE
 
-/obj/item/gun/energy/e_gun/e_old/laser
+/obj/item/gun/energy/e_gun/nanotrasen/fuse
 	name = "SL L-204 'Fuse' Laser Carbine"
 	desc = "A basic energy-based laser carbine and somewhat of a predecessor to the X-10. Famed for its low price and reliability."
 	icon_state = "fuse"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/less)
+	charge_sections = 3
+	shaded_charge = TRUE
 	w_class = WEIGHT_CLASS_BULKY
 
-/obj/item/gun/energy/e_gun/e_old/mini
+/obj/item/gun/energy/e_gun/nanotrasen/ember
 	name = "SL X-26 'Ember' Miniature Energy Pistol"
 	desc = "A lightweight, civilian marketed Sharplite pistol, popular among Vigilitas security personnel as a reliable dual-mode sidearm. Built-in flashlight included."
 	icon_state = "ember"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/mini, /obj/item/ammo_casing/energy/disabler/nanotrasen/mini)
+	charge_sections = 3
+	shaded_charge = TRUE
 	w_class = WEIGHT_CLASS_SMALL
 	default_ammo_type = /obj/item/stock_parts/cell/gun/mini
 	allowed_ammo_types = list(
@@ -76,18 +90,18 @@
 	)
 	default_attachments = list(/obj/item/attachment/rail_light/mini)
 
-/obj/item/gun/energy/e_gun/e_old/mini/empty_cell
+/obj/item/gun/energy/e_gun/nanotrasen/ember/empty_cell
 	spawn_no_ammo = TRUE
 
-/obj/item/gun/energy/e_gun/e_old/hades
-	name = "SL AL-655 'Hades' Assault Energy Rifle"
+/obj/item/gun/energy/e_gun/nanotrasen/hades
+	name = "SL AL-655 'Hades' Energy Assault Rifle"
 	desc = "A powerful, overcomplicated energy rifle built on a very expensive frame. While bulky and uncomfortable to manage, the amount of suppresive fire it can provide is matched only by heavy ballistic assault rifles."
 	icon_state = "hades"
 	ammo_x_offset = 2
-	charge_sections = 5
 
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/assault/nanotrasen, /obj/item/ammo_casing/energy/disabler/assault/nanotrasen)
 
+	shaded_charge = TRUE
 	weapon_weight = WEAPON_MEDIUM
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
@@ -101,7 +115,7 @@
 	wield_slowdown = HEAVY_LASER_RIFLE_SLOWDOWN
 	spread_unwielded = 20
 
-/obj/item/gun/energy/e_gun/e_old/old
+/obj/item/gun/energy/e_gun/nanotrasen/old
 	name = "prototype energy gun"
 	desc = "NT-P:01 Prototype Energy Gun. Early stage development of a unique laser rifle that has a multifaceted energy lens, allowing the gun to alter the form of projectile it fires on command. The project was a dud, and nanotrasen later acquired Sharplite to suit its laser weapon needs."
 	icon_state = "protolaser"
@@ -109,7 +123,7 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/laser, /obj/item/ammo_casing/energy/electrode/old)
 	manufacturer = MANUFACTURER_NANOTRASEN_OLD
 
-/obj/item/gun/energy/e_gun/e_old/hos
+/obj/item/gun/energy/e_gun/nanotrasen/hos
 	name = "\improper SL X-01 MultiPhase Energy Gun"
 	desc = "An expensive, high-capacity, high-power energy pistol built on the X-00 chasis. Modified to have a wide array of energy settings, including a burst firemode. Favored by Vigilitas Security Directors."
 	icon_state = "hoslaser"
@@ -126,21 +140,21 @@
 	burst_size = 2
 	burst_delay = 0.10 SECONDS
 
-/obj/item/gun/energy/e_gun/e_old/hos/brazil
+/obj/item/gun/energy/e_gun/nanotrasen/hos/brazil
 	name = "modified antique laser gun"
 	desc = "It's somehow modified to have more firemodes."
 	icon_state = "capgun_brazil_hos"
 	item_state = "hoslaserkill0"
 	manufacturer = MANUFACTURER_SHARPLITE
 
-/obj/item/gun/energy/e_gun/e_old/hos/brazil/true
+/obj/item/gun/energy/e_gun/nanotrasen/hos/brazil/true
 	desc = "This genuine antique laser gun, modified with an experimental suite of alternative firing modes based on the X-01 MultiPhase Energy Gun, is now truly one of the finest weapons in the frontier."
 	icon_state = "capgun_hos"
 	item_state = "hoslaserkill0"
 	selfcharge = 1
 	manufacturer = MANUFACTURER_SHARPLITE
 
-/obj/item/gun/energy/e_gun/e_old/dragnet
+/obj/item/gun/energy/e_gun/nanotrasen/dragnet
 	name = "\improper DRAGnet"
 	desc = "The \"Dynamic Rapid-Apprehension of the Guilty\" net is a revolution in law enforcement technology."
 	icon_state = "dragnet"
@@ -150,12 +164,12 @@
 	ammo_type = list(/obj/item/ammo_casing/energy/net, /obj/item/ammo_casing/energy/trap)
 	ammo_x_offset = 1
 
-/obj/item/gun/energy/e_gun/e_old/dragnet/snare
+/obj/item/gun/energy/e_gun/nanotrasen/dragnet/snare
 	name = "Energy Snare Launcher"
 	desc = "Fires an energy snare that slows the target down."
 	ammo_type = list(/obj/item/ammo_casing/energy/trap)
 
-/obj/item/gun/energy/e_gun/e_old/nuclear
+/obj/item/gun/energy/e_gun/nuclear
 	name = "advanced energy gun"
 	desc = "An energy gun with an experimental miniaturized nuclear reactor that automatically charges the internal power cell."
 	icon_state = "nucgun"
@@ -175,17 +189,16 @@
 	var/fail_chance = 0
 	manufacturer = NONE
 
-/obj/item/gun/energy/e_gun/e_old/nuclear/process(seconds_per_tick)
+/obj/item/gun/energy/e_gun/nuclear/process(seconds_per_tick)
 	if(fail_tick > 0)
 		fail_tick -= seconds_per_tick * 0.5
 	..()
-
-/obj/item/gun/energy/e_gun/e_old/nuclear/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
+/obj/item/gun/energy/e_gun/nuclear/shoot_live_shot(mob/living/user, pointblank = 0, atom/pbtarget = null, message = 1)
 	failcheck()
 	update_appearance()
 	..()
 
-/obj/item/gun/energy/e_gun/e_old/nuclear/proc/failcheck()
+/obj/item/gun/energy/e_gun/nuclear/proc/failcheck()
 	if(prob(fail_chance) && isliving(loc))
 		var/mob/living/M = loc
 		switch(fail_tick)
@@ -199,13 +212,13 @@
 				reactor_overloaded = TRUE
 				to_chat(M, span_userdanger("Your [name]'s reactor overloads!"))
 
-/obj/item/gun/energy/e_gun/e_old/nuclear/emp_act(severity)
+/obj/item/gun/energy/e_gun/nuclear/emp_act(severity)
 	. = ..()
 	if(. & EMP_PROTECT_SELF)
 		return
 	fail_chance = min(fail_chance + round(15/severity), 100)
 
-/obj/item/gun/energy/e_gun/e_old/nuclear/update_overlays()
+/obj/item/gun/energy/e_gun/nuclear/update_overlays()
 	. = ..()
 	if(reactor_overloaded)
 		. += "[icon_state]_fail_3"
@@ -218,7 +231,7 @@
 		if(151 to INFINITY)
 			. += "[icon_state]_fail_2"
 
-/obj/item/gun/energy/e_gun/e_old/adv_stopping
+/obj/item/gun/energy/e_gun/nanotrasen/maru
 	name = "SL X-14 'Maru' Advanced Stopping Revolver"
 	desc = "An advanced, heavy energy pistol that has the ability to shoot futurustic safari nets. The revolver look is mostly used for marketing."
 	icon_state = "maru"
@@ -229,12 +242,10 @@
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
-//Base ESMG
-
-/obj/item/gun/energy/e_gun/e_old/smg
+/obj/item/gun/energy/e_gun/nanotrasen/discharger
 	name = "\improper SL X-36 'Discharger' Energy SMG"
 	desc = "An incredibly compact dual-mode energy SMG, designed for low-power fire support in the field. Although issued in limited numbers within Nanotrasen, it can still sometimes be seen in the hands of wealthy explorers and persistent security officers."
-	icon_state = "esmg"
+	icon_state = "discharger"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/smg, /obj/item/ammo_casing/energy/disabler/smg)
 	ammo_x_offset = 2
 	charge_sections = 3
@@ -242,21 +253,20 @@
 
 	fire_delay = 0.13 SECONDS
 	wield_slowdown = LASER_SMG_SLOWDOWN
+	shaded_charge = TRUE
 
 	gun_firemodes = list(FIREMODE_SEMIAUTO, FIREMODE_FULLAUTO)
 	default_firemode = FIREMODE_SEMIAUTO
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
-//Eshotgun
-
-/obj/item/gun/energy/e_gun/e_old/iot
+/obj/item/gun/energy/e_gun/nanotrasen/chirasu
 	name = "\improper SL X-49 'Chirasu' Energy Shotgun"
 	desc = "A cumbersome, variable energy weapon with a multifaceted lens allowing it to function similarly to a ballistic shotgun. Frequently used for breaching or providing supressive fire, it is the gold standart for heavier Vigilitas troopers"
 	icon_state = "chirasu"
 	fire_delay = 0.6 SECONDS
 	shaded_charge = TRUE
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen, /obj/item/ammo_casing/energy/disabler/scatter/shotgun/nanotrasen)
-	charge_sections = 5
+	charge_sections = 3
 	ammo_x_offset = 2
 	automatic_charge_overlays = TRUE
 	randomspread = FALSE
@@ -265,14 +275,13 @@
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
 
-//EMarksman
-
-/obj/item/gun/energy/e_gun/e_old/dmr
+/obj/item/gun/energy/e_gun/nanotrasen/parallax
 	name = "SL L-211 'Parallax' Energy Marksman Rifle"
 	desc = "An extensive modification on the X-10 frame, featuring stronger armor-piercing bolts and a decent scope. Rarely seen as a primary weapon among Vigilitas personnel due to its price and bulkiness, however it can still provide a good amount of battlefield control in the right hands."
 	icon_state = "parallax"
 	ammo_type = list(/obj/item/ammo_casing/energy/laser/nanotrasen/dmr)
 	ammo_x_offset = 1
+	charge_sections = 3
 	shaded_charge = TRUE
 	manufacturer = MANUFACTURER_NANOTRASEN_LASER
 
@@ -304,7 +313,7 @@
 
 //empty guns
 
-/obj/item/gun/energy/e_gun/e_old/hades/empty_cell
+/obj/item/gun/energy/e_gun/nanotrasen/hades/empty_cell
 	spawn_no_ammo = TRUE
 
 /obj/item/gun/energy/ionrifle/carbine/empty_cell

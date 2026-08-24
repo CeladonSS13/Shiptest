@@ -59,7 +59,7 @@
 	rapid_fire_delay = 7
 	casingtype = null
 	projectiletype = /obj/projectile/beam/laser/nanotrasen
-	r_hand = /obj/item/gun/energy/e_gun/e_old/laser
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/patriot
 	projectilesound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/laser/space
@@ -95,7 +95,7 @@
 	rapid_fire_delay = 2
 	casingtype = null
 	projectiletype = /obj/projectile/beam/laser/nanotrasen/weak
-	r_hand = /obj/item/gun/energy/e_gun/e_old/smg
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/discharger
 	projectilesound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/shotgun
@@ -104,7 +104,7 @@
 	icon_state = "nanotrasenrangedsmg"
 	icon_living = "nanotrasenrangedsmg"
 	casingtype = /obj/item/ammo_casing/energy/laser/shotgun/nanotrasen
-	r_hand = /obj/item/gun/energy/e_gun/e_old/iot
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/chirasu
 	rapid = 2
 	rapid_fire_delay = 5
 	retreat_distance = 0
@@ -146,7 +146,7 @@
 	rapid_fire_delay = 4
 	casingtype = null
 	projectiletype = /obj/projectile/beam/laser/nanotrasen/assault
-	r_hand = /obj/item/gun/energy/e_gun/e_old/hades
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/hades
 	projectilesound = 'sound/weapons/gun/laser/e40_las.ogg'
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/rifle/space
@@ -182,7 +182,7 @@
 	faction = list(ROLE_DEATHSQUAD)
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/vigilitas_elite
 	armor_base = /obj/item/clothing/suit/space/hardsuit/ert/sec
-	r_hand = /obj/item/gun/energy/e_gun/e_old/hades
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/hades
 
 /mob/living/simple_animal/hostile/human/nanotrasen/elite/shotgun
 	name = "Vigilitas Response Team"
@@ -198,13 +198,13 @@
 	casingtype = /obj/item/ammo_casing/energy/laser/shotgun/sharplite
 	projectiletype = null
 	projectilesound = 'sound/weapons/gun/laser/sharplite-fire_light.ogg'
-	r_hand = /obj/item/gun/energy/e_gun/e_old/iot
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/chirasu
 
 /mob/living/simple_animal/hostile/human/nanotrasen/ranged/trooper/sniper
 	name = "Vigilitas Ranger"
 	desc = "A watchful member of Vigilitas Interstellar. They proudly wield a Parallax energy rifle, always on guard."
 	projectiletype = /obj/projectile/beam/laser/nanotrasen/dmr
-	r_hand = /obj/item/gun/energy/e_gun/e_old/dmr
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/parallax
 	casingtype = null
 	minimum_distance = 7
 	vision_range = 12
@@ -224,7 +224,7 @@
 /mob/living/simple_animal/hostile/human/nanotrasen/elite/sniper
 	desc = "A hardened member of Vigilitas Interstellar, clad in well made alloys slathered in red. Their helmet turns, their marksman rifle raises, and they start to take aim at you."
 	projectiletype = /obj/projectile/beam/laser/nanotrasen/dmr
-	r_hand = /obj/item/gun/energy/e_gun/e_old/dmr
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/parallax
 	minimum_distance = 7
 	vision_range = 12
 	aggro_vision_range = 14

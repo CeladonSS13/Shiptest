@@ -77,6 +77,10 @@ MARK: InteQ guncases
 	gun_type = /obj/item/gun/ballistic/automatic/assault/skm/inteq
 	mag_type = /obj/item/ammo_box/magazine/skm_762_40
 
+/obj/item/storage/guncase/g36/inteq
+	gun_type = /obj/item/gun/ballistic/automatic/assault/g36/inteq
+	mag_type = /obj/item/ammo_box/magazine/g36
+
 /*
 MARK: Syndicate guncases
 */
@@ -108,22 +112,15 @@ MARK: Syndicate guncases
 MARK: Nanotrasen guncases
 */
 
-/obj/item/storage/guncase/egun
-	gun_type = /obj/item/gun/energy/e_gun
-	mag_type = /obj/item/stock_parts/cell/gun
+/* Sharplite */
 
 /obj/item/storage/guncase/iot
-	gun_type = /obj/item/gun/energy/e_gun/e_old/iot
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/chirasu
 	mag_type = /obj/item/stock_parts/cell/gun
-
 
 /obj/item/storage/guncase/ion_carbine
 	gun_type = /obj/item/gun/energy/ionrifle/carbine
 	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/sabersmg
-	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
-	mag_type = /obj/item/ammo_box/magazine/m9mm_expedition
 
 /obj/item/storage/guncase/cryogelida
 	gun_type = /obj/item/gun/energy/e_gun/plasmapistol_cryo
@@ -133,12 +130,6 @@ MARK: Nanotrasen guncases
 	gun_type = /obj/item/gun/energy/e_gun/plasmapistol_fire
 	mag_type = /obj/item/stock_parts/cell/gun
 
-/obj/item/storage/guncase/g36/inteq
-	gun_type = /obj/item/gun/ballistic/automatic/assault/g36/inteq
-	mag_type = /obj/item/ammo_box/magazine/g36
-
-
-
 /obj/item/storage/guncase/disabler
 	gun_type = /obj/item/gun/energy/disabler
 	mag_type = /obj/item/stock_parts/cell/gun
@@ -147,8 +138,30 @@ MARK: Nanotrasen guncases
 	gun_type = /obj/item/gun/energy/e_gun/advtaser
 	mag_type = /obj/item/stock_parts/cell/gun
 
+/obj/item/storage/guncase/pistol/miniegun_old
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/ember
+	mag_type = /obj/item/stock_parts/cell/gun/mini
 
-// MARK: RETURN OLD
+/obj/item/storage/guncase/energy/laser_old
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/fuse
+	mag_type = /obj/item/stock_parts/cell/gun
+
+/obj/item/storage/guncase/energy/egun_old
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/patriot
+	mag_type = /obj/item/stock_parts/cell/gun
+
+/obj/item/storage/guncase/energy/etar_old
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/discharger
+	mag_type = /obj/item/stock_parts/cell/gun
+
+/obj/item/storage/guncase/hades_old
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/hades
+	mag_type = /obj/item/stock_parts/cell/gun
+
+/obj/item/storage/guncase/energy/parallax
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/parallax
+	mag_type = /obj/item/stock_parts/cell/gun
+
 /* VI */
 
 /obj/item/storage/guncase/vector_old
@@ -158,33 +171,6 @@ MARK: Nanotrasen guncases
 /obj/item/storage/guncase/cycler_old
 	gun_type = /obj/item/gun/ballistic/shotgun/automatic/negotiator/old
 
-/* Sharplite */
-
-/obj/item/storage/guncase/pistol/miniegun_old
-	gun_type = /obj/item/gun/energy/e_gun/e_old/mini
-	mag_type = /obj/item/stock_parts/cell/gun/mini
-
-/obj/item/storage/guncase/energy/laser_old
-	gun_type = /obj/item/gun/energy/e_gun/e_old/laser
-	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/energy/egun_old
-	gun_type = /obj/item/gun/energy/e_gun/e_old
-	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/energy/etar_old
-	gun_type = /obj/item/gun/energy/e_gun/e_old/smg
-	mag_type = /obj/item/stock_parts/cell/gun
-
-/obj/item/storage/guncase/hades_old
-	gun_type = /obj/item/gun/energy/e_gun/e_old/hades
-	mag_type = /obj/item/stock_parts/cell/gun
-
-
-/obj/item/storage/guncase/energy/parallax
-	gun_type = /obj/item/gun/energy/e_gun/e_old/dmr
-	mag_type = /obj/item/stock_parts/cell/gun
-
 /* Old NT */
 
 /obj/item/storage/guncase/wt550_old
@@ -192,5 +178,9 @@ MARK: Nanotrasen guncases
 	mag_type = /obj/item/ammo_box/magazine/wt550m9
 
 /obj/item/storage/guncase/saber_old
+	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
+	mag_type = /obj/item/ammo_box/magazine/m9mm_expedition
+
+/obj/item/storage/guncase/sabersmg
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine/saber
 	mag_type = /obj/item/ammo_box/magazine/m9mm_expedition

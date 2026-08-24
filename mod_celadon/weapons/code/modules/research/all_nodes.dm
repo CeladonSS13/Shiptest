@@ -25,7 +25,7 @@
 	id = "nuclear_gun"
 	build_type = PROTOLATHE
 	materials = list(/datum/material/iron = 10000, /datum/material/glass = 2000, /datum/material/uranium = 3000, /datum/material/titanium = 1000)
-	build_path = /obj/item/gun/energy/e_gun/e_old/nuclear
+	build_path = /obj/item/gun/energy/e_gun/nuclear
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
 

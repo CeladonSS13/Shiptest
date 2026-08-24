@@ -163,13 +163,13 @@
 		)
 
 	voucher_items = list(
-		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,
-		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
-		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)
+		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/nanotrasen/hades,
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/nanotrasen/patriot,
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/nanotrasen/discharger,
+		"E-SG 500" = /obj/item/gun/energy/e_gun/nanotrasen/chirasu,)
 
 /obj/machinery/vending/security
 	voucher_items = list(
-		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
-		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)
+		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/nanotrasen/patriot,
+		"E-TAR SMG" = /obj/item/gun/energy/e_gun/nanotrasen/discharger,
+		"E-SG 500" = /obj/item/gun/energy/e_gun/nanotrasen/chirasu,)
