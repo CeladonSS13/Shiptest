@@ -31,7 +31,7 @@
 /datum/faction/nanotrasen
 	name = FACTION_NANOTRASEN
 	prefixes = list("NTSV", "NTBSV", "NTASV", "NTSSV", "NTTSV", "NTMSV", "NTLSV", "NTDSV", "NTSPSV", "NTESV", "NTRSV")
-	color = "#32426b"
+	color = "#283674"
 
 /datum/faction/inteq
 	prefixes = list("IRMV", "IQMSSV", "BIQSV", "LIQSV", "SPIQSV")
@@ -39,7 +39,7 @@
 
 /datum/faction/solgov
 	prefixes = list("SFSV", "BSFSV", "ASFSV", "SSFSV", "MDSFSV", "LSFSV", "MSFSV", "SPSFSV")
-	color = "#FFD700"
+	color = "#085a9d"
 
 /datum/faction/syndicate
 	prefixes = list("SEV", "SSV", "SMMV", "PCAC", "SSASV", "SSSV", "SOSSV", "TSSV", "SABSV", "BSSV", "ASSV", "MSSV", "LSSV", "DSSV", "RSSV",)
