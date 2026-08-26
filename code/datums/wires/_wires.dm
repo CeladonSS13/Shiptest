@@ -256,7 +256,7 @@
 	else if(user.is_holding_item_of_type(/obj/item/multitool/abductor) || user.is_holding_item_of_type(/obj/item/debug/omnitool)) // [CELADON-EDIT] - OLD CODE: else if(user.is_holding_item_of_type(/obj/item/multitool/abductor))
 		reveal_wires = TRUE
 
-	// [CELADON-ADD] 
+	// [CELADON-ADD]
 	// Same for anyone with engineering scanner goggles and multitool/wirecutter/Jaws of live in hands
 	else if(ishuman(user))
 		var/mob/living/carbon/human/H = user
@@ -270,9 +270,10 @@
 				has_valid_tool = TRUE
 
 		if(has_valid_tool && H.glasses)
-			var/obj/item/clothing/glasses/G = H.glasses
-			if(G.vars["mode"] && G.vars["mode"] == "t-ray")
-				reveal_wires = TRUE
+			if(istype(H.glasses, /obj/item/clothing/glasses/meson/engine))
+				var/obj/item/clothing/glasses/meson/engine/G = H.glasses
+				if(G.mode == "t-ray")
+					reveal_wires = TRUE
 	// [/CELADON-ADD]
 
 	// Station blueprints do that too, but only if the wires are not randomized.
