@@ -119,6 +119,28 @@
 			if(template.category == "Pirates" && world.time < 72000) // 72000 децисекунд => 2 часа.
 				to_chat(spawnee, span_warning("Отказано. Фракция пиратов открывается только после 2-ух часов игрового раунда."))
 				return
+			if(template.category == "Independent")
+				var/choice = tgui_alert(usr, "Перед вами встаёт выбор вашей дальнейшей судьбы. Выберите стиль игры, чтобы узнать подробности", "Стиль игры", list("Мир", "Нейтралитет", "Пиратство"))
+				switch(choice)
+					if("Мир")
+						if(tgui_alert(usr, "Выбирая мир вы отрекаетесь от военных действий и не имеете права заниматься мародёрством, но можете оказывать мед. помощь после завершения конфликта. (Рекомендуется новичкам)", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							template.prefix = "PISV"
+						else
+							return
+					if("Нейтралитет")
+						if(tgui_alert(usr, "Выбирая нейтралитет вы кто блять? кто ты такой? Тебе это не нужно", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							template.prefix = "ISV"
+						else
+							return
+					if("Пиратство")
+						if(tgui_alert(usr, "Выбирая пиратство вы берете на себя риск быть арестованным и казненным. Вас будут ненавидеть все. Вы уверены?", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							if(world.time > 72000)
+								template.prefix = "RSV"
+								template.space_spawn = TRUE
+							else
+								return
+						else
+							return
 			if(SSovermap.ship_spawning)
 				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
 				return
