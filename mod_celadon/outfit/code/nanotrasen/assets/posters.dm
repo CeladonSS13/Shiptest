@@ -216,11 +216,7 @@
 /obj/structure/sign/poster/radio/ntra
 	name = "NTRA"
 	desc = "A Nanotrasen Radio poster. Despite all that's happened, communication is still NT's game, and the airwaves are just another Frontier to establish market dominance in."
-	icon_state = "poster-radio_NTRA"
-
-/obj/structure/sign/poster/radio/ntra
-	name = "NTRA"
-	desc = "A Nanotrasen Radio poster. Despite all that's happened, communication is still NT's game, and the airwaves are just another Frontier to establish market dominance in."
+	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
 	icon_state = "poster-radio_NTRA"
 
 //contraband related posters
@@ -280,7 +276,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
 
 /obj/structure/sign/poster/retro/nanotrasen/random
-	name = "random retro poster"
+	name = "random retro nanotrasen poster"
 	icon_state = "random_retro"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/retro/nanotrasen
