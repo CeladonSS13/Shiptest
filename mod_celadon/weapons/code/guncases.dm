@@ -81,6 +81,14 @@ MARK: InteQ guncases
 	gun_type = /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	mag_type = /obj/item/ammo_box/magazine/g36
 
+/obj/item/storage/guncase/energy/vuelo
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/discharger/inteq
+	mag_type = /obj/item/stock_parts/cell/gun
+
+/obj/item/storage/guncase/energy/quemar
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/chirasu/inteq
+	mag_type = /obj/item/stock_parts/cell/gun
+
 /*
 MARK: Syndicate guncases
 */
@@ -138,8 +146,12 @@ MARK: Nanotrasen guncases
 	gun_type = /obj/item/gun/energy/e_gun/advtaser
 	mag_type = /obj/item/stock_parts/cell/gun
 
-/obj/item/storage/guncase/pistol/miniegun_old
+/obj/item/storage/guncase/energy/ember
 	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/ember
+	mag_type = /obj/item/stock_parts/cell/gun/mini
+
+/obj/item/storage/guncase/energy/adv_revolver
+	gun_type = /obj/item/gun/energy/e_gun/nanotrasen/maru
 	mag_type = /obj/item/stock_parts/cell/gun/mini
 
 /obj/item/storage/guncase/energy/laser_old

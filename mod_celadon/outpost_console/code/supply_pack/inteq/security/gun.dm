@@ -203,6 +203,20 @@ bullet
 /* MARK: Energy
 */
 
+/datum/supply_pack/faction/inteq/gun/energy/vuelo
+	name = "VEC-04 'Vuelo' Energy SMG"
+	desc = "Contains one refitted SL X-36 SMG, for IRMG use. Uses energy cells."
+	cost = 2500
+	contains = list(/obj/item/storage/guncase/energy/vuelo)
+	crate_name = "energy SMG crate"
+
+/datum/supply_pack/faction/inteq/gun/energy/vuelo
+	name = "VEC-07 'Quemar' Energy Shotgun"
+	desc = "Contains one refitted SL X-49 Shotgun, for IRMG use. Uses energy cells."
+	cost = 4000
+	contains = list(/obj/item/storage/guncase/energy/quemar)
+	crate_name = "energy shotgun crate"
+
 /* // Отключено до реворка плазмы
 // Plasma ETAR - Inteq
 /datum/supply_pack/faction/inteq/gun/energy/cadejo

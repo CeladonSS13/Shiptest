@@ -528,15 +528,18 @@
 /area/outpost/cargo/faction)
 "by" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/nanotrasen{
-	pixel_x = -3;
-	pixel_y = 3
-	},
-/obj/item/gun/energy/e_gun/nanotrasen,
 /obj/effect/turf_decal/industrial/warning{
 	dir = 10
 	},
 /obj/machinery/light/directional/north,
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
+	pixel_x = 0;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel,
 /area/centcom/control)
 "bz" = (
@@ -705,7 +708,7 @@
 /area/centcom/control)
 "bY" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/e_gun/nanotrasen,
+/obj/item/gun/energy/e_gun/nanotrasen/maru,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "bZ" = (
@@ -6122,7 +6125,7 @@
 /area/centcom/control)
 "rN" = (
 /obj/structure/table/reinforced/plastitaniumglass,
-/obj/item/gun/energy/e_gun/e11,
+/obj/item/gun/energy/e_gun/nanotrasen/discharger,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
 "rO" = (
@@ -8504,6 +8507,11 @@
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/centcom/control)
+"yD" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "yE" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/ballistic/shotgun/automatic/bulldog/inteq,
@@ -9378,6 +9386,11 @@
 /obj/machinery/light/floor,
 /turf/open/floor/wood/walnut,
 /area/centcom)
+"Bf" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/discharger/inteq,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "Bg" = (
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 4
@@ -10260,6 +10273,11 @@
 "DK" = (
 /turf/closed/wall/rust,
 /area/outpost/exterior)
+"DM" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/hos,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "DN" = (
 /obj/structure/chair/office{
 	dir = 8
@@ -11918,6 +11936,11 @@
 /obj/structure/frame,
 /turf/open/floor/mineral/plastitanium,
 /area/outpost/exterior)
+"IE" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/chirasu/inteq,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "IF" = (
 /turf/open/floor/plasteel,
 /area/centcom/ferry)
@@ -14198,6 +14221,11 @@
 /obj/item/gun/ballistic/automatic/pistol/solgov/old,
 /turf/open/floor/plasteel/dark_2,
 /area/centcom/ferry)
+"OR" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/parallax,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "OS" = (
 /obj/structure/table/reinforced/plastitaniumglass,
 /obj/item/gun/energy/laser/hitscanpistol,
@@ -14611,6 +14639,11 @@
 	},
 /turf/open/floor/plasteel,
 /area/tdome/arena)
+"PY" = (
+/obj/structure/table/reinforced/plastitaniumglass,
+/obj/item/gun/energy/e_gun/nanotrasen/patriot,
+/turf/open/floor/plasteel/dark_2,
+/area/centcom/ferry)
 "PZ" = (
 /obj/machinery/light/directional/north,
 /obj/effect/turf_decal/industrial/warning/corner{
@@ -46558,8 +46591,8 @@ QB
 lA
 ja
 Vu
-bY
-AW
+dT
+SQ
 VJ
 dY
 GQ
@@ -46748,16 +46781,16 @@ dH
 me
 Pz
 QB
-AW
-AW
+PY
+Sj
 Eg
 rN
+yD
 bY
-bY
-Ok
-dT
-SQ
-Ug
+OR
+IE
+Bf
+DM
 Gc
 gC
 BW
@@ -47328,12 +47361,12 @@ hb
 Pz
 QB
 AW
-Sj
 AW
-bY
 AW
+AW
+AW
+Ok
 jn
-bY
 aV
 ck
 OS
@@ -47530,7 +47563,7 @@ KV
 eb
 uw
 AW
-AW
+Ug
 dt
 bP
 DD

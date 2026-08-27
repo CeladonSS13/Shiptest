@@ -171,7 +171,7 @@
 	damage = 18
 	armour_penetration = -10
 
-// /obj/item/gun/energy/e_gun/e_old/hos
+// /obj/item/gun/energy/e_gun/nanotrasen/hos
 
 /obj/projectile/beam/laser/nanotrasen/hos
 	damage = 20
@@ -180,25 +180,15 @@
 	damage = 15
 	armour_penetration = -15
 
-// /obj/item/gun/energy/e_gun/e_old/dmr
+// /obj/item/gun/energy/e_gun/nanotrasen/parallax
 
 /obj/projectile/beam/laser/nanotrasen/dmr
 	icon_state = "sl_laser_hellfire"
 	damage = 35
 	armour_penetration = 30
+	speed = 0.2
 
-// /obj/item/gun/energy/e_gun/e_old/smg/sunbeam
-
-/obj/projectile/beam/laser/nanotrasen/weak/ap //more armorpen, less damage
-	damage = 12
-	armour_penetration = 10
-
-/obj/projectile/beam/disabler/nanotrasen/weak/ap
-	damage = 15
-	armour_penetration = 20
-
-// /obj/item/gun/energy/e_gun/e_old/hades
-// /obj/item/gun/energy/e_gun/e_old/emg
+// /obj/item/gun/energy/e_gun/nanotrasen/hades
 
 /obj/projectile/beam/laser/nanotrasen/assault
 	icon_state = "sl_laser_heavy"
@@ -211,7 +201,7 @@
 	damage = 25
 	armour_penetration = 20
 
-// /obj/item/gun/energy/e_gun/e_old/hos
+// /obj/item/gun/energy/e_gun/nanotrasen/hos
 
 /obj/projectile/energy/electrode/nanotrasen
 	damage = 80 //по сути даже за берст ты навешаешь лишь слоудаун человеку в броне
@@ -229,8 +219,7 @@
 	damage = 40
 	speed = 0.4
 
-// /obj/item/gun/energy/e_gun/e_old/iot
-// /obj/item/gun/energy/e_gun/e_old/iot/blaze
+// /obj/item/gun/energy/e_gun/nanotrasen/chirasu
 
 /obj/projectile/beam/disabler/nanotrasen/shotgun
 	icon_state = "sl_disabler_light"
@@ -264,7 +253,7 @@
 	if(damage_cap < damage)
 		damage = damage_cap
 
-// /obj/item/gun/energy/e_gun/e_old/mini
+// /obj/item/gun/energy/e_gun/nanotrasen/ember
 
 /obj/projectile/beam/laser/nanotrasen/weak/mini
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/projectiles.dmi'

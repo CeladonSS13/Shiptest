@@ -80,13 +80,13 @@
 	include_subtypes = FALSE
 
 /datum/export/weapon/etar
-	unit_name = "SL X-36 E-TAR SMG"
+	unit_name = "SL X-36 'Discharger' Energy SMG"
 	desc = "compact energy-based PDW platform, ideal for suppressing threats at mid-range. For NT employee use only."
 	export_types = list(/obj/item/gun/energy/e_gun/nanotrasen/discharger)
 	cost = 200
 
 /datum/export/weapon/ultima
-	unit_name = "SL E-SG 500 Second Edition"
+	unit_name = "SL X-49 'Chirasu' Energy Shotgun"
 	desc = "Contains an energy-based shotgun equipped with dual kill/disable modes, ideal for short range. For NT employee use only."
 	export_types = list(/obj/item/gun/energy/e_gun/nanotrasen/chirasu)
 	cost = 300
@@ -274,7 +274,7 @@
 /datum/export/weapon/laser
 	unit_name = "SL L-204 Laser Gun"
 	desc = "NT-SL mass-produced lethal, high-energy laser gun."
-	export_types = list(/obj/item/gun/energy/sharplite/surge/resistor)
+	export_types = list(/obj/item/gun/energy/e_gun/nanotrasen/fuse)
 	cost = 100
 
 /datum/export/weapon/scatterlaser
