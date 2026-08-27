@@ -45,6 +45,12 @@
 	charge_sections = 3
 	shaded_charge = TRUE
 
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 33,
+			"y" = 17,
+		)
+	)
 
 /obj/item/gun/energy/e_gun/nanotrasen/patriot/empty_cell
 	spawn_no_ammo = TRUE
@@ -105,6 +111,13 @@
 	wield_delay = 0.7 SECONDS
 	wield_slowdown = HEAVY_LASER_RIFLE_SLOWDOWN
 	spread_unwielded = 20
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 35,
+			"y" = 15,
+		)
+	)
 
 /obj/item/gun/energy/e_gun/nanotrasen/old
 	name = "prototype energy gun"
@@ -199,7 +212,6 @@
 	slot_flags = ITEM_SLOT_BACK | ITEM_SLOT_SUITSTORE
 
 	slot_available = list(
-		ATTACHMENT_SLOT_MUZZLE = 1,
 		ATTACHMENT_SLOT_RAIL = 1,
 		ATTACHMENT_SLOT_STOCK = 1,
 	)
@@ -208,6 +220,13 @@
 		/obj/item/attachment/foldable_stock/discharger
 	)
 	default_attachments = list(/obj/item/attachment/foldable_stock/discharger)
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 32,
+			"y" = 15,
+		)
+	)
 
 /obj/item/gun/energy/e_gun/nanotrasen/discharger/inteq
 	name = "\improper VEC-04 'Vuelo' Energy SMG"
@@ -238,6 +257,13 @@
 	default_firemode = FIREMODE_SEMIAUTO
 	w_class = WEIGHT_CLASS_BULKY
 	weapon_weight = WEAPON_MEDIUM
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_RAIL = list(
+			"x" = 34,
+			"y" = 15,
+		)
+	)
 
 /obj/item/gun/energy/e_gun/nanotrasen/chirasu/inteq
 	name = "\improper VEC-07 'Quemar' Energy Shotgun"
@@ -275,7 +301,7 @@
 	slot_offsets = list(
 		ATTACHMENT_SLOT_RAIL = list(
 			"x" = 35,
-			"y" = 15,
+			"y" = 16,
 		)
 	)
 
