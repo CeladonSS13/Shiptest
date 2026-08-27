@@ -42,7 +42,7 @@
 	is_editable = TRUE
 
 //holosigns
-/obj/machinery/holosign/deforest
+/obj/machinery/holosign/nanotrasen
 	name = "holosign - Nanotrasen Advertisment"
 	desc_add = "Nanotrasen, Inc. - Breaking scientific barriers since 2388."
 	icon_state = "nanotrasen"
