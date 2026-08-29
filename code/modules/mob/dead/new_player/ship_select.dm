@@ -102,6 +102,8 @@
 			if(template.category == "Pirates" && world.time < 3000) // 7200 мин
 				// Уводим логику в mod_celadon\ship_selection_rework\code\ship_select_enhanced.dm, но что, чёрт возьми, это такое? Мои глаза истекают кровью. Пожалуйста исправьте эту логику.
 				return
+			if(template.category == "Independent")
+				return
 			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)
 				to_chat(spawnee, span_danger("Корабль сейчас создаётся. Попробуйте снова через некоторое время."))
