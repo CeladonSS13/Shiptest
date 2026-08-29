@@ -2814,6 +2814,11 @@
 "bDB" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/light/directional/north,
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 8;
+	output_dir = 1;
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "bDR" = (
@@ -18974,9 +18979,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning,
-/obj/machinery/computer/processing_unit_console/directional/east{
-	machinedir = 1
-	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "khD" = (
@@ -27256,6 +27258,9 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
+"oJt" = (
+/turf/open/space/basic,
+/area/outpost/external)
 "oJu" = (
 /obj/structure/spider/stickyweb{
 	color = "#808080"
@@ -27986,6 +27991,11 @@
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/structure/sign/poster/nanotrasen/work_for_a_future{
 	pixel_x = 32
+	},
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 8;
+	output_dir = 1;
+	pixel_y = 30
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
@@ -35355,9 +35365,6 @@
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 1
-	},
-/obj/machinery/computer/processing_unit_console/directional/east{
-	machinedir = 1
 	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
@@ -73414,7 +73421,7 @@ hQU
 rgY
 hQU
 hQU
-rgY
+oJt
 rgY
 hQU
 hQU
