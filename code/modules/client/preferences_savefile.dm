@@ -497,7 +497,7 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	READ_FILE(S["jumpsuit_style"], jumpsuit_style)
 	READ_FILE(S["exowear"], exowear)
 	READ_FILE(S["wallet"], wallet)	// [CELADON-ADD] - CELADON_WALLETS
-	READ_FILE(S["ship_name"], ship_name)	// [CELADON-ADD] - CELADON Ship Name
+	READ_FILE(S["ship_name"], ship_name)	// [CELADON-ADD] - CELADON_SHIP_NAME
 	READ_FILE(S["feature_moth_fluff"], features["moth_fluff"])
 	READ_FILE(S["feature_spider_legs"], features["spider_legs"])
 	READ_FILE(S["feature_spider_spinneret"], features["spider_spinneret"])
