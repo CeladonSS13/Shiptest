@@ -97,7 +97,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/riol_body_markings_color = "000"				//riol body markings color
 	var/riol_tail_markings_color = "000"				//riol tail markings color
 
-	var/ship_name = "none"
+	var/ship_name = "None"
 	// [/CELADON-ADD]
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/species_looking_at = "human"	 //used as a helper to keep track of in the species select thingy
@@ -2398,7 +2398,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					socks = next_list_item(socks, GLOB.socks_list)
 
 				if("ship_name")
-					var/new_name =  reject_bad_name( input(user, "Choose your ship's name:", "Character Preference")  as text|null)
+					var/new_name =  reject_bad_name( input(user, "Select a ship name. If the name is 'None', a random name will be chosen.", "Character Preference")  as text|null)
 					if(new_name)
 						ship_name = new_name
 					else

@@ -300,9 +300,12 @@ SUBSYSTEM_DEF(overmap)
 	. = new /datum/overmap/ship/controlled(ship_loc, system_to_spawn_in, template) //This statement SHOULDN'T runtime (not counting runtimes actually in the constructor) so ship_spawning should always be toggled.
 	ship_spawning = FALSE
 
+	// [CELADON-ADD] - Устанавливаем название корабля из Setup Character
 	if(. && usr.client.prefs.ship_name)
-		var/datum/overmap/ship/controlled/ship = .
-		ship.Rename(usr.client.prefs.ship_name)
+		if(usr.client.prefs.ship_name != "None")
+			var/datum/overmap/ship/controlled/ship = .
+			ship.Rename(usr.client.prefs.ship_name)
+	// [/CELADON-ADD]
 /**
  * Gets the interference power of nearby overmap objects.
  * Inteded to get called by radios, but i'm sure you could use this for other things.
