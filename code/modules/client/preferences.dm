@@ -148,8 +148,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 							"vox_neck_quills" = "Plain",
 							"elzu_horns" = "None",
 							"elzu_tail" = "None",
-							"flavor_text" = "",
-							"ship_name" = "None",
+							"flavor_text" = ""
 						)
 	var/height_filter = "Normal"
 	var/list/randomise = list(
