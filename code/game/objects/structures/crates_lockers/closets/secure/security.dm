@@ -33,7 +33,7 @@
 	// [CELADON-ADD] - CELADON_RETURN_CONTENT_SPAWN
 	new /obj/item/clothing/head/crown/fancy(src)
 	new /obj/item/clothing/glasses/sunglasses/gar/supergar(src)
-	new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/e_gun/nanotrasen/patriot(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	// [/CELADON-ADD]
 	new /obj/item/storage/belt/sabre(src)
 	new /obj/item/gun/energy/sharplite/volt(src)
@@ -71,7 +71,7 @@
 	new /obj/item/door_remote/civilian(src)
 	new /obj/item/storage/photo_album/HoP(src)
 	new /obj/item/storage/lockbox/medal/hop(src)
-	new /obj/item/gun/energy/e_gun/e_old/mini(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/e_gun/nanotrasen/ember(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 
 
 /obj/structure/closet/secure_closet/hos
@@ -114,7 +114,7 @@
 	new /obj/item/pinpointer/nuke(src)
 	new /obj/item/circuitboard/machine/techfab/department/security(src)
 	new /obj/item/storage/photo_album/HoS(src)
-	new /obj/item/gun/energy/e_gun/e_old/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+	new /obj/item/gun/energy/e_gun/nanotrasen/hos(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	new /obj/item/gun_voucher //WS edit - gun gun gun gun gun gun gun
 
 /obj/structure/closet/secure_closet/empty/warden
@@ -324,7 +324,7 @@
 	new /obj/item/gun/energy/ionrifle(src)
 	for(var/i in 1 to 3)
 		new /obj/item/gun/energy/sharplite/volt(src)
-		new /obj/item/gun/energy/e_gun/e_old(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
+		new /obj/item/gun/energy/e_gun/nanotrasen/patriot(src)	// [CELADON-ADD] - CELADON_RETURN_EGUN
 	for(var/i in 1 to 3)
 		new /obj/item/gun/energy/laser(src)
 

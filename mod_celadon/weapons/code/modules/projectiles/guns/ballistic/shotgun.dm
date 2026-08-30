@@ -4,10 +4,10 @@
 	// Извините, не удержался.
 	//desc = "Cамозарядный гладкоствольный карабин, разработанный на Ижевском машиностроительном заводе на базе автомата Калашникова. Предназначен для промысловой и любительской охоты на мелкого и среднего зверя и птицу, может использоваться в качестве спортивно-тренировочного оружия. Калибр 410х76mm."
 	desc ="Pretty old shotgun that was designed in years before of space age. Chambered in .410"
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/saiga_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/saiga_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/saiga_onmob.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/scarborough/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/scarborough/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/scarborough/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/scarborough/onmob.dmi'
 	icon_state = "saiga"
 	item_state = "saiga"
 
@@ -91,10 +91,10 @@ NO_MAG_GUN_HELPER(automatic/assault/saiga)
 	name = "cycler shotgun"
 	desc = "An advanced shotgun with two separate magazine tubes, allowing you to quickly toggle between ammo types."
 	// у него нет спрайтов на космонавтике. Пофиксите
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32_old.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/lefthand_old.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/righthand_old.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/onmob_old.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/onmob.dmi'
 
 	icon_state = "cycler"
 	item_state = "shotgun_combat"

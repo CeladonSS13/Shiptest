@@ -19,20 +19,10 @@
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak
 	e_cost = 300
 
-/obj/item/ammo_casing/energy/disabler/smg/ap
-	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak/ap
-	select_name = "disable"
-	delay = 0.1 SECONDS
-
 // Тепер етар использует данный снаряд
 /obj/item/ammo_casing/energy/laser/smg
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak
 	e_cost = 396 //cheaper to fire but worse projectiles as stated above
-
-/obj/item/ammo_casing/energy/laser/smg/ap
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/ap
-	select_name = "kill"
-	delay = 0.1 SECONDS
 
 /obj/item/ammo_casing/energy/laser/sharplite/smg
 	projectile_type = /obj/projectile/beam/weak/sharplite
@@ -60,6 +50,7 @@
 
 /obj/item/ammo_casing/energy/laser/nanotrasen/dmr
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/dmr
+	fire_sound = 'sound/weapons/laser4.ogg'
 	select_name = "kill"
 	e_cost = 1000
 	delay = 0.7 SECONDS
@@ -81,12 +72,6 @@
 	delay = 2
 	e_cost = 500 //gives hades 5 more shots to balance out the standart power cell
 
-/obj/item/ammo_casing/energy/laser/assault/nanotrasen/emg
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/assault
-	fire_sound = 'sound/weapons/gun/laser/e40_las.ogg'
-	delay = 0.15 SECONDS
-	e_cost = 714
-
 /obj/item/ammo_casing/energy/laser/accelerator/nanotrasen
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/sniper
 	select_name = "kill"
@@ -94,20 +79,16 @@
 	delay = 1 SECONDS
 	e_cost = 5000
 
-/obj/item/ammo_casing/energy/laser/shotgun/nanotrasen/burst
-	projectile_type = /obj/projectile/beam/laser/nanotrasen/shotgun
-	pellets = 3
-	variance = 30
-	e_cost = 1000
-
 /obj/item/ammo_casing/energy/laser/nanotrasen/mini
 	fire_sound = 'sound/weapons/gun/laser/sharplite-fire_light.ogg'
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/mini
 	delay = 0.2 SECONDS
+	e_cost = 666
 
 /obj/item/ammo_casing/energy/disabler/nanotrasen/mini
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak/mini
 	delay = 0.2 SECONDS
+	e_cost = 666
 
 /obj/item/ammo_casing/energy/laser/antique
 	fire_sound = 'sound/weapons/laser.ogg'
