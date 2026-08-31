@@ -2718,7 +2718,7 @@
 /obj/machinery/door/firedoor/border_only{
 	dir = 1
 	},
-/obj/structure/sign/poster/official/safety_internals{
+/obj/structure/sign/poster/nanotrasen/safety_internals{
 	pixel_y = 1;
 	pixel_x = 27
 	},
@@ -2814,6 +2814,11 @@
 "bDB" = (
 /obj/effect/turf_decal/industrial/hatch/yellow,
 /obj/machinery/light/directional/north,
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 8;
+	output_dir = 1;
+	pixel_y = -30
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "bDR" = (
@@ -3200,7 +3205,7 @@
 	dir = 8
 	},
 /obj/machinery/firealarm/directional/north,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -3377,16 +3382,16 @@
 /obj/structure/guncloset{
 	anchored = 1
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
 	pixel_y = 10
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
 	pixel_y = 4
 	},
-/obj/item/gun/energy/e_gun/e_old/iot{
+/obj/item/gun/energy/e_gun/nanotrasen/chirasu{
 	pixel_y = -1
 	},
-/obj/item/gun/energy/e_gun/e_old/iot{
+/obj/item/gun/energy/e_gun/nanotrasen/chirasu{
 	pixel_y = -7
 	},
 /obj/item/gun/energy/ionrifle,
@@ -7246,7 +7251,7 @@
 	pixel_x = -5;
 	pixel_y = 8
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -8326,17 +8331,13 @@
 	},
 /area/outpost/exterior)
 "eCo" = (
-/obj/effect/spawner/structure/window/plasma/reinforced/shutters{
-	anchored = 1
+/obj/structure/flora/tree/pine{
+	icon_state = "pine_4";
+	pixel_x = -16;
+	pixel_y = 0
 	},
-/obj/structure/grille/indestructible,
-/obj/structure/sign/barsign{
-	icon_state = "cyberslyph";
-	req_access = null
-	},
-/turf/open/floor/plating{
-	light_color = "#1B1D2E";
-	light_range = 2
+/turf/open/floor/plating/asteroid/snow/temperatre{
+	layer = 2.454
 	},
 /area/outpost/exterior)
 "eCE" = (
@@ -8683,23 +8684,23 @@
 /area/outpost/faction/inteq)
 "eKz" = (
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
+	pixel_y = 13;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13;
-	dir = 8
+	pixel_y = -12;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = -5;
-	dir = 8
+	pixel_y = -4;
+	dir = 8;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -8854,7 +8855,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = 32
 	},
 /turf/open/floor/plating,
@@ -9191,7 +9192,7 @@
 "eYY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/machinery/vending/wardrobe/curator_wardrobe{
@@ -9224,7 +9225,7 @@
 /obj/structure/reagent_dispensers/watertank/high,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plating/rust,
@@ -9902,7 +9903,7 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/siding/white,
-/obj/structure/sign/directions/outpost/crio{
+/obj/structure/sign/directions/outpost/cryo{
 	pixel_y = -20
 	},
 /turf/open/floor/plasteel/patterned/brushed{
@@ -11253,19 +11254,19 @@
 /area/outpost/medical/hall_1)
 "gas" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 14;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -11727,9 +11728,9 @@
 	dir = 8
 	},
 /obj/machinery/portable_atmospherics/canister{
-	icon_state = "grey";
 	name = "hydrogen canister";
-	desc = "Hydrogen. Used in thruster fuel."
+	desc = "Hydrogen. Used in thruster fuel.";
+	icon_state = "hydrogen"
 	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/outpost/cargo)
@@ -14399,13 +14400,16 @@
 "hLF" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 4;
-	pixel_y = 1
+	pixel_y = -7;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
+	pixel_y = 17;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14422,21 +14426,20 @@
 /turf/open/floor/plating,
 /area/outpost/medical/hall_2)
 "hMc" = (
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -10;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 10;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 2;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -14467,7 +14470,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 26;
+	pixel_x = 0
 	},
 /obj/structure/sign/neon/strelka/yellow{
 	dir = 4;
@@ -16252,7 +16256,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 29;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -16599,7 +16604,7 @@
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/structure/rack,
 /obj/effect/spawner/random/maintenance/three,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_x = -32
 	},
 /obj/item/clothing/neck/stethoscope,
@@ -17582,17 +17587,15 @@
 /turf/open/floor/plasteel/dark,
 /area/outpost/cargo)
 "jrF" = (
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 1;
-	pixel_y = 13
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -18703,7 +18706,8 @@
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = 27
+	pixel_y = 32;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/patterned/brushed{
 	light_color = "#1B1D2E";
@@ -18975,9 +18979,6 @@
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/warning,
-/obj/structure/sign/poster/official/work_for_a_future{
-	pixel_x = 32
-	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "khD" = (
@@ -20473,22 +20474,23 @@
 	dir = 4
 	},
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = -3;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/sell{
-	pixel_y = 7;
-	dir = 4
+	pixel_y = 5;
+	dir = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = -5
-	},
-/obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/science{
 	dir = 4;
-	pixel_y = 13
+	pixel_y = 14;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -20553,7 +20555,7 @@
 /area/outpost/engineering/atmospherics)
 "lfE" = (
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/effect/turf_decal/siding/white/corner{
@@ -20816,7 +20818,7 @@
 /obj/machinery/light/directional/west,
 /obj/machinery/vending/wardrobe/atmos_wardrobe,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/open/floor/plasteel/tech,
@@ -21464,23 +21466,24 @@
 	dir = 8
 	},
 /obj/structure/sign/directions/outpost/nanotrasen{
-	pixel_y = 7;
-	dir = 8
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5
+	pixel_y = 6;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/bar{
-	pixel_y = -11;
-	dir = 8
+	pixel_y = -12;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/service{
-	pixel_y = 1;
-	dir = 8
+	pixel_y = -3;
+	dir = 8;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
-	pixel_y = 13;
-	dir = 4
+	pixel_y = 15;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -22869,7 +22872,7 @@
 	dir = 4
 	},
 /obj/structure/window/reinforced/spawner/west,
-/obj/structure/sign/poster/retro/we_watch{
+/obj/structure/sign/poster/retro/nanotrasen/we_watch{
 	pixel_y = 32
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -23245,7 +23248,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plating/rust,
@@ -27936,7 +27939,7 @@
 	},
 /obj/structure/reagent_dispensers/fueltank,
 /obj/effect/turf_decal/industrial/hatch/yellow,
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/tech/techmaint,
@@ -27983,6 +27986,14 @@
 "pgw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/industrial/hatch/yellow,
+/obj/structure/sign/poster/nanotrasen/work_for_a_future{
+	pixel_x = 32
+	},
+/obj/machinery/computer/processing_unit_console/directional/east{
+	machinedir = 8;
+	output_dir = 1;
+	pixel_y = 30
+	},
 /turf/open/floor/plasteel/patterned,
 /area/outpost/cargo/smeltery)
 "pgO" = (
@@ -28021,7 +28032,7 @@
 /obj/machinery/conveyor/auto{
 	id = "outpost1"
 	},
-/obj/structure/sign/poster/official/moth/smokey{
+/obj/structure/sign/poster/nanotrasen/moth/smokey{
 	pixel_x = 27
 	},
 /turf/open/floor/engine/hull/reinforced/interior,
@@ -29712,7 +29723,7 @@
 	dir = 4;
 	id = "smelter1"
 	},
-/obj/structure/sign/poster/official/miners{
+/obj/structure/sign/poster/nanotrasen/miners{
 	pixel_y = 32
 	},
 /turf/open/floor/plasteel/dark,
@@ -30015,7 +30026,7 @@
 	anchored = 1
 	},
 /obj/item/radio/intercom/directional/south,
-/obj/structure/sign/poster/retro/we_watch{
+/obj/structure/sign/poster/retro/nanotrasen/we_watch{
 	pixel_x = 32
 	},
 /turf/open/floor/plasteel/tech,
@@ -30557,7 +30568,7 @@
 /obj/machinery/computer/cargo/faction/solfed,
 /obj/structure/sign/flag/solfed/directional/south,
 /turf/open/floor/plasteel/patterned/cargo_one,
-/area/outpost/faction/solfed)
+/area/outpost/cargo/faction/solfed)
 "qzN" = (
 /obj/item/radio/intercom/wideband/table{
 	dir = 1;
@@ -30780,7 +30791,7 @@
 "qGu" = (
 /obj/effect/turf_decal/corner/opaque/black/mono,
 /obj/structure/closet/crate/freezer/surplus_limbs,
-/obj/structure/sign/poster/official/cleanliness{
+/obj/structure/sign/poster/nanotrasen/cleanliness{
 	pixel_y = 32
 	},
 /obj/effect/turf_decal/techfloor{
@@ -33557,7 +33568,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 5
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /obj/effect/decal/cleanable/dirt/dust,
@@ -33578,21 +33589,21 @@
 "skM" = (
 /obj/structure/sign/directions/outpost/elevator{
 	dir = 1;
-	pixel_y = 1
+	pixel_y = -12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/security{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/administration{
-	pixel_y = 13
-	},
-/obj/structure/sign/directions/outpost/shop{
-	pixel_y = -5;
-	dir = 4
+	pixel_y = 12;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/toys{
-	pixel_y = -11;
-	dir = 4
+	pixel_y = -4;
+	dir = 4;
+	pixel_x = 0
 	},
 /turf/closed/indestructible/reinforced,
 /area/outpost/exterior)
@@ -33919,7 +33930,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/tech,
@@ -34392,7 +34403,7 @@
 /obj/item/flashlight/lamp/green{
 	pixel_y = 3
 	},
-/obj/structure/sign/poster/retro/random{
+/obj/structure/sign/poster/retro/nanotrasen/random{
 	pixel_y = -32
 	},
 /turf/open/floor/plasteel/telecomms_floor,
@@ -36332,16 +36343,14 @@
 /area/outpost/engineering/atmospherics)
 "tKj" = (
 /obj/structure/sign/directions/outpost/solfed{
-	pixel_y = 7;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
+	pixel_y = 9;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = 0;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -37084,7 +37093,7 @@
 	dir = 8
 	},
 /turf/open/floor/plasteel/dark,
-/area/outpost/faction/nanotrasen)
+/area/outpost/cargo/faction/nanotrasen)
 "udk" = (
 /obj/effect/spawner/random/maintenance,
 /turf/open/floor/plating/asteroid/icerock/temperate,
@@ -38189,7 +38198,7 @@
 /turf/open/floor/carpet/stellar,
 /area/outpost/crew/bar)
 "uLn" = (
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_y = -32
 	},
 /obj/machinery/vending/wardrobe/chap_wardrobe,
@@ -38300,19 +38309,18 @@
 /area/outpost/medical/morgue)
 "uNA" = (
 /obj/structure/sign/directions/medical{
-	pixel_y = 13
+	pixel_y = 15;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7;
-	dir = 1
+	pixel_y = 6;
+	dir = 1;
+	pixel_x = 0
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 1
-	},
-/obj/structure/sign/directions/outpost/crio{
-	pixel_y = -5;
-	dir = 1
+/obj/structure/sign/directions/outpost/cryo{
+	pixel_y = -2;
+	dir = 1;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/solfed{
 	pixel_y = -11;
@@ -39542,18 +39550,16 @@
 /area/outpost/crew/lounge)
 "vHK" = (
 /obj/structure/sign/directions/outpost/inteq{
-	pixel_y = 7
+	pixel_y = 4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/medical{
 	pixel_y = 13
 	},
-/obj/structure/sign/directions/outpost/independent{
-	pixel_y = 1;
-	dir = 4
-	},
 /obj/structure/sign/directions/supply{
 	dir = 4;
-	pixel_y = -5
+	pixel_y = -4;
+	pixel_x = 0
 	},
 /obj/structure/sign/directions/outpost/elevator{
 	pixel_y = -11;
@@ -40795,7 +40801,7 @@
 	},
 /obj/item/radio/intercom/directional/north,
 /turf/open/floor/mineral/plastitanium,
-/area/outpost/faction/syndi)
+/area/outpost/cargo/faction/syndicate)
 "wlp" = (
 /obj/effect/turf_decal/siding/green{
 	dir = 5
@@ -43228,7 +43234,7 @@
 	},
 /area/outpost/crew/dop_zone_2)
 "xyz" = (
-/obj/structure/sign/poster/official/random{
+/obj/structure/sign/poster/nanotrasen/random{
 	pixel_x = -32
 	},
 /turf/closed/indestructible/reinforced,
@@ -57325,7 +57331,7 @@ gok
 gok
 gok
 gok
-ePa
+eCo
 skM
 xxJ
 kuL
@@ -62160,7 +62166,7 @@ gok
 gok
 gok
 gok
-eCo
+aDY
 xoC
 hqf
 lgE
@@ -73412,7 +73418,7 @@ hQU
 rgY
 hQU
 hQU
-rgY
+hQU
 rgY
 hQU
 hQU

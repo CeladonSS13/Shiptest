@@ -216,11 +216,7 @@
 /obj/structure/sign/poster/radio/ntra
 	name = "NTRA"
 	desc = "A Nanotrasen Radio poster. Despite all that's happened, communication is still NT's game, and the airwaves are just another Frontier to establish market dominance in."
-	icon_state = "poster-radio_NTRA"
-
-/obj/structure/sign/poster/radio/ntra
-	name = "NTRA"
-	desc = "A Nanotrasen Radio poster. Despite all that's happened, communication is still NT's game, and the airwaves are just another Frontier to establish market dominance in."
+	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
 	icon_state = "poster-radio_NTRA"
 
 //contraband related posters
@@ -267,6 +263,12 @@
 	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
 
 //retro nanotrasen posters. very inspired by the early apple logos and 70s-90s tech logos. Expect to see these on ancient Nanotrasen ships and stations, collectables, or callbacks to retro NT
+/obj/item/poster/random_nanotrasen_retro
+	name = "random retro nanotrasen poster"
+	poster_type = /obj/structure/sign/poster/retro/nanotrasen/random
+	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
+	icon_state = "rolled_nt"
+
 /obj/structure/sign/poster/retro/nanotrasen
 	poster_item_name = "retro poster"
 	poster_item_desc = "A really old Nanotrasen poster that probably sells for a lot now days. It comes with adhesive backing, for easy pinning to any vertical surface."
@@ -274,7 +276,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/structures/posters/posters.dmi'
 
 /obj/structure/sign/poster/retro/nanotrasen/random
-	name = "random retro poster"
+	name = "random retro nanotrasen poster"
 	icon_state = "random_retro"
 	never_random = TRUE
 	random_basetype = /obj/structure/sign/poster/retro/nanotrasen

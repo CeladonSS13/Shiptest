@@ -72,13 +72,14 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 			// [CELADON-EDIT] - Outpost collision protection - if(get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0))
 			if((get_pixel_distance(A.token, outpost.token)>32 && get_pixel_distance(B.token, outpost.token)>32) && get_pixel_distance(A.token, B.token) <= 4 && cpa != -1 && (A.get_speed() != 0 || B.get_speed() != 0)) // Thurther than that is full colision
 			// [/CELADON-EDIT]
-				var/arpdequeue_pointer = 0
+				// var/arpdequeue_pointer = 0 // Отключаем оповещение о возможном столкновении.  Collision OFF
 				if(world.time - A.last_collision_alert >= 20)
 					A.last_collision_alert = world.time
-					while (arpdequeue_pointer++ < A.helms.len)
-						var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
-						a.say("Collision impact with vessel \"[B.name]\".")
-						playsound(a, 'sound/machines/engine_alert2.ogg', 50, FALSE)
+					// Отключаем оповещение о возможном столкновении.  Collision OFF
+					// while (arpdequeue_pointer++ < A.helms.len)
+						// var/obj/machinery/computer/helm/a = A.helms[arpdequeue_pointer]
+						// a.say("Collision impact with vessel \"[B.name]\".")
+						// playsound(a, 'sound/machines/engine_alert2.ogg', 50, FALSE)
 				var/opposite_x = sin(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, abs(B.speed_x))
 				var/opposite_y = cos(SIMPLIFY_DEGREES(bearing+180))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, abs(B.speed_y))
 				var/alt_opposite_x = sin(SIMPLIFY_DEGREES(bearing))*(B.shuttle_port.turf_count/A.shuttle_port.turf_count)*max(0.002, abs(B.speed_x))
@@ -91,8 +92,9 @@ TIMER_SUBSYSTEM_DEF(overmap_movement)
 					B.adjust_speed(-B.speed_x/2 + alt_opposite_x, -B.speed_y/2 + alt_opposite_y)
 				else
 					B.vector_to_add = list("x" = -B.speed_x/2 + alt_opposite_x, "y" = -B.speed_y/2 + alt_opposite_y)
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), A.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
-				spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), B.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
+				// Отключаем повреждения (таран) при столкновении.  Collision OFF
+				// spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), A.shuttle_port.get_virtual_level(), A.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+90))))
+				// spawn_meteors_alt(round(60 SECONDS * MAGNITUDE(relative_motion_x, relative_motion_y))+1, list(/obj/effect/meteor/invisible), B.shuttle_port.get_virtual_level(), B.shuttle_port, angle2dir_cardinal(SIMPLIFY_DEGREES((bearing-A.bow_heading+270))))
 
 	return list("cpa" = round(cpa), "tcpa" = round(tcpa/10), "brg" = round(SIMPLIFY_DEGREES(bearing-A.bow_heading)))
 

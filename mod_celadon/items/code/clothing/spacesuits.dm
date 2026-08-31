@@ -57,7 +57,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/sec
 	name = "special forces security hardsuit"
-	desc = "The standard issue hardsuit of the Warra special forces squad, this one has red highlights. Provides a good amount of protection against environmental hazards."
+	desc = "A superb combat hardsuit produced by Vigilitas Interstellar and issued only to high-ranking assault squads associated with Nanotrasen. This one has red highlights and provides decent protection against most common threats."
 	icon_state = "spec_security"
 	item_state = "spec_security"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/sec
@@ -75,7 +75,7 @@
 
 /obj/item/clothing/suit/space/hardsuit/ert/classic/engi
 	name = "special forces engineering hardsuit"
-	desc = "The standard issue hardsuit of the Warra special forces squad, this one has orange highlights. Provides a good amount of protection against environmental hazards."
+	desc = "A superb combat hardsuit produced by Vigilitas Interstellar and issued only to high-ranking assault squads associated with Nanotrasen. This one has yellow highlights and provides excellent protection against burn-related injuries."
 	icon_state = "spec_engineer"
 	item_state = "spec_engineer"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/engi
@@ -98,24 +98,6 @@
 	item_state = "spec_medical"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/med
 	armor = list("melee" = 25, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 75, "acid" = 40, "wound" = 20)
-
-	//ERT Skybreaker Janitor classic
-/obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani
-	name = "special forces janitorial helmet"
-	desc = "The integrated helmet of a special forces hardsuit, this one has purple highlights."
-	icon_state = "hardsuit0-spec_janitor"
-	item_state = "hardsuit1-spec_janitor"
-	hardsuit_type = "spec_janitor"
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 100, "wound" = 20)
-
-/obj/item/clothing/suit/space/hardsuit/ert/classic/jani
-	name = "special forces janitorial hardsuit"
-	desc = "The standard issue hardsuit of the Nanotrasen special forces squad, this one has purple highlights. Provides a good amount of protection against environmental hazards."
-	icon_state = "ert_janitor"
-	item_state = "ert_janitor"
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/classic/jani
-	armor = list("melee" = 40, "bullet" = 30, "laser" = 20, "energy" = 30, "bomb" = 20, "bio" = 100, "rad" = 65, "fire" = 50, "acid" = 100, "wound" = 20)
-	slowdown = 0.2
 
 //респрайт кэпарморма
 /obj/item/clothing/head/helmet/space/hardsuit/swat/captain

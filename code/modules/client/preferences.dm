@@ -96,6 +96,8 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	var/riol_chest_markings_color = "000"				//riol chest markings color
 	var/riol_body_markings_color = "000"				//riol body markings color
 	var/riol_tail_markings_color = "000"				//riol tail markings color
+
+	var/ship_name = "None"
 	// [/CELADON-ADD]
 	var/datum/species/pref_species = new /datum/species/human()	//Mutant race
 	var/species_looking_at = "human"	 //used as a helper to keep track of in the species select thingy
@@ -398,6 +400,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					dat += "[features["flavor_text"]]"
 			else
 				dat += "[copytext_char(features["flavor_text"], 1, 37)]...<BR>"
+
+			// [CELADON-ADD] - Название корабля при покупке.
+			dat += "<br><br><b>Ship Name:</b> "
+			dat += "<a href='byond://?_src_=prefs;preference=ship_name;task=input'>[ship_name]</a>"
+			// [/CELADON-ADD]
 
 			dat += "<br><br><b>Special Names:</b><BR>"
 			var/old_group
@@ -2370,7 +2377,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					if(new_underwear)
 						underwear = new_underwear
 
-				// [CELADON-ADD] - Добавление кнопки для смены одежды.
+				// [CELADON-ADD]
 				if("previous_underwear")
 					underwear = previous_list_item(underwear, GLOB.underwear_list)
 
@@ -2388,6 +2395,13 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 
 				if("next_socks")
 					socks = next_list_item(socks, GLOB.socks_list)
+
+				if("ship_name")
+					var/new_name =  reject_bad_name( input(user, "Select a ship name. If the name is 'None', a random name will be chosen.", "Character Preference")  as text|null)
+					if(new_name)
+						ship_name = new_name
+					else
+						to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, 0-9, and the following punctuation: ' - . ~ | @ : # $ % & * +</font>")
 				// [/CELADON-ADD]
 
 				if("underwear_color")
@@ -3268,7 +3282,6 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 	// [CELADON-ADD] - TAJARA
 	//character.skin_tone_nose = skin_tone_nose
 	character.skin_tone_tajara = skin_tone_tajara
-	// [CELADON-ADD] - CELADON_RIOL
 	character.skin_tone_riol = skin_tone_riol
 	// [/CELADON-ADD]
 	character.underwear = underwear

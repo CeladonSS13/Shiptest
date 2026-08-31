@@ -986,8 +986,8 @@
 /obj/effect/turf_decal/trimline/opaque/vired/warning{
 	dir = 5
 	},
-/obj/item/gun/energy/sharplite/sarissa,
-/obj/item/gun/energy/e_gun/e_old,
+/obj/item/gun/energy/e_gun/nanotrasen/parallax,
+/obj/item/gun/energy/e_gun/nanotrasen/patriot,
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security)
 "gI" = (
@@ -2842,7 +2842,7 @@
 /turf/open/floor/plasteel,
 /area/ruin/space/has_grav/deepstorage/hallway/upper)
 "rW" = (
-/obj/item/gun/energy/e_gun/e_old/hos{
+/obj/item/gun/energy/e_gun/nanotrasen/hos{
 	pixel_y = 2;
 	pixel_x = 17;
 	spawn_no_ammo = 1
@@ -5704,14 +5704,6 @@
 	dir = 4
 	},
 /obj/item/storage/box/ammo/c46x30mm,
-/obj/item/stock_parts/cell/gun/sharplite/plus{
-	pixel_y = 9;
-	pixel_x = 7
-	},
-/obj/item/stock_parts/cell/gun/sharplite/plus{
-	pixel_y = 3;
-	pixel_x = 7
-	},
 /obj/item/stock_parts/cell/gun{
 	pixel_y = 10;
 	pixel_x = -8
@@ -5719,6 +5711,14 @@
 /obj/item/stock_parts/cell/gun{
 	pixel_y = 4;
 	pixel_x = -8
+	},
+/obj/item/stock_parts/cell/gun/upgraded{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/stock_parts/cell/gun/upgraded{
+	pixel_x = 8;
+	pixel_y = 4
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/space/has_grav/deepstorage/security)

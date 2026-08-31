@@ -116,6 +116,33 @@
 			if(GLOB.real_names_joined.Find(name))
 				to_chat(spawnee, span_warning("Someone has spawned with this name already."))
 				return
+			if(template.category == "Pirates" && world.time < CONFIG_GET(number/pirate_time_spawn))
+				to_chat(spawnee, span_warning("Отказано. Фракция пиратов откроется только спустя [round((CONFIG_GET(number/pirate_time_spawn) - world.time)/60/10)] минут."))
+				return
+			if(template.category == "Independent")
+				var/choice = tgui_alert_middle(usr, "Перед вами встаёт выбор вашей дальнейшей судьбы. Выберите стиль игры, чтобы узнать подробности", "Стиль игры", list("Пацифизм", "Нейтралитет", "Пиратство"))
+				if(!choice)
+					return
+				switch(choice)
+					if("Пацифизм")
+						if(tgui_alert_middle(usr, "Выбирая пацифиста вы отрекаетесь от военных действий и не имеете права заниматься мародёрством кораблей игроков, но можете оказывать мед. помощь после завершения конфликта. Сделайте этот мир чуточку лучше!\n\n(Рекомендуется новичкам для изучения базовых возможностей и механик игры)", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							template.prefix = "PISV"
+						else
+							return
+					if("Нейтралитет")
+						if(tgui_alert_middle(usr, "Вы выбираете путь независимого путника: будь то медик, исследователь, шахтёр или обычный турист. Будьте осторожны и помните возможности ходят рука об руку с опасностью.\nУдачного полёта!", "Стиль игры", list("Подтвердить", "Отмена")) != "Подтвердить")
+							return
+					if("Пиратство")
+						if(tgui_alert_middle(usr, "Это история вашей смерти. Вы выбираете путь беззакония и всеобщей ненависти. Все вокруг будут пытаться вас убить и даже аванпост назначил за вашу голову награду. У вас нет друзей и надежды, но вас ведь это не волнует?\nЙо-хо-хо и бутылка рома!\n\n(Рекомендуется только для опытых игроков!)", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							if(world.time > CONFIG_GET(number/pirate_time_spawn))
+								template.prefix = "RSV"
+								template.space_spawn = TRUE
+								template.faction = new /datum/faction/pirate
+							else
+								to_chat(spawnee, span_warning("Отказано. Фракция пиратов откроется только спустя [round((CONFIG_GET(number/pirate_time_spawn) - world.time)/60/10)] минут."))
+								return
+						else
+							return
 			if(SSovermap.ship_spawning)
 				to_chat(spawnee, span_danger("A ship is currently spawning. Try again in a little while."))
 				return

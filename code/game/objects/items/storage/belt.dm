@@ -603,7 +603,7 @@
 
 /obj/item/storage/belt/military/snack/Initialize()
 	. = ..()
-	var/sponsor = pick("Makosso-Warra", "CyberSun")
+	var/sponsor = pick("Nanotrasen", "CyberSun") // [CELADON-EDIT]
 	desc = "A set of snack-tical webbing worn by athletes of the [sponsor] VR sports division."
 
 /obj/item/storage/belt/military/snack/ComponentInitialize()

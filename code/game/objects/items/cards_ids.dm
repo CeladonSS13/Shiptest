@@ -472,8 +472,8 @@ update_label()
 		..()
 
 /obj/item/card/id/centcom
-	name = "\improper Makosso-Warra Central Command access card"
-	desc = "An access card sourced from Makosso-Warra's Central Command."
+	name = "\improper Nanotrasen Central Command access card" // [CELADON-EDIT]
+	desc = "An access card sourced from Nanotrasen's Central Command." // [CELADON-EDIT]
 	icon_state = "centcom"
 	uses_overlays = FALSE
 	registered_age = null

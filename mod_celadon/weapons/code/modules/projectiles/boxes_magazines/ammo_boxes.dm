@@ -144,7 +144,7 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a410_ammo_box
 	name = "Ammo box (410x76mm buckshot)"
 	desc = "A box of buckshot 410x76mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "410box_buckshot"
 /obj/item/storage/box/ammo/a410_ammo_box/PopulateContents()
 	var/static/items_inside = list(
@@ -154,7 +154,7 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a410_ammo_box/slug
 	name = "Ammo box (410x76mm slug)"
 	desc = "A box of slug 410x76mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "410box_slug"
 /obj/item/storage/box/ammo/a410_ammo_box/slug/PopulateContents()
 	var/static/items_inside = list(
@@ -164,7 +164,7 @@ MARK: 5.56x45
 /obj/item/storage/box/ammo/a410_ammo_box/flechette
 	name = "Ammo box (410x76mm flechette)"
 	desc = "A box of flechette 410x76mm ammo."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/saiga_ammo.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_boxes.dmi'
 	icon_state = "410box_flechette"
 /obj/item/storage/box/ammo/a410_ammo_box/flechette/PopulateContents()
 	var/static/items_inside = list(
@@ -176,7 +176,7 @@ MARK: 5.56x45
 //     7.62x54mmR
 //
 /obj/item/ammo_box/magazine/ammo_stack/prefilled/x762_54
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/svd_bullet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo_bullets.dmi'
 	ammo_type = /obj/item/ammo_casing/x762_54
 	max_ammo = 10
 

@@ -81,13 +81,26 @@
 
 // MARK: Sharplite Ammo
 
-// Возможно при реворке плазмы мы лишимся бонуса к энергии. Кто знает.
-/datum/supply_pack/faction/nanotrasen/magazine/nt_guncell_mini
-	name = "P-cell Sharplite Mini Power Cell"
-	desc = "Contains a proprietary weapon cell, compatible with the Ohm self-defence pistol. It has a rating of 7 MJs."
-	contains = list(/obj/item/stock_parts/cell/gun/sharplite/mini)
-	cost = 300
-	stable_price = TRUE
+/*
+/datum/supply_pack/faction/nanotrasen/magazine/wt550_mag
+	name = "Resolution Auto Rifle Magazine"
+	desc = "Contains a 20-round magazine for the Resolution Auto Rifle. Each magazine is designed to facilitate rapid tactical reloads."
+	cost = 25
+	contains = list(/obj/item/ammo_box/magazine/wt550m9/empty)
+
+/datum/supply_pack/faction/nanotrasen/magazine/expedition_mag
+	name = "SGL9 Expedition Submachinegun Magazine"
+	desc = "Contains a 30-round magazine for the Expedition Submachinegun, chambered in 9mm."
+	cost = 25
+	contains = list(/obj/item/ammo_box/magazine/m9mm_expedition)
+*/
+
+/*
+/datum/supply_pack/faction/nanotrasen/magazine/guncell
+	name = "E-Cell - Eoehoma-style Power Cell"
+	desc = "Contains a weapon power cell built to be compatible with Eoehoma weapons, and systems that still use Eoehoma's style of cell."
+	contains = list(/obj/item/stock_parts/cell/gun/empty)
+	cost = 500
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell
 	name = "P-Cell - Sharplite Weapon Cell"
@@ -102,3 +115,5 @@
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
 	cost = 2250 // 5 MJ -> 250 кредитов + надбавка за "имбовость". В целом, хочется поставить просто 2000
 	stable_price = TRUE
+
+*/

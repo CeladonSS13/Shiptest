@@ -50,9 +50,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 6
 	},
-/obj/item/gun/energy/e_gun/e_old/adv_stopping,
-/obj/item/gun/energy/e_gun/e_old/mini,
-/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/nanotrasen/maru,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "aG" = (
@@ -309,8 +309,8 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/hallway/central)
 "da" = (
-/obj/machinery/vending/security,
 /obj/effect/turf_decal/industrial/traffic/fulltile,
+/obj/machinery/vending/security/inteq,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "dc" = (
@@ -1952,9 +1952,9 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 10
 	},
-/obj/item/gun/energy/e_gun/e_old/mini,
-/obj/item/gun/energy/e_gun/e_old/mini,
-/obj/item/gun/energy/e_gun/e_old/mini,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
+/obj/item/gun/energy/e_gun/nanotrasen/ember,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
 "xm" = (
@@ -3580,6 +3580,18 @@
 /obj/item/stock_parts/cell/gun/empty{
 	pixel_y = 3;
 	pixel_x = 11
+	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = -4;
+	pixel_y = 0
+	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = 1;
+	pixel_y = -4
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)

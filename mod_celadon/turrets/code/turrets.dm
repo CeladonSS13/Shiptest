@@ -233,7 +233,7 @@
 
 /obj/machinery/porta_turret/ship/nanotrasen
 	name = "Sharplite Defense Turret"
-	desc = "A cheap and effective turret designed by Sharplite and purchased and installed on most vessels of the Nanotrasen-alliance Vessels."
+	desc = "A cheap and effective turret designed by Sharplite and purchased and installed on most vessels of the Nanotrasen-alliance."
 	faction = list(FACTION_PLAYER_NANOTRASEN, FACTION_TURRET)
 	max_integrity = 160
 	integrity_failure = 0.6
