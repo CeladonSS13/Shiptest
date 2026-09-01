@@ -1,5 +1,5 @@
 // Автолат с общей категорией
-/obj/machinery/autolathe/hacked/debag
+/obj/machinery/autolathe/hacked/debug
 	categories = list(
 							"Tools",
 							"Electronics",
