@@ -51,6 +51,17 @@ ID мода: CELADON_IPC_CHASSIS
 - `xion_economy`
 - `zion_main`
 - `zion_spirit`
+
+А также возвращены 
+- `Morpheus Cyberkinetics (Custom)`
+- `Bishop Cyberkinetics`
+- `Bishop Cyberkinetics 2.0`
+- `Hephaestus Industries`
+- `Hephaestus Industries 2.0`
+- `Ward-Takahashi Manufacturing`
+- `Xion Manufacturing Group 2.0`
+- `Zeng-Hu Pharmaceuticals`
+
 <!--
   Что он делает, что добавляет: что, куда, зачем и почему - всё здесь.
   А также любая полезная информация.
@@ -102,6 +113,7 @@ ID мода: CELADON_IPC_CHASSIS
 ### Авторы:
 
 SnrBydlo
+Dexter050627
 <!--
   Здесь находится твой никнейм
   Если работал совместно - никнеймы тех, кто помогал.
