@@ -336,7 +336,7 @@
 		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/zion_spirit,
 	)
 
-// Удалённые спрайты
+// MARK: Удалённые спрайты
 
 /datum/sprite_accessory/body/ipc_chassis/morpheus
 	name = "Morpheus Cyberkinetics (Custom)"
