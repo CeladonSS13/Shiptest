@@ -94,3 +94,9 @@
 	description = "These xenomorphs got bored of horrifically slaughtering people on space stations, and have settled down on a nice lava-filled hellscape to focus on what's really important in life. \
 		Quality memes."
 	suffix = "lavaland_surface_xeno_nest.dmm"
+
+/datum/map_template/ruin/lavaland/cybersun_holdout
+	name = "Cybersun's Last Stand"
+	description = "Ramzi have laid siege to a Cybersun outpost with hefty automated defences."
+	id = "cybersun_holdout"
+	suffix = "lavaland_cybersun_holdout.dmm"
