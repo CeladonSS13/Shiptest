@@ -118,3 +118,10 @@
 	description = "A massive research borehole of the federal government hidden deep in the jungle, that's been raided by the New Frontiersmen."
 	suffix = "jungle_bighole_frontiersmen.dmm"
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_HAZARDOUS, RUIN_TAG_LIVEABLE, RUIN_TAG_MAJOR_LOOT)
+
+/datum/map_template/ruin/jungle/depot
+	name = "N+S Supply Depot"
+	id = "supply-depot"
+	description = "An old supply depot, now solely inhabiated by robots."
+	suffix = "jungle_depot.dmm"
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
