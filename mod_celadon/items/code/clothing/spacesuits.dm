@@ -107,13 +107,28 @@
 	item_state = "capspacehelmet"
 
 /obj/item/clothing/suit/space/hardsuit/swat/captain
+	desc = "A MK.II SWAT suit with streamlined joints and armor made out of superior materials, insulated against intense heat with the complementary gas mask. One of the oldest armored-hardsuit options avaliable, this one has a regal finish in Nanotrasen Blue. Better not let the deckhands get a hold of it."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/overlay/caparmor_new.dmi'
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/space_suit/capspacesuit_new.dmi'
 	icon_state = "capspacesuit"
 	item_state = "capspacesuit"
 	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/swat/captain
 
+//mk1 swat suit
+/obj/item/clothing/suit/space/swat
+	desc = "A tactical space suit first developed in a joint effort by the defunct IS-ERI and Nanotrasen in 20XX for military space operations. A tried and true workhorse, it is very difficult to move in but offers robust protection against all threats!"
+
 //MARK: Syndie
+
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun
+	name = "neutron-star combat hardsuit"
+	desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in EVA mode. Produced by Cybersun Industries."
+	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in travel mode. Produced by Cybersun Industries."
+
+/obj/item/clothing/head/helmet/space/hardsuit/syndi/cybersun
+	name = "neutron-star combat hardsuit helmet"
+	desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in EVA mode. Produced by Cybersun Industries."
+	alt_desc = "Designed with fighting Nanotrasen weapons in mind, the Cybersun combat hardsuit trades ballistic and blunt protection for top grade laser protection. It is in travel mode. Produced by Cybersun Industries."
 
 //нам действительно не нужен отдельный модуль под пару хардсьютов
 //old Syndie elite hardsuits and sunset stuff - by SnRbydlo & Quinalion
