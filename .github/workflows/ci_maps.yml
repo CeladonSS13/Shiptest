@@ -35,4 +35,4 @@ jobs:
       - name: Compile All Maps
         run: |
           source $HOME/BYOND/byond/bin/byondsetup
-          tools/build/build --ci dm -DCIBUILDING -DCITESTING -DALL_MAPS -DFULL_INIT
+          tools/build/build --ci dm -DCIBUILDING -DCITESTING -DFULL_INIT
