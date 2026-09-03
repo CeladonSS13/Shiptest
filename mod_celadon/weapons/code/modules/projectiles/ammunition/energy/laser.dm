@@ -83,12 +83,12 @@
 	fire_sound = 'sound/weapons/gun/laser/sharplite-fire_light.ogg'
 	projectile_type = /obj/projectile/beam/laser/nanotrasen/weak/mini
 	delay = 0.2 SECONDS
-	e_cost = 666
+	e_cost = 333
 
 /obj/item/ammo_casing/energy/disabler/nanotrasen/mini
 	projectile_type = /obj/projectile/beam/disabler/nanotrasen/weak/mini
 	delay = 0.2 SECONDS
-	e_cost = 666
+	e_cost = 333
 
 /obj/item/ammo_casing/energy/laser/antique
 	fire_sound = 'sound/weapons/laser.ogg'

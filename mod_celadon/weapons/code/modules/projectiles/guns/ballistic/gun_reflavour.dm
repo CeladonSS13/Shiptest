@@ -261,3 +261,4 @@
 /obj/item/gun/ballistic/revolver/rhino
 	name = "VI Rhino"
 	desc = "A very famous high-powered semi-auto revolver, often used by high-ranking CentCom officials and Vigilitas Interstellar officers. Chambered in .357."
+	manufacturer = MANUFACTURER_NANOTRASEN_BALLISTICS
