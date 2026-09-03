@@ -187,24 +187,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/holdout/armory)
-"bQ" = (
-/obj/effect/turf_decal/industrial/hatch{
-	color = "#730622";
-	alpha = 255
-	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/machinery/porta_turret/ship/syndicate/ballistic{
-	faction = list("hostile");
-	id = "baseturrets";
-	lethal = 1;
-	req_ship_access = 0;
-	turret_flags = 62;
-	dir = 8
-	},
-/turf/open/floor/engine/hull,
-/area/ruin/lavaland/holdout/office)
 "bR" = (
 /obj/machinery/door/airlock/public{
 	name = "Warehouse Alpha"
@@ -330,7 +312,8 @@
 	id = "baseturrets";
 	lethal = 1;
 	req_ship_access = 0;
-	turret_flags = 62
+	turret_flags = 62;
+	dir = 2
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ruin/lavaland/holdout/engineering)
@@ -1215,7 +1198,8 @@
 	id = "baseturrets";
 	lethal = 1;
 	req_ship_access = 0;
-	turret_flags = 62
+	turret_flags = 62;
+	dir = 2
 	},
 /turf/open/floor/plasteel,
 /area/ruin/lavaland/holdout/mess)
@@ -1722,17 +1706,9 @@
 	pixel_y = -7;
 	pixel_x = 9
 	},
-/obj/item/storage/belt/medical/webbing/combat{
-	pixel_x = -7;
-	pixel_y = -6
-	},
-/obj/item/clothing/head/cybersun{
-	pixel_x = -8;
-	pixel_y = 6
-	},
-/obj/item/clothing/under/cybersun/officer{
-	pixel_x = 8;
-	pixel_y = 6
+/obj/item/clothing/suit/cybersun{
+	pixel_x = -4;
+	pixel_y = -2
 	},
 /turf/open/floor/plasteel/tech,
 /area/ruin/lavaland/holdout/office)
@@ -1990,11 +1966,13 @@
 /obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
 	turret_flags = 62;
 	faction = list("hostile");
-	req_ship_access = 0;
-	lethal = 1;
 	id = "baseturrets";
-	name = "Damaged Heavy Gorlex Ballistic Defence";
-	max_integrity = 100
+	lethal = 1;
+	req_ship_access = 0;
+	scan_range = 10
+	},
+/obj/structure/cable{
+	icon_state = "0-1"
 	},
 /turf/open/floor/engine/hull,
 /area/ruin/lavaland/holdout/office)
@@ -2690,12 +2668,13 @@
 /turf/open/floor/engine/hull,
 /area/overmap_encounter/planetoid/lava/explored)
 "xq" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	turret_flags = 62;
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	faction = list("hostile");
-	req_ship_access = 0;
+	id = "baseturrets";
 	lethal = 1;
-	id = "baseturrets"
+	req_ship_access = 0;
+	turret_flags = 62;
+	dir = 8
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/lavaland/holdout/warehouseb)
@@ -3138,7 +3117,8 @@
 	id = "baseturrets";
 	lethal = 1;
 	req_ship_access = 0;
-	turret_flags = 62
+	turret_flags = 62;
+	dir = 2
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/holdout/armory)
@@ -3880,9 +3860,6 @@
 	},
 /obj/item/clothing/glasses/welding,
 /obj/item/clothing/gloves/insulated,
-/obj/item/clothing/under/syndicate/gec{
-	pixel_x = 12
-	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/holdout/engineering)
 "GW" = (
@@ -4044,23 +4021,6 @@
 /obj/item/ammo_casing/spent/rifle_steel,
 /turf/open/floor/concrete/pavement/lava,
 /area/overmap_encounter/planetoid/lava/explored)
-"HX" = (
-/obj/effect/turf_decal/industrial/hatch{
-	color = "#730622";
-	alpha = 255
-	},
-/obj/structure/cable{
-	icon_state = "0-1"
-	},
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	turret_flags = 62;
-	faction = list("hostile");
-	req_ship_access = 0;
-	lethal = 1;
-	id = "baseturrets"
-	},
-/turf/open/floor/engine/hull,
-/area/ruin/lavaland/holdout/office)
 "Ib" = (
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plasteel/dark,
@@ -4187,21 +4147,17 @@
 	pixel_y = -7;
 	pixel_x = 9
 	},
-/obj/item/clothing/head/helmet/bulletproof/x11/cybersun{
-	pixel_x = -6;
-	pixel_y = 9
-	},
 /obj/item/storage/belt/medical/webbing/combat{
-	pixel_x = 7;
-	pixel_y = 9
+	pixel_x = -8;
+	pixel_y = -4
 	},
-/obj/item/storage/belt/security/webbing{
-	pixel_x = -10;
-	pixel_y = -8
+/obj/item/clothing/under/cybersun/overalls{
+	pixel_x = -6;
+	pixel_y = 6
 	},
-/obj/item/clothing/suit/armor/vest/marine/cybersun{
-	pixel_x = 1;
-	pixel_y = -7
+/obj/item/clothing/head/helmet/m10/cybersun{
+	pixel_x = 6;
+	pixel_y = 2
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/lavaland/holdout/armory)
@@ -4340,7 +4296,7 @@
 /obj/item/paper/fluff/ruins/holdout/goodbye{
 	pixel_x = 6;
 	pixel_y = 6;
-	default_raw_text = mom,<br><br>It's your daughter, Marianne. I don't expect this to make it back to you. I'm at peace with how this is going to end, I think. The sound of the turrets firing is drilled into my mind as I look at the last of our food and potable water.<br><br>You were right. I'm stupid, and an idiot, and nothing. I wanted to do what you did, to fight against the people who hurt us. I thought you were giving up in the Federation, that I had to make up for the dream I thought you wanted. Now, with Clique trying to batter down our doors I don't know if I believe any more.<br><br>I love you."
+	default_raw_text = "Mom,<br><br>It's your daughter, Marianne. I don't expect this to make it back to you. I'm at peace with how this is going to end, I think. The sound of the turrets firing is drilled into my mind as I look at the last of our food and potable water.<br><br>You were right. I'm stupid, and an idiot, and nothing. I wanted to do what you did, to fight against the people who hurt us. I thought you were giving up in the Federation, that I had to make up for the dream I thought you wanted. Now, with Clique trying to batter down our doors I don't know if I believe any more.<br><br>I love you."
 	},
 /obj/machinery/computer/security/telescreen/entertainment/wall/beige/directional/east,
 /turf/open/floor/plasteel/dark,
@@ -5035,12 +4991,13 @@
 /turf/open/floor/plating/asteroid/dirt/grass/lavaland,
 /area/overmap_encounter/planetoid/lava/explored)
 "PE" = (
-/obj/machinery/porta_turret/ship/syndicate/ballistic/heavy{
-	turret_flags = 62;
+/obj/machinery/porta_turret/ship/syndicate/ballistic{
 	faction = list("hostile");
-	req_ship_access = 0;
+	id = "baseturrets";
 	lethal = 1;
-	id = "baseturrets"
+	req_ship_access = 0;
+	turret_flags = 62;
+	dir = 2
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ruin/lavaland/holdout/warehousea)
@@ -5090,7 +5047,6 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light/directional/north,
 /obj/item/clothing/suit/space/hardsuit/stealth/cybersun,
 /turf/open/floor/plasteel/mono/white,
@@ -5870,7 +5826,8 @@
 	id = "baseturrets";
 	lethal = 1;
 	req_ship_access = 0;
-	turret_flags = 62
+	turret_flags = 62;
+	dir = 2
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ruin/lavaland/holdout/office)
@@ -7028,7 +6985,7 @@ wg
 lm
 zk
 gj
-bQ
+eO
 IH
 Ug
 Ug
@@ -8033,7 +7990,7 @@ wg
 uM
 wC
 UX
-HX
+qn
 pH
 Ug
 Ug
