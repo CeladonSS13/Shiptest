@@ -412,9 +412,9 @@
 	rapid_fire_delay = 4
 	retreat_distance = 4
 	minimum_distance = 7
-	projectiletype = /obj/projectile/beam/laser/assault/sharplite
+	projectiletype = /obj/projectile/beam/laser/nanotrasen/assault // [CELADON-EDIT]
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/damaged/bodyguard
-	r_hand = /obj/item/gun/energy/sharplite/hades
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/hades // [CELADON-EDIT]
 	armor_base = /obj/item/clothing/suit/space/hardsuit/security
 	speak_emote = list("exhales.","rolls their shoulders.")
 	emote_hear = list("grunts.","cracks their knuckles.")
@@ -432,7 +432,7 @@
 	suit = /obj/item/clothing/suit/hooded/survivor
 	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/helmet/m10/warra
+	head = /obj/item/clothing/head/helmet/m10/nanotrasen // [CELADON-EDIT]
 	belt = /obj/item/storage/belt/security/military/frontiersmen
 	glasses = /obj/item/clothing/glasses/hud/security/sunglasses
 	mask = /obj/item/clothing/mask/gas/sechailer
