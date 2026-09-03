@@ -234,3 +234,11 @@
 	retreat_distance = 0
 	minbodytemp = 0
 	projectilesound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
+
+//hermit
+/mob/living/simple_animal/hostile/human/hermit/survivor/engineer
+	name = "The Engineer"
+	desc = "A scrawny Nanotrasen repair technician. Unarmed and utterly defenseless on their own, they seem oddly out of place."
+	icon = 'mod_celadon/_storage_icons/icons/mobs/simple_human.dmi'
+	icon_state = "nanotrasen"
+	mob_spawner = /obj/effect/mob_spawn/human/corpse/damaged/engineer

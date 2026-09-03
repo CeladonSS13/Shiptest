@@ -69,10 +69,12 @@
 	description = "Literally a fucking spoon factory"
 	suffix = "whitesands_surface_onlyaspoonful.dmm"
 
-/datum/map_template/ruin/whitesands/pubbyslopcrash
-	id = "ws-pubbyslopcrash"
-	name = "Pubby Slop Crash"
-	suffix = "whitesands_surface_pubbyslopcrash.dmm"
+/datum/map_template/ruin/whitesands/pubbytown
+	name = "Pubby Town"
+	id = "pubbytown"
+	description = "A town built around the wreck of a Pubby-Class, founded by a Nanotrasen technician who helps maintain the hermits' sharplite weapons."
+	suffix = "whitesands_surface_pubbytown.dmm"
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_SHELTER)
 
 /datum/map_template/ruin/whitesands/ruinsofweh
 	id = "ws-ruinsofweh"
