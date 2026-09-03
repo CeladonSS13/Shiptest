@@ -111,3 +111,10 @@
 	name = "Vampire laboratory"
 	description = "A Laboratory for the development of the drug 'Vita-Null+X', which will help cure vampirism, or not.."
 	suffix = "jungle_vamplab.dmm"
+
+/datum/map_template/ruin/jungle/depot
+	name = "N+S Supply Depot"
+	id = "supply-depot"
+	description = "An old supply depot, now solely inhabiated by robots."
+	suffix = "jungle_depot.dmm"
+	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
