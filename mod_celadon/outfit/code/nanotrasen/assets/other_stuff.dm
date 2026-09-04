@@ -191,3 +191,137 @@
 	desc = "A token used to redeem equipment from your nearest marine vendor."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
 	icon_state = "nanotrasen-voucher"
+
+//Holocalls
+/datum/preset_holoimage/commissioner
+	outfit_type = /datum/outfit/job/cel/nanotrasen/commissioner
+
+//holotapes
+/obj/item/disk/holodisk/lp/retrieval/phazon
+	name = "Retrieval Mission Secret Exosuit"
+	desc = "A holodisk containing a retrieval mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around a retrieval objective. The LP will need to obtain or create something.
+	DELAY 25
+	SAY Central Command needs a very experimental exosuit to be constructed but have found a lack of funds. Please procure the parts and means to create a Phazon.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/retrieval/durand
+	name = "Retrieval Mission Durand"
+	desc = "A holodisk containing a retrieval mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around a retrieval objective. The LP will need to obtain or create something.
+	DELAY 25
+	SAY Everyone knows that big STOMPY MECHS are hysterical. But when you make a murder machine that makes it funnier. Build a Durand.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/retrieval/gunstock
+	name = "Retrieval Mission Firearms"
+	desc = "A holodisk containing a retrieval mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around a retrieval objective. The LP will need to obtain or create something.
+	DELAY 25
+	SAY Nanotrasen has sent you a very limited supply of weaponry. Increase it. We want five unique guns stored in your vault.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/retrieval/materials
+	name = "Retrieval Mission Materials"
+	desc = "A holodisk containing a retrieval mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around a retrieval objective. The LP will need to obtain or create something.
+	DELAY 25
+	SAY Nanotrasen is short on funds and materials. Procure 150 sheets of the following: Diamond, Bluespace Polycrystals, Plastitanium.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/aid/repairs
+	name = "Aid Mission Repair"
+	desc = "A holodisk containing an aid mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around an aid objective. The LP will need to provide aid to local vessels not hostile or syndicate.
+	DELAY 25
+	SAY The LP is very well suited for response missions. Find 2 other allied or friendly, non-syndicate vessels in need of repairs or construction aid, and provide said aid.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/aid/rescue
+	name = "Aid Mission Rescue"
+	desc = "A holodisk containing an aid mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around an aid objective. The LP will need to provide aid to local vessels not hostile or syndicate.
+	DELAY 25
+	SAY The mission that the LP is the most well equipped for. The LP should successfully respond to 2 emergency response missions to vessels in peril, friendly or not. Syndicate crews rescued in this manner are more likely to convert if they are saved.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/aid/guard
+	name = "Aid Mission Guard Detail"
+	desc = "A holodisk containing an aid mission for the LP."
+	preset_image_type = /datum/preset_holoimage/commissioner
+	preset_record_text = {"
+	NAME Commissioner Gorre Donn
+	SAY This mission, should you choose to accept it, revolves around an aid objective. The LP will need to provide aid to local vessels not hostile or syndicate.
+	DELAY 25
+	SAY The LP is well equipped to guard another vessel's crew on their own missions. Lend aid to allied or otherwise friendly, non-syndicate vessels in clearing out 3 ruins.
+	DELAY 25
+	"}
+
+/obj/item/disk/holodisk/lp/stations
+	name = "Telecomms Stations"
+	desc = "A holodisk containing instructions for telecomms stations."
+	preset_image_type =  /datum/preset_holoimage/engineer
+	preset_record_text = {"
+	NAME Jim
+	SAY The company has graciously granted this vehicle a full telecommunications setup.
+	DELAY 20
+	SAY The available channels this ship is cleared for using are as follows:
+	DELAY 20
+	SAY Command Frequency: 135.1 using :c
+	DELAY 20
+	SAY Nanotrasen Sector Frequency: 135.3 using :w
+	DELAY 20
+	SAY Common Frequency: 149.1 using ;
+	DELAY 20
+	"}
+
+
+//lootdrop
+/obj/effect/spawner/random/lpretrieval
+	name = "LP Retrieval Missions"
+	spawn_loot_double = FALSE
+
+	loot = list(
+		/obj/item/disk/holodisk/lp/retrieval/phazon = 1,
+		/obj/item/disk/holodisk/lp/retrieval/durand = 1,
+		/obj/item/disk/holodisk/lp/retrieval/gunstock = 1,
+		/obj/item/disk/holodisk/lp/retrieval/materials = 1
+	)
+
+	spawn_loot_count = 2
+
+/obj/effect/spawner/random/lpaid
+	name = "LP Aid Missions"
+	spawn_loot_double = FALSE
+
+	loot = list(
+		/obj/item/disk/holodisk/lp/aid/repairs = 1,
+		/obj/item/disk/holodisk/lp/aid/rescue = 1,
+		/obj/item/disk/holodisk/lp/aid/guard = 1,
+	)
+
+	spawn_loot_count = 4
