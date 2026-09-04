@@ -341,110 +341,110 @@
 /datum/sprite_accessory/body/ipc_chassis/morpheus
 	name = "Morpheus Cyberkinetics (Custom)"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/morpheus,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/morpheus,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/morpheus,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/morpheus,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/morpheus,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/morpheus,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/morpheus,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/morpheus,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/morpheus,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/morpheus,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/morpheus,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/morpheus,
 	)
 	color_src = MUTCOLORS
 
 /datum/sprite_accessory/body/ipc_chassis/bishop
 	name = "Bishop Cyberkinetics"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/bishop,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/bishop,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/bishop,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/bishop,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/bishop,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/bishop,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/bishop,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/bishop,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/bishop,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/bishop,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/bishop,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/bishop,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/bishop_v2
 	name = "Bishop Cyberkinetics 2.0"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/bishop_v2,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/bishop_v2,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/bishop_v2,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/bishop_v2,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/bishop_v2,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/bishop_v2,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/bishop_v2,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/bishop_v2,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/bishop_v2,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/bishop_v2,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/bishop_v2,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/bishop_v2,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/hephaestus
 	name = "Hephaestus Industries"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/hephaestus,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/hephaestus,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/hephaestus,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/hephaestus,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/hephaestus,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/hephaestus,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/hephaestus,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/hephaestus,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/hephaestus,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/hephaestus,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/hephaestus,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/hephaestus,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/hephaestus_v2
 	name = "Hephaestus Industries 2.0"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/hephaestus_v2,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/hephaestus_v2,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/hephaestus_v2,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/hephaestus_v2,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/hephaestus_v2,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/hephaestus_v2,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/hephaestus_v2,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/hephaestus_v2,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/hephaestus_v2,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/hephaestus_v2,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/hephaestus_v2,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/hephaestus_v2,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/shellguard
 	name = "Shellguard Munitions Standard Series"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/shellguard,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/shellguard,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/shellguard,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/shellguard,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/shellguard,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/shellguard,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/shellguard,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/shellguard,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/shellguard,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/shellguard,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/shellguard,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/shellguard,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/ward_takahashi
 	name = "Ward-Takahashi Manufacturing"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/ward_takahashi,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/ward_takahashi,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/ward_takahashi,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/ward_takahashi,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/ward_takahashi,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/ward_takahashi,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/ward_takahashi,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/ward_takahashi,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/ward_takahashi,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/ward_takahashi,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/ward_takahashi,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/ward_takahashi,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/xion
 	name = "Xion Manufacturing Group"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/xion,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/xion,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/xion,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/xion,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/xion,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/xion,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/xion,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/xion,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/xion,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/xion,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/xion,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/xion,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/xion_v2
 	name = "Xion Manufacturing Group 2.0"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/xion_v2,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/xion_v2,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/xion_v2,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/xion_v2,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/xion_v2,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/xion_v2,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/xion_v2,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/xion_v2,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/xion_v2,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/xion_v2,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/xion_v2,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/xion_v2,
 	)
 
 /datum/sprite_accessory/body/ipc_chassis/zeng_hu
 	name = "Zeng-Hu Pharmaceuticals"
 	replacement_bodyparts = list(
-		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/old/zeng_hu,
-		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/old/zeng_hu,
-		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/old/zeng_hu,
-		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/old/zeng_hu,
-		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/old/zeng_hu,
-		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/old/zeng_hu,
+		BODY_ZONE_HEAD = /obj/item/bodypart/head/ipc/standart/monitor/zeng_hu,
+		BODY_ZONE_CHEST = /obj/item/bodypart/chest/ipc/standart/zeng_hu,
+		BODY_ZONE_L_ARM = /obj/item/bodypart/l_arm/ipc/standart/zeng_hu,
+		BODY_ZONE_R_ARM = /obj/item/bodypart/r_arm/ipc/standart/zeng_hu,
+		BODY_ZONE_L_LEG = /obj/item/bodypart/leg/left/ipc/standart/zeng_hu,
+		BODY_ZONE_R_LEG = /obj/item/bodypart/leg/right/ipc/standart/zeng_hu,
 	)

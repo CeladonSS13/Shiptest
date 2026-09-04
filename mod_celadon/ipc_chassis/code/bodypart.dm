@@ -37,42 +37,8 @@
 	limb_id = "android"
 
 // Удалённые спрайты
-/obj/item/bodypart/head/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_head"
-	limb_id = "bshipc"
+/obj/item/bodypart/head/ipc/standart/monitor
 	bodytype = BODYTYPE_HUMANOID | BODYTYPE_ROBOTIC | BODYTYPE_BOXHEAD
-
-/obj/item/bodypart/chest/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_chest"
-	limb_id = "bshipc"
-
-/obj/item/bodypart/l_arm/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_l_arm"
-	limb_id = "bshipc"
-
-/obj/item/bodypart/r_arm/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_r_arm"
-	limb_id = "bshipc"
-
-/obj/item/bodypart/leg/left/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_l_leg"
-	limb_id = "bshipc"
-
-/obj/item/bodypart/leg/right/ipc/old
-	static_icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/species/ipc/bodypartsOld.dmi'
-	icon_state = "bshipc_r_leg"
-	limb_id = "bshipc"
 
 // Bishop AC
 
@@ -911,42 +877,42 @@
 
 // MORPHEUS CYBERKINETICS
 
-/obj/item/bodypart/head/ipc/old/morpheus
+/obj/item/bodypart/head/ipc/standart/monitor/morpheus
 	name = "\improper Morpheus Cyberkinetics head"
 	icon_state = "mcgipc_head"
 	limb_id = "mcgipc"
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 
-/obj/item/bodypart/chest/ipc/old/morpheus
+/obj/item/bodypart/chest/ipc/standart/morpheus
 	name = "\improper Morpheus Cyberkinetics chest"
 	icon_state = "mcgipc_chest"
 	limb_id = "mcgipc"
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 
-/obj/item/bodypart/l_arm/ipc/old/morpheus
+/obj/item/bodypart/l_arm/ipc/standart/morpheus
 	name = "\improper Morpheus Cyberkinetics left arm"
 	icon_state = "mcgipc_l_arm"
 	limb_id = "mcgipc"
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 
-/obj/item/bodypart/r_arm/ipc/old/morpheus
+/obj/item/bodypart/r_arm/ipc/standart/morpheus
 	name = "\improper Morpheus Cyberkinetics right arm"
 	icon_state = "mcgipc_r_arm"
 	limb_id = "mcgipc"
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 
-/obj/item/bodypart/leg/left/ipc/old/morpheus
+/obj/item/bodypart/leg/left/ipc/standart/morpheus
 	name = "\improper Morpheus Cyberkinetics left leg"
 	icon_state = "mcgipc_l_leg"
 	limb_id = "mcgipc"
 	should_draw_greyscale = TRUE
 	uses_mutcolor = TRUE
 
-/obj/item/bodypart/leg/right/ipc/old/morpheus
+/obj/item/bodypart/leg/right/ipc/standart/morpheus
 	name = "\improper Morpheus Cyberkinetics right leg"
 	icon_state = "mcgipc_r_leg"
 	limb_id = "mcgipc"
@@ -955,192 +921,192 @@
 
 // BISHOP CYBERKINETICS
 
-/obj/item/bodypart/head/ipc/old/bishop
+/obj/item/bodypart/head/ipc/standart/monitor/bishop
 	name = "\improper Bishop Cyberkinetics head"
 	icon_state = "bshipc_head"
 	limb_id = "bshipc"
 
-/obj/item/bodypart/chest/ipc/old/bishop
+/obj/item/bodypart/chest/ipc/standart/bishop
 	name = "\improper Bishop Cyberkinetics chest"
 	icon_state = "bshipc_chest"
 	limb_id = "bshipc"
 
-/obj/item/bodypart/l_arm/ipc/old/bishop
+/obj/item/bodypart/l_arm/ipc/standart/bishop
 	name = "\improper Bishop Cyberkinetics left arm"
 	icon_state = "bshipc_l_arm"
 	limb_id = "bshipc"
 
-/obj/item/bodypart/r_arm/ipc/old/bishop
+/obj/item/bodypart/r_arm/ipc/standart/bishop
 	name = "\improper Bishop Cyberkinetics right arm"
 	icon_state = "bshipc_r_arm"
 	limb_id = "bshipc"
 
-/obj/item/bodypart/leg/left/ipc/old/bishop
+/obj/item/bodypart/leg/left/ipc/standart/bishop
 	name = "\improper Bishop Cyberkinetics left leg"
 	icon_state = "bshipc_l_leg"
 	limb_id = "bshipc"
 
-/obj/item/bodypart/leg/right/ipc/old/bishop
+/obj/item/bodypart/leg/right/ipc/standart/bishop
 	name = "\improper Bishop Cyberkinetics right leg"
 	icon_state = "bshipc_r_leg"
 	limb_id = "bshipc"
 
 // BISHOP CYBERKINETICS 2.0
 
-/obj/item/bodypart/head/ipc/old/bishop_v2
+/obj/item/bodypart/head/ipc/standart/monitor/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 head"
 	icon_state = "bs2ipc_head"
 	limb_id = "bs2ipc"
 
-/obj/item/bodypart/chest/ipc/old/bishop_v2
+/obj/item/bodypart/chest/ipc/standart/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 chest"
 	icon_state = "bs2ipc_chest"
 	limb_id = "bs2ipc"
 
-/obj/item/bodypart/l_arm/ipc/old/bishop_v2
+/obj/item/bodypart/l_arm/ipc/standart/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 left arm"
 	icon_state = "bs2ipc_l_arm"
 	limb_id = "bs2ipc"
 
-/obj/item/bodypart/r_arm/ipc/old/bishop_v2
+/obj/item/bodypart/r_arm/ipc/standart/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 right arm"
 	icon_state = "bs2ipc_r_arm"
 	limb_id = "bs2ipc"
 
-/obj/item/bodypart/leg/left/ipc/old/bishop_v2
+/obj/item/bodypart/leg/left/ipc/standart/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 left leg"
 	icon_state = "bs2ipc_l_leg"
 	limb_id = "bs2ipc"
 
-/obj/item/bodypart/leg/right/ipc/old/bishop_v2
+/obj/item/bodypart/leg/right/ipc/standart/bishop_v2
 	name = "\improper Bishop Cyberkinetics 2.0 right leg"
 	icon_state = "bs2ipc_r_leg"
 	limb_id = "bs2ipc"
 
 // HEPHAESTUS INDUSTRIES
 
-/obj/item/bodypart/head/ipc/old/hephaestus
+/obj/item/bodypart/head/ipc/standart/monitor/hephaestus
 	name = "\improper Hephaestus Industries head"
 	icon_state = "hsiipc_head"
 	limb_id = "hsiipc"
 
-/obj/item/bodypart/chest/ipc/old/hephaestus
+/obj/item/bodypart/chest/ipc/standart/hephaestus
 	name = "\improper Hephaestus Industries chest"
 	icon_state = "hsiipc_chest"
 	limb_id = "hsiipc"
 
-/obj/item/bodypart/l_arm/ipc/old/hephaestus
+/obj/item/bodypart/l_arm/ipc/standart/hephaestus
 	name = "\improper Hephaestus Industries left arm"
 	icon_state = "hsiipc_l_arm"
 	limb_id = "hsiipc"
 
-/obj/item/bodypart/r_arm/ipc/old/hephaestus
+/obj/item/bodypart/r_arm/ipc/standart/hephaestus
 	name = "\improper Hephaestus Industries right arm"
 	icon_state = "hsiipc_r_arm"
 	limb_id = "hsiipc"
 
-/obj/item/bodypart/leg/left/ipc/old/hephaestus
+/obj/item/bodypart/leg/left/ipc/standart/hephaestus
 	name = "\improper Hephaestus Industries left leg"
 	icon_state = "hsiipc_l_leg"
 	limb_id = "hsiipc"
 
-/obj/item/bodypart/leg/right/ipc/old/hephaestus
+/obj/item/bodypart/leg/right/ipc/standart/hephaestus
 	name = "\improper Hephaestus Industries right leg"
 	icon_state = "hsiipc_r_leg"
 	limb_id = "hsiipc"
 
 // HEPHAESTUS INDUSTRIES 2.0
 
-/obj/item/bodypart/head/ipc/old/hephaestus_v2
+/obj/item/bodypart/head/ipc/standart/monitor/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 head"
 	icon_state = "hi2ipc_head"
 	limb_id = "hi2ipc"
 
-/obj/item/bodypart/chest/ipc/old/hephaestus_v2
+/obj/item/bodypart/chest/ipc/standart/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 chest"
 	icon_state = "hi2ipc_chest"
 	limb_id = "hi2ipc"
 
-/obj/item/bodypart/l_arm/ipc/old/hephaestus_v2
+/obj/item/bodypart/l_arm/ipc/standart/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 left arm"
 	icon_state = "hi2ipc_l_arm"
 	limb_id = "hi2ipc"
 
-/obj/item/bodypart/r_arm/ipc/old/hephaestus_v2
+/obj/item/bodypart/r_arm/ipc/standart/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 right arm"
 	icon_state = "hi2ipc_r_arm"
 	limb_id = "hi2ipc"
 
-/obj/item/bodypart/leg/left/ipc/old/hephaestus_v2
+/obj/item/bodypart/leg/left/ipc/standart/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 left leg"
 	icon_state = "hi2ipc_l_leg"
 	limb_id = "hi2ipc"
 
-/obj/item/bodypart/leg/right/ipc/old/hephaestus_v2
+/obj/item/bodypart/leg/right/ipc/standart/hephaestus_v2
 	name = "\improper Hephaestus Industries 2.0 right leg"
 	icon_state = "hi2ipc_r_leg"
 	limb_id = "hi2ipc"
 
 // PAWSITRONS UNITED
 
-/obj/item/bodypart/head/ipc/old/pawsitrons
+/obj/item/bodypart/head/ipc/standart/monitor/pawsitrons
 	name = "\improper Pawsitrons United head"
 	icon_state = "pawsitrons_head"
 	limb_id = "pawsitrons"
 
-/obj/item/bodypart/chest/ipc/old/pawsitrons
+/obj/item/bodypart/chest/ipc/standart/pawsitrons
 	name = "\improper Pawsitrons United chest"
 	icon_state = "pawsitrons_chest"
 	limb_id = "pawsitrons"
 
-/obj/item/bodypart/l_arm/ipc/old/pawsitrons
+/obj/item/bodypart/l_arm/ipc/standart/pawsitrons
 	name = "\improper Pawsitrons United left arm"
 	icon_state = "pawsitrons_l_arm"
 	limb_id = "pawsitrons"
 
-/obj/item/bodypart/r_arm/ipc/old/pawsitrons
+/obj/item/bodypart/r_arm/ipc/standart/pawsitrons
 	name = "\improper Pawsitrons United right arm"
 	icon_state = "pawsitrons_r_arm"
 	limb_id = "pawsitrons"
 
-/obj/item/bodypart/leg/left/ipc/old/pawsitrons
+/obj/item/bodypart/leg/left/ipc/standart/pawsitrons
 	name = "\improper Pawsitrons United left leg"
 	icon_state = "pawsitrons_l_leg"
 	limb_id = "pawsitrons"
 
-/obj/item/bodypart/leg/right/ipc/old/pawsitrons
+/obj/item/bodypart/leg/right/ipc/standart/pawsitrons
 	name = "\improper Pawsitrons United right leg"
 	icon_state = "pawsitrons_r_leg"
 	limb_id = "pawsitrons"
 
 // SHELLGUARD MUNITIONS
 
-/obj/item/bodypart/head/ipc/old/shellguard
+/obj/item/bodypart/head/ipc/standart/monitor/shellguard
 	name = "\improper Shellguard Munitions head"
 	icon_state = "sgmipc_head"
 	limb_id = "sgmipc"
 
-/obj/item/bodypart/chest/ipc/old/shellguard
+/obj/item/bodypart/chest/ipc/standart/shellguard
 	name = "\improper Shellguard Munitions chest"
 	icon_state = "sgmipc_chest"
 	limb_id = "sgmipc"
 
-/obj/item/bodypart/l_arm/ipc/old/shellguard
+/obj/item/bodypart/l_arm/ipc/standart/shellguard
 	name = "\improper Shellguard Munitions left arm"
 	icon_state = "sgmipc_l_arm"
 	limb_id = "sgmipc"
 
-/obj/item/bodypart/r_arm/ipc/old/shellguard
+/obj/item/bodypart/r_arm/ipc/standart/shellguard
 	name = "\improper Shellguard Munitions right arm"
 	icon_state = "sgmipc_r_arm"
 	limb_id = "sgmipc"
 
-/obj/item/bodypart/leg/left/ipc/old/shellguard
+/obj/item/bodypart/leg/left/ipc/standart/shellguard
 	name = "\improper Shellguard Munitions left leg"
 	icon_state = "sgmipc_l_leg"
 	limb_id = "sgmipc"
 
-/obj/item/bodypart/leg/right/ipc/old/shellguard
+/obj/item/bodypart/leg/right/ipc/standart/shellguard
 	name = "\improper Shellguard Munitions right leg"
 	icon_state = "sgmipc_r_leg"
 	limb_id = "sgmipc"
@@ -1148,128 +1114,128 @@
 
 // WARD-TAKAHASHI MANUFACTURING
 
-/obj/item/bodypart/head/ipc/old/ward_takahashi
+/obj/item/bodypart/head/ipc/standart/monitor/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing head"
 	icon_state = "wtmipc_head"
 	limb_id = "wtmipc"
 
-/obj/item/bodypart/chest/ipc/old/ward_takahashi
+/obj/item/bodypart/chest/ipc/standart/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing chest"
 	icon_state = "wtmipc_chest"
 	limb_id = "wtmipc"
 
-/obj/item/bodypart/l_arm/ipc/old/ward_takahashi
+/obj/item/bodypart/l_arm/ipc/standart/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing left arm"
 	icon_state = "wtmipc_l_arm"
 	limb_id = "wtmipc"
 
-/obj/item/bodypart/r_arm/ipc/old/ward_takahashi
+/obj/item/bodypart/r_arm/ipc/standart/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing right arm"
 	icon_state = "wtmipc_r_arm"
 	limb_id = "wtmipc"
 
-/obj/item/bodypart/leg/left/ipc/old/ward_takahashi
+/obj/item/bodypart/leg/left/ipc/standart/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing left leg"
 	icon_state = "wtmipc_l_leg"
 	limb_id = "wtmipc"
 
-/obj/item/bodypart/leg/right/ipc/old/ward_takahashi
+/obj/item/bodypart/leg/right/ipc/standart/ward_takahashi
 	name = "\improper Ward-Takahashi Manufacturing right leg"
 	icon_state = "wtmipc_r_leg"
 	limb_id = "wtmipc"
 
 // XION MANUFACTURING GROUP
 
-/obj/item/bodypart/head/ipc/old/xion
+/obj/item/bodypart/head/ipc/standart/monitor/xion
 	name = "\improper Xion Manufacturing Group head"
 	icon_state = "xmgipc_head"
 	limb_id = "xmgipc"
 
-/obj/item/bodypart/chest/ipc/old/xion
+/obj/item/bodypart/chest/ipc/standart/xion
 	name = "\improper Xion Manufacturing Group chest"
 	icon_state = "xmgipc_chest"
 	limb_id = "xmgipc"
 
-/obj/item/bodypart/l_arm/ipc/old/xion
+/obj/item/bodypart/l_arm/ipc/standart/xion
 	name = "\improper Xion Manufacturing Group left arm"
 	icon_state = "xmgipc_l_arm"
 	limb_id = "xmgipc"
 
-/obj/item/bodypart/r_arm/ipc/old/xion
+/obj/item/bodypart/r_arm/ipc/standart/xion
 	name = "\improper Xion Manufacturing Group right arm"
 	icon_state = "xmgipc_r_arm"
 	limb_id = "xmgipc"
 
-/obj/item/bodypart/leg/left/ipc/old/xion
+/obj/item/bodypart/leg/left/ipc/standart/xion
 	name = "\improper Xion Manufacturing Group left leg"
 	icon_state = "xmgipc_l_leg"
 	limb_id = "xmgipc"
 
-/obj/item/bodypart/leg/right/ipc/old/xion
+/obj/item/bodypart/leg/right/ipc/standart/xion
 	name = "\improper Xion Manufacturing Group right leg"
 	icon_state = "xmgipc_r_leg"
 	limb_id = "xmgipc"
 
 // XION MANUFACTURING GROUP 2.0
 
-/obj/item/bodypart/head/ipc/old/xion_v2
+/obj/item/bodypart/head/ipc/standart/monitor/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 head"
 	icon_state = "xm2ipc_head"
 	limb_id = "xm2ipc"
 
-/obj/item/bodypart/chest/ipc/old/xion_v2
+/obj/item/bodypart/chest/ipc/standart/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 chest"
 	icon_state = "xm2ipc_chest"
 	limb_id = "xm2ipc"
 
-/obj/item/bodypart/l_arm/ipc/old/xion_v2
+/obj/item/bodypart/l_arm/ipc/standart/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 left arm"
 	icon_state = "xm2ipc_l_arm"
 	limb_id = "xm2ipc"
 
-/obj/item/bodypart/r_arm/ipc/old/xion_v2
+/obj/item/bodypart/r_arm/ipc/standart/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 right arm"
 	icon_state = "xm2ipc_r_arm"
 	limb_id = "xm2ipc"
 
-/obj/item/bodypart/leg/left/ipc/old/xion_v2
+/obj/item/bodypart/leg/left/ipc/standart/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 left leg"
 	icon_state = "xm2ipc_l_leg"
 	limb_id = "xm2ipc"
 
-/obj/item/bodypart/leg/right/ipc/old/xion_v2
+/obj/item/bodypart/leg/right/ipc/standart/xion_v2
 	name = "\improper Xion Manufacturing Group 2.0 right leg"
 	icon_state = "xm2ipc_r_leg"
 	limb_id = "xm2ipc"
 
 // ZENG-HU PHARMACEUTICALS
 
-/obj/item/bodypart/head/ipc/old/zeng_hu
+/obj/item/bodypart/head/ipc/standart/monitor/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals head"
 	icon_state = "zhpipc_head"
 	limb_id = "zhpipc"
 
-/obj/item/bodypart/chest/ipc/old/zeng_hu
+/obj/item/bodypart/chest/ipc/standart/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals chest"
 	icon_state = "zhpipc_chest"
 	limb_id = "zhpipc"
 
-/obj/item/bodypart/l_arm/ipc/old/zeng_hu
+/obj/item/bodypart/l_arm/ipc/standart/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals left arm"
 	icon_state = "zhpipc_l_arm"
 	limb_id = "zhpipc"
 
-/obj/item/bodypart/r_arm/ipc/old/zeng_hu
+/obj/item/bodypart/r_arm/ipc/standart/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals right arm"
 	icon_state = "zhpipc_r_arm"
 	limb_id = "zhpipc"
 
-/obj/item/bodypart/leg/left/ipc/old/zeng_hu
+/obj/item/bodypart/leg/left/ipc/standart/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals left leg"
 	icon_state = "zhpipc_l_leg"
 	limb_id = "zhpipc"
 
-/obj/item/bodypart/leg/right/ipc/old/zeng_hu
+/obj/item/bodypart/leg/right/ipc/standart/zeng_hu
 	name = "\improper Zeng-Hu Pharmaceuticals right leg"
 	icon_state = "zhpipc_r_leg"
 	limb_id = "zhpipc"
