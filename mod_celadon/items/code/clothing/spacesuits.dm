@@ -3,6 +3,22 @@
 //********************
 
 //MARK: NT
+//LP
+/obj/item/clothing/suit/space/hardsuit/ert/lp
+	name = "Loss Prevention Lieutenant Hardsuit"
+	desc = "The middlemanagement of the ERT world, the Lieutenant of the LP team is given this slightly downgraded version of the ERT Commander hardsuit."
+	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
+	resistance_flags = null
+	max_heat_protection_temperature = null
+	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
+
+/obj/item/clothing/head/helmet/space/hardsuit/ert/lp
+	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
+	name = "Loss Prevention Lieutenant Hardsuit Helmet"
+	desc = "The helmet that comes attached to the LP Team Lieutenant Hardsuit."
+	resistance_flags = null
+	max_heat_protection_temperature = null
 
 /obj/item/clothing/suit/space/hardsuit/ert/lp/jani
 	name = "Loss Prevention Janitorial Hardsuit"
@@ -23,22 +39,6 @@
 	item_state = "hardsuit0-ert_janitor"
 	hardsuit_type = "ert_janitor"
 	armor = list("melee" = 50, "bullet" = 20, "laser" = 20, "energy" = 20, "bomb" = 10, "bio" = 100, "rad" = 50, "fire" = 50, "acid" = 80, "wound" = 20)
-
-/obj/item/clothing/suit/space/hardsuit/ert/lp
-	name = "Loss Prevention Lieutenant Hardsuit"
-	desc = "The middlemanagement of the ERT world, the Lieutenant of the LP team is given this slightly downgraded version of the ERT Commander hardsuit."
-	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
-	helmettype = /obj/item/clothing/head/helmet/space/hardsuit/ert/lp
-	resistance_flags = null
-	max_heat_protection_temperature = null
-	supports_variations = DIGITIGRADE_VARIATION | VOX_VARIATION
-
-/obj/item/clothing/head/helmet/space/hardsuit/ert/lp
-	armor = list("melee" = 50, "bullet" = 40, "laser" = 30, "energy" = 40, "bomb" = 35, "bio" = 100, "rad" = 60, "fire" = 50, "acid" = 80)
-	name = "Loss Prevention Lieutenant Hardsuit Helmet"
-	desc = "The helmet that comes attached to the LP Team Lieutenant Hardsuit."
-	resistance_flags = null
-	max_heat_protection_temperature = null
 
 /obj/item/clothing/suit/space/hardsuit/ert/lp/sec
 	armor = list("melee" = 40, "bullet" = 40, "laser" = 20, "energy" = 20, "bomb" = 20, "bio" = 100, "rad" = 50, "fire" = 40, "acid" = 40)
