@@ -30,8 +30,6 @@
 	end_sound = 'sound/machines/generator/generator_end.ogg'
 	volume = 40
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 // [CELADON-ADD] - CELADON_GRAVGEN
 /datum/looping_sound/gravity_generator
 	mid_sounds = list('mod_celadon/_storage_sounds/sound/effects/beam.ogg')
@@ -40,7 +38,6 @@
 	falloff_distance = 3
 // [/CELADON-ADD]
 
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /datum/looping_sound/oven
 	start_sound = 'sound/machines/oven/oven_loop_start.ogg'
 	start_length = 12
