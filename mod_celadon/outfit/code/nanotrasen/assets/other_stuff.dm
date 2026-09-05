@@ -154,40 +154,67 @@
 	desc = "A folder stamped \"Top Secret - Property of Nanotrasen Corporation. Unauthorized distribution is punishable by death.\""
 	document = /obj/item/documents/nanotrasen/research
 
-/obj/item/paper/fluff/ship/celestis/sm
-	name = "Nakamura Engineering supermatter manual"
-	default_raw_text ={"<html> <head><table bgcolor="ffce1c" width="100%" height="15%">
-			</head>
-			<th>
-			<div align="left"><font size="5" color="white">
-			Supermatter for dummies
-			</div>
-			<div align="left"><font size="1" color="white">
-			<p>Written by Nakamura Engineering.</p>
-			<p>Approved by nanotrasen, Inc.</p>
-			</div>
-			<body>
-			<hr>
-			<div align="left"><font size="2" color="black">
-			<p>1.To start the supermatter, first of all, equip your mesons, anchor TWO Nitrogen canisters, connected to the green pipes. Don't forget to turn on their pumps.</p>
-			<p>2.Turn on all TWO thermomachines, set them to the minimal temperature.</p>
-			<p>3.After that, check all THREE filters for N2, O2 and plasma, make sure they are operational.</p>
-			<p>4.Then, activate the 3 vents and 3 scrubbers in the core chamber using an air alarm, you'll find it on a wall.</p>
-			<p>5.Set the vents to internal and the scrubbers to siphoning with expanded range.
-			<p>6.Make sure to activate the vents first, and only then the scrubbers!</p>
-			<p>7.Once everything is done, get all the plasma tanks inside the radiation collectors, activate them and turn on the emitters.</p>
-			</div>
-			<hr>
-			<div align="left"><font size="1" color="black">
-			<p><code>Nanotrasen Corporation is not responsibe for any injuries caused by misfollowing the manual or engine's instabilities.</code></p>
-			<p><code>A delamination due to crew's negligence will result in a fine of 100.000 credits and further detainment at the nearest Vigilitas Interstellar installation.</code></p>
-			</div>
-			</th>
-			</body>
-			"}
-
 /obj/item/gun_voucher/nanotrasen
 	name = "Vigilitas weapon voucher"
 	desc = "A token used to redeem equipment from your nearest marine vendor."
 	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
 	icon_state = "nanotrasen-voucher"
+
+/obj/item/disk/holodisk/ship/w/engineeringnotice
+	name = "holorecord disk - Engine Introduction"
+	preset_image_type = /datum/preset_holoimage/engi_director
+	preset_record_text = {"
+	NAME NE Engineering Director
+	DELAY 10
+	SAY ...Is this thing on?
+	DELAY 20
+	SAY Hello there! This is your engineering director speaking.
+	DELAY 20
+	SAY Welcome to the engineering bay!
+	DELAY 50
+	SAY The bay is split in two: atmospherics and the tool storage.
+	DELAY 50
+	SAY You are currently in the tool storage. Probably
+	DELAY 50
+	SAY ...While i could waste your time explaining what's going on and what's where.
+	DELAY 50
+	SAY Lets just get straight to bussiness: The supermatter crystal!.. And it's turbine generators.
+	DELAY 50
+	SAY So basically, what you'd usually see are some radiation collectors or maybe tesla coils, right?
+	DELAY 50
+	SAY Well that's not going to happen here! This ship is equipped with a pair of turbine generators.
+	DELAY 50
+	SAY The supermatter itself serves as a rather inefficient fuel generator for the turbines.
+	DELAY 50
+	SAY Will it stay inefficient, improve it's fuel output or explode? That's up to you!
+	DELAY 50
+	SAY Although i'd recommend keeping it intact, Nanotrasen does not want you to ruin their new shiny refit.
+	DELAY 50
+	SAY Well! Refer to the atmospherics holodisk for further instructions on the supermatter setup. i'll see you there.
+	DELAY 50
+	SAY ...As for now consider equipping some tools and radiation protection. It's in this room somewhere.
+	"}
+
+/obj/item/disk/holodisk/ship/w/supermatter
+	name = "holorecord disk - Supermatter guide"
+	preset_image_type = /datum/preset_holoimage/engi_director
+	preset_record_text = {"
+	NAME NE Engineering Director
+	DELAY 10
+	SAY ...Uhhh. Welcome Back!
+	DELAY 30
+	SAY I'm assuming you already listened to the first disk in the tool storage room, if not, go do so!
+	DELAY 50
+	SAY I'm now going to do a step-by-step guide for the setup. Listen carefully. You can come back and replay this if needed.
+	DELAY 20
+	SAY Uhh...
+	DELAY 50
+	SAY So, turn all the termomachines ON. No need to mess with their settings.
+	DELAY 50
+	SAY After that, turn all the gas filters left of the thermomachines ON. Make sure the first filter connected to the green pipes is operational and filters for nitrogen.
+	DELAY 50
+	SAY Connect the green nitrogen canisters to their respective ports. You can find them under the control panel. Once done, turn their pumps ON.
+	DELAY 50
+	SAY Done? Now do the same for the blue canister north of the control panel!
+
+	"}

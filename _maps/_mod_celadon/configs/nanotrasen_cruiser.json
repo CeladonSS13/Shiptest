@@ -1,0 +1,65 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "W-class Repurposed Interceptor",
+	"map_short_name": "W",
+	"description": "",
+	"map_path": "_maps/_mod_celadon/shuttles/nanotrasen/nanotrasen_cruiser.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 6,
+	"starting_funds": 2000,
+	"prefix": "NTSV",
+	"faction": "/datum/faction/nanotrasen",
+	"tags": ["Исследовательский", "Специализированный"],
+	"namelists": [
+		"NANOTRASEN",
+		"SPACE",
+		"MYTHOLOGICAL",
+		"WEAPONS"
+	],
+	"job_slots": {
+		"Captain": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/captain",
+			"officer": true,
+			"slots": 1
+		},
+		"First Officer": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/hop",
+			"officer": true,
+			"slots": 1
+		},
+		"Corporate Representative": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/lawyer/corporaterepresentative",
+			"slots": 1
+		},
+		"Sergeant": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/hos/vigilitas",
+			"officer": true,
+			"slots": 1
+		},
+		"Security Specialist": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/security/vigilitas",
+			"slots": 1
+		},
+		"Medical Specialist": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/doctor/deforest_medic",
+			"slots": 1
+		},
+		"Scientist": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/scientist",
+			"slots": 1
+		},
+		"Shaft Miner": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/miner/nslogistics",
+			"slots": 1
+		},
+		"Engineer": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/engineer/nakamura",
+			"slots": 2
+		},
+		"Deckhand": {
+			"outfit": "/datum/outfit/job/cel/nanotrasen/assistant",
+			"slots": 2
+		}
+	}
+}
