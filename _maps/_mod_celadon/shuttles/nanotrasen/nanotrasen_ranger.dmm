@@ -706,7 +706,7 @@
 	id = "ranger_turrets"
 	},
 /turf/open/floor/engine/hull/interior,
-/area/template_noop)
+/area/ship/bridge)
 "eo" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 4
@@ -2257,9 +2257,6 @@
 	pixel_y = -18;
 	pixel_x = 6
 	},
-/obj/item/clothing/head/maidheadband{
-	pixel_x = -5
-	},
 /obj/item/storage/backpack/ert/janitor{
 	pixel_x = -8;
 	pixel_y = -8
@@ -2272,24 +2269,13 @@
 /obj/effect/turf_decal/road/line/opaque/purple{
 	dir = 1
 	},
-/obj/item/clothing/under/costume/maid{
-	pixel_y = -3;
-	pixel_x = 1
-	},
 /obj/item/clothing/suit/armor/vest/alt{
 	pixel_y = -5;
 	pixel_x = -11
 	},
-/obj/item/clothing/accessory/maidapron{
-	pixel_y = -3
-	},
 /obj/item/clothing/under/nanotrasen/janitor{
 	pixel_x = 8;
 	pixel_y = 6
-	},
-/obj/item/clothing/under/rank/civilian/janitor/maid{
-	pixel_y = -1;
-	pixel_x = 8
 	},
 /obj/item/clothing/head/nanotrasen/cap/janitor{
 	pixel_y = 10
@@ -3921,7 +3907,7 @@
 	id = "ranger_turrets"
 	},
 /turf/open/floor/engine/hull/interior,
-/area/template_noop)
+/area/ship/bridge)
 "wc" = (
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/window/northright{
@@ -4206,15 +4192,18 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "xL" = (
-/obj/machinery/porta_turret/ship/nanotrasen,
-/turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew/toilet)
-"xQ" = (
 /obj/machinery/porta_turret/ship/nanotrasen{
-	dir = 1
+	id = "ranger_turrets"
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
-/area/ship/crew/cryo)
+/area/ship/bridge)
+"xQ" = (
+/obj/machinery/porta_turret/ship/nanotrasen{
+	dir = 1;
+	id = "ranger_turrets"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "yi" = (
 /obj/effect/turf_decal/industrial/warning,
 /obj/machinery/button/shieldwallgen{
@@ -5220,9 +5209,6 @@
 /obj/item/melee/baton{
 	pixel_x = -4
 	},
-/obj/item/melee/classic_baton{
-	pixel_x = 2
-	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = -10;
 	pixel_y = -8
@@ -5235,10 +5221,13 @@
 	icon_state = "tac";
 	name = "armory tac locker"
 	},
+/obj/item/melee/baton{
+	pixel_x = 0;
+	pixel_y = -3
+	},
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/security/armory)
 "Ek" = (
-/obj/machinery/computer/telecomms/server,
 /obj/machinery/turretid/ship{
 	id = "ranger_turrets";
 	pixel_y = 25
@@ -5253,6 +5242,7 @@
 /obj/effect/turf_decal/techfloor{
 	dir = 8
 	},
+/obj/machinery/computer/med_data,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "Eq" = (
@@ -5654,10 +5644,10 @@
 /obj/item/storage/guncase/pistol/rhino{
 	pixel_y = -10
 	},
-/obj/item/clothing/gloves/krav_maga/sec,
 /obj/structure/closet/secure_closet{
 	icon_state = "hos"
 	},
+/obj/item/clothing/gloves/tackler/combat/insulated,
 /turf/open/floor/wood/mahogany,
 /area/ship/crew/dorm/captain)
 "Hd" = (
@@ -5759,9 +5749,6 @@
 /obj/item/bedsheet/qm,
 /turf/open/floor/carpet/orange,
 /area/ship/crew/specialized/cargo)
-"HX" = (
-/turf/closed/wall/r_wall/syndicate/nodiagonal,
-/area/ship/bridge)
 "HZ" = (
 /obj/machinery/atmospherics/components/binary/pump{
 	dir = 8
@@ -7635,11 +7622,11 @@
 /area/ship/engineering/communications)
 "Uj" = (
 /obj/machinery/newscaster/directional/north,
-/obj/machinery/computer/cargo,
 /obj/effect/turf_decal/borderfloorwhite{
 	color = "#d40000";
 	dir = 5
 	},
+/obj/machinery/computer/atmos_alert,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "Ur" = (
@@ -8809,13 +8796,13 @@ TK
 zW
 zW
 zW
-HX
+Ok
 Ok
 gh
 Md
 pL
 Ok
-HX
+Ok
 zW
 zW
 zW
