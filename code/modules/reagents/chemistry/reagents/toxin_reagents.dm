@@ -466,10 +466,12 @@
 	return //Deliberately empty to make it a silent killer
 
 /datum/reagent/toxin/histamine/on_mob_life(mob/living/carbon/M)
+/*
 	if(!overdosed)
 		if (SPT_PROB(5, SSMOBS_DT))
 			to_chat(M, span_warning("You find yourself wheezing a little harder as your neck swells..."))
 		M.adjust_lung_inflammation(histamine_inflammation * SSMOBS_DT * REM)
+*/
 
 	if(prob(10))
 		switch(rand(1,4))
@@ -490,7 +492,7 @@
 /datum/reagent/toxin/histamine/overdose_process(mob/living/M)
 	M.adjustOxyLoss(1*REM, 0)
 	M.adjustToxLoss(1*REM, 0)
-	M.adjust_lung_inflammation(histamine_OD_inflammation * SSMOBS_DT * REM)
+	//M.adjust_lung_inflammation(histamine_OD_inflammation * SSMOBS_DT * REM)
 	if (SPT_PROB(15, SSMOBS_DT))
 		to_chat(M, span_boldwarning("You feel your neck swelling, squeezing on your windpipe more and more!"))
 	..()

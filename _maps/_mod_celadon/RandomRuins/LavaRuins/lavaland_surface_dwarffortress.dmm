@@ -72,6 +72,10 @@
 /obj/item/chair/wood/wings,
 /turf/open/floor/plating/asteroid/basalt,
 /area/overmap_encounter/planetoid/cave/explored)
+"nS" = (
+/obj/structure/sign/poster/nanotrasen/high_class_martini,
+/turf/closed/wall/mineral/wood,
+/area/overmap_encounter/planetoid/cave/explored)
 "qj" = (
 /mob/living/simple_animal/hostile/asteroid/hivelord/legion/dwarf,
 /obj/effect/decal/cleanable/blood/old,
@@ -106,6 +110,12 @@
 "wm" = (
 /obj/structure/bed,
 /obj/effect/spawner/random/bedsheet,
+/turf/open/floor/plating/asteroid/basalt,
+/area/overmap_encounter/planetoid/cave/explored)
+"wZ" = (
+/obj/structure/table/wood,
+/obj/item/shield/buckler,
+/obj/item/shield/buckler,
 /turf/open/floor/plating/asteroid/basalt,
 /area/overmap_encounter/planetoid/cave/explored)
 "xP" = (
@@ -233,12 +243,6 @@
 /obj/item/clothing/head/helmet/skull,
 /turf/open/floor/plating/asteroid/basalt,
 /area/overmap_encounter/planetoid/cave/explored)
-"PB" = (
-/obj/structure/table/wood,
-/obj/item/shield/riot/buckler,
-/obj/item/shield/riot/buckler,
-/turf/open/floor/plating/asteroid/basalt,
-/area/overmap_encounter/planetoid/cave/explored)
 "PW" = (
 /obj/effect/decal/cleanable/blood/old,
 /obj/item/flashlight/flare/torch,
@@ -253,10 +257,6 @@
 "RP" = (
 /obj/structure/reagent_dispensers/beerkeg,
 /turf/open/floor/plating/asteroid/basalt,
-/area/overmap_encounter/planetoid/cave/explored)
-"Sv" = (
-/obj/structure/sign/poster/nanotrasen/high_class_martini,
-/turf/closed/wall/mineral/wood,
 /area/overmap_encounter/planetoid/cave/explored)
 "Ti" = (
 /obj/structure/table/wood,
@@ -496,7 +496,7 @@ xR
 xR
 xR
 Ay
-Sv
+nS
 xR
 xR
 xR
@@ -621,7 +621,7 @@ Ay
 xR
 iM
 Fs
-PB
+wZ
 xR
 Ay
 Ay

@@ -140,7 +140,7 @@
 	name = "Telescopic Shield"
 	desc = "Contains a telescopic shield, effective at holding back hostile fauna, xenofauna, or large crowds in tight spaces."
 	cost = 3000
-	contains = list(/obj/item/shield/riot/tele)
+	contains = list(/obj/item/shield/tele)
 	crate_name = "telescopic shield crate"
 
 /datum/supply_pack/faction/independent/sec_supply/survknives

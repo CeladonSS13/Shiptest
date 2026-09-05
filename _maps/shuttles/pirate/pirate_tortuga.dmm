@@ -1307,45 +1307,6 @@
 	},
 /turf/open/floor/plating,
 /area/ship/maintenance/aft)
-"lV" = (
-/obj/item/storage/firstaid/brute{
-	pixel_y = 8;
-	pixel_x = 2
-	},
-/obj/item/storage/firstaid/fire{
-	pixel_x = -8;
-	pixel_y = 6
-	},
-/obj/item/clothing/accessory/armband/medblue{
-	pixel_y = -1;
-	pixel_x = -6
-	},
-/obj/item/clothing/gloves/nitrile{
-	pixel_y = -13
-	},
-/obj/item/storage/belt/medical/webbing{
-	pixel_y = 8;
-	pixel_x = 5
-	},
-/obj/item/clothing/head/soft,
-/obj/effect/turf_decal/siding/blue{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/wall/white/med{
-	pixel_y = -29
-	},
-/obj/item/storage/firstaid/medical,
-/obj/item/storage/firstaid/toxin{
-	pixel_x = -10
-	},
-/obj/item/reagent_containers/glass/bottle/dimorlin,
-/obj/item/reagent_containers/syringe,
-/obj/item/reagent_containers/glass/bottle/chitosan,
-/obj/item/reagent_containers/glass/bottle/chitosan,
-/obj/item/stack/medical/bone_gel/four,
-/turf/open/floor/plasteel/white,
-/area/ship/medical)
 "mf" = (
 /obj/structure/table,
 /turf/open/floor/plasteel/grimy,
@@ -1515,6 +1476,45 @@
 /obj/item/melee/boarding_axe,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
+"mU" = (
+/obj/item/storage/firstaid/brute{
+	pixel_y = 8;
+	pixel_x = 2
+	},
+/obj/item/storage/firstaid/fire{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/obj/item/clothing/accessory/armband/medblue{
+	pixel_y = -1;
+	pixel_x = -6
+	},
+/obj/item/clothing/gloves/nitrile{
+	pixel_y = -13
+	},
+/obj/item/storage/belt/medical/webbing{
+	pixel_y = 8;
+	pixel_x = 5
+	},
+/obj/item/clothing/head/soft,
+/obj/effect/turf_decal/siding/blue{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/wall/white/med{
+	pixel_y = -29
+	},
+/obj/item/storage/firstaid/medical,
+/obj/item/storage/firstaid/toxin{
+	pixel_x = -10
+	},
+/obj/item/reagent_containers/glass/bottle/dimorlin,
+/obj/item/reagent_containers/syringe,
+/obj/item/reagent_containers/glass/bottle/chitosan,
+/obj/item/reagent_containers/glass/bottle/chitosan,
+/obj/item/stack/medical/bone_gel/four,
+/turf/open/floor/plasteel/white,
+/area/ship/medical)
 "mZ" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 10
@@ -2390,21 +2390,6 @@
 /obj/effect/turf_decal/siding/thinplating/dark,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"vr" = (
-/obj/structure/fluff/paper/stack{
-	dir = 4;
-	pixel_y = 9;
-	layer = 2.79
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/barricade/directional/flippedtable{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/ship/maintenance/aft)
 "vD" = (
 /obj/structure/cable/yellow{
 	icon_state = "5-10"
@@ -2598,20 +2583,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
-"xf" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 8
-	},
-/obj/machinery/computer/helm/viewscreen/directional/north,
-/turf/open/floor/carpet/nanoweave,
-/area/ship/crew/crewtwo)
-"xi" = (
-/obj/machinery/portable_atmospherics/pump,
-/turf/open/floor/plating{
-	icon_state = "plating_rust"
-	},
-/area/ship/maintenance)
-"xB" = (
+"xc" = (
 /obj/structure/closet/secure_closet{
 	icon_door = "tac";
 	icon_state = "tac";
@@ -2628,12 +2600,24 @@
 /obj/item/door_seal{
 	pixel_y = -7
 	},
-/obj/item/shield/riot/spike,
 /obj/item/storage/box/smokebombs,
 /obj/item/storage/toolbox/ammo/frag,
 /obj/item/crowbar/power,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/security/armory)
+"xf" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 8
+	},
+/obj/machinery/computer/helm/viewscreen/directional/north,
+/turf/open/floor/carpet/nanoweave,
+/area/ship/crew/crewtwo)
+"xi" = (
+/obj/machinery/portable_atmospherics/pump,
+/turf/open/floor/plating{
+	icon_state = "plating_rust"
+	},
+/area/ship/maintenance)
 "xV" = (
 /obj/effect/turf_decal/borderfloor,
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -4077,6 +4061,14 @@
 /obj/structure/catwalk/over/plated_catwalk,
 /turf/open/floor/plating,
 /area/ship/crew/toilet)
+"KX" = (
+/obj/effect/turf_decal/siding/thinplating/dark,
+/obj/effect/turf_decal/borderfloor{
+	dir = 1
+	},
+/obj/machinery/computer/security/telescreen/entertainment/wall/beige/directional/north,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/crew/canteen)
 "KZ" = (
 /obj/machinery/door/window/brigdoor/eastright,
 /obj/machinery/shower{
@@ -5615,6 +5607,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/canteen)
+"XT" = (
+/obj/structure/fluff/paper/stack{
+	dir = 4;
+	pixel_y = 9;
+	layer = 2.79
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/directional/flippedtable{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/maintenance/aft)
 "XX" = (
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
@@ -5788,14 +5795,6 @@
 /obj/machinery/door/firedoor/heavy,
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/cargo)
-"Zz" = (
-/obj/effect/turf_decal/siding/thinplating/dark,
-/obj/effect/turf_decal/borderfloor{
-	dir = 1
-	},
-/obj/machinery/computer/security/telescreen/entertainment/wall/beige/directional/north,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/crew/canteen)
 "ZC" = (
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
@@ -6528,7 +6527,7 @@ Px
 Px
 td
 uf
-vr
+XT
 wY
 wY
 Bw
@@ -6815,7 +6814,7 @@ eZ
 CD
 Lx
 Ab
-Zz
+KX
 RK
 KP
 CE
@@ -6865,7 +6864,7 @@ VO
 VO
 VO
 Vt
-xB
+xc
 RH
 hP
 FP
@@ -6983,7 +6982,7 @@ Te
 ZH
 qp
 At
-lV
+mU
 Vt
 Vt
 qD
