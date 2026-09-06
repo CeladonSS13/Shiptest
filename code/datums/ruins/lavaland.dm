@@ -13,7 +13,7 @@
 /datum/map_template/ruin/lavaland/wrecked_factory
 	name = "Wrecked Factory"
 	id = "wreck_factory"
-	description = "A Makosso-Warra processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now."
+	description = "A Nanotrasen processing facility, assaulted by a pirate raid that has killed most of the staff. The offices however, remain unbreached for now." // [CELADON-EDIT]
 	suffix = "lavaland_surface_wrecked_factory.dmm"
 
 /datum/map_template/ruin/lavaland/fallenstar

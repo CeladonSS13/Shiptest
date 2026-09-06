@@ -407,8 +407,9 @@
 
 /obj/item/stock_parts/cell/gun/upgraded
 	name = "upgraded energy power cell"
-	desc = "An high-capacity weapon cell used exclusively by Sharplite Energy weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	desc = "A high-capacity weapon cell used exclusively by Sharplite Energy weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
 	icon_state = "energy_plus-cell"
+	base_state = "energy_plus"
 
 /obj/item/stock_parts/cell/gun/upgraded/empty
 	start_empty = TRUE
@@ -418,15 +419,22 @@
 	desc = "A proprietary power cell primarily used by Sharplite Plasma weaponry. Nanotrasen's large market share has forced some weapon developers to include adapters for these cells."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/power.dmi'
 	icon_state = "plasma-cell"
-	base_state = "plasma"	// Оверлей - Цвет-заряда батареек
+	base_state = "plasma"
 	maxcharge = 15000
 	chargerate = 1000
 	reskin = TRUE
 
 /obj/item/stock_parts/cell/gun/sharplite/plus
 	name = "upgraded plasma power cell"
-	desc = "An high-capacity weapon cell used exclusively by Sharplite Plasma weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
+	desc = "A high-capacity weapon cell used exclusively by Sharplite Plasma weaponry. They are a great improvement over the stock cell, and are frequently sought after by collectors, soldiers, and operators of heavy lasers alike."
 	icon_state = "plasma_plus-cell"
+	base_state = "plasma_plus"
+	maxcharge = 30000
+
+/obj/item/stock_parts/cell/gun/sharplite/mini
+	name = "miniature plasma power cell"
+	desc = "A compact weapon cell used exclusively by Sharplite Plasma weaponry. It holds less charge and is intended for usage in energy handguns."
+	icon_state = "plasma_mini-cell"
 	maxcharge = 30000
 
 /obj/item/stock_parts/cell/gun/mini

@@ -762,6 +762,9 @@ SAVEFILE UPDATING/VERSIONING - 'Simplified', or rather, more coder-friendly ~Car
 	features["riol_chest_markings_color"]		= sanitize_hexcolor(features["riol_chest_markings_color"])
 	features["riol_body_markings_color"]		= sanitize_hexcolor(features["riol_body_markings_color"])
 	features["riol_tail_markings_color"]		= sanitize_hexcolor(features["riol_tail_markings_color"])
+
+	if(!ship_name)
+		ship_name = "None"
 	// [/CELADON-ADD]
 
 	all_quirks = SANITIZE_LIST(all_quirks)

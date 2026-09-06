@@ -13,7 +13,7 @@
 
 /datum/map_template/ruin/rockplanet/distillery
 	name = "Frontiersman Distillery"
-	description = "A former pre-ICW era Makosso-Warra outpost converted into a moonshine distillery by Frontiersman bootleggers."
+	description = "A former ancient Nanotrasen outpost converted into a moonshine distillery by Frontiersman bootleggers." // [CELADON-EDIT]
 	id = "rockplanet_distillery"
 	suffix = "rockplanet_distillery.dmm"
 

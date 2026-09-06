@@ -2397,10 +2397,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					socks = next_list_item(socks, GLOB.socks_list)
 
 				if("ship_name")
-					var/new_name =  reject_bad_name( input(user, "Select a ship name. If the name is 'None', a random name will be chosen.", "Character Preference")  as text|null)
+					var/new_name =  reject_bad_name(input(user, "Select a ship name. If the name is 'None', a random name will be chosen.", "Character Preference")  as text|null)
 					if(new_name)
 						ship_name = new_name
 					else
+						ship_name = "None"
 						to_chat(user, "<font color='red'>Invalid name. Your name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, 0-9, and the following punctuation: ' - . ~ | @ : # $ % & * +</font>")
 				// [/CELADON-ADD]
 
