@@ -392,7 +392,10 @@
 	dir = 8
 	},
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/patterned/cargo_one/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_1)
@@ -982,7 +985,10 @@
 	pixel_x = 6
 	},
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = -2;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/patterned/grid/dark/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_2)
@@ -1344,7 +1350,10 @@
 	dir = 1
 	},
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 10
 	},
 /turf/open/floor/plasteel/patterned/jungleplanet/interior,
 /area/ruin/jungle/depot/supply_office)
@@ -2234,14 +2243,17 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
 	},
-/obj/structure/spacevine/weak,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 6;
+	pixel_x = 0;
+	pixel_y = 10
 	},
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/jungleplanet/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "pX" = (
@@ -2294,8 +2306,8 @@
 /turf/open/floor/plasteel/patterned/cargo_one/jungleplanet/interior,
 /area/ruin/jungle/depot/residential)
 "qo" = (
-/obj/structure/spacevine/weak,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/cargo_one/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_3)
 "qt" = (
@@ -3314,10 +3326,13 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "yn" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/warning,
-/obj/structure/spacevine/weak,
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 10
 	},
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/grid/dark/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_3)
 "yo" = (
@@ -3624,7 +3639,10 @@
 	dir = 8
 	},
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 10
 	},
 /turf/open/floor/plating/asteroid/dirt/grass/jungle/dark,
 /area/overmap_encounter/planetoid/jungle/explored)
@@ -4540,11 +4558,11 @@
 /obj/effect/turf_decal/borderfloor{
 	dir = 1
 	},
-/obj/structure/spacevine/weak,
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/jungleplanet/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "Hq" = (
@@ -4679,11 +4697,14 @@
 /obj/effect/turf_decal/siding/white{
 	dir = 9
 	},
-/obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 6
+	},
+/obj/machinery/camera/autoname/directional/north{
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 13
 	},
 /turf/open/floor/plasteel/mono/jungleplanet/interior,
 /area/ruin/jungle/depot/canteen)
@@ -4710,8 +4731,8 @@
 	dir = 8
 	},
 /obj/structure/rack,
-/obj/structure/spacevine/weak,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/cargo_one/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_3)
 "Iu" = (
@@ -5907,7 +5928,10 @@
 	},
 /obj/structure/chair/bench/orange/directional/south,
 /obj/machinery/camera/autoname/directional/north{
-	network = list("ns-depot")
+	network = list("ns-depot");
+	dir = 2;
+	pixel_x = 0;
+	pixel_y = 13
 	},
 /turf/open/floor/plasteel/dark/jungleplanet/interior,
 /area/ruin/jungle/depot/offices)
@@ -6366,10 +6390,10 @@
 /area/overmap_encounter/planetoid/jungle/explored)
 "TW" = (
 /obj/effect/turf_decal/trimline/opaque/nsorange/warning,
-/obj/structure/spacevine/weak,
 /obj/structure/sign/warning/incident{
 	pixel_y = 30
 	},
+/obj/structure/spacevine/weak,
 /turf/open/floor/plasteel/patterned/grid/dark/jungleplanet/interior,
 /area/ruin/jungle/depot/warehouse_3)
 "TX" = (

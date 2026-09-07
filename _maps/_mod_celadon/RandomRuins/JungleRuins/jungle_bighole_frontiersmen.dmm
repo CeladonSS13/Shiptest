@@ -1046,16 +1046,16 @@
 	pixel_y = 5
 	},
 /obj/effect/turf_decal/siding/wood,
-/obj/item/stamp/clip/land{
-	pixel_x = -4;
-	pixel_y = 2
-	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_x = 6;
 	pixel_y = -1;
 	id = "win";
 	name = "Facility-Wide Security Shutters"
+	},
+/obj/item/stamp/solfed{
+	pixel_x = -4;
+	pixel_y = 2
 	},
 /turf/open/floor/wood/jungleplanet,
 /area/ruin/powered/bighole/office)
@@ -1534,6 +1534,7 @@
 /obj/effect/turf_decal/trimline/transparent/beige/line{
 	dir = 1
 	},
+/obj/item/ammo_casing/spent/slug/buck,
 /turf/open/floor/plasteel/tech,
 /area/ruin/powered/bighole/cargo)
 "iG" = (
@@ -2016,11 +2017,6 @@
 	},
 /turf/open/floor/concrete/pavement/jungleplanet/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
-"lc" = (
-/obj/machinery/telecomms/relay,
-/obj/machinery/door/window/brigdoor/southleft,
-/turf/open/floor/plasteel/telecomms_floor,
-/area/ruin/powered/bighole/office)
 "le" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 4
@@ -2436,14 +2432,14 @@
 /turf/open/floor/concrete/pavement/jungleplanet/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "nn" = (
-/obj/machinery/door/airlock/grunge{
-	name = "Mine Equipment"
-	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer4{
 	dir = 1
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 1
+	},
+/obj/machinery/door/airlock/grunge{
+	name = "Mine Equipment"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/powered/bighole/cargo)
@@ -4434,15 +4430,16 @@
 /obj/effect/turf_decal/siding/black{
 	dir = 5
 	},
-/obj/machinery/drill,
-/obj/effect/turf_decal/box,
-/obj/item/ammo_casing/spent/slug/buck,
+/obj/structure/closet/crate/large,
+/obj/item/shovel,
+/obj/item/pickaxe,
+/obj/item/stack/sheet/mineral/sandbags/fifty,
 /turf/open/floor/plasteel/tech/grid/jungleplanet/interior,
 /area/ruin/powered/bighole/cargo)
 "ys" = (
-/obj/item/clothing/suit/space/hardsuit/mining/clip,
 /obj/machinery/suit_storage_unit,
 /obj/item/clothing/mask/gas/clip,
+/obj/item/clothing/suit/space/hardsuit/solfed,
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/powered/bighole/cargo)
 "yu" = (
@@ -5730,12 +5727,7 @@
 /area/ruin/powered/bighole/lab)
 "FL" = (
 /obj/structure/table/reinforced,
-/obj/item/documents/clip/research{
-	pixel_x = -1;
-	pixel_y = 4;
-	color = "dcf7f7";
-	name = "CLIP-LAND Survey Data"
-	},
+/obj/item/documents/solfed,
 /turf/open/floor/plasteel/white/jungleplanet,
 /area/ruin/powered/bighole/lab)
 "FN" = (
@@ -6616,8 +6608,8 @@
 /turf/open/floor/concrete/pavement/jungleplanet/lit,
 /area/overmap_encounter/planetoid/jungle/explored)
 "Lm" = (
-/obj/machinery/telecomms/relay/preset/minutemen,
 /obj/machinery/door/window/brigdoor/southleft,
+/obj/machinery/telecomms/relay/preset/frontiersmen,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ruin/powered/bighole/office)
 "Lq" = (
@@ -9100,8 +9092,10 @@
 /obj/effect/turf_decal/siding/black{
 	dir = 6
 	},
-/obj/effect/turf_decal/box,
-/obj/machinery/drill/sampler_mission,
+/obj/structure/closet/crate/large,
+/obj/item/shovel,
+/obj/item/pickaxe,
+/obj/item/stack/sheet/mineral/sandbags/fifty,
 /turf/open/floor/plasteel/tech/grid/jungleplanet/interior,
 /area/ruin/powered/bighole/cargo)
 "Zf" = (
@@ -11418,7 +11412,7 @@ oK
 Rq
 CB
 sQ
-lc
+Lm
 ON
 Br
 vy
