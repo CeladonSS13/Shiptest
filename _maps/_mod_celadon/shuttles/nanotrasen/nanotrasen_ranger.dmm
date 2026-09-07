@@ -5187,15 +5187,12 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/central)
 "Ei" = (
-/obj/item/gun/energy/disabler{
-	pixel_x = 8
-	},
-/obj/item/gun/energy/disabler{
-	pixel_x = 8;
-	pixel_y = -6
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
+	},
+/obj/structure/closet/secure_closet{
+	icon_state = "tac";
+	name = "armory tac locker"
 	},
 /obj/item/shield/riot/tele{
 	pixel_x = -3;
@@ -5205,8 +5202,12 @@
 	pixel_x = -7;
 	pixel_y = 9
 	},
-/obj/item/melee/baton{
-	pixel_x = -4
+/obj/item/gun/energy/disabler{
+	pixel_x = 8
+	},
+/obj/item/gun/energy/disabler{
+	pixel_x = 8;
+	pixel_y = -6
 	},
 /obj/item/reagent_containers/spray/pepper{
 	pixel_x = -10;
@@ -5216,9 +5217,8 @@
 	pixel_x = -6;
 	pixel_y = -8
 	},
-/obj/structure/closet/secure_closet{
-	icon_state = "tac";
-	name = "armory tac locker"
+/obj/item/melee/baton{
+	pixel_x = -4
 	},
 /obj/item/melee/baton{
 	pixel_x = 0;
