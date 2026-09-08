@@ -373,7 +373,6 @@
 	name = "\proper brig physician's locker"
 	req_access = list(ACCESS_BRIG)
 	icon_state = "sec"
-	icon_door = "brig_phys_door"
 
 /obj/structure/closet/secure_closet/brig_phys/PopulateContents()
 	..()
