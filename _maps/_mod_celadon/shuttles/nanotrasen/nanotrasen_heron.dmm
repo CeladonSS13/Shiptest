@@ -1074,15 +1074,15 @@
 /obj/structure/guncloset{
 	name = "medium alert locker"
 	},
-/obj/item/gun/energy/e_gun/e_old/nuclear{
+/obj/item/gun/energy/e_gun/nuclear{
 	pixel_x = 0;
 	pixel_y = 9
 	},
-/obj/item/gun/energy/e_gun/e_old/nuclear{
+/obj/item/gun/energy/e_gun/nuclear{
 	pixel_x = 0;
 	pixel_y = -1
 	},
-/obj/item/gun/energy/e_gun/e_old/nuclear{
+/obj/item/gun/energy/e_gun/nuclear{
 	pixel_x = 0;
 	pixel_y = -9
 	},
@@ -2121,7 +2121,7 @@
 /obj/item/clothing/head/nanotrasen/beret/security/command,
 /obj/item/storage/lockbox/medal/sec,
 /obj/item/radio/headset/nanotrasen/alt,
-/obj/item/gun/energy/e_gun/e_old/hos,
+/obj/item/gun/energy/e_gun/nanotrasen/hos,
 /turf/open/floor/plasteel/tech,
 /area/ship/security)
 "if" = (
@@ -6362,7 +6362,7 @@
 	},
 /obj/structure/displaycase{
 	req_access_txt = "20";
-	start_showpiece_type = /obj/item/gun/energy/e_gun/e_old/hos/brazil/true
+	start_showpiece_type = /obj/item/gun/energy/e_gun/nanotrasen/hos/brazil/true
 	},
 /turf/open/floor/wood,
 /area/ship/crew/law_office)
@@ -6768,7 +6768,7 @@
 	icon_state = "0-8"
 	},
 /obj/item/clothing/head/centhat,
-/obj/item/gun/energy/e_gun/e_old,
+/obj/item/gun/energy/e_gun/nanotrasen/patriot,
 /obj/item/clothing/shoes/combat/swat,
 /obj/item/clothing/glasses/sunglasses,
 /obj/item/radio/headset/nanotrasen/alt/captain,
@@ -7088,7 +7088,7 @@
 /area/ship/hallway/aft)
 "zv" = (
 /obj/structure/rack,
-/obj/item/gun/energy/e_gun/e_old,
+/obj/item/gun/energy/e_gun/nanotrasen/patriot,
 /obj/item/grenade/barrier{
 	pixel_x = -3;
 	pixel_y = 3
@@ -10428,7 +10428,7 @@
 /obj/structure/guncloset{
 	name = "high alert locker"
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
 	pixel_x = 0;
 	pixel_y = -4
 	},
@@ -10436,7 +10436,7 @@
 	pixel_x = -1;
 	pixel_y = 3
 	},
-/obj/item/gun/energy/e_gun/e_old{
+/obj/item/gun/energy/e_gun/nanotrasen/patriot{
 	pixel_x = 0;
 	pixel_y = 11
 	},

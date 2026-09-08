@@ -83,6 +83,7 @@ export const getRoutedComponent = (store: Store) => {
     (name: string) => `./${name}.js`,
     (name: string) => `./${name}/index.tsx`,
     (name: string) => `./${name}/index.js`,
+    (name: string) => `./_mod_celadon/${name}.js`, // [CELADON-ADD] - Добавляем инициализацию файлов.
   ];
   let esModule;
   while (!esModule && interfacePathBuilders.length > 0) {

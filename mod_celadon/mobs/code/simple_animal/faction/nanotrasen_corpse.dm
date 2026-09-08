@@ -84,3 +84,21 @@
 	name = "VI Ranger"
 	id_job = "Vigilitas Assault Force"
 	outfit = /datum/outfit/vigilitas/sniper
+
+//hermit
+/obj/effect/mob_spawn/human/corpse/damaged/engineer
+	name = "The Engineer"
+	outfit = /datum/outfit/theengineer
+
+/datum/outfit/theengineer
+	name = "The Engineer"
+
+	uniform = /obj/item/clothing/under/nanotrasen/engineering/atmos
+	back = /obj/item/storage/backpack/duffelbag/engineering
+	shoes = /obj/item/clothing/shoes/workboots
+	suit = /obj/item/clothing/suit/nanotrasen/vest/blue
+	r_pocket = /obj/item/tank/internals/emergency_oxygen/engi
+	gloves = /obj/item/clothing/gloves/insulated
+	head = /obj/item/clothing/head/hardhat/nanotrasen/blue
+	belt = /obj/item/storage/belt/utility/full/engi
+	mask = /obj/item/clothing/mask/breath

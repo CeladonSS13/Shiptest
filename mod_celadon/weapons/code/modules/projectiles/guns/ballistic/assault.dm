@@ -3,10 +3,10 @@
 	name = "\improper G36-SH"
 	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
 //Иконки
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	icon_state = "g36sh"
 	item_state = "g36sh"
 //Звуки
@@ -48,7 +48,10 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
 	icon_state = "g36shinteq"
 	item_state = "g36shinteq"
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/onmob.dmi'
 	manufacturer = MANUFACTURER_INTEQ
 	empty_indicator = TRUE
 	empty_alarm = TRUE
@@ -58,10 +61,10 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
 	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/g36.ogg'
 	icon_state = "g36"
 	item_state = "g36"
@@ -103,7 +106,10 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/onmob.dmi'
 	manufacturer = MANUFACTURER_INTEQ
 	empty_indicator = TRUE
 	empty_alarm = TRUE
@@ -113,11 +119,11 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 /obj/item/gun/ballistic/automatic/assault/morita1
 	name = "\improper Morita MK.I"
 	desc = "Стандартная пехотная автоматическая винтовка под калибр .308. Широко применяется армейскими корпусами в Союзе Человечества. Популярность в гражданских кругах заслужила после сьемок в фильме Starboat Troopes."
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/onmob.dmi'
 	fire_sound = 'mod_celadon/_storage_sounds/sound/gun/morita1.ogg'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
 	icon_state = "morita1"
 	item_state = "morita1"
 	spread = 3
@@ -144,7 +150,7 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 /obj/item/gun/ballistic/automatic/marksman/svd
 	name = "\improper SR-33 Dragunov sniper rifle"
 	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 7.62x54mmR rounds."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/svd.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/svd.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/svd_onmob.dmi'
@@ -181,10 +187,10 @@ NO_MAG_GUN_HELPER(automatic/marksman/svd)
 /obj/item/gun/ballistic/automatic/assault/cm82/solfed
 	name = "\improper Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/48x32guns.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/guns_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/back.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/onmob.dmi'
 	icon_state = "cm82_solfed"
 	item_state = "cm82_solfed"
 	unique_reskin = null

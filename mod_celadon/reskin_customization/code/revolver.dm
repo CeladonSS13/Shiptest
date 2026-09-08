@@ -1,9 +1,9 @@
 // MARK: Montagne
 
 /obj/item/gun/ballistic/revolver/montagne
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/montagne.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/montagne_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/montagne_righthand.dmi'
+	icon =  'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/48x32.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/righthand.dmi'
 
 	icon_state = "montagne"
 	item_state = "montagne"

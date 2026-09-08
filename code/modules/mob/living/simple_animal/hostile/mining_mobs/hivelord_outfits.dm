@@ -219,7 +219,7 @@
 				backpack_contents += pick_weight(list(
 					/obj/item/borg/upgrade/modkit/damage = 1,
 					/obj/item/borg/upgrade/modkit/trigger_guard = 1,
-					/obj/item/soap/warra = 1,
+					/obj/item/soap/nanotrasen = 1, // [CELADON-EDIT]
 					/obj/item/wormhole_jaunter = 1,
 					/obj/item/fulton_core = 1,
 					/obj/item/extraction_pack = 2,
@@ -451,7 +451,7 @@
 	if(prob(75))
 		r_pocket = pick(/obj/item/flashlight/seclite, /obj/item/assembly/flash/handheld, /obj/item/restraints/handcuffs)
 	if(prob(50))
-		suit_store = pick(/obj/item/gun/energy/sharplite/volt, /obj/item/gun/energy/sharplite/rush)
+		suit_store = pick(/obj/item/gun/energy/e_gun/nanotrasen/patriot, /obj/item/gun/energy/e_gun/nanotrasen/discharger) // [CELADON-EDIT]
 	for(var/i = 1 to 3)
 		if(prob(75))
 			backpack_contents += pick_weight(list(

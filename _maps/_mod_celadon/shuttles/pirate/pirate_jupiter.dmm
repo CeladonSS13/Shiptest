@@ -304,6 +304,18 @@
 	pixel_x = 8;
 	pixel_y = 14
 	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = -8;
+	pixel_y = -7
+	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = -8;
+	pixel_y = 0
+	},
+/obj/item/stock_parts/cell/gun/mini{
+	pixel_x = -8;
+	pixel_y = 8
+	},
 /turf/open/floor/plasteel/tech,
 /area/ship/security/armory)
 "ef" = (
@@ -1099,10 +1111,10 @@
 	pixel_x = -4;
 	pixel_y = 13
 	},
-/obj/item/gun/energy/e_gun/e_old/adv_stopping{
+/obj/item/gun/energy/e_gun/nanotrasen/maru{
 	pixel_y = 5
 	},
-/obj/item/gun/energy/e_gun/e_old/adv_stopping,
+/obj/item/gun/energy/e_gun/nanotrasen/maru,
 /obj/item/gun/energy/e_gun/advtaser{
 	pixel_x = 4;
 	pixel_y = -9
@@ -1620,7 +1632,7 @@
 /obj/item/blackmarket_uplink,
 /obj/item/stock_parts/cell/gun/upgraded,
 /obj/item/clothing/mask/gas/sechailer/swat,
-/obj/item/gun/energy/e_gun/e_old/hos,
+/obj/item/gun/energy/e_gun/nanotrasen/hos,
 /obj/machinery/light_switch{
 	dir = 1;
 	pixel_x = -11;

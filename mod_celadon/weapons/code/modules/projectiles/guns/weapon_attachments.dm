@@ -2,14 +2,13 @@
 /obj/item/attachment/silencer
 		size_mod = 0
 
-//Mini egun light
-/obj/item/attachment/rail_light/mini
-	name = "X-26 flashlight"
-	desc = "A flashlight built specifically for the X-26. You should not see this."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/attachments.dmi'
-	icon_state = "mini"
-	light_color = LIGHT_COLOR_HALOGEN
-	light_system = MOVABLE_LIGHT_DIRECTIONAL
+//Discharger stock
+/obj/item/attachment/foldable_stock/discharger
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/nanotrasen_sharplite/48x32.dmi'
+	icon_state = "discharger_stock"
 
-	attach_features_flags = ATTACH_TOGGLE
-	wield_delay = 0 SECONDS
+//Discharger inteq stock
+
+/obj/item/attachment/foldable_stock/discharger_inteq
+	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
+	icon_state = "discharger_inteq_stock"

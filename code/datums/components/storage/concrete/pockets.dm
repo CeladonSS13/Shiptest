@@ -129,7 +129,7 @@
 		/obj/item/gun/energy/sharplite/yari,
 		/obj/item/gun/energy/kalix/pistol,
 		/obj/item/stock_parts/cell/gun,
-		/obj/item/gun/energy/e_gun/e_old, // [CELADON-ADD] - CELADON_RETURN_EGUN
+		/obj/item/gun/energy/e_gun/nanotrasen/ember, // [CELADON-ADD] - CELADON_RETURN_EGUN
 		/obj/item/ammo_box)) // this doesnt let you put hades into holsters trust me
 	can_hold_max_of_items = typecacheof(list(
 		/obj/item/gun = 1,
@@ -161,5 +161,5 @@
 		/obj/item/gun/energy/pulse/carbine,
 		/obj/item/gun/energy/dueling,
 		/obj/item/gun/ballistic/shotgun,
-		/obj/item/gun/energy/e_gun/e_old/mini, // [CELADON-ADD] - CELADON_RETURN_EGUN
+		/obj/item/gun/energy/e_gun/nanotrasen/ember, // [CELADON-ADD] - CELADON_RETURN_EGUN
 		/obj/item/gun/ballistic/rocketlauncher))
