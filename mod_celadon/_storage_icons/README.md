@@ -45,6 +45,8 @@ guns/guns_righthand.dmi
 guns/horizonx.dmi
 guns/usp.dmi
 
+health_sensors/vital_monitor.dmi
+
 hud/screen_clockwork.dmi
 hud/screen_glass.dmi
 hud/screen_midnight.dmi
