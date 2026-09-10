@@ -38,7 +38,7 @@ ID мода: CELADON_HEALTH_SENSORS
 ### Оверрайды
 
 - `mod_celadon/health_sensors/code/lockers.dm`: `/obj/structure/closet/secure_closet/medical3/PopulateContents`
-- `mod_celadon/health_sensors/code/implant.dm`: `/obj/item/implanter` (load/inject vital sensor organs)
+- `mod_celadon/health_sensors/code/implant.dm`: `/obj/item/implanter` (load/inject vital sensor organs), `/obj/item/implantcase` (refuse mixing with a loaded vital sensor)
 
 ### Дефайны
 

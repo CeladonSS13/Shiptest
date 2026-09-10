@@ -67,10 +67,6 @@
 	if(istype(target, /obj/item/health_sensor_monitor))
 		var/obj/item/health_sensor_monitor/monitor = target
 		monitor.pair_sensor(src, user)
-		return
-	if(istype(target, /obj/item/implanter))
-		var/obj/item/implanter/implanter = target
-		implanter.load_vital_sensor(src, user)
 
 /obj/item/organ/cyberimp/chest/vital_sensor/proc/can_rename(mob/user)
 	if(!user || !user.client)
@@ -177,6 +173,8 @@
 
 /obj/item/implanter/Initialize(mapload)
 	. = ..()
+	if(imp_type)
+		imp = new imp_type(src)
 	if(vital_imp_type && !vital_imp)
 		vital_imp = new vital_imp_type(src)
 	update_appearance()
@@ -194,31 +192,70 @@
 	if(vital_imp)
 		implant_vital_sensor(M, user)
 		return
-	return ..()
+	if(!istype(M))
+		return
+	if(user && imp)
+		if(M != user)
+			M.visible_message(span_warning("[user] is attempting to implant [M]."))
+
+		var/turf/T = get_turf(M)
+		if(T && (M == user || do_after(user, 5 SECONDS, M)))
+			if(src && imp)
+				if(imp.implant(M, user))
+					if (M == user)
+						to_chat(user, span_notice("You implant yourself."))
+					else
+						M.visible_message(span_notice("[user] implants [M]."), span_notice("[user] implants you."))
+					imp = null
+					update_appearance()
+				else
+					to_chat(user, span_warning("[src] fails to implant [M]."))
 
 /obj/item/implanter/attackby(obj/item/W, mob/user, params)
 	if(istype(W, /obj/item/organ/cyberimp/chest/vital_sensor))
 		load_vital_sensor(W, user)
 		return
-	return ..()
+	if(istype(W, /obj/item/pen))
+		if(!user.is_literate())
+			to_chat(user, span_notice("You prod at [src] with [W]!"))
+			return
+		var/t = stripped_input(user, "What would you like the label to be?", name, null)
+		if(user.get_active_held_item() != W)
+			return
+		if(!user.canUseTopic(src, BE_CLOSE))
+			return
+		if(t)
+			name = "implanter ([t])"
+		else
+			name = "implanter"
+	else
+		return ..()
 
 /obj/item/implanter/attack_self(mob/user)
 	if(!vital_imp)
 		return ..()
 	var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = vital_imp
 	vital_imp = null
-	user.put_in_hands(sensor)
+	if(!user.put_in_hands(sensor))
+		sensor.forceMove(drop_location())
 	to_chat(user, span_notice("You remove [sensor] from [src]."))
 	update_appearance()
 
 /obj/item/implanter/proc/load_vital_sensor(obj/item/organ/cyberimp/chest/vital_sensor/sensor, mob/user)
-	if(!istype(sensor) || sensor.owner)
+	if(!istype(sensor))
 		return FALSE
+	if(sensor.owner)
+		to_chat(user, span_warning("[sensor] is still implanted."))
+		return TRUE
+	if(vital_imp == sensor)
+		return TRUE
 	if(imp || vital_imp)
 		to_chat(user, span_warning("[src] already has something loaded."))
 		return TRUE
-	if(!user.transferItemToLoc(sensor, src))
-		return TRUE
+	if(sensor.loc != src)
+		if(!user.transferItemToLoc(sensor, src))
+			to_chat(user, span_warning("You fail to load [sensor] into [src]."))
+			return TRUE
 	vital_imp = sensor
 	update_appearance()
 	to_chat(user, span_notice("You load [sensor] into [src]."))
@@ -252,6 +289,48 @@
 		M.visible_message(span_notice("[user] implants [M]."), span_notice("[user] implants you."))
 	vital_imp = null
 	update_appearance()
+
+/obj/item/implantcase/attackby(obj/item/W, mob/user, params)
+	if(istype(W, /obj/item/implanter))
+		var/obj/item/implanter/I = W
+		if(I.vital_imp)
+			to_chat(user, span_warning("[I] already has something loaded."))
+			return
+		if(I.imp)
+			if(imp || I.imp.imp_in)
+				return
+			I.imp.forceMove(src)
+			imp = I.imp
+			I.imp = null
+			update_appearance()
+			reagents = imp.reagents
+			I.update_appearance()
+		else
+			if(imp)
+				if(I.imp || I.vital_imp)
+					return
+				imp.forceMove(I)
+				I.imp = imp
+				imp = null
+				reagents = null
+				update_appearance()
+			I.update_appearance()
+		return
+	if(istype(W, /obj/item/pen))
+		if(!user.is_literate())
+			to_chat(user, span_notice("You scribble illegibly on the side of [src]!"))
+			return
+		var/t = stripped_input(user, "What would you like the label to be?", name, null)
+		if(user.get_active_held_item() != W)
+			return
+		if(!user.canUseTopic(src, BE_CLOSE))
+			return
+		if(t)
+			name = "implant case - '[t]'"
+		else
+			name = "implant case"
+	else
+		return ..()
 
 /obj/item/implanter/vital_sensor
 	name = "implanter (vital sensor MK1)"
