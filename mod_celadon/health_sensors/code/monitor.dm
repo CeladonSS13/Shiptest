@@ -33,7 +33,7 @@
 /obj/item/health_sensor_monitor/Destroy()
 	for(var/sensor_ref in linked_sensors)
 		var/datum/weakref/sensor_weak = linked_sensors[sensor_ref]
-		var/obj/item/implant/vital_sensor/sensor = sensor_weak?.resolve()
+		var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = sensor_weak?.resolve()
 		if(sensor && sensor.linked_monitor?.resolve() == src)
 			sensor.linked_monitor = null
 	linked_sensors = null
@@ -43,7 +43,7 @@
 
 /obj/item/health_sensor_monitor/examine(mob/user)
 	. = ..()
-	. += span_notice("Click a vital sensor, its case, or an implanted host to pair.")
+	. += span_notice("Click a vital sensor, a loaded implanter, or an implanted host to pair.")
 	. += span_notice("[length(linked_sensors)] sensor\s bound. Speaker: [audio_alerts ? "on" : "off"]. Warning light: [visual_alerts ? "on" : "off"].")
 
 /obj/item/health_sensor_monitor/attack_self(mob/user)
@@ -62,33 +62,33 @@
 		return
 	if(!isliving(target))
 		return
-	var/mob/living/host = target
-	var/obj/item/implant/vital_sensor/sensor
-	for(var/obj/item/implant/vital_sensor/found in host.implants)
-		sensor = found
-		break
+	var/mob/living/carbon/host = target
+	if(!istype(host))
+		to_chat(user, span_warning("[target] cannot have a vital sensor."))
+		return
+	var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = host.getorganslot(ORGAN_SLOT_VITAL_SENSOR)
 	if(!sensor)
 		to_chat(user, span_warning("[host] has no vital sensor implanted."))
 		return
 	pair_sensor(sensor, user)
 
 /obj/item/health_sensor_monitor/proc/pair_from_item(atom/target, mob/user)
-	if(istype(target, /obj/item/implant/vital_sensor))
+	if(istype(target, /obj/item/organ/cyberimp/chest/vital_sensor))
 		pair_sensor(target, user)
 		return TRUE
-	if(istype(target, /obj/item/implantcase))
-		var/obj/item/implantcase/case = target
-		if(istype(case.imp, /obj/item/implant/vital_sensor))
-			pair_sensor(case.imp, user)
-			return TRUE
 	if(istype(target, /obj/item/implanter))
 		var/obj/item/implanter/implanter = target
-		if(istype(implanter.imp, /obj/item/implant/vital_sensor))
-			pair_sensor(implanter.imp, user)
+		if(istype(implanter.vital_imp, /obj/item/organ/cyberimp/chest/vital_sensor))
+			pair_sensor(implanter.vital_imp, user)
+			return TRUE
+	if(istype(target, /obj/item/organ_storage) && length(target.contents))
+		var/obj/item/stored = target.contents[1]
+		if(istype(stored, /obj/item/organ/cyberimp/chest/vital_sensor))
+			pair_sensor(stored, user)
 			return TRUE
 	return FALSE
 
-/obj/item/health_sensor_monitor/proc/pair_sensor(obj/item/implant/vital_sensor/sensor, mob/user)
+/obj/item/health_sensor_monitor/proc/pair_sensor(obj/item/organ/cyberimp/chest/vital_sensor/sensor, mob/user)
 	if(!istype(sensor))
 		return
 	var/sensor_ref = REF(sensor)
@@ -104,7 +104,7 @@
 	to_chat(user, span_notice("You bind [sensor] to [src]."))
 	playsound(src, 'sound/machines/twobeep.ogg', 30, TRUE)
 
-/obj/item/health_sensor_monitor/proc/unlink_sensor(obj/item/implant/vital_sensor/sensor, silent = FALSE)
+/obj/item/health_sensor_monitor/proc/unlink_sensor(obj/item/organ/cyberimp/chest/vital_sensor/sensor, silent = FALSE)
 	if(!sensor || !linked_sensors)
 		return
 	var/sensor_ref = REF(sensor)
@@ -127,8 +127,8 @@
 	if(!length(watched_sensors))
 		STOP_PROCESSING(SSobj, src)
 
-/obj/item/health_sensor_monitor/proc/get_alert_level(obj/item/implant/vital_sensor/sensor)
-	if(!sensor?.imp_in || sensor.is_jammed())
+/obj/item/health_sensor_monitor/proc/get_alert_level(obj/item/organ/cyberimp/chest/vital_sensor/sensor)
+	if(!sensor?.owner || sensor.is_jammed())
 		return
 	var/status = sensor.get_life_status()
 	if(status == VITAL_SENSOR_DEAD || status == VITAL_SENSOR_DNR)
@@ -144,7 +144,7 @@
 	var/alert_level
 	for(var/sensor_ref in watched_sensors)
 		var/datum/weakref/sensor_weak = linked_sensors[sensor_ref]
-		var/obj/item/implant/vital_sensor/sensor = sensor_weak?.resolve()
+		var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = sensor_weak?.resolve()
 		var/level = get_alert_level(sensor)
 		if(level == VITAL_SENSOR_DEAD)
 			alert_level = VITAL_SENSOR_DEAD
@@ -185,7 +185,7 @@
 		return
 	for(var/sensor_ref in linked_sensors.Copy())
 		var/datum/weakref/sensor_weak = linked_sensors[sensor_ref]
-		var/obj/item/implant/vital_sensor/sensor = sensor_weak?.resolve()
+		var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = sensor_weak?.resolve()
 		if(sensor)
 			unlink_sensor(sensor, silent = TRUE)
 	visible_message(span_warning("[src] frantically beeps as its bindings scramble!"))
@@ -208,7 +208,7 @@
 	var/list/sensors = list()
 	for(var/sensor_ref in linked_sensors)
 		var/datum/weakref/sensor_weak = linked_sensors[sensor_ref]
-		var/obj/item/implant/vital_sensor/sensor = sensor_weak?.resolve()
+		var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = sensor_weak?.resolve()
 		if(!sensor)
 			continue
 		sensors += list(sensor.ui_sensor_data(!!watched_sensors[sensor_ref]))
@@ -228,7 +228,7 @@
 			refresh_alarm_visuals()
 			return TRUE
 		if("toggle_watch")
-			var/obj/item/implant/vital_sensor/sensor = locate(params["ref"])
+			var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = locate(params["ref"])
 			if(!sensor || !linked_sensors[REF(sensor)])
 				return
 			var/sensor_ref = REF(sensor)
@@ -242,7 +242,7 @@
 				set_alarming(FALSE)
 			return TRUE
 		if("unpair")
-			var/obj/item/implant/vital_sensor/sensor = locate(params["ref"])
+			var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = locate(params["ref"])
 			if(!sensor || !linked_sensors[REF(sensor)])
 				return
 			var/choice = tgui_alert(usr, "Unbind [sensor.get_display_name()] from this monitor?", "Unpair Sensor", list("Yes", "No"))
@@ -255,7 +255,7 @@
 			unlink_sensor(sensor)
 			return TRUE
 		if("rename")
-			var/obj/item/implant/vital_sensor/sensor = locate(params["ref"])
+			var/obj/item/organ/cyberimp/chest/vital_sensor/sensor = locate(params["ref"])
 			if(!sensor || !linked_sensors[REF(sensor)])
 				return
 			sensor.rename_sensor(usr)

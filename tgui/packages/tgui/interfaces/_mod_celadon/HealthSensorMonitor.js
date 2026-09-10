@@ -1,7 +1,7 @@
-import { useBackend } from '../backend';
-import { Box, Button, ColorBox, LabeledList, Section, Table } from '../components';
-import { COLORS } from '../constants';
-import { Window } from '../layouts';
+import { useBackend } from '../../backend';
+import { Box, Button, ColorBox, LabeledList, Section, Table } from '../../components';
+import { COLORS } from '../../constants';
+import { Window } from '../../layouts';
 
 const STATUS_COLOR = {
   alive: 'good',
@@ -70,8 +70,9 @@ export const HealthSensorMonitor = (props, context) => {
             </>
           }
         >
-          Bind a sensor by clicking it (or its case) against this monitor, or by
-          using the monitor on an implanted host.
+          Bind a sensor by clicking the implant or a loaded implanter against
+          this monitor, or by using the monitor on an implanted host. Implant
+          with Organ manipulation (chest) or an implanter.
         </Section>
         <Section title="Bound Sensors">
           {sensors.length === 0 ? (
@@ -171,9 +172,8 @@ export const HealthSensorMonitor = (props, context) => {
             is in crit or dead.
           </LabeledList.Item>
           <LabeledList.Item label="Sector">
-            MK2 only. Hidden while the host is alive (Locked). After death,
-            wait 5 minutes, then the star system, place, and the body's
-            X/Y appear.
+            Hidden while the host is alive (Locked). After death, wait 5
+            minutes, then the star system, place, and the body's X/Y appear.
           </LabeledList.Item>
         </LabeledList>
       </Window.Content>

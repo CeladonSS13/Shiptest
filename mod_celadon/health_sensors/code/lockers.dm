@@ -2,5 +2,5 @@
 	. = ..()
 	new /obj/item/health_sensor_monitor(src)
 	new /obj/item/implanter(src)
-	new /obj/item/implantcase/vital_sensor(src)
-	new /obj/item/implantcase/vital_sensor(src)
+	new /obj/item/organ/cyberimp/chest/vital_sensor(src)
+	new /obj/item/organ/cyberimp/chest/vital_sensor(src)
