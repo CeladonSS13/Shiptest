@@ -172,8 +172,8 @@ export const HealthSensorMonitor = (props, context) => {
           </LabeledList.Item>
           <LabeledList.Item label="Sector">
             MK2 only. Hidden while the host is alive (Locked). After death,
-            wait 5 minutes, then the star system, place, and overmap
-            coordinates appear.
+            wait 5 minutes, then the star system, place, and the body's
+            X/Y appear.
           </LabeledList.Item>
         </LabeledList>
       </Window.Content>

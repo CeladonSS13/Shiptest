@@ -19,7 +19,7 @@
 
 /obj/item/implant/vital_sensor/advanced
 	name = "vital sensor (MK2)"
-	desc = "An advanced implantable sensor. Reports vitals and, five minutes after death, the host's sector and coordinates."
+	desc = "An advanced implantable sensor. Reports vitals and, five minutes after death, the host's sector and turf coordinates."
 	implant_color = "r"
 	show_vitals = TRUE
 	reports_sector = TRUE
@@ -140,20 +140,18 @@
 	var/death_time = imp_in.timeofdeath
 	if(death_time && world.time < death_time + sector_delay)
 		return list("location" = "Acquiring...", "coords" = "Acquiring...")
+	var/location_text = "Unknown sector"
 	var/datum/overmap/overmap_loc = SSovermap.get_overmap_object_by_location(imp_in)
-	if(!overmap_loc)
-		return list("location" = "Unknown sector", "coords" = "Unknown")
-	var/sector_name = overmap_loc.current_overmap?.name
-	var/place_name = overmap_loc.name
-	if(overmap_loc.docked_to)
-		place_name = "[place_name] ([overmap_loc.docked_to.name])"
-	var/datum/overmap/coord_source = overmap_loc
-	if(isnull(overmap_loc.x) && overmap_loc.docked_to)
-		coord_source = overmap_loc.docked_to
+	if(overmap_loc)
+		var/sector_name = overmap_loc.current_overmap?.name
+		var/place_name = overmap_loc.name
+		if(overmap_loc.docked_to)
+			place_name = "[place_name] ([overmap_loc.docked_to.name])"
+		location_text = sector_name ? "[sector_name] - [place_name]" : place_name
+	var/turf/body_turf = get_turf(imp_in)
 	var/coords_text = "Unknown"
-	if(!isnull(coord_source.x) && !isnull(coord_source.y))
-		coords_text = "[coord_source.x], [coord_source.y]"
-	var/location_text = sector_name ? "[sector_name] - [place_name]" : place_name
+	if(body_turf)
+		coords_text = "[body_turf.x], [body_turf.y]"
 	return list("location" = location_text, "coords" = coords_text)
 
 /obj/item/implant/vital_sensor/proc/ui_sensor_data(watched)
