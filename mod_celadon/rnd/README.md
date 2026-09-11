@@ -67,7 +67,7 @@ ID мода: CELADON_RND
 
 ### Оверрайды
 
-- Отсутствуют
+- `mod_celadon/rnd/code/nodes.dm`: `/datum/techweb_node/comptech`, `/datum/techweb_node/cyber_implants`
 <!--
   Если ты добавлял новый модульный оверрайд, его нужно указать здесь.
   Здесь указываются оверрайды в твоём моде и папке `_master_files`
