@@ -95,3 +95,21 @@
 	)
 	crate_name = "chitosan vial crate"
 */
+
+/datum/supply_pack/faction/inteq/medical
+	category = "Medical - Medical"
+
+// MARK: Implants
+
+/datum/supply_pack/faction/inteq/medical/vital_sensors_advanced
+	name = "Vital Sensor MK2"
+	desc = "An advanced chest augment that reports detailed health and, 5 minutes after death, the host's overmap sector and turf coordinates."
+	cost = 5000
+	contains = list(
+		/obj/item/health_sensor_monitor,
+		/obj/item/implanter,
+		/obj/item/organ/cyberimp/chest/vital_sensor/advanced,
+		/obj/item/organ/cyberimp/chest/vital_sensor/advanced,
+		/obj/item/organ/cyberimp/chest/vital_sensor/advanced,
+	)
+	crate_name = "vital sensor crate"
