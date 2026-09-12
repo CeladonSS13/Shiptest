@@ -2098,9 +2098,6 @@
 /area/ship/crew/canteen)
 "mA" = (
 /obj/structure/fluff/hedge,
-/obj/machinery/newscaster/directional/west{
-	pixel_y = -1
-	},
 /obj/effect/turf_decal/siding/wood/end{
 	color = "#D5A66E";
 	dir = 8
@@ -3022,7 +3019,6 @@
 /obj/item/clothing/suit/hazardvest/solgov,
 /obj/item/clothing/accessory/armband/cargo,
 /obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/item/storage/backpack,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -3039,6 +3035,7 @@
 /obj/item/storage/belt/mining,
 /obj/item/storage/box/glowsticks,
 /obj/item/mining_scanner,
+/obj/item/clothing/gloves/explorer,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "rQ" = (
@@ -3461,7 +3458,6 @@
 /obj/item/clothing/suit/hazardvest/solgov,
 /obj/item/clothing/accessory/armband/cargo,
 /obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/item/storage/backpack,
 /obj/item/clothing/glasses/meson/prescription,
 /obj/effect/turf_decal/techfloor{
@@ -3480,6 +3476,7 @@
 /obj/structure/sign/poster/solfed/random{
 	pixel_y = 32
 	},
+/obj/item/clothing/gloves/explorer,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "ts" = (
@@ -6959,7 +6956,6 @@
 /obj/effect/spawner/random/medical/medkit,
 /obj/effect/spawner/random/medical/medkit,
 /obj/structure/crate_shelf/built,
-/obj/effect/spawner/random/medical/medkit,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
@@ -7058,9 +7054,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/structure/disposalpipe/segment{
 	dir = 10
-	},
-/obj/structure/cable{
-	icon_state = "4-8"
 	},
 /turf/open/floor/wood/birch,
 /area/ship/crew/canteen)
@@ -7290,8 +7283,8 @@
 /obj/structure/closet/crate/secure/gear,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/item/mmi,
-/obj/item/mmi/syndie,
 /obj/item/mmi,
+/obj/item/mmi/posibrain,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Pq" = (
@@ -7929,7 +7922,6 @@
 /obj/item/clothing/suit/hazardvest/solgov,
 /obj/item/clothing/accessory/armband/cargo,
 /obj/item/clothing/shoes/workboots,
-/obj/item/clothing/gloves/combat,
 /obj/item/storage/backpack,
 /obj/effect/turf_decal/techfloor{
 	dir = 1
@@ -7943,6 +7935,7 @@
 /obj/structure/sign/flag/solfed/directional/south,
 /obj/item/storage/box/glowsticks,
 /obj/item/mining_scanner,
+/obj/item/clothing/gloves/explorer,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "Tf" = (
@@ -8337,12 +8330,18 @@
 	dir = 9
 	},
 /obj/structure/crate_shelf/built,
-/obj/structure/closet/crate/secure/weapon,
-/obj/effect/spawner/random/weapon{
-	loot = list(/obj/item/melee/energy/ctf/solgov = 10,/obj/item/melee/duelenergy/halberd/blue = 40);
-	name = "melee"
-	},
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/organ/eyes/robotic/glow,
+/obj/item/organ/heart/cybernetic/tier2,
+/obj/item/organ/liver/cybernetic/tier2,
+/obj/item/organ/lungs/cybernetic/tier2,
+/obj/item/organ/stomach/cybernetic/tier2,
+/obj/effect/spawner/random{
+	loot = list(/obj/item/organ/cyberimp/arm/toolset,/obj/item/organ/cyberimp/chest/nutriment,/obj/item/organ/cyberimp/eyes/hud/medical,/obj/item/organ/cyberimp/eyes/hud/security,/obj/item/organ/cyberimp/mouth/breathing_tube);
+	name = "low_tir_implats";
+	icon_state = "eyes"
+	},
+/obj/structure/closet/crate/secure/science,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "Wj" = (
@@ -8843,16 +8842,6 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
-"YY" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 4
-	},
-/obj/structure/cable{
-	icon_state = "1-8"
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/wood/birch,
-/area/ship/crew/canteen)
 "YZ" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -9816,7 +9805,7 @@ pu
 ti
 dw
 lB
-YY
+lB
 ec
 RX
 Ek
