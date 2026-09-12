@@ -86,6 +86,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 	item_state = "g36_black"
 	desc = "Раритетная элитная штурмовая винтовка. Одна из ранних производимых винтовок «Скарборо». Она была разработана еще до объединения Земли, но потеряла свою актуальность после начала производства улучшенной версии «Солнечным Арсеналом». Имеет встроенный прицел. Использует патроны калибра 5,56x45 мм."
 	zoom_amt = 4
+	manufacturer = MANUFACTURER_SCARBOROUGH
 	slot_available = list(
 		ATTACHMENT_SLOT_MUZZLE = 1,
 		ATTACHMENT_SLOT_RAIL = 1,
