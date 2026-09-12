@@ -124,3 +124,101 @@
 	l_hand =/obj/item/gun/ballistic/revolver/viper
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev/ranged/commie_rev_commander
 	armor_base = /obj/item/clothing/suit/armor/vest/inteq
+
+/mob/living/simple_animal/hostile/human/commie_rev/space
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. Unfortunately for them, this one is unarmed."
+	icon_state = "commie_rev_space"
+	icon_living = "commie_rev_space"
+	minbodytemp = 0
+	maxbodytemp = 1000
+	speed = 1
+	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev/space
+	armor_base = /obj/item/clothing/suit/space/hardsuit/syndi/ramzi
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_SPACEWALK, INNATE_TRAIT)
+	set_light(4)
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/saber
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. Unfortunately for you, this one is armed with a saber."
+	icon_state = "commie_rev_space_saber"
+	icon_living = "commie_rev_space_saber"
+	mob_spawner = /obj/effect/mob_spawn/human/corpse/commie_rev/space
+	attack_verb_continuous = "cuts"
+	attack_verb_simple = "cut"
+	sharpness = SHARP_POINTY
+	attack_sound = 'sound/weapons/blade1.ogg'
+	melee_damage_lower = 25
+	melee_damage_upper = 25
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/saber/Initialize()
+	. = ..()
+	var/obj/item/melee/energy/sword/saber/pirate/red/S = new(src)
+	l_hand = S
+	S.loc = src
+	var/image/sword_overlay = image('icons/mob/inhands/weapons/swords_lefthand.dmi', src, "cutlassred", layer = ABOVE_MOB_LAYER)
+	overlays += sword_overlay
+	active_hand_index = 1
+
+	addtimer(CALLBACK(src, .proc/activate), 1)
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/saber/proc/activate()
+	var/obj/item/melee/energy/sword/saber/pirate/red/saber = l_hand
+	if(istype(saber))
+		saber.attack_self(src)
+
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/ranged
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. This one is armed with ringneck."
+	icon_state = "commie_rev_space_ringneck"
+	icon_living = "commie_rev_space_ringneck"
+	ranged = 1
+	retreat_distance = 5
+	minimum_distance = 5
+	rapid = 3
+	rapid_fire_delay = 3
+	casingtype = /obj/item/ammo_casing/c10mm
+	projectilesound = 'sound/weapons/gun/pistol/shot.ogg'
+	rapid_melee = 1
+	l_hand =/obj/item/gun/ballistic/automatic/pistol/ringneck
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/ranged/shotgun
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. This one is armed with m11 buckmaster."
+	icon_state = "commie_rev_space_shotgun_m11"
+	icon_living = "commie_rev_space_shotgun_m11"
+	retreat_distance = 4
+	minimum_distance = 3
+	rapid = 2
+	rapid_fire_delay = 5
+	casingtype = /obj/item/ammo_casing/shotgun/buckshot
+	projectilesound = 'sound/weapons/gun/shotgun/bulldog.ogg'
+	l_hand =/obj/item/gun/ballistic/shotgun/automatic/m11
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/ranged/shotgun/bulldog
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. This one is armed with bulldog."
+	icon_state = "commie_rev_space_shotgun_bulldog"
+	icon_living = "commie_rev_space_shotgun_bulldog"
+	l_hand =/obj/item/gun/ballistic/shotgun/automatic/bulldog
+	rapid = 3
+	rapid_fire_delay = 5
+
+/mob/living/simple_animal/hostile/human/commie_rev/space/ranged/skm24
+	name = "Neo kommunist soldier"
+	desc = "A Neo kommunist soldier. This one is armed with... skm24!? Where do theese guys get them from!?!?!?."
+	icon_state = "commie_rev_space_skm24"
+	icon_living = "commie_rev_space_skm24"
+	rapid = 5
+	rapid_fire_delay = 3
+	retreat_distance = 4
+	minimum_distance = 3
+	casingtype = /obj/item/ammo_casing/a762_40
+	projectilesound = 'sound/weapons/gun/rifle/skm.ogg'
+	l_hand =/obj/item/gun/ballistic/automatic/assault/skm
+
+

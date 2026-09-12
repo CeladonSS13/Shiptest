@@ -150,3 +150,20 @@
 	head = /obj/item/clothing/head/beret/color/red
 	back = /obj/item/storage/backpack
 	id = /obj/item/card/id/cel/commie_rev
+
+/obj/effect/mob_spawn/human/corpse/commie_rev/space
+	name = "Neo kommunist space soldier"
+	id_job = "Soldier"
+	outfit = /datum/outfit/commie_rev_space
+
+/datum/outfit/commie_rev_space
+	name = "Neo komunist space soldier"
+	uniform = /obj/item/clothing/under/commie_rev
+	head = /obj/item/clothing/head/helmet/space/syndicate/ramzi
+	suit = /obj/item/clothing/suit/space/syndicate/ramzi
+	back = /obj/item/tank/jetpack/oxygen
+	ears = /obj/item/radio/headset/alt
+	r_pocket = /obj/item/tank/internals/emergency_oxygen
+	id = /obj/item/card/id/cel/commie_rev
+	gloves = /obj/item/clothing/gloves/combat
+	mask = /obj/item/clothing/mask/breath/facemask
