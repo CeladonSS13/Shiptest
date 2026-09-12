@@ -47,6 +47,18 @@
 	result = /obj/item/food/soup/nettle
 	subcategory = CAT_SOUP
 
+/datum/crafting_recipe/food/redbeetsoup
+	name = "Redbeet soup"
+	reqs = list(
+		/datum/reagent/water = 10,
+		/obj/item/reagent_containers/glass/bowl = 1,
+		/obj/item/food/meat/rawcutlet = 1,
+		/obj/item/food/grown/redbeet = 1,
+		/obj/item/food/grown/potato = 1,
+	)
+	result = /obj/item/food/soup/nettle
+	subcategory = CAT_SOUP
+
 /datum/crafting_recipe/food/wingfangchu
 	name = "Wingfangchu"
 	reqs = list(

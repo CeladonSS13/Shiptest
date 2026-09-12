@@ -227,6 +227,14 @@
 	crate_type = /obj/structure/closet/crate/wooden
 	crate_name = "basic mining crate"
 
+/datum/supply_pack/faction/independent/tools/entrenching
+	name = "Entrenching Tool Crate"
+	desc = "Contains one dual-purpose mining tool, useful as a pickaxe, shovel, and weapon. Fits in your bag."
+	cost = 500
+	contains = list(/obj/item/trench_tool)
+	crate_name = "mining crate"
+
+
 /obj/structure/closet/crate/privatecrate
 	desc = "A private steel crate."
 	icon_state = "privatecrate"

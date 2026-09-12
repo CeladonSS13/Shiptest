@@ -506,11 +506,13 @@
 	/// We stop increasing stamina damage once we reach this number.
 	var/maximum_od_stamina_damage = 80
 
+/*
 /datum/reagent/medicine/salbutamol/expose_mob(mob/living/M, method = TOUCH, reac_volume, show_message = TRUE, touch_protection = 0)
 	var/datum/status_effect/lung_inflammation/asthma = M.has_status_effect(/datum/status_effect/lung_inflammation)
 	if(asthma)
 		asthma.adjust_salbutamol_levels(reac_volume)
 	return ..()
+*/
 
 /datum/reagent/medicine/salbutamol/on_mob_metabolize(mob/living/affected_mob)
 	. = ..()

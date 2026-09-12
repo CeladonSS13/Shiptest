@@ -555,6 +555,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/rockvault/sandstone,
 /area/overmap_encounter/planetoid/cave/explored)
+"ot" = (
+/mob/living/basic/mouse/syndie,
+/obj/structure/chair/comfy/beige/directional/east,
+/turf/open/floor/carpet/blue,
+/area/overmap_encounter/planetoid/cave/explored)
 "ou" = (
 /obj/structure/spacevine/weak,
 /obj/structure/stone_tile/slab,
@@ -816,6 +821,16 @@
 /obj/structure/stone_tile/slab,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/melee/axe/bone,
+/turf/open/floor/plasteel/rockvault/sandstone,
+/area/overmap_encounter/planetoid/cave/explored)
+"tM" = (
+/obj/structure/closet/crate/coffin,
+/obj/item/clothing/mask/mummy,
+/obj/item/clothing/under/costume/mummy,
+/obj/item/melee/sword/scrap,
+/obj/item/shield/goliath,
+/obj/item/clothing/head/hooded/cloakhood/bone,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/rockvault/sandstone,
 /area/overmap_encounter/planetoid/cave/explored)
 "tT" = (
@@ -1360,11 +1375,6 @@
 /obj/structure/stone_tile/surrounding_tile/cracked,
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/rockvault/sandstone,
-/area/overmap_encounter/planetoid/cave/explored)
-"GR" = (
-/mob/living/basic/mouse/syndie,
-/obj/structure/chair/comfy/beige/directional/east,
-/turf/open/floor/carpet/blue,
 /area/overmap_encounter/planetoid/cave/explored)
 "GY" = (
 /turf/open/floor/plasteel/stairs/wood/bamboo{
@@ -1933,16 +1943,6 @@
 /obj/structure/stone_tile/slab,
 /obj/structure/stone_tile/slab,
 /obj/effect/mob_spawn/human/skeleton,
-/turf/open/floor/plasteel/rockvault/sandstone,
-/area/overmap_encounter/planetoid/cave/explored)
-"TG" = (
-/obj/structure/closet/crate/coffin,
-/obj/item/clothing/mask/mummy,
-/obj/item/clothing/under/costume/mummy,
-/obj/item/melee/sword/scrap,
-/obj/item/shield/riot/goliath,
-/obj/item/clothing/head/hooded/cloakhood/bone,
-/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/rockvault/sandstone,
 /area/overmap_encounter/planetoid/cave/explored)
 "TR" = (
@@ -3015,7 +3015,7 @@ Ej
 Ej
 Ej
 Ej
-TG
+tM
 Eg
 DT
 Ej
@@ -5281,7 +5281,7 @@ Ej
 HQ
 az
 tl
-GR
+ot
 Ej
 HQ
 mI
