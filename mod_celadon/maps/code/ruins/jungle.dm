@@ -125,3 +125,9 @@
 	description = "An old supply depot, now solely inhabiated by robots."
 	suffix = "jungle_depot.dmm"
 	ruin_tags = list(RUIN_TAG_MEDIUM_COMBAT, RUIN_TAG_MEDIUM_LOOT, RUIN_TAG_LIVEABLE, RUIN_TAG_HAZARDOUS)
+
+/datum/map_template/ruin/jungle/occupated_tradespot
+	id = "occupated_tradespot"
+	name = "Occupated tradespot"
+	description = "Tradespot was taken by frontiersmanl, no animals allowed."
+	suffix = "jungle_occupated_tradespot.dmm"

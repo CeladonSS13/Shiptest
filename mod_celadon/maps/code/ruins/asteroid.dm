@@ -90,3 +90,10 @@
 	name = "Wrecker Outpost"
 	description = "A wrecker outpost with wreck ships around it."
 	suffix = "asteroid_wrecker_outpost.dmm"
+
+/datum/map_template/ruin/asteroid/asteroid_destroyed_shrine
+	id = "asteroid_wrecker_outpost"
+	name = "Destroyed Shrine"
+	description = "Destroyed srine with katana inside."
+	suffix = "asteroid_destroyed_shrine.dmm"
+	allow_duplicates = "false"
