@@ -92,7 +92,7 @@
 	suffix = "asteroid_wrecker_outpost.dmm"
 
 /datum/map_template/ruin/asteroid/asteroid_destroyed_shrine
-	id = "asteroid_wrecker_outpost"
+	id = "asteroid_destroyed_shrine"
 	name = "Destroyed Shrine"
 	description = "Destroyed srine with katana inside."
 	suffix = "asteroid_destroyed_shrine.dmm"
