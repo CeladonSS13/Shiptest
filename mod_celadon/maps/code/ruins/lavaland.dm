@@ -95,8 +95,8 @@
 		Quality memes."
 	suffix = "lavaland_surface_xeno_nest.dmm"
 
-/datum/map_template/ruin/lavaland/cybersun_holdout
-	name = "Cybersun's Last Stand"
-	description = "Ramzi have laid siege to a Cybersun outpost with hefty automated defences."
-	id = "cybersun_holdout"
-	suffix = "lavaland_cybersun_holdout.dmm"
+// /datum/map_template/ruin/lavaland/cybersun_holdout - Переносилось с оффов. После этого начали ломаться автотесты в Pull Request. Временно удалено вместе с файлом .dmm
+// 	name = "Cybersun's Last Stand"
+// 	description = "Ramzi have laid siege to a Cybersun outpost with hefty automated defences."
+// 	id = "cybersun_holdout"
+// 	suffix = "lavaland_cybersun_holdout.dmm"
