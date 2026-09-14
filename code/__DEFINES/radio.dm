@@ -23,8 +23,8 @@
 #define RADIO_TOKEN_NGR ":f"
 
 #define RADIO_CHANNEL_SUNS "SUNS"
-#define RADIO_KEY_SUNS "u"
-#define RADIO_TOKEN_SUNS ":u"
+#define RADIO_KEY_SUNS "q"
+#define RADIO_TOKEN_SUNS ":q"
 
 #define RADIO_CHANNEL_CENTCOM "CentCom"
 #define RADIO_KEY_CENTCOM "e"
@@ -55,6 +55,11 @@
 #define RADIO_TOKEN_PIRATE ":y"
 
 #define RADIO_CHANNEL_WIDEBAND "Wideband"
+#define RADIO_KEY_WIDEBAND "w"
+#define RADIO_TOKEN_WIDEBAND ":w"	//WS End
+
+#define RADIO_CHANNEL_CTF_RED "Red Team"
+#define RADIO_CHANNEL_CTF_BLUE "Blue Team"
 
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.

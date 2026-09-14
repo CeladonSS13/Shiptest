@@ -167,6 +167,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	result_path = /obj/item/radio/intercom/table
 	pixel_shift = 0
 
+
 //wideband radio
 /obj/item/radio/intercom/wideband
 	name = "wideband relay"

@@ -134,11 +134,11 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "warra")
 		if(FREQ_EMERGENCY)
 			record_feedback("tally", "radio_usage", 1, "emergency")
-		// if(FREQ_MINUTEMEN)
+		// if(FREQ_MINUTEMEN) // [CELADON-DELETE] - FACTION_RADIO
 		// 	record_feedback("tally", "radio_usage", 1, "minutemen")
 		if(FREQ_INTEQ)
 			record_feedback("tally", "radio_usage", 1, "inteq")
-		// if(FREQ_PIRATE)
+		// if(FREQ_PIRATE)  // [CELADON-DELETE] - FACTION_RADIO
 		// 	record_feedback("tally", "radio_usage", 1, "pirate")
 		if(FREQ_SYNDICATE)
 			record_feedback("tally", "radio_usage", 1, "syndicate")
@@ -148,11 +148,15 @@ SUBSYSTEM_DEF(blackbox)
 			record_feedback("tally", "radio_usage", 1, "ngr")
 		if(FREQ_SUNS)
 			record_feedback("tally", "radio_usage", 1, "suns")
-		if(FREQ_ELYSIUM)
-			record_feedback("tally", "radio_usage", 1, "elysium")
+		// if(FREQ_PGF) // [CELADON-DELETE] - FACTION_RADIO
+		// 	record_feedback("tally", "radio_usage", 1, "pgf")
 		if(FREQ_CENTCOM)
 			record_feedback("tally", "radio_usage", 1, "centcom")
-		if(FREQ_SOLFED)		//WS Edit - SolGov Rep
+		// if(FREQ_SOLGOV) // [CELADON-DELETE] - FACTION_RADIO
+		// 	record_feedback("tally", "radio_usage", 1, "solgov")
+		if(FREQ_ELYSIUM)
+			record_feedback("tally", "radio_usage", 1, "elysium")
+		if(FREQ_SOLFED)
 			record_feedback("tally", "radio_usage", 1, "solfed")
 		else
 			record_feedback("tally", "radio_usage", 1, "other")

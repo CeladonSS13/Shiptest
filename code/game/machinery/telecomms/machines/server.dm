@@ -79,9 +79,9 @@
 	autolinkers = list("warra", "broadcasterA")
 
 /obj/machinery/telecomms/server/presets/solgov
-	id = "SolFed Server"
-	freq_listening = list(FREQ_SOLFED, FREQ_COMMON)
-	autolinkers = list("solfed", "broadcasterA")
+	id = "SolGov Server"
+	freq_listening = list(FREQ_SOLGOV, FREQ_COMMON)
+	autolinkers = list("solgov", "broadcasterA")
 
 /obj/machinery/telecomms/server/presets/syndicate
 	id = "Syndicate Server"
@@ -104,9 +104,9 @@
 	autolinkers = list("suns", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/minutemen
-	id = "Ramzi Server"
-	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
-	autolinkers = list("ramzi", "broadcasterA")
+	id = "CLIP Server"
+	freq_listening = list(FREQ_MINUTEMEN, FREQ_COMMON)
+	autolinkers = list("minutemen", "broadcasterA")
 
 /obj/machinery/telecomms/server/presets/inteq
 	id = "IRMG Server"
@@ -114,19 +114,9 @@
 	autolinkers = list("inteq", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/pirate
-	id = "Unidentified Server"
+	id = "Pirate Server"
 	freq_listening = list(FREQ_PIRATE, FREQ_COMMON)
-	autolinkers = list("unidentified", "broadcasterB")
-
-/obj/machinery/telecomms/server/presets/vox
-	id = "Raider Server"
-	freq_listening = list(FREQ_VOX, FREQ_COMMON)
-	autolinkers = list("raider", "broadcasterB")
-
-/obj/machinery/telecomms/server/presets/suns
-	id = "SUNS Server"
-	freq_listening = list(FREQ_SUNS, FREQ_COMMON)
-	autolinkers = list("suns", "broadcasterB")
+	autolinkers = list("pirate", "broadcasterB")
 
 /obj/machinery/telecomms/server/presets/common
 	id = "Common Server"

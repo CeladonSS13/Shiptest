@@ -28,9 +28,6 @@
 	icon_state = "syn_cypherkey"
 	channels = list(RADIO_CHANNEL_SYNDICATE = 1)
 
-/obj/item/encryptionkey/syndicate/captain
-	channels = list(RADIO_CHANNEL_SYNDICATE = 1, RADIO_CHANNEL_SYNDICATE_LONG = 1)
-
 /obj/item/encryptionkey/syndicate/cybersun
 	name = "cybersun encryption key"
 	channels = list(RADIO_CHANNEL_CYBERSUN = 1)
