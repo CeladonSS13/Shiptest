@@ -48,10 +48,7 @@
 	id = "Receiver A"
 	network = "tcommsat"
 	autolinkers = list("receiverA") // link to relay
-	// [CELADON-EDIT]
-	// freq_listening = list(FREQ_SOLGOV, FREQ_WARRA, FREQ_MINUTEMEN, FREQ_EMERGENCY, FREQ_COMMON)
-	freq_listening = list(FREQ_SOLFED, FREQ_NANOTRASEN, FREQ_EMERGENCY, FREQ_COMMON)
-	// [/CELADON-EDIT]
+	freq_listening = list(FREQ_SOLFED, FREQ_NANOTRASEN, FREQ_EMERGENCY, FREQ_COMMON) // [CELADON-EDIT] - FACTION_RADIO - OLD CODE: freq_listening = list(FREQ_SOLGOV, FREQ_WARRA, FREQ_MINUTEMEN, FREQ_EMERGENCY, FREQ_COMMON)
 
 //--PRESET RIGHT--//
 
@@ -59,7 +56,7 @@
 	id = "Receiver B"
 	network = "tcommsat"
 	autolinkers = list("receiverB") // link to relay
-	freq_listening = list(FREQ_INTEQ, FREQ_SYNDICATE, FREQ_COMMON)
+	freq_listening = list(FREQ_INTEQ, FREQ_SYNDICATE, FREQ_COMMON) // [CELADON-EDIT] - FACTION_RADIO - OLD CODE: freq_listening = list(FREQ_INTEQ, FREQ_SYNDICATE, FREQ_PIRATE, FREQ_COMMON)
 
 	//Common and other radio frequencies for people to freely use
 /obj/machinery/telecomms/receiver/preset_right/Initialize()

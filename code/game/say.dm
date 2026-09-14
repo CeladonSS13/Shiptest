@@ -11,6 +11,14 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_PGF]" = "pgfradio",
 	"[FREQ_PIRATE]" = "pirradio",
 	"[FREQ_EMERGENCY]" = "emrgradio",
+	"[FREQ_SYNDICATE]" = "syndradio",
+	"[FREQ_CYBERSUN]" = "cyradio",
+	"[FREQ_NGR]" = "ngrradio",
+	"[FREQ_SUNS]" = "sunsradio",
+	// "[FREQ_CENTCOM]" = "centcomradio", // [CELADON-DELETE] - FACTION_RADIO
+	// "[FREQ_SOLGOV]" = "solgovradio", // [CELADON-DELETE] - FACTION_RADIO
+	// "[FREQ_WIDEBAND]" = "widebandradio", // [CELADON-DELETE] - FACTION_RADIO
+	// [CELADON-ADD] - FACTION_RADIO
 	"[FREQ_CENTCOM]" = "centcomradio",
 	"[FREQ_WIDEBAND]" = "widebandradio",
 	"[FREQ_NANOTRASEN]" = "ntradio",
@@ -19,19 +27,15 @@ GLOBAL_LIST_INIT(freqtospan, list(
 	"[FREQ_INTEQ_LONG]" = "irmgradio_long",
 	"[FREQ_ELYSIUM]" = "elysiumradio",
 	"[FREQ_ELYSIUM_LONG]" = "elysiumradio_long",
-	"[FREQ_SYNDICATE]" = "syndradio",
 	"[FREQ_SYNDICATE_LONG]" = "syndradio_long",
-	"[FREQ_CYBERSUN]" = "cyradio",
-	"[FREQ_NGR]" = "ngrradio",
 	"[FREQ_SOLFED]" = "solfedradio",
 	"[FREQ_SOLFED_LONG]" = "solfedradio_long",
-	"[FREQ_SUNS]" = "sunsradio",
 	"[FREQ_SUNS_LONG]" = "sunsradio_long",
 	"[FREQ_VOX]" = "voxradio",
 	"[FREQ_RAMZI]" = "ramziradio",
 	"[FREQ_PIRATE]" = "pirradio",
+	// [/CELADON-ADD]
 	))
-// [/CELADON-EDIT]
 
 GLOBAL_LIST_INIT(freqcolor, list())
 

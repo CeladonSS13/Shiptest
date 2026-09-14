@@ -265,14 +265,24 @@
 								available_channels.Add(RADIO_TOKEN_WARRA)
 							if(RADIO_CHANNEL_EMERGENCY)
 								available_channels.Add(RADIO_TOKEN_EMERGENCY)
+							// if(RADIO_CHANNEL_MINUTEMEN) // [CELADON-DELETE] - FACTION_RADIO
+							// 	available_channels.Add(RADIO_TOKEN_MINUTEMEN)
+							// [CELADON-ADD] - FACTION_RADIO
 							if(RADIO_CHANNEL_RAMZI)
 								available_channels.Add(RADIO_TOKEN_RAMZI)
 							if(RADIO_CHANNEL_ELYSIUM)
 								available_channels.Add(RADIO_TOKEN_ELYSIUM)
-							if(RADIO_CHANNEL_INTEQ)
-								available_channels.Add(RADIO_TOKEN_INTEQ)
 							if(RADIO_CHANNEL_SOLFED)
 								available_channels.Add(RADIO_TOKEN_SOLFED)
+							if(RADIO_CHANNEL_VOX)
+								available_channels.Add(RADIO_TOKEN_VOX)
+							if(RADIO_CHANNEL_SUNS)
+								available_channels.Add(RADIO_TOKEN_SUNS)
+							// [/CELADON-ADD]
+							if(RADIO_CHANNEL_INTEQ)
+								available_channels.Add(RADIO_TOKEN_INTEQ)
+							// if(RADIO_CHANNEL_SOLGOV) // [CELADON-DELETE] - FACTION_RADIO
+							// 	available_channels.Add(RADIO_TOKEN_SOLGOV)
 							if(RADIO_CHANNEL_SYNDICATE)
 								available_channels.Add(RADIO_TOKEN_SYNDICATE)
 							if(RADIO_CHANNEL_CYBERSUN)
