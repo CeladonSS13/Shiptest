@@ -122,6 +122,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
+"kp" = (
+/obj/effect/spawner/structure/window/plasma,
+/obj/structure/grille,
+/turf/open/floor/plating/asteroid/smoothed/airless,
+/area/ruin/space/has_grav)
 "lf" = (
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
@@ -138,11 +143,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
+"oz" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/table/wood,
+/obj/item/food/grilled_cheese_sandwich,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav)
 "oX" = (
-/obj/machinery/door/airlock/wood{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/curtain/cloth/grey,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "pP" = (
@@ -201,6 +210,10 @@
 "Ai" = (
 /turf/closed/mineral/gibtonite,
 /area/ruin/space/has_grav)
+"BR" = (
+/obj/structure/spawner/burrow/asteroid,
+/turf/open/floor/plating/asteroid/smoothed/airless,
+/area/ruin/space/has_grav)
 "CU" = (
 /obj/machinery/drill,
 /turf/open/floor/plating/asteroid/smoothed/airless,
@@ -219,6 +232,10 @@
 /obj/structure/statue/large/pillar,
 /turf/open/floor/engine/airless,
 /area/ruin/space/has_grav)
+"IV" = (
+/obj/structure/door_assembly/door_assembly_wood,
+/turf/open/floor/plating/asteroid/smoothed/airless,
+/area/ruin/space/has_grav)
 "Js" = (
 /obj/effect/turf_decal/sand/plating,
 /turf/open/floor/plating/airless,
@@ -226,6 +243,12 @@
 "JB" = (
 /obj/structure/fluff/drake_statue/falling,
 /turf/open/floor/engine/airless,
+/area/ruin/space/has_grav)
+"JG" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/plastic,
+/turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "JN" = (
 /obj/structure/flora/rock,
@@ -248,22 +271,37 @@
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "Li" = (
-/obj/structure/table/wood,
-/obj/item/food/tortilla,
 /obj/effect/turf_decal/sand/plating,
+/obj/structure/chair/plastic{
+	dir = 4
+	},
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "Mq" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
+"MB" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/table/wood,
+/obj/item/food/tortilla,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav)
+"Ny" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/chair/plastic{
+	dir = 1
+	},
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav)
 "NP" = (
 /obj/structure/flora/rock/asteroid,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "Ol" = (
-/obj/machinery/door/airlock/wood,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/girder,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "Pu" = (
@@ -276,8 +314,17 @@
 "SW" = (
 /turf/open/lava/plasma,
 /area/ruin/space/has_grav)
+"Ts" = (
+/obj/effect/turf_decal/sand/plating,
+/obj/structure/table/wood,
+/turf/open/floor/plating/airless,
+/area/ruin/space/has_grav)
 "TH" = (
 /turf/open/floor/engine/airless,
+/area/ruin/space/has_grav)
+"TL" = (
+/obj/structure/girder,
+/turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "UH" = (
 /obj/structure/table/wood,
@@ -285,7 +332,12 @@
 /turf/open/floor/plating/airless,
 /area/ruin/space/has_grav)
 "UW" = (
-/obj/structure/toilet,
+/obj/structure/spawner/burrow/asteroid,
+/turf/open/floor/fakepit,
+/area/ruin/space/has_grav)
+"Vc" = (
+/obj/effect/spawner/structure/window/plasma,
+/obj/structure/grille/broken,
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "Wj" = (
@@ -635,7 +687,7 @@ lf
 SO
 lf
 lf
-FY
+lf
 FY
 FY
 FY
@@ -644,7 +696,7 @@ fR
 FY
 FY
 FY
-FY
+lf
 lf
 lf
 Yn
@@ -674,24 +726,24 @@ lf
 lf
 lf
 lf
+TL
+TL
 FY
 FY
-FY
-FY
-FY
+TL
 lf
 lf
 lf
 lf
 FY
-Li
+FY
+UH
 JW
-gr
 lf
 Mq
-gr
 uN
 UH
+FY
 FY
 lf
 Yn
@@ -722,7 +774,7 @@ lf
 lf
 lf
 lf
-di
+IV
 iC
 FY
 fP
@@ -732,12 +784,12 @@ lf
 JN
 lf
 FY
-nX
-YV
-Js
-Mq
-Mq
+oz
 gr
+YV
+Mq
+Mq
+Js
 Js
 Li
 FY
@@ -772,7 +824,7 @@ lf
 Mq
 FY
 FY
-FY
+TL
 FY
 FY
 lf
@@ -780,14 +832,14 @@ lf
 lf
 lf
 FY
-rf
-JW
+MB
+Ny
 Js
 Mq
 lf
-gr
 uN
 gx
+Ts
 FY
 lf
 lf
@@ -820,7 +872,7 @@ Mq
 Mq
 Ol
 Pu
-FY
+TL
 UW
 di
 lf
@@ -828,14 +880,14 @@ SO
 lf
 lf
 FY
+FY
 nX
 JW
-gr
 Mq
 lf
-gr
-gr
+JG
 rf
+FY
 FY
 lf
 Yn
@@ -856,7 +908,7 @@ lf
 lf
 JN
 lf
-lf
+BR
 nK
 nK
 lf
@@ -867,7 +919,7 @@ Mq
 Mq
 Mq
 FY
-FY
+TL
 FY
 FY
 FY
@@ -875,7 +927,7 @@ lf
 lf
 lf
 lf
-FY
+lf
 FY
 FY
 FY
@@ -884,7 +936,7 @@ fR
 FY
 FY
 FY
-FY
+lf
 lf
 Yn
 Yn
@@ -1070,7 +1122,7 @@ nK
 nK
 nK
 nK
-lf
+aA
 lf
 lf
 lf
@@ -1118,8 +1170,8 @@ lf
 lf
 nK
 nK
-nK
-lf
+aA
+aA
 lf
 JN
 lf
@@ -1167,7 +1219,7 @@ lf
 lf
 nK
 nK
-nK
+aA
 dv
 dv
 dv
@@ -1311,7 +1363,7 @@ lf
 lf
 Zv
 nK
-nK
+aA
 aA
 Mq
 xx
@@ -1360,7 +1412,7 @@ lf
 Zv
 nK
 nK
-nK
+aA
 dv
 dv
 lf
@@ -1401,14 +1453,14 @@ uv
 lA
 lf
 lf
-lf
+BR
 lf
 aL
 lf
 lf
 nK
 nK
-nK
+aA
 lf
 lf
 lf
@@ -1552,7 +1604,7 @@ nK
 lf
 Zv
 nK
-lf
+NP
 lf
 lf
 lf
@@ -1765,7 +1817,7 @@ lf
 SO
 lf
 lf
-lf
+BR
 nK
 lf
 lf
@@ -2023,7 +2075,7 @@ bl
 Mq
 gr
 gx
-FY
+Vc
 lf
 lf
 lf
@@ -2071,7 +2123,7 @@ Ge
 Mq
 gr
 Zr
-FY
+Vc
 lf
 SO
 lf
@@ -2119,7 +2171,7 @@ bl
 Mq
 ii
 ct
-FY
+kp
 lf
 lf
 nK
@@ -2164,7 +2216,7 @@ lf
 FY
 FY
 FY
-FY
+oX
 FY
 FY
 FY
