@@ -22,3 +22,11 @@
 
 /datum/design/board/ship_gravity
 	category = list("Misc. Machinery", "initial", "Equipment", "Machinery")
+
+/datum/design/wall_painter
+	name = "Wall painter"
+	id = "wall_painter"
+	build_type = AUTOLATHE | PROTOLATHE
+	materials = list(/datum/material/iron = 100, /datum/material/glass = 50)
+	build_path = /obj/item/wall_painter
+	category = list("initial","Tools","Tool Designs")
