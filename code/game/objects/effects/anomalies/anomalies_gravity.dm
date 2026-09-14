@@ -24,35 +24,37 @@
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/effect/anomaly/grav/anomalyEffect()
+/obj/effect/anomaly/grav/anomalyEffect() // [CELADON-ADD] - ИСПРАВЛЯЕТ ШАХМАТЫ (СИЛЬНЫЕ ЛАГИ). НУЖНО ПЕРЕСМОТРЕТЬ ЛОГИКУ ГРАВИТАЦИОННОЙ АНОМАЛИИ.
 	return
-	// ..()
-	// boing = 1
-	// for(var/obj/O in orange(effectrange, src))
-	// 	if(!O.anchored)
-	// 		step_towards(O,src)
-	// for(var/mob/living/Mob in range(0, src))
-	// 	gravShock(Mob)
-	// for(var/mob/living/Mob in orange(effectrange, src))
-	// 	if(!Mob.mob_negates_gravity())
-	// 		step_towards(Mob,src)
-	// for(var/obj/O in range(0,src))
-	// 	if(!O.anchored)
-	// 		if(isturf(O.loc))
-	// 			var/turf/T = O.loc
-	// 			if(T.intact && HAS_TRAIT(O, TRAIT_T_RAY_VISIBLE))
-	// 				continue
-	// 		var/mob/living/target = locate() in view(effectrange,src)
-	// 		if(target && !target.stat)
-	// 			O.throw_at(target, 5, 10)
 
-	// if(!COOLDOWN_FINISHED(src, pulse_cooldown))
-	// 	return
+/obj/effect/anomaly/grav/anomalyEffect_cel_off() // Отключаем переименованием коркодовский эффект /obj/effect/anomaly/grav/anomalyEffect().
+	..()
+	boing = 1
+	for(var/obj/O in orange(effectrange, src))
+		if(!O.anchored)
+			step_towards(O,src)
+	for(var/mob/living/Mob in range(0, src))
+		gravShock(Mob)
+	for(var/mob/living/Mob in orange(effectrange, src))
+		if(!Mob.mob_negates_gravity())
+			step_towards(Mob,src)
+	for(var/obj/O in range(0,src))
+		if(!O.anchored)
+			if(isturf(O.loc))
+				var/turf/T = O.loc
+				if(T.intact && HAS_TRAIT(O, TRAIT_T_RAY_VISIBLE))
+					continue
+			var/mob/living/target = locate() in view(effectrange,src)
+			if(target && !target.stat)
+				O.throw_at(target, 5, 10)
 
-	// COOLDOWN_START(src, pulse_cooldown, pulse_delay)
-	// for(var/mob/living/carbon/carbon in orange(effectrange/2, src))
-	// 	var/target_armor = carbon.run_armor_check(attack_flag = "melee")
-	// 	carbon.apply_damage(15, BRUTE, spread_damage = TRUE, wound_bonus = target_armor, bare_wound_bonus = 0, sharpness = 0)
+	if(!COOLDOWN_FINISHED(src, pulse_cooldown))
+		return
+
+	COOLDOWN_START(src, pulse_cooldown, pulse_delay)
+	for(var/mob/living/carbon/carbon in orange(effectrange/2, src))
+		var/target_armor = carbon.run_armor_check(attack_flag = "melee")
+		carbon.apply_damage(15, BRUTE, spread_damage = TRUE, wound_bonus = target_armor, bare_wound_bonus = 0, sharpness = 0)
 
 /obj/effect/anomaly/grav/proc/on_entered(datum/source, atom/movable/AM)
 	SIGNAL_HANDLER
