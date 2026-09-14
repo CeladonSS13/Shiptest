@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
-	name = "\improper G36-SH"
-	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	name = "\improper G36с"
+	desc = "Элитный полицейский карабин Солнечной Федерации. Укороченная версия G36, предназначенная для использования в узких помещениях. Используется полицейскими подразделениями и спецназом Солнечной Федерации. Использует патроны калибра 5,56×45 мм."
 //Иконки
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
@@ -43,24 +43,9 @@
 
 NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 
-/obj/item/gun/ballistic/automatic/assault/g36sh/inteq
-	name = "\improper G36m-SH"
-	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
-	icon_state = "g36shinteq"
-	item_state = "g36shinteq"
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/onmob.dmi'
-	manufacturer = MANUFACTURER_INTEQ
-	empty_indicator = TRUE
-	empty_alarm = TRUE
-	zoomable = TRUE
-NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
-
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
-	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "Элитная штурмовая винтовка Солнечной Федерации. Изначально разработанная еще до объединения Земли, эта модель впоследствии производилась компанией «Скарборо», а затем модифицирована «Солнечным Арсеналом», после того, как «Скарборо» сменила сферу деятельности. В данной модели используется композит и вставки из искусственного дерева.  Использует патроны калибра 5,56×45 мм."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
@@ -99,11 +84,22 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 /obj/item/gun/ballistic/automatic/assault/g36/black
 	icon_state = "g36_black"
 	item_state = "g36_black"
-	desc = "Trophy version of Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "Раритетная элитная штурмовая винтовка. Одна из ранних производимых винтовок «Скарборо». Она была разработана еще до объединения Земли, но потеряла свою актуальность после начала производства улучшенной версии «Солнечным Арсеналом». Имеет встроенный прицел. Использует патроны калибра 5,56x45 мм."
+	zoom_amt = 4
+	manufacturer = MANUFACTURER_SCARBOROUGH
+	slot_available = list(
+		ATTACHMENT_SLOT_MUZZLE = 1,
+		ATTACHMENT_SLOT_RAIL = 1,
+	)
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list("x" = 46, "y" = 19),
+		ATTACHMENT_SLOT_RAIL   = list("x" = 33, "y" = 16),
+	)
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
-	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
+	desc = "Элитная штурмовая винтовка ИнтеКью. Является модификацией G36 производства «Солнечного Арсенала». Имеет индикатор пустого магазина.  Использует патроны калибра 5,56×45 мм."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
