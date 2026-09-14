@@ -111,3 +111,9 @@
 	name = "Vampire laboratory"
 	description = "A Laboratory for the development of the drug 'Vita-Null+X', which will help cure vampirism, or not.."
 	suffix = "jungle_vamplab.dmm"
+
+/datum/map_template/ruin/jungle/occupated_tradespot
+	id = "occupated_tradespot"
+	name = "Occupated tradespot"
+	description = "Tradespot was taken by frontiersmanl, no animals allowed."
+	suffix = "jungle_occupated_tradespot.dmm"
