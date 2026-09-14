@@ -6,7 +6,10 @@
 
 import { EventEmitter } from 'common/events';
 import { classes } from 'common/react';
+import { createRoot } from 'react-dom/client';
+import { Tooltip } from 'tgui/components';
 import { createLogger } from 'tgui/logging';
+
 import {
   COMBINE_MAX_MESSAGES,
   COMBINE_MAX_TIME_WINDOW,
@@ -16,14 +19,12 @@ import {
   MAX_PERSISTED_MESSAGES,
   MAX_VISIBLE_MESSAGES,
   MESSAGE_PRUNE_INTERVAL,
-  MESSAGE_TYPES,
   MESSAGE_TYPE_INTERNAL,
   MESSAGE_TYPE_UNKNOWN,
+  MESSAGE_TYPES,
 } from './constants';
-import { render } from 'inferno';
 import { canPageAcceptType, createMessage, isSameMessage } from './model';
 import { highlightNode, linkifyNode } from './replaceInTextNode';
-import { Tooltip } from '../../tgui/components';
 
 const logger = createLogger('chatRenderer');
 
@@ -39,8 +40,8 @@ export const TGUI_CHAT_COMPONENTS = {
 // List of injectable attibute names mapped to their proper prop
 // We need this because attibutes don't support lowercase names
 export const TGUI_CHAT_ATTRIBUTES_TO_PROPS = {
-  'position': 'position',
-  'content': 'content',
+  position: 'position',
+  content: 'content',
 };
 
 const findNearestScrollableParent = (startingNode) => {
@@ -82,9 +83,12 @@ const handleImageError = (e) => {
   setTimeout(() => {
     /** @type {HTMLImageElement} */
     const node = e.target;
+    if (!node) {
+      return;
+    }
     const attempts = parseInt(node.getAttribute('data-reload-n'), 10) || 0;
     if (attempts >= IMAGE_RETRY_LIMIT) {
-      // logger.error(`failed to load an image after ${attempts} attempts`);
+      logger.error(`failed to load an image after ${attempts} attempts`);
       return;
     }
     const src = node.src;
@@ -205,6 +209,7 @@ class ChatRenderer {
       const matchWord = setting.matchWord;
       const matchCase = setting.matchCase;
       const allowedRegex = /^[a-zа-яё0-9_\-$/^[\s\]\\]+$/gi;
+      const regexEscapeCharacters = /[!#$%^&*)(+=.<>{}[\]:;'"|~`_\-\\/]/g;
       const lines = String(text)
         .split(',')
         .map((str) => str.trim())
@@ -216,7 +221,7 @@ class ChatRenderer {
             // Must be alphanumeric (with some punctuation)
             allowedRegex.test(str) &&
             // Reset lastIndex so it does not mess up the next word
-            ((allowedRegex.lastIndex = 0) || true)
+            ((allowedRegex.lastIndex = 0) || true),
         );
       let highlightWords;
       let highlightRegex;
@@ -240,19 +245,29 @@ class ChatRenderer {
           if (!highlightWords) {
             highlightWords = [];
           }
+          // We're not going to let regex characters fuck up our RegEx operation.
+          line = line.replace(regexEscapeCharacters, '\\$&');
+
           highlightWords.push(line);
         }
       }
       const regexStr = regexExpressions.join('|');
       const flags = 'g' + (matchCase ? '' : 'i');
-      // setting regex overrides matchword
-      if (regexStr) {
-        highlightRegex = new RegExp('(' + regexStr + ')', flags);
-      } else {
-        const pattern = `${matchWord ? '\\b' : ''}(${lines.join('|')})${
-          matchWord ? '\\b' : ''
-        }`;
-        highlightRegex = new RegExp(pattern, flags);
+      // We wrap this in a try-catch to ensure that broken regex doesn't break
+      // the entire chat.
+      try {
+        // setting regex overrides matchword
+        if (regexStr) {
+          highlightRegex = new RegExp('(' + regexStr + ')', flags);
+        } else {
+          const pattern = `${matchWord ? '\\b' : ''}(${highlightWords.join(
+            '|',
+          )})${matchWord ? '\\b' : ''}`;
+          highlightRegex = new RegExp(pattern, flags);
+        }
+      } catch {
+        // We just reset it if it's invalid.
+        highlightRegex = null;
       }
       // Lazy init
       if (!this.highlightParsers) {
@@ -306,15 +321,14 @@ class ChatRenderer {
     const to = Math.max(0, len - COMBINE_MAX_MESSAGES);
     for (let i = from; i >= to; i--) {
       const message = this.visibleMessages[i];
-      // prettier-ignore
-      const matches = (
+
+      const matches =
         // Is not an internal message
-        !message.type.startsWith(MESSAGE_TYPE_INTERNAL)
+        !message.type.startsWith(MESSAGE_TYPE_INTERNAL) &&
         // Text payload must fully match
-        && isSameMessage(message, predicate)
+        isSameMessage(message, predicate) &&
         // Must land within the specified time window
-        && now < message.createdAt + COMBINE_MAX_TIME_WINDOW
-      );
+        now < message.createdAt + COMBINE_MAX_TIME_WINDOW;
       if (matches) {
         return message;
       }
@@ -402,12 +416,15 @@ class ChatRenderer {
             childNode.removeChild(childNode.firstChild);
           }
           const Element = TGUI_CHAT_COMPONENTS[targetName];
+
+          const reactRoot = createRoot(childNode);
+
           /* eslint-disable react/no-danger */
-          render(
+          reactRoot.render(
             <Element {...outputProps}>
               <span dangerouslySetInnerHTML={oldHtml} />
             </Element>,
-            childNode
+            childNode,
           );
         }
 
@@ -418,7 +435,7 @@ class ChatRenderer {
               node,
               parser.highlightRegex,
               parser.highlightWords,
-              (text) => createHighlightNode(text, parser.highlightColor)
+              (text) => createHighlightNode(text, parser.highlightColor),
             );
             if (highlighted && parser.highlightWholeMessage) {
               node.className += ' ChatMessage--highlighted';
@@ -444,7 +461,7 @@ class ChatRenderer {
       // Query all possible selectors to find out the message type
       if (!message.type) {
         const typeDef = MESSAGE_TYPES.find(
-          (typeDef) => typeDef.selector && node.querySelector(typeDef.selector)
+          (typeDef) => typeDef.selector && node.querySelector(typeDef.selector),
         );
         message.type = typeDef?.type || MESSAGE_TYPE_UNKNOWN;
       }
@@ -500,10 +517,10 @@ class ChatRenderer {
           message.node = 'pruned';
         }
         // Remove pruned messages from the message array
-        // prettier-ignore
-        this.messages = this.messages.filter(message => (
-          message.node !== 'pruned'
-        ));
+
+        this.messages = this.messages.filter(
+          (message) => message.node !== 'pruned',
+        );
         logger.log(`pruned ${fromIndex} visible messages`);
       }
     }
@@ -511,7 +528,7 @@ class ChatRenderer {
     {
       const fromIndex = Math.max(
         0,
-        this.messages.length - MAX_PERSISTED_MESSAGES
+        this.messages.length - MAX_PERSISTED_MESSAGES,
       );
       if (fromIndex > 0) {
         this.messages = this.messages.slice(fromIndex);
@@ -527,7 +544,7 @@ class ChatRenderer {
     // Make a copy of messages
     const fromIndex = Math.max(
       0,
-      this.messages.length - MAX_PERSISTED_MESSAGES
+      this.messages.length - MAX_PERSISTED_MESSAGES,
     );
     const messages = this.messages.slice(fromIndex);
     // Remove existing nodes
@@ -562,7 +579,7 @@ class ChatRenderer {
     }
     // Remove pruned messages from the message array
     this.messages = this.messages.filter(
-      (message) => message.node !== 'pruned'
+      (message) => message.node !== 'pruned',
     );
     logger.log(`Cleared chat`);
   }
@@ -589,19 +606,22 @@ class ChatRenderer {
       }
     }
     // Create a page
-    // prettier-ignore
-    const pageHtml = '<!doctype html>\n'
-      + '<html>\n'
-      + '<head>\n'
-      + '<title>SS13 Chat Log</title>\n'
-      + '<style>\n' + cssText + '</style>\n'
-      + '</head>\n'
-      + '<body>\n'
-      + '<div class="Chat">\n'
-      + messagesHtml
-      + '</div>\n'
-      + '</body>\n'
-      + '</html>\n';
+
+    const pageHtml =
+      '<!doctype html>\n' +
+      '<html>\n' +
+      '<head>\n' +
+      '<title>SS13 Chat Log</title>\n' +
+      '<style>\n' +
+      cssText +
+      '</style>\n' +
+      '</head>\n' +
+      '<body>\n' +
+      '<div class="Chat">\n' +
+      messagesHtml +
+      '</div>\n' +
+      '</body>\n' +
+      '</html>\n';
     // Create and send a nice blob
     const blob = new Blob([pageHtml], { type: 'text/plain' });
     const timestamp = new Date()
@@ -609,7 +629,7 @@ class ChatRenderer {
       .substring(0, 19)
       .replace(/[-:]/g, '')
       .replace('T', '-');
-    window.navigator.msSaveBlob(blob, `ss13-chatlog-${timestamp}.html`);
+    Byond.saveBlob(blob, `ss13-chatlog-${timestamp}.html`, '.html');
   }
 }
 
