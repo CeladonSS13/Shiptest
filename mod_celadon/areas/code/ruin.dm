@@ -386,6 +386,12 @@
 	name = "Abandoned Research Facility"
 	always_unpowered = FALSE
 
+
+//dangerpod
+/area/ruin/rockplanet/dangerpod
+	name = "Mining pod"
+	always_unpowered = FALSE
+
 //Lava Canyon
 /area/ruin/unpowered/scorched_hut
 	name = "Scorched Hut"

@@ -155,9 +155,9 @@
 	speed = 10
 	rapid = 2
 	rapid_fire_delay = 5
-	projectiletype = /obj/projectile/beam/laser/sharplite
+	projectiletype = /obj/projectile/beam/laser/nanotrasen // [CELADON-EDIT]
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/damaged/whitesands
-	r_hand = /obj/item/gun/energy/sharplite/volt
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/patriot // [CELADON-EDIT]
 	retreat_distance = 2
 	minimum_distance = 2
 
@@ -171,9 +171,9 @@
 	rapid = 5
 	rapid_fire_delay = 2
 	casingtype = null
-	projectiletype = /obj/projectile/beam/weak/sharplite
+	projectiletype = /obj/projectile/beam/laser/nanotrasen/weak // [CELADON-EDIT]
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/damaged/whitesands
-	r_hand = /obj/item/gun/energy/sharplite/rush
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/discharger // [CELADON-EDIT]
 
 /mob/living/simple_animal/hostile/human/hermit/ranged/energy/sarissa
 	name = "Hermit Sharpshooter"
@@ -181,9 +181,9 @@
 	icon_state = "survivor_e11"
 	icon_living = "survivor_e11"
 	projectilesound = 'sound/weapons/gun/laser/sharplite-fire.ogg'
-	projectiletype = /obj/projectile/beam/laser/sharplite/sniper
+	projectiletype = /obj/projectile/beam/laser/nanotrasen/dmr // [CELADON-EDIT]
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/damaged/whitesands
-	r_hand = /obj/item/gun/energy/sharplite/sarissa
+	r_hand = /obj/item/gun/energy/e_gun/nanotrasen/parallax // [CELADON-EDIT]
 	vision_range = 14
 	aggro_vision_range = 14
 	minimum_distance = 14

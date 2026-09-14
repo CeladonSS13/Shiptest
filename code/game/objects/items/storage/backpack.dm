@@ -581,7 +581,7 @@
 	STR.silent = TRUE
 
 /obj/item/storage/backpack/duffelbag/syndie/hitman
-	desc = "A large duffel bag for holding extra things. There is a Makosso-Warra logo on the back."
+	desc = "A large duffel bag for holding extra things. There is a Nanotrasen logo on the back." // [CELADON-EDIT]
 	icon_state = "duffel-syndieammo"
 	item_state = "duffel-syndieammo"
 

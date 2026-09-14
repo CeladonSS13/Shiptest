@@ -193,3 +193,9 @@
 	item_state = "graycloth"
 	vox_override_icon = 'mod_celadon/_storage_icons/icons/items/clothing/faction/nanotrasen/onmob/vox.dmi'
 	supports_variations = VOX_VARIATION
+
+//other related
+
+/obj/item/clothing/head/beret/centcom_formal
+	name = "\improper CentCom Formal Beret"
+	desc = "Sometimes, a compromise between fashion and defense needs to be made. Thanks to Nanotrasen's most recent nano-fabric durability enhancements, this time, it's not the case."

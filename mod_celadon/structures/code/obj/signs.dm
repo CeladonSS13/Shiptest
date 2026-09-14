@@ -50,10 +50,10 @@
 	desc = "A direction sign, pointing out which way the Shop."
 	icon_state = "shop"
 
-/obj/structure/sign/directions/outpost/crio
+/obj/structure/sign/directions/outpost/cryo
 	name = "crio sign"
-	desc = "A direction sign, pointing out which way the Crio."
-	icon_state = "crio"
+	desc = "A direction sign, pointing out which way the cryopods are."
+	icon_state = "cryo"
 
 /obj/structure/sign/directions/outpost/bar
 	name = "bar sign"
@@ -69,7 +69,7 @@
 /obj/structure/sign/directions/outpost/nanotrasen
 	name = "Nanotrasen sign"
 	desc = "A direction sign, pointing out which way the Nanotrasen faction."
-	icon_state = "nanotrasen"
+	icon_state = "nt"
 
 /obj/structure/sign/directions/outpost/solfed
 	name = "solfed sign"

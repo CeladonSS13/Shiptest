@@ -1366,7 +1366,7 @@
 
 /obj/item/storage/box/rndboards/old
 	name = "\proper Makosso-Warra R&D Construction Kit"
-	desc = "A set of boards for constructing prototype design lathes, dating from a prewar Makosso-warra labratory. These ones are unbraked, and can produce any of the designs in their database without limit."
+	desc = "A set of boards for constructing prototype design lathes, dating from an ancient Nanotrasen laboratory. These ones are unbraked, and can produce any of the designs in their database without limit." // [CELADON-EDIT]
 
 //departmental RND kits, for shiptests.
 /obj/item/storage/box/rndmining
@@ -1733,7 +1733,7 @@
 
 /obj/item/storage/box/sparklers
 	name = "box of sparklers"
-	desc = "A box of Makosso-Warra brand sparklers, burns hot even in the cold of space-winter."
+	desc = "A box of Nanotrasen brand sparklers, burns hot even in the cold of space-winter." // [CELADON-EDIT]
 	illustration = "sparkler"
 
 /obj/item/storage/box/sparklers/PopulateContents()
