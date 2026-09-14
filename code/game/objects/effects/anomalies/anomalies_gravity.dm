@@ -24,7 +24,10 @@
 	)
 	AddElement(/datum/element/connect_loc, loc_connections)
 
-/obj/effect/anomaly/grav/anomalyEffect()
+/obj/effect/anomaly/grav/anomalyEffect() // [CELADON-ADD] - ИСПРАВЛЯЕТ ШАХМАТЫ (СИЛЬНЫЕ ЛАГИ). НУЖНО ПЕРЕСМОТРЕТЬ ЛОГИКУ ГРАВИТАЦИОННОЙ АНОМАЛИИ.
+	return
+
+/obj/effect/anomaly/grav/anomalyEffect_cel_off() // Отключаем переименованием коркодовский эффект /obj/effect/anomaly/grav/anomalyEffect().
 	..()
 	boing = 1
 	for(var/obj/O in orange(effectrange, src))
