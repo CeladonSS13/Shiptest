@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Thunderfish-class Scout Corvette",
+	"map_short_name": "Thunderfish",
+	"description": "Судно Синдиката, служащее для разведки сектора для снабжения других оперативников ценной информацией. Имеет на борту оборудование для изучений и разработок технологий, а также защиту от электрических штормов.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_thunderfish.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 8,
+	"prefix": "RSSV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Исследовательский"],
+	"namelists": [
+		"CYBERSUN"],
+	"job_slots": {
+		"Squad Leader": {
+			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
+			"officer": true,
+			"slots": 1
+		},
+		"Field Medic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
+			"slots": 1
+		},
+		"Mechanic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
+			"slots": 1
+		},
+		"Scientist": {
+			"outfit": "/datum/outfit/job/cel/syndicate/science/cybersun",
+			"slots": 1
+		},
+		"Commando": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
+			"slots": 1
+		}
+	}
+}
