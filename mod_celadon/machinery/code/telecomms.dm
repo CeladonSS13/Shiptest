@@ -32,6 +32,11 @@
 	id = "SUNS Relay"
 	network = "suns_commnet"
 
+/obj/machinery/telecomms/relay/preset/nanotrasen
+	freq_listening = list(FREQ_EMERGENCY, FREQ_WARRA)
+	id = "Nanotrasen Relay"
+	network = "nanotrasen_commnet"
+
 // MARK: Bus
 // Переопределено из code/game/machinery/telecomms/machines/bus.dm
 /obj/machinery/telecomms/bus/preset_five
@@ -74,3 +79,8 @@
 	id = "SUNS Server"
 	freq_listening = list(FREQ_SUNS, FREQ_COMMON)
 	autolinkers = list("suns", "broadcasterB")
+
+/obj/machinery/telecomms/server/presets/nanotrasen
+	id = "Nanotrasen Server"
+	freq_listening = list(FREQ_WARRA, FREQ_COMMON)
+	autolinkers = list("nanotrasen", "broadcasterA")

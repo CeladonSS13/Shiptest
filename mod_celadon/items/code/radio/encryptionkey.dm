@@ -39,6 +39,11 @@
 /obj/item/encryptionkey/syndicate/suns/captain
 	channels = list(RADIO_CHANNEL_SUNS = 1, RADIO_CHANNEL_SYNDICATE_LONG = 1)
 
+/obj/item/encryptionkey/nanotrasen
+	name = "Nanotrasen encryption key"
+	icon_state = "hop_cypherkey"
+	channels = list(RADIO_CHANNEL_NANOTRASEN = 1)
+
 /obj/item/encryptionkey/nanotrasen/captain
 	channels = list(RADIO_CHANNEL_NANOTRASEN = 1, RADIO_CHANNEL_NANOTRASEN_LONG = 1)
 
