@@ -13,8 +13,8 @@
 	"namelists": [
 		"CYBERSUN"],
 	"job_slots": {
-		"Squad Leader": {
-			"outfit": "/datum/outfit/job/cel/syndicate/captain/gorlex",
+		"Research Lead": {
+			"outfit": "/datum/outfit/job/cel/syndicate/science/director",
 			"officer": true,
 			"slots": 1
 		},
@@ -22,17 +22,13 @@
 			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
 			"slots": 1
 		},
-		"Mechanic": {
-			"outfit": "/datum/outfit/job/cel/syndicate/engineer/cybersun",
-			"slots": 1
-		},
-		"Scientist": {
-			"outfit": "/datum/outfit/job/cel/syndicate/science/cybersun",
-			"slots": 1
-		},
-		"Commando": {
+		"Field Engineer": {
 			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
 			"slots": 1
+		},
+		"Junior Agent": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/cybersun",
+			"slots": 2
 		}
 	}
 }
