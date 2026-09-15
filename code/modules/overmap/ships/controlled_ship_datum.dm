@@ -91,19 +91,9 @@
 	///The cooldown for events hitting this ship. Generally used by events with a big consquence and fires slower than normal, like flares
 	COOLDOWN_DECLARE(event_cooldown)
 
-	/// [CELADON-ADD] Таймер, что даёт время на становление пиратами или пацифистами для независимых суден.
-	COOLDOWN_DECLARE(rename_prefix_cooldown)
-	/// [/CELADON-ADD]
-
 /datum/overmap/ship/controlled/Rename(new_name, force = FALSE)
 	var/old_name = name
-	var/full_name = "Error"
-	// [CELADON-ADD] - Возможность сменить префикс корабля для PISV или RSV.
-	if(!COOLDOWN_FINISHED(src, rename_prefix_cooldown))
-		full_name = "[new_name]"
-	else
-		full_name = "[source_template.prefix] [new_name]"
-	// [/CELADON-ADD]
+	var/full_name = "[source_template.prefix] [new_name]"
 	if(!force && !COOLDOWN_FINISHED(src, rename_cooldown) || !..(full_name, force))
 		return FALSE
 
@@ -187,8 +177,6 @@
 			outpost.radio.name = "Outpost Security System"
 			var/T = rand(180,360) SECONDS //3-5mins
 			addtimer(CALLBACK(outpost.radio, TYPE_PROC_REF(/obj/item, talk_into), outpost.radio, "На датчиках дальнего действия обнаружен неавторизированный корабль. Всем кораблям рекомендуется быть в боевой готовности.", FREQ_WIDEBAND), T)
-	// При создании корабля даётся 10 минут на то, чтобы стать PISV или RSV.
-	COOLDOWN_START(src, rename_prefix_cooldown, 10 MINUTES)
 
 /datum/overmap/outpost // Это тут потому-что если верхнее перепишется, то нижнее тоже. Срать вечно 🤙
 	var/obj/item/radio/intercom/wideband/radio

@@ -110,10 +110,15 @@
 
 /datum/config_entry/flag/auth_admin_testing // auth server allows admin testing and other actions
 
-// [CELADON-ADD] - Добавляем систему верификации аккаунтов через Discord и систему статистики по спавну кораблей
+// [CELADON-ADD] - Добавляем системы из модульного конфига: Верификация аккаунтов через Discord, систему статистики по спавну кораблей, время спавна пиратов.
 /datum/config_entry/flag/DiscordVerify
 
 /datum/config_entry/flag/ShipStats
+
+/datum/config_entry/number/pirate_time_spawn
+	config_entry_value = 2 HOURS
+	integer = FALSE
+	min_val = 0
 // [/CELADON-ADD]
 
 /datum/config_entry/number/vote_delay	// minimum time between voting sessions (deciseconds, 10 minute default)

@@ -163,13 +163,19 @@
 		)
 
 	voucher_items = list(
-		"SL AL-655 Energy Rifle" = /obj/item/gun/energy/e_gun/e_old/hades,
-		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
-		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)
+		"SL AL-655 Assault Rifle" = /obj/item/gun/energy/e_gun/nanotrasen/hades,
+		"SL X-10 Energy Carbine" = /obj/item/gun/energy/e_gun/nanotrasen/patriot,
+		"SL X-36 Energy SMG" = /obj/item/gun/energy/e_gun/nanotrasen/discharger,
+		"SL X-49 Energy Shotgun" = /obj/item/gun/energy/e_gun/nanotrasen/chirasu,)
 
 /obj/machinery/vending/security
 	voucher_items = list(
-		"NT-E-Rifle" = /obj/item/gun/energy/e_gun/e_old,
-		"E-TAR SMG" = /obj/item/gun/energy/e_gun/e_old/smg,
-		"E-SG 500" = /obj/item/gun/energy/e_gun/e_old/iot,)
+		"SL X-10 Energy Carbine" = /obj/item/gun/energy/e_gun/nanotrasen/patriot,
+		"SL X-36 Energy SMG" = /obj/item/gun/energy/e_gun/nanotrasen/discharger,
+		"SL X-49 Energy Shotgun" = /obj/item/gun/energy/e_gun/nanotrasen/chirasu,)
+
+/obj/machinery/vending/security/inteq
+	voucher_items = list(
+		"SL X-10 Energy Carbine" = /obj/item/gun/energy/e_gun/nanotrasen/patriot,
+		"VEC-04 Energy SMG" = /obj/item/gun/energy/e_gun/nanotrasen/discharger/inteq,
+		"VEC-07 Energy Shotgun" = /obj/item/gun/energy/e_gun/nanotrasen/chirasu/inteq,)
