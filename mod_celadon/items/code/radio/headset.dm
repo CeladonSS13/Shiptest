@@ -1,6 +1,6 @@
 // MARK: Headsets
 // Переопределено из code/game/objects/items/devices/radio/headset.dm
-/obj/item/radio/headset
+/obj/item/radio/headset/syndicate
 	keyslot = /obj/item/encryptionkey/syndicate/captain
 	keyslot2 = /obj/item/encryptionkey/wideband
 
