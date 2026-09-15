@@ -130,7 +130,7 @@
 /obj/item/health_sensor_monitor/proc/get_alert_level(obj/item/organ/cyberimp/chest/vital_sensor/sensor)
 	if(!sensor?.owner || sensor.is_jammed())
 		return
-	var/status = sensor.get_life_status()
+	var/status = sensor.get_reported_status()
 	if(status == VITAL_SENSOR_DEAD || status == VITAL_SENSOR_DNR)
 		return VITAL_SENSOR_DEAD
 	if(status == VITAL_SENSOR_CRIT)

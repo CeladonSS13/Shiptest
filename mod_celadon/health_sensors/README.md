@@ -20,7 +20,7 @@ ID мода: CELADON_HEALTH_SENSORS
 Добавляет имплантируемые датчики жизненных показателей (MK1 / MK2) и ручной монитор,
 который показывает состояние только привязанных носителей.
 
-- MK1: жив / мёртв / DNR; после смерти с задержкой 5 минут — сектор overmap и X/Y тайла тела.
+- MK1: жив / мёртв; DNR только если игрок нажал Do Not Resuscitate. SSD — красная метка у имени, если разума нет в теле (живой дисконнект или труп без игрока в теле, без DNR). После смерти с задержкой 5 минут — сектор overmap и X/Y тайла тела.
 - MK2: то же плюс цифры урона.
 - Привязка: клик датчиком по монитору (или наоборот), либо монитором по носителю.
 - Слежка по каждому датчику отдельно: динамик и спрайт good/bad.
@@ -33,7 +33,7 @@ ID мода: CELADON_HEALTH_SENSORS
 
 ### Изменения *кор кода*
 
-- Отсутствуют
+- `code/modules/mob/dead/observer/observer.dm`: `/mob/dead/observer/stay_dead` ставит `TRAIT_VITAL_SENSOR_DNR` на тело.
 
 ### Оверрайды
 
@@ -42,7 +42,7 @@ ID мода: CELADON_HEALTH_SENSORS
 
 ### Дефайны
 
-- `code/__DEFINES/~mod_celadon/health_sensors.dm`: `VITAL_SENSOR_ALIVE`, `VITAL_SENSOR_CRIT`, `VITAL_SENSOR_DEAD`, `VITAL_SENSOR_DNR`, `VITAL_SENSOR_NOSIGNAL`, `ORGAN_SLOT_VITAL_SENSOR`
+- `code/__DEFINES/~mod_celadon/health_sensors.dm`: `VITAL_SENSOR_ALIVE`, `VITAL_SENSOR_CRIT`, `VITAL_SENSOR_DEAD`, `VITAL_SENSOR_DNR`, `VITAL_SENSOR_NOSIGNAL`, `ORGAN_SLOT_VITAL_SENSOR`, `TRAIT_VITAL_SENSOR_DNR`
 
 ### Используемые файлы, не содержащиеся в модпаке
 
