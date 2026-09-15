@@ -63,7 +63,7 @@
 	freq_listening = list(FREQ_RAMZI, FREQ_COMMON)
 	autolinkers = list("ramzi", "broadcasterA")
 
-	/obj/machinery/telecomms/server/presets/pirate
+/obj/machinery/telecomms/server/presets/pirate
 	id = "Unidentified Server"
 	freq_listening = list(FREQ_PIRATE, FREQ_COMMON)
 	autolinkers = list("unidentified", "broadcasterB")
