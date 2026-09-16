@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
 	name = "\improper G36с"
-	desc = "Элитный полицейский карабин Солнечной Федерации. Укороченная версия G36, предназначенная для использования в узких помещениях. Используется полицейскими подразделениями и спецназом Солнечной Федерации. Использует патроны калибра 5,56×45 мм."
+	desc = "An elite police carbine of the Solar Federation. A shortened version of the G36 designed for use in confined spaces. It is used by Solar Federation police units and special forces. It fires 5.56×45mm ammunition."
 //Иконки
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
@@ -45,7 +45,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
-	desc = "Элитная штурмовая винтовка Солнечной Федерации. Изначально разработанная еще до объединения Земли, эта модель впоследствии производилась компанией «Скарборо», а затем модифицирована «Солнечным Арсеналом», после того, как «Скарборо» сменила сферу деятельности. В данной модели используется композит и вставки из искусственного дерева.  Использует патроны калибра 5,56×45 мм."
+	desc = "An elite assault rifle of the Solar Federation. Originally developed prior to the unification of Earth, this model was subsequently manufactured by Scarborough and later modified by Solar Arsenal after Scarborough shifted its field of operations. The model features composite materials and synthetic wood inserts. It uses 5.56×45mm ammunition."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
@@ -84,7 +84,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 /obj/item/gun/ballistic/automatic/assault/g36/black
 	icon_state = "g36_black"
 	item_state = "g36_black"
-	desc = "Раритетная элитная штурмовая винтовка. Одна из ранних производимых винтовок «Скарборо». Она была разработана еще до объединения Земли, но потеряла свою актуальность после начала производства улучшенной версии «Солнечным Арсеналом». Имеет встроенный прицел. Использует патроны калибра 5,56x45 мм."
+	desc = "A rare, elite assault rifle. One of the early Scarborough models. It was designed prior to the unification of Earth but became obsolete after Solar Arsenal began producing an improved version. It features an integrated sight and uses 5.56x45mm ammunition."
 	zoom_amt = 4
 	manufacturer = MANUFACTURER_SCARBOROUGH
 	slot_available = list(
@@ -99,7 +99,7 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
-	desc = "Элитная штурмовая винтовка ИнтеКью. Является модификацией G36 производства «Солнечного Арсенала». Имеет индикатор пустого магазина.  Использует патроны калибра 5,56×45 мм."
+	desc = "Elite InteQ assault rifle. It is a modification of the G36. It features an empty-magazine indicator and uses 5.56×45mm ammunition."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
