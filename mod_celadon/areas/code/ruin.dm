@@ -319,6 +319,27 @@
 	name = "Middle"
 	icon_state = "yellow"
 
+/area/ruin/jungle/pirats/post
+	name = "Post 1"
+	icon_state = "red"
+
+/area/ruin/jungle/pirats/post/second
+	name = "Post 2"
+	icon_state = "blue"
+
+/area/ruin/jungle/pirats/armory
+	name = "Armory"
+	icon_state = "armory"
+
+/area/ruin/jungle/pirats/dorm
+	name = "Dorm"
+	icon_state = "crew_quarters"
+
+/area/ruin/jungle/pirats/shuttle
+	name = "Shuttle"
+	icon_state = "shuttle"
+
+
 /// MARK: Whitesands
 
 /area/ruin/whitesands/trainyard/shuttle
