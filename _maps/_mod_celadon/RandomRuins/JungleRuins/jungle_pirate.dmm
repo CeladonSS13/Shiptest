@@ -235,10 +235,6 @@
 	wander = 0;
 	retreat_distance = 0;
 	minimum_distance = 1;
-	rapid_melee = 2;
-	melee_damage_lower = 15;
-	melee_damage_upper = 15;
-	dodge_prob = 45;
 	environment_smash = 0;
 	turns_per_move = 3
 	},
@@ -1352,14 +1348,9 @@
 	maxHealth = 200;
 	minimum_distance = 3;
 	retreat_distance = 1;
-	rapid_melee = 2;
-	melee_damage_upper = 18;
-	melee_damage_lower = 18;
 	wander = 0;
-	dodge_prob = 65;
 	name = "Ramzi Clique Battle Master";
-	environment_smash = 0;
-	turns_per_move = 2
+	environment_smash = 0
 	},
 /turf/open/floor/wood/walnut,
 /area/ruin/jungle/pirats/shuttle)
@@ -2967,12 +2958,8 @@
 	maxHealth = 200;
 	name = "Ramzi Clique Battle Master";
 	wander = 0;
-	melee_damage_lower = 18;
-	melee_damage_upper = 18;
-	rapid_melee = 2;
 	minimum_distance = 1;
 	retreat_distance = 0;
-	dodge_prob = 60;
 	environment_smash = 0;
 	turns_per_move = 2
 	},
@@ -3367,10 +3354,6 @@
 	},
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg/sidewinder{
 	wander = 0;
-	melee_damage_lower = 15;
-	melee_damage_upper = 15;
-	rapid_melee = 2;
-	dodge_prob = 45;
 	minimum_distance = 3;
 	retreat_distance = 2;
 	health = 160;
@@ -3713,10 +3696,6 @@
 	health = 160;
 	maxHealth = 160;
 	wander = 0;
-	rapid_melee = 2;
-	melee_damage_upper = 12;
-	melee_damage_lower = 12;
-	dodge_prob = 25;
 	name = "Ramzi Clique Commando";
 	environment_smash = 0;
 	turns_per_move = 3
@@ -3738,10 +3717,6 @@
 	wander = 0;
 	retreat_distance = 0;
 	minimum_distance = 1;
-	rapid_melee = 2;
-	melee_damage_lower = 15;
-	melee_damage_upper = 15;
-	dodge_prob = 45;
 	environment_smash = 0;
 	turns_per_move = 3
 	},
@@ -4696,10 +4671,6 @@
 	health = 160;
 	maxHealth = 160;
 	wander = 0;
-	rapid_melee = 2;
-	melee_damage_upper = 12;
-	melee_damage_lower = 12;
-	dodge_prob = 25;
 	name = "Ramzi Clique Commando";
 	turns_per_move = 3;
 	environment_smash = 0
@@ -4862,7 +4833,6 @@
 	health = 160;
 	maxHealth = 160;
 	wander = 0;
-	dodge_prob = 50;
 	name = "Ramzi Clique Commando";
 	turns_per_move = 2;
 	environment_smash = 0
@@ -6310,10 +6280,6 @@
 	},
 /mob/living/simple_animal/hostile/human/ramzi/ranged/space/smg/sidewinder{
 	wander = 0;
-	melee_damage_lower = 15;
-	melee_damage_upper = 15;
-	rapid_melee = 2;
-	dodge_prob = 45;
 	minimum_distance = 3;
 	retreat_distance = 2;
 	health = 160;
@@ -6376,10 +6342,6 @@
 	name = "Ramzi Clique Battle Master";
 	minimum_distance = 3;
 	retreat_distance = 2;
-	rapid_melee = 2;
-	melee_damage_upper = 18;
-	melee_damage_lower = 18;
-	dodge_prob = 65;
 	turns_per_move = 3;
 	environment_smash = 0
 	},
