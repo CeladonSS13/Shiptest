@@ -405,6 +405,10 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 	can_reenter_corpse = FALSE
 	// Update med huds
 	var/mob/living/carbon/current = mind.current
+	// [CELADON-ADD] - CELADON_HEALTH_SENSORS
+	if(isliving(current))
+		ADD_TRAIT(current, TRAIT_VITAL_SENSOR_DNR, "dnr")
+	// [/CELADON-ADD]
 	current.med_hud_set_status()
 	// Disassociates observer mind from the body mind
 	mind = null
