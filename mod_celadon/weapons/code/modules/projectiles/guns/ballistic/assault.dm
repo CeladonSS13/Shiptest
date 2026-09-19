@@ -180,15 +180,15 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	wield_slowdown = 0.75
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
 
-/obj/item/gun/ballistic/automatic/assault/cm82/solfed
+/obj/item/gun/ballistic/automatic/assault/cm82/elysium
 	name = "\improper Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/onmob.dmi'
-	icon_state = "cm82_solfed"
-	item_state = "cm82_solfed"
+	icon_state = "cm82_elysium"
+	item_state = "cm82_elysium"
 	unique_reskin = null
 	unique_reskin_changes_inhand = FALSE // убирает возможность их рескинить по альт-клику
-NO_MAG_GUN_HELPER(automatic/assault/cm82/solfed)
+NO_MAG_GUN_HELPER(automatic/assault/cm82/elysium)
