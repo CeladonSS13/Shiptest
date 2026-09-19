@@ -1675,6 +1675,7 @@
 /obj/structure/sign/flag/solfed/directional/south,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/item/spacecash/bundle/mediumrand,
+/obj/item/spacecash/bundle/c1000,
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "ke" = (
@@ -2966,6 +2967,7 @@
 /obj/structure/crate_shelf/built,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/closet/crate/engineering,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "rm" = (
@@ -2976,6 +2978,16 @@
 /obj/structure/crate_shelf/built,
 /obj/effect/turf_decal/industrial/outline/yellow,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/desk_flag/solfed,
+/obj/item/desk_flag/solfed,
+/obj/item/desk_flag/solfed,
+/obj/item/desk_flag/solfed,
+/obj/item/desk_flag/solfed,
+/obj/item/sign/flag/solfed,
+/obj/item/sign/flag/solfed,
+/obj/item/sign/flag/solfed,
+/obj/item/sign/flag/solfed,
+/obj/item/sign/flag/solfed,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "rz" = (
@@ -3068,6 +3080,9 @@
 	dir = 8
 	},
 /obj/machinery/newscaster/directional/west,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "rR" = (
@@ -4569,6 +4584,22 @@
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
+/obj/structure/closet/crate/secure/exo{
+	name = "SPECIAL DELIVERY storage crate"
+	},
+/obj/item/clothing/mask/gas/clown_hat{
+	pixel_y = 12
+	},
+/obj/item/clothing/mask/gas/clown_hat{
+	pixel_y = 12
+	},
+/obj/item/clothing/under/rank/civilian/clown,
+/obj/item/clothing/under/rank/civilian/clown,
+/obj/item/clothing/shoes/clown_shoes,
+/obj/item/clothing/shoes/clown_shoes,
+/obj/item/toy/prize/honk,
+/mob/living/simple_animal/bot/honkbot,
+/obj/item/food/grown/banana,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
 "zv" = (
@@ -4963,9 +4994,13 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/closet/crate/engineering,
 /obj/structure/crate_shelf/built,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/structure/closet/crate/secure/weapon,
+/obj/effect/spawner/random/weapon{
+	loot = list(/obj/item/gun/ballistic/automatic/pistol/cm70 = 5,/obj/item/gun/ballistic/automatic/pistol/cm357 = 10, /obj/item/gun/ballistic/automatic/pistol/solgov = 5, /obj/item/gun/ballistic/automatic/smg/cm5/compact = 10);
+	name = "solfed_pistol_weapon"
+	},
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "BF" = (
@@ -6063,6 +6098,11 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -11
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "HW" = (
@@ -6312,7 +6352,8 @@
 "JD" = (
 /obj/effect/turf_decal/techfloor/corner,
 /obj/machinery/mineral/ore_redemption{
-	dir = 1
+	dir = 1;
+	input_dir = 2
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
@@ -7207,6 +7248,7 @@
 /obj/structure/crate_shelf/built,
 /obj/item/healthanalyzer,
 /obj/effect/turf_decal/industrial/outline/yellow,
+/obj/item/defibrillator/loaded,
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo)
 "OS" = (
