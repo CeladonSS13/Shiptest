@@ -86,7 +86,7 @@
 	id = "space_heater"
 	build_path = /obj/item/circuitboard/machine/space_heater
 	build_type = AUTOLATHE | IMPRINTER
-	category = list ("Engineering Machinery", "initial", "Equipment")
+	category = list ("Engineering Machinery", "initial", "Machinery", "Equipment")
 	departmental_flags = ALL
 
 /datum/design/board/teleport_station
@@ -245,7 +245,7 @@
 	id = "rdserver"
 	build_type = IMPRINTER
 	build_path = /obj/item/circuitboard/machine/rdserver
-	category = list("Research Machinery", "initial", "Equipment")
+	category = list("Research Machinery", "initial", "Machinery", "Equipment")
 
 /datum/design/board/mechfab
 	name = "Machine Design (Exosuit Fabricator Board)"
@@ -475,7 +475,7 @@
 	id = "ship_gravity"
 	build_type = AUTOLATHE | IMPRINTER
 	build_path = /obj/item/circuitboard/machine/ship_gravity
-	category = list("Misc. Machinery", "initial", "Equipment")
+	category = list("Misc. Machinery", "initial", "Machinery", "Equipment")
 
 /datum/design/board/ntnet_relay
 	name = "Machine Design (NTNet Relay Board)"

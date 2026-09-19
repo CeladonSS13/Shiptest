@@ -108,7 +108,7 @@ hp
 /datum/supply_pack/faction/syndicate/gun/sidewinder
 	name = "SMG - Sidewinder (5.7x39mm)"
 	desc = "Contains a Sidewinder PDW produced by Scarborough Arms and chambered in 5.7x39mm for armor-piercing capabilities."
-	cost = 3000
+	cost = 3750
 	contains = list(/obj/item/storage/guncase/sidewinder)
 	crate_name = "SMG crate"
 /* MARK: 5.7x39mm
@@ -166,13 +166,14 @@ bullet
 	damage = 40
 	armour_penetration = 50
 */
-
+/*
 /datum/supply_pack/faction/syndicate/gun/taipan
 	name = "Marksman - AMR-83 \"Taipan\" (.50 BMG)"
 	desc = "Contains a  monstrous semi-automatic anti-materiel rifle, surprisingly short for its class. Designed to destroy mechs, light vehicles, and equipment, but more than capable of obliterating regular personnel. Chambered in .50 BMG."
 	cost = 18000
 	contains = list(/obj/item/storage/guncase/taipan)
 	crate_name = "marksman rifle crate"
+*/
 /* MARK: .50 BMG
 bullet
 	damage = 70

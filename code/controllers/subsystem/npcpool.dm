@@ -36,6 +36,10 @@ SUBSYSTEM_DEF(npcpool)
 			if(QDELETED(SA))
 				continue
 
+		// Skip AI_Z_OFF mobs - they're on virtual z-levels with no players
+		if(SA.AIStatus == AI_Z_OFF)
+			continue
+
 		if(!SA.ckey && !SA.notransform)
 			if(SA.stat != DEAD)
 				SA.handle_automated_movement()

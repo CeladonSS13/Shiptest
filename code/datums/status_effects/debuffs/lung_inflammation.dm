@@ -1,3 +1,4 @@
+/*
 /datum/status_effect/lung_inflammation
 	id = "lung_inflammation"
 	tick_interval = 2 SECONDS
@@ -140,3 +141,4 @@
 	var/obj/item/organ/lungs/holder_lungs = owner.getorganslot(ORGAN_SLOT_LUNGS)
 	holder_lungs?.set_received_pressure_mult(holder_lungs::received_pressure_mult)
 	qdel(src)
+*/

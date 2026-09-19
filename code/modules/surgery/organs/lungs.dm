@@ -239,8 +239,10 @@
 			breath_reagent.expose_mob(H, INHALE, breath_moles * 2) // 2 represents molarity of O2, we don't have citadel molarity
 			mole_adjustments[gas] = (gas in mole_adjustments) ? mole_adjustments[gas] - breath_moles : -breath_moles
 
+/*
 	if(inflammatory_kpa)
 		H.adjust_lung_inflammation(inflammatory_kpa * (HAS_TRAIT(H, TRAIT_ASTHMATIC) ? 10 : 2))
+*/
 
 	if(can_smell)
 		handle_smell(breath, H)
@@ -512,8 +514,10 @@
 			if(prob(sqrt(breath_effect_prob) * 6))
 				to_chat(breather, span_warning("You feel [chilly_message] in your [name]."))
 		if(breath_temperature < chlly_threshold)
+/*
 			if(HAS_TRAIT(breather, TRAIT_ASTHMATIC)) // cold air typically causes problems in my experience
 				breather.adjust_lung_inflammation(round(1 + (chlly_threshold - breath_temperature) / 30, 0.1))
+*/
 			if(breath_effect_prob)
 				// Breathing into your mask, no particle. We can add fogged up glasses later
 				if(breather.is_mouth_covered())
@@ -572,6 +576,7 @@
 		return
 
 	var/initial_value = initial(received_pressure_mult)
+
 
 	// you wont really notice if youre only breathing a bit more or a bit less
 	var/dilated = (received_pressure_mult > (initial_value + LUNG_CAPACITY_ALERT_BUFFER))

@@ -1,3 +1,4 @@
+/*
 /datum/surgery/asthmatic_bypass
 	name = "Asthmatic Bypass"
 	//surgery_flags = SURGERY_REQUIRE_RESTING | SURGERY_REQUIRE_LIMB
@@ -108,3 +109,4 @@
 
 	inflammation.adjust_inflammation(-inflammation_reduction)
 	return TRUE
+*/
