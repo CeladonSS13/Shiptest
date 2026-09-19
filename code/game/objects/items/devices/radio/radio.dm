@@ -301,7 +301,10 @@
 	signal.data["sfx"] = 'sound/effects/radio_chatter.ogg'
 
 	// Independent radios, on the CentCom frequency, reach all independent radios
-	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND))
+	// [CELADON-EDIT] - FACTION_RADIO
+	// if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND))
+	if (independent && (freq == FREQ_CENTCOM || freq == FREQ_WIDEBAND || freq == FREQ_SYNDICATE_LONG || freq == FREQ_SUNS_LONG || freq == FREQ_INTEQ_LONG || freq == FREQ_ELYSIUM_LONG || freq == FREQ_NANOTRASEN_LONG || freq == FREQ_SOLFED_LONG || freq == FREQ_VOX_LONG || freq == FREQ_RAMZI_LONG || freq == FREQ_PIRATE_LONG))
+	// [/CELADON-EDIT]
 		signal.data["compression"] = 0
 		signal.transmission_method = TRANSMISSION_SUPERSPACE
 		signal.map_zones = list(0)  // reaches all Z-levels
@@ -321,15 +324,19 @@
 	signal.send_to_receivers()
 
 	// If the radio is subspace-only, that's all it can do
-	if (subspace_transmission && (freq == FREQ_WIDEBAND))
-		signal.data["compression"] = 0
-		signal.transmission_method = TRANSMISSION_SUPERSPACE
-		signal.map_zones = list(0)  // reaches all Z-levels
-		signal.broadcast()
-		playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
-	else
-		if (subspace_transmission)
-			return
+	// [CELADON-EDIT] - FACTION_RADIO
+	// 	if (subspace_transmission && (freq == FREQ_WIDEBAND))
+	// 	signal.data["compression"] = 0
+	// 	signal.transmission_method = TRANSMISSION_SUPERSPACE
+	// 	signal.map_zones = list(0)  // reaches all Z-levels
+	// 	signal.broadcast()
+	// 	playsound(src, "sound/effects/walkietalkie.ogg", 20, FALSE)
+	// else
+	// 	if (subspace_transmission)
+	// 		return
+	if (subspace_transmission)
+		return
+	// [/CELADON-EDIT]
 
 	// Non-subspace radios will check in a couple of seconds, and if the signal
 	// was never received, send a mundane broadcast (no headsets).

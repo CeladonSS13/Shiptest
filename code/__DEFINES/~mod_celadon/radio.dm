@@ -1,8 +1,6 @@
 // Radios use a large variety of predefined frequencies.
 
 //say based modes like binary are in living/say.dm
-// Наши изменения занимают больше 50% файла, принято решение перенести всё в модуль code\__DEFINES\~mod_celadon\radio.dm
-/*
 #define RADIO_CHANNEL_COMMON "Common"
 #define RADIO_KEY_COMMON ";"
 
@@ -11,20 +9,22 @@
 #define RADIO_TOKEN_EMERGENCY ":c"
 
 #define RADIO_CHANNEL_SYNDICATE "Syndicate"
-#define RADIO_KEY_SYNDICATE "v"
-#define RADIO_TOKEN_SYNDICATE ":v"
+#define RADIO_CHANNEL_SYNDICATE_LONG "Syndicate (Long-Range)"
+#define RADIO_KEY_SYNDICATE "t"
+#define RADIO_TOKEN_SYNDICATE ":t"
 
 #define RADIO_CHANNEL_CYBERSUN "Cybersun"
-#define RADIO_KEY_CYBERSUN "t"
-#define RADIO_TOKEN_CYBERSUN ":t"
+#define RADIO_KEY_CYBERSUN "c"
+#define RADIO_TOKEN_CYBERSUN ":c"
 
 #define RADIO_CHANNEL_NGR "New Gorlex"
 #define RADIO_KEY_NGR "f"
 #define RADIO_TOKEN_NGR ":f"
 
 #define RADIO_CHANNEL_SUNS "SUNS"
-#define RADIO_KEY_SUNS "q"
-#define RADIO_TOKEN_SUNS ":q"
+#define RADIO_CHANNEL_SUNS_LONG "SUNS (Long-Range)"
+#define RADIO_KEY_SUNS "d"
+#define RADIO_TOKEN_SUNS ":d"
 
 #define RADIO_CHANNEL_CENTCOM "CentCom"
 #define RADIO_KEY_CENTCOM "e"
@@ -34,51 +34,102 @@
 #define RADIO_KEY_SOLGOV "s"
 #define RADIO_TOKEN_SOLGOV ":s"
 
+#define RADIO_CHANNEL_SOLFED "SolFed"
+#define RADIO_CHANNEL_SOLFED_LONG "SolFed (Long-Range)"
+#define RADIO_KEY_SOLFED "s"
+#define RADIO_TOKEN_SOLFED ":s"
+
 #define RADIO_CHANNEL_WARRA "Makosso-Warra"
 #define RADIO_KEY_WARRA "mw"
 #define RADIO_TOKEN_WARRA ":mw"
-
-#define RADIO_CHANNEL_MINUTEMEN "Minutemen"
-#define RADIO_KEY_MINUTEMEN "m"
-#define RADIO_TOKEN_MINUTEMEN ":m"
 
 #define RADIO_CHANNEL_PGF "PGF"
 #define RADIO_KEY_PGF "g"
 #define RADIO_TOKEN_PGF ":g"
 
+#define RADIO_CHANNEL_VOX "Raider"
+#define RADIO_KEY_VOX "v"
+#define RADIO_TOKEN_VOX ":v"
+
+#define RADIO_CHANNEL_NANOTRASEN "Nanotrasen"
+#define RADIO_CHANNEL_NANOTRASEN_LONG "Nanotrasen (Long-Range)"
+#define RADIO_KEY_NANOTRASEN "n"
+#define RADIO_TOKEN_NANOTRASEN ":n"
+
+#define RADIO_CHANNEL_ELYSIUM "Elysium"
+#define RADIO_CHANNEL_ELYSIUM_LONG "Elysium (Long-Range)"
+#define RADIO_KEY_ELYSIUM "e"
+#define RADIO_TOKEN_ELYSIUM ":e"
+
 #define RADIO_CHANNEL_INTEQ "Inteq"
+#define RADIO_CHANNEL_INTEQ_LONG "Inteq (Long-Range)"
 #define RADIO_KEY_INTEQ "q"
 #define RADIO_TOKEN_INTEQ ":q"
 
-#define RADIO_CHANNEL_PIRATE "Pirate"
-#define RADIO_KEY_PIRATE "y"
-#define RADIO_TOKEN_PIRATE ":y"
+#define RADIO_CHANNEL_RAMZI "Ramzi"
+#define RADIO_KEY_RAMZI "r"
+#define RADIO_TOKEN_RAMZI ":r"
+
+#define RADIO_CHANNEL_PIRATE "Unidentified"
+#define RADIO_KEY_PIRATE "p"
+#define RADIO_TOKEN_PIRATE ":p"
 
 #define RADIO_CHANNEL_WIDEBAND "Wideband"
 #define RADIO_KEY_WIDEBAND "w"
-#define RADIO_TOKEN_WIDEBAND ":w"	//WS End
-
-#define RADIO_CHANNEL_CTF_RED "Red Team"
-#define RADIO_CHANNEL_CTF_BLUE "Blue Team"
-
-#define MIN_FREE_FREQ 1201 // -------------------------------------------------
+#define MIN_FREE_FREQ 1201
+#define RADIO_TOKEN_WIDEBAND ":w"
+// -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
 
-#define FREQ_SYNDICATE 1213 // Syndicate Coalition comms frequency, dark brown
-#define FREQ_CYBERSUN 1203 // Cybersun Industries and Hardliners comms frequency, teal
-#define FREQ_NGR 1205 // New Gorlex Republic comms frequency, beige
-#define FREQ_SUNS 1207 // Student Union comms frequency, lilac
-#define FREQ_CENTCOM 1337 // MW-CentCom comms frequency, gray
+#define FREQ_CENTCOM 1237 // NT-CentCom comms frequency, gray
+
+#define FREQ_CYBERSUN 1203	// Cybersun Industries and Hardliners comms frequency, teal
+#define FREQ_NGR 1205		// New Gorlex Republic comms frequency, beige
+
+#define FREQ_SYNDICATE 1213
+#define FREQ_SYNDICATE_LONG 1215
+
+#define FREQ_SUNS 1325
+#define FREQ_SUNS_LONG 1327
+
+#define FREQ_INTEQ 1333
+#define FREQ_INTEQ_LONG 1335
+
+#define FREQ_NANOTRASEN 1345
+#define FREQ_NANOTRASEN_LONG 1347
+
+#define FREQ_SOLFED 1353
+#define FREQ_SOLFED_LONG 1355
+
+#define FREQ_ELYSIUM 1339
+#define FREQ_ELYSIUM_LONG 1341
+
+#define FREQ_VOX 1417
+#define FREQ_VOX_LONG 1419
+
+#define FREQ_RAMZI 1421
+#define FREQ_RAMZI_LONG 1423
+
+#define FREQ_PIRATE 1425
+#define FREQ_PIRATE_LONG 1427
+
+#define FREQ_EMERGENCY 1429 // Emergency comms frequency, red
+
 #define FREQ_SOLGOV 1345 // SolGov comms frequency, dark blue WS ADDITION
-#define FREQ_INTEQ 1347 // Inteq comms frequency, light brown
 #define FREQ_PGF 1349 // PGF comms frequency, lime green
 #define FREQ_WARRA 1351 // Makosso-Warra comms frequency, plum
-#define FREQ_EMERGENCY 1353 // Emergency comms frequency, red
 #define FREQ_MINUTEMEN 1355 // Minutemen comms frequency, soft blue
-#define FREQ_PIRATE 1359 // Pirate comms frequency, gold
 
 #define FREQ_HOLOGRID_SOLUTION 1433
 #define FREQ_STATUS_DISPLAYS 1435
+
+#define FREQ_All_RANGE FREQ_WIDEBAND, FREQ_PIRATE_LONG, FREQ_RAMZI_LONG, FREQ_ELYSIUM_LONG, FREQ_SOLFED_LONG, FREQ_NANOTRASEN_LONG, FREQ_INTEQ_LONG, FREQ_SYNDICATE_LONG
+
+// MARK: ANY FREQ:
+#define RADIO_CHANNEL_MINUTEMEN "Minutemen"
+#define RADIO_KEY_MINUTEMEN "m"
+#define RADIO_TOKEN_MINUTEMEN ":m"
+
 #define FREQ_ATMOS_ALARMS 1437 // air alarms <-> alert computers
 #define FREQ_ATMOS_CONTROL 1439 // air alarms <-> vents and scrubbers
 
@@ -135,5 +186,3 @@
 
 ///give this to can_receive to specify that there is no restriction on what virtual z level this signal is sent to
 #define RADIO_NO_Z_LEVEL_RESTRICTION 0
-*/
-// Наши изменения занимают больше 50% файла, принято решение перенести всё в модуль code\__DEFINES\~mod_celadon\radio.dm
