@@ -27,11 +27,9 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		list("Blind","Nearsighted"),
 		list("Ageusia","Vegetarian","Deviant Tastes"),
 		list("Alcohol Tolerance","Light Drinker"),
-		// [CELADON-ADD] - CELADON_RETURN_CONTENT_CLOWNS, IDIOTS_REMOVE_BLACK_LIST
 		list("Jolly","Depression","Apathetic","Hypersensitive"),
 		list("Ananas Affinity","Ananas Aversion"),
 		list("Clown Fan", "Mime Fan", "RILENA Super Fan"),
-		// [/CELADON-ADD]
 		list("Bad Touch", "Friendly"),
 		list("Self-Aware", "Congenital Analgesia"),
 		list("Trilingual", "Monolingual", "Polyglot"),
@@ -48,6 +46,32 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 		"Fast Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
 		"Electronic Voicebox" = list(SPECIES_IPC),
 	)
+
+	// [CELADON-ADD]
+	quirk_blacklist = list(
+		list("Слепота","Близорукость"),
+		list("Агевзия","Вегетарианец","Специфичный вкус"),
+		list("Алкогольная устойчивость","Слабый к алкоголю"),
+		list("Весельчак","Депрессия","Апатичный","Гиперчувствительный"),
+		list("Любовь к ананасам","Ненависть к ананасам"),
+		list("Фанат клоунов", "Фанат мимов", "Суперфанат RILENA"),
+		list("Недотрога", "Дружелюбный"),
+		list("Чувство тела", "Врожденная анальгезия"),
+		list("Лингвист", "Одноязычный", "Полиглот"),
+	)
+
+	species_blacklist = list(
+		"Дефицит крови" = list(SPECIES_IPC, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
+		"Дварфизм" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID),	// [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
+		"Алкогольная устойчивость" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+		"Слабый к алкоголю" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+		"Курильщик" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+		"Астма" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+		"Крепкий желудок" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+		"Быстрый метаболизм" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+		"Электронный голосовой аппарат" = list(SPECIES_IPC),
+	)
+	// [/CELADON-ADD]
 
 	for(var/client/client in GLOB.clients)
 		client?.prefs.check_quirk_compatibility()
