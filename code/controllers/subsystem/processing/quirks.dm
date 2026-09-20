@@ -23,29 +23,30 @@ PROCESSING_SUBSYSTEM_DEF(quirks)
 	if(!quirks.len)
 		SetupQuirks()
 
-	quirk_blacklist = list(
-		list("Blind","Nearsighted"),
-		list("Ageusia","Vegetarian","Deviant Tastes"),
-		list("Alcohol Tolerance","Light Drinker"),
-		list("Jolly","Depression","Apathetic","Hypersensitive"),
-		list("Ananas Affinity","Ananas Aversion"),
-		list("Clown Fan", "Mime Fan", "RILENA Super Fan"),
-		list("Bad Touch", "Friendly"),
-		list("Self-Aware", "Congenital Analgesia"),
-		list("Trilingual", "Monolingual", "Polyglot"),
-	)
+	// [CELADON-REMOVE] - Не действует, так как квирки переведены.
+	// quirk_blacklist = list(
+	// 	list("Blind","Nearsighted"),
+	// 	list("Ageusia","Vegetarian","Deviant Tastes"),
+	// 	list("Alcohol Tolerance","Light Drinker"),
+	// 	list("Jolly","Depression","Apathetic","Hypersensitive"),
+	// 	list("Ananas Affinity","Ananas Aversion"),
+	// 	list("Clown Fan", "Mime Fan", "RILENA Super Fan"),
+	// 	list("Bad Touch", "Friendly"),
+	// 	list("Self-Aware", "Congenital Analgesia"),
+	// 	list("Trilingual", "Monolingual", "Polyglot"),
+	// )
 
-	species_blacklist = list(
-		"Blood Deficiency" = list(SPECIES_IPC, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
-		"Dwarfism" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID),	// [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
-		"Alcohol Tolerance" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
-		"Light Drinker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
-		"Smoker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
-		"Asthma" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
-		"Robust Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
-		"Fast Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
-		"Electronic Voicebox" = list(SPECIES_IPC),
-	)
+	// species_blacklist = list(
+	// 	"Blood Deficiency" = list(SPECIES_IPC, SPECIES_PLASMAMAN, SPECIES_VAMPIRE),
+	// 	"Dwarfism" = list(SPECIES_IPC, SPECIES_KEPORI, SPECIES_VOX, SPECIES_RACHNID),	// [CELADON-ADD] - NO_FUN_ALLOWED_SPECIES
+	// 	"Alcohol Tolerance" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+	// 	"Light Drinker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+	// 	"Smoker" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+	// 	"Asthma" = list(SPECIES_IPC, SPECIES_PLASMAMAN),
+	// 	"Robust Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+	// 	"Fast Metabolism" = list(SPECIES_IPC, SPECIES_ELZUOSE),
+	// 	"Electronic Voicebox" = list(SPECIES_IPC),
+	// ) // [CELADON-REMOVE]
 
 	// [CELADON-ADD]
 	quirk_blacklist = list(
