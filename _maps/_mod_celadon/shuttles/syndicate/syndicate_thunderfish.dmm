@@ -551,6 +551,7 @@
 /obj/effect/turf_decal/siding/wood/mahogany{
 	dir = 5
 	},
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/suns/hatch/mahogany,
 /area/ship/hallway/central)
 "pv" = (
@@ -1064,12 +1065,12 @@
 	dir = 5
 	},
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/ngr,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/trimline/transparent/syndiered/line{
 	dir = 4
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /turf/open/floor/suns/hatch{
 	color = "#E6D2BA"
 	},
@@ -1262,8 +1263,8 @@
 /obj/effect/turf_decal/syndicateemblem/middle/middle,
 /obj/structure/safe/floor,
 /obj/item/floor_painter,
-/obj/item/melee/energy/flyssa,
 /obj/item/folder/documents/syndicate/cybersun,
+/obj/item/melee/energy/flyssa,
 /turf/open/floor/plasteel/mono/white,
 /area/ship/security/armory)
 "Ip" = (
@@ -1279,13 +1280,13 @@
 /obj/structure/cable/white{
 	icon_state = "4-8"
 	},
-/obj/machinery/door/airlock/grunge{
-	dir = 4
-	},
 /obj/machinery/door/firedoor/border_only{
 	dir = 8
 	},
 /obj/machinery/door/firedoor/border_only{
+	dir = 4
+	},
+/obj/machinery/door/airlock/grunge{
 	dir = 4
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -1554,15 +1555,15 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Rk" = (
-/obj/machinery/door/poddoor{
-	id = "division1"
-	},
 /obj/structure/cable/white{
 	icon_state = "0-2"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
 	dir = 4;
 	id = "divisionshield1"
+	},
+/obj/machinery/door/poddoor{
+	id = "division1"
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -1578,18 +1579,18 @@
 /obj/structure/window/reinforced/spawner,
 /obj/machinery/door/firedoor/border_only,
 /obj/machinery/suit_storage_unit/inherit,
-/obj/item/clothing/suit/space/hardsuit/syndi/cybersun,
 /obj/item/clothing/mask/gas/syndicate,
 /obj/machinery/light_switch{
 	pixel_y = 8;
 	dir = 4;
 	pixel_x = -20
 	},
-/obj/item/tank/internals/emergency_oxygen/double,
 /obj/effect/turf_decal/siding/wood/bamboo,
 /obj/effect/turf_decal/siding/wood/bamboo{
 	dir = 1
 	},
+/obj/item/clothing/suit/space/hardsuit/syndi/cybersun/paramed,
+/obj/item/tank/internals/emergency_oxygen/double,
 /turf/open/floor/suns/hatch{
 	color = "#E6D2BA"
 	},
@@ -1607,15 +1608,21 @@
 /obj/structure/closet/wall/red/directional/east{
 	name = "Breach"
 	},
-/obj/item/melee/sledgehammer/gorlex,
 /obj/item/tank/jetpack/suit,
 /obj/item/tank/jetpack/suit,
-/obj/item/clothing/glasses/night,
-/obj/item/clothing/glasses/night,
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered/corner{
 	dir = 1
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered,
+/obj/item/clothing/glasses/meson/sunglasses,
+/obj/item/clothing/glasses/meson/sunglasses{
+	pixel_y = 0
+	},
+/obj/item/radio/transceiver/syndicate,
+/obj/item/radio/transceiver/syndicate,
+/obj/item/radio/transceiver/syndicate,
+/obj/item/radio/transceiver/syndicate,
+/obj/item/radio/transceiver/syndicate,
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
 "RZ" = (
