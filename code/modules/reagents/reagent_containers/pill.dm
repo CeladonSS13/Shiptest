@@ -15,6 +15,7 @@
 	var/rename_with_volume = FALSE
 	var/self_delay = 0 //pills are instant, this is because patches inheret their aplication from pills
 	var/dissolvable = TRUE
+	transform = matrix(0.6, 0, 0, 0, 0.6, 0) // [CELADON-ADD] Уменьшаем спрайты, отказываемся от силы земли.
 
 /obj/item/reagent_containers/pill/Initialize()
 	. = ..()
