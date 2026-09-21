@@ -6,6 +6,8 @@
 
 /datum/map_template/outpost/elysium_asteroid
 	name = "elysium_asteroid"
+	outpost_name = "Fada La Nihayiyun"
+	outpost_administrator = "Elysian Administration"
 
 /datum/map_template/outpost/hangar/elysium_asteroid_20x20
 	name = "hangar/elysium_asteroid_20x20"
@@ -49,6 +51,8 @@
 */
 /datum/map_template/outpost/elysium_ice
 	name = "elysium_ice"
+	outpost_name = "Easifat Thaljia"
+	outpost_administrator = "Elysian Administration"
 
 /datum/map_template/outpost/hangar/elysium_ice_20x20
 	name = "hangar/elysium_ice_20x20"

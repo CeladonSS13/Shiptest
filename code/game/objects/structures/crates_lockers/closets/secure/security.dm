@@ -373,7 +373,11 @@
 	name = "\proper brig physician's locker"
 	req_access = list(ACCESS_BRIG)
 	icon_state = "sec"
+<<<<<<< HEAD
 	//icon_door = "brig_phys_door" // - [CELADON-DELETE]
+=======
+	// icon_door = "brig_phys_door" // [CELADON-DELETE] - Исправление отображения двери шкафа.
+>>>>>>> 134f993f155141919c171155aa244a283333c0b6
 
 /obj/structure/closet/secure_closet/brig_phys/PopulateContents()
 	..()

@@ -286,7 +286,7 @@
 
 /obj/item/bombcore/training
 	name = "dummy payload"
-	desc = "A Makosso-Warra replica of a syndicate payload. It's not intended to explode but to announce that it WOULD have exploded, then rewire itself to allow for more training."
+	desc = "A Nanotrasen replica of a syndicate payload. It's not intended to explode but to announce that it WOULD have exploded, then rewire itself to allow for more training." // [CELADON-EDIT]
 	var/defusals = 0
 	var/attempts = 0
 

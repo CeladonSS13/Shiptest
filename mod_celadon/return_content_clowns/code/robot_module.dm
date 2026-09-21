@@ -7,7 +7,7 @@
 		/obj/item/bikehorn,
 		/obj/item/bikehorn/airhorn,
 		/obj/item/paint/anycolor,
-		/obj/item/soap/warra,
+		/obj/item/soap/nanotrasen,
 		/obj/item/pneumatic_cannon/pie/selfcharge/cyborg,
 		/obj/item/razor,					//killbait material
 		/obj/item/lipstick/purple,

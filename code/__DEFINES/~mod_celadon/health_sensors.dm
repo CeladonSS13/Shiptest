@@ -1,0 +1,7 @@
+#define VITAL_SENSOR_ALIVE "alive"
+#define VITAL_SENSOR_CRIT "crit"
+#define VITAL_SENSOR_DEAD "dead"
+#define VITAL_SENSOR_DNR "dnr"
+#define VITAL_SENSOR_NOSIGNAL "nosignal"
+#define ORGAN_SLOT_VITAL_SENSOR "vital_sensor"
+#define TRAIT_VITAL_SENSOR_DNR "vital_sensor_dnr"

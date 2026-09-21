@@ -109,7 +109,7 @@
 	mob_spawner = /obj/effect/mob_spawn/human/corpse/solfed/marine/elysium
 	armor_base = /obj/item/clothing/suit/armor/vest/bulletproof
 	casingtype = /obj/item/ammo_casing/a556_42
-	r_hand = /obj/item/gun/ballistic/automatic/assault/cm82/solfed
+	r_hand = /obj/item/gun/ballistic/automatic/assault/cm82/elysium
 	projectilesound = 'sound/weapons/gun/rifle/m16.ogg'
 
 /mob/living/simple_animal/hostile/human/solfed/ranged/shotgun

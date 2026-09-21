@@ -870,7 +870,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 
 /obj/item/newspaper
 	name = "newspaper"
-	desc = "Выпуск газеты «Griffon», часто распространяемой на борту космических станций «Warra»."
+	desc = "Выпуск газеты «Griffon», часто распространяемой на борту космических станций Nanotrasen."
 	icon = 'icons/obj/bureaucracy.dmi'
 	icon_state = "newspaper"
 	lefthand_file = 'icons/mob/inhands/misc/books_lefthand.dmi'

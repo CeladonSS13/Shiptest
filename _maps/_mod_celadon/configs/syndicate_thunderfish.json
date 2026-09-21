@@ -1,0 +1,34 @@
+{
+	"$schema": "https://raw.githubusercontent.com/CeladonSS13/Shiptest/beta-dev/_maps/_mod_celadon/ship_config_schema.json",
+	"map_name": "Thunderfish-class Scout Corvette",
+	"map_short_name": "Thunderfish",
+	"description": "Научное судно Cybersun, переданное Синдикату для проведения исследовательских экспедиций в условиях аномальной активности. Малый размер судна позволяет ему избегать угроз, там, где большой корабль дальше пройти не смог. Снабжено защитой от электрических штормов и РнД.",
+	"map_path": "_maps/_mod_celadon/shuttles/syndicate/syndicate_thunderfish.dmm",
+	"enabled": true,
+	"limit": 1,
+	"sensor_range": 6,
+	"prefix": "RSSV",
+	"faction": "/datum/faction/syndicate",
+	"tags": ["Исследовательский"],
+	"namelists": [
+		"CYBERSUN"],
+	"job_slots": {
+		"Research Lead": {
+			"outfit": "/datum/outfit/job/cel/syndicate/science/director",
+			"officer": true,
+			"slots": 1
+		},
+		"Field Medic": {
+			"outfit": "/datum/outfit/job/cel/syndicate/doctor/gorlex",
+			"slots": 1
+		},
+		"Field Engineer": {
+			"outfit": "/datum/outfit/job/cel/syndicate/engineer/gorlex",
+			"slots": 1
+		},
+		"Junior Agent": {
+			"outfit": "/datum/outfit/job/cel/syndicate/assistant/cybersun",
+			"slots": 2
+		}
+	}
+}
