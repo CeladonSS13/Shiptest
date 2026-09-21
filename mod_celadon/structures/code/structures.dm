@@ -37,20 +37,20 @@
 // Растительность для снега
 /obj/structure/flora/rock/pile/icy_stone
 	name = "icey stone"
-	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
-	icon_state = "snow-255"
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow_old.dmi'
+	icon_state = "snowstone1"
 
 /obj/structure/flora/rock/pile/icy_stone/Initialize()
 	. = ..()
-	icon_state = "snow-255"
+	icon_state = "snowstone2"
 
 /obj/structure/flora/ausbushes/snowshrub
-	icon = 'mod_celadon/_storage_icons/icons/structures/snow.dmi'
-	icon_state = "snow-255"
+	icon = 'mod_celadon/_storage_icons/icons/structures/snow_old.dmi'
+	icon_state = "snowstone3"
 
 /obj/structure/flora/ausbushes/snowshrub/Initialize()
 	. = ..()
-	icon_state = "snow-255"
+	icon_state = "snowstone4"
 
 // MARK: DARK
 
