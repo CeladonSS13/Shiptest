@@ -43,12 +43,12 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 	if(I.tool_behaviour == TOOL_SCREWDRIVER)
 		if(unscrewed)
 			user.visible_message(span_notice("[user] starts tightening [src]'s screws..."), span_notice("You start screwing in [src]..."))
-			if(I.use_tool(src, user, 30, volume=50))
+			if(I.use_tool(src, user, volume=50)) // [CELADON-EDIT] - FACTION_RADIO - if(I.use_tool(src, user, 30, volume=50))
 				user.visible_message(span_notice("[user] tightens [src]'s screws!"), span_notice("You tighten [src]'s screws."))
 				unscrewed = FALSE
 		else
 			user.visible_message(span_notice("[user] starts loosening [src]'s screws..."), span_notice("You start unscrewing [src]..."))
-			if(I.use_tool(src, user, 40, volume=50))
+			if(I.use_tool(src, user, volume=50)) // [CELADON-EDIT] - FACTION_RADIO - if(I.use_tool(src, user, 40, volume=50))
 				user.visible_message(span_notice("[user] loosens [src]'s screws!"), span_notice("You unscrew [src], loosening it from the wall."))
 				unscrewed = TRUE
 		return
@@ -118,6 +118,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/item/radio/intercom, 31)
 
 /obj/item/radio/intercom/update_icon()
 	. = ..()
+	// [CELADON-ADD] - FACTION_RADIO
+	if(faction)
+		return
+	// [/CELADON-ADD]
 	if(on)
 		icon_state = initial(icon_state)
 	else
