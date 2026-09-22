@@ -108,12 +108,45 @@
 	if(!owner || is_jammed())
 		return VITAL_SENSOR_NOSIGNAL
 	if(owner.stat == DEAD || HAS_TRAIT(owner, TRAIT_FAKEDEATH))
-		if(owner.key || owner.get_ghost(FALSE, TRUE))
-			return VITAL_SENSOR_DEAD
-		return VITAL_SENSOR_DNR
-	if(owner.stat >= SOFT_CRIT)
+		if(HAS_TRAIT(owner, TRAIT_VITAL_SENSOR_DNR))
+			return VITAL_SENSOR_DNR
+		return VITAL_SENSOR_DEAD
+	// Sleeping / SSD / knockout is UNCONSCIOUS, not medical crit.
+	if(owner.stat == SOFT_CRIT || owner.stat == HARD_CRIT)
 		return VITAL_SENSOR_CRIT
+	if(iscarbon(owner))
+		var/mob/living/carbon/host = owner
+		if(!HAS_TRAIT(host, TRAIT_NOSOFTCRIT) && host.health <= host.crit_threshold)
+			return VITAL_SENSOR_CRIT
+		if(!HAS_TRAIT(host, TRAIT_NOHARDCRIT) && host.health <= host.hardcrit_threshold)
+			return VITAL_SENSOR_CRIT
 	return VITAL_SENSOR_ALIVE
+
+/obj/item/organ/cyberimp/chest/vital_sensor/proc/get_reported_status()
+	var/status = get_life_status()
+	if(!show_vitals && status == VITAL_SENSOR_CRIT)
+		return VITAL_SENSOR_ALIVE
+	return status
+
+/obj/item/organ/cyberimp/chest/vital_sensor/proc/is_host_occupied()
+	if(!owner)
+		return FALSE
+	if(owner.client)
+		return TRUE
+	if(owner.key && owner.key[1] != "@")
+		return TRUE
+	return FALSE
+
+/obj/item/organ/cyberimp/chest/vital_sensor/proc/is_host_ssd()
+	if(!owner)
+		return FALSE
+	if(owner.stat != DEAD && !HAS_TRAIT(owner, TRAIT_FAKEDEATH))
+		return owner.isLivingSSD()
+	if(HAS_TRAIT(owner, TRAIT_VITAL_SENSOR_DNR))
+		return FALSE
+	if(is_host_occupied())
+		return FALSE
+	return !!(owner.player_logged || owner.mind?.key || owner.ckey)
 
 /obj/item/organ/cyberimp/chest/vital_sensor/proc/get_overmap_track()
 	if(!reports_sector)
@@ -149,8 +182,8 @@
 	data["show_vitals"] = show_vitals
 	data["reports_sector"] = reports_sector
 	data["watched"] = watched
-	var/status = get_life_status()
-	data["status"] = (!show_vitals && status == VITAL_SENSOR_CRIT) ? VITAL_SENSOR_ALIVE : status
+	data["status"] = get_reported_status()
+	data["ssd"] = is_host_ssd()
 	var/list/track = get_overmap_track()
 	data["location"] = track["location"]
 	data["coords"] = track["coords"]

@@ -1,7 +1,7 @@
 /obj/structure/closet
 	name = "closet"
 	desc = "It's a basic storage unit."
-	icon = 'icons/obj/closet.dmi'
+	icon = 'mod_celadon/_storage_icons/icons/structures/closets.dmi' // [CELADON-EDIT] OLD =icon = 'icons/obj/closet.dmi'
 	icon_state = "generic"
 	density = TRUE
 	drag_slowdown = 1.5		// Same as a prone mob

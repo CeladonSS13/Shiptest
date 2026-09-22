@@ -97,6 +97,11 @@ export const HealthSensorMonitor = (props, context) => {
                 <Table.Row key={sensor.ref}>
                   <Table.Cell>
                     {sensor.name}
+                    {!!sensor.ssd && (
+                      <Box inline bold color="bad" ml={1}>
+                        SSD
+                      </Box>
+                    )}
                     {!sensor.implanted && (
                       <Box inline color="average">
                         {' '}
