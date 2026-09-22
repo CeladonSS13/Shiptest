@@ -25,6 +25,7 @@
 /obj/item/crowbar/red
 	icon_state = "crowbar_red"
 	force = 8
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi' // [CELADON-ADD] - FIX
 
 /obj/item/crowbar/abductor
 	name = "alien crowbar"

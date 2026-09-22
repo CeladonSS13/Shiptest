@@ -199,12 +199,6 @@
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_righthand.dmi'
 
-/obj/item/crowbar/red
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/misc/in_hands/tools_lefthand.dmi'
-
-/obj/item/melee/duelenergy/halberd
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/weapons_hands_right.dmi'
-
 // MARK: Газ Анализатор
 
 /obj/item/analyzer/ranged
