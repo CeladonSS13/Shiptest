@@ -1,60 +1,15 @@
+/*
 /datum/supply_pack/faction/syndicate/medical
 	category = "Medical - Medical"
-
-/datum/supply_pack/faction/syndicate/medical/painkillers
-	name = "Painkiller Supply"
-	desc = "Contains a supply of painkillers. Great for stopping headaches, feeling broken bones, and screaming people!"
-	cost = 1000
-	contains = list(
-		/obj/item/reagent_containers/chem_pack/dimorlin,
-		/obj/item/reagent_containers/glass/bottle/morphine,
-		/obj/item/reagent_containers/glass/bottle/morphine,
-		/obj/item/reagent_containers/glass/bottle/tramal,
-		/obj/item/reagent_containers/glass/bottle/tramal,)
-
-/datum/supply_pack/faction/syndicate/medical/surgery
-	name = "Surgical Supplies"
-	desc = "Do you want to perform surgery, but don't have one of those fancy shmancy degrees? Just get started with this crate containing a medical case, Sterilizine spray and collapsible roller bed."
-	cost = 3000
-	contains = list(/obj/item/storage/case/surgery,
-					/obj/item/reagent_containers/medigel/sterilizine,
-					/obj/item/roller)
-	crate_name = "surgical supplies crate"
-
-/datum/supply_pack/faction/syndicate/medical/anesthetic
-	name = "Anesthetics"
-	desc = "Contains a standard anesthetics tank, for standard surgical procedures."
-	cost = 500
-	contains = list(/obj/item/clothing/mask/breath/medical,
-					/obj/item/tank/internals/anesthetic)
-	crate_name = "anesthetics crate"
 
 /*
 		Bundles and supplies
 */
 
-/datum/supply_pack/faction/syndicate/medical/bloodpacks
-	name = "Blood Pack Variety"
-	desc = "Contains several different blood packs for reintroducing blood to patients."
-	cost = 1000
-	contains = list(/obj/item/reagent_containers/blood,
-					/obj/item/reagent_containers/blood,
-					/obj/item/reagent_containers/blood/APlus,
-					/obj/item/reagent_containers/blood/AMinus,
-					/obj/item/reagent_containers/blood/BPlus,
-					/obj/item/reagent_containers/blood/BMinus,
-					/obj/item/reagent_containers/blood/OPlus,
-					/obj/item/reagent_containers/blood/OMinus,
-					/obj/item/reagent_containers/blood/lizard,
-					/obj/item/reagent_containers/blood/elzuose,
-					/obj/item/reagent_containers/blood/synthetic)
-	crate_name = "blood freezer"
-	crate_type = /obj/structure/closet/crate/freezer
-
 /datum/supply_pack/faction/syndicate/medical/surplus
 	name = "Medical Surplus"
 	desc = "Contains an assortment of medical supplies haphazardly pulled from storage. German doctor not included."
-	cost = 3000
+	cost = 2000
 	contains = list(/obj/item/reagent_containers/glass/bottle/charcoal,
 					/obj/item/reagent_containers/glass/bottle/epinephrine,
 					/obj/item/reagent_containers/glass/bottle/morphine,
@@ -203,3 +158,4 @@
 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan
 	)
 	crate_name = "chitosan vial crate"
+*/
