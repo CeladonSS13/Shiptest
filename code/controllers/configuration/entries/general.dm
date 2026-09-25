@@ -115,6 +115,8 @@
 
 /datum/config_entry/flag/ShipStats
 
+/datum/config_entry/flag/WL_Faction
+
 /datum/config_entry/number/pirate_time_spawn
 	config_entry_value = 2 HOURS
 	integer = FALSE
