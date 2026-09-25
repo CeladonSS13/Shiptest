@@ -14,7 +14,7 @@
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
 		/obj/item/food/ration = 1,\
-		/obj/item/radio = 1,\
+		/obj/item/radio/transceiver/nanotrasen = 1,\
 		/obj/item/crowbar = 1,\
 		)
 	generate_items_inside(items_inside,src)
@@ -46,6 +46,20 @@
 	possible_illustrations = "syndie"
 	illustration = "syndie"
 /obj/item/storage/box/survival/syndicate/PopulateContents()
+	var/static/items_inside = list(
+		/obj/item/clothing/mask/gas/syndicate = 1,\
+		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
+		/obj/item/reagent_containers/hypospray/medipen/atropine = 1,\
+		/obj/item/reagent_containers/pill/penacid = 1,\
+		/obj/item/food/shoalpocket/warm = 1,\
+		/obj/item/radio/transceiver/syndicate = 1,\
+		/obj/item/crowbar/syndie = 1,\
+		)
+	generate_items_inside(items_inside,src)
+
+/obj/item/storage/box/survival/syndicate/suns
+	name = "suns survival box"
+/obj/item/storage/box/survival/syndicate/suns/PopulateContents()
 	var/static/items_inside = list(
 		/obj/item/clothing/mask/gas/syndicate = 1,\
 		/obj/item/tank/internals/emergency_oxygen/engi = 1,\
@@ -88,6 +102,8 @@
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/charcoal = 1,\
 		/obj/item/food/shoalpocket/warm = 1,\
+		/obj/item/radio/transceiver/pirate = 1,\
+		/obj/item/food/shoalpocket/warm = 1,\
 		/obj/item/radio = 1,\
 		/obj/item/crowbar/red= 1,\
 		)
@@ -107,7 +123,7 @@
 		/obj/item/reagent_containers/hypospray/medipen/atropine = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
 		/obj/item/storage/ration/chicken_wings_hot_sauce = 1,\
-		/obj/item/radio = 1,\
+		/obj/item/radio/transceiver/inteq = 1,\
 		/obj/item/crowbar/red = 1,\
 		)
 	generate_items_inside(items_inside,src)
@@ -127,7 +143,7 @@
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
 		/obj/item/food/ration = 1,\
-		/obj/item/radio = 1,\
+		/obj/item/radio/transceiver/solfed = 1,\
 		/obj/item/crowbar = 1,\
 		)
 	generate_items_inside(items_inside,src)

@@ -1,4 +1,4 @@
-/*
+/* - Отключено. Крайне неприятная болезнь.
 /datum/disease/asthma_attack
 	form = "Bronchitis"
 	name = "Asthma attack"

@@ -1,4 +1,4 @@
-/*
+/* - Отключено. Крайне неприятная болезнь.
 /datum/status_effect/lung_inflammation
 	id = "lung_inflammation"
 	tick_interval = 2 SECONDS

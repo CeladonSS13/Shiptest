@@ -1,4 +1,4 @@
-/*
+/* - Отключено. Крайне неприятная болезнь.
 /datum/quirk/asthma
 	name = "Asthma"
 	desc = "You suffer from asthma, a inflammatory disorder that causes your airpipe to squeeze shut! Be careful around smoke and irritating gases!"
