@@ -1,4 +1,4 @@
-/* - Отключено. Крайне неприятная болезнь.
+/* [CELADON-DELETE] - Отключено. Крайне неприятная болезнь.
 /datum/disease/asthma_attack
 	form = "Bronchitis"
 	name = "Asthma attack"
@@ -251,4 +251,4 @@
 		return
 	to_chat(affected_mob, span_warning("You briefly choke on the mucus piling in your throat!"))
 	affected_mob.losebreath++
-*/
+[/CELADON-DELETE] */
