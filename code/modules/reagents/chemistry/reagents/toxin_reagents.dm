@@ -492,7 +492,7 @@
 /datum/reagent/toxin/histamine/overdose_process(mob/living/M)
 	M.adjustOxyLoss(1*REM, 0)
 	M.adjustToxLoss(1*REM, 0)
-	// M.adjust_lung_inflammation(histamine_OD_inflammation * SSMOBS_DT * REM)
+	// M.adjust_lung_inflammation(histamine_OD_inflammation * SSMOBS_DT * REM) [CELADON-DELETE] - Отключено. Крайне неприятная болезнь.
 	if (SPT_PROB(15, SSMOBS_DT))
 		to_chat(M, span_boldwarning("You feel your neck swelling, squeezing on your windpipe more and more!"))
 	..()
