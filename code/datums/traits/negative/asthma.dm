@@ -1,4 +1,4 @@
-/* - Отключено. Крайне неприятная болезнь.
+/* [CELADON-DELETE] - Отключено. Крайне неприятная болезнь.
 /datum/quirk/asthma
 	name = "Asthma"
 	desc = "You suffer from asthma, a inflammatory disorder that causes your airpipe to squeeze shut! Be careful around smoke and irritating gases!"
@@ -137,4 +137,4 @@
 	current_attack = null
 
 	COOLDOWN_START(src, next_attack_cooldown, rand(min_time_between_attacks, max_time_between_attacks))
-*/
+[/CELADON-DELETE] */
