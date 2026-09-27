@@ -84,7 +84,7 @@
 	pixel_x = 0;
 	pixel_y = 7
 	},
-/obj/machinery/suit_storage_unit/inherit/industrial,
+/obj/machinery/suit_storage_unit/inherit,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "bf" = (
@@ -3068,6 +3068,9 @@
 	dir = 8
 	},
 /obj/machinery/newscaster/directional/west,
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/engineering)
 "rR" = (
@@ -6063,6 +6066,11 @@
 /obj/structure/cable{
 	icon_state = "0-4"
 	},
+/obj/machinery/light_switch{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -11
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/security/armory)
 "HW" = (
@@ -6168,8 +6176,8 @@
 	pixel_x = 0;
 	pixel_y = 7
 	},
-/obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/suit_storage_unit/inherit,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "IX" = (
@@ -6312,7 +6320,8 @@
 "JD" = (
 /obj/effect/turf_decal/techfloor/corner,
 /obj/machinery/mineral/ore_redemption{
-	dir = 1
+	dir = 1;
+	input_dir = 2
 	},
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
@@ -6900,16 +6909,16 @@
 	can_be_unanchored = 1
 	},
 /obj/item/tank/internals/emergency_oxygen/double,
-/obj/item/clothing/suit/hooded/explorer{
-	pixel_x = -1;
-	pixel_y = -5
-	},
 /obj/item/clothing/mask/gas/explorer{
 	pixel_x = 0;
 	pixel_y = 7
 	},
-/obj/machinery/suit_storage_unit/inherit/industrial,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/clothing/suit/hooded/explorer{
+	pixel_x = -1;
+	pixel_y = -5
+	},
+/obj/machinery/suit_storage_unit/inherit,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo/office)
 "MW" = (
