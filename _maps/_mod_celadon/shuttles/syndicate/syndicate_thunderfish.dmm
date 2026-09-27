@@ -629,11 +629,11 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "qU" = (
-/obj/machinery/power/grounding_rod{
-	anchored = 1
+/obj/machinery/power/tesla_coil/tesla_ground,
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/obj/structure/catwalk/over,
-/turf/open/floor/plating/airless,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "qX" = (
 /obj/structure/closet/wall/red/directional/west{
@@ -651,12 +651,12 @@
 /obj/structure/cable/white{
 	icon_state = "1-10"
 	},
-/obj/item/clothing/under/syndicate/suns,
-/obj/item/clothing/under/syndicate/suns,
-/obj/item/clothing/under/syndicate/suns,
 /obj/item/clothing/under/syndicate,
 /obj/item/clothing/under/syndicate,
 /obj/item/clothing/under/syndicate,
+/obj/item/clothing/under/cybersun/officer,
+/obj/item/clothing/under/cybersun/officer,
+/obj/item/clothing/under/cybersun/officer,
 /turf/open/floor/suns/hatch{
 	color = "#E6D2BA"
 	},
@@ -825,11 +825,11 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "wo" = (
-/obj/structure/catwalk/over,
-/obj/machinery/power/grounding_rod{
-	anchored = 1
+/obj/structure/cable{
+	icon_state = "0-8"
 	},
-/turf/open/floor/plating/airless,
+/obj/machinery/power/tesla_coil/tesla_ground,
+/turf/open/floor/engine/hull/reinforced,
 /area/ship/external)
 "wr" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer2,
@@ -879,6 +879,9 @@
 /obj/structure/cable{
 	icon_state = "2-9"
 	},
+/obj/structure/cable{
+	icon_state = "4-9"
+	},
 /turf/open/floor/plating/airless,
 /area/ship/external)
 "zd" = (
@@ -909,6 +912,9 @@
 /obj/structure/cable{
 	icon_state = "2-9"
 	},
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "zx" = (
@@ -919,6 +925,9 @@
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/machinery/door/poddoor/shutters{
 	id = "noseokna"
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
@@ -1569,6 +1578,14 @@
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
+"RC" = (
+/obj/machinery/atmospherics/pipe/simple/green/hidden/layer4,
+/obj/effect/turf_decal/trimline/opaque/syndiered/warning{
+	dir = 8
+	},
+/obj/structure/frame/machine,
+/turf/open/floor/plasteel/dark,
+/area/ship/engineering)
 "RI" = (
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -1888,6 +1905,9 @@
 /obj/structure/cable{
 	icon_state = "1-10"
 	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
 /turf/open/floor/plating,
 /area/ship/crew/cryo)
 "Wp" = (
@@ -1915,6 +1935,9 @@
 /obj/structure/catwalk/over,
 /obj/structure/cable{
 	icon_state = "1-10"
+	},
+/obj/structure/cable{
+	icon_state = "4-10"
 	},
 /turf/open/floor/plating/airless,
 /area/ship/external)
@@ -2219,7 +2242,7 @@ rB
 GQ
 UN
 Hm
-Eg
+RC
 Eg
 pD
 rB
@@ -2259,7 +2282,7 @@ wl
 EI
 jw
 rB
-qU
+wo
 zx
 zx
 zx
@@ -2392,7 +2415,7 @@ zx
 "}
 (16,1,1) = {"
 zx
-wo
+Ms
 JL
 zx
 WD
@@ -2405,7 +2428,7 @@ zd
 UF
 zx
 Ov
-wo
+Ms
 zx
 "}
 (17,1,1) = {"
@@ -2684,12 +2707,12 @@ zx
 zx
 zx
 zx
-Ms
+wo
 zx
 zx
 zx
 zx
-Ms
+wo
 zx
 zx
 zx
