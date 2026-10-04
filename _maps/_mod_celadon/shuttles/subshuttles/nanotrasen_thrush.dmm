@@ -21,13 +21,10 @@
 "aG" = (
 /obj/machinery/power/smes/shuttle/precharged,
 /obj/machinery/door/poddoor/preopen{
-	id = "w_sub_engines"
+	id = "thrush_sub_engines"
 	},
 /obj/structure/window/plasma/reinforced{
 	dir = 1
-	},
-/obj/structure/cable/white{
-	icon_state = "0-8"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -125,7 +122,7 @@
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -19;
-	id = "w_sub_entrance";
+	id = "thrush_sub_entrance";
 	name = "dropship bay door control";
 	pixel_x = -6
 	},
@@ -133,7 +130,7 @@
 	dir = 1;
 	pixel_y = -18;
 	pixel_x = 5;
-	id = "w_sub_holofield"
+	id = "thrush_sub_holofield"
 	},
 /obj/effect/turf_decal/industrial/loading/white{
 	dir = 4;
@@ -183,7 +180,7 @@
 "hi" = (
 /obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 5;
-	id = "w_sub_turrets"
+	id = "thrush_sub_turrets"
 	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border,
 /obj/effect/turf_decal/corner/opaque/nanotrasenbluelight/half{
@@ -198,7 +195,7 @@
 "ik" = (
 /obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 10;
-	id = "w_sub_turrets"
+	id = "thrush_sub_turrets"
 	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border{
 	dir = 1
@@ -233,12 +230,9 @@
 	dir = 4
 	},
 /obj/machinery/door/poddoor/preopen{
-	id = "w_sub_engines"
+	id = "thrush_sub_engines"
 	},
 /obj/structure/window/plasma/reinforced,
-/obj/structure/cable/white{
-	icon_state = "0-8"
-	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "lb" = (
@@ -284,9 +278,6 @@
 /obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/window/plasma/reinforced{
 	dir = 1
-	},
-/obj/structure/cable/white{
-	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -342,15 +333,12 @@
 "rx" = (
 /obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/window/plasma/reinforced,
-/obj/structure/cable/white{
-	icon_state = "0-4"
-	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "tq" = (
 /obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 9;
-	id = "w_sub_turrets"
+	id = "thrush_sub_turrets"
 	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border,
 /obj/effect/turf_decal/corner_techfloor_grid{
@@ -388,7 +376,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/machinery/door/poddoor/shutters{
-	id = "w_sub_window";
+	id = "thrush_sub_window";
 	dir = 4
 	},
 /turf/open/floor/plating,
@@ -408,7 +396,7 @@
 "Bf" = (
 /obj/machinery/porta_turret/ship/nanotrasen{
 	dir = 6;
-	id = "w_sub_turrets"
+	id = "thrush_sub_turrets"
 	},
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border{
 	dir = 1
@@ -453,12 +441,12 @@
 "EE" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 4;
-	name = "Kover"
+	name = "Helm"
 	},
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -19;
-	id = "w_sub_entrance";
+	id = "thrush_sub_entrance";
 	name = "dropship bay door control";
 	pixel_x = -6
 	},
@@ -466,7 +454,7 @@
 	dir = 1;
 	pixel_y = -18;
 	pixel_x = 5;
-	id = "w_sub_holofield"
+	id = "thrush_sub_holofield"
 	},
 /obj/effect/turf_decal/siding/white,
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/bordercorner{
@@ -487,11 +475,11 @@
 /area/ship/bridge)
 "EX" = (
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "w_sub_holofield"
+	id = "thrush_sub_holofield"
 	},
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = "w_sub_entrance"
+	id = "thrush_sub_entrance"
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -571,7 +559,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/poddoor/preopen{
-	id = "w_sub_engines"
+	id = "thrush_sub_engines"
 	},
 /obj/structure/window/plasma/reinforced{
 	dir = 1
@@ -610,7 +598,7 @@
 /obj/structure/grille,
 /obj/structure/window/reinforced/fulltile/shuttle,
 /obj/machinery/door/poddoor/shutters{
-	id = "w_sub_window";
+	id = "thrush_sub_window";
 	dir = 1
 	},
 /turf/open/floor/plating,
@@ -621,7 +609,7 @@
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /obj/machinery/door/poddoor/preopen{
-	id = "w_sub_engines"
+	id = "thrush_sub_engines"
 	},
 /obj/structure/window/plasma/reinforced,
 /obj/structure/cable/white,
@@ -694,10 +682,10 @@
 "Pn" = (
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = "w_sub_entrance"
+	id = "thrush_sub_entrance"
 	},
 /obj/machinery/power/shieldwallgen/atmos/roundstart{
-	id = "w_sub_holofield";
+	id = "thrush_sub_holofield";
 	dir = 1
 	},
 /obj/effect/turf_decal/industrial/warning{
@@ -768,7 +756,7 @@
 "Sw" = (
 /obj/machinery/door/poddoor/preopen{
 	dir = 4;
-	id = "w_sub_entrance"
+	id = "thrush_sub_entrance"
 	},
 /obj/effect/turf_decal/industrial/warning{
 	dir = 8;
@@ -789,13 +777,6 @@
 /obj/machinery/door/firedoor/heavy,
 /obj/structure/cable/yellow{
 	icon_state = "5-8"
-	},
-/obj/docking_port/mobile{
-	can_move_docking_ports = 1;
-	dir = 4;
-	port_direction = 2;
-	preferred_direction = 4;
-	name = "thrush"
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
@@ -819,12 +800,12 @@
 /obj/machinery/button/door{
 	pixel_x = 2;
 	pixel_y = 21;
-	id = "w_sub_entrance";
+	id = "thrush_sub_entrance";
 	name = "dropship bay door control"
 	},
 /obj/machinery/button/shieldwallgen{
 	pixel_y = 27;
-	id = "w_sub_holofield";
+	id = "thrush_sub_holofield";
 	pixel_x = 2
 	},
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
@@ -874,7 +855,7 @@
 	pixel_y = 11;
 	pixel_x = -22;
 	name = "window shutters";
-	id = "w_sub_window"
+	id = "thrush_sub_window"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "6-10"
