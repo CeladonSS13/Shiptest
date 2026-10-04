@@ -20,6 +20,9 @@ gun/shot_glock.wav
 gun/shot_hozizonx.ogg
 gun/shot_usp45.wav
 
+health_sensors/patient_bad.ogg
+health_sensors/patient_dead.ogg
+
 lobby/sztart.ogg
 lobby/title0.ogg
 lobby/title1.ogg

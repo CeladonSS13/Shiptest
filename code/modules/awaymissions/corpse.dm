@@ -217,7 +217,7 @@
 	var/hairstyle
 	var/facial_hairstyle
 	var/skin_tone
-
+	var/hair_color // [CELADON-ADD] - Добавляем возможность заранее прописывать цвет волос мобам.
 	var/list/outfit_override
 
 /obj/effect/mob_spawn/human/Initialize(mapload, species)
@@ -252,9 +252,17 @@
 		// [CELADON-EDIT] - TAJARA - изменения базы
 		// H.facial_hairstyle = random_facial_hairstyle(H.gender) // CELADON-EDIT - ORIGINAL
 		H.facial_hairstyle = H.dna.species.random_facial_hairstyle(H.gender)
+	if(hair_color)
+		H.hair_color = hair_color
 		// [/CELADON-EDIT]
 	if(skin_tone)
-		H.skin_tone = skin_tone
+		// [CELADON-EDIT] - изменения skin_tone на кукле не отобразятся, так как цвета привязаны к частям тела (bodyparts).
+		// H.skin_tone = skin_tone
+		for(var/zone in H.bodyparts)
+			var/obj/item/bodypart/b = H.bodyparts[zone]
+			if(b)
+				b.skin_tone = skin_tone
+		// [/CELADON-EDIT]
 	else
 		H.skin_tone = random_skin_tone()
 	H.update_hair()

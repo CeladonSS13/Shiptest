@@ -248,10 +248,3 @@ MARK: Decoration / flooring
 	contains = list(/obj/item/bodycamera/broadcast_camera)
 	crate_name = "broadcast camera crate"
 	crate_type = /obj/structure/closet/crate
-
-// [CELADON-ADD] - MARK: Удалить после РАЦИЙ
-/obj/item/radio/transceiver/syndicate
-/obj/item/radio/transceiver/solfed
-/obj/item/radio/transceiver/nanotrasen
-/obj/item/radio/transceiver/inteq
-// [/CELADON-ADD] - MARK: Удалить после РАЦИЙ

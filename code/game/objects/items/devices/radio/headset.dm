@@ -12,10 +12,18 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	RADIO_CHANNEL_MINUTEMEN = RADIO_TOKEN_MINUTEMEN,
 	RADIO_CHANNEL_PGF = RADIO_TOKEN_PGF,
 	RADIO_CHANNEL_INTEQ = RADIO_TOKEN_INTEQ,
-	RADIO_CHANNEL_PIRATE = RADIO_TOKEN_PIRATE,
+	// RADIO_CHANNEL_PIRATE = RADIO_TOKEN_PIRATE, // [CELADON-DELETE] - FACTION_RADIO
 	MODE_BINARY = MODE_TOKEN_BINARY,
 	// RADIO_CHANNEL_AI_PRIVATE = RADIO_TOKEN_AI_PRIVATE,
-	RADIO_CHANNEL_WIDEBAND = RADIO_TOKEN_WIDEBAND
+	RADIO_CHANNEL_WIDEBAND = RADIO_TOKEN_WIDEBAND, // [CELADON-EDIT] - OLD CODE: RADIO_CHANNEL_WIDEBAND = RADIO_TOKEN_WIDEBAND
+	// [CELADON-ADD] - FACTION_RADIO
+	RADIO_CHANNEL_SOLFED = RADIO_TOKEN_SOLFED,
+	RADIO_CHANNEL_NANOTRASEN = RADIO_TOKEN_NANOTRASEN,
+	RADIO_CHANNEL_ELYSIUM = RADIO_TOKEN_ELYSIUM,
+	RADIO_CHANNEL_RAMZI = RADIO_TOKEN_RAMZI,
+	RADIO_CHANNEL_PIRATE = RADIO_TOKEN_PIRATE,
+	RADIO_CHANNEL_VOX = RADIO_TOKEN_VOX,
+	// [/CELADON-ADD]
 ))
 
 /obj/item/radio/headset
@@ -129,7 +137,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "SUNS headset"
 	desc = "A headset worn by staff and students of SUNS, both in the frontier and elsewhere."
 	keyslot = /obj/item/encryptionkey/syndicate/suns
-	keyslot2 = /obj/item/encryptionkey/heads/captain
+	// keyslot2 = /obj/item/encryptionkey/heads/captain // [CELADON-DELETE] - Удалено и перенесено в mod_celadon\items\code\radio\headset.dm
 
 /obj/item/radio/headset/syndicate/suns/command
 	name = "SUNS command headset"
@@ -234,7 +242,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 	name = "minutemen radio headset"
 	desc = "Used by militias flying the five stars of the CLIP Minutemen."
 	icon_state = "clip_headset"
-	keyslot = /obj/item/encryptionkey/minutemen
+	// keyslot = /obj/item/encryptionkey/minutemen // [CELADON-DELETE] - Удалено и перенесено в mod_celadon\items\code\radio\headset.dm
 
 /obj/item/radio/headset/clip/captain
 	name = "minuteman officer radio headset"
@@ -309,7 +317,7 @@ GLOBAL_LIST_INIT(channel_tokens, list(
 /obj/item/radio/headset/pgf
 	name = "\improper PGF headset"
 	desc = "A headset often worn by members of the PGFN and PGFMC."
-	keyslot = /obj/item/encryptionkey/pgf
+	// keyslot = /obj/item/encryptionkey/pgf // [CELADON-DELETE] - Удалено и перенесено в mod_celadon\items\code\radio\headset.dm
 
 /obj/item/radio/headset/pgf/captain
 	name = "\improper PGF official radio headset"
