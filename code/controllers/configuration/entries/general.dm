@@ -120,7 +120,6 @@
 /datum/config_entry/flag/wl_pirates
 
 /datum/config_entry/number/pirate_time_spawn
-	config_entry_value = 2 HOURS
 	integer = FALSE
 	min_val = 0
 // [/CELADON-ADD]
