@@ -40,7 +40,7 @@
 				new /obj/item/mod/control/pre_equipped/inteq(drop_location)
 			if("Rig suit")
 				new /obj/item/clothing/suit/space/hardsuit/syndi/inteq(drop_location)
-				new /obj/item/shield/riot/tele(drop_location)
+				new /obj/item/shield/tele(drop_location)
 
 	SSblackbox.record_feedback("tally", "inteq_voucher_redeemed", 1, selection)
 	qdel(voucher)

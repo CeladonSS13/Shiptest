@@ -150,3 +150,16 @@
 	caliber = "7.62x54R"
 	w_class = WEIGHT_CLASS_NORMAL
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
+
+// MARK: Woodsman
+
+// возвращает десятник вудсману
+/obj/item/ammo_box/magazine/m23/extended
+	name = "Model 23 Extended Magazine (8x50mmR)"
+	desc = "A 10-round magazine for the Model 23 \"Woodsman\". These rounds do high damage, with excellent armor penetration."
+	icon_state = "woodsman_extended-1"
+	base_icon_state = "woodsman_extended"
+	max_ammo = 10
+
+/obj/item/ammo_box/magazine/m23/extended/empty
+	start_empty = TRUE

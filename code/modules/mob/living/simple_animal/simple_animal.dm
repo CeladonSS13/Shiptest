@@ -248,6 +248,10 @@
 
 /mob/living/simple_animal/proc/handle_automated_action()
 	set waitfor = FALSE
+	// Periodically check if we should sleep (for non-hostile mobs)
+	// Hostile mobs override this and do their own checks
+	if(prob(10)) // 10% chance per action to check sleep state
+		check_should_sleep()
 	return
 
 /mob/living/simple_animal/proc/handle_automated_movement()
@@ -664,17 +668,39 @@
 			LAZYREMOVEASSOC(SSidlenpcpool.idle_mobs_by_virtual_level, "[virt_z]", src)
 
 /mob/living/simple_animal/proc/check_should_sleep()
+	// Don't sleep if being pulled or explicitly flagged to stay awake
 	if (pulledby || shouldwakeup)
 		toggle_ai(AI_ON)
 		return
 
+	// Don't sleep if we're player-controlled
+	if(ckey)
+		return
+
 	var/virt_z = virtual_z()
+	if(!virt_z)
+		return
+
 	var/players_on_virtual_z = 0
-	if(virt_z)
-		players_on_virtual_z = LAZYACCESS(SSmobs.players_by_virtual_z, "[virt_z]")
-		if(!length(players_on_virtual_z))
+	players_on_virtual_z = LAZYACCESS(SSmobs.players_by_virtual_z, "[virt_z]")
+
+	// If no players on this virtual z-level, sleep
+	if(!length(players_on_virtual_z))
+		if(AIStatus != AI_Z_OFF)
 			toggle_ai(AI_Z_OFF)
-		else if(AIStatus == AI_Z_OFF)
+	// If there are players and we're asleep, wake up
+	else if(AIStatus == AI_Z_OFF)
+		// Check if any players are actually close enough to matter
+		var/should_wake = FALSE
+		var/turf/our_turf = get_turf(src)
+		if(our_turf)
+			for(var/mob/living/player_mob in players_on_virtual_z)
+				// Wake up if a player is within reasonable distance
+				if(get_dist(our_turf, get_turf(player_mob)) <= MAX_SIMPLEMOB_WAKEUP_RANGE * 3)
+					should_wake = TRUE
+					break
+
+		if(should_wake)
 			toggle_ai(AI_ON)
 
 /mob/living/simple_animal/adjustHealth(amount, updating_health = TRUE, forced = FALSE)

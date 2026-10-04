@@ -702,31 +702,6 @@
 	},
 /turf/open/floor/carpet/royalblack,
 /area/ship/bridge)
-"fU" = (
-/obj/structure/rack,
-/obj/effect/turf_decal/industrial/traffic/full,
-/obj/machinery/light/directional/south,
-/obj/machinery/camera/autoname{
-	dir = 1
-	},
-/obj/item/shield/riot/tele{
-	pixel_x = -5;
-	pixel_y = 6
-	},
-/obj/item/shield/riot/tele{
-	pixel_x = -7;
-	pixel_y = -1
-	},
-/obj/item/melee/energy/sword/saber/red{
-	pixel_x = 15;
-	pixel_y = 7
-	},
-/obj/item/melee/energy/sword/saber/red{
-	pixel_x = 15;
-	pixel_y = 13
-	},
-/turf/open/floor/mineral/plastitanium/red,
-/area/ship/security/armory)
 "fY" = (
 /obj/structure/table/glass,
 /obj/machinery/cell_charger{
@@ -828,20 +803,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering)
-"gA" = (
-/obj/effect/turf_decal/siding/wood{
-	dir = 1
-	},
-/obj/effect/spawner/random/food_or_drink/shoalpockets{
-	pixel_y = 7
-	},
-/obj/structure/table/wood,
-/obj/item/storage/cans/sixbeer{
-	pixel_x = -1;
-	pixel_y = -7
-	},
-/turf/open/floor/wood/walnut,
-/area/ship/crew/canteen)
 "gE" = (
 /obj/effect/turf_decal/trimline/opaque/syndiered/filled/warning{
 	dir = 4
@@ -1593,37 +1554,6 @@
 /obj/item/aiModule/core/full/syndicate,
 /turf/open/floor/circuit/red,
 /area/ship/science/ai_chamber)
-"mT" = (
-/obj/effect/turf_decal/corner/opaque/syndiered/border{
-	dir = 1
-	},
-/obj/item/clothing/gloves/nitrile/evil{
-	pixel_x = 1;
-	pixel_y = -3
-	},
-/obj/item/clothing/suit/longcoat/roboblack,
-/obj/item/clothing/suit/toggle/labcoat/brig_phys,
-/obj/item/clothing/suit/toggle/labcoat/brig_phys,
-/obj/structure/extinguisher_cabinet/directional/west,
-/obj/structure/closet/secure_closet{
-	icon_state = "science";
-	name = "RnD team locker";
-	req_access_txt = "47"
-	},
-/obj/item/storage/box/bodybags,
-/obj/item/clothing/suit/longcoat/roboblack,
-/obj/item/clothing/gloves/nitrile/evil{
-	pixel_x = 1;
-	pixel_y = -3
-	},
-/obj/item/gps/science,
-/obj/item/mmi/syndie,
-/obj/item/mmi/syndie,
-/obj/item/clothing/under/cybersun/coverall,
-/obj/item/clothing/under/cybersun/coverall,
-/obj/item/clothing/suit/armor/vest/syndie,
-/turf/open/floor/mineral/plastitanium,
-/area/ship/science/storage)
 "mX" = (
 /obj/structure/chair/comfy/shuttle{
 	dir = 2;
@@ -2367,6 +2297,20 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/cargo)
+"sZ" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/effect/spawner/random/food_or_drink/shoalpockets{
+	pixel_y = 7
+	},
+/obj/structure/table/wood,
+/obj/item/storage/cans/sixbeer{
+	pixel_x = -1;
+	pixel_y = -7
+	},
+/turf/open/floor/wood/walnut,
+/area/ship/crew/canteen)
 "tj" = (
 /obj/machinery/door/airlock/glass_large,
 /obj/effect/turf_decal/corner/transparent/syndiered/border{
@@ -2851,6 +2795,31 @@
 /obj/structure/cable,
 /turf/open/floor/circuit/red,
 /area/ship/engineering)
+"xj" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/industrial/traffic/full,
+/obj/machinery/light/directional/south,
+/obj/machinery/camera/autoname{
+	dir = 1
+	},
+/obj/item/shield/tele{
+	pixel_x = -5;
+	pixel_y = 6
+	},
+/obj/item/shield/tele{
+	pixel_x = -7;
+	pixel_y = -1
+	},
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 7
+	},
+/obj/item/melee/energy/sword/saber/red{
+	pixel_x = 15;
+	pixel_y = 13
+	},
+/turf/open/floor/mineral/plastitanium/red,
+/area/ship/security/armory)
 "xl" = (
 /obj/machinery/vending/games,
 /obj/effect/turf_decal/corner/transparent/syndiered/border{
@@ -4061,6 +4030,37 @@
 	pixel_x = 8
 	},
 /obj/item/food/cake/trumpet,
+/turf/open/floor/mineral/plastitanium,
+/area/ship/science/storage)
+"Ja" = (
+/obj/effect/turf_decal/corner/opaque/syndiered/border{
+	dir = 1
+	},
+/obj/item/clothing/gloves/nitrile/evil{
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/obj/item/clothing/suit/longcoat/roboblack,
+/obj/item/clothing/suit/toggle/labcoat/brig_phys,
+/obj/item/clothing/suit/toggle/labcoat/brig_phys,
+/obj/structure/extinguisher_cabinet/directional/west,
+/obj/structure/closet/secure_closet{
+	icon_state = "science";
+	name = "RnD team locker";
+	req_access_txt = "47"
+	},
+/obj/item/storage/box/bodybags,
+/obj/item/clothing/suit/longcoat/roboblack,
+/obj/item/clothing/gloves/nitrile/evil{
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/obj/item/gps/science,
+/obj/item/mmi/syndie,
+/obj/item/mmi/syndie,
+/obj/item/clothing/under/cybersun/coverall,
+/obj/item/clothing/under/cybersun/coverall,
+/obj/item/clothing/suit/armor/vest/syndie,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/science/storage)
 "Jb" = (
@@ -6204,7 +6204,7 @@ Xd
 fO
 UT
 Cc
-mT
+Ja
 cE
 IZ
 fY
@@ -6504,7 +6504,7 @@ QL
 fl
 fl
 QL
-gA
+sZ
 nh
 SM
 QL
@@ -6961,7 +6961,7 @@ lF
 Xm
 QT
 mx
-fU
+xj
 lF
 lF
 ae

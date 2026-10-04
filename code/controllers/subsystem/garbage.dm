@@ -24,7 +24,7 @@ By using these methods of finding references, you can make your life far, far ea
 SUBSYSTEM_DEF(garbage)
 	name = "Garbage"
 	priority = FIRE_PRIORITY_GARBAGE
-	wait = 2 SECONDS
+	wait = 1 SECONDS  // Increased frequency from 2 SECONDS for better throughput
 	flags = SS_POST_FIRE_TIMING|SS_BACKGROUND|SS_NO_INIT
 	runlevels = RUNLEVELS_DEFAULT | RUNLEVEL_LOBBY
 	init_order = INIT_ORDER_GARBAGE
