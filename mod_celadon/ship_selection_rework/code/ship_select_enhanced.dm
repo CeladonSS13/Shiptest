@@ -118,14 +118,14 @@
 				return
 
 			if(template.category == "Pirates")
-				if(CONFIG_GET(flag/WL_Faction) && !checkFactionSQL(usr.key, "Pirates"))
+				if(CONFIG_GET(flag/wl_pirates) && !checkFactionSQL(usr.key, "Pirates"))
 					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Pirates'. Для получения доступа оставьте заявку на сервере Discord."))
 					return
 				if(world.time < CONFIG_GET(number/pirate_time_spawn))
 					to_chat(spawnee, span_warning("Отказано. Фракция пиратов откроется только спустя [round((CONFIG_GET(number/pirate_time_spawn) - world.time)/60/10)] минут."))
 					return
 
-			if(CONFIG_GET(flag/WL_Faction) && template.category == "Elysium")
+			if(CONFIG_GET(flag/wl_elysium) && template.category == "Elysium")
 				if(!checkFactionSQL(usr.key, "Elysium"))
 					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Elysium'. Для получения доступа оставьте заявку на сервере Discord."))
 					return
