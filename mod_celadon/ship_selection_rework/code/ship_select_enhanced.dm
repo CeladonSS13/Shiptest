@@ -145,6 +145,9 @@
 							return
 					if("Пиратство")
 						if(tgui_alert_middle(usr, "Это история вашей смерти. Вы выбираете путь беззакония и всеобщей ненависти. Все вокруг будут пытаться вас убить и даже аванпост назначил за вашу голову награду. У вас нет друзей и надежды, но вас ведь это не волнует?\nЙо-хо-хо и бутылка рома!\n\n(Рекомендуется только для опытых игроков!)", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							if(CONFIG_GET(flag/wl_pirates) && !checkFactionSQL(usr.key, "Pirates"))
+								to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Pirates'. Для получения доступа оставьте заявку на сервере Discord."))
+								return
 							if(world.time > CONFIG_GET(number/pirate_time_spawn))
 								template.prefix = "RSV"
 								template.space_spawn = TRUE
