@@ -160,11 +160,23 @@
 	icon = 'mod_celadon/_storage_icons/icons/machinery/vending.dmi'
 	icon_state = "nanotrasen-voucher"
 
-/obj/item/disk/holodisk/ship/w/engineeringnotice
+/obj/item/reagent_containers/food/drinks/nanotrasenmug
+	name = "nanotrasen-brand mug"
+	desc = "A blue ceramic mug that includes a handle. Nanotrasen-branded and used for serving hot corporate drinks."
+	icon_state = "nanotrasenmug"
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/drinks.dmi'
+	volume = 30
+	spillable = TRUE
+
+/datum/preset_holoimage/engi_guide
+	species_type = /datum/species/human
+	outfit_type = /datum/outfit/job/cel/nanotrasen/ce/nakamura
+
+/obj/item/disk/holodisk/ship/peregrine/engineeringnotice
 	name = "holorecord disk - Engine Introduction"
-	preset_image_type = /datum/preset_holoimage/engi_director
+	preset_image_type = /datum/preset_holoimage/engi_guide
 	preset_record_text = {"
-	NAME NE Engineering Director
+	NAME Engineering Director
 	DELAY 10
 	SAY ...Is this thing on?
 	DELAY 20
@@ -174,7 +186,7 @@
 	DELAY 50
 	SAY The bay is split in two: atmospherics and the tool storage.
 	DELAY 50
-	SAY You are currently in the tool storage. Probably
+	SAY You are currently in the tool storage. Probably.
 	DELAY 50
 	SAY ...While i could waste your time explaining what's going on and what's where.
 	DELAY 50
@@ -195,11 +207,11 @@
 	SAY ...As for now consider equipping some tools and radiation protection. It's in this room somewhere.
 	"}
 
-/obj/item/disk/holodisk/ship/w/supermatter
+/obj/item/disk/holodisk/ship/peregrine/supermatter
 	name = "holorecord disk - Supermatter guide"
-	preset_image_type = /datum/preset_holoimage/engi_director
+	preset_image_type = /datum/preset_holoimage/engi_guide
 	preset_record_text = {"
-	NAME NE Engineering Director
+	NAME Engineering Director
 	DELAY 10
 	SAY ...Uhhh. Welcome Back!
 	DELAY 30
@@ -209,12 +221,23 @@
 	DELAY 20
 	SAY Uhh...
 	DELAY 50
-	SAY So, turn all the termomachines ON. No need to mess with their settings.
+	SAY So, turn all the thermomachines ON. No need to mess with their settings.
 	DELAY 50
 	SAY After that, turn all the gas filters left of the thermomachines ON. Make sure the first filter connected to the green pipes is operational and filters for nitrogen.
 	DELAY 50
 	SAY Connect the green nitrogen canisters to their respective ports. You can find them under the control panel. Once done, turn their pumps ON.
 	DELAY 50
 	SAY Done? Now do the same for the blue canister north of the control panel!
-
+	DELAY 50
+	SAY The piping setup should be up and running by now: Look for an air alarm in the core chamber's airlock.
+	DELAY 50
+	SAY Turn the vents ON and set them to internal. Uncheck the 'external' setting.
+	DELAY 50
+	SAY Now go look for scrubber controls, set them to siphoning with extended range. Beware, vents first, never second.
+	DELAY 50
+	SAY If your engine is not already on fire, you should be all set. Check if the gas inside the chamber is circulating and then engage all the emitters.
+	DELAY 50
+	SAY ...Well, that's all. I hope you're not delaminating and panicking right now. I'm gonna leave you for my lunch break. Don't wanna miss those sandwiches.
+	DELAY 20
+	SAY Good luck!!
 	"}
