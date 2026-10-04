@@ -81,12 +81,16 @@ const Header = (props: { dropdown: any }, _context) => {
         Interstation, WhiteDream, YogStation, и оригинальным SpaceStation devs за их наработки.
       </p>
       <p>
-        <b>Текущий Head Developers: </b>
-        KOCMODECAHTHUK
+        <b>Текущий Head Admin: </b>
+        Evandel
       </p>
       <p>
-        <b>Хост: </b>
+        <b>Host, Head of Developers (Head of Coding), Head of Sprites, Head of Wiki, Head of Maps, Head of Lore: </b>
         Voiko
+      </p>
+      <p>
+        <b>Главный должник шаурмы: </b>
+        Smailfeed
       </p>
       <p>
         <b> Специальное спасибо: </b>
@@ -94,7 +98,7 @@ const Header = (props: { dropdown: any }, _context) => {
       </p>
       <p>
         {'Вы также можете присоединиться к нашему Discord-серверу: '}
-        <a href="https://discord.gg/3HpmBRwfzj">здесь</a>.
+        <a href="https://discord.com/invite/rxsggTJzY3">здесь</a>.
       </p>
       {props.dropdown}
     </Section>
@@ -183,7 +187,7 @@ const Testmerges = (_props, context) => {
       <Section px={1}>
         <h4>
           Этот функционал, который в данный момент активно тестируются и разрабатываются на сервере.{' '}
-          Пожалуйста, сообщайте о любых проблемах или предложениях в оригинальный PR либо в ветку 
+          Пожалуйста, сообщайте о любых проблемах или предложениях в оригинальный PR либо в ветку
           обратной связи на Discord, если таковая имеется.
         </h4>
       </Section>
