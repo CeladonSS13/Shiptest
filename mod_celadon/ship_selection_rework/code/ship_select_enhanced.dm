@@ -127,7 +127,7 @@
 
 			if(CONFIG_GET(flag/wl_elysium) && template.category == "Elysium")
 				if(!checkFactionSQL(usr.key, "Elysium"))
-					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Elysium'. Для получения доступа оставьте заявку на сервере Discord в канале #shiptest-whitelist."))
+					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Elysium Separatists'. Для получения доступа оставьте заявку на сервере Discord в канале #shiptest-whitelist."))
 					return
 
 			if(template.category == "Independent")
