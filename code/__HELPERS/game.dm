@@ -270,7 +270,6 @@ block( \
 				if(I.imp_in)
 					. |= I.imp_in
 
-#define SIGNV(X) ((X<0)?-1:1)
 
 /proc/inLineOfSight(X1,Y1,X2,Y2,Z=1,PX1=16.5,PY1=16.5,PX2=16.5,PY2=16.5)
 	var/turf/T
@@ -301,7 +300,6 @@ block( \
 			if(IS_OPAQUE_TURF(T))
 				return 0
 	return 1
-#undef SIGNV
 
 
 /proc/isInSight(atom/A, atom/B)

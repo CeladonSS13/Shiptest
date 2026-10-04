@@ -1879,8 +1879,6 @@
 		var/list/dat = list()
 		dat += thing_to_check
 
-//		usr << browse(dat.Join("<br>"), "window=related_[C];size=420x300")
-
 		var/datum/browser/popup = new(usr, "related_[C]", "Related accounts by [uppertext(href_list["showrelatedacc"])]:", 425, 300)
 		popup.set_content(dat.Join("<br>"))
 		popup.open()

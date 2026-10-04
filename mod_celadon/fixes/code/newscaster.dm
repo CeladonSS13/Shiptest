@@ -275,21 +275,21 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				dat += "Добро пожаловать в новостной монитор #[unit_no].<BR> Системы успешно загружены и доступны."
 				dat += "<BR><FONT SIZE=1>Разработано корпорацией: Griffon Inc</FONT>"
 				if(GLOB.news_network.wanted_issue.active)
-					dat+= "<HR><A href='?src=[REF(src)];view_wanted=1'>Межсекторный розыск</A>"
-				dat+= "<HR><BR><A href='?src=[REF(src)];create_channel=1'>Создать новостной канал</A>"
-				dat+= "<BR><A href='?src=[REF(src)];view=1'>Ознакомиться с лентой каналов</A>"
-				dat+= "<BR><A href='?src=[REF(src)];create_feed_story=1'>> Создать новый пост</A>"
-				dat+= "<BR><A href='?src=[REF(src)];menu_paper=1'>> Напечатать газету</A>"
-				dat+= "<BR><A href='?src=[REF(src)];refresh=1'>Обновить пользователя</A>"
-				dat+= "<BR><BR><A href='?src=[REF(human_or_robot_user)];mach_close=newscaster_main'>Выйти</A>"
+					dat+= "<HR><A href='byond://?src=[REF(src)];view_wanted=1'>Межсекторный розыск</A>"
+				dat+= "<HR><BR><A href='byond://?src=[REF(src)];create_channel=1'>Создать новостной канал</A>"
+				dat+= "<BR><A href='byond://?src=[REF(src)];view=1'>Ознакомиться с лентой каналов</A>"
+				dat+= "<BR><A href='byond://?src=[REF(src)];create_feed_story=1'>> Создать новый пост</A>"
+				dat+= "<BR><A href='byond://?src=[REF(src)];menu_paper=1'>> Напечатать газету</A>"
+				dat+= "<BR><A href='byond://?src=[REF(src)];refresh=1'>Обновить пользователя</A>"
+				dat+= "<BR><BR><A href='byond://?src=[REF(human_or_robot_user)];mach_close=newscaster_main'>Выйти</A>"
 				if(securityCaster)
 					var/wanted_already = 0
 					if(GLOB.news_network.wanted_issue.active)
 						wanted_already = 1
 					dat+="<HR><B>Модуль безопасности системы Griffon:</B><BR>"
-					dat+="<BR><A href='?src=[REF(src)];menu_wanted=1'>[(wanted_already) ? ("Настроить") : ("Объявить")] \"Розыск\"</A>"
-					dat+="<BR><A href='?src=[REF(src)];menu_censor_story=1'>Цензура новостей</A>"
-					dat+="<BR><A href='?src=[REF(src)];menu_censor_channel=1'>Установить метку D-Notice</A>"
+					dat+="<BR><A href='byond://?src=[REF(src)];menu_wanted=1'>[(wanted_already) ? ("Настроить") : ("Объявить")] \"Розыск\"</A>"
+					dat+="<BR><A href='byond://?src=[REF(src)];menu_censor_story=1'>Цензура новостей</A>"
+					dat+="<BR><A href='byond://?src=[REF(src)];menu_censor_channel=1'>Установить метку D-Notice</A>"
 				dat+="<BR><HR>Вы были успешно зарегистрированы под именем:<BR><FONT COLOR='green'>[scanned_user]</FONT>"
 			if(1)
 				dat+= "Доступные каналы в вашем секторе:<HR>"
@@ -298,31 +298,31 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
 						if(CHANNEL.is_admin_channel)
-							dat+="<B><FONT style='BACKGROUND-COLOR: LightGreen '><A href='?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A></FONT></B><BR>"
+							dat+="<B><FONT style='BACKGROUND-COLOR: LightGreen '><A href='byond://?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A></FONT></B><BR>"
 						else
-							dat+="<B><A href='?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR></B>"
-				dat+="<BR><HR><A href='?src=[REF(src)];refresh=1'>Обновить</A>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
+							dat+="<B><A href='byond://?src=[REF(src)];show_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR></B>"
+				dat+="<BR><HR><A href='byond://?src=[REF(src)];refresh=1'>Обновить</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(2)
 				dat+="Регистрация нового канала:"
-				dat+="<HR><B><A href='?src=[REF(src)];set_channel_name=1'>Название канала</A>:</B> [channel_name]<BR>"
+				dat+="<HR><B><A href='byond://?src=[REF(src)];set_channel_name=1'>Название канала</A>:</B> [channel_name]<BR>"
 				dat+="<B>Автор канала:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<B><A href='?src=[REF(src)];set_channel_lock=1'>Будет ли канал являться публичным?</A>:</B> [(c_locked) ? ("Нет") : ("Да")]<BR><BR>"
-				dat+="<BR><A href='?src=[REF(src)];submit_new_channel=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
+				dat+="<B><A href='byond://?src=[REF(src)];set_channel_lock=1'>Будет ли канал являться публичным?</A>:</B> [(c_locked) ? ("Нет") : ("Да")]<BR><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];submit_new_channel=1'>Подтвердить</A><BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
 			if(3)
 				dat+="Публикация нового поста:"
-				dat+="<HR><B><A href='?src=[REF(src)];set_channel_receiving=1'>Выбранный канал</A>:</B> [channel_name]<BR>"
+				dat+="<HR><B><A href='byond://?src=[REF(src)];set_channel_receiving=1'>Выбранный канал</A>:</B> [channel_name]<BR>"
 				dat+="<B>Автор сообщения:</B> <FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<B><A href='?src=[REF(src)];set_new_message=1'>Сообщение</A>:</B> <BR><font face=\"[PEN_FONT]\">[parsemarkdown(msg, user)]</font><BR>"
-				dat+="<B><A href='?src=[REF(src)];set_attachment=1'>Прикреплённые сообщения</A>:</B>  [(picture ? "Фото прикреплено" : "Фото отсутствует")]</BR>"
-				dat+="<B><A href='?src=[REF(src)];set_comment=1'>Комментарии [allow_comments ? "разрешены" : "отключены"]</A></B><BR>"
-				dat+="<BR><A href='?src=[REF(src)];submit_new_message=1'>Подтвердить</A><BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
+				dat+="<B><A href='byond://?src=[REF(src)];set_new_message=1'>Сообщение</A>:</B> <BR><font face=\"[PEN_FONT]\">[parsemarkdown(msg, user)]</font><BR>"
+				dat+="<B><A href='byond://?src=[REF(src)];set_attachment=1'>Прикреплённые сообщения</A>:</B>  [(picture ? "Фото прикреплено" : "Фото отсутствует")]</BR>"
+				dat+="<B><A href='byond://?src=[REF(src)];set_comment=1'>Комментарии [allow_comments ? "разрешены" : "отключены"]</A></B><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];submit_new_message=1'>Подтвердить</A><BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Отмена</A><BR>"
 			if(4)
 				dat+="Новый пост успешно загружен ​​на канал '[channel_name]'.<BR><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(5)
 				dat+="Канал '[channel_name]' успешно создан.<BR><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(6)
 				dat+="<B><FONT COLOR='DarkTurquoisen'>ОШИБКА:</FONT> <FONT COLOR='Crimson'>Не удалось отправить новый пост в сеть.</FONT></B><HR><BR>"
 				if(channel_name=="")
@@ -331,7 +331,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<FONT COLOR='DarkTurquoisen'>Автор канала не определён.</FONT><BR>"
 				if(msg == "" || msg == "\[REDACTED\]")
 					dat+="<FONT COLOR='DarkTurquoisen'>Недопустимое сообщение.</FONT><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[3]'>Return</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[3]'>Return</A><BR>"
 			if(7)
 				dat+="<B><FONT COLOR='DarkTurquoisen'>ОШИБКА:</FONT> <FONT COLOR='Crimson'>Не удалось создать канал в сети Griffon.</FONT></B><HR><BR>"
 				var/list/existing_authors = list()
@@ -353,7 +353,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<FONT COLOR='DarkTurquoisen'>Название канала уже используется.</FONT><BR>"
 				if(scanned_user=="Unknown")
 					dat+="<FONT COLOR='DarkTurquoisen'>Автор канала не определён.</FONT><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[2]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[2]'>Вернуться</A><BR>"
 			if(8)
 				var/total_num=length(GLOB.news_network.network_channels)
 				var/active_num=total_num
@@ -365,8 +365,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 						active_num--
 				dat+="В настоящее время сеть обслуживает в общей сложности [total_num] новостных каналов, [active_num] из них активны, и всего [message_num] постов."
 				dat+="<BR><BR><B>Остаток жидкой бумаги:</B> [(paper_remaining) *100 ] cm^3"
-				dat+="<BR><BR><A href='?src=[REF(src)];print_paper=[0]'>Распечатать газету</A>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
+				dat+="<BR><BR><A href='byond://?src=[REF(src)];print_paper=[0]'>Распечатать газету</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(9)
 				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT>\]</FONT><HR>"
 				if(viewing_channel.censored)
@@ -393,9 +393,9 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 							if(MESSAGE.locked)
 								dat+="<b>Комментарии заблокированы</b><br>"
 							else
-								dat+="<a href='?src=[REF(src)];new_comment=[REF(MESSAGE)]'>Прокомментировать</a><br>"
-				dat+="<BR><HR><A href='?src=[REF(src)];refresh=1'>Обновить</A>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[1]'>Вернуться</A>"
+								dat+="<a href='byond://?src=[REF(src)];new_comment=[REF(MESSAGE)]'>Прокомментировать</a><br>"
+				dat+="<BR><HR><A href='byond://?src=[REF(src)];refresh=1'>Обновить</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[1]'>Вернуться</A>"
 			if(10)
 				dat+="<B>Инструмент цензуры каналов сети Griffon</B><BR>"
 				dat+="<FONT SIZE=1>ПРИМЕЧАНИЕ: Из-за технических работ полное удаление каналов невозможно.<BR>"
@@ -405,8 +405,8 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<I>Активные каналы не найдены...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
-						dat+="<A href='?src=[REF(src)];pick_censor_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
+						dat+="<A href='byond://?src=[REF(src)];pick_censor_channel=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(11)
 				dat+="<B>Модуль D-Notice:</B><HR>"
 				dat+="<FONT SIZE=1>Метка D-Notice должна быть прикреплена к каналу, если администрация сочтет его запрещённым для сектора. "
@@ -416,24 +416,24 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<I>Активные каналы не найдены...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_channel/CHANNEL in GLOB.news_network.network_channels)
-						dat+="<A href='?src=[REF(src)];pick_d_notice=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
+						dat+="<A href='byond://?src=[REF(src)];pick_d_notice=[REF(CHANNEL)]'>[CHANNEL.channel_name]</A> [(CHANNEL.censored) ? ("<FONT COLOR='red'>***</FONT>") : ""]<BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(12)
 				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[ Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
-				dat+="<FONT SIZE=2><A href='?src=[REF(src)];censor_channel_author=[REF(viewing_channel)]'>[(viewing_channel.authorCensor) ? ("Отменить цензуру автора") : ("Скрыть имя автора")]</A></FONT><HR>"
+				dat+="<FONT SIZE=2><A href='byond://?src=[REF(src)];censor_channel_author=[REF(viewing_channel)]'>[(viewing_channel.authorCensor) ? ("Отменить цензуру автора") : ("Скрыть имя автора")]</A></FONT><HR>"
 				if(!length(viewing_channel.messages))
 					dat+="<I>В канале не найдено постов...</I><BR>"
 				else
 					for(var/datum/newscaster/feed_message/MESSAGE in viewing_channel.messages)
 						dat+="-[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Автор <FONT COLOR='DarkTurquoise'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
-						dat+="<FONT SIZE=2><A href='?src=[REF(src)];censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Отменить цензуру сообщения") : ("Заблокировать сообщение")]</A>  -  <A href='?src=[REF(src)];censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Отменить цензуру имени автора") : ("Скрыть имя автора")]</A></FONT><BR>"
-						dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='?src=[REF(src)];lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Разблокированы" : "Заблокированы"]</a><br>"
+						dat+="<FONT SIZE=2><A href='byond://?src=[REF(src)];censor_channel_story_body=[REF(MESSAGE)]'>[(MESSAGE.bodyCensor) ? ("Отменить цензуру сообщения") : ("Заблокировать сообщение")]</A>  -  <A href='byond://?src=[REF(src)];censor_channel_story_author=[REF(MESSAGE)]'>[(MESSAGE.authorCensor) ? ("Отменить цензуру имени автора") : ("Скрыть имя автора")]</A></FONT><BR>"
+						dat+="[MESSAGE.comments.len] comment[MESSAGE.comments.len > 1 ? "s" : ""]: <a href='byond://?src=[REF(src)];lock_comment=[REF(MESSAGE)]'>[MESSAGE.locked ? "Разблокированы" : "Заблокированы"]</a><br>"
 						for(var/datum/newscaster/feed_comment/comment in MESSAGE.comments)
-							dat+="[comment.body] <a href='?src=[REF(src)];del_comment=[REF(comment)];del_comment_msg=[REF(MESSAGE)]'>X</a><br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[10]'>Вернуться</A>"
+							dat+="[comment.body] <a href='byond://?src=[REF(src)];del_comment=[REF(comment)];del_comment_msg=[REF(MESSAGE)]'>X</a><br><font size=1>[comment.author] [comment.time_stamp]</font><br>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[10]'>Вернуться</A>"
 			if(13)
 				dat+="<B>[viewing_channel.channel_name]:<BR> </B><FONT SIZE=1>\[ Автор: <FONT COLOR='DarkTurquoise'>[viewing_channel.returnAuthor(-1)]</FONT> \]</FONT><BR>"
-				dat+="Если вы считаете cообщения канала, что перечислены ниже, опасными для сектора, вы можете <A href='?src=[REF(src)];toggle_d_notice=[REF(viewing_channel)]'>редактировать метку D-Notice для этого канала</A>.<HR>"
+				dat+="Если вы считаете cообщения канала, что перечислены ниже, опасными для сектора, вы можете <A href='byond://?src=[REF(src)];toggle_d_notice=[REF(viewing_channel)]'>редактировать метку D-Notice для этого канала</A>.<HR>"
 				if(viewing_channel.censored)
 					dat+="<FONT COLOR='red'><B>ВНИМАНИЕ: </B></FONT>Этот канал был признан угрожающим благополучию сектора и отмечен меткой D-Notice администрацией Griffon.<BR>"
 					dat+="Под действием метки D-Notice дальнейшее добавление новых постов запрещено.</FONT><BR><BR>"
@@ -443,7 +443,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					else
 						for(var/datum/newscaster/feed_message/MESSAGE in viewing_channel.messages)
 							dat+="[MESSAGE.returnBody(-1)] <BR><FONT SIZE=1>\[Автор <FONT COLOR='DarkTurquoisen'>[MESSAGE.returnAuthor(-1)]</FONT>\]</FONT><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[11]'>Вернуться</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[11]'>Вернуться</A>"
 			if(14)
 				dat+="<B>Модуль безопасности:</B>"
 				var/wanted_already = 0
@@ -454,20 +454,20 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 				if(wanted_already)
 					dat+="<FONT SIZE=2><BR><I>Преступник уже объявлен в новостных каналах. Вы можете отредактировать или отменить ориентировку ниже.</FONT></I>"
 				dat+="<HR>"
-				dat+="<A href='?src=[REF(src)];set_wanted_name=1'>Имя цели</A>: [channel_name] <BR>"
-				dat+="<A href='?src=[REF(src)];set_wanted_desc=1'>Описание</A>: [msg] <BR>"
-				dat+="<A href='?src=[REF(src)];set_attachment=1'>Прикреплённые материалы</A>: [(picture ? "Фото прикрепленно" : "Фото отсутствует")]</BR>"
+				dat+="<A href='byond://?src=[REF(src)];set_wanted_name=1'>Имя цели</A>: [channel_name] <BR>"
+				dat+="<A href='byond://?src=[REF(src)];set_wanted_desc=1'>Описание</A>: [msg] <BR>"
+				dat+="<A href='byond://?src=[REF(src)];set_attachment=1'>Прикреплённые материалы</A>: [(picture ? "Фото прикрепленно" : "Фото отсутствует")]</BR>"
 				if(wanted_already)
 					dat+="<B>Розыск был объявлен пользователем: </B><FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT><BR>"
 				else
 					dat+="<B>Розыск будет объявлен пользователем:</B><FONT COLOR='green'>[scanned_user]</FONT><BR>"
-				dat+="<BR><A href='?src=[REF(src)];submit_wanted=[end_param]'>[(wanted_already) ? ("Редактировать цель") : ("Подтвердить")]</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];submit_wanted=[end_param]'>[(wanted_already) ? ("Редактировать цель") : ("Подтвердить")]</A>"
 				if(wanted_already)
-					dat+="<BR><A href='?src=[REF(src)];cancel_wanted=1'>Отменить розыск</A>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Отмена</A>"
+					dat+="<BR><A href='byond://?src=[REF(src)];cancel_wanted=1'>Отменить розыск</A>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Отмена</A>"
 			if(15)
 				dat+="<FONT COLOR='green'>Розыск на '[channel_name]' был успешно опубликован на первых строчках сети Griffon.</FONT><BR><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(16)
 				dat+="<B><FONT COLOR='DarkTurquoisen'>ERROR: Розыск был отменён сетью Griffon.</B></FONT><HR><BR>"
 				if(channel_name=="" || channel_name == "\[REDACTED\]")
@@ -476,10 +476,10 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<FONT COLOR='DarkTurquoisen'>Автор не идентифицирован.</FONT><BR>"
 				if(msg == "" || msg == "\[REDACTED\]")
 					dat+="<FONT COLOR='DarkTurquoisen'>Неверное описание.</FONT><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(17)
 				dat+="<B>Розыск успешно был удалён с сети Griffon</B><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(18)
 				if(GLOB.news_network.wanted_issue.active)
 					dat+="<B><FONT COLOR ='FireBrick'>-- ОБЪЯВЛЕН РОЗЫСК --</B></FONT><BR><FONT SIZE=2>\[Подтверждено: <FONT COLOR='green'>[GLOB.news_network.wanted_issue.scannedUser]</FONT>\]</FONT><HR>"
@@ -493,16 +493,16 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 						dat+="Отсутствуют"
 				else
 					dat+="Объявленных розысков не найдено<BR><BR>"
-				dat+="<BR><BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(19)
 				dat+="<FONT COLOR='green'>Розыск для '[channel_name]' успешно отредактирован</FONT><BR><BR>"
-				dat+="<BR><A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
+				dat+="<BR><A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A><BR>"
 			if(20)
 				dat+="<FONT COLOR='green'>Файл успешно был распечатан. Пожалуйста, возьмите газету из нижней части машины.</FONT><BR><BR>"
-				dat+="<A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
+				dat+="<A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 			if(21)
 				dat+="<FONT COLOR='DarkTurquoisen'>Невозможно напечатать газету. Недостаточно бумаги. Пожалуйста, сообщите обслуживающему персоналу о необходимости пополнить запасы машины.</FONT><BR><BR>"
-				dat+="<A href='?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
+				dat+="<A href='byond://?src=[REF(src)];setScreen=[0]'>Вернуться</A>"
 		var/datum/browser/popup = new(human_or_robot_user, "newscaster_main", "Новостной монитор #[unit_no]", 400, 600)
 		popup.set_content(dat)
 		popup.open()
@@ -917,7 +917,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="</ul>"
 				if(scribble_page==curr_page)
 					dat+="<BR><I>В конце этой страницы есть небольшие каракули... \"[scribble]\"</I>"
-				dat+= "<HR><DIV STYLE='float:right;'><A href='?src=[REF(src)];next_page=1'>Next Page</A></DIV> <div style='float:left;'><A href='?src=[REF(human_user)];mach_close=newspaper_main'>Close</A></DIV>"
+				dat+= "<HR><DIV STYLE='float:right;'><A href='byond://?src=[REF(src)];next_page=1'>Next Page</A></DIV> <div style='float:left;'><A href='byond://?src=[REF(human_user)];mach_close=newspaper_main'>Close</A></DIV>"
 			if(1) // X channel pages inbetween.
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
@@ -946,7 +946,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 						dat+="</ul>"
 				if(scribble_page==curr_page)
 					dat+="<BR><I>В конце этой страницы есть небольшая каракуля... \"[scribble]\"</I>"
-				dat+= "<BR><HR><DIV STYLE='float:left;'><A href='?src=[REF(src)];prev_page=1'>Previous Page</A></DIV> <DIV STYLE='float:right;'><A href='?src=[REF(src)];next_page=1'>Next Page</A></DIV>"
+				dat+= "<BR><HR><DIV STYLE='float:left;'><A href='byond://?src=[REF(src)];prev_page=1'>Previous Page</A></DIV> <DIV STYLE='float:right;'><A href='byond://?src=[REF(src)];next_page=1'>Next Page</A></DIV>"
 			if(2) //Last page
 				for(var/datum/newscaster/feed_channel/NP in news_content)
 					pages++
@@ -964,7 +964,7 @@ MAPPING_DIRECTIONAL_HELPERS(/obj/machinery/newscaster/security_unit, 30)
 					dat+="<I>Кроме неинтересных объявлений на этой странице ничего нет...</I>"
 				if(scribble_page==curr_page)
 					dat+="<BR><I>В конце этой страницы есть небольшая каракуля... \"[scribble]\"</I>"
-				dat+= "<HR><DIV STYLE='float:left;'><A href='?src=[REF(src)];prev_page=1'>Previous Page</A></DIV>"
+				dat+= "<HR><DIV STYLE='float:left;'><A href='byond://?src=[REF(src)];prev_page=1'>Previous Page</A></DIV>"
 		dat+="<BR><HR><div align='center'>[curr_page+1]</div>"
 		human_user << browse(dat, "window=newspaper_main;size=300x400")
 		onclose(human_user, "newspaper_main")
