@@ -11,6 +11,7 @@
 	apply_method = "apply"
 	self_delay = 30		// three seconds
 	dissolvable = FALSE
+	transform = matrix(1, 0, 0, 0, 1, 0) // [CELADON-ADD] Уменьшаем спрайты, отказываемся от силы земли.
 
 /obj/item/reagent_containers/pill/patch/attack(mob/living/L, mob/user)
 	if(ishuman(L))

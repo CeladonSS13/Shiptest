@@ -1,7 +1,7 @@
 /obj/item/gun/ballistic/automatic/assault/g36sh
 //Описание
-	name = "\improper G36-SH"
-	desc = "Solar Federation's elite assault rifle. This version is shortened. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	name = "\improper G36с"
+	desc = "An elite police carbine of the Solar Federation. A shortened version of the G36 designed for use in confined spaces. It is used by Solar Federation police units and special forces. It fires 5.56×45mm ammunition."
 //Иконки
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
@@ -43,24 +43,9 @@
 
 NO_MAG_GUN_HELPER(automatic/assault/g36sh)
 
-/obj/item/gun/ballistic/automatic/assault/g36sh/inteq
-	name = "\improper G36m-SH"
-	desc = "A SolFed G36-SH, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
-	icon_state = "g36shinteq"
-	item_state = "g36shinteq"
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/onmob.dmi'
-	manufacturer = MANUFACTURER_INTEQ
-	empty_indicator = TRUE
-	empty_alarm = TRUE
-	zoomable = TRUE
-NO_MAG_GUN_HELPER(automatic/assault/g36sh/inteq)
-
 /obj/item/gun/ballistic/automatic/assault/g36
 	name = "\improper G36"
-	desc = "Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "An elite assault rifle of the Solar Federation. Originally developed prior to the unification of Earth, this model was subsequently manufactured by Scarborough and later modified by Solar Arsenal after Scarborough shifted its field of operations. The model features composite materials and synthetic wood inserts. It uses 5.56×45mm ammunition."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/solar_armories/righthand.dmi'
@@ -99,11 +84,22 @@ NO_MAG_GUN_HELPER(automatic/assault/g36)
 /obj/item/gun/ballistic/automatic/assault/g36/black
 	icon_state = "g36_black"
 	item_state = "g36_black"
-	desc = "Trophy version of Solar Federation's elite assault rifle. Originally developed on preUnited earth, the design was later picked by Scarborough, and modified by Solar Armories after Scarborough switched it's focus. Uses 5.56x45 rounds."
+	desc = "A rare, elite assault rifle. One of the early Scarborough models. It was designed prior to the unification of Earth but became obsolete after Solar Arsenal began producing an improved version. It features an integrated sight and uses 5.56x45mm ammunition."
+	zoom_amt = 4
+	manufacturer = MANUFACTURER_SCARBOROUGH
+	slot_available = list(
+		ATTACHMENT_SLOT_MUZZLE = 1,
+		ATTACHMENT_SLOT_RAIL = 1,
+	)
+
+	slot_offsets = list(
+		ATTACHMENT_SLOT_MUZZLE = list("x" = 46, "y" = 19),
+		ATTACHMENT_SLOT_RAIL   = list("x" = 33, "y" = 16),
+	)
 
 /obj/item/gun/ballistic/automatic/assault/g36/inteq
 	name = "\improper G36m"
-	desc = "A SolFed G36, modified to IRMG standarts. Used by elite mercenaries. Uses 5.56x45."
+	desc = "Elite InteQ assault rifle. It is a modification of the G36. It features an empty-magazine indicator and uses 5.56×45mm ammunition."
 	icon_state = "g36inteq"
 	item_state = "g36inteq"
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/inteq/48x32.dmi'
@@ -184,15 +180,15 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	wield_slowdown = 0.75
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
 
-/obj/item/gun/ballistic/automatic/assault/cm82/solfed
+/obj/item/gun/ballistic/automatic/assault/cm82/elysium
 	name = "\improper Model 82 Carbine"
 	desc = "The standard Solarian assault rifle, somewhat outdated, but still accurate, reliable and easy to use. This version was manufactured in the Elysium Republic under license from the Solar Federation for the Elysium Brigade. Chambered in 5.56х42 mm."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/48x32.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/righthand.dmi'
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/clip_solfed/onmob.dmi'
-	icon_state = "cm82_solfed"
-	item_state = "cm82_solfed"
+	icon_state = "cm82_elysium"
+	item_state = "cm82_elysium"
 	unique_reskin = null
 	unique_reskin_changes_inhand = FALSE // убирает возможность их рескинить по альт-клику
-NO_MAG_GUN_HELPER(automatic/assault/cm82/solfed)
+NO_MAG_GUN_HELPER(automatic/assault/cm82/elysium)

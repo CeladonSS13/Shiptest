@@ -1,7 +1,8 @@
 // Radios use a large variety of predefined frequencies.
 
 //say based modes like binary are in living/say.dm
-
+// Наши изменения занимают больше 50% файла, принято решение перенести всё в модуль code\__DEFINES\~mod_celadon\radio.dm
+/*
 #define RADIO_CHANNEL_COMMON "Common"
 #define RADIO_KEY_COMMON ";"
 
@@ -29,7 +30,7 @@
 #define RADIO_KEY_CENTCOM "e"
 #define RADIO_TOKEN_CENTCOM ":e"
 
-#define RADIO_CHANNEL_SOLGOV "SolFed" //#define RADIO_CHANNEL_SOLGOV "SolGov"	// [CELADON-EDIT] - CELADON_FIXES
+#define RADIO_CHANNEL_SOLGOV "SolGov"
 #define RADIO_KEY_SOLGOV "s"
 #define RADIO_TOKEN_SOLGOV ":s"
 
@@ -59,7 +60,6 @@
 
 #define RADIO_CHANNEL_CTF_RED "Red Team"
 #define RADIO_CHANNEL_CTF_BLUE "Blue Team"
-
 
 #define MIN_FREE_FREQ 1201 // -------------------------------------------------
 // Frequencies are always odd numbers and range from 1201 to 1599.
@@ -135,3 +135,5 @@
 
 ///give this to can_receive to specify that there is no restriction on what virtual z level this signal is sent to
 #define RADIO_NO_Z_LEVEL_RESTRICTION 0
+*/
+// Наши изменения занимают больше 50% файла, принято решение перенести всё в модуль code\__DEFINES\~mod_celadon\radio.dm

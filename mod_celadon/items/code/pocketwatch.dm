@@ -53,4 +53,3 @@ var/round_start_time
 		usr.visible_message (span_notice("[usr] taps their foot on the floor, arrogantly pointing at the [src] in their hand with a look of derision in their eyes, not noticing it's closed."), span_notice("You point down at the [src], an arrogant look about your eyes."))
 	else
 		usr.visible_message (span_notice("[usr] taps their foot on the floor, arrogantly pointing at the [src] in their hand with a look of derision in their eyes."), span_notice("You point down at the [src], an arrogant look about your eyes."))
-

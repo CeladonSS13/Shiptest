@@ -989,7 +989,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					mutant_category = 0
 
 			//TGUI preferences when
-			if("Scarred Eye" in all_quirks)
+			if("Поврежденный глаз" in all_quirks) // [CELADON-EDIT] - OLD CODE: if("Scarred Eye" in all_quirks)
 				if(!mutant_category)
 					dat += APPEARANCE_CATEGORY_COLUMN
 				dat += "<h3>Scarred Eye</h3>"
@@ -1968,11 +1968,11 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 					break
 		points_balance += discount
 		checked_langs += lang_type
-	if("Trilingual" in all_quirks)
+	if("Лингвист" in all_quirks) // [CELADON-EDIT] - OLD CODE: if("Trilingual" in all_quirks)
 		points_balance += 2
-	if("Polyglot" in all_quirks)
+	if("Полиглот" in all_quirks) // [CELADON-EDIT] - OLD CODE: if("Trilingual" in all_quirks)
 		points_balance += 5
-	if("Monolingual" in all_quirks)
+	if("Одноязычный" in all_quirks) // [CELADON-EDIT] - OLD CODE: if("Trilingual" in all_quirks)
 		points_balance -= 2
 	return points_balance
 

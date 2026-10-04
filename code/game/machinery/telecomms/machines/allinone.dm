@@ -19,7 +19,9 @@
 /obj/machinery/telecomms/allinone/Initialize()
 	. = ..()
 	if (intercept)
-		freq_listening = list(FREQ_SYNDICATE)
+		freq_listening = list(FREQ_All_RANGE)	//freq_listening = list(FREQ_SYNDICATE) // [CELADON-EDIT] - FACTION_RADIO
+
+#undef FREQ_All_RANGE
 
 /obj/machinery/telecomms/allinone/receive_signal(datum/signal/subspace/signal)
 	if(!istype(signal) || signal.transmission_method != TRANSMISSION_SUBSPACE)  // receives on subspace only

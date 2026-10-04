@@ -666,6 +666,7 @@
 		return inebriation?.drunk_value
 	return 0
 
+/* [CELADON-DELETE] - Отключено. Крайне неприятная болезнь.
 /mob/living/proc/adjust_lung_inflammation(amount)
 	if(!isnum(amount))
 		CRASH("adjust_lung_inflammation: called with an invalid amount. (Got: [amount])")
@@ -686,9 +687,10 @@
 	else if(set_to > 0)
 		apply_status_effect(/datum/status_effect/lung_inflammation, set_to)
 
-/// Returns the amount of lung inflammation the mob is experiencing
+// Returns the amount of lung inflammation the mob is experiencing
 /mob/living/proc/get_lung_inflammation()
 	var/datum/status_effect/lung_inflammation/inflammation = has_status_effect(/datum/status_effect/lung_inflammation)
 	if(inflammation)
 		return inflammation?.inflammation
 	return 0
+[/CELADON-DELETE] */

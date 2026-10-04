@@ -52,19 +52,11 @@
 /turf/open/floor/plating/asteroid/dirt/grass/jungle,
 /area/template_noop)
 "ee" = (
-/obj/effect/mob_spawn/human/skeleton/alive{
-	icon = 'mod_celadon/_storage_icons/icons/mobs/Miko.dmi';
-	icon_state = "Miko";
-	density = 0;
-	name = "deceased body";
-	mob_name = "vampire";
-	assignedrole = "Vampire";
-	desc = "<i>Окровавленное тело девушки, что не успело разложиться. Возможно вы уже замечали где-то это лицо прежде, например, в какой-нибудь научной передачи.</i>"
-	},
 /obj/effect/decal/cleanable/blood,
 /obj/effect/temp_visual/light_ash,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/mob_spawn/human/corpse/miko,
 /turf/open/floor/wood/ebony,
 /area/ruin/jungle/cavecrew/bridge{
 	lightswitch = 0
@@ -1110,11 +1102,22 @@
 	})
 "Ov" = (
 /obj/structure/table/optable,
-/obj/effect/mob_spawn/human/skeleton/alive,
 /obj/effect/decal/cleanable/blood/old,
 /obj/effect/temp_visual/light_ash,
 /obj/effect/decal/cleanable/cobweb/cobweb2,
 /obj/structure/spider/stickyweb,
+/obj/item/stack/sheet/bone{
+	pixel_x = -5;
+	pixel_y = 1
+	},
+/obj/item/stack/sheet/bone{
+	pixel_x = 6;
+	pixel_y = 1
+	},
+/obj/item/stack/sheet/bone{
+	pixel_x = -2;
+	pixel_y = -3
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
 "Oz" = (
