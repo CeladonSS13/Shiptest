@@ -99,10 +99,12 @@
 			if(GLOB.real_names_joined.Find(name))
 				to_chat(spawnee, span_warning("Кто-то уже создал корабль с этим именем."))
 				return
-			if(template.category == "Pirates" && world.time < CONFIG_GET(number/pirate_time_spawn))
-				// Уводим логику в mod_celadon\ship_selection_rework\code\ship_select_enhanced.dm, но что, чёрт возьми, это такое? Мои глаза истекают кровью. Пожалуйста исправьте эту логику.
+			if(template.category == "Pirates")
 				return
+				// Уводим логику в mod_celadon\ship_selection_rework\code\ship_select_enhanced.dm, но что, чёрт возьми, это такое? Мои глаза истекают кровью. Пожалуйста исправьте эту логику.
 			if(template.category == "Independent")
+				return
+			if(template.category == "Elysium")
 				return
 			// [/CELADON-ADD]
 			if(SSovermap.ship_spawning)

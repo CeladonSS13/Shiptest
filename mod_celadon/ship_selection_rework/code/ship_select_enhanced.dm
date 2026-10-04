@@ -116,9 +116,20 @@
 			if(GLOB.real_names_joined.Find(name))
 				to_chat(spawnee, span_warning("Someone has spawned with this name already."))
 				return
-			if(template.category == "Pirates" && world.time < CONFIG_GET(number/pirate_time_spawn))
-				to_chat(spawnee, span_warning("Отказано. Фракция пиратов откроется только спустя [round((CONFIG_GET(number/pirate_time_spawn) - world.time)/60/10)] минут."))
-				return
+
+			if(template.category == "Pirates")
+				if(CONFIG_GET(flag/wl_pirates) && !checkFactionSQL(usr.key, "Pirates"))
+					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Pirates'. Для получения доступа оставьте заявку на сервере Discord в канале #shiptest-whitelist."))
+					return
+				if(world.time < CONFIG_GET(number/pirate_time_spawn))
+					to_chat(spawnee, span_warning("Отказано. Фракция пиратов откроется только спустя [round((CONFIG_GET(number/pirate_time_spawn) - world.time)/60/10)] минут."))
+					return
+
+			if(CONFIG_GET(flag/wl_elysium) && template.category == "Elysium")
+				if(!checkFactionSQL(usr.key, "Elysium"))
+					to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Elysium Separatists'. Для получения доступа оставьте заявку на сервере Discord в канале #shiptest-whitelist."))
+					return
+
 			if(template.category == "Independent")
 				var/choice = tgui_alert_middle(usr, "Перед вами встаёт выбор вашей дальнейшей судьбы. Выберите стиль игры, чтобы узнать подробности", "Стиль игры", list("Пацифизм", "Нейтралитет", "Пиратство"))
 				if(!choice)
@@ -134,6 +145,9 @@
 							return
 					if("Пиратство")
 						if(tgui_alert_middle(usr, "Это история вашей смерти. Вы выбираете путь беззакония и всеобщей ненависти. Все вокруг будут пытаться вас убить и даже аванпост назначил за вашу голову награду. У вас нет друзей и надежды, но вас ведь это не волнует?\nЙо-хо-хо и бутылка рома!\n\n(Рекомендуется только для опытых игроков!)", "Стиль игры", list("Подтвердить", "Отмена")) == "Подтвердить")
+							if(CONFIG_GET(flag/wl_pirates) && !checkFactionSQL(usr.key, "Pirates"))
+								to_chat(spawnee, span_danger("У вас отсутствует доступ к вайтлисту фракции 'Pirates'. Для получения доступа оставьте заявку на сервере Discord в канале #shiptest-whitelist."))
+								return
 							if(world.time > CONFIG_GET(number/pirate_time_spawn))
 								template.prefix = "RSV"
 								template.space_spawn = TRUE
