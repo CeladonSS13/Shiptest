@@ -13,7 +13,7 @@
 /obj/structure/sign/directions/outpost/administration
 	name = "administration sign"
 	desc = "A direction sign, pointing out which way the Administration outpost."
-	icon_state = "holodir_adm"
+	icon_state = "administration"
 
 /obj/structure/sign/directions/outpost/lift
 	name = "lift sign"
@@ -95,3 +95,8 @@
 	name = "exit sign"
 	desc = "A direction sign, pointing out which way the Exit."
 	icon_state = "exit"
+
+/obj/structure/sign/directions/outpost/sport
+	name = "sport complex sign"
+	desc = "A direction sign, pointing out which way the Sport Complex is."
+	icon_state = "sport"
