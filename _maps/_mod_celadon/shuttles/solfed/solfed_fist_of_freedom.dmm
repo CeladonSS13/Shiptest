@@ -139,10 +139,20 @@
 /obj/structure/cable{
 	icon_state = "2-4"
 	},
-/obj/structure/railing{
-	dir = 9
+/obj/structure/window/plasma/reinforced{
+	dir = 1;
+	rad_insulation = -1
 	},
-/turf/open/floor/plating,
+/obj/structure/window/plasma/reinforced{
+	dir = 8;
+	rad_insulation = -1
+	},
+/obj/machinery/power/grounding_rod{
+	anchored = 1
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "ax" = (
 /obj/machinery/computer/helm{
@@ -224,10 +234,13 @@
 /turf/open/floor/circuit/red,
 /area/ship/engineering/communications)
 "aU" = (
-/obj/structure/window/plasma/reinforced{
+/obj/structure/railing{
+	layer = 3.1;
 	dir = 1
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "aY" = (
 /obj/machinery/modular_computer/console/preset/command{
@@ -262,10 +275,17 @@
 /obj/structure/cable{
 	icon_state = "1-8"
 	},
-/obj/structure/railing{
-	dir = 6
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/window/plasma/reinforced,
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "bz" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
@@ -534,6 +554,11 @@
 /obj/structure/chair/sofa/brown/left,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
+"cR" = (
+/obj/structure/window/reinforced/fulltile/shuttle,
+/obj/structure/grille,
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "cX" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 5
@@ -606,10 +631,10 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1
+/obj/structure/window/plasma/reinforced,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "dq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -654,14 +679,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/grounding_rod{
-	anchored = 1
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1
 	},
-/obj/structure/railing{
-	layer = 3.1;
-	dir = 4
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "dG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -832,10 +856,13 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "eQ" = (
-/obj/structure/window/plasma/reinforced{
+/obj/structure/railing{
+	layer = 3.1;
 	dir = 4
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "eU" = (
 /obj/structure/fluff/hedge/opaque,
@@ -930,15 +957,13 @@
 /turf/open/floor/wood,
 /area/ship/crew/office)
 "fC" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 4;
-	rad_insulation = -1
+/obj/structure/railing{
+	dir = 5
 	},
-/obj/structure/window/plasma/reinforced{
-	dir = 1;
-	rad_insulation = -1
+/obj/structure/marker_beacon,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/engine,
 /area/ship/engineering/engine)
 "fG" = (
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -994,7 +1019,11 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/obj/machinery/power/smes/engineering,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "gi" = (
 /obj/structure/cable{
@@ -1528,6 +1557,7 @@
 /obj/item/clothing/head/solfed/beret,
 /obj/item/clothing/gloves/combat/solfed/captain,
 /obj/item/clothing/suit/armor/solfed/formal,
+/obj/item/clothing/neck/cloak/solgovcap/solfed,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewthree)
 "jb" = (
@@ -1797,6 +1827,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/ship/cargo)
+"lj" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/effect/turf_decal/industrial/warning/corner{
+	dir = 8
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/engineering/engine)
 "ll" = (
 /obj/machinery/shower{
 	pixel_y = 13
@@ -1887,11 +1926,21 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "lI" = (
-/obj/structure/railing{
-	layer = 3.1
+/obj/effect/turf_decal/industrial/warning{
+	dir = 8;
+	color = "#ff0000"
 	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/window/brigdoor/eastleft{
+	dir = 8;
+	req_one_access = list(61,11)
+	},
+/obj/structure/fans/tiny/invisible,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "lJ" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -1966,11 +2015,13 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1;
-	dir = 8
+/obj/structure/window/plasma/reinforced{
+	dir = 8;
+	rad_insulation = -1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "mp" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
@@ -2159,6 +2210,8 @@
 /obj/item/sign/flag/solfed,
 /obj/item/melee/energy/sword/saber/knife,
 /obj/item/clothing/gloves/combat/solfed,
+/obj/item/clothing/under/solfed/formal,
+/obj/item/clothing/under/solfed/camo,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewtwo)
 "nQ" = (
@@ -2295,7 +2348,9 @@
 	zap_flags = 46;
 	zap_power = 300000
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "or" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2442,8 +2497,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "oX" = (
-/obj/structure/window/plasma/reinforced,
-/turf/open/floor/engine,
+/obj/structure/railing{
+	layer = 3.1
+	},
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "oY" = (
 /obj/machinery/door/firedoor/border_only{
@@ -2928,13 +2987,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/engineering/electrical)
 "sn" = (
-/obj/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/obj/structure/railing/corner,
+/obj/machinery/power/ship_gravity,
+/obj/structure/cable,
 /turf/open/floor/plating,
 /area/ship/engineering/engine)
 "sq" = (
@@ -3204,7 +3258,6 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "up" = (
-/obj/machinery/suit_storage_unit,
 /obj/item/clothing/suit/space/solgov,
 /obj/item/clothing/head/helmet/space/solgov,
 /obj/item/tank/internals/emergency_oxygen/double,
@@ -3216,6 +3269,7 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/suit_storage_unit/inherit,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewthree)
 "ut" = (
@@ -3785,8 +3839,12 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/fore)
 "xZ" = (
-/obj/machinery/light/directional/north,
-/turf/open/floor/mineral/plastitanium,
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/power/smes/engineering,
+/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "ye" = (
 /obj/structure/chair/comfy/shuttle{
@@ -4101,12 +4159,13 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/crew)
 "Aw" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 8;
-	rad_insulation = -1
+/obj/structure/railing{
+	dir = 10
 	},
-/obj/structure/window/plasma/reinforced,
-/turf/open/floor/engine,
+/obj/structure/marker_beacon,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "AG" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold,
@@ -4243,6 +4302,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 1
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
 "Bq" = (
@@ -4297,11 +4357,12 @@
 	icon_state = "1-8"
 	},
 /obj/effect/turf_decal/industrial/warning{
-	dir = 10
+	dir = 8
 	},
-/obj/structure/railing{
-	layer = 3.1
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
+/obj/machinery/light/directional/east,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
 "BC" = (
@@ -4428,11 +4489,20 @@
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
 "Ci" = (
-/obj/machinery/power/ship_gravity,
-/obj/structure/cable{
-	icon_state = "0-8"
+/obj/structure/railing{
+	layer = 3.1
 	},
-/turf/open/floor/plating,
+/obj/effect/turf_decal/industrial/warning{
+	dir = 10
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/obj/structure/cable,
+/turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
 "Ck" = (
 /obj/structure/cable{
@@ -4468,10 +4538,13 @@
 /turf/open/floor/plasteel,
 /area/ship/cargo)
 "CB" = (
-/obj/structure/window/plasma/reinforced{
+/obj/structure/railing{
+	layer = 3.1;
 	dir = 8
 	},
-/turf/open/floor/engine,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "CF" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
@@ -4550,14 +4623,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/grounding_rod{
-	anchored = 1
+/obj/structure/window/plasma/reinforced{
+	dir = 8;
+	rad_insulation = -1
 	},
-/obj/structure/railing{
-	layer = 3.1;
-	dir = 8
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "De" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -4649,10 +4721,20 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/railing{
-	dir = 5
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/window/plasma/reinforced{
+	dir = 1;
+	rad_insulation = -1
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1
+	},
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "Dy" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue,
@@ -4864,11 +4946,13 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1;
-	dir = 1
+/obj/structure/window/plasma/reinforced{
+	dir = 1;
+	rad_insulation = -1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "EI" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -5533,10 +5617,10 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1
+/obj/structure/window/plasma/reinforced,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IF" = (
 /obj/structure/sign/solfed,
@@ -5585,10 +5669,10 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1
+/obj/structure/window/plasma/reinforced,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/plating,
 /area/ship/engineering/engine)
 "IY" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -5882,11 +5966,13 @@
 /obj/machinery/power/tesla_coil{
 	anchored = 1
 	},
-/obj/structure/railing{
-	layer = 3.1;
-	dir = 4
+/obj/structure/window/plasma/reinforced{
+	dir = 4;
+	rad_insulation = -1
 	},
-/turf/open/floor/plating,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "KR" = (
 /obj/machinery/telecomms/broadcaster/preset_left{
@@ -5994,6 +6080,8 @@
 	dir = 1
 	},
 /obj/machinery/suit_storage_unit/inherit,
+/obj/item/tank/internals/emergency_oxygen/double,
+/obj/item/clothing/mask/gas/sechailer,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewtwo)
 "Lz" = (
@@ -6156,9 +6244,6 @@
 /obj/structure/cable{
 	icon_state = "2-8"
 	},
-/obj/structure/railing{
-	layer = 3.1
-	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
@@ -6192,10 +6277,17 @@
 /obj/structure/cable{
 	icon_state = "1-4"
 	},
-/obj/structure/railing{
-	dir = 10
+/obj/machinery/power/grounding_rod{
+	anchored = 1
 	},
-/turf/open/floor/plating,
+/obj/structure/window/plasma/reinforced{
+	dir = 8;
+	rad_insulation = -1
+	},
+/obj/structure/window/plasma/reinforced,
+/turf/open/floor/plating{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "MB" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -6307,23 +6399,22 @@
 /turf/open/floor/plasteel/white,
 /area/ship/security)
 "Nt" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 4;
-	rad_insulation = -1
+/obj/structure/railing{
+	dir = 6
 	},
-/obj/structure/window/plasma/reinforced,
-/turf/open/floor/engine,
+/obj/structure/marker_beacon,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ship/engineering/engine)
 "Nw" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 8;
-	rad_insulation = -1
+/obj/structure/railing{
+	dir = 9
 	},
-/obj/structure/window/plasma/reinforced{
-	dir = 1;
-	rad_insulation = -1
+/obj/structure/marker_beacon,
+/turf/open/floor/engine{
+	initial_gas_mix = "TEMP=2.7"
 	},
-/turf/open/floor/engine,
 /area/ship/engineering/engine)
 "ND" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -6432,6 +6523,15 @@
 	},
 /turf/open/floor/wood,
 /area/ship/crew/office)
+"Od" = (
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/terminal{
+	dir = 8
+	},
+/turf/open/floor/plating,
+/area/ship/engineering/engine)
 "Oe" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -7725,9 +7825,6 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/structure/railing/corner{
-	dir = 8
-	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
@@ -7922,6 +8019,12 @@
 	},
 /turf/open/floor/wood/walnut,
 /area/ship/crew/crewtwo)
+"Xu" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/engineering/engine)
 "Xy" = (
 /obj/effect/turf_decal/techfloor{
 	dir = 8
@@ -8232,7 +8335,6 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/railing/corner,
 /obj/machinery/light/directional/south,
 /turf/open/floor/mineral/plastitanium,
 /area/ship/engineering/engine)
@@ -8325,8 +8427,8 @@ bZ
 aB
 aB
 fP
-vg
 kx
+vg
 vg
 vg
 vg
@@ -8390,11 +8492,11 @@ RX
 aw
 CZ
 mo
-CZ
+lI
 MA
 Mn
-bC
-bC
+Xu
+xZ
 bC
 Bf
 aB
@@ -8422,10 +8524,10 @@ Nw
 CB
 Aw
 IV
-lI
+ue
+cR
+Od
 oO
-oO
-sn
 gb
 aB
 aB
@@ -8453,11 +8555,11 @@ ok
 oX
 Iv
 VZ
-Li
+lj
 Li
 BA
 Ci
-aB
+sn
 aB
 mQ
 mQ
@@ -8539,7 +8641,7 @@ AG
 RX
 aB
 aB
-xZ
+Wy
 ue
 Qy
 Na
