@@ -150,9 +150,7 @@
 /obj/machinery/power/grounding_rod{
 	anchored = 1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "ax" = (
 /obj/machinery/computer/helm{
@@ -238,9 +236,7 @@
 	layer = 3.1;
 	dir = 1
 	},
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "aY" = (
 /obj/machinery/modular_computer/console/preset/command{
@@ -283,9 +279,7 @@
 	dir = 4;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "bz" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
@@ -632,9 +626,7 @@
 	anchored = 1
 	},
 /obj/structure/window/plasma/reinforced,
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "dq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -683,9 +675,7 @@
 	dir = 4;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "dG" = (
 /obj/effect/decal/cleanable/dirt,
@@ -860,9 +850,7 @@
 	layer = 3.1;
 	dir = 4
 	},
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "eU" = (
 /obj/structure/fluff/hedge/opaque,
@@ -961,9 +949,7 @@
 	dir = 5
 	},
 /obj/structure/marker_beacon,
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "fG" = (
 /obj/machinery/power/apc/auto_name/directional/south,
@@ -1937,10 +1923,8 @@
 	dir = 8;
 	req_one_access = list(61,11)
 	},
-/obj/structure/fans/tiny/invisible,
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/obj/structure/fans/tiny,
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "lJ" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -2019,9 +2003,7 @@
 	dir = 8;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "mp" = (
 /obj/effect/turf_decal/spline/fancy/transparent/solgovblue{
@@ -2348,9 +2330,7 @@
 	zap_flags = 46;
 	zap_power = 300000
 	},
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "or" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -2500,9 +2480,7 @@
 /obj/structure/railing{
 	layer = 3.1
 	},
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "oY" = (
 /obj/machinery/door/firedoor/border_only{
@@ -4163,9 +4141,7 @@
 	dir = 10
 	},
 /obj/structure/marker_beacon,
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "AG" = (
 /obj/effect/turf_decal/corner/opaque/solgovgold,
@@ -4542,9 +4518,7 @@
 	layer = 3.1;
 	dir = 8
 	},
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "CF" = (
 /obj/machinery/smartfridge/chemistry/preloaded,
@@ -4627,9 +4601,7 @@
 	dir = 8;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "De" = (
 /obj/effect/turf_decal/industrial/outline/yellow,
@@ -4732,9 +4704,7 @@
 	dir = 4;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "Dy" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue,
@@ -4950,9 +4920,7 @@
 	dir = 1;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "EI" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -5618,9 +5586,7 @@
 	anchored = 1
 	},
 /obj/structure/window/plasma/reinforced,
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "IF" = (
 /obj/structure/sign/solfed,
@@ -5670,9 +5636,7 @@
 	anchored = 1
 	},
 /obj/structure/window/plasma/reinforced,
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "IY" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -5970,9 +5934,7 @@
 	dir = 4;
 	rad_insulation = -1
 	},
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "KR" = (
 /obj/machinery/telecomms/broadcaster/preset_left{
@@ -6285,9 +6247,7 @@
 	rad_insulation = -1
 	},
 /obj/structure/window/plasma/reinforced,
-/turf/open/floor/plating{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/plating/airless,
 /area/ship/engineering/engine)
 "MB" = (
 /obj/effect/turf_decal/corner/opaque/solgovblue{
@@ -6403,18 +6363,14 @@
 	dir = 6
 	},
 /obj/structure/marker_beacon,
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "Nw" = (
 /obj/structure/railing{
 	dir = 9
 	},
 /obj/structure/marker_beacon,
-/turf/open/floor/engine{
-	initial_gas_mix = "TEMP=2.7"
-	},
+/turf/open/floor/engine/airless,
 /area/ship/engineering/engine)
 "ND" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
