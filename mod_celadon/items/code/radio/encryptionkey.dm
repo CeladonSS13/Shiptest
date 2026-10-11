@@ -14,7 +14,7 @@
 
 /obj/item/encryptionkey/solgov
 	name = "\improper SolFed encryption key"
-	icon_state = "solfed_cypherkey"
+	icon_state = "solgov_cypherkey"
 	channels = list(RADIO_CHANNEL_SOLFED = 1)
 
 /obj/item/encryptionkey/ramzi
@@ -52,7 +52,6 @@
 
 /obj/item/encryptionkey/solgov/captain
 	name = "\improper SolFed encryption key"
-	icon_state = "solfed_cypherkey"
 	channels = list(RADIO_CHANNEL_SOLFED = 1, RADIO_CHANNEL_SOLFED_LONG = 1)
 
 /obj/item/encryptionkey/vox
