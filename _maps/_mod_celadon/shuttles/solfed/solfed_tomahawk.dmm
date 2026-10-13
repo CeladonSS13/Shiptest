@@ -1952,8 +1952,10 @@
 	dir = 4
 	},
 /obj/machinery/turretid/ship{
-	pixel_y = -25;
-	id = "tomahawk_turrets"
+	pixel_y = -28;
+	id = "tomahawk_turrets";
+	dir = 1;
+	pixel_x = 0
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)

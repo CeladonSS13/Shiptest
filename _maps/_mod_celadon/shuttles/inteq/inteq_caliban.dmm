@@ -7976,9 +7976,10 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
 /obj/machinery/turretid/ship{
-	pixel_y = -17;
 	id = "Caliban_turret_control";
-	pixel_x = -36
+	dir = 4;
+	pixel_x = -37;
+	pixel_y = 4
 	},
 /obj/effect/turf_decal/corner/opaque/brown/full,
 /obj/machinery/button/door{

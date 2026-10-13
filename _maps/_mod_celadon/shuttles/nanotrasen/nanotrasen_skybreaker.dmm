@@ -958,9 +958,10 @@
 /obj/machinery/light/directional/north,
 /obj/machinery/photocopier,
 /obj/machinery/turretid/ship{
-	pixel_x = -29;
-	pixel_y = -6;
-	id = "skybreaker_turrets"
+	id = "skybreaker_turrets";
+	dir = 4;
+	pixel_x = -28;
+	pixel_y = 0
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /turf/open/floor/plasteel/tech/grid,

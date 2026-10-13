@@ -476,11 +476,12 @@
 	dir = 4;
 	name = "Captain's Chair"
 	},
-/obj/machinery/turretid/ship{
-	pixel_y = 24;
-	id = "kansatsu_turrets"
-	},
 /obj/effect/turf_decal/trimline/opaque/bar,
+/obj/machinery/turretid/ship{
+	pixel_y = 27;
+	id = "kansatsu_turrets";
+	pixel_x = 0
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "jZ" = (

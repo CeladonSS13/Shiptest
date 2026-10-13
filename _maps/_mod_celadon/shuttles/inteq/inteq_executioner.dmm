@@ -4057,19 +4057,20 @@
 /obj/machinery/button/door{
 	id = "exec_bridge";
 	name = "Bridge windows";
-	pixel_x = -5;
+	pixel_x = -16;
 	pixel_y = 25
 	},
 /obj/machinery/button/door{
 	id = "exec_armorysh";
 	name = "Armory shuters";
-	pixel_x = 6;
+	pixel_x = 11;
 	pixel_y = 25;
 	req_access_txt = list(19,3)
 	},
 /obj/machinery/turretid/ship{
-	pixel_y = 34;
-	id = "executer_turrets"
+	id = "executer_turrets";
+	pixel_x = -3;
+	pixel_y = 29
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)

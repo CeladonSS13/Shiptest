@@ -883,12 +883,17 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer2{
 	dir = 9
 	},
-/obj/machinery/turretid/ship{
-	pixel_y = -31;
-	id = "squab_turrets"
+/obj/structure/extinguisher_cabinet/directional/south{
+	pixel_x = -11;
+	pixel_y = -23
 	},
-/obj/structure/extinguisher_cabinet/directional/south,
 /obj/machinery/holopad/emergency/command,
+/obj/machinery/turretid/ship{
+	id = "squab_turrets";
+	dir = 1;
+	pixel_x = 5;
+	pixel_y = -26
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fO" = (
