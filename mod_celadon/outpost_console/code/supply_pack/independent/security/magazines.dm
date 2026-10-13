@@ -85,6 +85,12 @@
 	contains = list(/obj/item/ammo_box/magazine/m23/empty)
 	cost = 200
 
+/datum/supply_pack/faction/independent/magazine/woodsman_mag_extended
+	name = "Woodsman - Extended Magazine (8x50mmR)"
+	desc = "Contains an 8x50mmR magazine for the Woodsman Rifle, with a capacity of 10 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m23/extended/empty)
+	cost = 500
+
 /datum/supply_pack/faction/independent/magazine/firestorm_mag
 
 	name = "Firestorm Stick - Magazine (.44)"
@@ -97,6 +103,12 @@
 	name = "Super Sporter - Magazine (7.62x40mm)"
 	desc = "Contains a 7.62x40mm magazine for the Super Sporter Rifle, with a capacity of 20 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m15/empty)
+	cost = 300
+
+/datum/supply_pack/faction/independent/magazine/short_hydra_mag
+	name = "Hydra-80 - Short Magazine (5.56x42mm)"
+	desc = "Contains a 5.56x42mm made specially for the Hydra-80, with a capacity of 20 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m556_42_hydra/small/empty)
 	cost = 300
 
 /datum/supply_pack/faction/independent/magazine/c45_cobra_mag
@@ -116,6 +128,12 @@
 	desc = "Contains a 6.5mm magazine for the Boomslang rifle platform, with a capacity of 5 rounds."
 	contains = list(/obj/item/ammo_box/magazine/boomslang/short/empty)
 	cost = 750
+
+/datum/supply_pack/faction/independent/magazine/f4_mag
+	name = "F3/F4 Magazine (.308)"
+	desc = "Contains a .308 magazine for SsG-04 and F3 platform rifles, with a capacity of 10 rounds."
+	contains = list(/obj/item/ammo_box/magazine/f4_308/empty)
+	cost = 500
 
 /datum/supply_pack/faction/independent/magazine/firestorm_40_mag
 	name = "Firestorm - Pan Magazine (.44)"
@@ -159,13 +177,13 @@
 	name = "Enegry - Etherbor Cell"
 	desc = "Contains an Etherbor weapon cell, compatible with Etherbor armaments with a slightly higher capacity."
 	contains = list(/obj/item/stock_parts/cell/gun/kalix)
-	cost = 600
+	cost = 450
 
 /datum/supply_pack/faction/independent/magazine/guncell
 	name = "Enegry - Weapon Cell"
 	desc = "Contains a weapon cell, compatible with laser guns."
 	contains = list(/obj/item/stock_parts/cell/gun)
-	cost = 650
+	cost = 450
 
 // ===========================================================
 
@@ -225,6 +243,12 @@
 	cost = 2000
 
 // //Магазины для оружия
+
+/datum/supply_pack/faction/independent/magazine/slammer
+	name = "Slammer - Magazine (12g)"
+	desc = "Contains a 6-round 12ga magazine for the Slammer shotgun."
+	contains = list(/obj/item/ammo_box/magazine/m12g_slammer)
+	cost = 300
 
 /datum/supply_pack/faction/independent/magazine/a410_saiga
 	name = "Saiga - Short Magazine (.410)"

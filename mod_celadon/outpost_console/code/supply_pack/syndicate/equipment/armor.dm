@@ -22,7 +22,7 @@
 /datum/supply_pack/faction/syndicate/armor/ngr_armor
 	name = "NGR Armor"
 	desc = "One fairly durable, well manufactured type-1 armor vest and associated helmet, painted in the proud reds of the New Gorlex Republic."
-	cost = 1000
+	cost = 500
 	contains = list(/obj/item/clothing/suit/armor/ngr,
 					/obj/item/clothing/head/helmet/ngr)
 	crate_name = "armor crate"

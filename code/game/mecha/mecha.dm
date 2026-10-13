@@ -1321,7 +1321,7 @@ GLOBAL_VAR_INIT(year_integer, text2num(year)) // = 2013???
 ///////////////////////
 
 /obj/mecha/proc/start_charge()
-	Shake(15, 15, 1 SECONDS)
+	Shake(2, 2, 1 SECONDS)	// [CELADON-EDIT] - Причина тряски?
 	var/obj/effect/temp_visual/decoy/new_decoy = new /obj/effect/temp_visual/decoy(loc,src)
 	animate(new_decoy, alpha = 0, color = "#5a5858", transform = matrix()*2, time = 2)
 	addtimer(CALLBACK(src,PROC_REF(handle_charge)), charge_windup SECONDS, TIMER_STOPPABLE)
