@@ -1250,39 +1250,32 @@
 /obj/effect/turf_decal/siding/wood{
 	dir = 8
 	},
-/obj/item/modular_computer/laptop/preset/civilian/rilena{
-	pixel_x = 1;
-	pixel_y = 6
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/button/door{
 	id = "jungle_syndicate_lockdown";
 	name = "Lockdown Blast Doors";
-	pixel_x = -23;
-	pixel_y = -3;
-	dir = 4
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = -4
 	},
 /obj/item/storage/firstaid/regular{
 	pixel_x = 6;
 	pixel_y = 10
 	},
-/obj/item/gun_maint_kit{
-	pixel_x = -6;
-	pixel_y = 6
-	},
-/obj/machinery/turretid/lethal{
-	pixel_x = -28;
-	desc = "Used to control a facility's automated defenses.";
-	id = "jungle_syndicate_turrets";
-	pixel_y = -15;
-	req_access = list(150)
-	},
 /obj/machinery/button/door{
 	id = "jungle_syndicate_cargo_door";
 	name = "Storage Room Blast Door";
-	pixel_x = -23;
-	pixel_y = 8;
-	dir = 4
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 5
+	},
+/obj/item/modular_computer/laptop/preset/civilian/rilena{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/obj/item/gun_maint_kit{
+	pixel_x = -6;
+	pixel_y = 6
 	},
 /turf/open/floor/wood/walnut,
 /area/ruin/jungle/syndifort/jerry)
@@ -3521,6 +3514,13 @@
 	dir = 5
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/turretid/lethal{
+	desc = "Used to control a facility's automated defenses.";
+	id = "jungle_syndicate_turrets";
+	req_access = list(150);
+	pixel_x = 0;
+	pixel_y = 27
+	},
 /turf/open/floor/wood/walnut,
 /area/ruin/jungle/syndifort/jerry)
 "ZB" = (

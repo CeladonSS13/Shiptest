@@ -740,12 +740,16 @@
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
-/obj/machinery/power/apc/auto_name/directional/west,
+/obj/machinery/power/apc/auto_name/directional/west{
+	pixel_x = -24;
+	pixel_y = -5
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/turretid/ship{
 	pixel_x = -28;
-	pixel_y = 17;
-	id = "vaq_grid"
+	pixel_y = 11;
+	id = "vaq_grid";
+	dir = 4
 	},
 /obj/effect/turf_decal/steeldecal/steel_decals_central7,
 /turf/open/floor/plasteel/dark,

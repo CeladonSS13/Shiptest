@@ -481,11 +481,6 @@
 /obj/effect/turf_decal/industrial/warning/corner{
 	dir = 8
 	},
-/obj/machinery/turretid{
-	pixel_y = -28;
-	req_access = null;
-	req_access_txt = "16"
-	},
 /obj/machinery/light/directional/south,
 /turf/open/floor/plasteel/dark,
 /area/ship/science/ai_chamber)
@@ -3531,9 +3526,11 @@
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/atmospherics/pipe/simple/green/hidden/layer1,
 /obj/machinery/turretid{
-	pixel_x = 28;
 	req_access = null;
-	req_access_txt = "16"
+	req_access_txt = "16";
+	dir = 8;
+	pixel_x = 28;
+	pixel_y = 0
 	},
 /obj/structure/catwalk/over,
 /turf/open/floor/plating,
@@ -3684,9 +3681,17 @@
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "xE" = (
+/obj/machinery/turretid{
+	req_access = null;
+	req_access_txt = "16";
+	dir = 1;
+	pixel_x = 3;
+	pixel_y = -29
+	},
 /obj/machinery/light_switch{
 	dir = 1;
-	pixel_y = -16
+	pixel_y = -17;
+	pixel_x = -9
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/science/ai_chamber)
@@ -5838,9 +5843,11 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/hidden,
 /obj/machinery/turretid{
-	pixel_x = 28;
 	req_access = null;
-	req_access_txt = "16"
+	req_access_txt = "16";
+	dir = 8;
+	pixel_x = 29;
+	pixel_y = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
 	dir = 10

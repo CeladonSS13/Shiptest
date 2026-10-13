@@ -2622,10 +2622,6 @@
 "oD" = (
 /obj/effect/turf_decal/box,
 /obj/effect/turf_decal/corner/opaque/nsorange/half,
-/obj/machinery/turretid{
-	pixel_x = 26;
-	id = "m1"
-	},
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/mining_base/rig_one)
 "oG" = (
@@ -3676,6 +3672,15 @@
 	dir = 8
 	},
 /area/ruin/rockplanet/mining_base/refinery)
+"uC" = (
+/obj/structure/railing,
+/obj/machinery/turretid{
+	id = "m1";
+	pixel_x = 0;
+	pixel_y = 30
+	},
+/turf/open/floor/plasteel/patterned/rockplanet,
+/area/ruin/rockplanet/mining_base/rig_one)
 "uD" = (
 /obj/machinery/conveyor{
 	dir = 4;
@@ -6299,8 +6304,10 @@
 	},
 /obj/effect/turf_decal/box,
 /obj/machinery/turretid{
-	pixel_y = -24;
-	id = "m2"
+	id = "m2";
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -27
 	},
 /turf/open/floor/plasteel/rockplanet,
 /area/ruin/rockplanet/mining_base/rig_two)
@@ -11484,7 +11491,7 @@ Jj
 ox
 ox
 ox
-DI
+uC
 uD
 QT
 GH

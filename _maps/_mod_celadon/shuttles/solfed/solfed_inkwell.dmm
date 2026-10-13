@@ -1954,8 +1954,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/turretid/ship{
 	pixel_y = 0;
-	pixel_x = -26;
-	id = "inkwell_turrets"
+	id = "inkwell_turrets";
+	dir = 4;
+	pixel_x = -29
 	},
 /obj/machinery/newscaster/directional/west{
 	pixel_y = -16

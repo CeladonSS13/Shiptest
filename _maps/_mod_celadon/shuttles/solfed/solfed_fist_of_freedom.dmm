@@ -1265,10 +1265,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/solgovblue/full,
-/obj/machinery/turretid/ship{
-	pixel_y = -27;
-	id = "fistofF_turrets"
-	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "hJ" = (
@@ -1456,6 +1452,12 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/corner/opaque/solgovgold/full,
+/obj/machinery/turretid/ship{
+	id = "fistofF_turrets";
+	dir = 4;
+	pixel_x = -29;
+	pixel_y = 0
+	},
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "iJ" = (

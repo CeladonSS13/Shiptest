@@ -3114,15 +3114,12 @@
 	pixel_x = 5;
 	pixel_y = 8
 	},
-/obj/machinery/turretid/lethal{
-	pixel_x = -3;
-	pixel_y = -5
-	},
 /obj/machinery/firealarm/directional/south{
 	pixel_x = 10
 	},
 /obj/item/radio/intercom/wideband/directional/south{
-	pixel_x = -6
+	pixel_x = -3;
+	pixel_y = -31
 	},
 /obj/item/gun/ballistic/automatic/assault/hydra/dmr/empty{
 	pixel_x = -4;
@@ -3148,6 +3145,11 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/turretid/lethal{
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -31
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ruin/unpowered)
 "fS" = (
