@@ -191,7 +191,10 @@
 	SSovermap.controlled_ships -= src
 	current_overmap.controlled_ships -= src
 	helms.Cut()
-	QDEL_LIST(missions)
+	// [CELADON-ADD]
+	if(missions)
+		QDEL_LIST(missions)
+	// [/CELADON-ADD]
 	LAZYCLEARLIST(owner_candidates)
 	if(!QDELETED(shuttle_port))
 		shuttle_port.current_ship = null
