@@ -236,8 +236,8 @@
 // 	user.set_machine(src)
 
 // 	var/dat = 	{"<meta charset="UTF-8"><div align='center'><b>Inventory of [name]</b></div><p>"}
-// 	dat += "<br><B>Head:</B> <A href='?src=[UID()];[inventory_head ? "remove_inv=head'>[inventory_head]" : "add_inv=head'>Nothing"]</A>"
-// 	// dat += "<br><B>Collar:</B> <A href='?src=[UID()];[pcollar ? "remove_inv=collar'>[pcollar]" : "add_inv=collar'>Nothing"]</A>"
+// 	dat += "<br><B>Head:</B> <A href='byond://?src=[UID()];[inventory_head ? "remove_inv=head'>[inventory_head]" : "add_inv=head'>Nothing"]</A>"
+// 	// dat += "<br><B>Collar:</B> <A href='byond://?src=[UID()];[pcollar ? "remove_inv=collar'>[pcollar]" : "add_inv=collar'>Nothing"]</A>"
 
 // 	var/datum/browser/popup = new(user, "mob[UID()]", "[src]", 440, 250)
 // 	popup.set_content(dat)
