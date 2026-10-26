@@ -24,7 +24,8 @@
 		/obj/item/clothing/head/beret/dominia/medical = 2,
 		/obj/item/clothing/head/beret/dominia/priest = 2,
 		/obj/item/clothing/head/beret/dominia/priest/red = 2,
-		/obj/item/clothing/head/nanotrasen/officer/fedora = 2)
+		/obj/item/clothing/head/nanotrasen/officer/fedora = 2,
+		)
 	refill_canister = /obj/item/vending_refill/clothing
 	light_mask = "wardrobe-light-mask"
 	light_color = LIGHT_COLOR_LIGHT_CYAN

@@ -13,6 +13,11 @@
 		return TRUE
 	if(ismob(mover) && (mover in buckled_mobs))
 		return TRUE
+	//Allow squeezing by on grab intent
+	if(iscarbon(mover))
+		var/mob/living/carbon/C = mover
+		if(C.a_intent == INTENT_GRAB)
+			return TRUE
 	return !mover.density || body_position == LYING_DOWN
 
 /mob/living/toggle_move_intent()

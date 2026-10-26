@@ -28,6 +28,9 @@ MARK: Independent guncases
 	gun_type = /obj/item/gun/ballistic/automatic/smg/skm_carbine
 	mag_type = /obj/item/ammo_box/magazine/skm_46_30
 
+/obj/item/storage/guncase/f3
+	gun_type = /obj/item/gun/ballistic/automatic/marksman/f4/indie
+	mag_type = /obj/item/ammo_box/magazine/f4_308
 /*
 MARK: Solfed guncases
  */

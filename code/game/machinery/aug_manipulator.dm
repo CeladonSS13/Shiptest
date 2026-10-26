@@ -140,10 +140,8 @@
 		storedpart.static_icon = style_options[augstyle]
 		if(augstyle == "digitigrade")
 			storedpart.bodytype |= BODYTYPE_DIGITIGRADE
-			storedpart.limb_id = "digitigrade"
 		else
 			storedpart.bodytype &= ~(BODYTYPE_DIGITIGRADE)
-			storedpart.limb_id = "robotic"
 // [/CELADON-EDIT]
 		storedpart.should_draw_greyscale = FALSE //Premptive fuck you to greyscale IPCs trying to break something
 		storedpart.update_icon_dropped()

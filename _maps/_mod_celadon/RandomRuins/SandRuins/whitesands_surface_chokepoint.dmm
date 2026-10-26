@@ -6,6 +6,10 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/ruin)
+"c" = (
+/obj/structure/sign/poster/nanotrasen/love_ian,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
 "d" = (
 /obj/structure/closet/secure_closet{
 	icon_state = "sec"
@@ -14,10 +18,6 @@
 /obj/item/ammo_box/magazine/co9mm,
 /obj/item/ammo_box/magazine/co9mm,
 /turf/open/floor/plating/asteroid/whitesands,
-/area/ruin)
-"e" = (
-/obj/structure/sign/poster/nanotrasen/here_for_your_safety,
-/turf/closed/wall/mineral/sandstone,
 /area/ruin)
 "f" = (
 /obj/item/banner/security/mundane,
@@ -53,27 +53,23 @@
 /obj/effect/decal/cleanable/blood,
 /turf/open/floor/plating/asteroid/whitesands/lit,
 /area/overmap_encounter/planetoid/sand/explored)
+"l" = (
+/obj/structure/sign/poster/nanotrasen/work_for_a_future,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
 "m" = (
 /turf/open/floor/plating/asteroid/whitesands,
 /area/overmap_encounter/planetoid/sand/explored)
-"n" = (
-/obj/structure/sign/poster/nanotrasen/ion_carbine,
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
-"p" = (
-/obj/structure/sign/poster/nanotrasen/safety_report,
+"o" = (
+/obj/structure/sign/poster/nanotrasen/nanotrasen_logo,
 /turf/closed/wall/mineral/sandstone,
 /area/ruin)
 "q" = (
 /turf/open/floor/plating/asteroid/whitesands/lit,
 /area/overmap_encounter/planetoid/sand/explored)
-"r" = (
-/obj/structure/closet/cabinet,
-/obj/item/clothing/head/helmet/knight/blue,
-/obj/item/clothing/suit/armor/riot/knight/blue,
-/obj/item/melee/spear,
-/obj/item/shield/riot/buckler,
-/turf/open/floor/plating/asteroid/whitesands,
+"s" = (
+/obj/structure/sign/poster/nanotrasen/do_not_question,
+/turf/closed/wall/mineral/sandstone,
 /area/ruin)
 "u" = (
 /turf/open/floor/plating/asteroid/whitesands,
@@ -88,17 +84,33 @@
 /obj/structure/sign/poster/contraband/space_cops,
 /turf/closed/wall/mineral/sandstone,
 /area/ruin)
+"y" = (
+/obj/structure/sign/poster/nanotrasen/here_for_your_safety,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
 "z" = (
 /turf/open/floor/plating/asteroid/whitesands/dried,
+/area/ruin)
+"A" = (
+/obj/structure/sign/poster/nanotrasen/obey,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
+"B" = (
+/obj/structure/sign/poster/nanotrasen/ion_carbine,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
+"C" = (
+/obj/structure/closet/cabinet,
+/obj/item/clothing/head/helmet/knight/blue,
+/obj/item/clothing/suit/armor/riot/knight/blue,
+/obj/item/melee/spear,
+/obj/item/shield/buckler,
+/turf/open/floor/plating/asteroid/whitesands,
 /area/ruin)
 "E" = (
 /obj/item/banner/security/mundane,
 /turf/open/floor/plating/asteroid/whitesands,
 /area/overmap_encounter/planetoid/sand/explored)
-"H" = (
-/obj/structure/sign/poster/nanotrasen/report_crimes,
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
 "I" = (
 /obj/structure/sign/poster/contraband/twelve_gauge,
 /turf/closed/wall/mineral/sandstone,
@@ -115,25 +127,21 @@
 /obj/structure/barricade/sandbags,
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/overmap_encounter/planetoid/sand/explored)
-"L" = (
-/obj/structure/sign/poster/nanotrasen/love_ian,
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
 "M" = (
 /obj/structure/mineral_door/sandstone,
 /turf/open/floor/plating/asteroid/whitesands/dried,
 /area/ruin)
-"N" = (
-/obj/structure/sign/poster/nanotrasen/work_for_a_future,
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
-"P" = (
-/obj/structure/sign/poster/nanotrasen/do_not_question,
+"O" = (
+/obj/structure/sign/poster/nanotrasen/safety_report,
 /turf/closed/wall/mineral/sandstone,
 /area/ruin)
 "Q" = (
 /turf/closed/mineral/random/whitesands,
 /area/overmap_encounter/planetoid/sand/explored)
+"R" = (
+/obj/structure/sign/poster/nanotrasen/report_crimes,
+/turf/closed/wall/mineral/sandstone,
+/area/ruin)
 "S" = (
 /obj/effect/mob_spawn/human/corpse/damaged/whitesands,
 /obj/effect/decal/cleanable/blood{
@@ -161,15 +169,7 @@
 "V" = (
 /turf/closed/mineral/random/whitesands,
 /area/ruin)
-"W" = (
-/obj/structure/sign/poster/nanotrasen/obey,
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
 "X" = (
-/turf/closed/wall/mineral/sandstone,
-/area/ruin)
-"Y" = (
-/obj/structure/sign/poster/nanotrasen/nanotrasen_logo,
 /turf/closed/wall/mineral/sandstone,
 /area/ruin)
 "Z" = (
@@ -245,8 +245,8 @@ z
 b
 b
 X
-n
-H
+B
+R
 X
 Q
 Q
@@ -259,8 +259,8 @@ z
 z
 v
 z
-e
-r
+y
+C
 d
 I
 Q
@@ -277,7 +277,7 @@ z
 X
 u
 z
-Y
+o
 Q
 Q
 "}
@@ -292,7 +292,7 @@ z
 M
 u
 z
-N
+l
 X
 Q
 "}
@@ -304,11 +304,11 @@ z
 z
 z
 z
-W
+A
 u
 u
 T
-p
+O
 Q
 "}
 (10,1,1) = {"
@@ -323,7 +323,7 @@ x
 j
 u
 g
-P
+s
 Q
 "}
 (11,1,1) = {"
@@ -336,7 +336,7 @@ b
 b
 X
 X
-L
+c
 X
 X
 Q
