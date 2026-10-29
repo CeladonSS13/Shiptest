@@ -15,7 +15,7 @@
 		return
 
 	var/datum/DBQuery/q = SSdbcore.NewQuery(
-		"SELECT discord FROM discord_links WHERE ckey = :ckey LIMIT 1 AND valid = 1",
+		"SELECT discord FROM discord_links WHERE ckey = :ckey AND valid = 1 LIMIT 1",
 		list("ckey" = ckey))
 
 	if(!q.Execute())
