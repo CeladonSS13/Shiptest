@@ -35,6 +35,7 @@
 		return
 	if(LAZYACCESS(modifiers, ALT_CLICK))
 		AltClickNoInteract(src, A)
+		src.checkPlayerPanel(A) // [CELADON-ADD] - Show Player Panel
 		return
 	if(LAZYACCESS(modifiers, CTRL_CLICK))
 		CtrlClickOn(A)
