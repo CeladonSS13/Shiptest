@@ -1,9 +1,5 @@
 /client
-	var/discord = null
-
-/client/New(client/owner)
-	..()
-	discord = checkDiscord(ckey)
+	var/discord
 
 /proc/checkDiscord(ckey)
 	if(!CONFIG_GET(flag/sql_enabled))
@@ -15,7 +11,7 @@
 		return
 
 	var/datum/DBQuery/q = SSdbcore.NewQuery(
-		"SELECT discord FROM discord_links WHERE ckey = :ckey AND valid = 1 LIMIT 1",
+		"SELECT discord_id FROM discord_links WHERE ckey = :ckey AND valid = 1 LIMIT 1",
 		list("ckey" = ckey))
 
 	if(!q.Execute())
@@ -24,6 +20,6 @@
 
 	var/id = "<@???>"
 	if(q.NextRow())
-		id = "<@" + q.item[1] + ">"
+		id = "<@" +  num2text(q.item[1], 20) + ">"
 	qdel(q)
 	return id
