@@ -20,6 +20,6 @@
 
 	var/id = "<@???>"
 	if(q.NextRow())
-		id = "<@" +  num2text(q.item[1], 20) + ">"
+		id = "<@" +  q.item[1] + ">"
 	qdel(q)
 	return id
