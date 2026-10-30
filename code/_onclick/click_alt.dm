@@ -15,7 +15,7 @@
 	var/turf/T = get_turf(src)
 	if(T && (isturf(loc) || isturf(src)) && user.TurfAdjacent(T))
 		user.set_listed_turf(T)
-	user.checkPlayerPanel(src)
+	user.checkPlayerPanel(src) // [CELADON-ADD] - Show Player Panel
 
 ///The base proc of when something is right clicked on when alt is held - generally use alt_click_secondary instead
 /atom/proc/alt_click_on_secondary(atom/A)
