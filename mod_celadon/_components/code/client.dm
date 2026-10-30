@@ -11,7 +11,7 @@
 		return
 
 	var/datum/DBQuery/q = SSdbcore.NewQuery(
-		"SELECT discord_id FROM discord_links WHERE ckey = :ckey AND valid = 1 LIMIT 1",
+		"SELECT CAST(discord_id AS CHAR) FROM discord_links WHERE ckey = :ckey AND valid = 1 LIMIT 1",
 		list("ckey" = ckey))
 
 	if(!q.Execute())
