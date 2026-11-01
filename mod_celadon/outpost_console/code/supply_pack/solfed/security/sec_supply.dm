@@ -2,6 +2,13 @@
 	category = "Security - Supplies"
 	crate_type = /obj/structure/closet/crate/secure/gear
 
+/datum/supply_pack/faction/solfed/solarian_sabre
+	name = "Solarian Ceremonial Sabre"
+	desc = "Contains one ceremonial Solarian sabre. To keep tradition alive. Still quite sharp."
+	cost = 750
+	contains = list(/obj/item/storage/belt/sabre/solgov)
+	crate_name = "solarian ceremonial sabre crate"
+
 /datum/supply_pack/faction/solfed/sec_supply/halberd
 	name = "Energy Halberd"
 	desc = "Contains one Solarian Energy Halberd, for issue to your local Sonnensoldner battalion."

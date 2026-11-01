@@ -1,4 +1,16 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ad" = (
+/obj/structure/bed,
+/obj/structure/railing{
+	dir = 1
+	},
+/obj/item/bedsheet/black,
+/obj/structure/curtain/cloth/grey,
+/obj/structure/sign/poster/nanotrasen/no_erp{
+	pixel_x = 32
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/crew/dorm)
 "ai" = (
 /obj/structure/railing,
 /obj/structure/cable/yellow{
@@ -2228,21 +2240,6 @@
 /obj/machinery/airalarm/directional/west,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/construction)
-"uA" = (
-/obj/structure/table,
-/obj/item/storage/bag/tray{
-	pixel_y = 4
-	},
-/obj/item/storage/bag/tray{
-	pixel_y = 6
-	},
-/obj/item/storage/box/shoalpockets/shoalpocketspicy{
-	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
-	name = "CHUVAK TM Donk-pockets";
-	pixel_y = 5
-	},
-/turf/open/floor/plasteel/white,
-/area/ship/crew/canteen)
 "uJ" = (
 /turf/closed/wall/rust,
 /area/ship/security/armory)
@@ -3819,31 +3816,6 @@
 /obj/item/gun/energy/e_gun/nanotrasen/dragnet/snare,
 /turf/open/floor/vault,
 /area/ship/security/armory)
-"Ha" = (
-/obj/structure/rack,
-/obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/melee/baton/boomerang/loaded{
-	pixel_x = -4;
-	pixel_y = 3
-	},
-/obj/item/melee/baton/loaded{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/melee/baton/cattleprod/loaded{
-	pixel_x = 2;
-	pixel_y = -2
-	},
-/obj/item/shield/riot{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/shield/riot/buckler{
-	pixel_x = 6;
-	pixel_y = -3
-	},
-/turf/open/floor/vault,
-/area/ship/security/armory)
 "Hf" = (
 /obj/structure/railing,
 /obj/effect/turf_decal/corner_steel_grid{
@@ -4270,6 +4242,31 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
+"Lv" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/opaque/neutral/full,
+/obj/item/melee/baton/boomerang/loaded{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/melee/baton/loaded{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/melee/baton/cattleprod/loaded{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/item/shield/riot{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/shield/buckler{
+	pixel_x = 6;
+	pixel_y = -3
+	},
+/turf/open/floor/vault,
+/area/ship/security/armory)
 "Ly" = (
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/external/dark)
@@ -4972,6 +4969,21 @@
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
+"Qm" = (
+/obj/structure/table,
+/obj/item/storage/bag/tray{
+	pixel_y = 4
+	},
+/obj/item/storage/bag/tray{
+	pixel_y = 6
+	},
+/obj/item/storage/box/shoalpockets/shoalpocketspicy{
+	desc = "Produced personally be CHUVAK TM. Ultra-spicy";
+	name = "CHUVAK TM Donk-pockets";
+	pixel_y = 5
+	},
+/turf/open/floor/plasteel/white,
+/area/ship/crew/canteen)
 "Qq" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/neutral/full,
@@ -5240,18 +5252,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/hallway/port)
-"Sa" = (
-/obj/structure/bed,
-/obj/structure/railing{
-	dir = 1
-	},
-/obj/item/bedsheet/black,
-/obj/structure/curtain/cloth/grey,
-/obj/structure/sign/poster/nanotrasen/no_erp{
-	pixel_x = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/crew/dorm)
 "Sc" = (
 /obj/effect/turf_decal/trimline/opaque/bottlegreen/filled/line,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4,
@@ -6510,7 +6510,7 @@ dE
 ih
 qI
 VY
-Ha
+Lv
 uJ
 xz
 xz
@@ -6574,7 +6574,7 @@ xz
 (12,1,1) = {"
 eE
 no
-Sa
+ad
 cQ
 Vp
 wm
@@ -7054,7 +7054,7 @@ xz
 xz
 xz
 cU
-uA
+Qm
 vv
 qm
 kb

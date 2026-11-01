@@ -164,7 +164,7 @@
 #define FIRE_PRIORITY_VIS 10
 #define FIRE_PRIORITY_AMBIENCE 10
 #define FIRE_PRIORITY_MISSIONS 10
-#define FIRE_PRIORITY_GARBAGE 15
+#define FIRE_PRIORITY_GARBAGE 10  // Increased from 15 for better performance in long rounds
 #define FIRE_PRIORITY_WET_FLOORS 20
 #define FIRE_PRIORITY_AIR 20
 #define FIRE_PRIORITY_NPC 20

@@ -58,3 +58,11 @@
 	contains = list(/obj/item/clothing/suit/space/hardsuit/syndi/ngr)
 	crate_name = "beige-red hardsuit crate"
 	crate_type = /obj/structure/closet/crate/secure/gear
+
+/datum/supply_pack/faction/syndicate/spacesuit/bomb
+	name = "NGR EOD Hardsuit Crate"
+	desc = "Contains one EOD hardsuit, to provide safety with explosives."
+	cost = 2000
+	contains = list(/obj/item/clothing/suit/space/hardsuit/bomb/ngr)
+	crate_name = "EOD hardsuit crate"
+	crate_type = /obj/structure/closet/crate/secure/science

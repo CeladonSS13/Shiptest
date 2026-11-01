@@ -27,35 +27,36 @@
 	)
 	crate_name = "empty vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/bica_vial
-// 	name = "Bicardine Vial"
-// 	desc = "Contains a spare bicardine vial, for usage in a Hypospray."
-// 	cost = 400
-// 	contains = list(
-// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/bicaridine,
-// 	)
-// 	crate_name = "bicardine vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/kelo_vial
-// 	name = "Kelotane Vial"
-// 	desc = "Contains a spare kelotane vial, for usage in a Hypospray."
-// 	cost = 400
-// 	contains = list(
-// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/kelotane,
-// 	)
-// 	crate_name = "kelotane vial crate"
+/datum/supply_pack/faction/nanotrasen/medical/indo_vial
+	name = "Indomide Vial Crate"
+	desc = "Contains a spare indomide vial, for usage in a Hypospray."
+	cost = 400
+	contains = list(
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/indomide,
+	)
+	crate_name = "indomide vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/dylo_vial
-// 	name = "Dylovene Vial"
-// 	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
-// 	cost = 400
-// 	contains = list(
-// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/antitoxin,
-// 	)
-// 	crate_name = "dylovene vial crate"
+/datum/supply_pack/faction/nanotrasen/medical/alvi_vial
+	name = "Alvitane Vial Crate"
+	desc = "Contains a spare alvitane vial, for usage in a Hypospray."
+	cost = 400
+	contains = list(
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/alvitane,
+	)
+	crate_name = "alvitane vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/dexa_vial
-	name = "Dexalin Vial"
+/datum/supply_pack/faction/nanotrasen/medical/dylo_vial
+	name = "Pancrazine Vial Crate"
+	desc = "Contains a spare dylovene vial, for usage in a Hypospray."
+	cost = 400
+	contains = list(
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/pancrazine,
+	)
+	crate_name = "pancrazine vial crate"
+
+/datum/supply_pack/faction/nanotrasen/medical/dexa_vial
+	name = "Dexalin Vial Crate"
 	desc = "Contains a spare dexalin vial, for usage in a Hypospray."
 	cost = 400
 	contains = list(
@@ -63,17 +64,17 @@
 	)
 	crate_name = "dexalin vial crate"
 
-// /datum/supply_pack/faction/nanotrasen/medical/vials/tric_vial
-// 	name = "Tricordrazine Vial"
-// 	desc = "Contains a spare tricordrazine vial, for usage in a Hypospray."
-// 	cost = 300
-// 	contains = list(
-// 		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/cureall,
-// 	)
-// 	crate_name = "tricordrazine vial crate"
+/datum/supply_pack/faction/nanotrasen/medical/tric_vial
+	name = "Cureall Vial Crate"
+	desc = "Contains a spare cureall vial, for usage in a Hypospray."
+	cost = 300
+	contains = list(
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/cureall,
+	)
+	crate_name = "cureall vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/morb_vial
-	name = "Morphine Vial"
+/datum/supply_pack/faction/nanotrasen/medical/morb_vial
+	name = "Morphine Vial Crate"
 	desc = "Contains a spare morphine vial, for usage in a Hypospray."
 	cost = 500
 	contains = list(
@@ -81,8 +82,8 @@
 	)
 	crate_name = "morphine vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/atro_vial
-	name = "Atropine Vial"
+/datum/supply_pack/faction/nanotrasen/medical/atro_vial
+	name = "Atropine Vial Crate"
 	desc = "Contains a spare atropine vial, for usage in a Hypospray."
 	cost = 500
 	contains = list(
@@ -90,8 +91,8 @@
 	)
 	crate_name = "atropine vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/stas_vial
-	name = "Stasis Vial"
+/datum/supply_pack/faction/nanotrasen/medical/stas_vial
+	name = "Stasis Vial Crate"
 	desc = "Contains a spare stasis vial, for usage in a Hypospray."
 	cost = 800
 	contains = list(
@@ -99,32 +100,26 @@
 	)
 	crate_name = "stasis vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/erp_vial
-	name = "Radiation Purgant Vial"
-	desc = "Contains 2 spare radiation purgant vials, for usage in a Hypospray."
-	cost = 600
+/datum/supply_pack/faction/nanotrasen/medical/erp_vial
+	name = "Radiation Purgant Vial Crate"
+	desc = "Contains one spare radiation purgant vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/erp)
 	crate_name = "radiation purgant vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/sal_vial
-	name = "SalGlu Vial"
-	desc = "Contains 2 spare SalGlu Solution vials, for usage in a Hypospray."
-	cost = 600
+/datum/supply_pack/faction/nanotrasen/medical/sal_vial
+	name = "SalGlu Vial Crate"
+	desc = "Contains one spare SalGlu Solution vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/salclu)
 	crate_name = "SalGlu vial crate"
 
-/datum/supply_pack/faction/nanotrasen/medical/vials/chit_vial
-	name = "Chitosan Vial"
-	desc = "Contains 2 spare Chitosan vials, for usage in a Hypospray."
-	cost = 600
+/datum/supply_pack/faction/nanotrasen/medical/chit_vial
+	name = "Chitosan Vial Crate"
+	desc = "Contains one spare Chitosan vial, for usage in a Hypospray."
+	cost = 300
 	contains = list(
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan,
-		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan
-	)
+		/obj/item/reagent_containers/glass/bottle/vial/small/preloaded/chitosan)
 	crate_name = "chitosan vial crate"

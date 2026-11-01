@@ -39,8 +39,8 @@ export const OutpostCommunicationsCeladon = (props, context) => {
               <Stack.Item>
                 <Button.Input
                   content="Withdraw Cash"
-                  currentValue={100}
-                  defaultValue={100}
+                  currentValue={points}
+                  defaultValue={points}
                   onCommit={(e, value) =>
                     act('withdrawCash', {
                       value: value,
