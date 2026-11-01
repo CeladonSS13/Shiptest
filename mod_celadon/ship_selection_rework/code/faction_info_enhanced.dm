@@ -7,9 +7,9 @@ GLOBAL_LIST_INIT(faction_preview_cache, list())
 // Данные о фракциях для информационных блоков
 GLOBAL_LIST_INIT(faction_info_data, list(
 	"elysium" = list(
-		"name" = "Elysium",
+		"name" = "Elysium Separatists",
 		"description" = "Радикальное движение за независимость Элизиума и «очищение» родной земли. Дисциплина, вера и готовность к жертве делают их опасными противниками; в ход идёт трофейное и самодельное вооружение.",
-		"wiki_url" = "https://wiki.celadon.pro/index.php/Elysim_Separatists",
+		"wiki_url" = "https://wiki.celadon.pro/index.php/Elysium_Separatists",
 		"outfits" = list(
 			/datum/outfit/job/cel/elysium/captain,
 			/datum/outfit/job/cel/elysium/assistant
@@ -43,7 +43,7 @@ GLOBAL_LIST_INIT(faction_info_data, list(
 		)
 	),
 	"solfed" = list(
-		"name" = "SolFed",
+		"name" = "Solar Federation",
 		"description" = "Закон и порядок больших дорог: патрули, лицензии, таможня и спасательные маяки. Они защищают торговлю и граждан, но требуют соблюдения правил — бюрократия здесь такая же мощная, как и флот.",
 		"wiki_url" = "https://wiki.celadon.pro/index.php/Solar_Federation",
 		"outfits" = list(

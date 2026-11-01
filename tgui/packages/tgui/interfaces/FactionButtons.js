@@ -8,7 +8,7 @@ import FactionInfo from './FactionInfo';
 const FACTIONS = [
   {
     id: 'elysium',
-    name: 'Elysium',
+    name: 'Elysium Separatists',
     short: 'ELY',
     color: '#FF6B35',
   },
@@ -32,7 +32,7 @@ const FACTIONS = [
   },
   {
     id: 'solfed',
-    name: 'SolFed',
+    name: 'Solar Federation',
     short: 'SF',
     color: '#283674',
   },
