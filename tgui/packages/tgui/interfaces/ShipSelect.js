@@ -69,7 +69,7 @@ export const ShipSelect = (props, context) => {
   return (
     <Window
       key={`shipselect:${currentTab}:${epoch}`}
-      title="Ship Select [INTERCEPTOR v3-FINAL]"
+      title="Ship Select"
       width={860}
       height={640}
       resizable
