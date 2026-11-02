@@ -127,11 +127,32 @@ export const ShipBrowser = (props, context) => {
     }
   };
 
+  const getWindowName = (faction) => {
+    switch (faction) {
+      case 'nanotrasen':
+        return 'NanoTrasen';
+      case 'syndicate':
+        return 'Syndicate';
+      case 'inteq':
+        return 'InteQ';
+      case 'solfed':
+        return 'Solar Federation';
+      case 'independent':
+        return 'Independent';
+      case 'elysium':
+        return 'Elysium Separatists';
+      case 'pirates':
+        return 'Pirates';
+      default:
+        return undefined;
+    }
+  };
+
   return (
     <Window
-      title={String(faction || 'Ships')}
+      title={String(getWindowName(faction) || 'Ships')}
       width={860}
-      height={faction === 'syndicate' ? 800 : 640}
+      height={640}
       theme={getWindowTheme(faction)}
     >
       <Window.Content scrollable>

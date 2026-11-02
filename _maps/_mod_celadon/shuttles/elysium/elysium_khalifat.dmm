@@ -4455,9 +4455,10 @@
 /obj/structure/table/reinforced,
 /obj/machinery/turretid/ship{
 	dir = 8;
-	pixel_x = -1;
+	pixel_x = 7;
 	req_access = null;
-	id = "khalifat_turrets"
+	id = "khalifat_turrets";
+	pixel_y = 4
 	},
 /turf/open/floor/carpet/green,
 /area/ship/bridge)

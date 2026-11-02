@@ -861,19 +861,20 @@
 	},
 /obj/machinery/turretid/ship{
 	id = "chronicle_turrets";
-	pixel_x = 26;
-	pixel_y = 6
+	dir = 8;
+	pixel_x = 30;
+	pixel_y = 4
 	},
 /obj/machinery/button/door{
 	dir = 8;
-	pixel_y = -7;
+	pixel_y = -9;
 	pixel_x = 23;
 	id = "chronicle_bridge"
 	},
+/obj/machinery/light/dim/directional/north,
 /obj/machinery/computer/camera_advanced{
 	dir = 8
 	},
-/obj/machinery/light/dim/directional/north,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "hU" = (

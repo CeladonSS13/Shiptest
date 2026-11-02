@@ -1379,7 +1379,7 @@ GLOBAL_LIST_EMPTY(preferences_datums)
 						"Syndicate" = "#9c0808",
 						"Independent" = "#7e6641",
 						"InteQ" = "#4d291F",
-						"SolFed" = "#191970",
+						"Solar Federation" = "#191970",
 						"Pirates" = "#000000",
 						"Elysium" = "#006400"
 					)

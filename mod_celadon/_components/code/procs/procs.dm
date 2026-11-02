@@ -10,3 +10,10 @@
 		output += copytext(string_to_split, i, i + chunk_limit)
 
 	return output
+
+/mob/proc/checkPlayerPanel(atom/A)
+	if(!istype(A, /mob))
+		return
+
+	if(check_rights(R_ADMIN))
+		usr.client.holder.show_player_panel(A)

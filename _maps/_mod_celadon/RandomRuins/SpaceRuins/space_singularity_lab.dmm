@@ -2228,7 +2228,6 @@
 /turf/open/floor/engine,
 /area/ruin/space/has_grav/singularitylab)
 "jk" = (
-/obj/machinery/turretid,
 /obj/structure/table/reinforced,
 /obj/item/paper_bin{
 	pixel_x = 8;
@@ -9772,6 +9771,11 @@
 	},
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor3"
+	},
+/obj/machinery/turretid{
+	dir = 4;
+	pixel_x = -30;
+	pixel_y = 1
 	},
 /turf/open/floor/carpet/nanoweave/beige,
 /area/ruin/space/has_grav/singularitylab/cargo)

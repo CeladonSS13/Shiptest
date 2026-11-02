@@ -6003,8 +6003,10 @@
 	dir = 8
 	},
 /obj/machinery/turretid/ship{
-	pixel_x = -32;
-	id = "hammerhead_turrets"
+	id = "hammerhead_turrets";
+	dir = 4;
+	pixel_x = -28;
+	pixel_y = 0
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)

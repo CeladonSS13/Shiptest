@@ -436,21 +436,21 @@
 	id = "KaUbridge";
 	name = "shutters bridge";
 	pixel_x = 8;
-	pixel_y = 21
+	pixel_y = 19
 	},
 /obj/machinery/button/door{
 	id = "KaUShutersbridge";
 	name = "shutters bridge";
 	pixel_x = 8;
-	pixel_y = 30
+	pixel_y = 26
 	},
 /obj/machinery/button/door{
 	id = "syndieKaU_Armory";
 	name = "shutters armory";
-	pixel_x = -3;
+	pixel_x = 1;
 	req_access_txt = list(19);
 	req_ship_access = 1;
-	pixel_y = 21
+	pixel_y = 19
 	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
@@ -857,8 +857,8 @@
 	dir = 8
 	},
 /obj/machinery/turretid/ship{
-	pixel_y = 63;
-	pixel_x = -7;
+	pixel_y = 62;
+	pixel_x = -6;
 	id = "kau_turrets"
 	},
 /turf/open/floor/carpet/black,

@@ -1265,9 +1265,9 @@
 	},
 /obj/effect/turf_decal/borderfloor,
 /obj/machinery/turretid{
-	pixel_x = -1;
-	pixel_y = 3;
-	id = "fuelingpost"
+	id = "fuelingpost";
+	pixel_x = 0;
+	pixel_y = 13
 	},
 /turf/open/floor/plasteel/telecomms_floor/airless,
 /area/ruin/space/has_grav/refuelingpost/bridge)
@@ -4386,9 +4386,10 @@
 	dir = 4
 	},
 /obj/machinery/turretid{
-	pixel_x = -26;
-	pixel_y = 1;
-	id = "bonnieguns"
+	pixel_x = -27;
+	pixel_y = 0;
+	id = "bonnieguns";
+	dir = 4
 	},
 /obj/effect/decal/cleanable/blood{
 	icon_state = "floor4"

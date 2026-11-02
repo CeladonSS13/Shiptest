@@ -52,6 +52,7 @@
 	gloves = /obj/item/clothing/gloves/color/black
 	back = /obj/item/storage/backpack/satchel/leather
 	uniform = /obj/item/clothing/under/color/darkgreen
+	suit = /obj/item/clothing/suit/apparel/black
 	shoes = /obj/item/clothing/shoes/jackboots
 	mask = /obj/item/clothing/mask/bandana/green
 	ears = /obj/item/radio/headset/heads/captain/alt
@@ -78,10 +79,10 @@
 	. = ..()
 	get_elysium_access(H)
 
-/datum/outfit/job/cel/elysium/assistant
+/datum/outfit/job/cel/elysium/medic
 	name = "Elysium - Ahisa`i"
-	jobtype = /datum/job/assistant
-	job_icon = "assistant"
+	jobtype = /datum/job/doctor
+	job_icon = "paramedic"
 
 	id = /obj/item/card/id/cel/elysium/crew
 	suit = /obj/item/clothing/suit/apparel/black
@@ -89,6 +90,22 @@
 	head = /obj/item/clothing/head/shemag/black
 	backpack = /obj/item/storage/backpack/satchel
 	uniform = /obj/item/clothing/under/utility
+	shoes = /obj/item/clothing/shoes/jackboots
+
+/datum/outfit/job/cel/elysium/medic/post_equip(mob/living/carbon/human/H)
+	. = ..()
+	get_elysium_access(H)
+
+/datum/outfit/job/cel/elysium/assistant
+	name = "Elysium - Dzhanakhan"
+	jobtype = /datum/job/assistant
+	job_icon = "assistant"
+
+	id = /obj/item/card/id/cel/elysium/crew
+	head = /obj/item/clothing/head/shemag/green
+	uniform = /obj/item/clothing/under/color/darkgreen
+	backpack = /obj/item/storage/backpack/satchel
+	gloves = /obj/item/clothing/gloves/fingerless
 	shoes = /obj/item/clothing/shoes/jackboots
 
 /datum/outfit/job/cel/elysium/assistant/post_equip(mob/living/carbon/human/H)

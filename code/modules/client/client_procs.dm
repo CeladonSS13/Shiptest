@@ -342,6 +342,7 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 
 	// Initialize tgui panel
 	tgui_panel.initialize()
+	discord = checkDiscord(src.ckey) // [CELADON-ADD] - Добавляет поле с Discord ID.
 
 	if(alert_mob_dupe_login)
 		spawn()

@@ -2277,8 +2277,8 @@
 /obj/machinery/light/colored/blue,
 /obj/machinery/button/door{
 	dir = 8;
-	pixel_y = 7;
-	pixel_x = 23;
+	pixel_y = 10;
+	pixel_x = 22;
 	id = "dagger_bridge"
 	},
 /obj/effect/turf_decal/siding/thinplating/dark{
@@ -2288,12 +2288,13 @@
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border{
 	dir = 6
 	},
+/obj/item/pen/fountain,
 /obj/machinery/turretid/ship{
 	id = "Daggerfall_turrets";
-	pixel_x = 25;
-	pixel_y = -6
+	dir = 8;
+	pixel_x = 30;
+	pixel_y = -4
 	},
-/obj/item/pen/fountain,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
 "Cm" = (

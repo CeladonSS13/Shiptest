@@ -48,12 +48,6 @@
 	},
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
-"bi" = (
-/turf/open/floor/engine/hull/reinforced{
-	icon = 'mod_celadon/_storage_icons/icons/structures/floors/metal_2.dmi';
-	icon_state = "metal_1"
-	},
-/area/ship/engineering)
 "bq" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1031,9 +1025,6 @@
 /obj/structure/catwalk/over/plated_catwalk/dark,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
-"IX" = (
-/turf/open/floor/plasteel/grimy,
-/area/ship/external/dark)
 "Jg" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
@@ -1164,7 +1155,6 @@
 "Nt" = (
 /obj/structure/closet/wall{
 	dir = 4;
-	icon_state = "emergency_wall";
 	pixel_x = 28
 	},
 /obj/item/tank/internals/emergency_oxygen/engi,
@@ -1740,7 +1730,7 @@ BD
 "}
 (8,1,1) = {"
 BD
-BD
+dU
 BD
 BD
 BD
@@ -1782,7 +1772,7 @@ BD
 "}
 (9,1,1) = {"
 BD
-BD
+dU
 BD
 BD
 BD
@@ -1825,7 +1815,7 @@ BD
 (10,1,1) = {"
 BD
 dU
-BD
+dU
 BD
 BD
 BD
@@ -1868,7 +1858,7 @@ BD
 BD
 dU
 dU
-BD
+dU
 BD
 BD
 BD
@@ -1910,7 +1900,7 @@ BD
 BD
 dU
 dU
-BD
+dU
 BD
 BD
 BD
@@ -1982,7 +1972,7 @@ Vs
 BD
 BD
 BD
-dU
+BD
 dU
 dU
 dU
@@ -1995,7 +1985,7 @@ BD
 dU
 dU
 dU
-IX
+dU
 dU
 ih
 Vs
@@ -2037,7 +2027,7 @@ BD
 BD
 dU
 dU
-IX
+dU
 dU
 ih
 Vs
@@ -2079,7 +2069,7 @@ BD
 BD
 dU
 dU
-IX
+dU
 dU
 ih
 Vs
@@ -2121,7 +2111,7 @@ BD
 BD
 BD
 dU
-IX
+dU
 dU
 ih
 Vs
@@ -2163,7 +2153,7 @@ BD
 BD
 BD
 dU
-IX
+dU
 dU
 ih
 aS
@@ -2207,7 +2197,7 @@ BD
 BD
 dU
 dU
-bi
+ih
 aS
 YQ
 RT
@@ -2233,7 +2223,7 @@ He
 nK
 ne
 aS
-aS
+Fh
 dU
 dU
 BD
@@ -2248,8 +2238,8 @@ BD
 BD
 BD
 dU
-bi
-bi
+dU
+ih
 aS
 qB
 Jn
@@ -2275,8 +2265,8 @@ aS
 aS
 aS
 aS
-aS
-aS
+Fh
+dU
 dU
 BD
 BD

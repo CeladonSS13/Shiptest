@@ -983,14 +983,19 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "hA" = (
-/obj/machinery/computer/helm/viewscreen{
-	dir = 8;
-	icon_state = "computer-middle";
-	icon_screen = "navigation";
-	density = 1
-	},
 /obj/effect/turf_decal/trimline/opaque/solgovblue/filled/line{
 	dir = 4
+	},
+/obj/machinery/computer/cargo{
+	icon_state = "computer-middle";
+	dir = 8
+	},
+/obj/machinery/computer/helm/viewscreen{
+	dir = 4;
+	icon_screen = "navigation";
+	density = 1;
+	pixel_x = -11;
+	pixel_y = 2
 	},
 /turf/open/floor/marble/black,
 /area/ship/bridge)

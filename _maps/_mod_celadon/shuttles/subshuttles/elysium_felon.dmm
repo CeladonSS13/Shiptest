@@ -135,17 +135,18 @@
 	},
 /area/ship/bridge)
 "y" = (
-/obj/machinery/turretid{
-	pixel_x = -7;
-	pixel_y = -30;
-	id = "ntrider"
-	},
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
 /obj/structure/fluff/broken_flooring{
 	icon_state = "plating";
 	dir = 1
+	},
+/obj/machinery/turretid{
+	id = "ntrider";
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -28
 	},
 /turf/open/floor/mineral/plastitanium{
 	icon_state = "plastitanium_dam5"
@@ -255,9 +256,7 @@
 /obj/structure/chair/comfy/shuttle{
 	dir = 8
 	},
-/obj/structure/closet/wall/blue/directional/north{
-	icon_state = "emergency_wall"
-	},
+/obj/structure/closet/wall/blue/directional/north,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,
 /obj/item/tank/internals/emergency_oxygen/engi,

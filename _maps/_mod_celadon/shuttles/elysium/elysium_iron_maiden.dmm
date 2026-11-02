@@ -253,10 +253,11 @@
 /area/ship/cargo)
 "kT" = (
 /obj/machinery/turretid/ship{
-	dir = 8;
-	pixel_x = -32;
+	dir = 4;
 	req_access = null;
-	id = "iron_turrets"
+	id = "iron_turrets";
+	pixel_x = -29;
+	pixel_y = 0
 	},
 /obj/machinery/holopad,
 /obj/structure/cable{

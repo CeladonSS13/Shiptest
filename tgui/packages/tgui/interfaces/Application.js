@@ -81,7 +81,7 @@ export const Application = (props, context) => {
 
   return (
     <Window
-      title={`${ship_name} • ${applicationTitle} [INTERCEPTOR v3-FINAL]`}
+      title={`${ship_name} • ${applicationTitle}`}
       width={650}
       height={700}
       resizable

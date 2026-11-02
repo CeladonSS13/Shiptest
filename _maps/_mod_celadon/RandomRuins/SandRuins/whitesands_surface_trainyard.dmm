@@ -3926,11 +3926,6 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/turretid/ship{
-	pixel_y = 38;
-	id = "haymaker";
-	pixel_x = 25
-	},
 /obj/item/radio/intercom/directional/north{
 	pixel_y = 62
 	},
@@ -6171,7 +6166,13 @@
 /obj/machinery/button/door{
 	pixel_y = 26;
 	name = "Engine button";
-	id = "Tr_en_tr"
+	id = "Tr_en_tr";
+	pixel_x = 9
+	},
+/obj/machinery/turretid/ship{
+	id = "haymaker";
+	pixel_x = -5;
+	pixel_y = 30
 	},
 /turf/open/floor/mineral/plastitanium/red,
 /area/ruin/whitesands/trainyard/train)

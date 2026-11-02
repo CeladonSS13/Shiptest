@@ -1112,13 +1112,9 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
 "Dy" = (
-/obj/machinery/turretid/ship{
-	pixel_y = -6;
-	pixel_x = -25;
-	id = "thundershot"
-	},
 /obj/machinery/firealarm/directional/west{
-	pixel_y = 7
+	pixel_y = -9;
+	pixel_x = -31
 	},
 /obj/effect/turf_decal/siding/wood/bamboo{
 	dir = 9
@@ -1126,6 +1122,12 @@
 /obj/machinery/computer/cargo,
 /obj/effect/turf_decal/trimline/transparent/syndiered/line{
 	dir = 8
+	},
+/obj/machinery/turretid/ship{
+	pixel_y = 5;
+	id = "thundershot";
+	dir = 4;
+	pixel_x = -30
 	},
 /turf/open/floor/suns/hatch{
 	color = "#E6D2BA"

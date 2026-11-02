@@ -31,6 +31,11 @@
 	desc = "A close-fitting tactical mask with an especially aggressive Compli-o-nator 3000."
 	icon_state = "swat"
 	item_state = "swat"
+	// [CELADON-ADD]
+	icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/hailer.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/mask/overlay/hailer.dmi'
+	unique_death = list('mod_celadon/_storage_sounds/sound/items/gasmask/sec_die.ogg')
+	// [/CELADON-ADD]
 	flags_inv = HIDEFACIALHAIR | HIDEFACE | HIDEEYES | HIDEEARS | HIDEHAIR
 	visor_flags_inv = 0
 
