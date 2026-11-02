@@ -26,6 +26,9 @@
 /obj/structure/window/plasma/reinforced{
 	dir = 1
 	},
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "ba" = (
@@ -233,6 +236,9 @@
 	id = "thrush_sub_engines"
 	},
 /obj/structure/window/plasma/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-8"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "lb" = (
@@ -278,6 +284,9 @@
 /obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/window/plasma/reinforced{
 	dir = 1
+	},
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
 	},
 /turf/open/floor/plating,
 /area/ship/bridge)
@@ -333,6 +342,9 @@
 "rx" = (
 /obj/machinery/power/shuttle/engine/electric/premium,
 /obj/structure/window/plasma/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "tq" = (
@@ -732,9 +744,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 8
 	},
-/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
-	dir = 8
-	},
 /obj/machinery/door/airlock/grunge{
 	dir = 4;
 	req_ship_access = 0
@@ -778,6 +787,13 @@
 /obj/structure/cable/yellow{
 	icon_state = "5-8"
 	},
+/obj/docking_port/mobile{
+	can_move_docking_ports = 1;
+	dir = 4;
+	port_direction = 2;
+	preferred_direction = 4;
+	name = "thrush"
+	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/bridge)
 "Tq" = (
@@ -811,7 +827,7 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4,
 /obj/machinery/turretid/ship{
 	pixel_y = 22;
-	id = "haymaker";
+	id = "thrush_sub_turrets";
 	pixel_x = -13
 	},
 /obj/effect/turf_decal/siding/white{
@@ -832,7 +848,6 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/bridge)
 "WJ" = (
-/obj/item/radio/intercom/wideband/directional/north,
 /obj/effect/turf_decal/borderfloorblack{
 	dir = 8;
 	layer = 2.030

@@ -168,6 +168,8 @@
 	volume = 30
 	spillable = TRUE
 
+//peregrine stuff
+
 /datum/preset_holoimage/engi_guide
 	species_type = /datum/species/human
 	outfit_type = /datum/outfit/job/cel/nanotrasen/ce/nakamura
@@ -241,6 +243,30 @@
 	DELAY 20
 	SAY Good luck!!
 	"}
+
+/obj/item/paper/fluff/ship/peregrine/teleporter
+	name = "corporate notice"
+	desc = "A plastic card for confidential corporate matters. Has a notice regarding all those empty machine frames."
+	icon_state = "paperslip"
+	default_raw_text ={"<html> <head><table bgcolor="335c91" width="100%" height="15%">
+			</head>
+			<th>
+			<div align="left"><font size="4" color="white">
+			Notice regarding the 'Advanced Bluespace Teleportation Applications' project.
+			</div>
+			<body>
+			<hr>
+			<div align="left"><font size="2" color="black">
+			<p>Due to the 'Far Frontier Expeditions' program related budget cuts (see article 38), your vessel was not designated for the 'Advanced Bluespace Teleportation Applications' project.</p>
+			<p>All related blueprints are as always available at any lathe installation, provided the required 'Nanoworks-science-network'™ research prerequisites are complete.</p>
+			</div>
+			<hr>
+			<div align="left"><font size="2" color="black">
+			<p><code>As per regular employee guidlines, Nanotrasen Corporation would like to wish you 'A very safe day'.</code></p>
+			</div>
+			</th>
+			</body>
+			"}
 
 //Holocalls
 /datum/preset_holoimage/commissioner

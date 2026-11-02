@@ -126,7 +126,8 @@
 "bc" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "peregrine_sm";
-	dir = 4
+	dir = 4;
+	rad_insulation = 0
 	},
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -981,7 +982,9 @@
 	pixel_x = 0;
 	pixel_y = 17
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/atmospherics)
 "eE" = (
 /obj/effect/turf_decal/corner/transparent/vired/border,
@@ -2368,12 +2371,6 @@
 	pixel_y = 23;
 	name = "Cargo Bay Holofield Control"
 	},
-/obj/machinery/button/door{
-	id = "peregrine_internal_cargo_2";
-	name = "Internal Cargo Control";
-	pixel_y = 23;
-	pixel_x = 10
-	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/starboard_fore)
 "kO" = (
@@ -2741,7 +2738,6 @@
 	pixel_x = 8;
 	pixel_y = 0
 	},
-/obj/machinery/computer/helm/viewscreen/directional/south,
 /obj/effect/turf_decal/corner/transparent/vired/border{
 	dir = 8
 	},
@@ -2967,6 +2963,13 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/closet/crate/medical{
+	name = "DeForest mission supplies crate"
+	},
+/obj/item/storage/firstaid/toxin,
+/obj/item/storage/firstaid/brute,
+/obj/item/storage/firstaid/fire,
+/obj/effect/mapping_helpers/crate_shelve,
 /turf/open/floor/pod/light,
 /area/ship/hallway/fore)
 "nI" = (
@@ -3670,15 +3673,6 @@
 	dir = 8
 	},
 /obj/structure/table,
-/obj/item/stack/sheet/glass/twenty{
-	pixel_x = -8;
-	pixel_y = -2
-	},
-/obj/item/stack/sheet/metal/twenty,
-/obj/item/stack/sheet/mineral/titanium/twenty{
-	pixel_x = 5;
-	pixel_y = 4
-	},
 /obj/item/hand_labeler{
 	pixel_x = 1;
 	pixel_y = 12
@@ -3686,6 +3680,20 @@
 /obj/item/stack/packageWrap{
 	pixel_x = -1;
 	pixel_y = 1
+	},
+/obj/item/stack/sheet/metal/ten{
+	pixel_x = -5;
+	pixel_y = 0
+	},
+/obj/item/stack/sheet/glass{
+	pixel_x = 0;
+	pixel_y = 4;
+	amount = 10
+	},
+/obj/item/stack/sheet/mineral/titanium{
+	pixel_x = 8;
+	pixel_y = 7;
+	amount = 10
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/hallway/starboard_fore)
@@ -3874,6 +3882,11 @@
 /obj/machinery/atmospherics/pipe/simple/orange/visible,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/visible/layer2,
 /turf/open/floor/plasteel/telecomms_floor,
+/area/ship/engineering/atmospherics)
+"qW" = (
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/atmospherics)
 "qY" = (
 /obj/machinery/button/door{
@@ -5255,7 +5268,6 @@
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/mask/breath,
 /obj/item/tank/internals/oxygen,
-/obj/machinery/firealarm/directional/east,
 /turf/open/floor/pod/dark,
 /area/ship/hallway/port_fore)
 "wz" = (
@@ -5641,7 +5653,8 @@
 /obj/effect/turf_decal/industrial/warning/green/fulltile,
 /obj/machinery/door/poddoor{
 	dir = 4;
-	id = "peregrine_sm_exhaust"
+	id = "peregrine_sm_exhaust";
+	rad_insulation = 0
 	},
 /turf/open/floor/engine,
 /area/ship/engineering/atmospherics)
@@ -5801,7 +5814,8 @@
 "yA" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "peregrine_sm";
-	dir = 4
+	dir = 4;
+	rad_insulation = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 5
@@ -5928,7 +5942,7 @@
 /area/ship/engineering/atmospherics)
 "zt" = (
 /obj/structure/sign/nanotrasen,
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium,
 /area/ship/hallway/port_fore)
 "zw" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -7131,10 +7145,12 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Ez" = (
-/obj/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/manifold4w/green/visible/layer1,
 /obj/structure/reflector/box/anchored,
 /obj/machinery/light/floor,
+/obj/structure/window/plasma/reinforced{
+	rad_insulation = 0.5
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "EB" = (
@@ -7344,7 +7360,6 @@
 /obj/item/clothing/head/helmet/space,
 /obj/item/clothing/mask/breath,
 /obj/item/tank/internals/oxygen,
-/obj/machinery/firealarm/directional/east,
 /turf/open/floor/pod/dark,
 /area/ship/hallway/starboard_fore)
 "Fh" = (
@@ -8196,7 +8211,11 @@
 /area/ship/crew/office)
 "IF" = (
 /obj/structure/catwalk/over/plated_catwalk/dark,
-/obj/item/beacon,
+/obj/item/beacon{
+	anchored = 1;
+	can_be_unanchored = 1;
+	name = "\improper integrated tracking beacon"
+	},
 /turf/open/floor/plating,
 /area/ship/hallway/fore)
 "II" = (
@@ -8469,9 +8488,6 @@
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
 "JK" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer1{
 	dir = 5
 	},
@@ -8480,6 +8496,10 @@
 	},
 /obj/structure/reflector/double/anchored{
 	rotation_angle = 290
+	},
+/obj/structure/window/plasma/reinforced{
+	dir = 1;
+	rad_insulation = 0.5
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -8638,12 +8658,14 @@
 /turf/open/floor/plasteel/patterned/grid/dark,
 /area/ship/hallway/port_fore)
 "Kc" = (
-/obj/structure/window/plasma/reinforced,
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer1{
 	dir = 6
 	},
 /obj/structure/reflector/double/anchored{
 	rotation_angle = 250
+	},
+/obj/structure/window/plasma/reinforced{
+	rad_insulation = 0.5
 	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
@@ -8792,7 +8814,9 @@
 	pixel_x = 0;
 	pixel_y = -3
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/atmospherics)
 "KS" = (
 /obj/structure/table/reinforced,
@@ -9258,7 +9282,8 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "peregrine_sm";
-	dir = 4
+	dir = 4;
+	rad_insulation = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/green/visible{
 	dir = 10
@@ -9440,7 +9465,9 @@
 	dir = 10;
 	id = "peregrine_grid"
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/atmospherics)
 "Op" = (
 /obj/machinery/suit_storage_unit/inherit,
@@ -9946,9 +9973,6 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/medical)
 "Rw" = (
-/obj/structure/window/plasma/reinforced{
-	dir = 1
-	},
 /obj/machinery/atmospherics/pipe/manifold4w/orange/visible/layer5,
 /obj/machinery/atmospherics/pipe/manifold/orange/visible/layer1{
 	dir = 1
@@ -9957,6 +9981,10 @@
 	dir = 1
 	},
 /obj/machinery/light/floor,
+/obj/structure/window/plasma/reinforced{
+	dir = 1;
+	rad_insulation = 0.5
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "Rx" = (
@@ -10197,13 +10225,6 @@
 	pixel_x = -6;
 	id = "peregrine_cargo_1";
 	name = "Cargo Door Control";
-	dir = 1
-	},
-/obj/machinery/button/door{
-	pixel_y = -21;
-	pixel_x = 10;
-	id = "peregrine_internal_cargo_1";
-	name = "Internal Cargo Control";
 	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
@@ -10447,7 +10468,9 @@
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hallway/fore)
 "SN" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/engine{
 	requires_power = 0
 	})
@@ -10532,16 +10555,6 @@
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/spawner/random/food_or_drink/ration,
 /obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/effect/spawner/random/food_or_drink/ration,
-/obj/item/reagent_containers/food/drinks/waterbottle/large{
-	pixel_x = 8;
-	name = "John Trasen's Reserve"
-	},
-/obj/item/reagent_containers/food/drinks/waterbottle/large{
-	pixel_x = 8;
-	name = "John Trasen's Reserve"
-	},
 /obj/item/reagent_containers/food/drinks/waterbottle/large{
 	pixel_x = 8;
 	name = "John Trasen's Reserve"
@@ -10645,13 +10658,17 @@
 /turf/open/floor/plating,
 /area/ship/hallway/fore)
 "Tx" = (
-/obj/machinery/teleport/hub,
 /obj/machinery/light/floor,
 /obj/effect/turf_decal/trimline/opaque/neutral,
+/obj/structure/frame/machine{
+	anchored = 1
+	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/hallway/fore)
 "Tz" = (
-/obj/structure/window/plasma/reinforced,
+/obj/structure/window/plasma/reinforced{
+	rad_insulation = 0.5
+	},
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer1{
 	dir = 10
 	},
@@ -10825,7 +10842,8 @@
 "UC" = (
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "peregrine_sm";
-	dir = 4
+	dir = 4;
+	rad_insulation = 0
 	},
 /obj/machinery/door/airlock/engineering/glass/critical{
 	dir = 4
@@ -10979,7 +10997,8 @@
 	},
 /obj/machinery/door/poddoor/shutters/preopen{
 	id = "peregrine_sm";
-	dir = 4
+	dir = 4;
+	rad_insulation = 0
 	},
 /obj/structure/cable{
 	icon_state = "1-8"
@@ -11368,8 +11387,11 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security/armory)
 "WK" = (
-/obj/machinery/computer/teleporter,
 /obj/machinery/light/directional/north,
+/obj/item/paper/fluff/ship/peregrine/teleporter{
+	color = "#335c91"
+	},
+/obj/structure/frame/computer,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/hallway/fore)
 "WN" = (
@@ -11552,10 +11574,7 @@
 	pixel_y = 11;
 	pixel_x = -10
 	},
-/obj/item/storage/box/hypospray/mkiii{
-	pixel_x = 2;
-	pixel_y = 2
-	},
+/obj/item/storage/box/hypospray,
 /obj/item/reagent_containers/glass/bottle/dimorlin{
 	pixel_y = 0;
 	pixel_x = -11
@@ -11607,7 +11626,9 @@
 	dir = 9;
 	id = "peregrine_grid"
 	},
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/wall/mineral/titanium/nodiagonal{
+	rad_insulation = 0
+	},
 /area/ship/engineering/atmospherics)
 "Yq" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2,
@@ -11743,10 +11764,12 @@
 /turf/open/floor/suns,
 /area/ship/bridge)
 "ZE" = (
-/obj/machinery/teleport/station,
 /obj/machinery/camera/autoname/directional/south{
 	pixel_x = 0;
 	pixel_y = 9
+	},
+/obj/structure/frame/machine{
+	anchored = 1
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/hallway/fore)
@@ -11780,7 +11803,8 @@
 /area/ship/engineering/atmospherics)
 "ZM" = (
 /obj/structure/window/plasma/reinforced{
-	dir = 1
+	dir = 1;
+	rad_insulation = 0.5
 	},
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer1{
 	dir = 9
@@ -11853,11 +11877,11 @@ pE
 pE
 pE
 Yi
-uR
+qW
 ya
-uR
+qW
 ya
-uR
+qW
 Om
 pE
 pE
@@ -11893,13 +11917,13 @@ pE
 pE
 eA
 Ub
-uR
-uR
+qW
+qW
 ya
-uR
+qW
 ya
-uR
-uR
+qW
+qW
 en
 KB
 pE
@@ -11932,7 +11956,7 @@ pE
 pE
 pE
 pE
-uR
+qW
 nL
 wv
 Kc
@@ -11942,7 +11966,7 @@ Fs
 JK
 wv
 qv
-uR
+qW
 pE
 pE
 pE
@@ -11973,7 +11997,7 @@ rY
 GC
 Fh
 GC
-uR
+qW
 Vv
 GT
 Ez
@@ -11983,7 +12007,7 @@ lp
 Rw
 GT
 oQ
-uR
+qW
 GC
 Rc
 GC
@@ -12014,7 +12038,7 @@ uR
 Hm
 HH
 Hm
-uR
+qW
 lE
 SO
 Tz
@@ -12024,7 +12048,7 @@ So
 ZM
 QZ
 os
-uR
+qW
 Hm
 UD
 Hm
@@ -12055,7 +12079,7 @@ uR
 xL
 CP
 Oa
-uR
+qW
 vm
 tW
 SN
@@ -12065,7 +12089,7 @@ SN
 SN
 tW
 Kh
-uR
+qW
 kI
 SK
 JW
@@ -12096,7 +12120,7 @@ uR
 vK
 DZ
 or
-uR
+qW
 Xu
 wv
 SN
@@ -12106,7 +12130,7 @@ fX
 SN
 wv
 RT
-uR
+qW
 lg
 ec
 UI
@@ -12137,7 +12161,7 @@ uR
 Wy
 Gj
 dH
-uR
+qW
 Ns
 yA
 SN
@@ -12147,7 +12171,7 @@ SN
 SN
 bc
 Vh
-uR
+qW
 Je
 MC
 Je
@@ -13529,7 +13553,7 @@ pE
 pE
 zt
 cw
-tS
+cw
 pE
 Gv
 WK
@@ -13543,7 +13567,7 @@ lR
 dx
 Gv
 pE
-ex
+kO
 kO
 eF
 pE
