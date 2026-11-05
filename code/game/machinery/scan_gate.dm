@@ -1,4 +1,3 @@
-#define SCANGATE_NONE "Off"
 #define SCANGATE_MINDSHIELD "Mindshield"
 #define SCANGATE_NANITES "Nanites"
 #define SCANGATE_DISEASE "Disease"
@@ -33,10 +32,10 @@
 	var/scanline_timer
 	var/next_beep = 0 //avoids spam
 	var/locked = FALSE
-	var/scangate_mode = SCANGATE_NONE
+	var/list/scangate_modes = list()
 	var/disease_threshold = DISEASE_SEVERITY_MINOR
 	var/nanite_cloud = 1
-	var/detect_species = SCANGATE_HUMAN
+	var/list/detect_species = list(SCANGATE_HUMAN)
 	var/reverse = FALSE //If true, signals if the scan returns false
 
 /obj/machinery/scanner_gate/Initialize()
@@ -97,90 +96,127 @@
 	to_chat(user, span_notice("You fry the ID checking system."))
 
 /obj/machinery/scanner_gate/proc/perform_scan(mob/living/M)
+	if(!length(scangate_modes))
+		return
+
+	var/scanline_type
+	for(var/scan_mode in list(
+		SCANGATE_WANTED,
+		SCANGATE_GUNS,
+		SCANGATE_MINDSHIELD,
+		SCANGATE_DISEASE,
+		SCANGATE_SPECIES,
+		SCANGATE_NANITES,
+	))
+		if((scan_mode in scangate_modes) && scan_matches(M, scan_mode))
+			scanline_type = scan_mode_scanline(scan_mode)
+			break
+
 	var/beep = FALSE
-	switch(scangate_mode)
-		if(SCANGATE_NONE)
-			return
+	if(scanline_type)
+		beep = TRUE
+	if(reverse)
+		beep = !beep
+	if(beep)
+		alarm_beep(scanline_type ? scanline_type : "alarm")
+	else
+		set_scanline("scanning", 10)
+
+/obj/machinery/scanner_gate/proc/scan_matches(mob/living/M, scan_mode)
+	switch(scan_mode)
 		if(SCANGATE_WANTED)
 			if(ishuman(M))
 				var/mob/living/carbon/human/H = M
 				var/perpname = H.get_face_name(H.get_id_name())
 				var/datum/data/record/R = find_record("name", perpname, GLOB.data_core.security)
 				if(!R || (R.fields["criminal"] == "*Arrest*"))
-					beep = TRUE
+					return TRUE
+		/*
+		Из интересного - если нет записей, Wanted срабатывает. Из-за !R
+		*/
 		if(SCANGATE_MINDSHIELD)
 			if(HAS_TRAIT(M, TRAIT_MINDSHIELD))
-				beep = TRUE
+				return TRUE
 		if(SCANGATE_NANITES)
 			if(SEND_SIGNAL(M, COMSIG_HAS_NANITES))
 				if(nanite_cloud)
 					var/datum/component/nanites/nanites = M.GetComponent(/datum/component/nanites)
 					if(nanites && nanites.cloud_id == nanite_cloud)
-						beep = TRUE
+						return TRUE
 				else
-					beep = TRUE
+					return TRUE
 		if(SCANGATE_DISEASE)
 			if(iscarbon(M))
 				var/mob/living/carbon/C = M
 				if(get_disease_severity_value(C.check_virus()) >= get_disease_severity_value(disease_threshold))
-					beep = TRUE
+					return TRUE
 		if(SCANGATE_SPECIES)
 			if(ishuman(M))
 				var/mob/living/carbon/human/H = M
-				var/datum/species/scan_species = /datum/species/human
-				switch(detect_species)
-					if(SCANGATE_LIZARD)
-						scan_species = /datum/species/lizard
-					if(SCANGATE_FLY)
-						scan_species = /datum/species/fly
-					if(SCANGATE_PLASMAMAN)
-						scan_species = /datum/species/plasmaman
-					if(SCANGATE_MOTH)
-						scan_species = /datum/species/moth
-					if(SCANGATE_ZOMBIE)
-						scan_species = /datum/species/zombie
-					if(SCANGATE_SPIDER)
-						scan_species = /datum/species/spider
-					if(SCANGATE_IPC)
-						scan_species = /datum/species/ipc
-					if(SCANGATE_ELZUOSE)
-						scan_species = /datum/species/elzuose
-					if(SCANGATE_KEPORI)
-						scan_species = /datum/species/kepori
-					// [CELADON-ADD] - TAJARA, LANIUS
-					if(SPECIES_TAJARA)
-						scan_species = /datum/species/tajara
-					// [CELADON-ADD] - CELADON_RIOL, CELADON_LANIUS
-					if(SPECIES_RIOL)
-						scan_species = /datum/species/riol
-					if(SPECIES_LANIUS)
-						scan_species = /datum/species/lanius
-					// [/CELADON-ADD]
-				if(is_species(H, scan_species))
-					beep = TRUE
-				if(detect_species == SCANGATE_ZOMBIE) //Can detect dormant zombies
-					if(H.getorganslot(ORGAN_SLOT_ZOMBIE))
-						beep = TRUE
+				for(var/species_id in detect_species)
+					var/datum/species/scan_species = /datum/species/human
+					switch(species_id)
+						if(SCANGATE_LIZARD)
+							scan_species = /datum/species/lizard
+						if(SCANGATE_FLY)
+							scan_species = /datum/species/fly
+						if(SCANGATE_PLASMAMAN)
+							scan_species = /datum/species/plasmaman
+						if(SCANGATE_MOTH)
+							scan_species = /datum/species/moth
+						if(SCANGATE_JELLY)
+							scan_species = /datum/species/jelly
+						if(SCANGATE_ZOMBIE)
+							scan_species = /datum/species/zombie
+						if(SCANGATE_SPIDER)
+							scan_species = /datum/species/spider
+						if(SCANGATE_IPC)
+							scan_species = /datum/species/ipc
+						if(SCANGATE_ELZUOSE)
+							scan_species = /datum/species/elzuose
+						if(SCANGATE_KEPORI)
+							scan_species = /datum/species/kepori
+						// [CELADON-ADD] - TAJARA, LANIUS
+						if(SPECIES_TAJARA)
+							scan_species = /datum/species/tajara
+						// [CELADON-ADD] - CELADON_RIOL, CELADON_LANIUS
+						if(SPECIES_RIOL)
+							scan_species = /datum/species/riol
+						if(SPECIES_LANIUS)
+							scan_species = /datum/species/lanius
+						// [/CELADON-ADD]
+					if(is_species(H, scan_species))
+						return TRUE
+					if(species_id == SCANGATE_ZOMBIE && H.getorganslot(ORGAN_SLOT_ZOMBIE))
+						return TRUE
 		if(SCANGATE_GUNS)
 			for(var/I in M.get_contents())
 				if(istype(I, /obj/item/gun))
-					beep = TRUE
-					break
+					return TRUE
+	return FALSE
 
-	if(reverse)
-		beep = !beep
-	if(beep)
-		alarm_beep()
-	else
-		set_scanline("scanning", 10)
+/obj/machinery/scanner_gate/proc/scan_mode_scanline(scan_mode)
+	switch(scan_mode)
+		if(SCANGATE_WANTED)
+			return "wanted"
+		if(SCANGATE_GUNS)
+			return "weapon"
+		if(SCANGATE_MINDSHIELD)
+			return "mindshield"
+		if(SCANGATE_DISEASE)
+			return "disease"
+		if(SCANGATE_SPECIES)
+			return "species"
+		if(SCANGATE_NANITES)
+			return "nanite"
 
-/obj/machinery/scanner_gate/proc/alarm_beep()
+/obj/machinery/scanner_gate/proc/alarm_beep(scanline_type)
 	if(next_beep <= world.time)
 		next_beep = world.time + 20
 		playsound(src, 'sound/machines/scanbuzz.ogg', 100, FALSE)
 	var/mutable_appearance/alarm_display = mutable_appearance(icon, "alarm_light")
 	flick_overlay_view(alarm_display, 2 SECONDS)
-	set_scanline("alarm", 2 SECONDS)
+	set_scanline(scanline_type, 2 SECONDS)
 
 /obj/machinery/scanner_gate/can_interact(mob/user)
 	if(locked)
@@ -196,7 +232,7 @@
 /obj/machinery/scanner_gate/ui_data()
 	var/list/data = list()
 	data["locked"] = locked
-	data["scan_mode"] = scangate_mode
+	data["scan_modes"] = scangate_modes
 	data["reverse"] = reverse
 	data["nanite_cloud"] = nanite_cloud
 	data["disease_threshold"] = disease_threshold
@@ -209,10 +245,21 @@
 		return
 
 	switch(action)
-		if("set_mode")
-			var/new_mode = params["new_mode"]
-			scangate_mode = new_mode
-			. = TRUE
+		if("toggle_scan_mode")
+			var/new_mode = params["scan_mode"]
+			if(new_mode in list(
+				SCANGATE_WANTED,
+				SCANGATE_GUNS,
+				SCANGATE_MINDSHIELD,
+				SCANGATE_DISEASE,
+				SCANGATE_SPECIES,
+				SCANGATE_NANITES,
+			))
+				if(new_mode in scangate_modes)
+					scangate_modes -= new_mode
+				else
+					scangate_modes += new_mode
+				. = TRUE
 		if("toggle_reverse")
 			reverse = !reverse
 			. = TRUE
@@ -231,10 +278,28 @@
 		//Some species are not scannable, like abductors (too unknown), androids (too artificial) or skeletons (too magic)
 		if("set_target_species")
 			var/new_species = params["new_species"]
-			detect_species = new_species
-			. = TRUE
+			if(new_species in list(
+				SCANGATE_HUMAN,
+				SCANGATE_LIZARD,
+				SCANGATE_FLY,
+				SCANGATE_PLASMAMAN,
+				SCANGATE_MOTH,
+				SCANGATE_JELLY,
+				SCANGATE_ZOMBIE,
+				SCANGATE_SPIDER,
+				SCANGATE_IPC,
+				SCANGATE_ELZUOSE,
+				SCANGATE_KEPORI,
+				SPECIES_TAJARA,
+				SPECIES_RIOL,
+				SPECIES_LANIUS,
+			))
+				if(new_species in detect_species)
+					detect_species -= new_species
+				else
+					detect_species += new_species
+				. = TRUE
 
-#undef SCANGATE_NONE
 #undef SCANGATE_MINDSHIELD
 #undef SCANGATE_NANITES
 #undef SCANGATE_DISEASE
