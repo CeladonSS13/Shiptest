@@ -121,7 +121,7 @@
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
 	item_state = "glock"
 	icon_state = "glock"
-	caliber = "9x18mm"
+	caliber = "9mm"
 	ammo_type = /obj/item/ammo_casing/c9mm
 	max_ammo = 17
 
