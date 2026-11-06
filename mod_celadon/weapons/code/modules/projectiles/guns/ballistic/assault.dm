@@ -153,7 +153,7 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	inhand_x_dimension = 64
 	inhand_y_dimension = 32
 	zoomable = TRUE
-	zoom_amt = 6
+	zoom_amt = 7 //6 слишком мало для такого прицела
 	zoom_out_amt = 1
 	fire_sound = "svd_fire"
 	icon_state = "svd"
