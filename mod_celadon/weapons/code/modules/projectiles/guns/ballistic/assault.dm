@@ -142,10 +142,10 @@ NO_MAG_GUN_HELPER(automatic/assault/g36/inteq)
 	unique_reskin_changes_inhand = TRUE
 NO_MAG_GUN_HELPER(automatic/assault/morita1)
 
-// СВД 7.62x54mmR
+// СВД 8x50
 /obj/item/gun/ballistic/automatic/marksman/svd
 	name = "\improper SR-33 Dragunov sniper rifle"
-	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 7.62x54mmR rounds."
+	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 8x50mmR rounds."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/svd.dmi'
 	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_lefthand.dmi'
 	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_righthand.dmi'
@@ -168,7 +168,7 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 		/obj/item/ammo_box/magazine/svd_rounds,
 	)
 
-	manufacturer = MANUFACTURER_NONE
+	manufacturer = MANUFACTURER_HUNTERSPRIDE
 
 	rack_sound = 'mod_celadon/_storage_sounds/sound/gun/svd/svd_cocked.ogg'
 
@@ -178,6 +178,13 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 	recoil = 0.01
 	recoil_unwielded = 4
 	wield_slowdown = 0.75
+
+	unique_reskin = list(\
+		"Wooden" = "svd",
+		"Carbon" = "svd_black",
+		)
+	unique_reskin_changes_inhand = TRUE
+
 NO_MAG_GUN_HELPER(automatic/marksman/svd)
 
 /obj/item/gun/ballistic/automatic/assault/cm82/elysium

@@ -140,13 +140,13 @@
 
 //magazine for svd
 /obj/item/ammo_box/magazine/svd_rounds
-	name = "\improper SVD magazine (7.62x54mmR)"
+	name = "\improper SVD magazine (8x50mmR)"
 	desc = "A large caliber magazine for the SVD sniper rifle."
 	icon = 'mod_celadon/_storage_icons/icons/items/weapons/ammo/ammo.dmi'
-	icon_state = "10_bullet-1"
-	base_icon_state = "10_bullet"
-	ammo_type = /obj/item/ammo_casing/x762_54
+	icon_state = "svd_mag-1"
+	base_icon_state = "svd_mag"
+	ammo_type = /obj/item/ammo_casing/a8_50r
 	max_ammo = 10
-	caliber = "7.62x54R"
+	caliber = "8x50mmR"
 	w_class = WEIGHT_CLASS_NORMAL
 	multiple_sprites = AMMO_BOX_FULL_EMPTY
