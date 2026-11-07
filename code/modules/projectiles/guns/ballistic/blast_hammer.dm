@@ -102,9 +102,11 @@
 /obj/item/gun/ballistic/shotgun/blasting_hammer/proc/expend_round(target, mob/living/user)
 	if(!chambered.BB)
 		return
-	if(!istype(chambered, /obj/item/ammo_casing/shotgun/blank)) //loading a live round into your hammer when it has nowhere to go is a bad idea.
-		unsafe_shot(user)
-		user.visible_message(span_warning("\The [chambered] in \the [src] backfires into \the [user]!"), span_danger("\The [chambered] in \the [src] goes off right at you!"))
+// [CELADON-REMOVE] - убирание бабаха из-за которого хаммер стал infinite
+//	if(!istype(chambered, /obj/item/ammo_casing/shotgun/blank)) //loading a live round into your hammer when it has nowhere to go is a bad idea.
+//		unsafe_shot(user)
+//		user.visible_message(span_warning("\The [chambered] in \the [src] backfires into \the [user]!"), span_danger("\The [chambered] in \the [src] goes off right at you!"))
+// [CELADON-REMOVE]
 	else
 		chambered.BB = null //fakes the shot
 		chambered.update_appearance()
