@@ -85,12 +85,7 @@
 /area/ruin/space/has_grav)
 "hR" = (
 /obj/structure/closet/crate/secure/loot,
-/obj/item/melee/sword/weebstick{
-	block_chance = 40;
-	attack_cooldown = 6;
-	force = 20;
-	throwforce = 10
-	},
+/obj/item/storage/belt/weebstick,
 /turf/open/floor/carpet/green/airless,
 /area/ruin/space/has_grav)
 "ii" = (
@@ -132,6 +127,9 @@
 /area/ruin/space/has_grav)
 "lA" = (
 /turf/open/lava/smooth/lava_land_surface/anima,
+/area/ruin/space/has_grav)
+"mp" = (
+/turf/open/lava/smooth/airless,
 /area/ruin/space/has_grav)
 "nK" = (
 /turf/closed/mineral/random,
@@ -179,7 +177,9 @@
 /turf/open/floor/plating/asteroid/smoothed/airless,
 /area/ruin/space/has_grav)
 "uv" = (
-/turf/open/indestructible/supermatter_cascade/stationary,
+/turf/open/indestructible/supermatter_cascade/stationary{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/space/has_grav)
 "uG" = (
 /obj/structure/chair/comfy/beige{
@@ -1157,7 +1157,7 @@ lf
 fg
 lf
 fg
-lA
+mp
 fg
 fg
 lf
@@ -1202,12 +1202,12 @@ nK
 nK
 lf
 fg
-lA
-lA
-lA
+mp
+mp
+mp
 uv
-lA
-lA
+mp
+mp
 lf
 lf
 lf
@@ -1249,7 +1249,7 @@ nK
 nK
 lf
 lf
-lA
+mp
 nK
 nK
 uv
@@ -1257,7 +1257,7 @@ uv
 nK
 nK
 fg
-lA
+mp
 lf
 nK
 nK
@@ -1344,16 +1344,16 @@ nK
 nK
 nK
 lf
-lA
+mp
 nK
-uv
+mp
 GX
 TH
 TH
 GX
 uv
 nK
-lA
+mp
 lf
 gi
 aL
@@ -1402,7 +1402,7 @@ TH
 TH
 uv
 fg
-lA
+mp
 fg
 lf
 lf
@@ -1439,10 +1439,10 @@ nK
 nK
 nK
 nK
-lA
-lA
+mp
+mp
 uv
-uv
+TH
 JB
 hR
 Wj
@@ -1450,7 +1450,7 @@ TH
 uv
 TH
 uv
-lA
+mp
 lf
 lf
 BR
@@ -1487,7 +1487,7 @@ nK
 nK
 cR
 nK
-lA
+mp
 fg
 uv
 TH
@@ -1536,7 +1536,7 @@ nK
 lf
 nK
 lf
-lA
+mp
 nK
 SW
 GX
@@ -1546,7 +1546,7 @@ GX
 uv
 nK
 fg
-lA
+mp
 gi
 aL
 lf
@@ -1587,13 +1587,13 @@ lf
 lf
 nK
 SW
-SW
+mp
 uv
 TH
 uv
 SW
 nK
-lA
+mp
 fg
 lf
 nK
@@ -1640,7 +1640,7 @@ uv
 uv
 nK
 nK
-lA
+mp
 fg
 Ai
 nK
@@ -1683,12 +1683,12 @@ nK
 lf
 lf
 lf
-lA
-lA
-lA
+mp
+mp
+mp
 uv
 fg
-lA
+mp
 lf
 lf
 nK
@@ -1731,7 +1731,7 @@ nK
 nK
 lf
 lf
-lA
+mp
 fg
 lf
 fg

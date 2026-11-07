@@ -355,6 +355,54 @@
 	name = "control room"
 	icon_state = "captain"
 
+// MARK: Moon
+
+/area/ruin/moon/sunslab/bridge
+	name = "Suns bridge"
+	icon_state = "bridge"
+
+/area/ruin/moon/sunslab/engie
+	name = "Engineering"
+	icon_state = "engine"
+
+/area/ruin/moon/sunslab/wait
+	name = "Waiting room"
+	icon_state = "hangar"
+
+/area/ruin/moon/sunslab/waitsome
+	name = "Waiting room"
+	icon_state = "hangar"
+
+/area/ruin/moon/sunslab/waitsomemore
+	name = "WAITING ROOM"
+	icon_state = "hangar"
+
+/area/ruin/moon/sunslab/atmos
+	name = "Breath centre"
+	icon_state = "atmos"
+
+/area/ruin/moon/sunslab/science
+	name = "Research & Developments"
+	icon_state = "purple"
+
+/area/ruin/moon/sunslab/hall
+	name = "Suns hall"
+	icon_state = "yellow"
+
+/area/ruin/moon/sunslab/forest
+	name = "Undefined forest"
+	icon_state = "green"
+	requires_power = FALSE
+
+/area/ruin/moon/sunslab/maint
+	name = "Maintenance"
+	icon_state = "storage"
+	requires_power = FALSE
+
+/area/ruin/moon/sunslab/solfedshuttle
+	name = "Solfed shuttle"
+	icon_state = "shuttle"
+
 // MARK: ВЫРЕЗАНО
 //Corporate Rejects
 
