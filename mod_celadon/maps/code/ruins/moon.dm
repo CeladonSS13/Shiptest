@@ -11,3 +11,9 @@
 	id = "moon_moonbase"
 	name = "CLIP-MELD Moonbase"
 	suffix = "moon_moonbase.dmm"
+
+/datum/map_template/ruin/moon/sunslab
+	id = "moon_sunslab"
+	name = "SUNS Ruins"
+	description = "Ruins of SUNS lab"
+	suffix = "moon_sunslab.dmm"
