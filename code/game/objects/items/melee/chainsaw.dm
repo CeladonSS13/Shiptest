@@ -35,7 +35,7 @@
 	to_chat(user, "As you pull the starting cord dangling from [src], [on ? "it begins to whirr." : "the chain stops moving."]")
 	force = on ? active_force : initial(force)
 	throwforce = on ? active_force : initial(force)
-	icon_state = "chainsaw_[on ? "on" : "off"]"
+	icon_state = "chainsaw[on ? "_on" : ""]" // [CELADON-EDIT] - OLD COD : icon_state = "chainsaw_[on ? "on" : "off"]"
 	var/datum/component/butchering/butchering = src.GetComponent(/datum/component/butchering)
 	butchering.butchering_enabled = on
 
