@@ -27,6 +27,11 @@
 /area/ruin/moon/sunslab/hall)
 "aq" = (
 /obj/machinery/computer/telecomms/server/retro,
+/obj/item/paper/crumpled/bloody{
+	pixel_y = 9;
+	pixel_x = 6;
+	default_raw_text = "i got some gear tucked in the security posts locker room, know what im sayin'? time to go underground."
+	},
 /turf/open/floor/suns/hatch,
 /area/ruin/moon/sunslab/maint)
 "az" = (
@@ -445,9 +450,9 @@
 /area/ruin/moon/sunslab/hall)
 "eP" = (
 /obj/structure/safe/floor,
-/obj/item/gun/ballistic/automatic/powered/gauss/rail_cannon,
 /obj/item/spacecash/bundle/c500,
 /obj/item/gun_maint_kit/small,
+/obj/item/gun/ballistic/automatic/smg/vector/no_mag,
 /turf/open/floor/suns/dark/plain,
 /area/ruin/moon/sunslab/hall)
 "eW" = (
@@ -537,8 +542,8 @@
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "fH" = (
-/obj/effect/mob_spawn/human/zombie/alive,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/remains/human,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
 "fI" = (
@@ -2516,7 +2521,6 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
 "CI" = (
-/obj/machinery/computer/arcade,
 /obj/machinery/computer/arcade{
 	dir = 8
 	},
@@ -3300,7 +3304,7 @@
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "LW" = (
-/obj/mecha/combat/durand/old,
+/obj/mecha/working/ripley/mkii/aluminizer,
 /turf/open/floor/mech_bay_recharge_floor,
 /area/ruin/moon/sunslab/science)
 "LY" = (
