@@ -432,26 +432,6 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 10
 	},
-/obj/machinery/button/door{
-	id = "KaUbridge";
-	name = "shutters bridge";
-	pixel_x = 8;
-	pixel_y = 19
-	},
-/obj/machinery/button/door{
-	id = "KaUShutersbridge";
-	name = "shutters bridge";
-	pixel_x = 8;
-	pixel_y = 26
-	},
-/obj/machinery/button/door{
-	id = "syndieKaU_Armory";
-	name = "shutters armory";
-	pixel_x = 1;
-	req_access_txt = list(19);
-	req_ship_access = 1;
-	pixel_y = 19
-	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "hX" = (
@@ -618,6 +598,14 @@
 	pixel_x = -7
 	},
 /obj/item/binoculars,
+/obj/item/modular_computer/tablet/preset/advanced{
+	icon_state = "tablet-syndicate";
+	icon_state_powered = "tablet-syndicate";
+	icon_state_unpowered = "tablet-syndicate";
+	name = "tablet computer";
+	device_theme = "syndicate";
+	has_variants = 0
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/bridge)
 "lX" = (
@@ -857,8 +845,8 @@
 	dir = 8
 	},
 /obj/machinery/turretid/ship{
-	pixel_y = 62;
-	pixel_x = -6;
+	pixel_y = 64;
+	pixel_x = -4;
 	id = "kau_turrets"
 	},
 /turf/open/floor/carpet/black,
@@ -1147,6 +1135,9 @@
 "xN" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/holopad/emergency/command,
+/obj/structure/chair/office{
+	dir = 4
+	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)
 "yo" = (
@@ -1165,9 +1156,6 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
-/obj/structure/chair/office{
-	dir = 4
-	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
 "yR" = (
@@ -2366,20 +2354,33 @@
 	},
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/structure/table/reinforced,
-/obj/item/modular_computer/tablet/preset/advanced{
-	icon_state = "tablet-syndicate";
-	icon_state_powered = "tablet-syndicate";
-	icon_state_unpowered = "tablet-syndicate";
-	name = "tablet computer";
-	device_theme = "syndicate";
-	has_variants = 0
+/obj/machinery/button/door{
+	id = "syndieKaU_Armory";
+	name = "shutters armory";
+	req_access_txt = list(19);
+	req_ship_access = 1;
+	pixel_x = 0;
+	pixel_y = 5
 	},
-/obj/item/toy/figure/syndie{
-	pixel_x = -10;
-	pixel_y = 8
+/obj/machinery/button/door{
+	id = "KaUbridge";
+	name = "shutters bridge";
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/machinery/button/door{
+	id = "KaUShutersbridge";
+	name = "shutters bridge";
+	pixel_x = 8;
+	pixel_y = 0
 	},
 /obj/item/toy/nuke{
-	pixel_y = -5
+	pixel_x = -5;
+	pixel_y = 10
+	},
+/obj/item/toy/figure/syndie{
+	pixel_x = -8;
+	pixel_y = 0
 	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
