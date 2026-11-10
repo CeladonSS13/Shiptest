@@ -336,12 +336,6 @@
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "cg" = (
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input{
-	dir = 8;
-	pixel_x = 0;
-	pixel_y = 7;
-	piping_layer = 4
-	},
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
@@ -349,9 +343,11 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/atmos/nitrogen,
-/obj/machinery/air_sensor/atmos/oxygen_tank{
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/nitrogen_input{
+	piping_layer = 4;
+	dir = 8;
 	pixel_x = 0;
-	pixel_y = -18
+	pixel_y = 7
 	},
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
@@ -805,6 +801,7 @@
 	pixel_y = -5
 	},
 /obj/machinery/light/small/directional/north,
+/obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/wood/walnut,
 /area/ship/crew/dorm/commad)
 "dW" = (
@@ -1834,24 +1831,24 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/atmospherics)
 "iE" = (
-/obj/machinery/air_sensor/atmos/nitrogen_tank{
-	pixel_x = -15;
-	pixel_y = 0
-	},
 /obj/effect/turf_decal/atmos/oxygen{
 	dir = 8
-	},
-/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/nitrogen_input{
-	piping_layer = 1;
-	dir = 8;
-	pixel_x = 0;
-	pixel_y = -10
 	},
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
 /obj/structure/window/plasma/reinforced{
 	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/outlet_injector/atmos/oxygen_input{
+	dir = 8;
+	pixel_x = 0;
+	pixel_y = -10;
+	piping_layer = 1
+	},
+/obj/machinery/air_sensor/atmos/oxygen_tank{
+	pixel_x = -15;
+	pixel_y = 0
 	},
 /turf/open/floor/engine/airless,
 /area/ship/engineering/atmospherics)
@@ -5216,6 +5213,9 @@
 	layer = 2.456
 	},
 /obj/structure/catwalk/over/plated_catwalk/white,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "wk" = (
@@ -5442,6 +5442,9 @@
 	pixel_y = -9
 	},
 /obj/structure/catwalk/over/plated_catwalk/white,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
 /turf/open/floor/plating,
 /area/ship/engineering/atmospherics)
 "xs" = (
@@ -8024,6 +8027,7 @@
 	pixel_y = 0
 	},
 /obj/machinery/light/small/directional/south,
+/obj/item/clothing/glasses/sunglasses,
 /turf/open/floor/suns/hatch/walnut,
 /area/ship/crew/dorm/captain)
 "HH" = (
@@ -9496,10 +9500,14 @@
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/hallway/port_fore)
 "OC" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/oxygen_output,
 /obj/structure/window/plasma/reinforced{
 	dir = 4
 	},
+/obj/machinery/air_sensor/atmos/nitrogen_tank{
+	pixel_x = 0;
+	pixel_y = 14
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/nitrogen_output,
 /turf/open/floor/engine/n2,
 /area/ship/engineering/atmospherics)
 "OD" = (
@@ -11062,6 +11070,14 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
+	},
+/obj/item/clothing/shoes/magboots{
+	pixel_x = -4;
+	pixel_y = -13
+	},
+/obj/item/clothing/shoes/magboots{
+	pixel_x = 4;
+	pixel_y = -13
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering)
