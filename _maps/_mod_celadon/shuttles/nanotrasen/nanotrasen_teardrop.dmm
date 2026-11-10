@@ -4191,8 +4191,10 @@
 /area/ship/medical)
 "TE" = (
 /obj/machinery/turretid/ship{
-	pixel_y = -24;
-	id = "teardrop_turrets"
+	id = "teardrop_turrets";
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = -28
 	},
 /obj/structure/table/reinforced,
 /obj/item/folder/blue{
