@@ -57,13 +57,6 @@
 	armour_penetration = -10
 	stamina = 38
 
-// MARK: 7.62x54mmR
-/obj/projectile/bullet/x762_54
-	name = "crude sniper bullet"
-	speed = 0.3
-	damage = 37
-	armour_penetration = 17
-
 // Antifauna bullets
 /obj/projectile/bullet/bof
 	name = "4.6x30mm BoF"
