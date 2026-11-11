@@ -144,17 +144,17 @@ NO_MAG_GUN_HELPER(automatic/assault/morita1)
 
 // СВД 8x50
 /obj/item/gun/ballistic/automatic/marksman/svd
-	name = "\improper SR-33 Dragunov sniper rifle"
+	name = "\improper SR-33m Dragunov sniper rifle"
 	desc = "A semiautomatic sniper rifle, famed for it's marksmanship, and is built from the ground up for it. Fires 8x50mmR rounds."
-	icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/svd.dmi'
-	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_lefthand.dmi'
-	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/in_hands/svd_righthand.dmi'
-	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/overlay/svd_onmob.dmi'
-	inhand_x_dimension = 64
-	inhand_y_dimension = 32
+	icon =  'mod_celadon/_storage_icons/icons/items/weapons/guns/svd.dmi'
+	lefthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/lefthand.dmi'
+	righthand_file = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/righthand.dmi'
+	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/weapons/guns/manufacturer/hunterspride/onmob.dmi'
+
 	zoomable = TRUE
-	zoom_amt = 7 //6 слишком мало для такого прицела
-	zoom_out_amt = 1
+	zoom_amt = 8 //Long range, enough to see in front of you, but no tiles behind you.
+	zoom_out_amt = 5
+
 	fire_sound = "svd_fire"
 	icon_state = "svd"
 	item_state = "svd"
