@@ -778,15 +778,6 @@ MARK: .22lr
 	cost = 350
 
 /*
-	MARK: 7.62x54mm
-*/
-/datum/supply_pack/faction/independent/ammo/x762_54_box
-	name = "7.62x54mm Ammo Box"
-	desc = "Contains a 40-round 7.62x54mm box loaded with SVD ammo, great against lightly armored targets."
-	contains = list(/obj/item/storage/box/ammo/x762_54)
-	cost = 300
-
-/*
 	MARK: 6.5x57mm
 */
 

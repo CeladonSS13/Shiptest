@@ -49,16 +49,6 @@
 	stock_max = 8
 	availability_prob = 50
 
-/datum/blackmarket_item/ammo/a762x54_box
-	name = "7.62x54mm Ammo Box"
-	desc = "Contains a 40-round 7.62x54mm box loaded with SVD ammo, great against lightly armored targets."
-	item = /obj/item/storage/box/ammo/x762_54
-	cost_min = 300
-	cost_max = 400
-	stock_min = 3
-	stock_max = 8
-	availability_prob = 50
-
 /datum/blackmarket_item/ammo/twobore_box
 	name = "Two-Bore Ammo Box"
 	desc = "Contains a 32-round two-bore buckshot ammo box."
