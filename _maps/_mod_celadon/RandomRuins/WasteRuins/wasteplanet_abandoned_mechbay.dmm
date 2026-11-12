@@ -384,14 +384,14 @@
 	id = "baseexterior";
 	name = "Exterior Blast Doors";
 	dir = 8;
-	pixel_y = 8;
+	pixel_y = 9;
 	pixel_x = 7
 	},
 /obj/machinery/button/door{
 	id = "baseinternal";
 	name = "Interior Blast Doors";
 	dir = 8;
-	pixel_y = -2;
+	pixel_y = -1;
 	pixel_x = 7
 	},
 /obj/machinery/button/shieldwallgen{
@@ -3077,7 +3077,7 @@
 	},
 /obj/machinery/turretid{
 	pixel_y = 29;
-	pixel_x = 28
+	pixel_x = 32
 	},
 /turf/open/floor/plasteel/dark,
 /area/ruin/wasteplanet/abandoned_mechbay/commandcontrol)

@@ -2178,14 +2178,15 @@
 	icon_state = "computer-right"
 	},
 /obj/machinery/turretid/ship{
-	pixel_x = 25;
+	pixel_x = 28;
 	id = "sunset_turret";
-	pixel_y = -4
+	pixel_y = -2;
+	dir = 8
 	},
 /obj/machinery/button/door{
 	dir = 8;
-	pixel_y = 7;
-	pixel_x = 22;
+	pixel_y = 12;
+	pixel_x = 19;
 	id = "1window";
 	name = "Bridge Shutters"
 	},

@@ -292,7 +292,7 @@
 
 /obj/item/storage/box/contractor/fulton_extraction
 	name = "Fulton Extraction Kit"
-	icon_state = "syndiebox"
+	icon_state = "dangerbox"
 	illustration = "writing_syndie"
 
 /obj/item/storage/box/contractor/fulton_extraction/PopulateContents()

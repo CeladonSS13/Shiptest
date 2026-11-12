@@ -287,10 +287,11 @@
 /obj/effect/turf_decal/corner/opaque/syndiered/bordercorner,
 /obj/machinery/light/directional/north,
 /obj/machinery/turretid/ship{
-	pixel_y = 32;
+	pixel_y = 25;
 	req_access = null;
 	req_access_txt = "150";
-	id = "twinkle_turrets"
+	id = "twinkle_turrets";
+	pixel_x = 0
 	},
 /obj/effect/turf_decal/spline/fancy/opaque/black/corner,
 /obj/effect/turf_decal/corner/opaque/syndiered/bordercorner{
@@ -2363,15 +2364,15 @@
 /obj/item/card/id/syndicate_command/crew_id/med{
 	name = "medic ID card"
 	},
-/obj/item/card/id/syndicate_command/lieutenant{
-	name = "lieutenant ID card"
-	},
 /obj/structure/closet/secure_closet/wall/directional/west{
 	name = "spare cards locker";
 	req_access = list(3,150)
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/half{
 	dir = 8
+	},
+/obj/item/card/id/syndicate_command/lieutenant{
+	name = "lieutenant ID card"
 	},
 /turf/open/floor/mineral/plastitanium,
 /area/ship/bridge)

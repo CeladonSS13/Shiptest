@@ -3232,7 +3232,9 @@
 "Hk" = (
 /obj/structure/table/reinforced,
 /obj/machinery/turretid/lethal{
-	id = "rustguns"
+	id = "rustguns";
+	pixel_x = 0;
+	pixel_y = 12
 	},
 /obj/effect/turf_decal/techfloor{
 	dir = 5

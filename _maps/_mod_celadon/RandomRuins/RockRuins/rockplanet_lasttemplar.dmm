@@ -458,9 +458,11 @@
 	dir = 8
 	},
 /obj/machinery/turretid{
-	pixel_x = -25;
+	pixel_x = -29;
 	id = "LastTemplar";
-	req_access = null
+	req_access = null;
+	dir = 4;
+	pixel_y = 0
 	},
 /turf/open/floor/suns/diagonal{
 	color = "#792f27"

@@ -1484,9 +1484,10 @@
 	lethal = 1;
 	locked = 0;
 	name = "Mining Turret control panel";
-	pixel_x = -28;
-	pixel_y = 6;
-	req_access = null
+	req_access = null;
+	dir = 4;
+	pixel_x = -29;
+	pixel_y = 0
 	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6

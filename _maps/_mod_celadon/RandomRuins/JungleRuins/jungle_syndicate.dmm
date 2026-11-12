@@ -1460,11 +1460,6 @@
 	pixel_x = 26;
 	pixel_y = -4
 	},
-/obj/machinery/turretid{
-	pixel_x = 36;
-	pixel_y = 4;
-	id = "syndifort"
-	},
 /obj/machinery/button/door{
 	dir = 8;
 	name = "Window Shutters";
@@ -2240,14 +2235,6 @@
 /obj/machinery/autolathe,
 /turf/open/floor/plasteel/strongdark,
 /area/ruin/jungle/syndifort2{
-	light_on = 0
-	})
-"yx" = (
-/obj/machinery/light/colored/red{
-	dir = 1
-	},
-/turf/open/floor/plating/jungleplanet,
-/area/ruin/jungle/syndifort{
 	light_on = 0
 	})
 "yy" = (
@@ -3235,8 +3222,14 @@
 /area/ruin/jungle/syndifortshuttle)
 "Iv" = (
 /obj/structure/table/reinforced,
-/obj/item/binoculars,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/turretid{
+	id = "syndifort";
+	dir = 4;
+	pixel_x = -31;
+	pixel_y = 1
+	},
+/obj/item/binoculars,
 /turf/open/floor/mineral/plastitanium/red/jungle,
 /area/ruin/jungle/syndifort/jerry{
 	light_on = 0
@@ -7324,7 +7317,7 @@ eX
 hQ
 Ph
 vt
-yx
+uX
 jy
 lH
 vt

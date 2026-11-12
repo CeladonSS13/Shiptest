@@ -1481,40 +1481,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew)
-"Am" = (
-/obj/machinery/power/apc/auto_name/directional/north,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/closet/secure_closet{
-	icon_state = "armory";
-	name = "security tools locker";
-	req_access_txt = "1"
-	},
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/shield/tele{
-	pixel_x = 8;
-	pixel_y = 4
-	},
-/obj/item/shield/tele{
-	pixel_x = -7;
-	pixel_y = 4
-	},
-/obj/item/shield/tele,
-/obj/item/reagent_containers/spray/pepper,
-/obj/item/reagent_containers/spray/pepper,
-/obj/effect/turf_decal/corner/opaque/vired/half{
-	dir = 8
-	},
-/obj/effect/turf_decal/trimline/opaque/vired/warning{
-	dir = 4
-	},
-/turf/open/floor/mineral/plastitanium,
-/area/ship/security/armory)
 "At" = (
 /obj/structure/chair/plastic,
 /obj/machinery/airalarm/directional/east,
@@ -1737,6 +1703,40 @@
 /obj/item/storage/belt/security/webbing,
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/crew)
+"En" = (
+/obj/machinery/power/apc/auto_name/directional/north,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/closet/secure_closet{
+	icon_state = "armory";
+	name = "security tools locker";
+	req_access_txt = "1"
+	},
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/shield/tele{
+	pixel_x = 8;
+	pixel_y = 4
+	},
+/obj/item/shield/tele{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/shield/tele,
+/obj/item/reagent_containers/spray/pepper,
+/obj/item/reagent_containers/spray/pepper,
+/obj/effect/turf_decal/corner/opaque/vired/half{
+	dir = 8
+	},
+/obj/effect/turf_decal/trimline/opaque/vired/warning{
+	dir = 4
+	},
+/turf/open/floor/mineral/plastitanium,
+/area/ship/security/armory)
 "Eo" = (
 /obj/machinery/firealarm/directional/west,
 /obj/structure/bed,
@@ -2212,6 +2212,15 @@
 	dir = 1;
 	icon = 'icons/obj/stairs.dmi'
 	},
+/area/ship/bridge)
+"LX" = (
+/obj/machinery/light/directional/north,
+/obj/machinery/holopad/emergency/command,
+/obj/machinery/turretid/ship{
+	pixel_y = 24;
+	id = "darect_turrets"
+	},
+/turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Mh" = (
 /obj/structure/cable{
@@ -2726,16 +2735,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
-"Yn" = (
-/obj/machinery/light/directional/north,
-/obj/machinery/holopad/emergency/command,
-/obj/machinery/turretid/ship{
-	pixel_y = 24;
-	pixel_x = 17;
-	id = "darect_turrets"
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "Yq" = (
 /obj/item/trash/popcorn{
 	pixel_x = -4;
@@ -3196,7 +3195,7 @@ Sn
 tc
 YO
 tt
-Am
+En
 tX
 Ha
 vM
@@ -3289,7 +3288,7 @@ EO
 cR
 Ok
 cR
-Yn
+LX
 Nr
 YM
 GF

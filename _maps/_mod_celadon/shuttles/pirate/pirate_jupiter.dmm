@@ -1719,8 +1719,9 @@
 /obj/effect/turf_decal/spline/fancy/opaque/black,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/machinery/turretid{
-	pixel_y = 25;
-	id = "jupiter_turrets"
+	pixel_y = 28;
+	id = "jupiter_turrets";
+	pixel_x = 0
 	},
 /obj/machinery/firealarm/directional/west{
 	pixel_y = 8

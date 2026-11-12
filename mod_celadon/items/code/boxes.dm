@@ -183,7 +183,7 @@
 /obj/item/storage/box/syndimaid
 	name = "Syndicate maid outfit"
 	desc = "A box containing a 'tactical' and 'practical' maid outfit."
-	icon_state = "syndiebox"
+	icon_state = "dangerbox"
 
 /obj/item/storage/box/syndimaid/PopulateContents()
 	var/static/items_inside = list(

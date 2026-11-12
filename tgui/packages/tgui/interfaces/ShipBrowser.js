@@ -127,11 +127,32 @@ export const ShipBrowser = (props, context) => {
     }
   };
 
+  const getWindowName = (faction) => {
+    switch (faction) {
+      case 'nanotrasen':
+        return 'NanoTrasen';
+      case 'syndicate':
+        return 'Syndicate';
+      case 'inteq':
+        return 'InteQ';
+      case 'solfed':
+        return 'Solar Federation';
+      case 'independent':
+        return 'Independent';
+      case 'elysium':
+        return 'Elysium Separatists';
+      case 'pirates':
+        return 'Pirates';
+      default:
+        return undefined;
+    }
+  };
+
   return (
     <Window
-      title={String(faction || 'Ships')}
+      title={String(getWindowName(faction) || 'Ships')}
       width={860}
-      height={faction === 'syndicate' ? 800 : 640}
+      height={640}
       theme={getWindowTheme(faction)}
     >
       <Window.Content scrollable>
@@ -142,6 +163,13 @@ export const ShipBrowser = (props, context) => {
               Назад к фракциям
             </Button>
           </Box>
+
+          {/* Фильтр кораблей установлен тут - code\modules\mob\dead\new_player\ship_select.dm*/}
+          {faction.toLowerCase() === 'elysium' && (
+            <Box mb={2} color="gray">
+              <b>Лорное уточнение:</b> Обратите внимание, что корабли доступны к просмотру только если ваш персонаж является человеком, КПБ, либо представителем расы Ланиусов. Наличие мутаций под видом хвостов, либо нестандартных ушей также является недопустимым.
+            </Box>
+          )}
 
           {/* Фильтр по тегам */}
           <Box mb={1} bold>

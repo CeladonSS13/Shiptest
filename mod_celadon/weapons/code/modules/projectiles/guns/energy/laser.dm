@@ -30,7 +30,7 @@
 	selfcharge = TRUE
 	internal_magazine = TRUE
 	resistance_flags = INDESTRUCTIBLE | LAVA_PROOF | FIRE_PROOF | ACID_PROOF
-	manufacturer = MANUFACTURER_SHARPLITE_NEW
+	manufacturer = MANUFACTURER_NANOTRASEN_LASER_OLD
 
 	spread = 2
 	spread_unwielded = 5
