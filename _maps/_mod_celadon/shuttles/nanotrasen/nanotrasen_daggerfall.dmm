@@ -410,6 +410,53 @@
 	},
 /turf/open/floor/plasteel/heavymetal,
 /area/ship/storage)
+"fI" = (
+/obj/effect/turf_decal/trimline/opaque/bar/line{
+	dir = 4
+	},
+/obj/machinery/power/apc/auto_name/directional/east,
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/obj/structure/closet/secure_closet{
+	icon_door = "tac";
+	icon_state = "tac";
+	name = "boarding tools locker";
+	req_access_txt = "1"
+	},
+/obj/item/storage/backpack/duffelbag/syndie/c4{
+	icon_state = "duffel-sec";
+	name = "breaching charges duffel bag"
+	},
+/obj/item/shield/tele{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/restraints/legcuffs/bola/energy,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/ammo_box/magazine/wt550m9,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/item/stock_parts/cell/gun/kalix,
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 4
+	},
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/obj/item/storage/box/ammo/c46x30mm,
+/turf/open/floor/plasteel/dark,
+/area/ship/security/armory)
 "ga" = (
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/bordercorner{
 	dir = 4
@@ -755,53 +802,6 @@
 	},
 /turf/open/floor/plasteel/telecomms_floor,
 /area/ship/bridge)
-"kj" = (
-/obj/effect/turf_decal/trimline/opaque/bar/line{
-	dir = 4
-	},
-/obj/machinery/power/apc/auto_name/directional/east,
-/obj/structure/cable{
-	icon_state = "0-8"
-	},
-/obj/structure/closet/secure_closet{
-	icon_door = "tac";
-	icon_state = "tac";
-	name = "boarding tools locker";
-	req_access_txt = "1"
-	},
-/obj/item/storage/backpack/duffelbag/syndie/c4{
-	icon_state = "duffel-sec";
-	name = "breaching charges duffel bag"
-	},
-/obj/item/shield/riot/tele{
-	pixel_x = -7;
-	pixel_y = 4
-	},
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/restraints/legcuffs/bola/energy,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/ammo_box/magazine/wt550m9,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/item/stock_parts/cell/gun/kalix,
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 4
-	},
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/obj/item/storage/box/ammo/c46x30mm,
-/turf/open/floor/plasteel/dark,
-/area/ship/security/armory)
 "kr" = (
 /obj/effect/turf_decal/nanotrasenspaceworks_small{
 	dir = 4
@@ -1186,6 +1186,49 @@
 /obj/item/clothing/glasses/hud/health/sunglasses,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"qs" = (
+/obj/structure/table/glass/light_glass,
+/obj/structure/sign/poster/bay/bay_9{
+	pixel_y = -32
+	},
+/obj/item/folder/documents/nanotrasen{
+	pixel_y = 2;
+	pixel_x = -7
+	},
+/obj/item/paper_bin{
+	pixel_x = 7;
+	pixel_y = 4
+	},
+/obj/item/stamp/nanotrasen{
+	pixel_x = -7
+	},
+/obj/item/stamp/nanotrasen/captain{
+	pixel_y = 6;
+	pixel_x = -7
+	},
+/obj/machinery/light/colored/blue,
+/obj/machinery/button/door{
+	dir = 8;
+	pixel_y = 10;
+	pixel_x = 22;
+	id = "dagger_bridge"
+	},
+/obj/effect/turf_decal/siding/thinplating/dark{
+	dir = 6;
+	layer = 3
+	},
+/obj/effect/turf_decal/corner/opaque/nanotrasenblue/border{
+	dir = 6
+	},
+/obj/item/pen/fountain,
+/obj/machinery/turretid/ship{
+	id = "Daggerfall_turrets";
+	dir = 8;
+	pixel_x = 30;
+	pixel_y = -4
+	},
+/turf/open/floor/plasteel/telecomms_floor,
+/area/ship/bridge)
 "qv" = (
 /obj/effect/turf_decal/nanotrasen/ns/top_left,
 /obj/effect/turf_decal/trimline/opaque/nsorange/line{
@@ -2254,49 +2297,6 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/medical)
-"Cd" = (
-/obj/structure/table/glass/light_glass,
-/obj/structure/sign/poster/bay/bay_9{
-	pixel_y = -32
-	},
-/obj/item/folder/documents/nanotrasen{
-	pixel_y = 2;
-	pixel_x = -7
-	},
-/obj/item/paper_bin{
-	pixel_x = 7;
-	pixel_y = 4
-	},
-/obj/item/stamp/nanotrasen{
-	pixel_x = -7
-	},
-/obj/item/stamp/nanotrasen/captain{
-	pixel_y = 6;
-	pixel_x = -7
-	},
-/obj/machinery/light/colored/blue,
-/obj/machinery/button/door{
-	dir = 8;
-	pixel_y = 10;
-	pixel_x = 22;
-	id = "dagger_bridge"
-	},
-/obj/effect/turf_decal/siding/thinplating/dark{
-	dir = 6;
-	layer = 3
-	},
-/obj/effect/turf_decal/corner/opaque/nanotrasenblue/border{
-	dir = 6
-	},
-/obj/item/pen/fountain,
-/obj/machinery/turretid/ship{
-	id = "Daggerfall_turrets";
-	dir = 8;
-	pixel_x = 30;
-	pixel_y = -4
-	},
-/turf/open/floor/plasteel/telecomms_floor,
-/area/ship/bridge)
 "Cm" = (
 /obj/effect/turf_decal/corner/opaque/nanotrasenblue/border,
 /obj/machinery/light/colored,
@@ -4651,7 +4651,7 @@ Qd
 rL
 UP
 XB
-kj
+fI
 UW
 uH
 Cr
@@ -4751,7 +4751,7 @@ rT
 ki
 Tp
 ec
-Cd
+qs
 kN
 Xa
 mi

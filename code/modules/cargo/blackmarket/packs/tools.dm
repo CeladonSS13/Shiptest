@@ -86,19 +86,17 @@
 	stock_max = 4
 	availability_prob = 80
 
+// [CELADON-EDIT] - CELADON_BLACK_MARKET
 /datum/blackmarket_item/tool/riot_shield
 	name = "Riot Shield"
 	desc = "Protect yourself from an unexpected Riot at your local Police department!"
 	item = /obj/item/shield/riot
 
-	// [CELADON-EDIT] - CELADON_BLACK_MARKET
-	// cost_min = 300
-	// cost_max = 800	// ORIGINAL
 	cost_min = 1500
 	cost_max = 2000
-	// [/CELADON-EDIT]
 	stock_max = 3
 	availability_prob = 50
+// [/CELADON-EDIT]
 
 /datum/blackmarket_item/tool/thermite_bottle
 	name = "Thermite Bottle"

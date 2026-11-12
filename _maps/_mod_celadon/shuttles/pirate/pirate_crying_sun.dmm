@@ -1146,6 +1146,31 @@
 	},
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/external/dark)
+"iQ" = (
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 9
+	},
+/obj/effect/turf_decal/corner_steel_grid{
+	dir = 4
+	},
+/obj/machinery/button/door{
+	id = "lib_bridge_shut";
+	name = "Bridge Shutters";
+	pixel_y = 20;
+	pixel_x = 8
+	},
+/obj/structure/chair/comfy/shuttle{
+	dir = 4
+	},
+/obj/machinery/turretid{
+	pixel_y = 29;
+	pixel_x = -6
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
 "iT" = (
 /turf/open/floor/plasteel/tech,
 /area/ship/construction)
@@ -2843,31 +2868,6 @@
 	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
-"Aq" = (
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 9
-	},
-/obj/effect/turf_decal/corner_steel_grid{
-	dir = 4
-	},
-/obj/machinery/button/door{
-	id = "lib_bridge_shut";
-	name = "Bridge Shutters";
-	pixel_y = 20;
-	pixel_x = 8
-	},
-/obj/structure/chair/comfy/shuttle{
-	dir = 4
-	},
-/obj/machinery/turretid{
-	pixel_y = 29;
-	pixel_x = -6
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Ar" = (
 /obj/effect/turf_decal/corner_steel_grid{
 	dir = 9
@@ -3817,31 +3817,6 @@
 	pixel_y = -6
 	},
 /obj/item/gun/energy/e_gun/nanotrasen/dragnet/snare,
-/turf/open/floor/vault,
-/area/ship/security/armory)
-"Ha" = (
-/obj/structure/rack,
-/obj/effect/turf_decal/corner/opaque/neutral/full,
-/obj/item/melee/baton/boomerang/loaded{
-	pixel_x = -4;
-	pixel_y = 3
-	},
-/obj/item/melee/baton/loaded{
-	pixel_x = -1;
-	pixel_y = 3
-	},
-/obj/item/melee/baton/cattleprod/loaded{
-	pixel_x = 2;
-	pixel_y = -2
-	},
-/obj/item/shield/riot{
-	pixel_x = -4;
-	pixel_y = -4
-	},
-/obj/item/shield/riot/buckler{
-	pixel_x = 6;
-	pixel_y = -3
-	},
 /turf/open/floor/vault,
 /area/ship/security/armory)
 "Hf" = (
@@ -6167,6 +6142,31 @@
 	},
 /turf/open/floor/plating/rust,
 /area/ship/crew/dorm)
+"Zy" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/corner/opaque/neutral/full,
+/obj/item/melee/baton/boomerang/loaded{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/melee/baton/loaded{
+	pixel_x = -1;
+	pixel_y = 3
+	},
+/obj/item/melee/baton/cattleprod/loaded{
+	pixel_x = 2;
+	pixel_y = -2
+	},
+/obj/item/shield/riot{
+	pixel_x = -4;
+	pixel_y = -4
+	},
+/obj/item/shield/buckler{
+	pixel_x = 6;
+	pixel_y = -3
+	},
+/turf/open/floor/vault,
+/area/ship/security/armory)
 "ZB" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer2{
 	dir = 8
@@ -6510,7 +6510,7 @@ dE
 ih
 qI
 VY
-Ha
+Zy
 uJ
 xz
 xz
@@ -7447,7 +7447,7 @@ xz
 xz
 xz
 MF
-Aq
+iQ
 Xs
 jm
 jH

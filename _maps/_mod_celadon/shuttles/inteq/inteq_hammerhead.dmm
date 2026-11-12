@@ -1932,6 +1932,30 @@
 	},
 /turf/open/floor/mineral/titanium/white,
 /area/ship/medical)
+"lJ" = (
+/obj/structure/closet/secure_closet{
+	icon_state = "warden";
+	anchored = 1;
+	req_access_txt = "3"
+	},
+/obj/item/clothing/suit/armor/hos/inteq,
+/obj/item/clothing/head/beret/sec/inteq,
+/obj/item/clothing/gloves/combat,
+/obj/item/clothing/under/syndicate/inteq,
+/obj/item/radio/headset/inteq/alt,
+/obj/item/clothing/accessory/holster,
+/obj/item/clothing/suit/armor/vest/inteq,
+/obj/item/shield/tele,
+/obj/item/clothing/head/helmet/swat,
+/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
+/obj/item/ammo_box/magazine/usp45_standart,
+/obj/item/storage/backpack/ert{
+	name = "Enforcer backpack"
+	},
+/obj/item/clothing/mask/balaclava/inteq,
+/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
+/turf/open/floor/carpet/red_gold,
+/area/ship/crew/crewtwo)
 "lL" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 1
@@ -3992,30 +4016,6 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/engine)
-"zD" = (
-/obj/structure/closet/secure_closet{
-	icon_state = "warden";
-	anchored = 1;
-	req_access_txt = "3"
-	},
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/inteq,
-/obj/item/clothing/gloves/combat,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/radio/headset/inteq/alt,
-/obj/item/clothing/accessory/holster,
-/obj/item/clothing/suit/armor/vest/inteq,
-/obj/item/shield/riot/tele,
-/obj/item/clothing/head/helmet/swat,
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/ammo_box/magazine/usp45_standart,
-/obj/item/storage/backpack/ert{
-	name = "Enforcer backpack"
-	},
-/obj/item/clothing/mask/balaclava/inteq,
-/obj/item/clothing/head/helmet/bulletproof/x11/inteq,
-/turf/open/floor/carpet/red_gold,
-/area/ship/crew/crewtwo)
 "zM" = (
 /obj/machinery/door/window/brigdoor{
 	dir = 4;
@@ -4577,6 +4577,18 @@
 /obj/machinery/firealarm/directional/west,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/prison)
+"Ck" = (
+/obj/effect/turf_decal/corner/opaque/yellow/border{
+	dir = 8
+	},
+/obj/machinery/turretid/ship{
+	id = "hammerhead_turrets";
+	dir = 4;
+	pixel_x = -28;
+	pixel_y = 0
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "CG" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/poddoor/shutters{
@@ -5998,18 +6010,6 @@
 /obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/plastic,
 /area/ship/crew/canteen/kitchen)
-"KE" = (
-/obj/effect/turf_decal/corner/opaque/yellow/border{
-	dir = 8
-	},
-/obj/machinery/turretid/ship{
-	id = "hammerhead_turrets";
-	dir = 4;
-	pixel_x = -28;
-	pixel_y = 0
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "KK" = (
 /obj/effect/decal/cleanable/confetti,
 /obj/machinery/light_switch{
@@ -9420,7 +9420,7 @@ Vx
 Vx
 tN
 sK
-zD
+lJ
 Hi
 Kh
 IE
@@ -9673,7 +9673,7 @@ bm
 ce
 YE
 fw
-KE
+Ck
 PX
 Gj
 mb

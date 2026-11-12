@@ -2192,25 +2192,6 @@
 "kk" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
-"kp" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/effect/turf_decal/corner/opaque/yellow,
-/obj/effect/turf_decal/corner/opaque/brown{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/table/reinforced,
-/obj/machinery/light/directional/south,
-/obj/machinery/turretid/ship{
-	id = "talos_turrets";
-	pixel_y = -5;
-	pixel_x = -1;
-	dir = 1
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "kr" = (
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/maintenance/fore)
@@ -3655,6 +3636,25 @@
 /obj/structure/chair/handrail,
 /turf/open/floor/plasteel/patterned/grid,
 /area/ship/hangar)
+"rl" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/turf_decal/corner/opaque/yellow,
+/obj/effect/turf_decal/corner/opaque/brown{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table/reinforced,
+/obj/machinery/light/directional/south,
+/obj/machinery/turretid/ship{
+	id = "talos_turrets";
+	pixel_y = -5;
+	pixel_x = -1;
+	dir = 1
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "rm" = (
 /obj/effect/turf_decal/siding/thinplating,
 /obj/effect/turf_decal/trimline/opaque/yellow/line,
@@ -6863,6 +6863,49 @@
 /obj/structure/cable/yellow,
 /turf/open/floor/plasteel/dark,
 /area/ship/engineering)
+"Ge" = (
+/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
+/obj/item/clothing/gloves/tackler/combat/insulated,
+/obj/item/clothing/shoes/combat,
+/obj/item/storage/belt/military/assault,
+/obj/item/storage/backpack/messenger/inteq,
+/obj/item/megaphone/command,
+/obj/item/clothing/under/syndicate/inteq/skirt,
+/obj/item/clothing/under/syndicate/inteq,
+/obj/item/clothing/suit/armor/hos/inteq,
+/obj/item/clothing/head/beret/sec/hos/inteq,
+/obj/item/shield/tele,
+/obj/structure/closet/secure_closet{
+	anchored = 1;
+	can_be_unanchored = 1;
+	icon_state = "cap";
+	name = "vanguard's locker";
+	req_access_txt = "20"
+	},
+/obj/effect/turf_decal/corner/opaque/brown{
+	dir = 8
+	},
+/obj/effect/turf_decal/corner/opaque/yellow{
+	dir = 1
+	},
+/obj/machinery/light/directional/west,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
+	dir = 4
+	},
+/obj/item/storage/belt/security/webbing/inteq/alt,
+/obj/item/storage/belt/security/webbing/inteq,
+/obj/item/clothing/head/inteq_peaked,
+/obj/item/radio/headset/inteq/alt/captain,
+/obj/item/storage/lockbox/medal/sec{
+	pixel_y = 5
+	},
+/obj/item/gun/ballistic/revolver/horizonx,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/clothing/mask/balaclava/inteq,
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "Gh" = (
 /obj/structure/chair/sofa/brown/left/directional/south,
 /obj/structure/cable{
@@ -7966,49 +8009,6 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/engine/hull/reinforced,
 /area/ship/engineering/engine)
-"Me" = (
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/storage/belt/military/assault,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/megaphone/command,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/item/shield/riot/tele,
-/obj/structure/closet/secure_closet{
-	anchored = 1;
-	can_be_unanchored = 1;
-	icon_state = "cap";
-	name = "vanguard's locker";
-	req_access_txt = "20"
-	},
-/obj/effect/turf_decal/corner/opaque/brown{
-	dir = 8
-	},
-/obj/effect/turf_decal/corner/opaque/yellow{
-	dir = 1
-	},
-/obj/machinery/light/directional/west,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
-	dir = 4
-	},
-/obj/item/storage/belt/security/webbing/inteq/alt,
-/obj/item/storage/belt/security/webbing/inteq,
-/obj/item/clothing/head/inteq_peaked,
-/obj/item/radio/headset/inteq/alt/captain,
-/obj/item/storage/lockbox/medal/sec{
-	pixel_y = 5
-	},
-/obj/item/gun/ballistic/revolver/horizonx,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/clothing/mask/balaclava/inteq,
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "Mo" = (
 /obj/structure/falsewall,
 /turf/open/floor/plating,
@@ -11770,7 +11770,7 @@ RL
 kk
 yY
 XQ
-Me
+Ge
 gg
 kk
 Ic
@@ -11873,7 +11873,7 @@ kk
 BH
 nG
 rB
-kp
+rl
 kk
 RT
 RT

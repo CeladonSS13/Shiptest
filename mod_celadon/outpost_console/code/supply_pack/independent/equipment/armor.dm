@@ -19,7 +19,7 @@
 /datum/supply_pack/faction/independent/armor/riot_armor
 	name = "Riot Armor"
 	desc = "Contains one full set of riot armor. Although heavily padded to deal with close-quarters threats, they perform poorly against most firearms."
-	cost = 1000
+	cost = 750
 	contains = list(/obj/item/clothing/suit/armor/riot,
 					/obj/item/clothing/head/helmet/riot)
 	crate_name = "riot armor crate"
@@ -55,7 +55,7 @@
 /datum/supply_pack/faction/independent/armor/medium_marine_armor
 	name = "Medium Tactical Armor"
 	desc = "One set of well-rounded medium tactical body armor. Plates are attached to the vest and cover the limbs. The set includes a helmet and chestpiece."
-	cost = 3000
+	cost = 2600
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/medium,
 					/obj/item/clothing/head/helmet/bulletproof/x11)
 	crate_name = "armor crate"
@@ -64,9 +64,9 @@
 /datum/supply_pack/faction/independent/armor/heavy_marine_armor
 	name = "Heavy Tactical Armor"
 	desc = "One set of well-rounded heavy tactical body armor. Plates are attached to the vest and cover the limbs. The set includes a helmet and chestpiece."
-	cost = 5000
+	cost = 3750
 	contains = list(/obj/item/clothing/suit/armor/vest/marine/heavy,
-					/obj/item/clothing/head/helmet/bulletproof/x11)
+					/obj/item/clothing/head/helmet/riot)
 	crate_name = "armor crate"
 	crate_type = /obj/structure/closet/crate/secure/plasma
 

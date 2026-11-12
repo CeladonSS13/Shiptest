@@ -10,6 +10,13 @@
 	crate_name = "dualsaber crate"
 	crate_type = /obj/structure/closet/crate/secure/weapon
 
+/datum/supply_pack/faction/nanotrasen/sec_supply/suns_sabre
+	name = "Officer's Sabre"
+	desc = "Contains a single sabre, intended for resolving discipline problems and cutting through armor perfectly."
+	cost = 750
+	contains = list(/obj/item/storage/belt/sabre)
+	crate_name = "Officer's sabre crate"
+
 /datum/supply_pack/faction/nanotrasen/sec_supply/radio
 	name = "Radio Transceiver Crate"
 	desc = "Contains one tactical communications device."
