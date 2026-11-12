@@ -452,9 +452,19 @@
 /obj/structure/safe/floor,
 /obj/item/spacecash/bundle/c500,
 /obj/item/gun_maint_kit/small,
-/obj/item/gun/ballistic/automatic/smg/vector/no_mag,
+/obj/item/gun/ballistic/automatic/smg/vector/no_mag{
+	name = "Victoria";
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m45_cobra);
+	desc = "A worn out but still functional police carbine. The name "Victoria" emblazoned on its stock. Someone clearly protect this weapon. It has been modified to fire .45 caliber.";
+	projectile_damage_multiplier = 1.2
+	},
 /turf/open/floor/suns/dark/plain,
 /area/ruin/moon/sunslab/hall)
+"eS" = (
+/obj/structure/table/reinforced/titaniumglass,
+/obj/item/phone,
+/turf/open/floor/plasteel/tech,
+/area/ruin/moon/sunslab/wait)
 "eW" = (
 /obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/plating,
@@ -560,7 +570,7 @@
 /area/ruin/moon/sunslab/waitsomemore)
 "fK" = (
 /obj/structure/table/reinforced/plasmarglass,
-/obj/item/research_notes/loot/medium,
+/obj/item/research_notes/loot/small,
 /obj/item/flashlight/lamp/green{
 	pixel_y = -12
 	},
@@ -1185,6 +1195,7 @@
 "na" = (
 /obj/structure/table/reinforced,
 /obj/machinery/light/directional/west,
+/obj/item/phone,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
 "nc" = (
@@ -1955,6 +1966,15 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/hall)
+"vI" = (
+/obj/item/gun/ballistic/automatic/smg/vector/no_mag{
+	name = "Victoria";
+	allowed_ammo_types = list(/obj/item/ammo_box/magazine/m45_cobra);
+	desc = "A worn out but still functional police carbine. The name "Victoria" emblazoned on its stock. Someone clearly protect this weapon. It has been modified to fire .45 caliber.";
+	projectile_damage_multiplier = 1.2
+	},
+/turf/closed/indestructible/titanium/nodiagnonal,
+/area/ruin/moon/sunslab/hall)
 "vJ" = (
 /obj/structure/closet/secure_closet/suns,
 /obj/item/clothing/glasses/science/suns,
@@ -2091,6 +2111,7 @@
 "xs" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/structure/railing/modern,
+/obj/item/phone,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/hall)
 "xF" = (
@@ -2258,6 +2279,7 @@
 	},
 /obj/effect/decal/cleanable/brimdust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/toy/plush/celadon/hampter/death_squad,
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "zQ" = (
@@ -3256,6 +3278,11 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/maint)
+"Lx" = (
+/obj/structure/flora/grass/rockplanet/dead,
+/obj/item/toy/plush/celadon/beaver,
+/turf/open/floor/plating/asteroid/moon,
+/area/overmap_encounter/planetoid/moon/explored)
 "LA" = (
 /obj/structure/table/reinforced,
 /obj/effect/turf_decal/borderfloorwhite{
@@ -3869,6 +3896,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/item/toy/plush/celadon/hampter/death_squad,
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "SY" = (
@@ -4255,9 +4283,9 @@
 "Xz" = (
 /obj/machinery/cell_charger,
 /obj/structure/table/wood,
-/obj/item/research_notes/loot/medium{
-	pixel_y = 11;
-	pixel_x = -11
+/obj/item/blackmarket_uplink{
+	pixel_x = -9;
+	pixel_y = 15
 	},
 /turf/open/floor/suns/hatch,
 /area/ruin/moon/sunslab/maint)
@@ -5535,7 +5563,7 @@ EP
 DC
 Bj
 Il
-UY
+vI
 rP
 Qx
 DD
@@ -5833,7 +5861,7 @@ PD
 LR
 RN
 Do
-Do
+eS
 Do
 LR
 Uo
@@ -6443,7 +6471,7 @@ IA
 Op
 Op
 wl
-IA
+Lx
 Op
 kq
 IA
