@@ -58,6 +58,4 @@ jobs:
       - name: Compile All Templates
         run: |
           source $HOME/BYOND/byond/bin/byondsetup
-          # [CELADON-EDIT] - CELADON_MAPS_SPLIT
           tools/build/build --ci dm -DCIBUILDING -DCITESTING -DALL_TEMPLATES -DFULL_INIT
-          # [/CELADON-EDIT]
