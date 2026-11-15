@@ -146,7 +146,7 @@
 
 /obj/machinery/stasis/screwdriver_act(mob/living/user, obj/item/I)
 	. = ..()
-	. |= default_deconstruction_screwdriver(user, "stasis_maintenance", "stasis", I)
+	. |= default_deconstruction_screwdriver(user, "sleeper_cover", "sleeper", I) // [CELADON-EDIT] - . |= default_deconstruction_screwdriver(user, "stasis_maintenance", "stasis", I)
 	update_appearance()
 
 /obj/machinery/stasis/crowbar_act(mob/living/user, obj/item/I)
