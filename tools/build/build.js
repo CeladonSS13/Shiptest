@@ -53,14 +53,12 @@ export const NoWarningParameter = new Juke.Parameter({
 });
 
 export const DmMapsIncludeTarget = new Juke.Target({
+  // [CELADON-EDIT] - CELADON_CONFIGS_MAPS - Распределяем карты, чтобы не ломались тесты.
   parameters: [DefineParameter],
   executes: async ({ get }) => {
     const defines = get(DefineParameter);
     const stationMaps = [
       ...Juke.glob("_maps/outpost/**/*.dmm"),
-      // [CELADON-EDIT] - CELADON_CONFIGS_MAPS
-      // ...Juke.glob("_maps/RandomRuins/**/*.dmm"),
-      // ...Juke.glob("_maps/shuttles/**/*.dmm"), // CELADON-EDIT - ORIGINAL
     ];
     const templateMaps = [
       ...Juke.glob("_maps/_mod_celadon/RandomRuins/**/*.dmm"),
@@ -93,7 +91,7 @@ export const DmTarget = new Juke.Target({
     NoWarningParameter,
   ],
   dependsOn: ({ get }) => [
-    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // CELADON: maps are split, see _maps/_basemap.dm
+    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // [CELADON-EDIT] - get(DefineParameter).includes("ALL_MAPS") && DmMapsIncludeTarget, - Распределяем карты, чтобы не ломались тесты.
   ],
   inputs: [
     "_maps/map_files/**",
@@ -129,7 +127,7 @@ export const DmTestTarget = new Juke.Target({
     NoWarningParameter,
   ],
   dependsOn: ({ get }) => [
-    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // CELADON: maps are split, see _maps/_basemap.dm
+    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // [CELADON-EDIT] - get(DefineParameter).includes("ALL_MAPS") && DmMapsIncludeTarget, - Распределяем карты, чтобы не ломались тесты.
   ],
   executes: async ({ get }) => {
     fs.copyFileSync(`${DME_NAME}.dme`, `${DME_NAME}.test.dme`);
@@ -171,7 +169,7 @@ export const AutowikiTarget = new Juke.Target({
     NoWarningParameter,
   ],
   dependsOn: ({ get }) => [
-    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // CELADON: maps are split, see _maps/_basemap.dm
+    (get(DefineParameter).includes("ALL_MAPS") || get(DefineParameter).includes("ALL_TEMPLATES")) && DmMapsIncludeTarget, // [CELADON-EDIT] - get(DefineParameter).includes("ALL_MAPS") && DmMapsIncludeTarget, - Распределяем карты, чтобы не ломались тесты.
   ],
   outputs: ["data/autowiki_edits.txt"],
   executes: async ({ get }) => {
