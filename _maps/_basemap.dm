@@ -5,10 +5,8 @@
 #define NOOVERMAP
 #endif
 
-#ifdef ALL_MAPS
-	#ifdef CIBUILDING
-		#include "templates.dm"
-	#endif
+#ifdef ALL_TEMPLATES
+	#include "templates.dm"
 #endif
 
 // [CELADON-ADD] - CELADON_CONFIGS_MAPS
