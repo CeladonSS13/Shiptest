@@ -528,7 +528,10 @@
 	if(!LAZYLEN(message))
 		stack_trace("Empty message")
 		return
-
+	// [CELADON-ADD] - Отключаем логирование сейлогов для мобов.
+	if(!client)
+		return
+	// [/CELADON-ADD]
 	// Cannot use the list as a map if the key is a number, so we stringify it (thank you BYOND)
 	var/smessage_type = num2text(message_type)
 
