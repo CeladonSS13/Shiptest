@@ -157,7 +157,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/closet/crate/freezer/surplus_limbs/organs,
+/obj/structure/closet/crate/freezer/surplus_limbs,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "aN" = (
@@ -1343,7 +1343,8 @@
 /area/ship/cargo)
 "jR" = (
 /obj/machinery/smartfridge/bloodbank/preloaded{
-	dir = 1
+	dir = 1;
+	initial_contents = list("/obj/item/reagent_containers/blood/AMinus" = 2,"/obj/item/reagent_containers/blood/APlus" = 1,"/obj/item/reagent_containers/blood/BMinus" = 2,"/obj/item/reagent_containers/blood/BPlus" = 2,"/obj/item/reagent_containers/blood/OMinus" = 2,"/obj/item/reagent_containers/blood/OPlus" = 2,"/obj/item/reagent_containers/blood/lizard" = 2,"/obj/item/reagent_containers/blood/elzuose" = 2,"/obj/item/reagent_containers/blood/synthetic" = 2,"/obj/item/reagent_containers/blood/random" = 8)
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/medical)
@@ -2387,7 +2388,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ED" = (
-/obj/machinery/smartfridge/organ{
+/obj/machinery/smartfridge/organ/preloaded{
 	dir = 1
 	},
 /turf/open/floor/plasteel/dark,
@@ -2780,7 +2781,6 @@
 	pixel_x = 12;
 	pixel_y = -17
 	},
-/obj/structure/closet/crate/freezer/blood,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "QD" = (

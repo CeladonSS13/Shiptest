@@ -9,8 +9,8 @@
 	desc = "No data."
 	mob_overlay_icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/overlay/spacesuits_celadon.dmi'
 	icon = 'mod_celadon/_storage_icons/icons/items/clothing/head/spacesuits_celadon.dmi'
-	icon_state = "gamma_vision"
-	item_state = "gamma_vision"
+	icon_state = "hardsuit0-gamma"
+	item_state = "hardsuit0-gamma"
 	armor = list("melee" = 50, "bullet" = 50, "laser" = 30, "energy" = 25, "bomb" = 50, "bio" = 100, "fire" = 40, "acid" = 50, "wound" = 30)
 	min_cold_protection_temperature = SPACE_HELM_MIN_TEMP_PROTECT
 	clothing_flags = STOPSPRESSUREDAMAGE
@@ -31,8 +31,6 @@
 			flags_1 ^= visor_flags
 			flags_inv ^= visor_flags_inv
 			flags_cover ^= visor_flags_cover
-			icon_state = "[initial(icon_state)][up ? "up" : ""]"
-			item_state = "[initial(item_state)][up ? "up" : ""]"
 			to_chat(user, span_notice("[up ? alt_toggle_message : toggle_message] \the [src]."))
 
 			if(active)

@@ -68,8 +68,8 @@ MARK:	General Gear
 	)
 
 /datum/supply_pack/faction/independent/exploration/mineral_scanner
-	name = "Underground Mineral Scanner"
-	desc = "Contains an underground mineral scanner for locating veins of ore beneath the earth. Deep core laser drill for extracting said ores not included."
+	name = "Ground Penetrating Mining Scanner"
+	desc = "Contains an ground penetrating mining scanner for locating veins of ore beneath the earth. Deep core laser drill for extracting said ores not included."
 	cost = 250
 	contains = list(
 		/obj/item/pinpointer/mineral

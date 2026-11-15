@@ -5,6 +5,7 @@
 /obj/item/storage/box/gorillacubes
 	name = "gorilla cube box"
 	desc = "Waffle Co. brand gorilla cubes. Do not taunt."
+	icon = 'icons/obj/storage.dmi'
 	icon_state = "monkeycubebox"
 	illustration = null
 
