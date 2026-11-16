@@ -26,6 +26,8 @@
 	courierbag = /obj/item/storage/backpack/messenger/sec
 	accessory = /obj/item/clothing/accessory/medal/silver/security
 
+	box = /obj/item/storage/box/survival/nanotrasen/security
+
 	implants = list(/obj/item/implant/mindshield)
 
 	chameleon_extras = /obj/item/stamp/hos
@@ -60,6 +62,8 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/sec
 	courierbag = /obj/item/storage/backpack/messenger/sec
 
+	box = /obj/item/storage/box/survival/nanotrasen/security
+
 	implants = list(/obj/item/implant/mindshield)
 
 	chameleon_extras = list(/obj/item/gun/energy/e_gun, /obj/item/stamp/hos)
@@ -88,6 +92,8 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/engineering
 	courierbag = /obj/item/storage/backpack/messenger/engi
 
+	box = /obj/item/storage/box/survival/nanotrasen/security
+
 	backpack_contents = list(/obj/item/modular_computer/tablet/preset/advanced=1)
 
 
@@ -112,6 +118,8 @@
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	courierbag = /obj/item/storage/backpack/messenger/med
 
+	box = /obj/item/storage/box/survival/nanotrasen/security
+
 // MARK: Assistant
 
 /datum/outfit/job/cel/nanotrasen/security/vigilitas
@@ -121,3 +129,5 @@
 	jobtype = /datum/job/officer
 
 	id = /obj/item/card/id/cel/nanotrasen/vigilitas_security
+
+	box = /obj/item/storage/box/survival/nanotrasen/security
