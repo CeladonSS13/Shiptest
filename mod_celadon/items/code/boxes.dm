@@ -33,7 +33,7 @@
 		/obj/item/reagent_containers/hypospray/medipen = 1,\
 		/obj/item/reagent_containers/pill/penacid = 1,\
 		/obj/item/food/ration = 1,\
-		/obj/item/radio = 1,\
+		/obj/item/radio/transceiver/nanotrasen = 1,\
 		/obj/item/crowbar = 1,\
 		)
 	generate_items_inside(items_inside,src)
