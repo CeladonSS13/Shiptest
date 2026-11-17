@@ -31,8 +31,7 @@ SUBSYSTEM_DEF(points_of_interest)
  * Called by [/datum/element/point_of_interest] when it gets removed from old_poi.
  */
 /datum/controller/subsystem/points_of_interest/proc/on_poi_element_added(atom/new_poi)
-	// [CELADON-ADD] - FIX_DUPLICATE_POI - Защита от повторной регистрации: старый datum оставался бы в списке навсегда,
-	// т.к. points_of_interest_by_target_ref хранит только последний, и при удалении цели чистился бы только он.
+	// [CELADON-ADD] - FIX_DUPLICATE_POI - Атом уже является POI, повторно не добавляем (иначе в Orbit появляются дубли).
 	if(points_of_interest_by_target_ref[REF(new_poi)])
 		return
 	// [/CELADON-ADD]
