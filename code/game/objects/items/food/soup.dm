@@ -302,6 +302,21 @@
 	tastes = list("beet" = 1)
 	foodtypes = VEGETABLES
 
+// [CELADON-ADD]
+/obj/item/food/soup/traditionalredbeet
+	name = "tradition red beet soup"
+	desc = "A simplified form of borscht soup, notably lacking the meat broth."
+	icon = 'mod_celadon/_storage_icons/icons/items/misc/redbeetsoup.dmi'
+	icon_state = "redbeetsoup"
+	food_reagents = list(
+		/datum/reagent/consumable/nutriment = 18,
+		/datum/reagent/water = 5,
+		/datum/reagent/consumable/nutriment/vitamin = 6
+	)
+	tastes = list("nettles" = 1)
+	foodtypes = GRAIN | MEAT | VEGETABLES
+// [/CELADON-ADD]
+
 /obj/item/food/soup/onion
 	name = "french onion soup"
 	desc = "A soup consisting of fried onions that are cooked in a meat stock, then gratineed with bread and cheese at the top."

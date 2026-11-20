@@ -2908,6 +2908,25 @@
 	},
 /turf/open/floor/plasteel/patterned/brushed,
 /area/ship/hallway/port)
+"qN" = (
+/obj/machinery/turretid/ship{
+	id = "ranger_turrets";
+	pixel_y = 29;
+	pixel_x = 0
+	},
+/obj/structure/platform/ship_two{
+	dir = 8
+	},
+/obj/effect/turf_decal/borderfloorwhite{
+	color = "#d40000";
+	dir = 1
+	},
+/obj/effect/turf_decal/techfloor{
+	dir = 8
+	},
+/obj/machinery/computer/med_data,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/bridge)
 "qQ" = (
 /obj/machinery/atmospherics/components/unary/portables_connector/visible/layer3{
 	dir = 8
@@ -5186,65 +5205,6 @@
 	},
 /turf/open/floor/plasteel/mono/white,
 /area/ship/hallway/central)
-"Ei" = (
-/obj/effect/turf_decal/techfloor{
-	dir = 1
-	},
-/obj/structure/closet/secure_closet{
-	icon_state = "tac";
-	name = "armory tac locker"
-	},
-/obj/item/shield/riot/tele{
-	pixel_x = -3;
-	pixel_y = 9
-	},
-/obj/item/shield/riot/tele{
-	pixel_x = -7;
-	pixel_y = 9
-	},
-/obj/item/gun/energy/disabler{
-	pixel_x = 8
-	},
-/obj/item/gun/energy/disabler{
-	pixel_x = 8;
-	pixel_y = -6
-	},
-/obj/item/reagent_containers/spray/pepper{
-	pixel_x = -10;
-	pixel_y = -8
-	},
-/obj/item/reagent_containers/spray/pepper{
-	pixel_x = -6;
-	pixel_y = -8
-	},
-/obj/item/melee/baton{
-	pixel_x = -4
-	},
-/obj/item/melee/baton{
-	pixel_x = 0;
-	pixel_y = -3
-	},
-/turf/open/floor/plasteel/patterned/grid/dark,
-/area/ship/security/armory)
-"Ek" = (
-/obj/machinery/turretid/ship{
-	id = "ranger_turrets";
-	pixel_y = 29;
-	pixel_x = 0
-	},
-/obj/structure/platform/ship_two{
-	dir = 8
-	},
-/obj/effect/turf_decal/borderfloorwhite{
-	color = "#d40000";
-	dir = 1
-	},
-/obj/effect/turf_decal/techfloor{
-	dir = 8
-	},
-/obj/machinery/computer/med_data,
-/turf/open/floor/plasteel/mono/dark,
-/area/ship/bridge)
 "Eq" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 1
@@ -8104,6 +8064,46 @@
 /obj/effect/turf_decal/corner/transparent/blue/diagonal,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
+"Xf" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet{
+	icon_state = "tac";
+	name = "armory tac locker"
+	},
+/obj/item/shield/tele{
+	pixel_x = -3;
+	pixel_y = 9
+	},
+/obj/item/shield/tele{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/item/gun/energy/disabler{
+	pixel_x = 8
+	},
+/obj/item/gun/energy/disabler{
+	pixel_x = 8;
+	pixel_y = -6
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -10;
+	pixel_y = -8
+	},
+/obj/item/reagent_containers/spray/pepper{
+	pixel_x = -6;
+	pixel_y = -8
+	},
+/obj/item/melee/baton{
+	pixel_x = -4
+	},
+/obj/item/melee/baton{
+	pixel_x = 0;
+	pixel_y = -3
+	},
+/turf/open/floor/plasteel/patterned/grid/dark,
+/area/ship/security/armory)
 "Xp" = (
 /obj/machinery/camera/autoname,
 /obj/effect/turf_decal/techfloor{
@@ -9600,7 +9600,7 @@ TL
 JL
 aM
 FI
-Ei
+Xf
 bK
 zW
 zW
@@ -9694,7 +9694,7 @@ zW
 jC
 jC
 Lk
-Ek
+qN
 jj
 Ms
 Lk

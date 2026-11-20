@@ -945,33 +945,6 @@
 /obj/item/storage/toolbox/ammo/c9mm,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"va" = (
-/obj/structure/closet/secure_closet/wall/directional/west{
-	icon_door = "solgov_wall";
-	icon_state = "solgov_wall";
-	name = "vanguard's locker";
-	req_access_txt = "58"
-	},
-/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
-/obj/item/clothing/gloves/tackler/combat/insulated,
-/obj/item/clothing/shoes/combat,
-/obj/item/storage/belt/military/assault,
-/obj/item/storage/backpack/messenger/inteq,
-/obj/item/megaphone/command,
-/obj/item/clothing/under/syndicate/inteq/skirt,
-/obj/item/clothing/under/syndicate/inteq,
-/obj/item/clothing/suit/armor/hos/inteq,
-/obj/item/clothing/head/beret/sec/hos/inteq,
-/obj/item/radio/headset/inteq/alt/captain,
-/obj/item/shield/riot/tele,
-/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
-/obj/item/gun/ballistic/revolver/horizonx,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/ammo_box/a357,
-/obj/item/clothing/mask/balaclava/inteq,
-/turf/open/floor/carpet/orange,
-/area/ship/bridge)
 "ve" = (
 /obj/structure/closet/crate/bin,
 /obj/effect/turf_decal/corner/opaque/yellow,
@@ -2125,6 +2098,33 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/storage/eva)
+"TQ" = (
+/obj/structure/closet/secure_closet/wall/directional/west{
+	icon_door = "solgov_wall";
+	icon_state = "solgov_wall";
+	name = "vanguard's locker";
+	req_access_txt = "58"
+	},
+/obj/item/clothing/glasses/hud/security/sunglasses/inteq,
+/obj/item/clothing/gloves/tackler/combat/insulated,
+/obj/item/clothing/shoes/combat,
+/obj/item/storage/belt/military/assault,
+/obj/item/storage/backpack/messenger/inteq,
+/obj/item/megaphone/command,
+/obj/item/clothing/under/syndicate/inteq/skirt,
+/obj/item/clothing/under/syndicate/inteq,
+/obj/item/clothing/suit/armor/hos/inteq,
+/obj/item/clothing/head/beret/sec/hos/inteq,
+/obj/item/radio/headset/inteq/alt/captain,
+/obj/item/shield/tele,
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/gun/ballistic/revolver/horizonx,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/ammo_box/a357,
+/obj/item/clothing/mask/balaclava/inteq,
+/turf/open/floor/carpet/orange,
+/area/ship/bridge)
 "TV" = (
 /obj/structure/bed,
 /obj/structure/curtain/bounty,
@@ -2268,6 +2268,50 @@
 	},
 /turf/open/floor/plasteel/patterned/cargo_one,
 /area/ship/cargo)
+"WA" = (
+/obj/structure/table/reinforced,
+/obj/effect/turf_decal/corner/opaque/brown{
+	dir = 4
+	},
+/obj/effect/turf_decal/corner/opaque/yellow{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/item/folder/syndicate{
+	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
+	name = "folder";
+	pixel_y = 6;
+	pixel_x = -8
+	},
+/obj/item/paper_bin{
+	pixel_y = 9;
+	pixel_x = -9
+	},
+/obj/item/stamp/hos{
+	name = "vanguard's rubber stamp";
+	pixel_x = -10;
+	pixel_y = 12
+	},
+/obj/item/pen/fountain{
+	pixel_x = -8;
+	pixel_y = 10
+	},
+/obj/machinery/turretid/ship{
+	id = "Hound_turret";
+	pixel_y = 11
+	},
+/obj/item/spacecash/bundle/c1000{
+	pixel_y = 8;
+	pixel_x = 11
+	},
+/obj/item/spacecash/bundle/c1000{
+	pixel_y = 9
+	},
+/obj/item/gps{
+	pixel_x = 12
+	},
+/turf/open/floor/plasteel/dark,
+/area/ship/bridge)
 "WR" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 4
@@ -2337,50 +2381,6 @@
 /obj/machinery/rnd/production/techfab/department/security,
 /turf/open/floor/plasteel/patterned,
 /area/ship/cargo)
-"XH" = (
-/obj/structure/table/reinforced,
-/obj/effect/turf_decal/corner/opaque/brown{
-	dir = 4
-	},
-/obj/effect/turf_decal/corner/opaque/yellow{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt/dust,
-/obj/item/folder/syndicate{
-	desc = "A slick black folder stamped 'Property of Inteq Risk Management Group.'";
-	name = "folder";
-	pixel_y = 6;
-	pixel_x = -8
-	},
-/obj/item/paper_bin{
-	pixel_y = 9;
-	pixel_x = -9
-	},
-/obj/item/stamp/hos{
-	name = "vanguard's rubber stamp";
-	pixel_x = -10;
-	pixel_y = 12
-	},
-/obj/item/pen/fountain{
-	pixel_x = -8;
-	pixel_y = 10
-	},
-/obj/machinery/turretid/ship{
-	id = "Hound_turret";
-	pixel_y = 11
-	},
-/obj/item/spacecash/bundle/c1000{
-	pixel_y = 8;
-	pixel_x = 11
-	},
-/obj/item/spacecash/bundle/c1000{
-	pixel_y = 9
-	},
-/obj/item/gps{
-	pixel_x = 12
-	},
-/turf/open/floor/plasteel/dark,
-/area/ship/bridge)
 "Yj" = (
 /obj/structure/sign/number/four{
 	dir = 1
@@ -2822,7 +2822,7 @@ ib
 ib
 GB
 mw
-va
+TQ
 Ki
 of
 NI
@@ -2881,7 +2881,7 @@ ib
 ib
 ib
 aX
-XH
+WA
 EM
 tT
 pe

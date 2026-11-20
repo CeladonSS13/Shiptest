@@ -121,6 +121,11 @@
 	item_state = "skm_inteq"
 	manufacturer = MANUFACTURER_INTEQ
 
+// [CELADON-ADD] - Рескинов нету - невидимая СКМ
+	unique_reskin = null
+	unique_reskin_changes_inhand = FALSE
+// [/CELADON-ADD]
+
 /obj/item/gun/ballistic/automatic/assault/cm82
 	name = "\improper CM-16"
 	desc = "The standard-issue rifle of CLIP and an extensively modified reproduction of the P-16. Chambered in 5.56mm."

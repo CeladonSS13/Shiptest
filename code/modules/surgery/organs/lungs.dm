@@ -577,6 +577,7 @@
 
 	var/initial_value = initial(received_pressure_mult)
 
+
 	// you wont really notice if youre only breathing a bit more or a bit less
 	var/dilated = (received_pressure_mult > (initial_value + LUNG_CAPACITY_ALERT_BUFFER))
 	var/constricted = (received_pressure_mult < (initial_value - LUNG_CAPACITY_ALERT_BUFFER))

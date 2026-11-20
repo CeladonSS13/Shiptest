@@ -47,11 +47,11 @@
 	crate_name = "games supply crate"
 
 /datum/supply_pack/faction/independent/vendor_refill/vend_circ
-	name = "Vendor circuit board "
-	desc = "Circuit board for building vendors."
+	name = "Custom Vendor circuit board"
+	desc = "Circuit board for custom building vendors."
 	cost = 250
 	contains = list(/obj/item/circuitboard/machine/vendor,
-					/obj/item/screwdriver)
+					/obj/item/vending_refill/custom)
 	crate_name = "vend circuit crate"
 
 /datum/supply_pack/faction/independent/vendor_refill/shaft
