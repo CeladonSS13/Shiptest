@@ -90,7 +90,7 @@ GLOBAL_PROTECT(admin_verbs_debug_extra)
 		for(var/turf/T in seen)
 			T.maptext = "[seen[T]]"
 	BLACKBOX_LOG_ADMIN_VERB("Show Camera Range")
-	BLACKBOX_LOG_ADMIN_VERB("Show Camera Range")
+	//BLACKBOX_LOG_ADMIN_VERB("Show Camera Range") // what the fuck? Why?
 
 #ifdef TESTING
 GLOBAL_LIST_EMPTY(dirty_vars)
@@ -146,7 +146,7 @@ GLOBAL_LIST_EMPTY(dirty_vars)
 					output += "<li><font color='red'>Camera not connected to wall at [ADMIN_VERBOSEJMP(C1)] Network: [json_encode(C1.network)]</font></li>"
 
 	output += "</ul>"
-	usr << browse(output,"window=airreport;size=1000x500")
+	usr << browse(HTML_SKELETON(output),"window=airreport;size=1000x500")
 	BLACKBOX_LOG_ADMIN_VERB("Show Camera Report")
 
 /client/proc/intercom_view()
@@ -180,7 +180,7 @@ GLOBAL_LIST_EMPTY(dirty_vars)
 		dat += "[ADMIN_VERBOSEJMP(T)]\n"
 		dat += "<br>"
 
-	usr << browse(dat, "window=at_list")
+	usr << browse(HTML_SKELETON(dat), "window=at_list")
 
 	BLACKBOX_LOG_ADMIN_VERB("Show Roundstart Active Turfs")
 
