@@ -32,7 +32,9 @@
 	pixel_x = 6;
 	default_raw_text = "i got some gear tucked in the security posts locker room, know what im sayin'? time to go underground."
 	},
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "az" = (
 /obj/structure/cable{
@@ -110,7 +112,7 @@
 /obj/item/clothing/head/maidheadband/syndicate,
 /obj/item/clothing/under/syndicate/skirt/maid,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "bn" = (
 /obj/machinery/power/terminal{
 	dir = 4
@@ -151,7 +153,7 @@
 "bt" = (
 /obj/structure/tank_dispenser,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "bH" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -257,7 +259,7 @@
 	id = "head_stuff"
 	},
 /turf/open/floor/grass/fairy,
-/area/ruin/moon/sunslab/bridge)
+/area/ruin/moon/sunslab/maint)
 "dC" = (
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/wait)
@@ -278,7 +280,7 @@
 	id = "sec_stuff"
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "dM" = (
 /obj/effect/turf_decal/siding/wood/bamboo{
 	dir = 6
@@ -305,7 +307,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 9
 	},
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing,
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/forgotten,
 /turf/open/floor/suns/hatch/bamboo,
 /area/ruin/moon/sunslab/waitsomemore)
 "dU" = (
@@ -338,7 +340,7 @@
 "eb" = (
 /obj/structure/table/reinforced/plasmarglass,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "ef" = (
 /obj/structure/flora/ausbushes/fullgrass/hell,
 /mob/living/simple_animal/hostile/human/zombie,
@@ -412,7 +414,9 @@
 "ew" = (
 /obj/structure/flora/tree/palm,
 /obj/effect/anomaly/grav/planetary,
-/turf/open/floor/plating/asteroid/whitesands/earth,
+/turf/open/floor/plating/asteroid/whitesands/earth{
+	planetary_atmos = 0
+	},
 /area/ruin/moon/sunslab/waitsomemore)
 "ex" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
@@ -437,7 +441,7 @@
 	id = "mech_stuff"
 	},
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "eO" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 6
@@ -459,7 +463,7 @@
 	projectile_damage_multiplier = 1.2
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "eS" = (
 /obj/structure/table/reinforced/titaniumglass,
 /obj/item/phone,
@@ -508,7 +512,9 @@
 /area/ruin/moon/sunslab/atmos)
 "fs" = (
 /obj/machinery/blackbox_recorder,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "fu" = (
 /turf/closed/indestructible/titanium/nodiagnonal,
@@ -716,7 +722,9 @@
 "hk" = (
 /obj/machinery/boarding_pad,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "hl" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/layer2{
@@ -759,8 +767,14 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
 "ih" = (
-/turf/open/floor/plating/airless,
-/area/ruin/moon/sunslab/maint)
+/obj/machinery/door/airlock/multi_tile/command/glass{
+	dir = 4
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
+/turf/open/floor/suns,
+/area/ruin/moon/sunslab/hall)
 "ij" = (
 /obj/structure/sign/flag/suns{
 	pixel_y = 27
@@ -773,8 +787,9 @@
 	},
 /area/ruin/moon/sunslab/wait)
 "il" = (
-/turf/closed/indestructible/titanium/nodiagnonal,
-/area/ruin/moon/sunslab/waitsomemore)
+/obj/structure/table_frame,
+/turf/open/floor/plasteel/tech,
+/area/ruin/moon/sunslab/wait)
 "iq" = (
 /obj/effect/decal/cleanable/chem_pile,
 /turf/open/floor/plating,
@@ -927,7 +942,9 @@
 "jW" = (
 /obj/machinery/ltsrbt,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "ka" = (
 /obj/structure/chair/bench/purple/directional/south,
@@ -1060,7 +1077,9 @@
 /area/ruin/moon/sunslab/hall)
 "lw" = (
 /obj/structure/flora/tree/palm,
-/turf/open/floor/plating/asteroid/whitesands/earth,
+/turf/open/floor/plating/asteroid/whitesands/earth{
+	planetary_atmos = 0
+	},
 /area/ruin/moon/sunslab/waitsomemore)
 "lA" = (
 /obj/machinery/power/shieldwallgen/anchored,
@@ -1120,7 +1139,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "ml" = (
 /obj/structure/flora/grass/both,
 /obj/effect/anomaly/tvstatic/planetary,
@@ -1284,7 +1303,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/atmos)
 "nT" = (
-/turf/open/floor/plating/asteroid/whitesands/earth,
+/turf/open/floor/plating/asteroid/whitesands/earth{
+	planetary_atmos = 0
+	},
 /area/ruin/moon/sunslab/waitsomemore)
 "oj" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
@@ -1321,7 +1342,7 @@
 /obj/item/storage/backpack/duffelbag/syndie/med/medicalbundle,
 /obj/machinery/light/broken/directional/east,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "oG" = (
 /obj/structure/platform/military/corner,
 /turf/open/floor/plating/asteroid/moon/lit,
@@ -1347,7 +1368,9 @@
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "oR" = (
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/hall)
 "oY" = (
@@ -1355,7 +1378,7 @@
 /obj/machinery/light/directional/east,
 /obj/item/wrench/combat,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "pf" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1383,7 +1406,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/mining/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "pl" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
 	dir = 6
@@ -1486,10 +1509,12 @@
 	default_raw_text = "drons buzzing in this room all time. they SNIFF something?"
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "qE" = (
 /obj/machinery/autolathe,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "qU" = (
 /obj/structure/cable{
@@ -1594,7 +1619,7 @@
 /obj/item/clothing/under/syndicate/suns,
 /obj/item/clothing/neck/cloak/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "sc" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1633,7 +1658,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/flour,
 /mob/living/simple_animal/hostile/human/pirate/ranged/space,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "sJ" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -1752,8 +1779,8 @@
 /turf/open/floor/grass/ship/jungle,
 /area/ruin/moon/sunslab/engie)
 "um" = (
-/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/icewing,
 /obj/effect/decal/cleanable/glass/plastitanium,
+/mob/living/simple_animal/hostile/asteroid/basilisk/watcher/forgotten,
 /turf/open/floor/grass/fairy,
 /area/ruin/moon/sunslab/forest)
 "uo" = (
@@ -1762,7 +1789,7 @@
 	pixel_x = -6
 	},
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "up" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
 	dir = 4
@@ -1777,6 +1804,7 @@
 /obj/effect/landmark/portal_exit{
 	id = "sheltere"
 	},
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/moon/sunslab/maint)
 "us" = (
@@ -1818,7 +1846,7 @@
 	pixel_x = 6
 	},
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "uE" = (
 /obj/effect/spawner/structure/window/plasma/reinforced/shutters,
 /turf/open/floor/plating,
@@ -1908,7 +1936,7 @@
 "vb" = (
 /mob/living/simple_animal/hostile/automated/quadrotor/cybersun,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "vc" = (
 /obj/structure/cable{
 	icon_state = "1-4"
@@ -1932,7 +1960,7 @@
 	id = "med_stuff"
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "vy" = (
 /obj/effect/turf_decal/suns/alt/fancy/bottom_right,
 /mob/living/simple_animal/hostile/human/zombie,
@@ -1953,7 +1981,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/bridge)
 "vG" = (
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /obj/machinery/door/airlock/multi_tile/command/glass{
 	dir = 4
 	},
@@ -1978,7 +2008,7 @@
 /obj/item/clothing/gloves/long,
 /obj/item/clothing/suit/hooded/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "vO" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -2023,11 +2053,10 @@
 /area/ruin/moon/sunslab/atmos)
 "wA" = (
 /obj/effect/spawner/structure/window/shuttle,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/waitsomemore)
 "wB" = (
-/obj/effect/spawner/structure/window/shuttle,
+/obj/structure/window/reinforced/fulltile/shuttle/indestructible,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "wI" = (
@@ -2046,7 +2075,7 @@
 /obj/item/clothing/neck/cloak/suns,
 /obj/item/clothing/suit/toggle/labcoat/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "wQ" = (
 /obj/structure/barricade/directional/flippedtable/fancy/purple,
 /obj/machinery/light/broken/directional/west,
@@ -2067,7 +2096,9 @@
 "xe" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/flour,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "xf" = (
 /obj/effect/decal/remains/human,
@@ -2117,9 +2148,12 @@
 /turf/open/floor/suns/plain,
 /area/ruin/moon/sunslab/science)
 "xJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+	dir = 8
+	},
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/moon/sunslab/atmos)
 "xK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
@@ -2151,7 +2185,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/salt,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "ys" = (
 /obj/machinery/door/airlock{
@@ -2189,11 +2225,13 @@
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/waitsomemore)
 "yK" = (
-/obj/structure/fans/tiny,
 /obj/effect/decal/cleanable/oil,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	dir = 4;
 	id = "stadium"
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
 	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/science)
@@ -2219,7 +2257,7 @@
 /obj/item/autosurgeon/cmo,
 /obj/item/clothing/neck/cloak/suns/xo,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "zs" = (
 /obj/structure/deployable_barricade/guardrail{
 	dir = 8
@@ -2398,10 +2436,10 @@
 /turf/open/floor/plasteel/white,
 /area/ruin/moon/sunslab/solfedshuttle)
 "AY" = (
-/obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
 	dir = 8
 	},
+/obj/structure/window/reinforced/fulltile/shuttle/indestructible,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "Bd" = (
@@ -2495,7 +2533,7 @@
 /obj/item/clothing/suit/space/syndicate/suns,
 /obj/item/clothing/head/helmet/space/syndicate/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "Ci" = (
 /obj/effect/decal/remains/human,
 /turf/open/floor/grass/ship/jungle,
@@ -2538,7 +2576,9 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "CS" = (
 /obj/effect/decal/cleanable/glass/plastitanium,
@@ -2614,7 +2654,7 @@
 /obj/machinery/suit_storage_unit/inherit,
 /obj/item/clothing/suit/space/hardsuit/security/suns,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "DH" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 8
@@ -2625,7 +2665,7 @@
 "DL" = (
 /obj/machinery/mech_bay_recharge_port,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "DM" = (
 /obj/structure/closet/secure_closet/suns,
 /obj/item/clothing/neck/cloak/suns/xo,
@@ -2640,7 +2680,7 @@
 /obj/machinery/light/floor,
 /mob/living/simple_animal/hostile/automated/quadrotor/cybersun,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "DU" = (
 /obj/structure/closet/secure_closet/engineering_personal{
 	name = "ship engineer's utilities locker";
@@ -2713,7 +2753,7 @@
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "Ez" = (
 /obj/effect/turf_decal/suns/line/marble/fill,
 /obj/structure/railing/modern,
@@ -2726,8 +2766,9 @@
 /turf/open/floor/grass/fairy,
 /area/ruin/moon/sunslab/bridge)
 "EJ" = (
-/turf/closed/indestructible/titanium/nodiagnonal,
-/area/ruin/moon/sunslab/wait)
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/moon/sunslab/atmos)
 "EP" = (
 /obj/structure/railing/modern{
 	dir = 1
@@ -2749,7 +2790,9 @@
 /area/ruin/moon/sunslab/hall)
 "Fd" = (
 /obj/structure/flora/grass/rockplanet,
-/turf/open/floor/plating/asteroid/whitesands/earth,
+/turf/open/floor/plating/asteroid/whitesands/earth{
+	planetary_atmos = 0
+	},
 /area/ruin/moon/sunslab/waitsomemore)
 "Fg" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
@@ -3010,7 +3053,6 @@
 /area/ruin/moon/sunslab/hall)
 "IS" = (
 /obj/effect/spawner/structure/window/shuttle,
-/obj/structure/grille,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/engie)
 "IT" = (
@@ -3257,7 +3299,7 @@
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/oil,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "Lt" = (
 /obj/item/kirbyplants/random,
 /obj/effect/turf_decal/siding/wood/ebony{
@@ -3319,12 +3361,16 @@
 /obj/effect/decal/cleanable/garbage,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/clothing/neck/cloak/nanotrasen/cape{
+	pixel_x = -6;
+	pixel_y = 2
+	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "LW" = (
 /obj/mecha/working/ripley/mkii/aluminizer,
 /turf/open/floor/mech_bay_recharge_floor,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "LY" = (
 /obj/machinery/autolathe,
 /obj/effect/turf_decal/borderfloorwhite{
@@ -3340,6 +3386,7 @@
 	id = "shelter"
 	},
 /obj/effect/decal/cleanable/garbage,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/moon/sunslab/maint)
 "Mb" = (
@@ -3489,6 +3536,7 @@
 /area/ruin/moon/sunslab/science)
 "NL" = (
 /obj/item/disk/nuclear/fake/obvious,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/moon/sunslab/maint)
 "NM" = (
@@ -3645,8 +3693,10 @@
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/science)
 "Pn" = (
-/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/multi_tile/command/glass,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/hall)
 "Pq" = (
@@ -3671,9 +3721,12 @@
 /turf/open/floor/suns/plain,
 /area/ruin/moon/sunslab/science)
 "PY" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
+	dir = 8
+	},
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/moon/sunslab/atmos)
 "PZ" = (
 /obj/structure/deployable_barricade/guardrail{
 	dir = 8
@@ -3684,7 +3737,7 @@
 /area/ruin/moon/sunslab/waitsome)
 "Qa" = (
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/wait)
+/area/ruin/moon/sunslab/maint)
 "Qv" = (
 /obj/effect/turf_decal/suns/line/marble/fill{
 	dir = 8
@@ -3713,7 +3766,7 @@
 /obj/item/clothing/under/syndicate/suns,
 /obj/machinery/light/directional/east,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "Qy" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -3770,16 +3823,18 @@
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/hall)
 "Rp" = (
-/obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 4
 	},
+/obj/structure/window/reinforced/fulltile/shuttle/indestructible,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "Rw" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/egg_smudge,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "Ry" = (
 /obj/effect/decal/cleanable/greenglow,
@@ -3796,7 +3851,6 @@
 /turf/open/floor/suns/plain,
 /area/ruin/moon/sunslab/science)
 "RN" = (
-/obj/structure/table_frame,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
@@ -3806,7 +3860,9 @@
 /obj/machinery/light/floor,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "RT" = (
 /obj/structure/closet/wall/blue/directional/north,
@@ -3981,7 +4037,7 @@
 	id = "sci_stuff"
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "TS" = (
 /obj/structure/alien/weeds,
 /obj/structure/alien/resin/membrane,
@@ -4050,7 +4106,7 @@
 "Uy" = (
 /obj/structure/tank_dispenser,
 /turf/open/floor/plating,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "UG" = (
 /obj/machinery/mecha_part_fabricator,
 /turf/open/floor/suns/dark/plain,
@@ -4061,7 +4117,7 @@
 	mag_count = 4
 	},
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/hall)
+/area/ruin/moon/sunslab/maint)
 "UN" = (
 /mob/living/simple_animal/hostile/automated/quadrotor/cybersun,
 /turf/open/floor/plating/asteroid/moon_coarse/lit,
@@ -4082,10 +4138,6 @@
 /obj/machinery/light/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/atmos)
-"UW" = (
-/obj/structure/fake_titanium_wall,
-/turf/open/floor/plating,
-/area/ruin/moon/sunslab/maint)
 "UY" = (
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/ruin/moon/sunslab/hall)
@@ -4110,7 +4162,7 @@
 "Vq" = (
 /obj/effect/spawner/random/waste/mechwreck/rare,
 /turf/open/floor/mech_bay_recharge_floor,
-/area/ruin/moon/sunslab/science)
+/area/ruin/moon/sunslab/maint)
 "Vr" = (
 /obj/structure/flora/ausbushes/grassybush/hell,
 /turf/open/floor/grass/ship/jungle,
@@ -4198,6 +4250,7 @@
 /area/ruin/moon/sunslab/engie)
 "WA" = (
 /obj/machinery/nuclearbomb/beer,
+/obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/plating/airless,
 /area/ruin/moon/sunslab/maint)
 "WL" = (
@@ -4230,6 +4283,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/mob/living/simple_animal/hostile/human/zombie,
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/science)
 "WX" = (
@@ -4278,7 +4332,9 @@
 	pixel_x = -9;
 	pixel_y = 15
 	},
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "XC" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
@@ -4324,7 +4380,9 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/food/flour,
-/turf/open/floor/suns/hatch,
+/turf/open/floor/suns/hatch{
+	initial_gas_mix = "TEMP=2.7"
+	},
 /area/ruin/moon/sunslab/maint)
 "Yb" = (
 /turf/open/floor/plating{
@@ -4376,7 +4434,7 @@
 "Yy" = (
 /obj/effect/decal/cleanable/dirt/dust,
 /turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/waitsome)
+/area/ruin/moon/sunslab/maint)
 "YE" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4423,13 +4481,15 @@
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/engie)
 "YZ" = (
-/turf/closed/wall/mineral/titanium/nodiagonal,
+/turf/closed/indestructible/titanium/nodiagnonal,
 /area/ruin/moon/sunslab/forest)
 "Zb" = (
-/obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	dir = 4;
 	id = "stadium"
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
 	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/science)
@@ -4471,10 +4531,10 @@
 /turf/open/floor/grass/ship/jungle,
 /area/ruin/moon/sunslab/atmos)
 "Zx" = (
-/obj/effect/spawner/structure/window/shuttle,
 /obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
 	dir = 8
 	},
+/obj/structure/window/reinforced/fulltile/shuttle/indestructible,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "ZH" = (
@@ -4663,15 +4723,15 @@ Uj
 Uj
 Uj
 Ks
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
-pQ
+OO
+OO
+OO
+OO
+OO
+OO
+OO
+OO
+OO
 Ks
 Ks
 Uj
@@ -4714,7 +4774,7 @@ Uj
 Uj
 Uj
 Ks
-pQ
+OO
 AP
 Wy
 Mg
@@ -4722,7 +4782,7 @@ na
 Of
 zA
 uS
-pQ
+OO
 Ks
 Ks
 Ks
@@ -4765,7 +4825,7 @@ Uj
 Uj
 Ks
 Ks
-pQ
+OO
 ev
 Os
 jF
@@ -4773,7 +4833,7 @@ fH
 bn
 gv
 Rm
-pQ
+OO
 Ks
 Ks
 Ks
@@ -4816,7 +4876,7 @@ Uj
 Uj
 Ks
 Ks
-pQ
+OO
 OY
 mN
 bN
@@ -4824,7 +4884,7 @@ uY
 Sz
 Sz
 eo
-pQ
+OO
 Ks
 Ks
 Ks
@@ -4867,31 +4927,31 @@ Ks
 Ks
 Ks
 Ks
-pQ
+OO
 Av
 MG
 iD
-pQ
-pQ
-pQ
-pQ
-pQ
-dU
-dU
-dU
-dU
-dU
-dU
-dU
-dU
-dU
-dU
+OO
+OO
+OO
+OO
+OO
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
+ru
 oR
 vG
-FE
+UY
 oR
-vG
-FE
+ih
+UY
 Sw
 Sw
 Sw
@@ -4914,15 +4974,15 @@ Gt
 Uj
 Uj
 Ks
-pQ
-pQ
-pQ
-pQ
-pQ
+OO
+OO
+OO
+OO
+OO
 Ti
 ae
 YE
-pQ
+OO
 pX
 pX
 wB
@@ -4932,7 +4992,7 @@ Ci
 wB
 GW
 GW
-dU
+ru
 XD
 iC
 iC
@@ -4965,7 +5025,7 @@ Uj
 Uj
 Uj
 Ks
-pQ
+OO
 Ie
 ul
 qi
@@ -4973,7 +5033,7 @@ pQ
 DU
 YN
 HE
-pQ
+OO
 pX
 lt
 wB
@@ -4983,7 +5043,7 @@ Zt
 wB
 GW
 yL
-dU
+ru
 Yb
 Yb
 Aw
@@ -5016,7 +5076,7 @@ Uj
 Uj
 Uj
 Ks
-pQ
+OO
 eC
 jq
 Ie
@@ -5024,7 +5084,7 @@ pQ
 fv
 Ph
 xq
-pQ
+OO
 hl
 Ew
 wB
@@ -5034,7 +5094,7 @@ Dd
 wB
 gX
 hN
-dU
+ru
 To
 BF
 UO
@@ -5064,10 +5124,10 @@ Gt
 Uj
 Uj
 Uj
-pQ
-pQ
-pQ
-pQ
+OO
+OO
+OO
+OO
 IS
 IS
 IS
@@ -5075,13 +5135,13 @@ pQ
 pQ
 JB
 pQ
-pQ
+OO
 AY
 Rp
 wB
-AY
-wB
-Zx
+xJ
+EJ
+PY
 wB
 Zx
 Rp
@@ -5099,7 +5159,7 @@ FE
 FE
 FE
 FE
-FE
+UY
 VG
 Uj
 Uj
@@ -5115,7 +5175,7 @@ Uj
 Uj
 Uj
 Ks
-pQ
+OO
 ml
 Uf
 IS
@@ -5166,7 +5226,7 @@ Uj
 Uj
 Uj
 Ks
-pQ
+OO
 SO
 VX
 IS
@@ -5217,7 +5277,7 @@ Ks
 Ks
 Ks
 Ks
-pQ
+OO
 Np
 Np
 IS
@@ -5252,7 +5312,7 @@ LH
 cN
 gy
 QP
-FE
+UY
 Uj
 VG
 Uj
@@ -5381,10 +5441,10 @@ pQ
 pQ
 pQ
 pQ
-OO
-ru
-ru
-ru
+Fp
+Fp
+Fp
+Fp
 dU
 dU
 dU
@@ -5401,11 +5461,11 @@ sL
 Fa
 xs
 vH
-UY
-UY
-UY
-UY
-UY
+Fp
+Fp
+Fp
+Fp
+Fp
 Ks
 Uj
 Uj
@@ -5432,10 +5492,10 @@ Ut
 wA
 Fd
 nT
-il
+Fp
 DL
 uo
-fu
+Fp
 Sj
 Ry
 Nc
@@ -5452,11 +5512,11 @@ en
 qV
 hF
 Gr
-UY
+Fp
 eP
 UI
 bt
-UY
+Fp
 Ks
 Ks
 Uj
@@ -5483,7 +5543,7 @@ do
 wA
 nT
 lw
-il
+Fp
 Vq
 Lk
 eN
@@ -5504,10 +5564,10 @@ Cn
 cW
 yj
 dK
-xJ
+Yy
 qv
-xJ
-UY
+Yy
+Fp
 Ks
 Ks
 Ks
@@ -5534,7 +5594,7 @@ gw
 wA
 lw
 Fd
-il
+Fp
 Uy
 vb
 eN
@@ -5554,11 +5614,11 @@ EP
 DC
 Bj
 Il
-UY
+Fp
 rP
 Qx
 DD
-UY
+Fp
 Ks
 Ks
 Ks
@@ -5585,7 +5645,7 @@ yD
 wA
 Fd
 lw
-il
+Fp
 LW
 DT
 mh
@@ -5605,15 +5665,15 @@ FE
 HG
 FE
 FE
-UY
-UY
-UY
-UY
 Fp
-me
-me
-me
-me
+Fp
+Fp
+Fp
+Fp
+Fp
+Fp
+Fp
+Fp
 Uj
 Uj
 Uj
@@ -5636,10 +5696,10 @@ yD
 wA
 nT
 ew
-il
+Fp
 Ex
 uD
-fu
+Fp
 Xi
 dP
 lY
@@ -5664,7 +5724,7 @@ me
 Xz
 yl
 qE
-me
+Fp
 Uj
 Uj
 Uj
@@ -5687,10 +5747,10 @@ jt
 wA
 lw
 Fd
-il
-fu
-fu
-fu
+Fp
+Fp
+Fp
+Fp
 wi
 WT
 nl
@@ -5715,7 +5775,7 @@ me
 fs
 sG
 Rw
-me
+Fp
 Uj
 Uj
 Uj
@@ -5766,7 +5826,7 @@ me
 jW
 RP
 hk
-me
+Fp
 Uj
 Uj
 Uj
@@ -5778,7 +5838,7 @@ Uj
 Uj
 Ks
 Ks
-pn
+Hr
 ou
 Dw
 cP
@@ -5817,7 +5877,7 @@ me
 Rw
 XR
 xe
-me
+Fp
 Ks
 Uj
 Uj
@@ -5829,7 +5889,7 @@ Uj
 Uj
 Uj
 Ks
-pn
+Hr
 Le
 yv
 cP
@@ -5853,7 +5913,7 @@ LR
 RN
 Do
 eS
-Do
+il
 LR
 Uo
 CS
@@ -5868,7 +5928,7 @@ me
 aq
 XR
 CI
-me
+Fp
 Ks
 Uj
 Uj
@@ -5880,7 +5940,7 @@ Uj
 Uj
 Uj
 Ks
-pn
+Hr
 yv
 ou
 cP
@@ -5917,9 +5977,9 @@ VB
 iT
 me
 me
-UW
+jd
 me
-me
+Fp
 Ks
 Uj
 Uj
@@ -5931,18 +5991,18 @@ Gt
 Uj
 Uj
 Uj
-pn
-pn
-pn
-pn
-uE
-uE
-uE
 Hr
 Hr
+Hr
+Hr
+uE
+uE
+uE
+Fp
+Fp
 TR
-Hr
-Hr
+Fp
+Fp
 Ar
 DZ
 oq
@@ -5951,12 +6011,12 @@ NN
 qo
 nu
 Km
-EJ
-EJ
+Fp
+Fp
 vw
-EJ
-EJ
-EJ
+Fp
+Fp
+Fp
 VB
 FK
 Ga
@@ -5970,7 +6030,7 @@ me
 wI
 tP
 tP
-me
+Fp
 Ks
 Uj
 Uj
@@ -5985,15 +6045,15 @@ Uj
 Uj
 Ks
 Ks
-pn
+Hr
 Vr
 Da
 cw
-Hr
+Fp
 wP
 Yy
 Yy
-Hr
+Fp
 Wi
 NO
 XJ
@@ -6002,12 +6062,12 @@ Tt
 XJ
 lK
 iW
-EJ
+Fp
 Qa
-PY
-PY
+Yy
+Yy
 zb
-EJ
+Fp
 VB
 iT
 sR
@@ -6021,7 +6081,7 @@ me
 Mx
 Mx
 tP
-me
+Fp
 Ks
 Uj
 Uj
@@ -6036,15 +6096,15 @@ Uj
 Uj
 Ks
 Ks
-pn
+Hr
 ef
 Vr
 SV
-Hr
+Fp
 vJ
 oY
 pj
-Hr
+Fp
 jN
 DH
 XJ
@@ -6053,12 +6113,12 @@ aF
 XJ
 xG
 tX
-EJ
+Fp
 Cd
 eb
 ox
 bj
-EJ
+Fp
 VB
 VB
 VB
@@ -6072,7 +6132,7 @@ me
 wI
 tP
 tP
-me
+Fp
 Ks
 Uj
 Uj
@@ -6087,43 +6147,43 @@ Uj
 Uj
 Uj
 Ks
-pn
-pn
-pn
-pn
 Hr
 Hr
 Hr
 Hr
-Hr
-XJ
-XJ
-XJ
+Fp
+Fp
+Fp
+Fp
+Fp
+fu
+fu
+fu
 Zb
 yK
-XJ
-XJ
-XJ
-EJ
-EJ
-EJ
-EJ
-EJ
-EJ
+fu
+fu
+fu
+Fp
+Fp
+Fp
+Fp
+Fp
+Fp
 YZ
 YZ
 YZ
 YZ
 YZ
-me
-me
-me
-me
-me
+Fp
+Fp
+Fp
+Fp
+Fp
 Mx
 tP
 Mx
-me
+Fp
 Ks
 Uj
 Uj
@@ -6174,7 +6234,7 @@ kg
 Mx
 tP
 tP
-me
+Fp
 Ks
 Uj
 Uj
@@ -6225,7 +6285,7 @@ Mx
 wI
 Mx
 tP
-me
+Fp
 Ks
 Uj
 Uj
@@ -6276,7 +6336,7 @@ tP
 tP
 tP
 Bw
-me
+Fp
 Ks
 Uj
 Uj
@@ -6316,7 +6376,7 @@ Op
 Op
 Op
 Op
-Zg
+Gf
 Zg
 Uj
 Fp
@@ -6324,10 +6384,10 @@ Fp
 Fp
 Fp
 Fp
-me
-me
-me
-me
+Fp
+Fp
+Fp
+Fp
 Ks
 Uj
 Uj
@@ -6371,7 +6431,7 @@ Zg
 Zg
 Uj
 LM
-ih
+wI
 WA
 WA
 Fp
@@ -6520,7 +6580,7 @@ wl
 IA
 si
 Op
-Gf
+Zg
 Zg
 Uj
 Fp
@@ -6673,7 +6733,7 @@ Op
 Op
 Op
 Op
-Zg
+Gf
 Zg
 Uj
 MU
