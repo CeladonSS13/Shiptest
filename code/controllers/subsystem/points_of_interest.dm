@@ -15,6 +15,10 @@ SUBSYSTEM_DEF(points_of_interest)
  * Turns new_poi into a new point of interest by adding the /datum/element/point_of_interest element to it.
  */
 /datum/controller/subsystem/points_of_interest/proc/make_point_of_interest(atom/new_poi)
+	// [CELADON-ADD] - FIX_DUPLICATE_POI - Атом уже является POI, повторно не добавляем (иначе в Orbit появляются дубли).
+	if(points_of_interest_by_target_ref[REF(new_poi)])
+		return
+	// [/CELADON-ADD]
 	new_poi.AddElement(/datum/element/point_of_interest)
 
 /**
@@ -27,6 +31,10 @@ SUBSYSTEM_DEF(points_of_interest)
  * Called by [/datum/element/point_of_interest] when it gets removed from old_poi.
  */
 /datum/controller/subsystem/points_of_interest/proc/on_poi_element_added(atom/new_poi)
+	// [CELADON-ADD] - FIX_DUPLICATE_POI - Атом уже является POI, повторно не добавляем (иначе в Orbit появляются дубли).
+	if(points_of_interest_by_target_ref[REF(new_poi)])
+		return
+	// [/CELADON-ADD]
 	var/datum/point_of_interest/new_poi_datum
 	if(ismob(new_poi))
 		new_poi_datum = new /datum/point_of_interest/mob_poi(new_poi)
