@@ -766,6 +766,15 @@
 /mob/living/simple_animal/hostile/automated/quadrotor/cybersun,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
+"ih" = (
+/obj/machinery/door/airlock/multi_tile/command/glass{
+	dir = 4
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
+/turf/open/floor/suns,
+/area/ruin/moon/sunslab/hall)
 "ij" = (
 /obj/structure/sign/flag/suns{
 	pixel_y = 27
@@ -778,12 +787,9 @@
 	},
 /area/ruin/moon/sunslab/wait)
 "il" = (
-/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
-	dir = 8
-	},
-/obj/structure/window/reinforced/fulltile/shuttle,
-/turf/open/floor/plating,
-/area/ruin/moon/sunslab/atmos)
+/obj/structure/table_frame,
+/turf/open/floor/plasteel/tech,
+/area/ruin/moon/sunslab/wait)
 "iq" = (
 /obj/effect/decal/cleanable/chem_pile,
 /turf/open/floor/plating,
@@ -1362,7 +1368,9 @@
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "oR" = (
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/hall)
 "oY" = (
@@ -1973,7 +1981,9 @@
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/bridge)
 "vG" = (
-/obj/structure/fans/tiny,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /obj/machinery/door/airlock/multi_tile/command/glass{
 	dir = 4
 	},
@@ -2138,9 +2148,12 @@
 /turf/open/floor/suns/plain,
 /area/ruin/moon/sunslab/science)
 "xJ" = (
-/obj/effect/decal/cleanable/dirt/dust,
-/turf/open/floor/suns/dark/plain,
-/area/ruin/moon/sunslab/maint)
+/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+	dir = 8
+	},
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/moon/sunslab/atmos)
 "xK" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
@@ -2212,11 +2225,13 @@
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/waitsomemore)
 "yK" = (
-/obj/structure/fans/tiny,
 /obj/effect/decal/cleanable/oil,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	dir = 4;
 	id = "stadium"
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
 	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/science)
@@ -2751,9 +2766,9 @@
 /turf/open/floor/grass/fairy,
 /area/ruin/moon/sunslab/bridge)
 "EJ" = (
-/obj/structure/table_frame,
-/turf/open/floor/plasteel/tech,
-/area/ruin/moon/sunslab/wait)
+/obj/structure/window/reinforced/fulltile/shuttle,
+/turf/open/floor/plating,
+/area/ruin/moon/sunslab/atmos)
 "EP" = (
 /obj/structure/railing/modern{
 	dir = 1
@@ -3678,8 +3693,10 @@
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/science)
 "Pn" = (
-/obj/structure/fans/tiny,
 /obj/machinery/door/airlock/multi_tile/command/glass,
+/obj/structure/fans/tiny{
+	max_integrity = 90000
+	},
 /turf/open/floor/suns,
 /area/ruin/moon/sunslab/hall)
 "Pq" = (
@@ -3704,7 +3721,7 @@
 /turf/open/floor/suns/plain,
 /area/ruin/moon/sunslab/science)
 "PY" = (
-/obj/machinery/atmospherics/pipe/simple/green/visible/layer2{
+/obj/machinery/atmospherics/pipe/simple/orange/visible/layer2{
 	dir = 8
 	},
 /obj/structure/window/reinforced/fulltile/shuttle,
@@ -4415,9 +4432,9 @@
 	},
 /area/ruin/moon/sunslab/wait)
 "Yy" = (
-/obj/structure/window/reinforced/fulltile/shuttle,
-/turf/open/floor/plating,
-/area/ruin/moon/sunslab/atmos)
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/suns/dark/plain,
+/area/ruin/moon/sunslab/maint)
 "YE" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4467,10 +4484,12 @@
 /turf/closed/indestructible/titanium/nodiagnonal,
 /area/ruin/moon/sunslab/forest)
 "Zb" = (
-/obj/structure/fans/tiny,
 /obj/machinery/door/poddoor/shutters/indestructible{
 	dir = 4;
 	id = "stadium"
+	},
+/obj/structure/fans/tiny{
+	max_integrity = 90000
 	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/science)
@@ -4931,7 +4950,7 @@ oR
 vG
 UY
 oR
-vG
+ih
 UY
 Sw
 Sw
@@ -5120,9 +5139,9 @@ OO
 AY
 Rp
 wB
+xJ
+EJ
 PY
-Yy
-il
 wB
 Zx
 Rp
@@ -5545,9 +5564,9 @@ Cn
 cW
 yj
 dK
-xJ
+Yy
 qv
-xJ
+Yy
 Fp
 Ks
 Ks
@@ -5894,7 +5913,7 @@ LR
 RN
 Do
 eS
-EJ
+il
 LR
 Uo
 CS
@@ -6032,8 +6051,8 @@ Da
 cw
 Fp
 wP
-xJ
-xJ
+Yy
+Yy
 Fp
 Wi
 NO
@@ -6045,8 +6064,8 @@ lK
 iW
 Fp
 Qa
-xJ
-xJ
+Yy
+Yy
 zb
 Fp
 VB
