@@ -866,7 +866,7 @@
 /turf/open/floor/wood/birch,
 /area/ruin/moon/sunslab/maint)
 "jd" = (
-/obj/structure/fake_titanium_wall,
+/obj/structure/falsewall/titanium,
 /turf/open/floor/plating/airless,
 /area/ruin/moon/sunslab/maint)
 "jf" = (
@@ -925,6 +925,7 @@
 /obj/effect/turf_decal/siding/wood/birch{
 	dir = 8
 	},
+/obj/structure/chair/bench/red/directional/east,
 /turf/open/floor/suns/hatch/bamboo,
 /area/ruin/moon/sunslab/waitsome)
 "jF" = (
@@ -1525,6 +1526,7 @@
 /obj/effect/turf_decal/borderfloorwhite{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/atmos)
 "qV" = (
@@ -2592,6 +2594,7 @@
 /obj/effect/turf_decal/siding/wood/birch{
 	dir = 4
 	},
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/suns/hatch/bamboo,
 /area/ruin/moon/sunslab/waitsome)
 "CY" = (
@@ -2609,7 +2612,7 @@
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "Dd" = (
-/obj/machinery/atmospherics/components/unary/vent_pump/siphon/on/layer2{
+/obj/machinery/atmospherics/components/unary/vent_pump/on/layer2{
 	dir = 4
 	},
 /turf/open/floor/grass/ship/jungle,
@@ -2842,6 +2845,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
 	dir = 9
 	},
+/obj/structure/extinguisher_cabinet/directional/north,
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "FV" = (
@@ -3278,6 +3282,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/suns/hatch/bamboo,
 /area/ruin/moon/sunslab/wait)
 "Le" = (
@@ -3333,6 +3338,14 @@
 /obj/effect/spawner/structure/window/shuttle,
 /turf/open/floor/grass/ship/jungle,
 /area/ruin/moon/sunslab/hall)
+"LL" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/extinguisher_cabinet/directional/north,
+/turf/open/floor/plasteel/tech,
+/area/ruin/moon/sunslab/hall)
 "LM" = (
 /obj/machinery/door/poddoor/shutters/indestructible{
 	id = "shelter"
@@ -3361,10 +3374,6 @@
 /obj/effect/decal/cleanable/garbage,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
-/obj/item/clothing/neck/cloak/nanotrasen/cape{
-	pixel_x = -6;
-	pixel_y = 2
-	},
 /turf/open/floor/plating,
 /area/ruin/moon/sunslab/atmos)
 "LW" = (
@@ -3479,6 +3488,7 @@
 "Nc" = (
 /obj/effect/turf_decal/suns/line/marble/fill,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/extinguisher_cabinet/directional/west,
 /turf/open/floor/suns/dark/plain,
 /area/ruin/moon/sunslab/science)
 "Ne" = (
@@ -3761,7 +3771,9 @@
 /obj/item/clothing/glasses/hud/security/suns,
 /obj/item/clothing/gloves/tackler/dolphin/suns,
 /obj/item/clothing/shoes/jackboots/suns/long,
-/obj/item/clothing/suit/armor/vest/suns/ehos,
+/obj/item/clothing/suit/armor/vest/suns/ehos{
+	body_parts_covered = 390
+	},
 /obj/item/clothing/under/syndicate/suns/pkuniform,
 /obj/item/clothing/under/syndicate/suns,
 /obj/machinery/light/directional/east,
@@ -4114,7 +4126,7 @@
 "UI" = (
 /obj/structure/table/reinforced/plasmarglass,
 /obj/item/storage/guncase/pistol/modelh{
-	mag_count = 4
+	mag_count = 3
 	},
 /turf/open/floor/suns/dark/plain,
 /area/ruin/moon/sunslab/maint)
@@ -4355,6 +4367,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/structure/extinguisher_cabinet/directional/east,
 /turf/open/floor/plasteel/tech,
 /area/ruin/moon/sunslab/engie)
 "XH" = (
@@ -5507,7 +5520,7 @@ lA
 FF
 lA
 XJ
-KS
+LL
 en
 qV
 hF
