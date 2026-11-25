@@ -26,7 +26,7 @@
 	// [CELADON-EDIT] - SHIP_SELECTION_REWORK & FIXES_ADMIN_STEALTH
 	//app_name = app_mob.client?.prefs.real_name
 	// app_key = app_mob.client?.holder?.fakekey ? app_mob.client.holder.fakekey : applicant.key	// ORIGINAL
-	app_name = clean_html_entities(app_mob.client?.prefs.real_name)
+	app_name = sanitize(copytext_char(app_mob.client?.prefs.real_name, 1, MAX_MESSAGE_LEN))
 	app_key = applicant.key
 	// [/CELADON-EDIT]
 	parent_ship = parent
@@ -75,7 +75,7 @@
 			"<a href=?src=[REF(src)];application_accept=1>(ACCEPT)</a> / <a href=?src=[REF(src)];application_deny=1>(DENY)</a></span>"
 		*/
 		var/message = \
-			"<span class='looc'>[app_name] [show_key ? "([app_key]) " : null]applied to your ship: [clean_html_entities(app_msg)]\n" + \
+			"<span class='looc'>[app_name] [show_key ? "([app_key]) " : null]applied to your ship: [sanitize(copytext_char(app_msg, 1, MAX_MESSAGE_LEN))]\n" + \
 			"<a href=?src=[REF(src)];application_accept=1>(ACCEPT)</a> / <a href=?src=[REF(src)];application_deny=1>(DENY)</a></span>"
 		// [/CELADON-EDIT]
 		to_chat(parent_ship.owner_mob, message, MESSAGE_TYPE_INFO)
@@ -112,34 +112,11 @@
 /datum/ship_application/ui_state(mob/user)
 	return GLOB.always_state
 
-// [CELADON-ADD] - SHIP_SELECTION_REWORK - Вспомогательная функция для очистки HTML-сущностей
-/datum/ship_application/proc/clean_html_entities(text)
-	if(!text)
-		return text
-	// Очищаем HTML-сущности в правильном порядке (сначала сложные, потом простые)
-	// Кавычки
-	text = replacetext(text, "&quot;", "\"")
-	text = replacetext(text, "&#34;", "\"")
-	text = replacetext(text, "&#x22;", "\"")
-	// Апострофы
-	text = replacetext(text, "&#39;", "'")
-	text = replacetext(text, "&#x27;", "'")
-	// Амперсанд
-	text = replacetext(text, "&amp;", "&")
-	text = replacetext(text, "&#38;", "&")
-	// Угловые скобки
-	text = replacetext(text, "&lt;", "<")
-	text = replacetext(text, "&#60;", "<")
-	text = replacetext(text, "&gt;", ">")
-	text = replacetext(text, "&#62;", ">")
-	return text
-// [/CELADON-ADD]
-
 /datum/ship_application/ui_data(mob/user)
 	. = list()
 	.["ship_name"] = parent_ship.name
 	.["player_name"] = app_name
-	.["job_name"] = clean_html_entities(target_job?.name) // [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем передачу job_name в UI
+	.["job_name"] = sanitize(copytext_char(target_job?.name, 1, MAX_MESSAGE_LEN)) // [CELADON-ADD] - SHIP_SELECTION_REWORK - Добавляем передачу job_name в UI
 
 /datum/ship_application/ui_act(action, list/params, datum/tgui/ui)
 	. = ..()
@@ -153,7 +130,7 @@
 			// [CELADON-ADD] - SHIP_SELECTION_REWORK
 			// Очищаем текст от HTML-сущностей и санитизируем
 			var/raw_text = params["text"]
-			app_msg = clean_html_entities(copytext(sanitize(raw_text), 1, 1024))
+			app_msg = sanitize(copytext_char(raw_text, 1, MAX_MESSAGE_LEN))
 			// [/CELADON-EDIT]
 			SStgui.close_uis(src)
 			return TRUE

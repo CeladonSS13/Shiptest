@@ -11,8 +11,8 @@ SUBSYSTEM_DEF(factions)
 		factions[path] = faction
 		for(var/prefix in faction.prefixes)
 			if(prefix in faction_prefixes)
-				var/datum/faction/other_faction = faction_prefixes[prefix]
-				stack_trace("Duplicate ship prefix: [prefix] for [faction.name] and [other_faction.name]")
+				// var/datum/faction/other_faction = faction_prefixes[prefix] - Это ужасно, но  нас Independent & Elysium должны иметь одинаковый префикс.
+				// stack_trace("Duplicate ship prefix: [prefix] for [faction.name] and [other_faction.name]") - [CELADON-REMOVE] - Это ужасно, но  нас Independent & Elysium должны иметь одинаковый префикс.
 			faction_prefixes[prefix] = faction
 
 	return ..()
