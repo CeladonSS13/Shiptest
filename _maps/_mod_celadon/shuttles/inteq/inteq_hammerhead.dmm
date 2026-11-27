@@ -812,13 +812,15 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/bridge)
 "cS" = (
-/obj/machinery/airalarm/directional/south,
-/obj/effect/turf_decal/siding/black,
-/obj/effect/turf_decal/techfloor,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040
+/obj/machinery/light/directional/north,
+/obj/effect/turf_decal/techfloor{
+	dir = 1
 	},
-/obj/effect/spawner/random/vending/snack,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	dir = 1;
+	layer = 2.041
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "cT" = (
@@ -1163,12 +1165,17 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew/crewtwo)
 "eW" = (
-/obj/effect/turf_decal/techfloor,
-/obj/effect/turf_decal/trimline/opaque/yellow/line{
-	layer = 2.040
+/obj/machinery/atmospherics/pipe/simple/supply/hidden/layer2{
+	dir = 4
 	},
-/obj/structure/sign/poster/solgov/recyle{
-	pixel_y = -32
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer4{
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
@@ -1363,6 +1370,17 @@
 	},
 /turf/open/floor/plasteel/tech,
 /area/ship/engineering/atmospherics)
+"go" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/effect/spawner/random/vending/snack,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/central)
 "gp" = (
 /obj/machinery/newscaster/directional/south,
 /obj/effect/turf_decal/techfloor,
@@ -2621,10 +2639,7 @@
 	dir = 1;
 	layer = 2.041
 	},
-/obj/machinery/disposal/bin,
-/obj/structure/disposalpipe/trunk{
-	dir = 2
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "nY" = (
@@ -3125,6 +3140,10 @@
 	dir = 1
 	},
 /obj/machinery/disposal/bin,
+/obj/structure/sign/poster/solgov/recyle{
+	pixel_y = -32
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "qr" = (
@@ -4327,10 +4346,8 @@
 	dir = 1;
 	layer = 2.041
 	},
-/obj/structure/disposalpipe/trunk{
-	dir = 2
-	},
-/obj/machinery/disposal/bin,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/cigbutt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "xm" = (
@@ -5334,6 +5351,9 @@
 	dir = 9
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/black,
+/obj/structure/disposalpipe/segment{
+	dir = 5
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew)
 "Bh" = (
@@ -5539,13 +5559,11 @@
 /turf/open/floor/plasteel/mono/white,
 /area/ship/medical)
 "Cd" = (
-/obj/structure/disposalpipe/segment{
-	dir = 2
-	},
 /obj/effect/turf_decal/techfloor,
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040
 	},
+/obj/structure/closet/emcloset/wall/directional/south,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "Ce" = (
@@ -5554,6 +5572,7 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "Cf" = (
@@ -6130,9 +6149,6 @@
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "Fd" = (
-/obj/structure/disposalpipe/trunk{
-	dir = 1
-	},
 /obj/machinery/disposal/bin,
 /obj/machinery/light_switch{
 	pixel_y = 22;
@@ -6142,6 +6158,9 @@
 	dir = 1
 	},
 /obj/effect/turf_decal/spline/fancy/transparent/black,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/crew)
 "Ff" = (
@@ -6345,6 +6364,11 @@
 	dir = 1;
 	layer = 2.041
 	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "FJ" = (
@@ -6841,6 +6865,14 @@
 /obj/effect/turf_decal/box,
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/engineering/atmospherics)
+"HX" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/central)
 "Ia" = (
 /obj/effect/turf_decal/techfloor/orange{
 	dir = 8
@@ -6861,7 +6893,9 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040
 	},
-/obj/machinery/vending/coffee,
+/obj/structure/disposalpipe/segment{
+	dir = 2
+	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "If" = (
@@ -7827,6 +7861,17 @@
 /obj/effect/decal/cleanable/blood/drip,
 /turf/open/floor/plasteel/tech,
 /area/ship/security/prison)
+"Nk" = (
+/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040
+	},
+/obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
+	dir = 1
+	},
+/obj/machinery/vending/coffee,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/central)
 "Nm" = (
 /obj/machinery/door/firedoor/border_only,
 /obj/effect/turf_decal/borderfloorblack{
@@ -7926,8 +7971,8 @@
 	dir = 1;
 	layer = 2.041
 	},
-/obj/structure/closet/firecloset/wall/directional/north,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/effect/spawner/random/vending/snack,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "Od" = (
@@ -8295,6 +8340,21 @@
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/engineering/communications)
+"PU" = (
+/obj/effect/turf_decal/techfloor{
+	dir = 1
+	},
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	dir = 1;
+	layer = 2.041
+	},
+/obj/machinery/disposal/bin,
+/obj/structure/disposalpipe/trunk{
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/central)
 "PW" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer4{
 	dir = 4
@@ -8713,6 +8773,7 @@
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	layer = 2.040
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/security/armory)
 "SO" = (
@@ -8763,15 +8824,16 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/cargo/office)
 "Th" = (
-/obj/structure/sign/poster/contraband/engis_unite{
-	pixel_y = 32
-	},
 /obj/effect/turf_decal/techfloor{
 	dir = 1
 	},
 /obj/effect/turf_decal/trimline/opaque/yellow/line{
 	dir = 1;
 	layer = 2.041
+	},
+/obj/machinery/airalarm/directional/south{
+	pixel_y = 28;
+	dir = 1
 	},
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
@@ -9453,6 +9515,15 @@
 	},
 /turf/open/floor/plasteel/tech/grid,
 /area/ship/security/armory)
+"Xh" = (
+/obj/effect/turf_decal/siding/black,
+/obj/effect/turf_decal/techfloor,
+/obj/effect/turf_decal/trimline/opaque/yellow/line{
+	layer = 2.040
+	},
+/obj/structure/closet/emcloset/wall/directional/south,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/maintenance/central)
 "Xw" = (
 /obj/machinery/atmospherics/pipe/simple/dark/hidden/layer5{
 	dir = 5
@@ -10084,7 +10155,7 @@
 	dir = 1;
 	layer = 2.041
 	},
-/obj/effect/spawner/random/vending/snack,
+/obj/structure/closet/firecloset/wall/directional/north,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/maintenance/central)
 "ZV" = (
@@ -10426,7 +10497,7 @@ au
 rP
 bU
 hx
-eW
+ul
 kn
 lt
 Vc
@@ -10634,7 +10705,7 @@ rP
 xW
 OE
 rP
-FG
+cS
 nJ
 ul
 kn
@@ -10879,7 +10950,7 @@ Qs
 PP
 eS
 vD
-Ue
+Th
 nJ
 ul
 kn
@@ -10914,9 +10985,9 @@ xr
 uc
 EF
 vD
-Ue
-nJ
-Ik
+PU
+sC
+Xh
 kn
 qN
 Ov
@@ -10950,8 +11021,8 @@ fP
 fP
 fP
 nX
-QG
-cS
+eW
+Ik
 kn
 kn
 kn
@@ -11021,7 +11092,7 @@ IZ
 zP
 Mr
 CX
-cT
+go
 ml
 Ht
 Uv
@@ -11336,7 +11407,7 @@ ua
 gL
 FD
 tA
-cT
+Nk
 rc
 ol
 kS
@@ -11369,9 +11440,9 @@ gL
 gL
 gL
 gL
-Ue
+Th
 nJ
-ul
+HX
 rc
 rc
 rc
@@ -11405,9 +11476,9 @@ Hi
 Kh
 IE
 xl
-QG
+tV
 Ie
-MA
+Mt
 Bg
 dU
 Zk
@@ -11440,9 +11511,9 @@ Ff
 YD
 IE
 FG
-tV
+QG
 Cd
-Mt
+MA
 Fd
 pq
 gT
