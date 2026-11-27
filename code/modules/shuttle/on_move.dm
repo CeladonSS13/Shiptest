@@ -24,6 +24,8 @@ All ShuttleMove procs go here
 
 	clear_adjacencies()
 
+	var/list/injured_mobs = list() // [CELADON-ADD] - Track mobs hit for announcement
+
 	for(var/atom/movable/thing as anything in contents)
 		if(ismob(thing))
 			if(isliving(thing))
@@ -35,20 +37,43 @@ All ShuttleMove procs go here
 				M.stop_pulling()
 				M.visible_message(span_warning("[shuttle] slams into [M]!"))
 				SSblackbox.record_feedback("tally", "shuttle_gib", 1, M.type)
-				log_attack("[key_name(M)] was shuttle gibbed by [shuttle].")
+// [CELADON-EDIT] - Start of shuttle landing
+				log_attack("[key_name(M)] was hit by landing [shuttle].")
+				// Deal massive damage instead of gibbing
 				if(isanimal(M) || isbasicmob(M))
-					qdel(M)
+					qdel(M) // Simple mobs just get deleted for simplicity
 				else
-					//you're going to get, unequivocally, fucked up
+					// Deal heavy damage - enough to crit most players
 					M.apply_damage(400, BRUTE, forced = TRUE, spread_damage = TRUE)
 					M.apply_damage(100, BRUTE, BODY_ZONE_CHEST, forced = TRUE)
 					M.apply_damage(100, BRUTE, BODY_ZONE_HEAD, forced = TRUE)
-					if(istype(M, /mob/living/carbon))
-						var/mob/living/carbon/mob = M
-						for(var/obj/item/bodypart/limb in mob.bodyparts)
-							limb.check_wounding(list(WOUND_BLUNT = 50), 50)
-					M.AddElement(/datum/element/squish, 20 SECONDS)
-					M.spawn_gibs()
+
+					// Find a safe turf outside the shuttle to relocate them
+					var/turf/safe_turf = null
+					var/list/shuttle_areas = shuttle.shuttle_areas
+
+					// Try to find nearby open turfs not in shuttle areas
+					var/list/possible_turfs = list()
+					for(var/turf/open/candidate in orange(src, 25)) // Check within 25 tiles
+						if(!candidate.density && !is_blocked_turf(candidate))
+							var/area/candidate_area = get_area(candidate)
+							if(!(candidate_area in shuttle_areas))
+								if(turf_has_los(src, candidate))
+									possible_turfs += candidate
+
+					// Pick a random safe turf from the list
+					if(length(possible_turfs))
+						safe_turf = pick(possible_turfs)
+
+					// Move them to safety if we found a spot
+					if(safe_turf)
+						M.forceMove(safe_turf)
+						to_chat(M, span_userdanger("You are violently thrown clear of the landing [shuttle]!"))
+					// If no safe turf found, they stay where they are (still heavily damaged)
+
+					// Track this mob for the announcement
+					injured_mobs += M
+// [/CELADON-EDIT]
 
 
 		else //non-living mobs shouldn't be affected by shuttles, which is why this is an else
@@ -59,6 +84,14 @@ All ShuttleMove procs go here
 			if(object.resistance_flags & LANDING_PROOF)
 				continue
 			qdel(thing)
+
+// [CELADON-ADD] - Announce if any players were injured during landing
+	if(length(injured_mobs))
+		var/casualty_count = length(injured_mobs)
+		var/casualty_text = casualty_count == 1 ? "individual was" : "[casualty_count] individuals were"
+
+		priority_announce("WARNING: Landing collision detected. [casualty_text] caught in the landing zone. Sensors indicate critical injuries sustained.", "Collision Alert", 'sound/ai/attention.ogg', sender_override = "[shuttle]", zlevel = shuttle.virtual_z())
+// [/CELADON-ADD]
 
 // Called on the old turf to move the turf data
 /turf/proc/onShuttleMove(turf/newT, list/movement_force, move_dir, shuttle_layers)

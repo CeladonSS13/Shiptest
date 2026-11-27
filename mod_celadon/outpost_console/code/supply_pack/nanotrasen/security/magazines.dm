@@ -17,9 +17,15 @@
 	contains = list(/obj/item/ammo_box/magazine/co9mm/empty)
 	cost = 150
 
+/datum/supply_pack/faction/nanotrasen/magazine/podium_mag
+	name = "Podium Magazine Crate"
+	desc = "Contains a 4.6x30mm magazine for the Podium and Schnauzer pistols, with a capacity of 12 rounds."
+	contains = list(/obj/item/ammo_box/magazine/m46_30_podium)
+	cost = 200
+
 /datum/supply_pack/faction/nanotrasen/magazine/smgm9mm_mag
-	name = "Vector/Saber - Magazine (9x18mm)"
-	desc = "Contains a 9x18mm magazine for the Vector and Saber SMGs, with a capacity of 30 rounds."
+	name = "Vector/Saber/Expedition - Magazine (9x18mm)"
+	desc = "Contains a 9x18mm magazine for the Vector, Saber and Expedition SMGs, with a capacity of 30 rounds."
 	contains = list(/obj/item/ammo_box/magazine/m9mm_expedition/empty)
 	cost = 250
 
@@ -35,19 +41,19 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/guncell
 	name = "E-Cell - Weapon Cell"
-	desc = "Contains a weapon cell, compatible with laser guns."
+	desc = "Contains a weapon cell, compatible with laser guns. It has a rating of 10 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun)
 	cost = 500
 
 /datum/supply_pack/faction/nanotrasen/magazine/upgradedguncell
 	name = "E-Cell - Upgraded Weapon Cell"
-	desc = "Contains an upgraded weapon cell, compatible with laser guns. For NT use only."
+	desc = "Contains an upgraded weapon cell, compatible with laser guns.  It has a rating of 20 MJs. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/upgraded)
 	cost = 1000
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_mini
 	name = "E-Mini - NT Energy Weapon Miniature Cell"
-	desc = "The crate contains a three miniature batteries for energy weapons."
+	desc = "The crate contains a three miniature batteries for energy weapons. Every battery has a rating of 5 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty,
 					/obj/item/stock_parts/cell/gun/mini/empty)
@@ -55,7 +61,7 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/powercells_basic
 	name = "E-Cell - NT Energy Weapon Basic Cell Supply Pack"
-	desc = "The crate contains a three basic batteries for energy weapons."
+	desc = "The crate contains a three basic batteries for energy weapons. Every battery has a rating of 10 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/empty,
 					/obj/item/stock_parts/cell/gun/empty,
 					/obj/item/stock_parts/cell/gun/empty)
@@ -98,16 +104,16 @@
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_guncell
 	name = "P-Cell - Sharplite Weapon Cell"
-	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons."
+	desc = "Contains a proprietary weapon cell, compatible with most Sharplite energy weapons. It has a rating of 15 MJs."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/empty)
-	cost = 1750
+	cost = 750 // 5 MJ -> 250 кредитов
 	stable_price = TRUE
 
 /datum/supply_pack/faction/nanotrasen/magazine/nt_gun_plus
 	name = "P-Cell - Sharplite Upgraded Weapon Cell"
 	desc = "Contains an upgraded weapon cell, compatible with most nanotrasen models. For NT use only."
 	contains = list(/obj/item/stock_parts/cell/gun/sharplite/plus/empty)
-	cost = 3500
+	cost = 2250 // 5 MJ -> 250 кредитов + надбавка за "имбовость". В целом, хочется поставить просто 2000
 	stable_price = TRUE
 
 */

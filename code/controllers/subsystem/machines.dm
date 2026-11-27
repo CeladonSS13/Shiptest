@@ -6,6 +6,8 @@ SUBSYSTEM_DEF(machines)
 	var/list/processing = list()
 	var/list/currentrun = list()
 	var/list/powernets = list()
+	/// Track how many machines we skipped due to empty virtual z-levels
+	var/skipped_machines = 0
 
 /datum/controller/subsystem/machines/Initialize()
 	makepowernets()
@@ -31,7 +33,7 @@ SUBSYSTEM_DEF(machines)
 			propagate_network(PC,PC.powernet)
 
 /datum/controller/subsystem/machines/stat_entry(msg)
-	msg = "M:[length(processing)]|PN:[length(powernets)]"
+	msg = "M:[length(processing)]|PN:[length(powernets)]|S:[skipped_machines]"
 	return ..()
 
 
@@ -40,6 +42,7 @@ SUBSYSTEM_DEF(machines)
 		for(var/datum/powernet/Powernet in powernets)
 			Powernet.reset() //reset the power state.
 		src.currentrun = processing.Copy()
+		skipped_machines = 0
 
 	//cache for sanic speed (lists are references anyways)
 	var/list/currentrun = src.currentrun
@@ -47,10 +50,37 @@ SUBSYSTEM_DEF(machines)
 	while(currentrun.len)
 		var/obj/machinery/thing = currentrun[currentrun.len]
 		currentrun.len--
-		if(QDELETED(thing) || thing.process(wait * 0.1) == PROCESS_KILL)
+		
+		if(QDELETED(thing))
+			processing -= thing
+			if (MC_TICK_CHECK)
+				return
+			continue
+
+		// Skip machines on virtual z-levels with no players present
+		// Exceptions:
+		// 1. Critical machines (SM, PA, telecomms) always process
+		// 2. Machines in outpost areas always process (player hubs)
+		// 3. Machines in ship areas always process (player-owned vessels)
+		if(!thing.critical_machine)
+			var/area/machine_area = get_area(thing)
+			// Check if it's an outpost or ship area - these always process
+			if(!istype(machine_area, /area/outpost) && !istype(machine_area, /area/ship))
+				var/thing_vz = thing.virtual_z()
+				if(thing_vz)
+					var/players_on_vz = LAZYACCESS(SSmobs.players_by_virtual_z, "[thing_vz]")
+					if(!length(players_on_vz))
+						skipped_machines++
+						if (MC_TICK_CHECK)
+							return
+						continue
+
+		// Process the machine
+		if(thing.process(wait * 0.1) == PROCESS_KILL)
 			processing -= thing
 			if (!QDELETED(thing))
 				thing.datum_flags &= ~DF_ISPROCESSING
+
 		if (MC_TICK_CHECK)
 			return
 

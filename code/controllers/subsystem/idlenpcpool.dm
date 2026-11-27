@@ -2,7 +2,7 @@ SUBSYSTEM_DEF(idlenpcpool)
 	name = "Idling NPC Pool"
 	flags = SS_POST_FIRE_TIMING|SS_BACKGROUND|SS_NO_INIT
 	priority = FIRE_PRIORITY_IDLE_NPC
-	wait = 60
+	wait = 30  // Reduced from 60 to check more frequently for player presence
 	runlevels = RUNLEVEL_GAME | RUNLEVEL_POSTGAME
 
 	var/list/currentrun = list()
@@ -23,7 +23,9 @@ SUBSYSTEM_DEF(idlenpcpool)
 
 	if (!resumed)
 		var/list/idlelist = GLOB.simple_animals[AI_IDLE]
-		src.currentrun = idlelist.Copy()
+		var/list/zlist = GLOB.simple_animals[AI_Z_OFF]
+		// Process both idle and z-off mobs
+		src.currentrun = idlelist.Copy() + zlist.Copy()
 
 	//cache for sanic speed (lists are references anyways)
 	var/list/currentrun = src.currentrun
@@ -33,12 +35,19 @@ SUBSYSTEM_DEF(idlenpcpool)
 		--currentrun.len
 		if (!SA)
 			GLOB.simple_animals[AI_IDLE] -= SA
+			GLOB.simple_animals[AI_Z_OFF] -= SA
 			continue
 
 		if(!SA.ckey)
-			if(SA.stat != DEAD)
-				SA.handle_automated_movement()
-			if(SA.stat != DEAD)
-				SA.check_should_sleep()
+			// For AI_Z_OFF mobs, only check if they should wake up, don't move them
+			if(SA.AIStatus == AI_Z_OFF)
+				if(SA.stat != DEAD)
+					SA.check_should_sleep()
+			else
+				// For AI_IDLE mobs, do normal processing
+				if(SA.stat != DEAD)
+					SA.handle_automated_movement()
+				if(SA.stat != DEAD)
+					SA.check_should_sleep()
 		if (MC_TICK_CHECK)
 			return
