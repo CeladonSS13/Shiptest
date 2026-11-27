@@ -13,6 +13,12 @@
 	var/err_file = ""
 	var/static/list/interpreters = list("[MS_WINDOWS]" = "cmd /c", "[UNIX]" = "sh -c")
 	var/interpreter = interpreters["[world.system_type]"]
+	// [CELADON-ADD] - FIX - От греха подальше.
+	if(IsAdminAdvancedProcCall())
+		message_admins("[key_name_admin(usr)] tried to run a shell command through an admin proc call; blocked.")
+		log_admin("[key_name(usr)] blocked shelleo from admin proc call: [command]")
+		return list(1, "", "blocked")
+	// [CELADON-ADD]
 	if(interpreter)
 		for(var/seo_id in shelleo_ids)
 			if(!shelleo_ids[seo_id])
